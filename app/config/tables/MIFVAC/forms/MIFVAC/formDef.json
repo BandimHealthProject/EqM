@@ -1,0 +1,4615 @@
+{
+  "xlsx": {
+    "settings": [
+      {
+        "setting_name": "form_id",
+        "value": "MIFVAC",
+        "_row_num": 2
+      },
+      {
+        "setting_name": "form_version",
+        "value": 270519,
+        "_row_num": 3
+      },
+      {
+        "setting_name": "table_id",
+        "value": "MIFVAC",
+        "_row_num": 4
+      },
+      {
+        "setting_name": "survey",
+        "display": {
+          "tittle": {
+            "text": "Woman in the fertile age - vaccinations"
+          },
+          "title": {
+            "text": {
+              "portuguese": "Mulher na idade fertil - vacinas",
+              "default": "Mulher na idade fertil - vacinas"
+            }
+          }
+        },
+        "_row_num": 5
+      },
+      {
+        "setting_name": "default",
+        "display": {
+          "locale": {
+            "text": {
+              "default": "English",
+              "portuguese": "Inglês"
+            }
+          }
+        },
+        "_row_num": 6
+      },
+      {
+        "setting_name": "portuguese",
+        "display": {
+          "locale": {
+            "text": {
+              "default": "Portuguese",
+              "portuguese": "Portugues"
+            }
+          }
+        },
+        "_row_num": 7
+      },
+      {
+        "setting_name": "font-size",
+        "value": "20pt",
+        "_row_num": 8
+      },
+      {
+        "setting_name": "instance_name",
+        "value": "ID",
+        "_row_num": 9
+      }
+    ],
+    "survey": [
+      {
+        "clause": "begin screen",
+        "_row_num": 2
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": "Vaccine 1"
+          }
+        },
+        "_row_num": 3
+      },
+      {
+        "type": "select_one",
+        "values_list": "vactype",
+        "name": "VAC1TIPO",
+        "display": {
+          "prompt": {
+            "text": "Type of vaccine"
+          }
+        },
+        "_row_num": 4
+      },
+      {
+        "type": "date",
+        "name": "VAC1DATA",
+        "display": {
+          "prompt": {
+            "text": "Date of vaccine"
+          }
+        },
+        "_row_num": 5
+      },
+      {
+        "type": "select_one",
+        "values_list": "vacinf",
+        "name": "VAC1INF",
+        "display": {
+          "prompt": {
+            "text": "Informant"
+          }
+        },
+        "_row_num": 6
+      },
+      {
+        "type": "date",
+        "name": "VAC1REG",
+        "display": {
+          "prompt": {
+            "text": "Date of registration"
+          }
+        },
+        "_row_num": 7
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 8
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 9
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": "Vaccine 2"
+          }
+        },
+        "_row_num": 10
+      },
+      {
+        "type": "select_one",
+        "values_list": "vactype",
+        "name": "VAC2TIPO",
+        "display": {
+          "prompt": {
+            "text": "Type of vaccine"
+          }
+        },
+        "_row_num": 11
+      },
+      {
+        "type": "date",
+        "name": "VAC2DATA",
+        "display": {
+          "prompt": {
+            "text": "Date of vaccine"
+          }
+        },
+        "_row_num": 12
+      },
+      {
+        "type": "select_one",
+        "values_list": "vacinf",
+        "name": "VAC2INF",
+        "display": {
+          "prompt": {
+            "text": "Informant"
+          }
+        },
+        "_row_num": 13
+      },
+      {
+        "type": "date",
+        "name": "VAC2REG",
+        "display": {
+          "prompt": {
+            "text": "Date of registration"
+          }
+        },
+        "_row_num": 14
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 15
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 16
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": "Vaccine 3"
+          }
+        },
+        "_row_num": 17
+      },
+      {
+        "type": "select_one",
+        "values_list": "vactype",
+        "name": "VAC3TIPO",
+        "display": {
+          "prompt": {
+            "text": "Type of vaccine"
+          }
+        },
+        "_row_num": 18
+      },
+      {
+        "type": "date",
+        "name": "VAC3DATA",
+        "display": {
+          "prompt": {
+            "text": "Date of vaccine"
+          }
+        },
+        "_row_num": 19
+      },
+      {
+        "type": "select_one",
+        "values_list": "vacinf",
+        "name": "VAC3INF",
+        "display": {
+          "prompt": {
+            "text": "Informant"
+          }
+        },
+        "_row_num": 20
+      },
+      {
+        "type": "date",
+        "name": "VAC3REG",
+        "display": {
+          "prompt": {
+            "text": "Date of registration"
+          }
+        },
+        "_row_num": 21
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 22
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 23
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": "Vaccine 4"
+          }
+        },
+        "_row_num": 24
+      },
+      {
+        "type": "select_one",
+        "values_list": "vactype",
+        "name": "VAC4TIPO",
+        "display": {
+          "prompt": {
+            "text": "Type of vaccine"
+          }
+        },
+        "_row_num": 25
+      },
+      {
+        "type": "date",
+        "name": "VAC4DATA",
+        "display": {
+          "prompt": {
+            "text": "Date of vaccine"
+          }
+        },
+        "_row_num": 26
+      },
+      {
+        "type": "select_one",
+        "values_list": "vacinf",
+        "name": "VAC4INF",
+        "display": {
+          "prompt": {
+            "text": "Informant"
+          }
+        },
+        "_row_num": 27
+      },
+      {
+        "type": "date",
+        "name": "VAC4REG",
+        "display": {
+          "prompt": {
+            "text": "Date of registration"
+          }
+        },
+        "_row_num": 28
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 29
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 30
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": "Vaccine 5"
+          }
+        },
+        "_row_num": 31
+      },
+      {
+        "type": "select_one",
+        "values_list": "vactype",
+        "name": "VAC5TIPO",
+        "display": {
+          "prompt": {
+            "text": "Type of vaccine"
+          }
+        },
+        "_row_num": 32
+      },
+      {
+        "type": "date",
+        "name": "VAC5DATA",
+        "display": {
+          "prompt": {
+            "text": "Date of vaccine"
+          }
+        },
+        "_row_num": 33
+      },
+      {
+        "type": "select_one",
+        "values_list": "vacinf",
+        "name": "VAC5INF",
+        "display": {
+          "prompt": {
+            "text": "Informant"
+          }
+        },
+        "_row_num": 34
+      },
+      {
+        "type": "date",
+        "name": "VAC5REG",
+        "display": {
+          "prompt": {
+            "text": "Date of registration"
+          }
+        },
+        "_row_num": 35
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 36
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 37
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": "Vaccine 6"
+          }
+        },
+        "_row_num": 38
+      },
+      {
+        "type": "select_one",
+        "values_list": "vactype",
+        "name": "VAC6TIPO",
+        "display": {
+          "prompt": {
+            "text": "Type of vaccine"
+          }
+        },
+        "_row_num": 39
+      },
+      {
+        "type": "date",
+        "name": "VAC6DATA",
+        "display": {
+          "prompt": {
+            "text": "Date of vaccine"
+          }
+        },
+        "_row_num": 40
+      },
+      {
+        "type": "select_one",
+        "values_list": "vacinf",
+        "name": "VAC6INF",
+        "display": {
+          "prompt": {
+            "text": "Informant"
+          }
+        },
+        "_row_num": 41
+      },
+      {
+        "type": "date",
+        "name": "VAC6REG",
+        "display": {
+          "prompt": {
+            "text": "Date of registration"
+          }
+        },
+        "_row_num": 42
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 43
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 44
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": "Vaccine 7"
+          }
+        },
+        "_row_num": 45
+      },
+      {
+        "type": "select_one",
+        "values_list": "vactype",
+        "name": "VAC7TIPO",
+        "display": {
+          "prompt": {
+            "text": "Type of vaccine"
+          }
+        },
+        "_row_num": 46
+      },
+      {
+        "type": "date",
+        "name": "VAC7DATA",
+        "display": {
+          "prompt": {
+            "text": "Date of vaccine"
+          }
+        },
+        "_row_num": 47
+      },
+      {
+        "type": "select_one",
+        "values_list": "vacinf",
+        "name": "VAC7INF",
+        "display": {
+          "prompt": {
+            "text": "Informant"
+          }
+        },
+        "_row_num": 48
+      },
+      {
+        "type": "date",
+        "name": "VAC7REG",
+        "display": {
+          "prompt": {
+            "text": "Date of registration"
+          }
+        },
+        "_row_num": 49
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 50
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 51
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": "Vaccine 8"
+          }
+        },
+        "_row_num": 52
+      },
+      {
+        "type": "select_one",
+        "values_list": "vactype",
+        "name": "VAC8TIPO",
+        "display": {
+          "prompt": {
+            "text": "Type of vaccine"
+          }
+        },
+        "_row_num": 53
+      },
+      {
+        "type": "date",
+        "name": "VAC8DATA",
+        "display": {
+          "prompt": {
+            "text": "Date of vaccine"
+          }
+        },
+        "_row_num": 54
+      },
+      {
+        "type": "select_one",
+        "values_list": "vacinf",
+        "name": "VAC8INF",
+        "display": {
+          "prompt": {
+            "text": "Informant"
+          }
+        },
+        "_row_num": 55
+      },
+      {
+        "type": "date",
+        "name": "VAC8REG",
+        "display": {
+          "prompt": {
+            "text": "Date of registration"
+          }
+        },
+        "_row_num": 56
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 57
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 58
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": "Vaccine 9"
+          }
+        },
+        "_row_num": 59
+      },
+      {
+        "type": "select_one",
+        "values_list": "vactype",
+        "name": "VAC9TIPO",
+        "display": {
+          "prompt": {
+            "text": "Type of vaccine"
+          }
+        },
+        "_row_num": 60
+      },
+      {
+        "type": "date",
+        "name": "VAC9DATA",
+        "display": {
+          "prompt": {
+            "text": "Date of vaccine"
+          }
+        },
+        "_row_num": 61
+      },
+      {
+        "type": "select_one",
+        "values_list": "vacinf",
+        "name": "VAC9INF",
+        "display": {
+          "prompt": {
+            "text": "Informant"
+          }
+        },
+        "_row_num": 62
+      },
+      {
+        "type": "date",
+        "name": "VAC9REG",
+        "display": {
+          "prompt": {
+            "text": "Date of registration"
+          }
+        },
+        "_row_num": 63
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 64
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 65
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": "Vaccine 10"
+          }
+        },
+        "_row_num": 66
+      },
+      {
+        "type": "select_one",
+        "values_list": "vactype",
+        "name": "VAC10TIPO",
+        "display": {
+          "prompt": {
+            "text": "Type of vaccine"
+          }
+        },
+        "_row_num": 67
+      },
+      {
+        "type": "date",
+        "name": "VAC10DATA",
+        "display": {
+          "prompt": {
+            "text": "Date of vaccine"
+          }
+        },
+        "_row_num": 68
+      },
+      {
+        "type": "select_one",
+        "values_list": "vacinf",
+        "name": "VAC10INF",
+        "display": {
+          "prompt": {
+            "text": "Informant"
+          }
+        },
+        "_row_num": 69
+      },
+      {
+        "type": "date",
+        "name": "VAC10REG",
+        "display": {
+          "prompt": {
+            "text": "Date of registration"
+          }
+        },
+        "_row_num": 70
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 71
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 72
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": "Vaccine 11"
+          }
+        },
+        "_row_num": 73
+      },
+      {
+        "type": "select_one",
+        "values_list": "vactype",
+        "name": "VAC11TIPO",
+        "display": {
+          "prompt": {
+            "text": "Type of vaccine"
+          }
+        },
+        "_row_num": 74
+      },
+      {
+        "type": "date",
+        "name": "VAC11DATA",
+        "display": {
+          "prompt": {
+            "text": "Date of vaccine"
+          }
+        },
+        "_row_num": 75
+      },
+      {
+        "type": "select_one",
+        "values_list": "vacinf",
+        "name": "VAC11INF",
+        "display": {
+          "prompt": {
+            "text": "Informant"
+          }
+        },
+        "_row_num": 76
+      },
+      {
+        "type": "date",
+        "name": "VAC11REG",
+        "display": {
+          "prompt": {
+            "text": "Date of registration"
+          }
+        },
+        "_row_num": 77
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 78
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 79
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": "Vaccine 12"
+          }
+        },
+        "_row_num": 80
+      },
+      {
+        "type": "select_one",
+        "values_list": "vactype",
+        "name": "VAC12TIPO",
+        "display": {
+          "prompt": {
+            "text": "Type of vaccine"
+          }
+        },
+        "_row_num": 81
+      },
+      {
+        "type": "date",
+        "name": "VAC12DATA",
+        "display": {
+          "prompt": {
+            "text": "Date of vaccine"
+          }
+        },
+        "_row_num": 82
+      },
+      {
+        "type": "select_one",
+        "values_list": "vacinf",
+        "name": "VAC12INF",
+        "display": {
+          "prompt": {
+            "text": "Informant"
+          }
+        },
+        "_row_num": 83
+      },
+      {
+        "type": "date",
+        "name": "VAC12REG",
+        "display": {
+          "prompt": {
+            "text": "Date of registration"
+          }
+        },
+        "_row_num": 84
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 85
+      }
+    ],
+    "choices": [
+      {
+        "choice_list_name": "vactype",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": "TT vaccine"
+          }
+        },
+        "_row_num": 2
+      },
+      {
+        "choice_list_name": "vacinf",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": "Vaccination card"
+          }
+        },
+        "_row_num": 3
+      },
+      {
+        "choice_list_name": "vacinf",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": "Pregnancy card"
+          }
+        },
+        "_row_num": 4
+      }
+    ],
+    "model": [
+      {
+        "name": "ID",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 2
+      },
+      {
+        "name": "VAC10DATA",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 3
+      },
+      {
+        "name": "VAC10INF",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 4
+      },
+      {
+        "name": "VAC10REG",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 5
+      },
+      {
+        "name": "VAC10TIPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 6
+      },
+      {
+        "name": "VAC11DATA",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 7
+      },
+      {
+        "name": "VAC11INF",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 8
+      },
+      {
+        "name": "VAC11REG",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 9
+      },
+      {
+        "name": "VAC11TIPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 10
+      },
+      {
+        "name": "VAC12DATA",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 11
+      },
+      {
+        "name": "VAC12INF",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 12
+      },
+      {
+        "name": "VAC12REG",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 13
+      },
+      {
+        "name": "VAC12TIPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 14
+      },
+      {
+        "name": "VAC1DATA",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 15
+      },
+      {
+        "name": "VAC1INF",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 16
+      },
+      {
+        "name": "VAC1REG",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 17
+      },
+      {
+        "name": "VAC1TIPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 18
+      },
+      {
+        "name": "VAC2DATA",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 19
+      },
+      {
+        "name": "VAC2INF",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 20
+      },
+      {
+        "name": "VAC2REG",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 21
+      },
+      {
+        "name": "VAC2TIPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 22
+      },
+      {
+        "name": "VAC3DATA",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 23
+      },
+      {
+        "name": "VAC3INF",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 24
+      },
+      {
+        "name": "VAC3REG",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 25
+      },
+      {
+        "name": "VAC3TIPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 26
+      },
+      {
+        "name": "VAC4DATA",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 27
+      },
+      {
+        "name": "VAC4INF",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 28
+      },
+      {
+        "name": "VAC4REG",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 29
+      },
+      {
+        "name": "VAC4TIPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 30
+      },
+      {
+        "name": "VAC5DATA",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 31
+      },
+      {
+        "name": "VAC5INF",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 32
+      },
+      {
+        "name": "VAC5REG",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 33
+      },
+      {
+        "name": "VAC5TIPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 34
+      },
+      {
+        "name": "VAC6DATA",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 35
+      },
+      {
+        "name": "VAC6INF",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 36
+      },
+      {
+        "name": "VAC6REG",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 37
+      },
+      {
+        "name": "VAC6TIPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 38
+      },
+      {
+        "name": "VAC7DATA",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 39
+      },
+      {
+        "name": "VAC7INF",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 40
+      },
+      {
+        "name": "VAC7REG",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 41
+      },
+      {
+        "name": "VAC7TIPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 42
+      },
+      {
+        "name": "VAC8DATA",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 43
+      },
+      {
+        "name": "VAC8INF",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 44
+      },
+      {
+        "name": "VAC8REG",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 45
+      },
+      {
+        "name": "VAC8TIPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 46
+      },
+      {
+        "name": "VAC9DATA",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 47
+      },
+      {
+        "name": "VAC9INF",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 48
+      },
+      {
+        "name": "VAC9REG",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 49
+      },
+      {
+        "name": "VAC9TIPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 50
+      }
+    ]
+  },
+  "specification": {
+    "column_types": {
+      "_screen_block": "function",
+      "condition": "formula",
+      "constraint": "formula",
+      "required": "formula",
+      "calculation": "formula",
+      "newRowInitialElementKeyToValueMap": "formula",
+      "openRowInitialElementKeyToValueMap": "formula",
+      "selectionArgs": "formula",
+      "url": "formula",
+      "uri": "formula",
+      "callback": "formula(context)",
+      "choice_filter": "formula(choice_item)",
+      "templatePath": "requirejs_path"
+    },
+    "settings": {
+      "form_id": {
+        "setting_name": "form_id",
+        "value": "MIFVAC",
+        "_row_num": 2
+      },
+      "form_version": {
+        "setting_name": "form_version",
+        "value": 270519,
+        "_row_num": 3
+      },
+      "table_id": {
+        "setting_name": "table_id",
+        "value": "MIFVAC",
+        "_row_num": 4
+      },
+      "survey": {
+        "setting_name": "survey",
+        "display": {
+          "tittle": {
+            "text": "Woman in the fertile age - vaccinations"
+          },
+          "title": {
+            "text": {
+              "portuguese": "Mulher na idade fertil - vacinas",
+              "default": "Mulher na idade fertil - vacinas"
+            }
+          }
+        },
+        "_row_num": 5
+      },
+      "default": {
+        "setting_name": "default",
+        "display": {
+          "locale": {
+            "text": {
+              "default": "English",
+              "portuguese": "Inglês"
+            }
+          }
+        },
+        "_row_num": 6
+      },
+      "portuguese": {
+        "setting_name": "portuguese",
+        "display": {
+          "locale": {
+            "text": {
+              "default": "Portuguese",
+              "portuguese": "Portugues"
+            }
+          }
+        },
+        "_row_num": 7
+      },
+      "font-size": {
+        "setting_name": "font-size",
+        "value": "20pt",
+        "_row_num": 8
+      },
+      "instance_name": {
+        "setting_name": "instance_name",
+        "value": "ID",
+        "_row_num": 9
+      },
+      "_locales": {
+        "setting_name": "_locales",
+        "_row_num": 5,
+        "value": [
+          {
+            "display": {
+              "locale": {
+                "text": {
+                  "default": "Portuguese",
+                  "portuguese": "Portugues"
+                }
+              }
+            },
+            "_row_num": 7,
+            "name": "portuguese"
+          }
+        ]
+      },
+      "_default_locale": {
+        "setting_name": "_default_locale",
+        "_row_num": 5,
+        "value": "portuguese"
+      },
+      "initial": {
+        "setting_name": "survey",
+        "display": {
+          "tittle": {
+            "text": "Woman in the fertile age - vaccinations"
+          },
+          "title": {
+            "text": {
+              "portuguese": "Mulher na idade fertil - vacinas",
+              "default": "Mulher na idade fertil - vacinas"
+            }
+          }
+        },
+        "_row_num": 5
+      }
+    },
+    "choices": {
+      "vactype": [
+        {
+          "choice_list_name": "vactype",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": "TT vaccine"
+            }
+          },
+          "_row_num": 2
+        }
+      ],
+      "vacinf": [
+        {
+          "choice_list_name": "vacinf",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": "Vaccination card"
+            }
+          },
+          "_row_num": 3
+        },
+        {
+          "choice_list_name": "vacinf",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": "Pregnancy card"
+            }
+          },
+          "_row_num": 4
+        }
+      ]
+    },
+    "table_specific_definitions": {
+      "_tokens": {}
+    },
+    "queries": {},
+    "calculates": {},
+    "model": {
+      "ID": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 2,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ID"
+      },
+      "VAC10DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 68,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC10DATA"
+      },
+      "VAC10INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 69,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 4,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC10INF"
+      },
+      "VAC10REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 70,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 5,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC10REG"
+      },
+      "VAC10TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 67,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 6,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC10TIPO"
+      },
+      "VAC11DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 75,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 7,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC11DATA"
+      },
+      "VAC11INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 76,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 8,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC11INF"
+      },
+      "VAC11REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 77,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC11REG"
+      },
+      "VAC11TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 74,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 10,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC11TIPO"
+      },
+      "VAC12DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 82,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC12DATA"
+      },
+      "VAC12INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 83,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC12INF"
+      },
+      "VAC12REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 84,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 13,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC12REG"
+      },
+      "VAC12TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 81,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC12TIPO"
+      },
+      "VAC1DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 5,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 15,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1DATA"
+      },
+      "VAC1INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 6,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 16,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1INF"
+      },
+      "VAC1REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 7,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 17,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1REG"
+      },
+      "VAC1TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 4,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 18,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1TIPO"
+      },
+      "VAC2DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 19,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC2DATA"
+      },
+      "VAC2INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 13,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 20,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC2INF"
+      },
+      "VAC2REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 14,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC2REG"
+      },
+      "VAC2TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 22,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC2TIPO"
+      },
+      "VAC3DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 19,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 23,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC3DATA"
+      },
+      "VAC3INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 20,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 24,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC3INF"
+      },
+      "VAC3REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 21,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 25,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC3REG"
+      },
+      "VAC3TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 18,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 26,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC3TIPO"
+      },
+      "VAC4DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 26,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 27,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC4DATA"
+      },
+      "VAC4INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 27,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 28,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC4INF"
+      },
+      "VAC4REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 28,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 29,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC4REG"
+      },
+      "VAC4TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 25,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 30,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC4TIPO"
+      },
+      "VAC5DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 33,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 31,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC5DATA"
+      },
+      "VAC5INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 34,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 32,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC5INF"
+      },
+      "VAC5REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 35,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 33,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC5REG"
+      },
+      "VAC5TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 32,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 34,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC5TIPO"
+      },
+      "VAC6DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 40,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 35,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC6DATA"
+      },
+      "VAC6INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 41,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 36,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC6INF"
+      },
+      "VAC6REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 42,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 37,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC6REG"
+      },
+      "VAC6TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 39,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 38,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC6TIPO"
+      },
+      "VAC7DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 47,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 39,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC7DATA"
+      },
+      "VAC7INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 48,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 40,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC7INF"
+      },
+      "VAC7REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 49,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 41,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC7REG"
+      },
+      "VAC7TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 46,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 42,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC7TIPO"
+      },
+      "VAC8DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 54,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 43,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC8DATA"
+      },
+      "VAC8INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 55,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 44,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC8INF"
+      },
+      "VAC8REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 56,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 45,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC8REG"
+      },
+      "VAC8TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 53,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 46,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC8TIPO"
+      },
+      "VAC9DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 61,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 47,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC9DATA"
+      },
+      "VAC9INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 62,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 48,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC9INF"
+      },
+      "VAC9REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 63,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 49,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC9REG"
+      },
+      "VAC9TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 60,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 50,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC9TIPO"
+      }
+    },
+    "section_names": [
+      "initial",
+      "survey"
+    ],
+    "sections": {
+      "survey": {
+        "section_name": "survey",
+        "nested_sections": {},
+        "reachable_sections": {},
+        "prompts": [
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": "Vaccine 1"
+              }
+            },
+            "_row_num": 3,
+            "__rowNum__": 2,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 0
+          },
+          {
+            "type": "select_one",
+            "values_list": "vactype",
+            "name": "VAC1TIPO",
+            "display": {
+              "prompt": {
+                "text": "Type of vaccine"
+              }
+            },
+            "_row_num": 4,
+            "__rowNum__": 3,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 1
+          },
+          {
+            "type": "date",
+            "name": "VAC1DATA",
+            "display": {
+              "prompt": {
+                "text": "Date of vaccine"
+              }
+            },
+            "_row_num": 5,
+            "__rowNum__": 4,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 2
+          },
+          {
+            "type": "select_one",
+            "values_list": "vacinf",
+            "name": "VAC1INF",
+            "display": {
+              "prompt": {
+                "text": "Informant"
+              }
+            },
+            "_row_num": 6,
+            "__rowNum__": 5,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 3
+          },
+          {
+            "type": "date",
+            "name": "VAC1REG",
+            "display": {
+              "prompt": {
+                "text": "Date of registration"
+              }
+            },
+            "_row_num": 7,
+            "__rowNum__": 6,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 4
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": "Vaccine 2"
+              }
+            },
+            "_row_num": 10,
+            "__rowNum__": 9,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen9",
+            "promptIdx": 5
+          },
+          {
+            "type": "select_one",
+            "values_list": "vactype",
+            "name": "VAC2TIPO",
+            "display": {
+              "prompt": {
+                "text": "Type of vaccine"
+              }
+            },
+            "_row_num": 11,
+            "__rowNum__": 10,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen9",
+            "promptIdx": 6
+          },
+          {
+            "type": "date",
+            "name": "VAC2DATA",
+            "display": {
+              "prompt": {
+                "text": "Date of vaccine"
+              }
+            },
+            "_row_num": 12,
+            "__rowNum__": 11,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen9",
+            "promptIdx": 7
+          },
+          {
+            "type": "select_one",
+            "values_list": "vacinf",
+            "name": "VAC2INF",
+            "display": {
+              "prompt": {
+                "text": "Informant"
+              }
+            },
+            "_row_num": 13,
+            "__rowNum__": 12,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen9",
+            "promptIdx": 8
+          },
+          {
+            "type": "date",
+            "name": "VAC2REG",
+            "display": {
+              "prompt": {
+                "text": "Date of registration"
+              }
+            },
+            "_row_num": 14,
+            "__rowNum__": 13,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen9",
+            "promptIdx": 9
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": "Vaccine 3"
+              }
+            },
+            "_row_num": 17,
+            "__rowNum__": 16,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen16",
+            "promptIdx": 10
+          },
+          {
+            "type": "select_one",
+            "values_list": "vactype",
+            "name": "VAC3TIPO",
+            "display": {
+              "prompt": {
+                "text": "Type of vaccine"
+              }
+            },
+            "_row_num": 18,
+            "__rowNum__": 17,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen16",
+            "promptIdx": 11
+          },
+          {
+            "type": "date",
+            "name": "VAC3DATA",
+            "display": {
+              "prompt": {
+                "text": "Date of vaccine"
+              }
+            },
+            "_row_num": 19,
+            "__rowNum__": 18,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen16",
+            "promptIdx": 12
+          },
+          {
+            "type": "select_one",
+            "values_list": "vacinf",
+            "name": "VAC3INF",
+            "display": {
+              "prompt": {
+                "text": "Informant"
+              }
+            },
+            "_row_num": 20,
+            "__rowNum__": 19,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen16",
+            "promptIdx": 13
+          },
+          {
+            "type": "date",
+            "name": "VAC3REG",
+            "display": {
+              "prompt": {
+                "text": "Date of registration"
+              }
+            },
+            "_row_num": 21,
+            "__rowNum__": 20,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen16",
+            "promptIdx": 14
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": "Vaccine 4"
+              }
+            },
+            "_row_num": 24,
+            "__rowNum__": 23,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen23",
+            "promptIdx": 15
+          },
+          {
+            "type": "select_one",
+            "values_list": "vactype",
+            "name": "VAC4TIPO",
+            "display": {
+              "prompt": {
+                "text": "Type of vaccine"
+              }
+            },
+            "_row_num": 25,
+            "__rowNum__": 24,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen23",
+            "promptIdx": 16
+          },
+          {
+            "type": "date",
+            "name": "VAC4DATA",
+            "display": {
+              "prompt": {
+                "text": "Date of vaccine"
+              }
+            },
+            "_row_num": 26,
+            "__rowNum__": 25,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen23",
+            "promptIdx": 17
+          },
+          {
+            "type": "select_one",
+            "values_list": "vacinf",
+            "name": "VAC4INF",
+            "display": {
+              "prompt": {
+                "text": "Informant"
+              }
+            },
+            "_row_num": 27,
+            "__rowNum__": 26,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen23",
+            "promptIdx": 18
+          },
+          {
+            "type": "date",
+            "name": "VAC4REG",
+            "display": {
+              "prompt": {
+                "text": "Date of registration"
+              }
+            },
+            "_row_num": 28,
+            "__rowNum__": 27,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen23",
+            "promptIdx": 19
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": "Vaccine 5"
+              }
+            },
+            "_row_num": 31,
+            "__rowNum__": 30,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen30",
+            "promptIdx": 20
+          },
+          {
+            "type": "select_one",
+            "values_list": "vactype",
+            "name": "VAC5TIPO",
+            "display": {
+              "prompt": {
+                "text": "Type of vaccine"
+              }
+            },
+            "_row_num": 32,
+            "__rowNum__": 31,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen30",
+            "promptIdx": 21
+          },
+          {
+            "type": "date",
+            "name": "VAC5DATA",
+            "display": {
+              "prompt": {
+                "text": "Date of vaccine"
+              }
+            },
+            "_row_num": 33,
+            "__rowNum__": 32,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen30",
+            "promptIdx": 22
+          },
+          {
+            "type": "select_one",
+            "values_list": "vacinf",
+            "name": "VAC5INF",
+            "display": {
+              "prompt": {
+                "text": "Informant"
+              }
+            },
+            "_row_num": 34,
+            "__rowNum__": 33,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen30",
+            "promptIdx": 23
+          },
+          {
+            "type": "date",
+            "name": "VAC5REG",
+            "display": {
+              "prompt": {
+                "text": "Date of registration"
+              }
+            },
+            "_row_num": 35,
+            "__rowNum__": 34,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen30",
+            "promptIdx": 24
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": "Vaccine 6"
+              }
+            },
+            "_row_num": 38,
+            "__rowNum__": 37,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen37",
+            "promptIdx": 25
+          },
+          {
+            "type": "select_one",
+            "values_list": "vactype",
+            "name": "VAC6TIPO",
+            "display": {
+              "prompt": {
+                "text": "Type of vaccine"
+              }
+            },
+            "_row_num": 39,
+            "__rowNum__": 38,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen37",
+            "promptIdx": 26
+          },
+          {
+            "type": "date",
+            "name": "VAC6DATA",
+            "display": {
+              "prompt": {
+                "text": "Date of vaccine"
+              }
+            },
+            "_row_num": 40,
+            "__rowNum__": 39,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen37",
+            "promptIdx": 27
+          },
+          {
+            "type": "select_one",
+            "values_list": "vacinf",
+            "name": "VAC6INF",
+            "display": {
+              "prompt": {
+                "text": "Informant"
+              }
+            },
+            "_row_num": 41,
+            "__rowNum__": 40,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen37",
+            "promptIdx": 28
+          },
+          {
+            "type": "date",
+            "name": "VAC6REG",
+            "display": {
+              "prompt": {
+                "text": "Date of registration"
+              }
+            },
+            "_row_num": 42,
+            "__rowNum__": 41,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen37",
+            "promptIdx": 29
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": "Vaccine 7"
+              }
+            },
+            "_row_num": 45,
+            "__rowNum__": 44,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen44",
+            "promptIdx": 30
+          },
+          {
+            "type": "select_one",
+            "values_list": "vactype",
+            "name": "VAC7TIPO",
+            "display": {
+              "prompt": {
+                "text": "Type of vaccine"
+              }
+            },
+            "_row_num": 46,
+            "__rowNum__": 45,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen44",
+            "promptIdx": 31
+          },
+          {
+            "type": "date",
+            "name": "VAC7DATA",
+            "display": {
+              "prompt": {
+                "text": "Date of vaccine"
+              }
+            },
+            "_row_num": 47,
+            "__rowNum__": 46,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen44",
+            "promptIdx": 32
+          },
+          {
+            "type": "select_one",
+            "values_list": "vacinf",
+            "name": "VAC7INF",
+            "display": {
+              "prompt": {
+                "text": "Informant"
+              }
+            },
+            "_row_num": 48,
+            "__rowNum__": 47,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen44",
+            "promptIdx": 33
+          },
+          {
+            "type": "date",
+            "name": "VAC7REG",
+            "display": {
+              "prompt": {
+                "text": "Date of registration"
+              }
+            },
+            "_row_num": 49,
+            "__rowNum__": 48,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen44",
+            "promptIdx": 34
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": "Vaccine 8"
+              }
+            },
+            "_row_num": 52,
+            "__rowNum__": 51,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen51",
+            "promptIdx": 35
+          },
+          {
+            "type": "select_one",
+            "values_list": "vactype",
+            "name": "VAC8TIPO",
+            "display": {
+              "prompt": {
+                "text": "Type of vaccine"
+              }
+            },
+            "_row_num": 53,
+            "__rowNum__": 52,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen51",
+            "promptIdx": 36
+          },
+          {
+            "type": "date",
+            "name": "VAC8DATA",
+            "display": {
+              "prompt": {
+                "text": "Date of vaccine"
+              }
+            },
+            "_row_num": 54,
+            "__rowNum__": 53,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen51",
+            "promptIdx": 37
+          },
+          {
+            "type": "select_one",
+            "values_list": "vacinf",
+            "name": "VAC8INF",
+            "display": {
+              "prompt": {
+                "text": "Informant"
+              }
+            },
+            "_row_num": 55,
+            "__rowNum__": 54,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen51",
+            "promptIdx": 38
+          },
+          {
+            "type": "date",
+            "name": "VAC8REG",
+            "display": {
+              "prompt": {
+                "text": "Date of registration"
+              }
+            },
+            "_row_num": 56,
+            "__rowNum__": 55,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen51",
+            "promptIdx": 39
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": "Vaccine 9"
+              }
+            },
+            "_row_num": 59,
+            "__rowNum__": 58,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen58",
+            "promptIdx": 40
+          },
+          {
+            "type": "select_one",
+            "values_list": "vactype",
+            "name": "VAC9TIPO",
+            "display": {
+              "prompt": {
+                "text": "Type of vaccine"
+              }
+            },
+            "_row_num": 60,
+            "__rowNum__": 59,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen58",
+            "promptIdx": 41
+          },
+          {
+            "type": "date",
+            "name": "VAC9DATA",
+            "display": {
+              "prompt": {
+                "text": "Date of vaccine"
+              }
+            },
+            "_row_num": 61,
+            "__rowNum__": 60,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen58",
+            "promptIdx": 42
+          },
+          {
+            "type": "select_one",
+            "values_list": "vacinf",
+            "name": "VAC9INF",
+            "display": {
+              "prompt": {
+                "text": "Informant"
+              }
+            },
+            "_row_num": 62,
+            "__rowNum__": 61,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen58",
+            "promptIdx": 43
+          },
+          {
+            "type": "date",
+            "name": "VAC9REG",
+            "display": {
+              "prompt": {
+                "text": "Date of registration"
+              }
+            },
+            "_row_num": 63,
+            "__rowNum__": 62,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen58",
+            "promptIdx": 44
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": "Vaccine 10"
+              }
+            },
+            "_row_num": 66,
+            "__rowNum__": 65,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen65",
+            "promptIdx": 45
+          },
+          {
+            "type": "select_one",
+            "values_list": "vactype",
+            "name": "VAC10TIPO",
+            "display": {
+              "prompt": {
+                "text": "Type of vaccine"
+              }
+            },
+            "_row_num": 67,
+            "__rowNum__": 66,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen65",
+            "promptIdx": 46
+          },
+          {
+            "type": "date",
+            "name": "VAC10DATA",
+            "display": {
+              "prompt": {
+                "text": "Date of vaccine"
+              }
+            },
+            "_row_num": 68,
+            "__rowNum__": 67,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen65",
+            "promptIdx": 47
+          },
+          {
+            "type": "select_one",
+            "values_list": "vacinf",
+            "name": "VAC10INF",
+            "display": {
+              "prompt": {
+                "text": "Informant"
+              }
+            },
+            "_row_num": 69,
+            "__rowNum__": 68,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen65",
+            "promptIdx": 48
+          },
+          {
+            "type": "date",
+            "name": "VAC10REG",
+            "display": {
+              "prompt": {
+                "text": "Date of registration"
+              }
+            },
+            "_row_num": 70,
+            "__rowNum__": 69,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen65",
+            "promptIdx": 49
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": "Vaccine 11"
+              }
+            },
+            "_row_num": 73,
+            "__rowNum__": 72,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen72",
+            "promptIdx": 50
+          },
+          {
+            "type": "select_one",
+            "values_list": "vactype",
+            "name": "VAC11TIPO",
+            "display": {
+              "prompt": {
+                "text": "Type of vaccine"
+              }
+            },
+            "_row_num": 74,
+            "__rowNum__": 73,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen72",
+            "promptIdx": 51
+          },
+          {
+            "type": "date",
+            "name": "VAC11DATA",
+            "display": {
+              "prompt": {
+                "text": "Date of vaccine"
+              }
+            },
+            "_row_num": 75,
+            "__rowNum__": 74,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen72",
+            "promptIdx": 52
+          },
+          {
+            "type": "select_one",
+            "values_list": "vacinf",
+            "name": "VAC11INF",
+            "display": {
+              "prompt": {
+                "text": "Informant"
+              }
+            },
+            "_row_num": 76,
+            "__rowNum__": 75,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen72",
+            "promptIdx": 53
+          },
+          {
+            "type": "date",
+            "name": "VAC11REG",
+            "display": {
+              "prompt": {
+                "text": "Date of registration"
+              }
+            },
+            "_row_num": 77,
+            "__rowNum__": 76,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen72",
+            "promptIdx": 54
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": "Vaccine 12"
+              }
+            },
+            "_row_num": 80,
+            "__rowNum__": 79,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen79",
+            "promptIdx": 55
+          },
+          {
+            "type": "select_one",
+            "values_list": "vactype",
+            "name": "VAC12TIPO",
+            "display": {
+              "prompt": {
+                "text": "Type of vaccine"
+              }
+            },
+            "_row_num": 81,
+            "__rowNum__": 80,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen79",
+            "promptIdx": 56
+          },
+          {
+            "type": "date",
+            "name": "VAC12DATA",
+            "display": {
+              "prompt": {
+                "text": "Date of vaccine"
+              }
+            },
+            "_row_num": 82,
+            "__rowNum__": 81,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen79",
+            "promptIdx": 57
+          },
+          {
+            "type": "select_one",
+            "values_list": "vacinf",
+            "name": "VAC12INF",
+            "display": {
+              "prompt": {
+                "text": "Informant"
+              }
+            },
+            "_row_num": 83,
+            "__rowNum__": 82,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen79",
+            "promptIdx": 58
+          },
+          {
+            "type": "date",
+            "name": "VAC12REG",
+            "display": {
+              "prompt": {
+                "text": "Date of registration"
+              }
+            },
+            "_row_num": 84,
+            "__rowNum__": 83,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen79",
+            "promptIdx": 59
+          },
+          {
+            "_token_type": "prompt",
+            "type": "contents",
+            "_type": "contents",
+            "_row_num": 86,
+            "_branch_label_enclosing_screen": "survey/_screen86",
+            "promptIdx": 60
+          }
+        ],
+        "validation_tag_map": {
+          "finalize": []
+        },
+        "operations": [
+          {
+            "clause": "begin screen",
+            "_row_num": 2,
+            "__rowNum__": 1,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 8,
+              "__rowNum__": 7,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\nactivePromptIndicies.push(1);\nactivePromptIndicies.push(2);\nactivePromptIndicies.push(3);\nactivePromptIndicies.push(4);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 0
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 9,
+            "__rowNum__": 8,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 15,
+              "__rowNum__": 14,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\nactivePromptIndicies.push(7);\nactivePromptIndicies.push(8);\nactivePromptIndicies.push(9);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 1
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 16,
+            "__rowNum__": 15,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 22,
+              "__rowNum__": 21,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(10);\nactivePromptIndicies.push(11);\nactivePromptIndicies.push(12);\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 2
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 23,
+            "__rowNum__": 22,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 29,
+              "__rowNum__": 28,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(15);\nactivePromptIndicies.push(16);\nactivePromptIndicies.push(17);\nactivePromptIndicies.push(18);\nactivePromptIndicies.push(19);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 3
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 30,
+            "__rowNum__": 29,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 36,
+              "__rowNum__": 35,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(20);\nactivePromptIndicies.push(21);\nactivePromptIndicies.push(22);\nactivePromptIndicies.push(23);\nactivePromptIndicies.push(24);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 4
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 37,
+            "__rowNum__": 36,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 43,
+              "__rowNum__": 42,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(25);\nactivePromptIndicies.push(26);\nactivePromptIndicies.push(27);\nactivePromptIndicies.push(28);\nactivePromptIndicies.push(29);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 5
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 44,
+            "__rowNum__": 43,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 50,
+              "__rowNum__": 49,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(30);\nactivePromptIndicies.push(31);\nactivePromptIndicies.push(32);\nactivePromptIndicies.push(33);\nactivePromptIndicies.push(34);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 6
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 51,
+            "__rowNum__": 50,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 57,
+              "__rowNum__": 56,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(35);\nactivePromptIndicies.push(36);\nactivePromptIndicies.push(37);\nactivePromptIndicies.push(38);\nactivePromptIndicies.push(39);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 7
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 58,
+            "__rowNum__": 57,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 64,
+              "__rowNum__": 63,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(40);\nactivePromptIndicies.push(41);\nactivePromptIndicies.push(42);\nactivePromptIndicies.push(43);\nactivePromptIndicies.push(44);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 8
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 65,
+            "__rowNum__": 64,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 71,
+              "__rowNum__": 70,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(45);\nactivePromptIndicies.push(46);\nactivePromptIndicies.push(47);\nactivePromptIndicies.push(48);\nactivePromptIndicies.push(49);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 9
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 72,
+            "__rowNum__": 71,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 78,
+              "__rowNum__": 77,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(50);\nactivePromptIndicies.push(51);\nactivePromptIndicies.push(52);\nactivePromptIndicies.push(53);\nactivePromptIndicies.push(54);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 10
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 79,
+            "__rowNum__": 78,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 85,
+              "__rowNum__": 84,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(55);\nactivePromptIndicies.push(56);\nactivePromptIndicies.push(57);\nactivePromptIndicies.push(58);\nactivePromptIndicies.push(59);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 11
+          },
+          {
+            "_token_type": "exit_section",
+            "clause": "exit section",
+            "_row_num": 86,
+            "operationIdx": 12
+          },
+          {
+            "_row_num": 86,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(60);\n\nreturn activePromptIndicies;\n}\n",
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 13
+          },
+          {
+            "_token_type": "resume",
+            "clause": "resume",
+            "_row_num": 86,
+            "operationIdx": 14
+          }
+        ],
+        "branch_label_map": {
+          "_screen2": 0,
+          "_screen9": 1,
+          "_screen16": 2,
+          "_screen23": 3,
+          "_screen30": 4,
+          "_screen37": 5,
+          "_screen44": 6,
+          "_screen51": 7,
+          "_screen58": 8,
+          "_screen65": 9,
+          "_screen72": 10,
+          "_screen79": 11,
+          "_contents": 13,
+          "_screen86": 13
+        }
+      },
+      "initial": {
+        "section_name": "initial",
+        "nested_sections": {
+          "survey": true
+        },
+        "reachable_sections": {
+          "survey": true
+        },
+        "prompts": [
+          {
+            "_row_num": 3,
+            "type": "opening",
+            "display": {
+              "text": "Edit form"
+            },
+            "_token_type": "prompt",
+            "_type": "opening",
+            "_branch_label_enclosing_screen": "initial/_screen3",
+            "promptIdx": 0
+          },
+          {
+            "_row_num": 4,
+            "clause": "do section survey",
+            "_token_type": "prompt",
+            "_do_section_name": "survey",
+            "_type": "_section",
+            "promptIdx": 1,
+            "display": {
+              "tittle": {
+                "text": "Woman in the fertile age - vaccinations"
+              },
+              "title": {
+                "text": {
+                  "portuguese": "Mulher na idade fertil - vacinas",
+                  "default": "Mulher na idade fertil - vacinas"
+                }
+              }
+            },
+            "_branch_label_enclosing_screen": "survey/0"
+          },
+          {
+            "_row_num": 5,
+            "type": "finalize",
+            "display": {
+              "text": "Save form"
+            },
+            "_token_type": "prompt",
+            "_type": "finalize",
+            "_branch_label_enclosing_screen": "initial/_screen5",
+            "promptIdx": 2
+          },
+          {
+            "_row_num": 7,
+            "type": "instances",
+            "display": {
+              "text": "Saved instances"
+            },
+            "_token_type": "prompt",
+            "_type": "instances",
+            "_branch_label_enclosing_screen": "initial/_screen7",
+            "promptIdx": 3
+          },
+          {
+            "_token_type": "prompt",
+            "type": "contents",
+            "_type": "contents",
+            "_row_num": 9,
+            "_branch_label_enclosing_screen": "initial/_screen9",
+            "promptIdx": 4
+          }
+        ],
+        "validation_tag_map": {
+          "finalize": []
+        },
+        "operations": [
+          {
+            "_row_num": 2,
+            "clause": "if // start",
+            "condition": "(opendatakit.getCurrentInstanceId() != null)",
+            "_token_type": "goto_label",
+            "_tag_name": "start",
+            "_branch_label": "_then2",
+            "operationIdx": 0
+          },
+          {
+            "clause": "else // start",
+            "_token_type": "goto_label",
+            "_branch_label": "_else6",
+            "_row_num": 6,
+            "operationIdx": 1
+          },
+          {
+            "_row_num": 3,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 2
+          },
+          {
+            "_row_num": 4,
+            "clause": "do section survey",
+            "_token_type": "do_section",
+            "_do_section_name": "survey",
+            "operationIdx": 3
+          },
+          {
+            "_row_num": 5,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(2);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 4
+          },
+          {
+            "clause": "end if // start",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif8",
+            "_row_num": 8,
+            "operationIdx": 5
+          },
+          {
+            "_row_num": 7,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(3);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 6
+          },
+          {
+            "_token_type": "exit_section",
+            "clause": "exit section",
+            "_row_num": 9,
+            "operationIdx": 7
+          },
+          {
+            "_row_num": 9,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(4);\n\nreturn activePromptIndicies;\n}\n",
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 8
+          },
+          {
+            "_token_type": "resume",
+            "clause": "resume",
+            "_row_num": 9,
+            "operationIdx": 9
+          },
+          {
+            "_token_type": "validate",
+            "clause": "validate finalize",
+            "_sweep_name": "finalize",
+            "_row_num": 9,
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 10
+          },
+          {
+            "_token_type": "save_and_terminate",
+            "clause": "save and terminate",
+            "calculation": true,
+            "_row_num": 9,
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 11
+          },
+          {
+            "_token_type": "resume",
+            "clause": "resume",
+            "_row_num": 9,
+            "operationIdx": 12
+          }
+        ],
+        "branch_label_map": {
+          "_then2": 2,
+          "_screen3": 2,
+          "_screen5": 4,
+          "_else6": 6,
+          "_screen7": 6,
+          "_endif8": 7,
+          "_contents": 8,
+          "_screen9": 8,
+          "_finalize": 10
+        }
+      }
+    },
+    "dataTableModel": {
+      "ID": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 2,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ID",
+        "elementName": "ID",
+        "elementSet": "data",
+        "elementPath": "ID"
+      },
+      "VAC10DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 68,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC10DATA",
+        "elementName": "VAC10DATA",
+        "elementSet": "data",
+        "elementPath": "VAC10DATA"
+      },
+      "VAC10INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 69,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 4,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC10INF",
+        "elementName": "VAC10INF",
+        "elementSet": "data",
+        "elementPath": "VAC10INF"
+      },
+      "VAC10REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 70,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 5,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC10REG",
+        "elementName": "VAC10REG",
+        "elementSet": "data",
+        "elementPath": "VAC10REG"
+      },
+      "VAC10TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 67,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 6,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC10TIPO",
+        "elementName": "VAC10TIPO",
+        "elementSet": "data",
+        "elementPath": "VAC10TIPO"
+      },
+      "VAC11DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 75,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 7,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC11DATA",
+        "elementName": "VAC11DATA",
+        "elementSet": "data",
+        "elementPath": "VAC11DATA"
+      },
+      "VAC11INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 76,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 8,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC11INF",
+        "elementName": "VAC11INF",
+        "elementSet": "data",
+        "elementPath": "VAC11INF"
+      },
+      "VAC11REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 77,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC11REG",
+        "elementName": "VAC11REG",
+        "elementSet": "data",
+        "elementPath": "VAC11REG"
+      },
+      "VAC11TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 74,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 10,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC11TIPO",
+        "elementName": "VAC11TIPO",
+        "elementSet": "data",
+        "elementPath": "VAC11TIPO"
+      },
+      "VAC12DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 82,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC12DATA",
+        "elementName": "VAC12DATA",
+        "elementSet": "data",
+        "elementPath": "VAC12DATA"
+      },
+      "VAC12INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 83,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC12INF",
+        "elementName": "VAC12INF",
+        "elementSet": "data",
+        "elementPath": "VAC12INF"
+      },
+      "VAC12REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 84,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 13,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC12REG",
+        "elementName": "VAC12REG",
+        "elementSet": "data",
+        "elementPath": "VAC12REG"
+      },
+      "VAC12TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 81,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC12TIPO",
+        "elementName": "VAC12TIPO",
+        "elementSet": "data",
+        "elementPath": "VAC12TIPO"
+      },
+      "VAC1DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 5,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 15,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1DATA",
+        "elementName": "VAC1DATA",
+        "elementSet": "data",
+        "elementPath": "VAC1DATA"
+      },
+      "VAC1INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 6,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 16,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1INF",
+        "elementName": "VAC1INF",
+        "elementSet": "data",
+        "elementPath": "VAC1INF"
+      },
+      "VAC1REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 7,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 17,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1REG",
+        "elementName": "VAC1REG",
+        "elementSet": "data",
+        "elementPath": "VAC1REG"
+      },
+      "VAC1TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 4,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 18,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1TIPO",
+        "elementName": "VAC1TIPO",
+        "elementSet": "data",
+        "elementPath": "VAC1TIPO"
+      },
+      "VAC2DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 19,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC2DATA",
+        "elementName": "VAC2DATA",
+        "elementSet": "data",
+        "elementPath": "VAC2DATA"
+      },
+      "VAC2INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 13,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 20,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC2INF",
+        "elementName": "VAC2INF",
+        "elementSet": "data",
+        "elementPath": "VAC2INF"
+      },
+      "VAC2REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 14,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC2REG",
+        "elementName": "VAC2REG",
+        "elementSet": "data",
+        "elementPath": "VAC2REG"
+      },
+      "VAC2TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 22,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC2TIPO",
+        "elementName": "VAC2TIPO",
+        "elementSet": "data",
+        "elementPath": "VAC2TIPO"
+      },
+      "VAC3DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 19,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 23,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC3DATA",
+        "elementName": "VAC3DATA",
+        "elementSet": "data",
+        "elementPath": "VAC3DATA"
+      },
+      "VAC3INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 20,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 24,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC3INF",
+        "elementName": "VAC3INF",
+        "elementSet": "data",
+        "elementPath": "VAC3INF"
+      },
+      "VAC3REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 21,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 25,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC3REG",
+        "elementName": "VAC3REG",
+        "elementSet": "data",
+        "elementPath": "VAC3REG"
+      },
+      "VAC3TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 18,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 26,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC3TIPO",
+        "elementName": "VAC3TIPO",
+        "elementSet": "data",
+        "elementPath": "VAC3TIPO"
+      },
+      "VAC4DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 26,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 27,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC4DATA",
+        "elementName": "VAC4DATA",
+        "elementSet": "data",
+        "elementPath": "VAC4DATA"
+      },
+      "VAC4INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 27,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 28,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC4INF",
+        "elementName": "VAC4INF",
+        "elementSet": "data",
+        "elementPath": "VAC4INF"
+      },
+      "VAC4REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 28,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 29,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC4REG",
+        "elementName": "VAC4REG",
+        "elementSet": "data",
+        "elementPath": "VAC4REG"
+      },
+      "VAC4TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 25,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 30,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC4TIPO",
+        "elementName": "VAC4TIPO",
+        "elementSet": "data",
+        "elementPath": "VAC4TIPO"
+      },
+      "VAC5DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 33,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 31,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC5DATA",
+        "elementName": "VAC5DATA",
+        "elementSet": "data",
+        "elementPath": "VAC5DATA"
+      },
+      "VAC5INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 34,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 32,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC5INF",
+        "elementName": "VAC5INF",
+        "elementSet": "data",
+        "elementPath": "VAC5INF"
+      },
+      "VAC5REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 35,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 33,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC5REG",
+        "elementName": "VAC5REG",
+        "elementSet": "data",
+        "elementPath": "VAC5REG"
+      },
+      "VAC5TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 32,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 34,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC5TIPO",
+        "elementName": "VAC5TIPO",
+        "elementSet": "data",
+        "elementPath": "VAC5TIPO"
+      },
+      "VAC6DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 40,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 35,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC6DATA",
+        "elementName": "VAC6DATA",
+        "elementSet": "data",
+        "elementPath": "VAC6DATA"
+      },
+      "VAC6INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 41,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 36,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC6INF",
+        "elementName": "VAC6INF",
+        "elementSet": "data",
+        "elementPath": "VAC6INF"
+      },
+      "VAC6REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 42,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 37,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC6REG",
+        "elementName": "VAC6REG",
+        "elementSet": "data",
+        "elementPath": "VAC6REG"
+      },
+      "VAC6TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 39,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 38,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC6TIPO",
+        "elementName": "VAC6TIPO",
+        "elementSet": "data",
+        "elementPath": "VAC6TIPO"
+      },
+      "VAC7DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 47,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 39,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC7DATA",
+        "elementName": "VAC7DATA",
+        "elementSet": "data",
+        "elementPath": "VAC7DATA"
+      },
+      "VAC7INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 48,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 40,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC7INF",
+        "elementName": "VAC7INF",
+        "elementSet": "data",
+        "elementPath": "VAC7INF"
+      },
+      "VAC7REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 49,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 41,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC7REG",
+        "elementName": "VAC7REG",
+        "elementSet": "data",
+        "elementPath": "VAC7REG"
+      },
+      "VAC7TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 46,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 42,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC7TIPO",
+        "elementName": "VAC7TIPO",
+        "elementSet": "data",
+        "elementPath": "VAC7TIPO"
+      },
+      "VAC8DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 54,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 43,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC8DATA",
+        "elementName": "VAC8DATA",
+        "elementSet": "data",
+        "elementPath": "VAC8DATA"
+      },
+      "VAC8INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 55,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 44,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC8INF",
+        "elementName": "VAC8INF",
+        "elementSet": "data",
+        "elementPath": "VAC8INF"
+      },
+      "VAC8REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 56,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 45,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC8REG",
+        "elementName": "VAC8REG",
+        "elementSet": "data",
+        "elementPath": "VAC8REG"
+      },
+      "VAC8TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 53,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 46,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC8TIPO",
+        "elementName": "VAC8TIPO",
+        "elementSet": "data",
+        "elementPath": "VAC8TIPO"
+      },
+      "VAC9DATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 61,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 47,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC9DATA",
+        "elementName": "VAC9DATA",
+        "elementSet": "data",
+        "elementPath": "VAC9DATA"
+      },
+      "VAC9INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 62,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 48,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC9INF",
+        "elementName": "VAC9INF",
+        "elementSet": "data",
+        "elementPath": "VAC9INF"
+      },
+      "VAC9REG": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 63,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 49,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC9REG",
+        "elementName": "VAC9REG",
+        "elementSet": "data",
+        "elementPath": "VAC9REG"
+      },
+      "VAC9TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 60,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 50,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC9TIPO",
+        "elementName": "VAC9TIPO",
+        "elementSet": "data",
+        "elementPath": "VAC9TIPO"
+      },
+      "_id": {
+        "type": "string",
+        "isNotNullable": true,
+        "elementKey": "_id",
+        "elementName": "_id",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_id"
+      },
+      "_row_etag": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_row_etag",
+        "elementName": "_row_etag",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_row_etag"
+      },
+      "_sync_state": {
+        "type": "string",
+        "isNotNullable": true,
+        "elementKey": "_sync_state",
+        "elementName": "_sync_state",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_sync_state"
+      },
+      "_conflict_type": {
+        "type": "integer",
+        "isNotNullable": false,
+        "elementKey": "_conflict_type",
+        "elementName": "_conflict_type",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_conflict_type"
+      },
+      "_default_access": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_default_access",
+        "elementName": "_default_access",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_default_access"
+      },
+      "_form_id": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_form_id",
+        "elementName": "_form_id",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_form_id"
+      },
+      "_group_modify": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_group_modify",
+        "elementName": "_group_modify",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_group_modify"
+      },
+      "_group_privileged": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_group_privileged",
+        "elementName": "_group_privileged",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_group_privileged"
+      },
+      "_group_read_only": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_group_read_only",
+        "elementName": "_group_read_only",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_group_read_only"
+      },
+      "_locale": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_locale",
+        "elementName": "_locale",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_locale"
+      },
+      "_row_owner": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_row_owner",
+        "elementName": "_row_owner",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_row_owner"
+      },
+      "_savepoint_type": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_savepoint_type",
+        "elementName": "_savepoint_type",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_savepoint_type"
+      },
+      "_savepoint_timestamp": {
+        "type": "string",
+        "isNotNullable": true,
+        "elementKey": "_savepoint_timestamp",
+        "elementName": "_savepoint_timestamp",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_savepoint_timestamp"
+      },
+      "_savepoint_creator": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_savepoint_creator",
+        "elementName": "_savepoint_creator",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_savepoint_creator"
+      }
+    },
+    "properties": [
+      {
+        "_partition": "Column",
+        "_aspect": "VAC10INF",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vacinf\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"Vaccination card\"}},\"_row_num\":3},{\"choice_list_name\":\"vacinf\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":\"Pregnancy card\"}},\"_row_num\":4}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC10TIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vactype\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"TT vaccine\"}},\"_row_num\":2}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC11INF",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vacinf\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"Vaccination card\"}},\"_row_num\":3},{\"choice_list_name\":\"vacinf\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":\"Pregnancy card\"}},\"_row_num\":4}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC11TIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vactype\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"TT vaccine\"}},\"_row_num\":2}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC12INF",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vacinf\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"Vaccination card\"}},\"_row_num\":3},{\"choice_list_name\":\"vacinf\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":\"Pregnancy card\"}},\"_row_num\":4}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC12TIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vactype\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"TT vaccine\"}},\"_row_num\":2}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC1INF",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vacinf\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"Vaccination card\"}},\"_row_num\":3},{\"choice_list_name\":\"vacinf\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":\"Pregnancy card\"}},\"_row_num\":4}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC1TIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vactype\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"TT vaccine\"}},\"_row_num\":2}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC2INF",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vacinf\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"Vaccination card\"}},\"_row_num\":3},{\"choice_list_name\":\"vacinf\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":\"Pregnancy card\"}},\"_row_num\":4}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC2TIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vactype\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"TT vaccine\"}},\"_row_num\":2}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC3INF",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vacinf\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"Vaccination card\"}},\"_row_num\":3},{\"choice_list_name\":\"vacinf\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":\"Pregnancy card\"}},\"_row_num\":4}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC3TIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vactype\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"TT vaccine\"}},\"_row_num\":2}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC4INF",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vacinf\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"Vaccination card\"}},\"_row_num\":3},{\"choice_list_name\":\"vacinf\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":\"Pregnancy card\"}},\"_row_num\":4}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC4TIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vactype\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"TT vaccine\"}},\"_row_num\":2}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC5INF",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vacinf\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"Vaccination card\"}},\"_row_num\":3},{\"choice_list_name\":\"vacinf\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":\"Pregnancy card\"}},\"_row_num\":4}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC5TIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vactype\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"TT vaccine\"}},\"_row_num\":2}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC6INF",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vacinf\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"Vaccination card\"}},\"_row_num\":3},{\"choice_list_name\":\"vacinf\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":\"Pregnancy card\"}},\"_row_num\":4}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC6TIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vactype\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"TT vaccine\"}},\"_row_num\":2}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC7INF",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vacinf\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"Vaccination card\"}},\"_row_num\":3},{\"choice_list_name\":\"vacinf\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":\"Pregnancy card\"}},\"_row_num\":4}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC7TIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vactype\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"TT vaccine\"}},\"_row_num\":2}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC8INF",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vacinf\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"Vaccination card\"}},\"_row_num\":3},{\"choice_list_name\":\"vacinf\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":\"Pregnancy card\"}},\"_row_num\":4}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC8TIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vactype\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"TT vaccine\"}},\"_row_num\":2}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC9INF",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vacinf\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"Vaccination card\"}},\"_row_num\":3},{\"choice_list_name\":\"vacinf\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":\"Pregnancy card\"}},\"_row_num\":4}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC9TIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vactype\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"TT vaccine\"}},\"_row_num\":2}]"
+      },
+      {
+        "_partition": "FormType",
+        "_aspect": "default",
+        "_key": "FormType.formType",
+        "_type": "string",
+        "_value": "SURVEY"
+      },
+      {
+        "_partition": "SurveyUtil",
+        "_aspect": "default",
+        "_key": "SurveyUtil.formId",
+        "_type": "string",
+        "_value": "MIFVAC"
+      },
+      {
+        "_partition": "Table",
+        "_aspect": "default",
+        "_key": "defaultViewType",
+        "_type": "string",
+        "_value": "SPREADSHEET"
+      },
+      {
+        "_partition": "Table",
+        "_aspect": "default",
+        "_key": "displayName",
+        "_type": "object",
+        "_value": "{\"text\":{\"portuguese\":\"Mulher na idade fertil - vacinas\",\"default\":\"Mulher na idade fertil - vacinas\"}}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,5000 @@
+{
+  "xlsx": {
+    "settings": [
+      {
+        "setting_name": "form_id",
+        "value": "MIFVISIT_CORE",
+        "_row_num": 2
+      },
+      {
+        "setting_name": "form_version",
+        "value": 270519,
+        "_row_num": 3
+      },
+      {
+        "setting_name": "table_id",
+        "value": "MIFVISIT_CORE",
+        "_row_num": 4
+      },
+      {
+        "setting_name": "survey",
+        "display": {
+          "tittle": {
+            "text": "Woman in the fertile age - visit_core"
+          },
+          "title": {
+            "text": {
+              "portuguese": "Mulher na idade fertil - visitas_núcleo",
+              "default": "Mulher na idade fertil - visitas_núcleo"
+            }
+          }
+        },
+        "_row_num": 5
+      },
+      {
+        "setting_name": "default",
+        "display": {
+          "locale": {
+            "text": {
+              "default": "English",
+              "portuguese": "Inglês"
+            }
+          }
+        },
+        "_row_num": 6
+      },
+      {
+        "setting_name": "portuguese",
+        "display": {
+          "locale": {
+            "text": {
+              "default": "Portuguese",
+              "portuguese": "Portugues"
+            }
+          }
+        },
+        "_row_num": 7
+      },
+      {
+        "setting_name": "font-size",
+        "value": "20pt",
+        "_row_num": 8
+      },
+      {
+        "setting_name": "instance_name",
+        "value": "ESTADO",
+        "_row_num": 9
+      }
+    ],
+    "survey": [
+      {
+        "clause": "begin screen",
+        "_row_num": 2
+      },
+      {
+        "type": "date",
+        "name": "CONT",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Day of visit",
+              "portuguese": "Data de visita"
+            }
+          }
+        },
+        "_row_num": 3
+      },
+      {
+        "type": "select_one",
+        "values_list": "assistent",
+        "name": "ASSISTENTE",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Assistent",
+              "portuguese": "Assistente"
+            }
+          }
+        },
+        "_row_num": 4
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 5
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 6
+      },
+      {
+        "type": "select_one",
+        "values_list": "visitstatus",
+        "name": "ESTADOVIS",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Status of the woman",
+              "portuguese": "Estado da mulher"
+            }
+          }
+        },
+        "_row_num": 7
+      },
+      {
+        "clause": "if",
+        "condition": "data('ESTADOVIS') ==  '2' || data('ESTADOVIS') ==  '3'",
+        "_row_num": 8
+      },
+      {
+        "type": "date",
+        "name": "EXITDATA",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Exit date",
+              "portuguese": "Data de saída"
+            }
+          }
+        },
+        "_row_num": 9
+      },
+      {
+        "type": "select_one",
+        "values_list": "precision",
+        "name": "EXITPRECIS",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Precision of exit date",
+              "portuguese": "Certo da data de saída"
+            }
+          }
+        },
+        "_row_num": 10
+      },
+      {
+        "clause": "if",
+        "condition": "data('ESTADOVIS') ==  '2'",
+        "_row_num": 11
+      },
+      {
+        "type": "text",
+        "name": "EXITMUDO",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Where?",
+              "portuguese": "Onde?"
+            }
+          }
+        },
+        "_row_num": 12
+      },
+      {
+        "clause": "end if",
+        "_row_num": 13
+      },
+      {
+        "clause": "end if",
+        "_row_num": 14
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 15
+      },
+      {
+        "clause": "if",
+        "condition": "data('CONSENTSIG') != '1' && data('ESTADOVIS') == '1'",
+        "_row_num": 16
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 17
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "CONSENTFOR",
+        "display": {
+          "prompt": {
+            "text": "Has a consent form been produced?"
+          }
+        },
+        "_row_num": 18
+      },
+      {
+        "clause": "if",
+        "condition": "data('CONSENTFOR') == '1'",
+        "_row_num": 19
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "CONSENTSIG",
+        "display": {
+          "prompt": {
+            "text": "Is the consent form signed?"
+          }
+        },
+        "_row_num": 20
+      },
+      {
+        "clause": "if",
+        "condition": "data('CONSENTSIG') == '1'",
+        "_row_num": 21
+      },
+      {
+        "type": "select_one",
+        "values_list": "signature",
+        "name": "CONSENTTYP",
+        "display": {
+          "prompt": {
+            "text": "Type of signature"
+          }
+        },
+        "_row_num": 22
+      },
+      {
+        "type": "date",
+        "name": "CONSENTDAT",
+        "display": {
+          "prompt": {
+            "text": "Date of signature"
+          }
+        },
+        "_row_num": 23
+      },
+      {
+        "clause": "end if",
+        "_row_num": 24
+      },
+      {
+        "clause": "end if",
+        "_row_num": 25
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 26
+      },
+      {
+        "clause": "end if",
+        "_row_num": 27
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 28
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "GR",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Pregnant?",
+              "portuguese": "Grávida?"
+            }
+          }
+        },
+        "_row_num": 29
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "PARPAD",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Stopped giving birth?",
+              "portuguese": "Parou Parir?"
+            }
+          }
+        },
+        "_row_num": 30
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 31
+      },
+      {
+        "clause": "if",
+        "condition": "data('PARPAD') != '1'",
+        "_row_num": 32
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 33
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "ABPART",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Birth/miscarrige since last visit?",
+              "portuguese": "Teve parto/aborto desde ultimo visita?"
+            }
+          },
+          "hint": {
+            "text": "Last visit: {{data.LASTVISIT}}"
+          }
+        },
+        "_row_num": 34
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 35
+      },
+      {
+        "clause": "if",
+        "condition": "data('ABPART') == '1'",
+        "_row_num": 36
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 37
+      },
+      {
+        "type": "date",
+        "name": "ABPARTDATA",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Date of delivery",
+              "portuguese": "Data de parto"
+            }
+          }
+        },
+        "_row_num": 38
+      },
+      {
+        "type": "select_one",
+        "values_list": "precision",
+        "name": "ABPARTPRECIS",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Precision of delivery date",
+              "portuguese": "Certo da data de parto"
+            }
+          }
+        },
+        "_row_num": 39
+      },
+      {
+        "type": "select_one",
+        "values_list": "birthoutcome",
+        "name": "ABPARTTIPO",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Type of delivery",
+              "portuguese": "Tipo de parto"
+            }
+          }
+        },
+        "_row_num": 40
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 41
+      },
+      {
+        "clause": "if",
+        "condition": "data('ABPARTTIPO') == '1'",
+        "_row_num": 42
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 43
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "ABPARTNV",
+        "display": {
+          "prompt": {
+            "text": "Is the child still alive?"
+          }
+        },
+        "_row_num": 44
+      },
+      {
+        "clause": "if",
+        "condition": "data('ABPARTNV') == '2'",
+        "_row_num": 45
+      },
+      {
+        "type": "date",
+        "name": "ABPARTNVDATA",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Date of death",
+              "portuguese": "Data de falecimento"
+            }
+          }
+        },
+        "_row_num": 46
+      },
+      {
+        "type": "select_one",
+        "values_list": "precision",
+        "name": "ABPARTNVPRECIS",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Precision of death date",
+              "portuguese": "Certo da data de falecimento"
+            }
+          }
+        },
+        "_row_num": 47
+      },
+      {
+        "clause": "end if",
+        "_row_num": 48
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 49
+      },
+      {
+        "clause": "end if",
+        "_row_num": 50
+      },
+      {
+        "clause": "end if",
+        "_row_num": 51
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 52
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "EVITA",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Use contraceptives?",
+              "portuguese": "Utiliza alguma coisa para evitar grávidez?"
+            }
+          }
+        },
+        "_row_num": 53
+      },
+      {
+        "clause": "if",
+        "condition": "data('EVITA') == '1'",
+        "_row_num": 54
+      },
+      {
+        "type": "select_multiple",
+        "values_list": "contraceptive",
+        "name": "EVITA2",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "What type?",
+              "portuguese": "Qual tipo?"
+            }
+          }
+        },
+        "_row_num": 55
+      },
+      {
+        "clause": "end if",
+        "_row_num": 56
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 57
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 58
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "TENDAYN",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Slept under bednet last night?",
+              "portuguese": "Dormir na tenda ontem?"
+            }
+          }
+        },
+        "_row_num": 59
+      },
+      {
+        "type": "select_one",
+        "values_list": "bednettime",
+        "name": "TENDA",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Period using bednet",
+              "portuguese": "Todo tempo?"
+            }
+          }
+        },
+        "_row_num": 60
+      },
+      {
+        "clause": "if",
+        "condition": "data('TENDAYN') == '1'",
+        "_row_num": 61
+      },
+      {
+        "type": "select_one",
+        "values_list": "bednet",
+        "name": "TENDATIPO",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Type of bednet",
+              "portuguese": "Qual tipo?"
+            }
+          }
+        },
+        "_row_num": 62
+      },
+      {
+        "clause": "end if",
+        "_row_num": 63
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 64
+      },
+      {
+        "clause": "if",
+        "condition": "data('ESTADOVIS') ==  '1' && data('CICA') == null",
+        "_row_num": 65
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 66
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": "Scar status"
+          }
+        },
+        "_row_num": 67
+      },
+      {
+        "type": "linked_table",
+        "values_list": "scar",
+        "_row_num": 68
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 69
+      },
+      {
+        "clause": "end if",
+        "_row_num": 70
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 71
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNo",
+        "name": "V",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Card documenting vaccinations",
+              "portuguese": "Cartão documentando vacinas"
+            }
+          }
+        },
+        "_row_num": 72
+      },
+      {
+        "clause": "if",
+        "condition": "data('V') == '1'",
+        "_row_num": 73
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": "Fill in the vaccines"
+          },
+          "hint": {
+            "text": "Vaccine data"
+          }
+        },
+        "_row_num": 74
+      },
+      {
+        "type": "linked_table",
+        "values_list": "vaccines",
+        "_row_num": 75
+      },
+      {
+        "clause": "end if",
+        "_row_num": 76
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 77
+      },
+      {
+        "clause": "end if",
+        "_row_num": 78
+      }
+    ],
+    "choices": [
+      {
+        "choice_list_name": "YesNo",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Yes",
+              "portuguese": "Sim"
+            }
+          }
+        },
+        "_row_num": 2
+      },
+      {
+        "choice_list_name": "YesNo",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "default": "No",
+              "portuguese": "Não"
+            }
+          }
+        },
+        "_row_num": 3
+      },
+      {
+        "choice_list_name": "YesNoU",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Yes",
+              "portuguese": "Sim"
+            }
+          }
+        },
+        "_row_num": 4
+      },
+      {
+        "choice_list_name": "YesNoU",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "default": "No",
+              "portuguese": "Não"
+            }
+          }
+        },
+        "_row_num": 5
+      },
+      {
+        "choice_list_name": "YesNoU",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Don't know",
+              "portuguese": "Não sabe"
+            }
+          }
+        },
+        "_row_num": 6
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "9",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Alfa",
+              "portuguese": "Alfa"
+            }
+          }
+        },
+        "_row_num": 7
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "25",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Alficene",
+              "portuguese": "Alficene"
+            }
+          }
+        },
+        "_row_num": 8
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "17",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Amadu",
+              "portuguese": "Amadu"
+            }
+          }
+        },
+        "_row_num": 9
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "8",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Antonio",
+              "portuguese": "Antonio"
+            }
+          }
+        },
+        "_row_num": 10
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "12",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Armando",
+              "portuguese": "Armando"
+            }
+          }
+        },
+        "_row_num": 11
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Augusto Lopes",
+              "portuguese": "Augusto Lopes"
+            }
+          }
+        },
+        "_row_num": 12
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "24",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Besna",
+              "portuguese": "Besna"
+            }
+          }
+        },
+        "_row_num": 13
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "7",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Calisto",
+              "portuguese": "Calisto"
+            }
+          }
+        },
+        "_row_num": 14
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "13",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Celestino",
+              "portuguese": "Celestino"
+            }
+          }
+        },
+        "_row_num": 15
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "6",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Cesar",
+              "portuguese": "Cesar"
+            }
+          }
+        },
+        "_row_num": 16
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "18",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Claudino",
+              "portuguese": "Claudino"
+            }
+          }
+        },
+        "_row_num": 17
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "26",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Demba",
+              "portuguese": "Demba"
+            }
+          }
+        },
+        "_row_num": 18
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "27",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Eduardo",
+              "portuguese": "Eduardo"
+            }
+          }
+        },
+        "_row_num": 19
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "15",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Iaia",
+              "portuguese": "Iaia"
+            }
+          }
+        },
+        "_row_num": 20
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "23",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Igualdino",
+              "portuguese": "Igualdino"
+            }
+          }
+        },
+        "_row_num": 21
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "22",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Jailson",
+              "portuguese": "Jailson"
+            }
+          }
+        },
+        "_row_num": 22
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "14",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Makci",
+              "portuguese": "Makci"
+            }
+          }
+        },
+        "_row_num": 23
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "10",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Malam",
+              "portuguese": "Malam"
+            }
+          }
+        },
+        "_row_num": 24
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "11",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Maudo",
+              "portuguese": "Maudo"
+            }
+          }
+        },
+        "_row_num": 25
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "19",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Namir",
+              "portuguese": "Namir"
+            }
+          }
+        },
+        "_row_num": 26
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Nene Mario",
+              "portuguese": "Nene Mario"
+            }
+          }
+        },
+        "_row_num": 27
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "5",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Nuno",
+              "portuguese": "Nuno"
+            }
+          }
+        },
+        "_row_num": 28
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "16",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Oides",
+              "portuguese": "Oides"
+            }
+          }
+        },
+        "_row_num": 29
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Sana",
+              "portuguese": "Sana"
+            }
+          }
+        },
+        "_row_num": 30
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "4",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Simoneo",
+              "portuguese": "Simoneo"
+            }
+          }
+        },
+        "_row_num": 31
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "20",
+        "display": {
+          "title": {
+            "text": {
+              "default": "William",
+              "portuguese": "William"
+            }
+          }
+        },
+        "_row_num": 32
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "21",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Wilson",
+              "portuguese": "Wilson"
+            }
+          }
+        },
+        "_row_num": 33
+      },
+      {
+        "choice_list_name": "assistent",
+        "data_value": "79",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Sanne/Ane",
+              "portuguese": "Sanne/Ane"
+            }
+          }
+        },
+        "_row_num": 34
+      },
+      {
+        "choice_list_name": "precision",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Day certain",
+              "portuguese": "Dia certo"
+            }
+          }
+        },
+        "_row_num": 35
+      },
+      {
+        "choice_list_name": "precision",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Month certain",
+              "portuguese": "Mes certo"
+            }
+          }
+        },
+        "_row_num": 36
+      },
+      {
+        "choice_list_name": "precision",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Season certain",
+              "portuguese": "Estação certo"
+            }
+          }
+        },
+        "_row_num": 37
+      },
+      {
+        "choice_list_name": "precision",
+        "data_value": "4",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Year certain",
+              "portuguese": "Ano certo"
+            }
+          }
+        },
+        "_row_num": 38
+      },
+      {
+        "choice_list_name": "visitstatus",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Present",
+              "portuguese": "Presente"
+            }
+          }
+        },
+        "_row_num": 39
+      },
+      {
+        "choice_list_name": "visitstatus",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Moved out",
+              "portuguese": "Mudou"
+            }
+          }
+        },
+        "_row_num": 40
+      },
+      {
+        "choice_list_name": "visitstatus",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Dead",
+              "portuguese": "Faleceu"
+            }
+          }
+        },
+        "_row_num": 41
+      },
+      {
+        "choice_list_name": "visitstatus",
+        "data_value": "4",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Absent",
+              "portuguese": "Ausente"
+            }
+          }
+        },
+        "_row_num": 42
+      },
+      {
+        "choice_list_name": "visitstatus",
+        "data_value": "5",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Travelling",
+              "portuguese": "Viagem"
+            }
+          }
+        },
+        "_row_num": 43
+      },
+      {
+        "choice_list_name": "visitstatus",
+        "data_value": "7",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Not visited",
+              "portuguese": "Não visitada"
+            }
+          }
+        },
+        "_row_num": 44
+      },
+      {
+        "choice_list_name": "signature",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": "Signature"
+          }
+        },
+        "_row_num": 45
+      },
+      {
+        "choice_list_name": "signature",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": "Fingerprint"
+          }
+        },
+        "_row_num": 46
+      },
+      {
+        "choice_list_name": "bednet",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Impregnated net",
+              "portuguese": "Tenda impregnada"
+            }
+          }
+        },
+        "_row_num": 47
+      },
+      {
+        "choice_list_name": "bednet",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Simple bednet",
+              "portuguese": "Tenda simples"
+            }
+          }
+        },
+        "_row_num": 48
+      },
+      {
+        "choice_list_name": "bednet",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Unknown type",
+              "portuguese": "Não sabe"
+            }
+          }
+        },
+        "_row_num": 49
+      },
+      {
+        "choice_list_name": "bednettime",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "default": "All year",
+              "portuguese": "Tudo Ano"
+            }
+          }
+        },
+        "_row_num": 50
+      },
+      {
+        "choice_list_name": "bednettime",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Rainy season",
+              "portuguese": "Chuva"
+            }
+          }
+        },
+        "_row_num": 51
+      },
+      {
+        "choice_list_name": "bednettime",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Never",
+              "portuguese": "Nunca"
+            }
+          }
+        },
+        "_row_num": 52
+      },
+      {
+        "choice_list_name": "bednettime",
+        "data_value": "4",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Other",
+              "portuguese": "Outra/o"
+            }
+          }
+        },
+        "_row_num": 53
+      },
+      {
+        "choice_list_name": "birthoutcome",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Live birth",
+              "portuguese": "Nado vivo"
+            }
+          }
+        },
+        "_row_num": 54
+      },
+      {
+        "choice_list_name": "birthoutcome",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Stillbirth",
+              "portuguese": "Nado morto"
+            }
+          }
+        },
+        "_row_num": 55
+      },
+      {
+        "choice_list_name": "birthoutcome",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Miscarriage",
+              "portuguese": "Aborto"
+            }
+          }
+        },
+        "_row_num": 56
+      },
+      {
+        "choice_list_name": "contraceptive",
+        "data_value": "PILULA",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Pill",
+              "portuguese": "Pílula"
+            }
+          }
+        },
+        "_row_num": 57
+      },
+      {
+        "choice_list_name": "contraceptive",
+        "data_value": "JADELLE",
+        "display": {
+          "title": {
+            "text": {
+              "default": "P-rod",
+              "portuguese": "Jadelle"
+            }
+          }
+        },
+        "_row_num": 58
+      },
+      {
+        "choice_list_name": "contraceptive",
+        "data_value": "DIU",
+        "display": {
+          "title": {
+            "text": {
+              "default": "IUD",
+              "portuguese": "Anilha"
+            }
+          }
+        },
+        "_row_num": 59
+      },
+      {
+        "choice_list_name": "contraceptive",
+        "data_value": "CAMISINHA",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Condom",
+              "portuguese": "Camisinha"
+            }
+          }
+        },
+        "_row_num": 60
+      },
+      {
+        "choice_list_name": "contraceptive",
+        "data_value": "FEMIDOM",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Femidom",
+              "portuguese": "Femidom"
+            }
+          }
+        },
+        "_row_num": 61
+      },
+      {
+        "choice_list_name": "contraceptive",
+        "data_value": "DEPO",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Depo",
+              "portuguese": "Depo"
+            }
+          }
+        },
+        "_row_num": 62
+      },
+      {
+        "choice_list_name": "contraceptive",
+        "data_value": "ESTERIL-F",
+        "display": {
+          "title": {
+            "text": {
+              "default": "F-Steriliastion",
+              "portuguese": "Esteril-F"
+            }
+          }
+        },
+        "_row_num": 63
+      },
+      {
+        "choice_list_name": "contraceptive",
+        "data_value": "ESTERIL-M",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Vasectomy",
+              "portuguese": "Vasectomia"
+            }
+          }
+        },
+        "_row_num": 64
+      },
+      {
+        "choice_list_name": "contraceptive",
+        "data_value": "EMERCENCIA",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Morning after pill",
+              "portuguese": "Pílulas do dia seguinte."
+            }
+          }
+        },
+        "_row_num": 65
+      },
+      {
+        "choice_list_name": "contraceptive",
+        "data_value": "OUTRA",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Other",
+              "portuguese": "Outra/o"
+            }
+          }
+        },
+        "_row_num": 66
+      },
+      {
+        "choice_list_name": "contraceptive",
+        "data_value": "TRADICIONAIS",
+        "display": {
+          "title": {
+            "text": {
+              "default": "Traditional",
+              "portuguese": "Tradicionais"
+            }
+          }
+        },
+        "_row_num": 67
+      }
+    ],
+    "queries": [
+      {
+        "query_name": "vaccines",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFVAC",
+        "linked_table_id": "MIFVAC",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{ID: data('ID')}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "_row_num": 2
+      },
+      {
+        "query_name": "scar",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFSCAR",
+        "linked_table_id": "MIFSCAR",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{ID: data('ID')}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "_row_num": 3
+      }
+    ],
+    "model": [
+      {
+        "name": "ABPART",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 2
+      },
+      {
+        "name": "ABPARTDATA",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 3
+      },
+      {
+        "name": "ABPARTPRECIS",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 4
+      },
+      {
+        "name": "ABPARTNV",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 5
+      },
+      {
+        "name": "ABPARTNVDATA",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 6
+      },
+      {
+        "name": "ABPARTNVPRECIS",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 7
+      },
+      {
+        "name": "ABPARTTIPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 8
+      },
+      {
+        "name": "ASSISTENTE",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 9
+      },
+      {
+        "name": "CONSENTDAT",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 10
+      },
+      {
+        "name": "CONSENTFOR",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 11
+      },
+      {
+        "name": "CONSENTSIG",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 12
+      },
+      {
+        "name": "CONSENTTYP",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 13
+      },
+      {
+        "name": "CONT",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 14
+      },
+      {
+        "name": "ESTADOVIS",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 15
+      },
+      {
+        "name": "EVITA",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 16
+      },
+      {
+        "name": "EVITA2",
+        "type": "select_multiple",
+        "isSessionVariable": false,
+        "_row_num": 17
+      },
+      {
+        "name": "EXITDATA",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 18
+      },
+      {
+        "name": "EXITMUDO",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 19
+      },
+      {
+        "name": "EXITPRECIS",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 20
+      },
+      {
+        "name": "GR",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 21
+      },
+      {
+        "name": "PARPAD",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 22
+      },
+      {
+        "name": "TENDA",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 23
+      },
+      {
+        "name": "TENDATIPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 24
+      },
+      {
+        "name": "TENDAYN",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 25
+      },
+      {
+        "name": "V",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 26
+      },
+      {
+        "name": "CICA",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 28
+      },
+      {
+        "name": "ID",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 29
+      },
+      {
+        "name": "LASTVISIT",
+        "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 30
+      }
+    ]
+  },
+  "specification": {
+    "column_types": {
+      "_screen_block": "function",
+      "condition": "formula",
+      "constraint": "formula",
+      "required": "formula",
+      "calculation": "formula",
+      "newRowInitialElementKeyToValueMap": "formula",
+      "openRowInitialElementKeyToValueMap": "formula",
+      "selectionArgs": "formula",
+      "url": "formula",
+      "uri": "formula",
+      "callback": "formula(context)",
+      "choice_filter": "formula(choice_item)",
+      "templatePath": "requirejs_path"
+    },
+    "settings": {
+      "form_id": {
+        "setting_name": "form_id",
+        "value": "MIFVISIT_CORE",
+        "_row_num": 2
+      },
+      "form_version": {
+        "setting_name": "form_version",
+        "value": 270519,
+        "_row_num": 3
+      },
+      "table_id": {
+        "setting_name": "table_id",
+        "value": "MIFVISIT_CORE",
+        "_row_num": 4
+      },
+      "survey": {
+        "setting_name": "survey",
+        "display": {
+          "tittle": {
+            "text": "Woman in the fertile age - visit_core"
+          },
+          "title": {
+            "text": {
+              "portuguese": "Mulher na idade fertil - visitas_núcleo",
+              "default": "Mulher na idade fertil - visitas_núcleo"
+            }
+          }
+        },
+        "_row_num": 5
+      },
+      "default": {
+        "setting_name": "default",
+        "display": {
+          "locale": {
+            "text": {
+              "default": "English",
+              "portuguese": "Inglês"
+            }
+          }
+        },
+        "_row_num": 6
+      },
+      "portuguese": {
+        "setting_name": "portuguese",
+        "display": {
+          "locale": {
+            "text": {
+              "default": "Portuguese",
+              "portuguese": "Portugues"
+            }
+          }
+        },
+        "_row_num": 7
+      },
+      "font-size": {
+        "setting_name": "font-size",
+        "value": "20pt",
+        "_row_num": 8
+      },
+      "instance_name": {
+        "setting_name": "instance_name",
+        "value": "ESTADO",
+        "_row_num": 9
+      },
+      "_locales": {
+        "setting_name": "_locales",
+        "_row_num": 5,
+        "value": [
+          {
+            "display": {
+              "locale": {
+                "text": {
+                  "default": "Portuguese",
+                  "portuguese": "Portugues"
+                }
+              }
+            },
+            "_row_num": 7,
+            "name": "portuguese"
+          }
+        ]
+      },
+      "_default_locale": {
+        "setting_name": "_default_locale",
+        "_row_num": 5,
+        "value": "portuguese"
+      },
+      "initial": {
+        "setting_name": "survey",
+        "display": {
+          "tittle": {
+            "text": "Woman in the fertile age - visit_core"
+          },
+          "title": {
+            "text": {
+              "portuguese": "Mulher na idade fertil - visitas_núcleo",
+              "default": "Mulher na idade fertil - visitas_núcleo"
+            }
+          }
+        },
+        "_row_num": 5
+      }
+    },
+    "choices": {
+      "YesNo": [
+        {
+          "choice_list_name": "YesNo",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Yes",
+                "portuguese": "Sim"
+              }
+            }
+          },
+          "_row_num": 2
+        },
+        {
+          "choice_list_name": "YesNo",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "default": "No",
+                "portuguese": "Não"
+              }
+            }
+          },
+          "_row_num": 3
+        }
+      ],
+      "YesNoU": [
+        {
+          "choice_list_name": "YesNoU",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Yes",
+                "portuguese": "Sim"
+              }
+            }
+          },
+          "_row_num": 4
+        },
+        {
+          "choice_list_name": "YesNoU",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "default": "No",
+                "portuguese": "Não"
+              }
+            }
+          },
+          "_row_num": 5
+        },
+        {
+          "choice_list_name": "YesNoU",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Don't know",
+                "portuguese": "Não sabe"
+              }
+            }
+          },
+          "_row_num": 6
+        }
+      ],
+      "assistent": [
+        {
+          "choice_list_name": "assistent",
+          "data_value": "9",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Alfa",
+                "portuguese": "Alfa"
+              }
+            }
+          },
+          "_row_num": 7
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "25",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Alficene",
+                "portuguese": "Alficene"
+              }
+            }
+          },
+          "_row_num": 8
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "17",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Amadu",
+                "portuguese": "Amadu"
+              }
+            }
+          },
+          "_row_num": 9
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "8",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Antonio",
+                "portuguese": "Antonio"
+              }
+            }
+          },
+          "_row_num": 10
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "12",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Armando",
+                "portuguese": "Armando"
+              }
+            }
+          },
+          "_row_num": 11
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Augusto Lopes",
+                "portuguese": "Augusto Lopes"
+              }
+            }
+          },
+          "_row_num": 12
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "24",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Besna",
+                "portuguese": "Besna"
+              }
+            }
+          },
+          "_row_num": 13
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "7",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Calisto",
+                "portuguese": "Calisto"
+              }
+            }
+          },
+          "_row_num": 14
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "13",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Celestino",
+                "portuguese": "Celestino"
+              }
+            }
+          },
+          "_row_num": 15
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "6",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Cesar",
+                "portuguese": "Cesar"
+              }
+            }
+          },
+          "_row_num": 16
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "18",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Claudino",
+                "portuguese": "Claudino"
+              }
+            }
+          },
+          "_row_num": 17
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "26",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Demba",
+                "portuguese": "Demba"
+              }
+            }
+          },
+          "_row_num": 18
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "27",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Eduardo",
+                "portuguese": "Eduardo"
+              }
+            }
+          },
+          "_row_num": 19
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "15",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Iaia",
+                "portuguese": "Iaia"
+              }
+            }
+          },
+          "_row_num": 20
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "23",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Igualdino",
+                "portuguese": "Igualdino"
+              }
+            }
+          },
+          "_row_num": 21
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "22",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Jailson",
+                "portuguese": "Jailson"
+              }
+            }
+          },
+          "_row_num": 22
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "14",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Makci",
+                "portuguese": "Makci"
+              }
+            }
+          },
+          "_row_num": 23
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "10",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Malam",
+                "portuguese": "Malam"
+              }
+            }
+          },
+          "_row_num": 24
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "11",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Maudo",
+                "portuguese": "Maudo"
+              }
+            }
+          },
+          "_row_num": 25
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "19",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Namir",
+                "portuguese": "Namir"
+              }
+            }
+          },
+          "_row_num": 26
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Nene Mario",
+                "portuguese": "Nene Mario"
+              }
+            }
+          },
+          "_row_num": 27
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "5",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Nuno",
+                "portuguese": "Nuno"
+              }
+            }
+          },
+          "_row_num": 28
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "16",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Oides",
+                "portuguese": "Oides"
+              }
+            }
+          },
+          "_row_num": 29
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Sana",
+                "portuguese": "Sana"
+              }
+            }
+          },
+          "_row_num": 30
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "4",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Simoneo",
+                "portuguese": "Simoneo"
+              }
+            }
+          },
+          "_row_num": 31
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "20",
+          "display": {
+            "title": {
+              "text": {
+                "default": "William",
+                "portuguese": "William"
+              }
+            }
+          },
+          "_row_num": 32
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "21",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Wilson",
+                "portuguese": "Wilson"
+              }
+            }
+          },
+          "_row_num": 33
+        },
+        {
+          "choice_list_name": "assistent",
+          "data_value": "79",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Sanne/Ane",
+                "portuguese": "Sanne/Ane"
+              }
+            }
+          },
+          "_row_num": 34
+        }
+      ],
+      "precision": [
+        {
+          "choice_list_name": "precision",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Day certain",
+                "portuguese": "Dia certo"
+              }
+            }
+          },
+          "_row_num": 35
+        },
+        {
+          "choice_list_name": "precision",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Month certain",
+                "portuguese": "Mes certo"
+              }
+            }
+          },
+          "_row_num": 36
+        },
+        {
+          "choice_list_name": "precision",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Season certain",
+                "portuguese": "Estação certo"
+              }
+            }
+          },
+          "_row_num": 37
+        },
+        {
+          "choice_list_name": "precision",
+          "data_value": "4",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Year certain",
+                "portuguese": "Ano certo"
+              }
+            }
+          },
+          "_row_num": 38
+        }
+      ],
+      "visitstatus": [
+        {
+          "choice_list_name": "visitstatus",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Present",
+                "portuguese": "Presente"
+              }
+            }
+          },
+          "_row_num": 39
+        },
+        {
+          "choice_list_name": "visitstatus",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Moved out",
+                "portuguese": "Mudou"
+              }
+            }
+          },
+          "_row_num": 40
+        },
+        {
+          "choice_list_name": "visitstatus",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Dead",
+                "portuguese": "Faleceu"
+              }
+            }
+          },
+          "_row_num": 41
+        },
+        {
+          "choice_list_name": "visitstatus",
+          "data_value": "4",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Absent",
+                "portuguese": "Ausente"
+              }
+            }
+          },
+          "_row_num": 42
+        },
+        {
+          "choice_list_name": "visitstatus",
+          "data_value": "5",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Travelling",
+                "portuguese": "Viagem"
+              }
+            }
+          },
+          "_row_num": 43
+        },
+        {
+          "choice_list_name": "visitstatus",
+          "data_value": "7",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Not visited",
+                "portuguese": "Não visitada"
+              }
+            }
+          },
+          "_row_num": 44
+        }
+      ],
+      "signature": [
+        {
+          "choice_list_name": "signature",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": "Signature"
+            }
+          },
+          "_row_num": 45
+        },
+        {
+          "choice_list_name": "signature",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": "Fingerprint"
+            }
+          },
+          "_row_num": 46
+        }
+      ],
+      "bednet": [
+        {
+          "choice_list_name": "bednet",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Impregnated net",
+                "portuguese": "Tenda impregnada"
+              }
+            }
+          },
+          "_row_num": 47
+        },
+        {
+          "choice_list_name": "bednet",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Simple bednet",
+                "portuguese": "Tenda simples"
+              }
+            }
+          },
+          "_row_num": 48
+        },
+        {
+          "choice_list_name": "bednet",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Unknown type",
+                "portuguese": "Não sabe"
+              }
+            }
+          },
+          "_row_num": 49
+        }
+      ],
+      "bednettime": [
+        {
+          "choice_list_name": "bednettime",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "default": "All year",
+                "portuguese": "Tudo Ano"
+              }
+            }
+          },
+          "_row_num": 50
+        },
+        {
+          "choice_list_name": "bednettime",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Rainy season",
+                "portuguese": "Chuva"
+              }
+            }
+          },
+          "_row_num": 51
+        },
+        {
+          "choice_list_name": "bednettime",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Never",
+                "portuguese": "Nunca"
+              }
+            }
+          },
+          "_row_num": 52
+        },
+        {
+          "choice_list_name": "bednettime",
+          "data_value": "4",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Other",
+                "portuguese": "Outra/o"
+              }
+            }
+          },
+          "_row_num": 53
+        }
+      ],
+      "birthoutcome": [
+        {
+          "choice_list_name": "birthoutcome",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Live birth",
+                "portuguese": "Nado vivo"
+              }
+            }
+          },
+          "_row_num": 54
+        },
+        {
+          "choice_list_name": "birthoutcome",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Stillbirth",
+                "portuguese": "Nado morto"
+              }
+            }
+          },
+          "_row_num": 55
+        },
+        {
+          "choice_list_name": "birthoutcome",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Miscarriage",
+                "portuguese": "Aborto"
+              }
+            }
+          },
+          "_row_num": 56
+        }
+      ],
+      "contraceptive": [
+        {
+          "choice_list_name": "contraceptive",
+          "data_value": "PILULA",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Pill",
+                "portuguese": "Pílula"
+              }
+            }
+          },
+          "_row_num": 57
+        },
+        {
+          "choice_list_name": "contraceptive",
+          "data_value": "JADELLE",
+          "display": {
+            "title": {
+              "text": {
+                "default": "P-rod",
+                "portuguese": "Jadelle"
+              }
+            }
+          },
+          "_row_num": 58
+        },
+        {
+          "choice_list_name": "contraceptive",
+          "data_value": "DIU",
+          "display": {
+            "title": {
+              "text": {
+                "default": "IUD",
+                "portuguese": "Anilha"
+              }
+            }
+          },
+          "_row_num": 59
+        },
+        {
+          "choice_list_name": "contraceptive",
+          "data_value": "CAMISINHA",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Condom",
+                "portuguese": "Camisinha"
+              }
+            }
+          },
+          "_row_num": 60
+        },
+        {
+          "choice_list_name": "contraceptive",
+          "data_value": "FEMIDOM",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Femidom",
+                "portuguese": "Femidom"
+              }
+            }
+          },
+          "_row_num": 61
+        },
+        {
+          "choice_list_name": "contraceptive",
+          "data_value": "DEPO",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Depo",
+                "portuguese": "Depo"
+              }
+            }
+          },
+          "_row_num": 62
+        },
+        {
+          "choice_list_name": "contraceptive",
+          "data_value": "ESTERIL-F",
+          "display": {
+            "title": {
+              "text": {
+                "default": "F-Steriliastion",
+                "portuguese": "Esteril-F"
+              }
+            }
+          },
+          "_row_num": 63
+        },
+        {
+          "choice_list_name": "contraceptive",
+          "data_value": "ESTERIL-M",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Vasectomy",
+                "portuguese": "Vasectomia"
+              }
+            }
+          },
+          "_row_num": 64
+        },
+        {
+          "choice_list_name": "contraceptive",
+          "data_value": "EMERCENCIA",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Morning after pill",
+                "portuguese": "Pílulas do dia seguinte."
+              }
+            }
+          },
+          "_row_num": 65
+        },
+        {
+          "choice_list_name": "contraceptive",
+          "data_value": "OUTRA",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Other",
+                "portuguese": "Outra/o"
+              }
+            }
+          },
+          "_row_num": 66
+        },
+        {
+          "choice_list_name": "contraceptive",
+          "data_value": "TRADICIONAIS",
+          "display": {
+            "title": {
+              "text": {
+                "default": "Traditional",
+                "portuguese": "Tradicionais"
+              }
+            }
+          },
+          "_row_num": 67
+        }
+      ]
+    },
+    "table_specific_definitions": {
+      "_tokens": {}
+    },
+    "queries": {
+      "vaccines": {
+        "query_name": "vaccines",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFVAC",
+        "linked_table_id": "MIFVAC",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{ID: data('ID')}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "_row_num": 2
+      },
+      "scar": {
+        "query_name": "scar",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFSCAR",
+        "linked_table_id": "MIFSCAR",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{ID: data('ID')}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "_row_num": 3
+      }
+    },
+    "calculates": {},
+    "model": {
+      "ABPART": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 34,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 2,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ABPART"
+      },
+      "ABPARTDATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 38,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ABPARTDATA"
+      },
+      "ABPARTPRECIS": {
+        "type": "string",
+        "valuesList": "precision",
+        "_defn": [
+          {
+            "_row_num": 39,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 4,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ABPARTPRECIS"
+      },
+      "ABPARTNV": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 44,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 5,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ABPARTNV"
+      },
+      "ABPARTNVDATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 46,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 6,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ABPARTNVDATA"
+      },
+      "ABPARTNVPRECIS": {
+        "type": "string",
+        "valuesList": "precision",
+        "_defn": [
+          {
+            "_row_num": 47,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 7,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ABPARTNVPRECIS"
+      },
+      "ABPARTTIPO": {
+        "type": "string",
+        "valuesList": "birthoutcome",
+        "_defn": [
+          {
+            "_row_num": 40,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 8,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ABPARTTIPO"
+      },
+      "ASSISTENTE": {
+        "type": "string",
+        "valuesList": "assistent",
+        "_defn": [
+          {
+            "_row_num": 4,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ASSISTENTE"
+      },
+      "CONSENTDAT": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 23,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 10,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONSENTDAT"
+      },
+      "CONSENTFOR": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 18,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONSENTFOR"
+      },
+      "CONSENTSIG": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 20,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONSENTSIG"
+      },
+      "CONSENTTYP": {
+        "type": "string",
+        "valuesList": "signature",
+        "_defn": [
+          {
+            "_row_num": 22,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 13,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONSENTTYP"
+      },
+      "CONT": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 3,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONT"
+      },
+      "ESTADOVIS": {
+        "type": "string",
+        "valuesList": "visitstatus",
+        "_defn": [
+          {
+            "_row_num": 7,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 15,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ESTADOVIS"
+      },
+      "EVITA": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 53,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 16,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EVITA"
+      },
+      "EVITA2": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "elementKey": "EVITA2_items"
+        },
+        "valuesList": "contraceptive",
+        "_defn": [
+          {
+            "_row_num": 55,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 17,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EVITA2"
+      },
+      "EXITDATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 9,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 18,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITDATA"
+      },
+      "EXITMUDO": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 19,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITMUDO"
+      },
+      "EXITPRECIS": {
+        "type": "string",
+        "valuesList": "precision",
+        "_defn": [
+          {
+            "_row_num": 10,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 20,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITPRECIS"
+      },
+      "GR": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 29,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "GR"
+      },
+      "PARPAD": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 30,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 22,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "PARPAD"
+      },
+      "TENDA": {
+        "type": "string",
+        "valuesList": "bednettime",
+        "_defn": [
+          {
+            "_row_num": 60,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 23,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TENDA"
+      },
+      "TENDATIPO": {
+        "type": "string",
+        "valuesList": "bednet",
+        "_defn": [
+          {
+            "_row_num": 62,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 24,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TENDATIPO"
+      },
+      "TENDAYN": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 59,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 25,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TENDAYN"
+      },
+      "V": {
+        "type": "string",
+        "valuesList": "YesNo",
+        "_defn": [
+          {
+            "_row_num": 72,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 26,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "V"
+      },
+      "CICA": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 28,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CICA"
+      },
+      "ID": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 29,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ID"
+      },
+      "LASTVISIT": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 30,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "LASTVISIT"
+      }
+    },
+    "section_names": [
+      "initial",
+      "survey"
+    ],
+    "sections": {
+      "survey": {
+        "section_name": "survey",
+        "nested_sections": {},
+        "reachable_sections": {},
+        "prompts": [
+          {
+            "type": "date",
+            "name": "CONT",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Day of visit",
+                  "portuguese": "Data de visita"
+                }
+              }
+            },
+            "_row_num": 3,
+            "__rowNum__": 2,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 0
+          },
+          {
+            "type": "select_one",
+            "values_list": "assistent",
+            "name": "ASSISTENTE",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Assistent",
+                  "portuguese": "Assistente"
+                }
+              }
+            },
+            "_row_num": 4,
+            "__rowNum__": 3,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 1
+          },
+          {
+            "type": "select_one",
+            "values_list": "visitstatus",
+            "name": "ESTADOVIS",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Status of the woman",
+                  "portuguese": "Estado da mulher"
+                }
+              }
+            },
+            "_row_num": 7,
+            "__rowNum__": 6,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 2
+          },
+          {
+            "type": "date",
+            "name": "EXITDATA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Exit date",
+                  "portuguese": "Data de saída"
+                }
+              }
+            },
+            "_row_num": 9,
+            "__rowNum__": 8,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 3
+          },
+          {
+            "type": "select_one",
+            "values_list": "precision",
+            "name": "EXITPRECIS",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Precision of exit date",
+                  "portuguese": "Certo da data de saída"
+                }
+              }
+            },
+            "_row_num": 10,
+            "__rowNum__": 9,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 4
+          },
+          {
+            "type": "text",
+            "name": "EXITMUDO",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Where?",
+                  "portuguese": "Onde?"
+                }
+              }
+            },
+            "_row_num": 12,
+            "__rowNum__": 11,
+            "_token_type": "prompt",
+            "_type": "text",
+            "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 5
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "CONSENTFOR",
+            "display": {
+              "prompt": {
+                "text": "Has a consent form been produced?"
+              }
+            },
+            "_row_num": 18,
+            "__rowNum__": 17,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen17",
+            "promptIdx": 6
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "CONSENTSIG",
+            "display": {
+              "prompt": {
+                "text": "Is the consent form signed?"
+              }
+            },
+            "_row_num": 20,
+            "__rowNum__": 19,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen17",
+            "promptIdx": 7
+          },
+          {
+            "type": "select_one",
+            "values_list": "signature",
+            "name": "CONSENTTYP",
+            "display": {
+              "prompt": {
+                "text": "Type of signature"
+              }
+            },
+            "_row_num": 22,
+            "__rowNum__": 21,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen17",
+            "promptIdx": 8
+          },
+          {
+            "type": "date",
+            "name": "CONSENTDAT",
+            "display": {
+              "prompt": {
+                "text": "Date of signature"
+              }
+            },
+            "_row_num": 23,
+            "__rowNum__": 22,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen17",
+            "promptIdx": 9
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "GR",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Pregnant?",
+                  "portuguese": "Grávida?"
+                }
+              }
+            },
+            "_row_num": 29,
+            "__rowNum__": 28,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen28",
+            "promptIdx": 10
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "PARPAD",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Stopped giving birth?",
+                  "portuguese": "Parou Parir?"
+                }
+              }
+            },
+            "_row_num": 30,
+            "__rowNum__": 29,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen28",
+            "promptIdx": 11
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "ABPART",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Birth/miscarrige since last visit?",
+                  "portuguese": "Teve parto/aborto desde ultimo visita?"
+                }
+              },
+              "hint": {
+                "text": "Last visit: {{data.LASTVISIT}}"
+              }
+            },
+            "_row_num": 34,
+            "__rowNum__": 33,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen33",
+            "promptIdx": 12
+          },
+          {
+            "type": "date",
+            "name": "ABPARTDATA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Date of delivery",
+                  "portuguese": "Data de parto"
+                }
+              }
+            },
+            "_row_num": 38,
+            "__rowNum__": 37,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen37",
+            "promptIdx": 13
+          },
+          {
+            "type": "select_one",
+            "values_list": "precision",
+            "name": "ABPARTPRECIS",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Precision of delivery date",
+                  "portuguese": "Certo da data de parto"
+                }
+              }
+            },
+            "_row_num": 39,
+            "__rowNum__": 38,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen37",
+            "promptIdx": 14
+          },
+          {
+            "type": "select_one",
+            "values_list": "birthoutcome",
+            "name": "ABPARTTIPO",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Type of delivery",
+                  "portuguese": "Tipo de parto"
+                }
+              }
+            },
+            "_row_num": 40,
+            "__rowNum__": 39,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen37",
+            "promptIdx": 15
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "ABPARTNV",
+            "display": {
+              "prompt": {
+                "text": "Is the child still alive?"
+              }
+            },
+            "_row_num": 44,
+            "__rowNum__": 43,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen43",
+            "promptIdx": 16
+          },
+          {
+            "type": "date",
+            "name": "ABPARTNVDATA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Date of death",
+                  "portuguese": "Data de falecimento"
+                }
+              }
+            },
+            "_row_num": 46,
+            "__rowNum__": 45,
+            "_token_type": "prompt",
+            "_type": "date",
+            "_branch_label_enclosing_screen": "survey/_screen43",
+            "promptIdx": 17
+          },
+          {
+            "type": "select_one",
+            "values_list": "precision",
+            "name": "ABPARTNVPRECIS",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Precision of death date",
+                  "portuguese": "Certo da data de falecimento"
+                }
+              }
+            },
+            "_row_num": 47,
+            "__rowNum__": 46,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen43",
+            "promptIdx": 18
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "EVITA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Use contraceptives?",
+                  "portuguese": "Utiliza alguma coisa para evitar grávidez?"
+                }
+              }
+            },
+            "_row_num": 53,
+            "__rowNum__": 52,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen52",
+            "promptIdx": 19
+          },
+          {
+            "type": "select_multiple",
+            "values_list": "contraceptive",
+            "name": "EVITA2",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "What type?",
+                  "portuguese": "Qual tipo?"
+                }
+              }
+            },
+            "_row_num": 55,
+            "__rowNum__": 54,
+            "_token_type": "prompt",
+            "_type": "select_multiple",
+            "_branch_label_enclosing_screen": "survey/_screen52",
+            "promptIdx": 20
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "TENDAYN",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Slept under bednet last night?",
+                  "portuguese": "Dormir na tenda ontem?"
+                }
+              }
+            },
+            "_row_num": 59,
+            "__rowNum__": 58,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen58",
+            "promptIdx": 21
+          },
+          {
+            "type": "select_one",
+            "values_list": "bednettime",
+            "name": "TENDA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Period using bednet",
+                  "portuguese": "Todo tempo?"
+                }
+              }
+            },
+            "_row_num": 60,
+            "__rowNum__": 59,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen58",
+            "promptIdx": 22
+          },
+          {
+            "type": "select_one",
+            "values_list": "bednet",
+            "name": "TENDATIPO",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Type of bednet",
+                  "portuguese": "Qual tipo?"
+                }
+              }
+            },
+            "_row_num": 62,
+            "__rowNum__": 61,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen58",
+            "promptIdx": 23
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": "Scar status"
+              }
+            },
+            "_row_num": 67,
+            "__rowNum__": 66,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen66",
+            "promptIdx": 24
+          },
+          {
+            "type": "linked_table",
+            "values_list": "scar",
+            "_row_num": 68,
+            "__rowNum__": 67,
+            "_token_type": "prompt",
+            "_type": "linked_table",
+            "_branch_label_enclosing_screen": "survey/_screen66",
+            "promptIdx": 25
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNo",
+            "name": "V",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Card documenting vaccinations",
+                  "portuguese": "Cartão documentando vacinas"
+                }
+              }
+            },
+            "_row_num": 72,
+            "__rowNum__": 71,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen71",
+            "promptIdx": 26
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": "Fill in the vaccines"
+              },
+              "hint": {
+                "text": "Vaccine data"
+              }
+            },
+            "_row_num": 74,
+            "__rowNum__": 73,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen71",
+            "promptIdx": 27
+          },
+          {
+            "type": "linked_table",
+            "values_list": "vaccines",
+            "_row_num": 75,
+            "__rowNum__": 74,
+            "_token_type": "prompt",
+            "_type": "linked_table",
+            "_branch_label_enclosing_screen": "survey/_screen71",
+            "promptIdx": 28
+          },
+          {
+            "_token_type": "prompt",
+            "type": "contents",
+            "_type": "contents",
+            "_row_num": 79,
+            "_branch_label_enclosing_screen": "survey/_screen79",
+            "promptIdx": 29
+          }
+        ],
+        "validation_tag_map": {
+          "finalize": []
+        },
+        "operations": [
+          {
+            "clause": "begin screen",
+            "_row_num": 2,
+            "__rowNum__": 1,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 5,
+              "__rowNum__": 4,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\nactivePromptIndicies.push(1);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 0
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 6,
+            "__rowNum__": 5,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 15,
+              "__rowNum__": 14,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(2);\nif (data('ESTADOVIS') ==  '2' || data('ESTADOVIS') ==  '3') {\nactivePromptIndicies.push(3);\nactivePromptIndicies.push(4);\nif (data('ESTADOVIS') ==  '2') {\nactivePromptIndicies.push(5);\n}\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 1
+          },
+          {
+            "clause": "if",
+            "condition": "data('CONSENTSIG') != '1' && data('ESTADOVIS') == '1'",
+            "_row_num": 16,
+            "__rowNum__": 15,
+            "_token_type": "goto_label",
+            "_branch_label": "_then16",
+            "operationIdx": 2
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_else27",
+            "_row_num": 27,
+            "operationIdx": 3
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 17,
+            "__rowNum__": 16,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 26,
+              "__rowNum__": 25,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(6);\nif (data('CONSENTFOR') == '1') {\nactivePromptIndicies.push(7);\nif (data('CONSENTSIG') == '1') {\nactivePromptIndicies.push(8);\nactivePromptIndicies.push(9);\n}\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 4
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif27",
+            "_row_num": 27,
+            "operationIdx": 5
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 28,
+            "__rowNum__": 27,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 31,
+              "__rowNum__": 30,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(10);\nactivePromptIndicies.push(11);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 6
+          },
+          {
+            "clause": "if",
+            "condition": "data('PARPAD') != '1'",
+            "_row_num": 32,
+            "__rowNum__": 31,
+            "_token_type": "goto_label",
+            "_branch_label": "_then32",
+            "operationIdx": 7
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_else78",
+            "_row_num": 78,
+            "operationIdx": 8
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 33,
+            "__rowNum__": 32,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 35,
+              "__rowNum__": 34,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(12);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 9
+          },
+          {
+            "clause": "if",
+            "condition": "data('ABPART') == '1'",
+            "_row_num": 36,
+            "__rowNum__": 35,
+            "_token_type": "goto_label",
+            "_branch_label": "_then36",
+            "operationIdx": 10
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_else51",
+            "_row_num": 51,
+            "operationIdx": 11
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 37,
+            "__rowNum__": 36,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 41,
+              "__rowNum__": 40,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\nactivePromptIndicies.push(15);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 12
+          },
+          {
+            "clause": "if",
+            "condition": "data('ABPARTTIPO') == '1'",
+            "_row_num": 42,
+            "__rowNum__": 41,
+            "_token_type": "goto_label",
+            "_branch_label": "_then42",
+            "operationIdx": 13
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_else50",
+            "_row_num": 50,
+            "operationIdx": 14
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 43,
+            "__rowNum__": 42,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 49,
+              "__rowNum__": 48,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(16);\nif (data('ABPARTNV') == '2') {\nactivePromptIndicies.push(17);\nactivePromptIndicies.push(18);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 15
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif50",
+            "_row_num": 50,
+            "operationIdx": 16
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif51",
+            "_row_num": 51,
+            "operationIdx": 17
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 52,
+            "__rowNum__": 51,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 57,
+              "__rowNum__": 56,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(19);\nif (data('EVITA') == '1') {\nactivePromptIndicies.push(20);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 18
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 58,
+            "__rowNum__": 57,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 64,
+              "__rowNum__": 63,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(21);\nactivePromptIndicies.push(22);\nif (data('TENDAYN') == '1') {\nactivePromptIndicies.push(23);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 19
+          },
+          {
+            "clause": "if",
+            "condition": "data('ESTADOVIS') ==  '1' && data('CICA') == null",
+            "_row_num": 65,
+            "__rowNum__": 64,
+            "_token_type": "goto_label",
+            "_branch_label": "_then65",
+            "operationIdx": 20
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_else70",
+            "_row_num": 70,
+            "operationIdx": 21
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 66,
+            "__rowNum__": 65,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 69,
+              "__rowNum__": 68,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(24);\nactivePromptIndicies.push(25);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 22
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif70",
+            "_row_num": 70,
+            "operationIdx": 23
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 71,
+            "__rowNum__": 70,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 77,
+              "__rowNum__": 76,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(26);\nif (data('V') == '1') {\nactivePromptIndicies.push(27);\nactivePromptIndicies.push(28);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 24
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif78",
+            "_row_num": 78,
+            "operationIdx": 25
+          },
+          {
+            "_token_type": "exit_section",
+            "clause": "exit section",
+            "_row_num": 79,
+            "operationIdx": 26
+          },
+          {
+            "_row_num": 79,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(29);\n\nreturn activePromptIndicies;\n}\n",
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 27
+          },
+          {
+            "_token_type": "resume",
+            "clause": "resume",
+            "_row_num": 79,
+            "operationIdx": 28
+          }
+        ],
+        "branch_label_map": {
+          "_screen2": 0,
+          "_screen6": 1,
+          "_then16": 4,
+          "_screen17": 4,
+          "_else27": 6,
+          "_endif27": 6,
+          "_screen28": 6,
+          "_then32": 9,
+          "_screen33": 9,
+          "_then36": 12,
+          "_screen37": 12,
+          "_then42": 15,
+          "_screen43": 15,
+          "_else50": 17,
+          "_endif50": 17,
+          "_else51": 18,
+          "_endif51": 18,
+          "_screen52": 18,
+          "_screen58": 19,
+          "_then65": 22,
+          "_screen66": 22,
+          "_else70": 24,
+          "_endif70": 24,
+          "_screen71": 24,
+          "_else78": 26,
+          "_endif78": 26,
+          "_contents": 27,
+          "_screen79": 27
+        }
+      },
+      "initial": {
+        "section_name": "initial",
+        "nested_sections": {
+          "survey": true
+        },
+        "reachable_sections": {
+          "survey": true
+        },
+        "prompts": [
+          {
+            "_row_num": 3,
+            "type": "opening",
+            "display": {
+              "text": "Edit form"
+            },
+            "_token_type": "prompt",
+            "_type": "opening",
+            "_branch_label_enclosing_screen": "initial/_screen3",
+            "promptIdx": 0
+          },
+          {
+            "_row_num": 4,
+            "clause": "do section survey",
+            "_token_type": "prompt",
+            "_do_section_name": "survey",
+            "_type": "_section",
+            "promptIdx": 1,
+            "display": {
+              "tittle": {
+                "text": "Woman in the fertile age - visit_core"
+              },
+              "title": {
+                "text": {
+                  "portuguese": "Mulher na idade fertil - visitas_núcleo",
+                  "default": "Mulher na idade fertil - visitas_núcleo"
+                }
+              }
+            },
+            "_branch_label_enclosing_screen": "survey/0"
+          },
+          {
+            "_row_num": 5,
+            "type": "finalize",
+            "display": {
+              "text": "Save form"
+            },
+            "_token_type": "prompt",
+            "_type": "finalize",
+            "_branch_label_enclosing_screen": "initial/_screen5",
+            "promptIdx": 2
+          },
+          {
+            "_row_num": 7,
+            "type": "instances",
+            "display": {
+              "text": "Saved instances"
+            },
+            "_token_type": "prompt",
+            "_type": "instances",
+            "_branch_label_enclosing_screen": "initial/_screen7",
+            "promptIdx": 3
+          },
+          {
+            "_token_type": "prompt",
+            "type": "contents",
+            "_type": "contents",
+            "_row_num": 9,
+            "_branch_label_enclosing_screen": "initial/_screen9",
+            "promptIdx": 4
+          }
+        ],
+        "validation_tag_map": {
+          "finalize": []
+        },
+        "operations": [
+          {
+            "_row_num": 2,
+            "clause": "if // start",
+            "condition": "(opendatakit.getCurrentInstanceId() != null)",
+            "_token_type": "goto_label",
+            "_tag_name": "start",
+            "_branch_label": "_then2",
+            "operationIdx": 0
+          },
+          {
+            "clause": "else // start",
+            "_token_type": "goto_label",
+            "_branch_label": "_else6",
+            "_row_num": 6,
+            "operationIdx": 1
+          },
+          {
+            "_row_num": 3,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 2
+          },
+          {
+            "_row_num": 4,
+            "clause": "do section survey",
+            "_token_type": "do_section",
+            "_do_section_name": "survey",
+            "operationIdx": 3
+          },
+          {
+            "_row_num": 5,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(2);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 4
+          },
+          {
+            "clause": "end if // start",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif8",
+            "_row_num": 8,
+            "operationIdx": 5
+          },
+          {
+            "_row_num": 7,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(3);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 6
+          },
+          {
+            "_token_type": "exit_section",
+            "clause": "exit section",
+            "_row_num": 9,
+            "operationIdx": 7
+          },
+          {
+            "_row_num": 9,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(4);\n\nreturn activePromptIndicies;\n}\n",
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 8
+          },
+          {
+            "_token_type": "resume",
+            "clause": "resume",
+            "_row_num": 9,
+            "operationIdx": 9
+          },
+          {
+            "_token_type": "validate",
+            "clause": "validate finalize",
+            "_sweep_name": "finalize",
+            "_row_num": 9,
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 10
+          },
+          {
+            "_token_type": "save_and_terminate",
+            "clause": "save and terminate",
+            "calculation": true,
+            "_row_num": 9,
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 11
+          },
+          {
+            "_token_type": "resume",
+            "clause": "resume",
+            "_row_num": 9,
+            "operationIdx": 12
+          }
+        ],
+        "branch_label_map": {
+          "_then2": 2,
+          "_screen3": 2,
+          "_screen5": 4,
+          "_else6": 6,
+          "_screen7": 6,
+          "_endif8": 7,
+          "_contents": 8,
+          "_screen9": 8,
+          "_finalize": 10
+        }
+      }
+    },
+    "dataTableModel": {
+      "ABPART": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 34,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 2,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ABPART",
+        "elementName": "ABPART",
+        "elementSet": "data",
+        "elementPath": "ABPART"
+      },
+      "ABPARTDATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 38,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ABPARTDATA",
+        "elementName": "ABPARTDATA",
+        "elementSet": "data",
+        "elementPath": "ABPARTDATA"
+      },
+      "ABPARTPRECIS": {
+        "type": "string",
+        "valuesList": "precision",
+        "_defn": [
+          {
+            "_row_num": 39,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 4,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ABPARTPRECIS",
+        "elementName": "ABPARTPRECIS",
+        "elementSet": "data",
+        "elementPath": "ABPARTPRECIS"
+      },
+      "ABPARTNV": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 44,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 5,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ABPARTNV",
+        "elementName": "ABPARTNV",
+        "elementSet": "data",
+        "elementPath": "ABPARTNV"
+      },
+      "ABPARTNVDATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 46,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 6,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ABPARTNVDATA",
+        "elementName": "ABPARTNVDATA",
+        "elementSet": "data",
+        "elementPath": "ABPARTNVDATA"
+      },
+      "ABPARTNVPRECIS": {
+        "type": "string",
+        "valuesList": "precision",
+        "_defn": [
+          {
+            "_row_num": 47,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 7,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ABPARTNVPRECIS",
+        "elementName": "ABPARTNVPRECIS",
+        "elementSet": "data",
+        "elementPath": "ABPARTNVPRECIS"
+      },
+      "ABPARTTIPO": {
+        "type": "string",
+        "valuesList": "birthoutcome",
+        "_defn": [
+          {
+            "_row_num": 40,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 8,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ABPARTTIPO",
+        "elementName": "ABPARTTIPO",
+        "elementSet": "data",
+        "elementPath": "ABPARTTIPO"
+      },
+      "ASSISTENTE": {
+        "type": "string",
+        "valuesList": "assistent",
+        "_defn": [
+          {
+            "_row_num": 4,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ASSISTENTE",
+        "elementName": "ASSISTENTE",
+        "elementSet": "data",
+        "elementPath": "ASSISTENTE"
+      },
+      "CONSENTDAT": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 23,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 10,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONSENTDAT",
+        "elementName": "CONSENTDAT",
+        "elementSet": "data",
+        "elementPath": "CONSENTDAT"
+      },
+      "CONSENTFOR": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 18,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONSENTFOR",
+        "elementName": "CONSENTFOR",
+        "elementSet": "data",
+        "elementPath": "CONSENTFOR"
+      },
+      "CONSENTSIG": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 20,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONSENTSIG",
+        "elementName": "CONSENTSIG",
+        "elementSet": "data",
+        "elementPath": "CONSENTSIG"
+      },
+      "CONSENTTYP": {
+        "type": "string",
+        "valuesList": "signature",
+        "_defn": [
+          {
+            "_row_num": 22,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 13,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONSENTTYP",
+        "elementName": "CONSENTTYP",
+        "elementSet": "data",
+        "elementPath": "CONSENTTYP"
+      },
+      "CONT": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 3,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONT",
+        "elementName": "CONT",
+        "elementSet": "data",
+        "elementPath": "CONT"
+      },
+      "ESTADOVIS": {
+        "type": "string",
+        "valuesList": "visitstatus",
+        "_defn": [
+          {
+            "_row_num": 7,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 15,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ESTADOVIS",
+        "elementName": "ESTADOVIS",
+        "elementSet": "data",
+        "elementPath": "ESTADOVIS"
+      },
+      "EVITA": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 53,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 16,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EVITA",
+        "elementName": "EVITA",
+        "elementSet": "data",
+        "elementPath": "EVITA"
+      },
+      "EVITA2": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "elementKey": "EVITA2_items",
+          "elementName": "items",
+          "elementSet": "data",
+          "elementPath": "EVITA2.items",
+          "notUnitOfRetention": true
+        },
+        "valuesList": "contraceptive",
+        "_defn": [
+          {
+            "_row_num": 55,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 17,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EVITA2",
+        "elementName": "EVITA2",
+        "elementSet": "data",
+        "elementPath": "EVITA2",
+        "listChildElementKeys": [
+          "EVITA2_items"
+        ]
+      },
+      "EXITDATA": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 9,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 18,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITDATA",
+        "elementName": "EXITDATA",
+        "elementSet": "data",
+        "elementPath": "EXITDATA"
+      },
+      "EXITMUDO": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 19,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITMUDO",
+        "elementName": "EXITMUDO",
+        "elementSet": "data",
+        "elementPath": "EXITMUDO"
+      },
+      "EXITPRECIS": {
+        "type": "string",
+        "valuesList": "precision",
+        "_defn": [
+          {
+            "_row_num": 10,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 20,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITPRECIS",
+        "elementName": "EXITPRECIS",
+        "elementSet": "data",
+        "elementPath": "EXITPRECIS"
+      },
+      "GR": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 29,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "GR",
+        "elementName": "GR",
+        "elementSet": "data",
+        "elementPath": "GR"
+      },
+      "PARPAD": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 30,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 22,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "PARPAD",
+        "elementName": "PARPAD",
+        "elementSet": "data",
+        "elementPath": "PARPAD"
+      },
+      "TENDA": {
+        "type": "string",
+        "valuesList": "bednettime",
+        "_defn": [
+          {
+            "_row_num": 60,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 23,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TENDA",
+        "elementName": "TENDA",
+        "elementSet": "data",
+        "elementPath": "TENDA"
+      },
+      "TENDATIPO": {
+        "type": "string",
+        "valuesList": "bednet",
+        "_defn": [
+          {
+            "_row_num": 62,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 24,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TENDATIPO",
+        "elementName": "TENDATIPO",
+        "elementSet": "data",
+        "elementPath": "TENDATIPO"
+      },
+      "TENDAYN": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 59,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 25,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TENDAYN",
+        "elementName": "TENDAYN",
+        "elementSet": "data",
+        "elementPath": "TENDAYN"
+      },
+      "V": {
+        "type": "string",
+        "valuesList": "YesNo",
+        "_defn": [
+          {
+            "_row_num": 72,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 26,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "V",
+        "elementName": "V",
+        "elementSet": "data",
+        "elementPath": "V"
+      },
+      "CICA": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 28,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CICA",
+        "elementName": "CICA",
+        "elementSet": "data",
+        "elementPath": "CICA"
+      },
+      "ID": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 29,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ID",
+        "elementName": "ID",
+        "elementSet": "data",
+        "elementPath": "ID"
+      },
+      "LASTVISIT": {
+        "type": "string",
+        "elementType": "date",
+        "_defn": [
+          {
+            "_row_num": 30,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "LASTVISIT",
+        "elementName": "LASTVISIT",
+        "elementSet": "data",
+        "elementPath": "LASTVISIT"
+      },
+      "EVITA2_items": {
+        "type": "string",
+        "elementKey": "EVITA2_items",
+        "elementName": "items",
+        "elementSet": "data",
+        "elementPath": "EVITA2.items",
+        "notUnitOfRetention": true
+      },
+      "_id": {
+        "type": "string",
+        "isNotNullable": true,
+        "elementKey": "_id",
+        "elementName": "_id",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_id"
+      },
+      "_row_etag": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_row_etag",
+        "elementName": "_row_etag",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_row_etag"
+      },
+      "_sync_state": {
+        "type": "string",
+        "isNotNullable": true,
+        "elementKey": "_sync_state",
+        "elementName": "_sync_state",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_sync_state"
+      },
+      "_conflict_type": {
+        "type": "integer",
+        "isNotNullable": false,
+        "elementKey": "_conflict_type",
+        "elementName": "_conflict_type",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_conflict_type"
+      },
+      "_default_access": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_default_access",
+        "elementName": "_default_access",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_default_access"
+      },
+      "_form_id": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_form_id",
+        "elementName": "_form_id",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_form_id"
+      },
+      "_group_modify": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_group_modify",
+        "elementName": "_group_modify",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_group_modify"
+      },
+      "_group_privileged": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_group_privileged",
+        "elementName": "_group_privileged",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_group_privileged"
+      },
+      "_group_read_only": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_group_read_only",
+        "elementName": "_group_read_only",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_group_read_only"
+      },
+      "_locale": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_locale",
+        "elementName": "_locale",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_locale"
+      },
+      "_row_owner": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_row_owner",
+        "elementName": "_row_owner",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_row_owner"
+      },
+      "_savepoint_type": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_savepoint_type",
+        "elementName": "_savepoint_type",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_savepoint_type"
+      },
+      "_savepoint_timestamp": {
+        "type": "string",
+        "isNotNullable": true,
+        "elementKey": "_savepoint_timestamp",
+        "elementName": "_savepoint_timestamp",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_savepoint_timestamp"
+      },
+      "_savepoint_creator": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_savepoint_creator",
+        "elementName": "_savepoint_creator",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_savepoint_creator"
+      }
+    },
+    "properties": [
+      {
+        "_partition": "Column",
+        "_aspect": "ABPART",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":4},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":5},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "ABPARTNV",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":4},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":5},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "ABPARTNVPRECIS",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"precision\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Day certain\",\"portuguese\":\"Dia certo\"}}},\"_row_num\":35},{\"choice_list_name\":\"precision\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Month certain\",\"portuguese\":\"Mes certo\"}}},\"_row_num\":36},{\"choice_list_name\":\"precision\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Season certain\",\"portuguese\":\"Estação certo\"}}},\"_row_num\":37},{\"choice_list_name\":\"precision\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"default\":\"Year certain\",\"portuguese\":\"Ano certo\"}}},\"_row_num\":38}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "ABPARTPRECIS",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"precision\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Day certain\",\"portuguese\":\"Dia certo\"}}},\"_row_num\":35},{\"choice_list_name\":\"precision\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Month certain\",\"portuguese\":\"Mes certo\"}}},\"_row_num\":36},{\"choice_list_name\":\"precision\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Season certain\",\"portuguese\":\"Estação certo\"}}},\"_row_num\":37},{\"choice_list_name\":\"precision\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"default\":\"Year certain\",\"portuguese\":\"Ano certo\"}}},\"_row_num\":38}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "ABPARTTIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"birthoutcome\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Live birth\",\"portuguese\":\"Nado vivo\"}}},\"_row_num\":54},{\"choice_list_name\":\"birthoutcome\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Stillbirth\",\"portuguese\":\"Nado morto\"}}},\"_row_num\":55},{\"choice_list_name\":\"birthoutcome\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Miscarriage\",\"portuguese\":\"Aborto\"}}},\"_row_num\":56}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "ASSISTENTE",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"assistent\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"default\":\"Alfa\",\"portuguese\":\"Alfa\"}}},\"_row_num\":7},{\"choice_list_name\":\"assistent\",\"data_value\":\"25\",\"display\":{\"title\":{\"text\":{\"default\":\"Alficene\",\"portuguese\":\"Alficene\"}}},\"_row_num\":8},{\"choice_list_name\":\"assistent\",\"data_value\":\"17\",\"display\":{\"title\":{\"text\":{\"default\":\"Amadu\",\"portuguese\":\"Amadu\"}}},\"_row_num\":9},{\"choice_list_name\":\"assistent\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"default\":\"Antonio\",\"portuguese\":\"Antonio\"}}},\"_row_num\":10},{\"choice_list_name\":\"assistent\",\"data_value\":\"12\",\"display\":{\"title\":{\"text\":{\"default\":\"Armando\",\"portuguese\":\"Armando\"}}},\"_row_num\":11},{\"choice_list_name\":\"assistent\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Augusto Lopes\",\"portuguese\":\"Augusto Lopes\"}}},\"_row_num\":12},{\"choice_list_name\":\"assistent\",\"data_value\":\"24\",\"display\":{\"title\":{\"text\":{\"default\":\"Besna\",\"portuguese\":\"Besna\"}}},\"_row_num\":13},{\"choice_list_name\":\"assistent\",\"data_value\":\"7\",\"display\":{\"title\":{\"text\":{\"default\":\"Calisto\",\"portuguese\":\"Calisto\"}}},\"_row_num\":14},{\"choice_list_name\":\"assistent\",\"data_value\":\"13\",\"display\":{\"title\":{\"text\":{\"default\":\"Celestino\",\"portuguese\":\"Celestino\"}}},\"_row_num\":15},{\"choice_list_name\":\"assistent\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"default\":\"Cesar\",\"portuguese\":\"Cesar\"}}},\"_row_num\":16},{\"choice_list_name\":\"assistent\",\"data_value\":\"18\",\"display\":{\"title\":{\"text\":{\"default\":\"Claudino\",\"portuguese\":\"Claudino\"}}},\"_row_num\":17},{\"choice_list_name\":\"assistent\",\"data_value\":\"26\",\"display\":{\"title\":{\"text\":{\"default\":\"Demba\",\"portuguese\":\"Demba\"}}},\"_row_num\":18},{\"choice_list_name\":\"assistent\",\"data_value\":\"27\",\"display\":{\"title\":{\"text\":{\"default\":\"Eduardo\",\"portuguese\":\"Eduardo\"}}},\"_row_num\":19},{\"choice_list_name\":\"assistent\",\"data_value\":\"15\",\"display\":{\"title\":{\"text\":{\"default\":\"Iaia\",\"portuguese\":\"Iaia\"}}},\"_row_num\":20},{\"choice_list_name\":\"assistent\",\"data_value\":\"23\",\"display\":{\"title\":{\"text\":{\"default\":\"Igualdino\",\"portuguese\":\"Igualdino\"}}},\"_row_num\":21},{\"choice_list_name\":\"assistent\",\"data_value\":\"22\",\"display\":{\"title\":{\"text\":{\"default\":\"Jailson\",\"portuguese\":\"Jailson\"}}},\"_row_num\":22},{\"choice_list_name\":\"assistent\",\"data_value\":\"14\",\"display\":{\"title\":{\"text\":{\"default\":\"Makci\",\"portuguese\":\"Makci\"}}},\"_row_num\":23},{\"choice_list_name\":\"assistent\",\"data_value\":\"10\",\"display\":{\"title\":{\"text\":{\"default\":\"Malam\",\"portuguese\":\"Malam\"}}},\"_row_num\":24},{\"choice_list_name\":\"assistent\",\"data_value\":\"11\",\"display\":{\"title\":{\"text\":{\"default\":\"Maudo\",\"portuguese\":\"Maudo\"}}},\"_row_num\":25},{\"choice_list_name\":\"assistent\",\"data_value\":\"19\",\"display\":{\"title\":{\"text\":{\"default\":\"Namir\",\"portuguese\":\"Namir\"}}},\"_row_num\":26},{\"choice_list_name\":\"assistent\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Nene Mario\",\"portuguese\":\"Nene Mario\"}}},\"_row_num\":27},{\"choice_list_name\":\"assistent\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"default\":\"Nuno\",\"portuguese\":\"Nuno\"}}},\"_row_num\":28},{\"choice_list_name\":\"assistent\",\"data_value\":\"16\",\"display\":{\"title\":{\"text\":{\"default\":\"Oides\",\"portuguese\":\"Oides\"}}},\"_row_num\":29},{\"choice_list_name\":\"assistent\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Sana\",\"portuguese\":\"Sana\"}}},\"_row_num\":30},{\"choice_list_name\":\"assistent\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"default\":\"Simoneo\",\"portuguese\":\"Simoneo\"}}},\"_row_num\":31},{\"choice_list_name\":\"assistent\",\"data_value\":\"20\",\"display\":{\"title\":{\"text\":{\"default\":\"William\",\"portuguese\":\"William\"}}},\"_row_num\":32},{\"choice_list_name\":\"assistent\",\"data_value\":\"21\",\"display\":{\"title\":{\"text\":{\"default\":\"Wilson\",\"portuguese\":\"Wilson\"}}},\"_row_num\":33},{\"choice_list_name\":\"assistent\",\"data_value\":\"79\",\"display\":{\"title\":{\"text\":{\"default\":\"Sanne/Ane\",\"portuguese\":\"Sanne/Ane\"}}},\"_row_num\":34}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "CONSENTFOR",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":4},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":5},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "CONSENTSIG",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":4},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":5},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "CONSENTTYP",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"signature\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":\"Signature\"}},\"_row_num\":45},{\"choice_list_name\":\"signature\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":\"Fingerprint\"}},\"_row_num\":46}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "ESTADOVIS",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"visitstatus\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Present\",\"portuguese\":\"Presente\"}}},\"_row_num\":39},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Moved out\",\"portuguese\":\"Mudou\"}}},\"_row_num\":40},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Dead\",\"portuguese\":\"Faleceu\"}}},\"_row_num\":41},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"default\":\"Absent\",\"portuguese\":\"Ausente\"}}},\"_row_num\":42},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"default\":\"Travelling\",\"portuguese\":\"Viagem\"}}},\"_row_num\":43},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"7\",\"display\":{\"title\":{\"text\":{\"default\":\"Not visited\",\"portuguese\":\"Não visitada\"}}},\"_row_num\":44}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "EVITA",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":4},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":5},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "EVITA2",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"contraceptive\",\"data_value\":\"PILULA\",\"display\":{\"title\":{\"text\":{\"default\":\"Pill\",\"portuguese\":\"Pílula\"}}},\"_row_num\":57},{\"choice_list_name\":\"contraceptive\",\"data_value\":\"JADELLE\",\"display\":{\"title\":{\"text\":{\"default\":\"P-rod\",\"portuguese\":\"Jadelle\"}}},\"_row_num\":58},{\"choice_list_name\":\"contraceptive\",\"data_value\":\"DIU\",\"display\":{\"title\":{\"text\":{\"default\":\"IUD\",\"portuguese\":\"Anilha\"}}},\"_row_num\":59},{\"choice_list_name\":\"contraceptive\",\"data_value\":\"CAMISINHA\",\"display\":{\"title\":{\"text\":{\"default\":\"Condom\",\"portuguese\":\"Camisinha\"}}},\"_row_num\":60},{\"choice_list_name\":\"contraceptive\",\"data_value\":\"FEMIDOM\",\"display\":{\"title\":{\"text\":{\"default\":\"Femidom\",\"portuguese\":\"Femidom\"}}},\"_row_num\":61},{\"choice_list_name\":\"contraceptive\",\"data_value\":\"DEPO\",\"display\":{\"title\":{\"text\":{\"default\":\"Depo\",\"portuguese\":\"Depo\"}}},\"_row_num\":62},{\"choice_list_name\":\"contraceptive\",\"data_value\":\"ESTERIL-F\",\"display\":{\"title\":{\"text\":{\"default\":\"F-Steriliastion\",\"portuguese\":\"Esteril-F\"}}},\"_row_num\":63},{\"choice_list_name\":\"contraceptive\",\"data_value\":\"ESTERIL-M\",\"display\":{\"title\":{\"text\":{\"default\":\"Vasectomy\",\"portuguese\":\"Vasectomia\"}}},\"_row_num\":64},{\"choice_list_name\":\"contraceptive\",\"data_value\":\"EMERCENCIA\",\"display\":{\"title\":{\"text\":{\"default\":\"Morning after pill\",\"portuguese\":\"Pílulas do dia seguinte.\"}}},\"_row_num\":65},{\"choice_list_name\":\"contraceptive\",\"data_value\":\"OUTRA\",\"display\":{\"title\":{\"text\":{\"default\":\"Other\",\"portuguese\":\"Outra/o\"}}},\"_row_num\":66},{\"choice_list_name\":\"contraceptive\",\"data_value\":\"TRADICIONAIS\",\"display\":{\"title\":{\"text\":{\"default\":\"Traditional\",\"portuguese\":\"Tradicionais\"}}},\"_row_num\":67}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "EXITPRECIS",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"precision\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Day certain\",\"portuguese\":\"Dia certo\"}}},\"_row_num\":35},{\"choice_list_name\":\"precision\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Month certain\",\"portuguese\":\"Mes certo\"}}},\"_row_num\":36},{\"choice_list_name\":\"precision\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Season certain\",\"portuguese\":\"Estação certo\"}}},\"_row_num\":37},{\"choice_list_name\":\"precision\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"default\":\"Year certain\",\"portuguese\":\"Ano certo\"}}},\"_row_num\":38}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "GR",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":4},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":5},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "PARPAD",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":4},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":5},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "TENDA",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"bednettime\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"All year\",\"portuguese\":\"Tudo Ano\"}}},\"_row_num\":50},{\"choice_list_name\":\"bednettime\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Rainy season\",\"portuguese\":\"Chuva\"}}},\"_row_num\":51},{\"choice_list_name\":\"bednettime\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Never\",\"portuguese\":\"Nunca\"}}},\"_row_num\":52},{\"choice_list_name\":\"bednettime\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"default\":\"Other\",\"portuguese\":\"Outra/o\"}}},\"_row_num\":53}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "TENDATIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"bednet\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Impregnated net\",\"portuguese\":\"Tenda impregnada\"}}},\"_row_num\":47},{\"choice_list_name\":\"bednet\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Simple bednet\",\"portuguese\":\"Tenda simples\"}}},\"_row_num\":48},{\"choice_list_name\":\"bednet\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Unknown type\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":49}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "TENDAYN",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":4},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":5},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "V",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":3}]"
+      },
+      {
+        "_partition": "FormType",
+        "_aspect": "default",
+        "_key": "FormType.formType",
+        "_type": "string",
+        "_value": "SURVEY"
+      },
+      {
+        "_partition": "SurveyUtil",
+        "_aspect": "default",
+        "_key": "SurveyUtil.formId",
+        "_type": "string",
+        "_value": "MIFVISIT_CORE"
+      },
+      {
+        "_partition": "Table",
+        "_aspect": "default",
+        "_key": "defaultViewType",
+        "_type": "string",
+        "_value": "SPREADSHEET"
+      },
+      {
+        "_partition": "Table",
+        "_aspect": "default",
+        "_key": "displayName",
+        "_type": "object",
+        "_value": "{\"text\":{\"portuguese\":\"Mulher na idade fertil - visitas_núcleo\",\"default\":\"Mulher na idade fertil - visitas_núcleo\"}}"
+      }
+    ]
+  }
+}
