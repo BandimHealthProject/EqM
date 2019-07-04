@@ -3,3 +3,8 @@ build/
 app/output/props/*
 tempZipDir
 .idea/*
+app/config/assets/csv/MIF.init100.csv
+app/config/assets/csv/MIF.init15000.csv
+app/config/assets/csv/MIF.init2000.csv
+app/config/assets/csv/MIF.initOio.csv
+app/config/assets/csv/MIF.initTotal.csv
