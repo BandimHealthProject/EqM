@@ -72,7 +72,7 @@
         "_row_num": 2
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "CONT",
         "display": {
           "prompt": {
@@ -126,7 +126,7 @@
         "_row_num": 8
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "EXITDATA",
         "display": {
           "prompt": {
@@ -235,7 +235,7 @@
         "_row_num": 22
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "CONSENTDAT",
         "display": {
           "prompt": {
@@ -336,7 +336,7 @@
         "_row_num": 37
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "ABPARTDATA",
         "display": {
           "prompt": {
@@ -406,7 +406,7 @@
         "_row_num": 45
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "ABPARTNVDATA",
         "display": {
           "prompt": {
@@ -667,6 +667,15 @@
         "_row_num": 84
       }
     ],
+    "prompt_types": [
+      {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2
+      }
+    ],
     "vaccines": [
       {
         "branch_label": "vac1",
@@ -734,7 +743,7 @@
         "_row_num": 10
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC1DATA",
         "display": {
           "prompt": {
@@ -806,7 +815,7 @@
         "_row_num": 21
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC1DATA",
         "display": {
           "prompt": {
@@ -893,7 +902,7 @@
         "_row_num": 34
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC2DATA",
         "display": {
           "prompt": {
@@ -965,7 +974,7 @@
         "_row_num": 45
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC2DATA",
         "display": {
           "prompt": {
@@ -1052,7 +1061,7 @@
         "_row_num": 58
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC3DATA",
         "display": {
           "prompt": {
@@ -1124,7 +1133,7 @@
         "_row_num": 69
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC3DATA",
         "display": {
           "prompt": {
@@ -1211,7 +1220,7 @@
         "_row_num": 82
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC4DATA",
         "display": {
           "prompt": {
@@ -1283,7 +1292,7 @@
         "_row_num": 93
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC4DATA",
         "display": {
           "prompt": {
@@ -1370,7 +1379,7 @@
         "_row_num": 106
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC5DATA",
         "display": {
           "prompt": {
@@ -1442,7 +1451,7 @@
         "_row_num": 117
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC5DATA",
         "display": {
           "prompt": {
@@ -1529,7 +1538,7 @@
         "_row_num": 130
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC6DATA",
         "display": {
           "prompt": {
@@ -1601,7 +1610,7 @@
         "_row_num": 141
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC6DATA",
         "display": {
           "prompt": {
@@ -1688,7 +1697,7 @@
         "_row_num": 154
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC7DATA",
         "display": {
           "prompt": {
@@ -1760,7 +1769,7 @@
         "_row_num": 165
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC7DATA",
         "display": {
           "prompt": {
@@ -1847,7 +1856,7 @@
         "_row_num": 178
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC8DATA",
         "display": {
           "prompt": {
@@ -1919,7 +1928,7 @@
         "_row_num": 189
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC8DATA",
         "display": {
           "prompt": {
@@ -2006,7 +2015,7 @@
         "_row_num": 202
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC9DATA",
         "display": {
           "prompt": {
@@ -2078,7 +2087,7 @@
         "_row_num": 213
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC9DATA",
         "display": {
           "prompt": {
@@ -2165,7 +2174,7 @@
         "_row_num": 226
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC10DATA",
         "display": {
           "prompt": {
@@ -2237,7 +2246,7 @@
         "_row_num": 237
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC10DATA",
         "display": {
           "prompt": {
@@ -2324,7 +2333,7 @@
         "_row_num": 250
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC11DATA",
         "display": {
           "prompt": {
@@ -2396,7 +2405,7 @@
         "_row_num": 261
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC11DATA",
         "display": {
           "prompt": {
@@ -2483,7 +2492,7 @@
         "_row_num": 274
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC12DATA",
         "display": {
           "prompt": {
@@ -2555,7 +2564,7 @@
         "_row_num": 285
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC12DATA",
         "display": {
           "prompt": {
@@ -2642,7 +2651,7 @@
         "_row_num": 298
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC13DATA",
         "display": {
           "prompt": {
@@ -2714,7 +2723,7 @@
         "_row_num": 309
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC13DATA",
         "display": {
           "prompt": {
@@ -2801,7 +2810,7 @@
         "_row_num": 322
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC14DATA",
         "display": {
           "prompt": {
@@ -2873,7 +2882,7 @@
         "_row_num": 333
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC14DATA",
         "display": {
           "prompt": {
@@ -2960,7 +2969,7 @@
         "_row_num": 346
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC15DATA",
         "display": {
           "prompt": {
@@ -3032,7 +3041,7 @@
         "_row_num": 357
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC15DATA",
         "display": {
           "prompt": {
@@ -3119,7 +3128,7 @@
         "_row_num": 370
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC16DATA",
         "display": {
           "prompt": {
@@ -3191,7 +3200,7 @@
         "_row_num": 381
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC16DATA",
         "display": {
           "prompt": {
@@ -3278,7 +3287,7 @@
         "_row_num": 394
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC17DATA",
         "display": {
           "prompt": {
@@ -3350,7 +3359,7 @@
         "_row_num": 405
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC17DATA",
         "display": {
           "prompt": {
@@ -3437,7 +3446,7 @@
         "_row_num": 418
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC18DATA",
         "display": {
           "prompt": {
@@ -3509,7 +3518,7 @@
         "_row_num": 429
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC18DATA",
         "display": {
           "prompt": {
@@ -3596,7 +3605,7 @@
         "_row_num": 442
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC19DATA",
         "display": {
           "prompt": {
@@ -3668,7 +3677,7 @@
         "_row_num": 453
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC19DATA",
         "display": {
           "prompt": {
@@ -3755,7 +3764,7 @@
         "_row_num": 466
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC20DATA",
         "display": {
           "prompt": {
@@ -3827,7 +3836,7 @@
         "_row_num": 477
       },
       {
-        "type": "date",
+        "type": "custom_date",
         "name": "VAC20DATA",
         "display": {
           "prompt": {
@@ -4798,7 +4807,7 @@
       },
       {
         "name": "ABPARTDATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 3
       },
@@ -4810,7 +4819,7 @@
       },
       {
         "name": "ABPARTNVDATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 5
       },
@@ -4852,7 +4861,7 @@
       },
       {
         "name": "CONSENTDAT",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 12
       },
@@ -4876,7 +4885,7 @@
       },
       {
         "name": "CONT",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 16
       },
@@ -4906,7 +4915,7 @@
       },
       {
         "name": "EXITDATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 21
       },
@@ -4966,7 +4975,7 @@
       },
       {
         "name": "VAC1DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 31
       },
@@ -4990,7 +4999,7 @@
       },
       {
         "name": "VAC2DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 35
       },
@@ -5014,7 +5023,7 @@
       },
       {
         "name": "VAC3DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 39
       },
@@ -5038,7 +5047,7 @@
       },
       {
         "name": "VAC4DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 43
       },
@@ -5062,7 +5071,7 @@
       },
       {
         "name": "VAC5DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 47
       },
@@ -5086,7 +5095,7 @@
       },
       {
         "name": "VAC6DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 51
       },
@@ -5110,7 +5119,7 @@
       },
       {
         "name": "VAC7DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 55
       },
@@ -5134,7 +5143,7 @@
       },
       {
         "name": "VAC8DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 59
       },
@@ -5158,7 +5167,7 @@
       },
       {
         "name": "VAC9DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 63
       },
@@ -5182,7 +5191,7 @@
       },
       {
         "name": "VAC10DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 67
       },
@@ -5206,7 +5215,7 @@
       },
       {
         "name": "VAC11DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 71
       },
@@ -5230,7 +5239,7 @@
       },
       {
         "name": "VAC12DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 75
       },
@@ -5254,7 +5263,7 @@
       },
       {
         "name": "VAC13DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 79
       },
@@ -5278,7 +5287,7 @@
       },
       {
         "name": "VAC14DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 83
       },
@@ -5302,7 +5311,7 @@
       },
       {
         "name": "VAC15DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 87
       },
@@ -5326,7 +5335,7 @@
       },
       {
         "name": "VAC16DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 91
       },
@@ -5350,7 +5359,7 @@
       },
       {
         "name": "VAC17DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 95
       },
@@ -5374,7 +5383,7 @@
       },
       {
         "name": "VAC18DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 99
       },
@@ -5398,7 +5407,7 @@
       },
       {
         "name": "VAC19DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 103
       },
@@ -5422,7 +5431,7 @@
       },
       {
         "name": "VAC20DATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 107
       },
@@ -5566,7 +5575,7 @@
       },
       {
         "name": "LASTVISIT",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 133
       }
@@ -6695,8 +6704,12 @@
         "elementKey": "ABPART"
       },
       "ABPARTDATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 38,
@@ -6727,8 +6740,12 @@
         "elementKey": "ABPARTNV"
       },
       "ABPARTNVDATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 46,
@@ -6839,8 +6856,12 @@
         "elementKey": "CESCO"
       },
       "CONSENTDAT": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 23,
@@ -6903,8 +6924,12 @@
         "elementKey": "CONSENTTYP"
       },
       "CONT": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 3,
@@ -6986,8 +7011,12 @@
         "elementKey": "EVITA2"
       },
       "EXITDATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 9,
@@ -7149,8 +7178,12 @@
         "elementKey": "VAC1TIPO"
       },
       "VAC1DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 11,
@@ -7225,8 +7258,12 @@
         "elementKey": "VAC2TIPO"
       },
       "VAC2DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 35,
@@ -7301,8 +7338,12 @@
         "elementKey": "VAC3TIPO"
       },
       "VAC3DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 59,
@@ -7377,8 +7418,12 @@
         "elementKey": "VAC4TIPO"
       },
       "VAC4DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 83,
@@ -7453,8 +7498,12 @@
         "elementKey": "VAC5TIPO"
       },
       "VAC5DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 107,
@@ -7529,8 +7578,12 @@
         "elementKey": "VAC6TIPO"
       },
       "VAC6DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 131,
@@ -7605,8 +7658,12 @@
         "elementKey": "VAC7TIPO"
       },
       "VAC7DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 155,
@@ -7681,8 +7738,12 @@
         "elementKey": "VAC8TIPO"
       },
       "VAC8DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 179,
@@ -7757,8 +7818,12 @@
         "elementKey": "VAC9TIPO"
       },
       "VAC9DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 203,
@@ -7833,8 +7898,12 @@
         "elementKey": "VAC10TIPO"
       },
       "VAC10DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 227,
@@ -7909,8 +7978,12 @@
         "elementKey": "VAC11TIPO"
       },
       "VAC11DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 251,
@@ -7985,8 +8058,12 @@
         "elementKey": "VAC12TIPO"
       },
       "VAC12DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 275,
@@ -8061,8 +8138,12 @@
         "elementKey": "VAC13TIPO"
       },
       "VAC13DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 299,
@@ -8137,8 +8218,12 @@
         "elementKey": "VAC14TIPO"
       },
       "VAC14DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 323,
@@ -8213,8 +8298,12 @@
         "elementKey": "VAC15TIPO"
       },
       "VAC15DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 347,
@@ -8289,8 +8378,12 @@
         "elementKey": "VAC16TIPO"
       },
       "VAC16DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 371,
@@ -8365,8 +8458,12 @@
         "elementKey": "VAC17TIPO"
       },
       "VAC17DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 395,
@@ -8441,8 +8538,12 @@
         "elementKey": "VAC18TIPO"
       },
       "VAC18DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 419,
@@ -8517,8 +8618,12 @@
         "elementKey": "VAC19TIPO"
       },
       "VAC19DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 443,
@@ -8593,8 +8698,12 @@
         "elementKey": "VAC20TIPO"
       },
       "VAC20DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 467,
@@ -8975,8 +9084,12 @@
         "elementKey": "ID"
       },
       "LASTVISIT": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 133,
@@ -9018,7 +9131,7 @@
         },
         "prompts": [
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "CONT",
             "display": {
               "prompt": {
@@ -9031,7 +9144,7 @@
             "_row_num": 3,
             "__rowNum__": 2,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "survey/_screen2",
             "promptIdx": 0
           },
@@ -9074,7 +9187,7 @@
             "promptIdx": 2
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "EXITDATA",
             "display": {
               "prompt": {
@@ -9087,7 +9200,7 @@
             "_row_num": 9,
             "__rowNum__": 8,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 3
           },
@@ -9177,7 +9290,7 @@
             "promptIdx": 8
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "CONSENTDAT",
             "display": {
               "prompt": {
@@ -9187,7 +9300,7 @@
             "_row_num": 23,
             "__rowNum__": 22,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "survey/_screen17",
             "promptIdx": 9
           },
@@ -9252,7 +9365,7 @@
             "promptIdx": 12
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "ABPARTDATA",
             "display": {
               "prompt": {
@@ -9265,7 +9378,7 @@
             "_row_num": 38,
             "__rowNum__": 37,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "survey/_screen37",
             "promptIdx": 13
           },
@@ -9324,7 +9437,7 @@
             "promptIdx": 16
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "ABPARTNVDATA",
             "display": {
               "prompt": {
@@ -9337,7 +9450,7 @@
             "_row_num": 46,
             "__rowNum__": 45,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "survey/_screen43",
             "promptIdx": 17
           },
@@ -10013,7 +10126,7 @@
             "promptIdx": 3
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC1DATA",
             "display": {
               "prompt": {
@@ -10023,7 +10136,7 @@
             "_row_num": 11,
             "__rowNum__": 10,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen7",
             "promptIdx": 4
           },
@@ -10076,7 +10189,7 @@
             "promptIdx": 7
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC1DATA",
             "display": {
               "prompt": {
@@ -10086,7 +10199,7 @@
             "_row_num": 22,
             "__rowNum__": 21,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen17",
             "promptIdx": 8
           },
@@ -10153,7 +10266,7 @@
             "promptIdx": 12
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC2DATA",
             "display": {
               "prompt": {
@@ -10163,7 +10276,7 @@
             "_row_num": 35,
             "__rowNum__": 34,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen31",
             "promptIdx": 13
           },
@@ -10216,7 +10329,7 @@
             "promptIdx": 16
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC2DATA",
             "display": {
               "prompt": {
@@ -10226,7 +10339,7 @@
             "_row_num": 46,
             "__rowNum__": 45,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen41",
             "promptIdx": 17
           },
@@ -10293,7 +10406,7 @@
             "promptIdx": 21
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC3DATA",
             "display": {
               "prompt": {
@@ -10303,7 +10416,7 @@
             "_row_num": 59,
             "__rowNum__": 58,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen55",
             "promptIdx": 22
           },
@@ -10356,7 +10469,7 @@
             "promptIdx": 25
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC3DATA",
             "display": {
               "prompt": {
@@ -10366,7 +10479,7 @@
             "_row_num": 70,
             "__rowNum__": 69,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen65",
             "promptIdx": 26
           },
@@ -10433,7 +10546,7 @@
             "promptIdx": 30
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC4DATA",
             "display": {
               "prompt": {
@@ -10443,7 +10556,7 @@
             "_row_num": 83,
             "__rowNum__": 82,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen79",
             "promptIdx": 31
           },
@@ -10496,7 +10609,7 @@
             "promptIdx": 34
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC4DATA",
             "display": {
               "prompt": {
@@ -10506,7 +10619,7 @@
             "_row_num": 94,
             "__rowNum__": 93,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen89",
             "promptIdx": 35
           },
@@ -10573,7 +10686,7 @@
             "promptIdx": 39
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC5DATA",
             "display": {
               "prompt": {
@@ -10583,7 +10696,7 @@
             "_row_num": 107,
             "__rowNum__": 106,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen103",
             "promptIdx": 40
           },
@@ -10636,7 +10749,7 @@
             "promptIdx": 43
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC5DATA",
             "display": {
               "prompt": {
@@ -10646,7 +10759,7 @@
             "_row_num": 118,
             "__rowNum__": 117,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen113",
             "promptIdx": 44
           },
@@ -10713,7 +10826,7 @@
             "promptIdx": 48
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC6DATA",
             "display": {
               "prompt": {
@@ -10723,7 +10836,7 @@
             "_row_num": 131,
             "__rowNum__": 130,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen127",
             "promptIdx": 49
           },
@@ -10776,7 +10889,7 @@
             "promptIdx": 52
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC6DATA",
             "display": {
               "prompt": {
@@ -10786,7 +10899,7 @@
             "_row_num": 142,
             "__rowNum__": 141,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen137",
             "promptIdx": 53
           },
@@ -10853,7 +10966,7 @@
             "promptIdx": 57
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC7DATA",
             "display": {
               "prompt": {
@@ -10863,7 +10976,7 @@
             "_row_num": 155,
             "__rowNum__": 154,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen151",
             "promptIdx": 58
           },
@@ -10916,7 +11029,7 @@
             "promptIdx": 61
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC7DATA",
             "display": {
               "prompt": {
@@ -10926,7 +11039,7 @@
             "_row_num": 166,
             "__rowNum__": 165,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen161",
             "promptIdx": 62
           },
@@ -10993,7 +11106,7 @@
             "promptIdx": 66
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC8DATA",
             "display": {
               "prompt": {
@@ -11003,7 +11116,7 @@
             "_row_num": 179,
             "__rowNum__": 178,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen175",
             "promptIdx": 67
           },
@@ -11056,7 +11169,7 @@
             "promptIdx": 70
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC8DATA",
             "display": {
               "prompt": {
@@ -11066,7 +11179,7 @@
             "_row_num": 190,
             "__rowNum__": 189,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen185",
             "promptIdx": 71
           },
@@ -11133,7 +11246,7 @@
             "promptIdx": 75
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC9DATA",
             "display": {
               "prompt": {
@@ -11143,7 +11256,7 @@
             "_row_num": 203,
             "__rowNum__": 202,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen199",
             "promptIdx": 76
           },
@@ -11196,7 +11309,7 @@
             "promptIdx": 79
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC9DATA",
             "display": {
               "prompt": {
@@ -11206,7 +11319,7 @@
             "_row_num": 214,
             "__rowNum__": 213,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen209",
             "promptIdx": 80
           },
@@ -11273,7 +11386,7 @@
             "promptIdx": 84
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC10DATA",
             "display": {
               "prompt": {
@@ -11283,7 +11396,7 @@
             "_row_num": 227,
             "__rowNum__": 226,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen223",
             "promptIdx": 85
           },
@@ -11336,7 +11449,7 @@
             "promptIdx": 88
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC10DATA",
             "display": {
               "prompt": {
@@ -11346,7 +11459,7 @@
             "_row_num": 238,
             "__rowNum__": 237,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen233",
             "promptIdx": 89
           },
@@ -11413,7 +11526,7 @@
             "promptIdx": 93
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC11DATA",
             "display": {
               "prompt": {
@@ -11423,7 +11536,7 @@
             "_row_num": 251,
             "__rowNum__": 250,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen247",
             "promptIdx": 94
           },
@@ -11476,7 +11589,7 @@
             "promptIdx": 97
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC11DATA",
             "display": {
               "prompt": {
@@ -11486,7 +11599,7 @@
             "_row_num": 262,
             "__rowNum__": 261,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen257",
             "promptIdx": 98
           },
@@ -11553,7 +11666,7 @@
             "promptIdx": 102
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC12DATA",
             "display": {
               "prompt": {
@@ -11563,7 +11676,7 @@
             "_row_num": 275,
             "__rowNum__": 274,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen271",
             "promptIdx": 103
           },
@@ -11616,7 +11729,7 @@
             "promptIdx": 106
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC12DATA",
             "display": {
               "prompt": {
@@ -11626,7 +11739,7 @@
             "_row_num": 286,
             "__rowNum__": 285,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen281",
             "promptIdx": 107
           },
@@ -11693,7 +11806,7 @@
             "promptIdx": 111
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC13DATA",
             "display": {
               "prompt": {
@@ -11703,7 +11816,7 @@
             "_row_num": 299,
             "__rowNum__": 298,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen295",
             "promptIdx": 112
           },
@@ -11756,7 +11869,7 @@
             "promptIdx": 115
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC13DATA",
             "display": {
               "prompt": {
@@ -11766,7 +11879,7 @@
             "_row_num": 310,
             "__rowNum__": 309,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen305",
             "promptIdx": 116
           },
@@ -11833,7 +11946,7 @@
             "promptIdx": 120
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC14DATA",
             "display": {
               "prompt": {
@@ -11843,7 +11956,7 @@
             "_row_num": 323,
             "__rowNum__": 322,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen319",
             "promptIdx": 121
           },
@@ -11896,7 +12009,7 @@
             "promptIdx": 124
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC14DATA",
             "display": {
               "prompt": {
@@ -11906,7 +12019,7 @@
             "_row_num": 334,
             "__rowNum__": 333,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen329",
             "promptIdx": 125
           },
@@ -11973,7 +12086,7 @@
             "promptIdx": 129
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC15DATA",
             "display": {
               "prompt": {
@@ -11983,7 +12096,7 @@
             "_row_num": 347,
             "__rowNum__": 346,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen343",
             "promptIdx": 130
           },
@@ -12036,7 +12149,7 @@
             "promptIdx": 133
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC15DATA",
             "display": {
               "prompt": {
@@ -12046,7 +12159,7 @@
             "_row_num": 358,
             "__rowNum__": 357,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen353",
             "promptIdx": 134
           },
@@ -12113,7 +12226,7 @@
             "promptIdx": 138
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC16DATA",
             "display": {
               "prompt": {
@@ -12123,7 +12236,7 @@
             "_row_num": 371,
             "__rowNum__": 370,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen367",
             "promptIdx": 139
           },
@@ -12176,7 +12289,7 @@
             "promptIdx": 142
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC16DATA",
             "display": {
               "prompt": {
@@ -12186,7 +12299,7 @@
             "_row_num": 382,
             "__rowNum__": 381,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen377",
             "promptIdx": 143
           },
@@ -12253,7 +12366,7 @@
             "promptIdx": 147
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC17DATA",
             "display": {
               "prompt": {
@@ -12263,7 +12376,7 @@
             "_row_num": 395,
             "__rowNum__": 394,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen391",
             "promptIdx": 148
           },
@@ -12316,7 +12429,7 @@
             "promptIdx": 151
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC17DATA",
             "display": {
               "prompt": {
@@ -12326,7 +12439,7 @@
             "_row_num": 406,
             "__rowNum__": 405,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen401",
             "promptIdx": 152
           },
@@ -12393,7 +12506,7 @@
             "promptIdx": 156
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC18DATA",
             "display": {
               "prompt": {
@@ -12403,7 +12516,7 @@
             "_row_num": 419,
             "__rowNum__": 418,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen415",
             "promptIdx": 157
           },
@@ -12456,7 +12569,7 @@
             "promptIdx": 160
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC18DATA",
             "display": {
               "prompt": {
@@ -12466,7 +12579,7 @@
             "_row_num": 430,
             "__rowNum__": 429,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen425",
             "promptIdx": 161
           },
@@ -12533,7 +12646,7 @@
             "promptIdx": 165
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC19DATA",
             "display": {
               "prompt": {
@@ -12543,7 +12656,7 @@
             "_row_num": 443,
             "__rowNum__": 442,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen439",
             "promptIdx": 166
           },
@@ -12596,7 +12709,7 @@
             "promptIdx": 169
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC19DATA",
             "display": {
               "prompt": {
@@ -12606,7 +12719,7 @@
             "_row_num": 454,
             "__rowNum__": 453,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen449",
             "promptIdx": 170
           },
@@ -12673,7 +12786,7 @@
             "promptIdx": 174
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC20DATA",
             "display": {
               "prompt": {
@@ -12683,7 +12796,7 @@
             "_row_num": 467,
             "__rowNum__": 466,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen463",
             "promptIdx": 175
           },
@@ -12736,7 +12849,7 @@
             "promptIdx": 178
           },
           {
-            "type": "date",
+            "type": "custom_date",
             "name": "VAC20DATA",
             "display": {
               "prompt": {
@@ -12746,7 +12859,7 @@
             "_row_num": 478,
             "__rowNum__": 477,
             "_token_type": "prompt",
-            "_type": "date",
+            "_type": "custom_date",
             "_branch_label_enclosing_screen": "vaccines/_screen473",
             "promptIdx": 179
           },
@@ -15096,8 +15209,12 @@
         "elementPath": "ABPART"
       },
       "ABPARTDATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 38,
@@ -15134,8 +15251,12 @@
         "elementPath": "ABPARTNV"
       },
       "ABPARTNVDATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 46,
@@ -15267,8 +15388,12 @@
         "elementPath": "CESCO"
       },
       "CONSENTDAT": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 23,
@@ -15343,8 +15468,12 @@
         "elementPath": "CONSENTTYP"
       },
       "CONT": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 3,
@@ -15448,8 +15577,12 @@
         ]
       },
       "EXITDATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 9,
@@ -15641,8 +15774,12 @@
         "elementPath": "VAC1TIPO"
       },
       "VAC1DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 11,
@@ -15729,8 +15866,12 @@
         "elementPath": "VAC2TIPO"
       },
       "VAC2DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 35,
@@ -15817,8 +15958,12 @@
         "elementPath": "VAC3TIPO"
       },
       "VAC3DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 59,
@@ -15905,8 +16050,12 @@
         "elementPath": "VAC4TIPO"
       },
       "VAC4DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 83,
@@ -15993,8 +16142,12 @@
         "elementPath": "VAC5TIPO"
       },
       "VAC5DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 107,
@@ -16081,8 +16234,12 @@
         "elementPath": "VAC6TIPO"
       },
       "VAC6DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 131,
@@ -16169,8 +16326,12 @@
         "elementPath": "VAC7TIPO"
       },
       "VAC7DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 155,
@@ -16257,8 +16418,12 @@
         "elementPath": "VAC8TIPO"
       },
       "VAC8DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 179,
@@ -16345,8 +16510,12 @@
         "elementPath": "VAC9TIPO"
       },
       "VAC9DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 203,
@@ -16433,8 +16602,12 @@
         "elementPath": "VAC10TIPO"
       },
       "VAC10DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 227,
@@ -16521,8 +16694,12 @@
         "elementPath": "VAC11TIPO"
       },
       "VAC11DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 251,
@@ -16609,8 +16786,12 @@
         "elementPath": "VAC12TIPO"
       },
       "VAC12DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 275,
@@ -16697,8 +16878,12 @@
         "elementPath": "VAC13TIPO"
       },
       "VAC13DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 299,
@@ -16785,8 +16970,12 @@
         "elementPath": "VAC14TIPO"
       },
       "VAC14DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 323,
@@ -16873,8 +17062,12 @@
         "elementPath": "VAC15TIPO"
       },
       "VAC15DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 347,
@@ -16961,8 +17154,12 @@
         "elementPath": "VAC16TIPO"
       },
       "VAC16DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 371,
@@ -17049,8 +17246,12 @@
         "elementPath": "VAC17TIPO"
       },
       "VAC17DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 395,
@@ -17137,8 +17338,12 @@
         "elementPath": "VAC18TIPO"
       },
       "VAC18DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 419,
@@ -17225,8 +17430,12 @@
         "elementPath": "VAC19TIPO"
       },
       "VAC19DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 443,
@@ -17313,8 +17522,12 @@
         "elementPath": "VAC20TIPO"
       },
       "VAC20DATA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 467,
@@ -17767,8 +17980,12 @@
         "elementPath": "ID"
       },
       "LASTVISIT": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 133,

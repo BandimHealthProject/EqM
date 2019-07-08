@@ -23,9 +23,11 @@ function resumeFunc(state) {
         listViewLogic.setPrevAndNextButtons('#prevButton', '#nextButton');
         listViewLogic.setNavTextElements('#navTextLimit', '#navTextOffset', '#navTextCnt');
         listViewLogic.showEditAndDeleteButtons(false);
+        listViewLogic.setLastvisit('LASTVISIT');
      
         listViewLogic.setColIdsToDisplayInList(null, 'NOMEMAE',
-        		'Relação 1', 'RELA1NOME', 'Relação 2', 'RELA2NOME',
+        		'Relação 1', 'RELA1', null, 'RELA1NOME', 
+        		'Relação 2', 'RELA2', null, 'RELA2NOME',
         		'Morança', 'MOR', 'Casa', 'CASA', 'Fogao', 'FOGAO');
     }
 

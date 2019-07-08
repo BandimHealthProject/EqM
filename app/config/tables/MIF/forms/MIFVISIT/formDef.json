@@ -1347,6 +1347,13 @@
         "type": "integer",
         "comment": "Updates CICA variable",
         "_row_num": 3
+      },
+      {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 4
       }
     ],
     "choices": [
@@ -2104,7 +2111,7 @@
       },
       {
         "name": "EXITDATA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 10
       },
@@ -2302,7 +2309,7 @@
       },
       {
         "name": "REGDIA",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 43
       },
@@ -4499,11 +4506,13 @@
         "elementKey": "ESTADO"
       },
       "EXITDATA": {
-        "prompt_type_name": "async_assign_date",
+        "prompt_type_name": "custom_date",
         "type": "string",
-        "comment": "Updates LASTVISIT variable",
+        "comment": "Makes the date widget DD/MM/YYYY",
         "valuesList": "linked_exitdate",
         "elementType": "date",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 12,
@@ -4906,8 +4915,12 @@
         "elementKey": "REG"
       },
       "REGDIA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 43,
@@ -7490,11 +7503,13 @@
         "elementPath": "ESTADO"
       },
       "EXITDATA": {
-        "prompt_type_name": "async_assign_date",
+        "prompt_type_name": "custom_date",
         "type": "string",
-        "comment": "Updates LASTVISIT variable",
+        "comment": "Makes the date widget DD/MM/YYYY",
         "valuesList": "linked_exitdate",
         "elementType": "date",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 12,
@@ -8045,8 +8060,12 @@
         "elementPath": "REG"
       },
       "REGDIA": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 43,

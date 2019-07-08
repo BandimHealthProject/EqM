@@ -40,22 +40,25 @@ window.listViewLogic = {
     navTextCnt: null,
     showEditAndDelButtons: false,
 
+    lastvisit: null,
+    
     hdrLabel: null,
     hdrColId: null,
-    firstDetLabel: null,
-    firstDetColId: null,
-    secondDetLabel: null,
-    secondDetColId: null,
-    thirdDetLabel: null,
-    thirdDetColId: null,
-    fourthDetLabel: null,
-    fourthDetColId: null,
-    fifthDetLabel: null,
-    fifthDetColId: null,
-    sixthDetLabel: null,
-    sixthDetColId: null,
-    seventhDetLabel: null,
-    seventhDetColId: null,
+    firstDetLabel1: null,
+    firstDetColId1: null,
+    firstDetLabel2: null,
+    firstDetColId2: null,  
+    secondDetLabel1: null,
+    secondDetColId1: null,
+    secondDetLabel2: null,
+    secondDetColId2: null,
+    thirdDetLabel1: null,
+    thirdDetColId1: null,
+    thirdDetLabel2: null,
+    thirdDetColId2: null,      
+    thirdDetLabel3: null,
+    thirdDetColId3: null,
+    
     
     setTableId: function(tableName) {
         if (tableName === null || tableName === undefined ||
@@ -228,12 +231,18 @@ window.listViewLogic = {
             }
         }
     },
+    
+    setLastvisit: function(lastvisit) {
+    	var that = this;
+    	if (lastvisit !== null && lastvisit !==undefined && lastvisit.length !==0) {
+    		that.lastvisit = lastvisit;
+    	}
+    },
 
     setColIdsToDisplayInList: function(headerLabel, headerColId, 
-            firstDetailLabel, firstDetailColId, secondDetailLabel, secondDetailColId,
-            thirdDetailLabel, thirdDetailColId, fourthDetailLabel, fourthDetailColId,
-            fifthDetailLabel, fifthDetailColId, sixthDetailLabel, sixthDetailColId,
-            seventhDetailLabel, seventhDetailColId) {
+            firstDetailLabel1, firstDetailColId1, firstDetailLabel2, firstDetailColId2, 
+            secondDetailLabel1, secondDetailColId1, secondDetailLabel2, secondDetailColId2,
+            thirdDetailLabel1, thirdDetailColId1, thirdDetailLabel2, thirdDetailColId2, thirdDetailLabel3, thirdDetailColId3 ) {
         var that = this;
 
         if (headerLabel !== null && headerLabel !== undefined && headerLabel.length !== 0) {
@@ -244,61 +253,62 @@ window.listViewLogic = {
             that.hdrColId = headerColId;
         }
 
-        if (firstDetailLabel !== null && firstDetailLabel !== undefined && firstDetailLabel.length !== 0) {
-            that.firstDetLabel = firstDetailLabel;
+        if (firstDetailLabel1 !== null && firstDetailLabel1 !== undefined && firstDetailLabel1.length !== 0) {
+            that.firstDetLabel1 = firstDetailLabel1;
         }
 
-        if (firstDetailColId !== null && firstDetailColId !== undefined && firstDetailColId.length !== 0) {
-            that.firstDetColId = firstDetailColId;
-        }
-
-        if (secondDetailLabel !== null && secondDetailLabel !== undefined && secondDetailLabel.length !== 0) {
-            that.secondDetLabel = secondDetailLabel;
-        }
-
-        if (secondDetailColId !== null && secondDetailColId !== undefined && secondDetailColId.length !== 0) {
-            that.secondDetColId = secondDetailColId;
+        if (firstDetailColId1 !== null && firstDetailColId1 !== undefined && firstDetailColId1.length !== 0) {
+            that.firstDetColId1 = firstDetailColId1;
         }
         
-        if (thirdDetailLabel !== null && thirdDetailLabel !== undefined && thirdDetailLabel.length !== 0) {
-            that.thirdDetLabel = thirdDetailLabel;
+        if (firstDetailLabel2 !== null && firstDetailLabel2 !== undefined && firstDetailLabel2.length !== 0) {
+            that.firstDetLabel2 = firstDetailLabel2;
         }
 
-        if (thirdDetailColId !== null && thirdDetailColId !== undefined && thirdDetailColId.length !== 0) {
-            that.thirdDetColId = thirdDetailColId;
+        if (firstDetailColId2 !== null && firstDetailColId2 !== undefined && firstDetailColId2.length !== 0) {
+            that.firstDetColId2 = firstDetailColId2;
+        }
+
+        if (secondDetailLabel1 !== null && secondDetailLabel1 !== undefined && secondDetailLabel1.length !== 0) {
+            that.secondDetLabel1 = secondDetailLabel1;
+        }
+
+        if (secondDetailColId1 !== null && secondDetailColId1 !== undefined && secondDetailColId1.length !== 0) {
+            that.secondDetColId1 = secondDetailColId1;
         }
         
-        if (fourthDetailLabel !== null && fourthDetailLabel !== undefined && fourthDetailLabel.length !== 0) {
-            that.fourthDetLabel = fourthDetailLabel;
+        if (secondDetailLabel2 !== null && secondDetailLabel2 !== undefined && secondDetailLabel2.length !== 0) {
+            that.secondDetLabel2 = secondDetailLabel2;
         }
 
-        if (fourthDetailColId !== null && fourthDetailColId !== undefined && fourthDetailColId.length !== 0) {
-            that.fourthDetColId = fourthDetailColId;
+        if (secondDetailColId2 !== null && secondDetailColId2 !== undefined && secondDetailColId2.length !== 0) {
+            that.secondDetColId2 = secondDetailColId2;
         }
         
-        if (fifthDetailLabel !== null && fifthDetailLabel !== undefined && fifthDetailLabel.length !== 0) {
-            that.fifthDetLabel = fifthDetailLabel;
+        if (thirdDetailLabel1 !== null && thirdDetailLabel1 !== undefined && thirdDetailLabel1.length !== 0) {
+            that.thirdDetLabel1 = thirdDetailLabel1;
         }
 
-        if (fifthDetailColId !== null && fifthDetailColId !== undefined && fifthDetailColId.length !== 0) {
-            that.fifthDetColId = fifthDetailColId;
+        if (thirdDetailColId1 !== null && thirdDetailColId1 !== undefined && thirdDetailColId1.length !== 0) {
+            that.thirdDetColId1 = thirdDetailColId1;
         }
         
-        if (sixthDetailLabel !== null && sixthDetailLabel !== undefined && sixthDetailLabel.length !== 0) {
-            that.sixthDetLabel = sixthDetailLabel;
+        if (thirdDetailLabel2 !== null && thirdDetailLabel2 !== undefined && thirdDetailLabel2.length !== 0) {
+            that.thirdDetLabel2 = thirdDetailLabel2;
         }
 
-        if (sixthDetailColId !== null && sixthDetailColId !== undefined && sixthDetailColId.length !== 0) {
-            that.sixthDetColId = sixthDetailColId;
+        if (thirdDetailColId2 !== null && thirdDetailColId2 !== undefined && thirdDetailColId2.length !== 0) {
+            that.thirdDetColId2 = thirdDetailColId2;
+        }
+        
+        if (thirdDetailLabel3 !== null && thirdDetailLabel3 !== undefined && thirdDetailLabel3.length !== 0) {
+            that.thirdDetLabel3 = thirdDetailLabel3;
         }
 
-        if (seventhDetailLabel !== null && seventhDetailLabel !== undefined && seventhDetailLabel.length !== 0) {
-            that.seventhDetLabel = seventhDetailLabel;
+        if (thirdDetailColId3 !== null && thirdDetailColId3 !== undefined && thirdDetailColId3.length !== 0) {
+            that.thirdDetColId3 = thirdDetailColId3;
         }
 
-        if (seventhDetailColId !== null && seventhDetailColId !== undefined && seventhDetailColId.length !== 0) {
-            that.seventhDetColId = seventhDetailColId;
-        }
     },
 
     setImageToDisplayInList: function(imgIdToUse) {
@@ -569,73 +579,76 @@ window.listViewLogic = {
         		if (that.showEditAndDelButtons === false)  {
         			/* Creates arrow icon (Nothing to edit here) */
         			var chevron = $('<img>');
-        			chevron.attr('src', odkCommon.getFileAsUrl('config/assets/img/white_arrow.png'));
+        			var check = null;
+        			var td = new Date();
+                    var m = td.getMonth();
+                    var d = td.getDate();
+                    var y = td.getFullYear();
+
+                    var today = new Date(y,m,d);
+                    var visit = util.formatColIdForDisplay(that.lastvisit, i, resultSet, true);
+                    if (visit !== '') {
+                    	visit = new Date(visit.substring(0,4), visit.substring(5,7)-1, visit.substring(8,10));
+                    }
+        			if (today > visit) {
+        				check = '1'
+        			}
+                    
+        			if (check === '1') {
+        				chevron.attr('src', odkCommon.getFileAsUrl('config/assets/img/white_arrow.png'));
+        			} else {
+        				chevron.attr('src', odkCommon.getFileAsUrl('config/assets/img/check_mark2.png'));
+        			}
+        			
+        			
+        			
         			chevron.attr('class', 'chevron');
         			item.append(chevron);
         		}
 
-        		if (that.firstDetColId !== null && that.firstDetColId !== undefined && that.firstDetColId.length !== 0) {
+        		if (that.firstDetColId1 !== null && that.firstDetColId1 !== undefined && that.firstDetColId1.length !== 0) {
         			var field1 = $('<li>');
         			field1.attr('class', 'detail');
-        			var fDetail = util.formatColIdForDisplay(that.firstDetColId, i, resultSet, true);
-        			if (that.firstDetColId === 'sex') {
-        				if (fDetail === '1') {
-        					fDetail = 'Male';
-        				} else if (fDetail === '2') {
-        					fDetail = 'Female';
-        				} else {
-        					fDetail = 'Não sabe';
+        			var f1Detail = util.formatColIdForDisplay(that.firstDetColId1, i, resultSet, true);
+        			var f2Detail = util.formatColIdForDisplay(that.firstDetColId2, i, resultSet, true);
+        			if (that.firstDetColId1 === 'RELA1') {
+        				if (f1Detail === '') {
+        					f1Detail = 'NS'
+        				}
+        				if (f2Detail === '') {
+        					f2Detail = 'NS'
         				}
         			}
         			
-        			field1.text(that.createLabel(that.firstDetLabel) + fDetail);
+        			field1.text(that.createLabel(that.firstDetLabel1) + f1Detail + '; ' + f2Detail);
         			item.append(field1);
         		}
 
-        		if (that.secondDetColId !== null && that.secondDetColId !== undefined && that.secondDetColId.length !== 0) {
+        		if (that.secondDetColId1 !== null && that.secondDetColId1 !== undefined && that.secondDetColId1.length !== 0) {
         			var field2 = $('<li>');
         			field2.attr('class', 'detail');
-                	var sDetail = util.formatColIdForDisplay(that.secondDetColId, i, resultSet, true);
-                	if(that.secondDetColId === 'dob') {
-                		if(sDetail !== null) {
-                			var dobEntered = sDetail;
-                			sDetail = dobEntered.substring(8,10) + dobEntered.substring(4,7) + '-' + dobEntered.substring(0,4);
-                			that.secondDetLabel = 'Dob';
-                		}
-                		else {
-                			var ano = util.formatColIdForDisplay('anos', i, resultSet, true);
-                			var mes = util.formatColIdForDisplay('meses', i, resultSet, true);
-                			var sem = util.formatColIdForDisplay('semanes', i, resultSet, true);
-                			var dia = util.formatColIdForDisplay('dias', i, resultSet, true);
-                			if (ano !== '') {
-                				sDetail = ano;
-                				that.secondDetLabel = 'Ano(s)';
-                			} else if (mes !== '') {
-                				sDetail = mes;
-                				that.secondDetLabel = 'Mês(es)';
-                			} else if (sem !== '') {
-                				sDetail = sem;
-                				that.secondDetLabel = 'Semana(s)';
-                			} else if (dia !== '') {
-                				sDetail = dia;
-                				that.secondDetLabel = 'Dia(s)';
-                			} else {
-                				sDetail = 'Não sabe';
-                			}
-                		}
-                	}
-                
-                	field2.text(that.createLabel(that.secondDetLabel) + sDetail);
+                	var s1Detail = util.formatColIdForDisplay(that.secondDetColId1, i, resultSet, true);
+                	var s2Detail = util.formatColIdForDisplay(that.secondDetColId2, i, resultSet, true);
+                	if (that.secondDetColId1 === 'RELA2') {
+        				if (s1Detail === '') {
+        					s1Detail = 'NS'
+        				}
+        				if (s2Detail === '') {
+        					s2Detail = 'NS'
+        				}
+        			}
+                	
+                	field2.text(that.createLabel(that.secondDetLabel1) + s1Detail + '; ' + s2Detail);
                 	item.append(field2);
         		}
             
-        		if (that.thirdDetColId !== null && that.thirdDetColId !== undefined && that.thirdDetColId.length !== 0) {
+        		if (that.thirdDetColId1 !== null && that.thirdDetColId1 !== undefined && that.thirdDetColId1.length !== 0) {
         			var field3 = $('<li>');
         			field3.attr('class', 'detail');
-        			var t1Detail = util.formatColIdForDisplay(that.thirdDetColId, i, resultSet, true);
-        			var t2Detail = util.formatColIdForDisplay(that.fourthDetColId, i, resultSet, true);
-        			var t3Detail = util.formatColIdForDisplay(that.fifthDetColId, i, resultSet, true);
-        			if (that.thirdDetColId === 'MOR') {
+        			var t1Detail = util.formatColIdForDisplay(that.thirdDetColId1, i, resultSet, true);
+        			var t2Detail = util.formatColIdForDisplay(that.thirdDetColId2, i, resultSet, true);
+        			var t3Detail = util.formatColIdForDisplay(that.thirdDetColId3, i, resultSet, true);
+        			if (that.thirdDetColId1 === 'MOR') {
         				if (t1Detail === '') {
         					t1Detail = 'NS'
         				}
@@ -647,9 +660,9 @@ window.listViewLogic = {
         				}		
         			}
         			
-        			field3.text(that.createLabel(that.thirdDetLabel) + t1Detail + ' ' +
-        					that.createLabel(that.fourthDetLabel) + t2Detail + ' ' + 
-        					that.createLabel(that.fifthDetLabel) + t3Detail);
+        			field3.text(that.createLabel(that.thirdDetLabel1) + t1Detail + ' ' +
+        					that.createLabel(that.thirdDetLabel2) + t2Detail + ' ' + 
+        					that.createLabel(that.thirdDetLabel3) + t3Detail);
         			item.append(field3);
         		}
 

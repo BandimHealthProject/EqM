@@ -60,6 +60,12 @@ ul {
   font-weight: normal;
 }
 
+.detail_check {
+  font-size: 17pt;
+  color: #fff;
+  font-weight: normal;
+}
+
 .chevron {
   float: right;
   padding-right: 15px;
