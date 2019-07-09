@@ -2,6 +2,8 @@ build/
 *.~lock.*
 app/output/props/*
 tempZipDir
+node_modules/**
+~$framework.xlsx
 .idea/*
 app/config/assets/csv/MIF.init100.csv
 app/config/assets/csv/MIF.init15000.csv
