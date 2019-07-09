@@ -13,13 +13,13 @@
         "_row_num": 2
       },
       {
-        "setting_name": "form_version",
-        "value": 20190520,
+        "setting_name": "form_id",
+        "value": "framework",
         "_row_num": 3
       },
       {
-        "setting_name": "form_id",
-        "value": "framework",
+        "setting_name": "form_version",
+        "value": 20190521,
         "_row_num": 4
       },
       {
@@ -57,6 +57,10 @@
           }
         },
         "_row_num": 7
+      },
+      {
+        "setting_name": "framework_variant",
+        "_row_num": 8
       }
     ],
     "choices": [
@@ -124,7 +128,7 @@
         "values_list": "forms",
         "display": {
           "prompt": {
-            "text": "Choose a test form"
+            "text": "Choose a form"
           }
         },
         "_row_num": 3
@@ -703,14 +707,14 @@
         "value": "framework",
         "_row_num": 2
       },
-      "form_version": {
-        "setting_name": "form_version",
-        "value": 20190520,
-        "_row_num": 3
-      },
       "form_id": {
         "setting_name": "form_id",
         "value": "framework",
+        "_row_num": 3
+      },
+      "form_version": {
+        "setting_name": "form_version",
+        "value": 20190521,
         "_row_num": 4
       },
       "survey": {
@@ -748,6 +752,10 @@
           }
         },
         "_row_num": 7
+      },
+      "framework_variant": {
+        "setting_name": "framework_variant",
+        "_row_num": 8
       },
       "_locales": {
         "setting_name": "_locales",
@@ -1470,7 +1478,7 @@
             "values_list": "forms",
             "display": {
               "prompt": {
-                "text": "Choose a test form"
+                "text": "Choose a form"
               }
             },
             "_row_num": 3,
@@ -1735,5 +1743,3 @@
     ]
   }
 }
-could not find setting with name: framework_variant
-could not find setting with name: framework_variant
