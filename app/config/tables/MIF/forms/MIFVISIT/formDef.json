@@ -579,6 +579,18 @@
         "_row_num": 6
       },
       {
+        "query_name": "linked_school",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFVISIT_CORE",
+        "linked_table_id": "MIFVISIT_CORE",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "CESCO",
+        "_row_num": 7
+      },
+      {
         "query_name": "linked_status",
         "query_type": "linked_table",
         "linked_form_id": "MIFVISIT_CORE",
@@ -588,7 +600,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "ESTADOVIS",
-        "_row_num": 7
+        "_row_num": 8
       },
       {
         "query_name": "linked_exitdate",
@@ -600,7 +612,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "EXITDATA",
-        "_row_num": 8
+        "_row_num": 9
       },
       {
         "query_name": "linked_exitdateprec",
@@ -612,7 +624,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "EXITPRECIS",
-        "_row_num": 9
+        "_row_num": 10
       },
       {
         "query_name": "linked_vac1tipo",
@@ -624,7 +636,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC1TIPO",
-        "_row_num": 10
+        "_row_num": 11
       },
       {
         "query_name": "linked_vac1data",
@@ -636,7 +648,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC1DATA",
-        "_row_num": 11
+        "_row_num": 12
       },
       {
         "query_name": "linked_vac1inf",
@@ -648,7 +660,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC1INF",
-        "_row_num": 12
+        "_row_num": 13
       },
       {
         "query_name": "linked_vac2tipo",
@@ -660,7 +672,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC2TIPO",
-        "_row_num": 13
+        "_row_num": 14
       },
       {
         "query_name": "linked_vac2data",
@@ -672,7 +684,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC2DATA",
-        "_row_num": 14
+        "_row_num": 15
       },
       {
         "query_name": "linked_vac2inf",
@@ -684,7 +696,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC2INF",
-        "_row_num": 15
+        "_row_num": 16
       },
       {
         "query_name": "linked_vac3tipo",
@@ -696,7 +708,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC3TIPO",
-        "_row_num": 16
+        "_row_num": 17
       },
       {
         "query_name": "linked_vac3data",
@@ -708,7 +720,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC3DATA",
-        "_row_num": 17
+        "_row_num": 18
       },
       {
         "query_name": "linked_vac3inf",
@@ -720,7 +732,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC3INF",
-        "_row_num": 18
+        "_row_num": 19
       },
       {
         "query_name": "linked_vac4tipo",
@@ -732,7 +744,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC4TIPO",
-        "_row_num": 19
+        "_row_num": 20
       },
       {
         "query_name": "linked_vac4data",
@@ -744,7 +756,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC4DATA",
-        "_row_num": 20
+        "_row_num": 21
       },
       {
         "query_name": "linked_vac4inf",
@@ -756,7 +768,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC4INF",
-        "_row_num": 21
+        "_row_num": 22
       },
       {
         "query_name": "linked_vac5tipo",
@@ -768,7 +780,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC5TIPO",
-        "_row_num": 22
+        "_row_num": 23
       },
       {
         "query_name": "linked_vac5data",
@@ -780,7 +792,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC5DATA",
-        "_row_num": 23
+        "_row_num": 24
       },
       {
         "query_name": "linked_vac5inf",
@@ -792,7 +804,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC5INF",
-        "_row_num": 24
+        "_row_num": 25
       },
       {
         "query_name": "linked_vac6tipo",
@@ -804,7 +816,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC6TIPO",
-        "_row_num": 25
+        "_row_num": 26
       },
       {
         "query_name": "linked_vac6data",
@@ -816,7 +828,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC6DATA",
-        "_row_num": 26
+        "_row_num": 27
       },
       {
         "query_name": "linked_vac6inf",
@@ -828,7 +840,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC6INF",
-        "_row_num": 27
+        "_row_num": 28
       },
       {
         "query_name": "linked_vac7tipo",
@@ -840,7 +852,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC7TIPO",
-        "_row_num": 28
+        "_row_num": 29
       },
       {
         "query_name": "linked_vac7data",
@@ -852,7 +864,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC7DATA",
-        "_row_num": 29
+        "_row_num": 30
       },
       {
         "query_name": "linked_vac7inf",
@@ -864,7 +876,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC7INF",
-        "_row_num": 30
+        "_row_num": 31
       },
       {
         "query_name": "linked_vac8tipo",
@@ -876,7 +888,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC8TIPO",
-        "_row_num": 31
+        "_row_num": 32
       },
       {
         "query_name": "linked_vac8data",
@@ -888,7 +900,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC8DATA",
-        "_row_num": 32
+        "_row_num": 33
       },
       {
         "query_name": "linked_vac8inf",
@@ -900,7 +912,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC8INF",
-        "_row_num": 33
+        "_row_num": 34
       },
       {
         "query_name": "linked_vac9tipo",
@@ -912,7 +924,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC9TIPO",
-        "_row_num": 34
+        "_row_num": 35
       },
       {
         "query_name": "linked_vac9data",
@@ -924,7 +936,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC9DATA",
-        "_row_num": 35
+        "_row_num": 36
       },
       {
         "query_name": "linked_vac9inf",
@@ -936,7 +948,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC9INF",
-        "_row_num": 36
+        "_row_num": 37
       },
       {
         "query_name": "linked_vac10tipo",
@@ -948,7 +960,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC10TIPO",
-        "_row_num": 37
+        "_row_num": 38
       },
       {
         "query_name": "linked_vac10data",
@@ -960,7 +972,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC10DATA",
-        "_row_num": 38
+        "_row_num": 39
       },
       {
         "query_name": "linked_vac10inf",
@@ -972,7 +984,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC10INF",
-        "_row_num": 39
+        "_row_num": 40
       },
       {
         "query_name": "linked_vac11tipo",
@@ -984,7 +996,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC11TIPO",
-        "_row_num": 40
+        "_row_num": 41
       },
       {
         "query_name": "linked_vac11data",
@@ -996,7 +1008,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC11DATA",
-        "_row_num": 41
+        "_row_num": 42
       },
       {
         "query_name": "linked_vac11inf",
@@ -1008,7 +1020,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC11INF",
-        "_row_num": 42
+        "_row_num": 43
       },
       {
         "query_name": "linked_vac12tipo",
@@ -1020,7 +1032,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC12TIPO",
-        "_row_num": 43
+        "_row_num": 44
       },
       {
         "query_name": "linked_vac12data",
@@ -1032,7 +1044,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC12DATA",
-        "_row_num": 44
+        "_row_num": 45
       },
       {
         "query_name": "linked_vac12inf",
@@ -1044,7 +1056,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC12INF",
-        "_row_num": 45
+        "_row_num": 46
       },
       {
         "query_name": "linked_vac13tipo",
@@ -1056,7 +1068,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC13TIPO",
-        "_row_num": 46
+        "_row_num": 47
       },
       {
         "query_name": "linked_vac13data",
@@ -1068,7 +1080,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC13DATA",
-        "_row_num": 47
+        "_row_num": 48
       },
       {
         "query_name": "linked_vac13inf",
@@ -1080,7 +1092,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC13INF",
-        "_row_num": 48
+        "_row_num": 49
       },
       {
         "query_name": "linked_vac14tipo",
@@ -1092,7 +1104,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC14TIPO",
-        "_row_num": 49
+        "_row_num": 50
       },
       {
         "query_name": "linked_vac14data",
@@ -1104,7 +1116,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC14DATA",
-        "_row_num": 50
+        "_row_num": 51
       },
       {
         "query_name": "linked_vac14inf",
@@ -1116,7 +1128,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC14INF",
-        "_row_num": 51
+        "_row_num": 52
       },
       {
         "query_name": "linked_vac15tipo",
@@ -1128,7 +1140,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC15TIPO",
-        "_row_num": 52
+        "_row_num": 53
       },
       {
         "query_name": "linked_vac15data",
@@ -1140,7 +1152,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC15DATA",
-        "_row_num": 53
+        "_row_num": 54
       },
       {
         "query_name": "linked_vac15inf",
@@ -1152,7 +1164,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC15INF",
-        "_row_num": 54
+        "_row_num": 55
       },
       {
         "query_name": "linked_vac16tipo",
@@ -1164,7 +1176,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC16TIPO",
-        "_row_num": 55
+        "_row_num": 56
       },
       {
         "query_name": "linked_vac16data",
@@ -1176,7 +1188,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC16DATA",
-        "_row_num": 56
+        "_row_num": 57
       },
       {
         "query_name": "linked_vac16inf",
@@ -1188,7 +1200,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC16INF",
-        "_row_num": 57
+        "_row_num": 58
       },
       {
         "query_name": "linked_vac17tipo",
@@ -1200,7 +1212,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC17TIPO",
-        "_row_num": 58
+        "_row_num": 59
       },
       {
         "query_name": "linked_vac17data",
@@ -1212,7 +1224,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC17DATA",
-        "_row_num": 59
+        "_row_num": 60
       },
       {
         "query_name": "linked_vac17inf",
@@ -1224,7 +1236,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC17INF",
-        "_row_num": 60
+        "_row_num": 61
       },
       {
         "query_name": "linked_vac18tipo",
@@ -1236,7 +1248,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC18TIPO",
-        "_row_num": 61
+        "_row_num": 62
       },
       {
         "query_name": "linked_vac18data",
@@ -1248,7 +1260,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC18DATA",
-        "_row_num": 62
+        "_row_num": 63
       },
       {
         "query_name": "linked_vac18inf",
@@ -1260,7 +1272,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC18INF",
-        "_row_num": 63
+        "_row_num": 64
       },
       {
         "query_name": "linked_vac19tipo",
@@ -1272,7 +1284,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC19TIPO",
-        "_row_num": 64
+        "_row_num": 65
       },
       {
         "query_name": "linked_vac19data",
@@ -1284,7 +1296,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC19DATA",
-        "_row_num": 65
+        "_row_num": 66
       },
       {
         "query_name": "linked_vac19inf",
@@ -1296,7 +1308,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC19INF",
-        "_row_num": 66
+        "_row_num": 67
       },
       {
         "query_name": "linked_vac20tipo",
@@ -1308,7 +1320,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC20TIPO",
-        "_row_num": 67
+        "_row_num": 68
       },
       {
         "query_name": "linked_vac20data",
@@ -1320,7 +1332,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC20DATA",
-        "_row_num": 68
+        "_row_num": 69
       },
       {
         "query_name": "linked_vac20inf",
@@ -1332,7 +1344,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC20INF",
-        "_row_num": 69
+        "_row_num": 70
       }
     ],
     "prompt_types": [
@@ -2087,7 +2099,7 @@
       },
       {
         "name": "CESCO",
-        "type": "select_one",
+        "type": "async_assign_num_value",
         "isSessionVariable": false,
         "_row_num": 6
       },
@@ -2104,658 +2116,664 @@
         "_row_num": 8
       },
       {
+        "name": "ESCONS",
+        "type": "select_multiple",
+        "isSessionVariable": false,
+        "_row_num": 9
+      },
+      {
         "name": "ESTADO",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 9
+        "_row_num": 10
       },
       {
         "name": "EXITDATA",
         "type": "custom_date",
         "isSessionVariable": false,
-        "_row_num": 10
+        "_row_num": 11
       },
       {
         "name": "EXITPRECIS",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 11
+        "_row_num": 12
       },
       {
         "name": "ETN",
         "type": "assign",
         "isSessionVariable": false,
-        "_row_num": 12
+        "_row_num": 13
       },
       {
         "name": "ETN1",
         "type": "select_one_dropdown",
         "isSessionVariable": true,
-        "_row_num": 13
+        "_row_num": 14
       },
       {
         "name": "ETN2",
         "type": "select_one_dropdown",
         "isSessionVariable": true,
-        "_row_num": 14
+        "_row_num": 15
       },
       {
         "name": "FAL",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 15
+        "_row_num": 16
       },
       {
         "name": "FALNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 16
+        "_row_num": 17
       },
       {
         "name": "FAN",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 17
+        "_row_num": 18
       },
       {
         "name": "FOGAO",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 18
+        "_row_num": 19
       },
       {
         "name": "GEM",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 19
+        "_row_num": 20
       },
       {
         "name": "GEMEOS",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 20
+        "_row_num": 21
       },
       {
         "name": "ID",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 21
+        "_row_num": 22
       },
       {
         "name": "IDADE",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 22
+        "_row_num": 23
       },
       {
         "name": "IDFAN",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 23
+        "_row_num": 24
       },
       {
         "name": "IDFANNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 24
+        "_row_num": 25
       },
       {
         "name": "INF",
         "type": "assign",
         "isSessionVariable": false,
-        "_row_num": 25
+        "_row_num": 26
       },
       {
         "name": "INF1",
         "type": "select_one",
         "isSessionVariable": true,
-        "_row_num": 26
+        "_row_num": 27
       },
       {
         "name": "INF2",
         "type": "select_one",
         "isSessionVariable": true,
-        "_row_num": 27
+        "_row_num": 28
       },
       {
         "name": "MIFDNASC",
-        "type": "date",
+        "type": "custom_date",
         "isSessionVariable": false,
-        "_row_num": 28
+        "_row_num": 29
       },
       {
         "name": "MIFDNASCNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 29
+        "_row_num": 30
       },
       {
         "name": "MIFMAE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 30
+        "_row_num": 31
       },
       {
         "name": "MIFMAENS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 31
+        "_row_num": 32
       },
       {
         "name": "MIFMONDE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 32
+        "_row_num": 33
       },
       {
         "name": "MIFMONDENS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 33
+        "_row_num": 34
       },
       {
         "name": "MIFMORAVA",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 34
+        "_row_num": 35
       },
       {
         "name": "MOR",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 35
+        "_row_num": 36
       },
       {
         "name": "MUL",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 36
+        "_row_num": 37
       },
       {
         "name": "NM",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 37
+        "_row_num": 38
       },
       {
         "name": "NMNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 38
+        "_row_num": 39
       },
       {
         "name": "NOMEMAE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 39
+        "_row_num": 40
       },
       {
         "name": "PART",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 40
+        "_row_num": 41
       },
       {
         "name": "PARTNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 41
+        "_row_num": 42
       },
       {
         "name": "REG",
         "type": "select_one_dropdown",
         "isSessionVariable": false,
-        "_row_num": 42
+        "_row_num": 43
       },
       {
         "name": "REGDIA",
-        "type": "custom_date",
+        "type": "date",
         "isSessionVariable": false,
-        "_row_num": 43
+        "_row_num": 44
       },
       {
         "name": "RELA1",
         "type": "select_one_dropdown",
         "isSessionVariable": false,
-        "_row_num": 44
+        "_row_num": 45
       },
       {
         "name": "RELA1NOME",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 45
+        "_row_num": 46
       },
       {
         "name": "RELA2",
         "type": "select_one_dropdown",
         "isSessionVariable": false,
-        "_row_num": 46
+        "_row_num": 47
       },
       {
         "name": "RELA2NOME",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 47
+        "_row_num": 48
       },
       {
         "name": "TAB",
         "type": "select_one_dropdown",
         "isSessionVariable": false,
-        "_row_num": 48
+        "_row_num": 49
       },
       {
         "name": "VACNOH",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 49
+        "_row_num": 50
       },
       {
         "name": "VACNOHNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 50
+        "_row_num": 51
       },
       {
         "name": "VIVO",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 51
+        "_row_num": 52
       },
       {
         "name": "VIVONS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 52
+        "_row_num": 53
       },
       {
         "name": "LASTVISIT",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 54
+        "_row_num": 58
       },
       {
         "name": "CONSENTFOR",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 55
+        "_row_num": 59
       },
       {
         "name": "CONSENTSIG",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 56
+        "_row_num": 60
       },
       {
         "name": "ESTADOVIS",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 57
+        "_row_num": 61
       },
       {
         "name": "CICA",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 59
+        "_row_num": 63
       },
       {
         "name": "VAC1TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 61
+        "_row_num": 65
       },
       {
         "name": "VAC1DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 62
+        "_row_num": 66
       },
       {
         "name": "VAC1INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 63
+        "_row_num": 67
       },
       {
         "name": "VAC2TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 64
+        "_row_num": 68
       },
       {
         "name": "VAC2DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 65
+        "_row_num": 69
       },
       {
         "name": "VAC2INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 66
+        "_row_num": 70
       },
       {
         "name": "VAC3TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 67
+        "_row_num": 71
       },
       {
         "name": "VAC3DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 68
+        "_row_num": 72
       },
       {
         "name": "VAC3INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 69
+        "_row_num": 73
       },
       {
         "name": "VAC4TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 70
+        "_row_num": 74
       },
       {
         "name": "VAC4DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 71
+        "_row_num": 75
       },
       {
         "name": "VAC4INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 72
+        "_row_num": 76
       },
       {
         "name": "VAC5TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 73
+        "_row_num": 77
       },
       {
         "name": "VAC5DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 74
+        "_row_num": 78
       },
       {
         "name": "VAC5INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 75
+        "_row_num": 79
       },
       {
         "name": "VAC6TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 76
+        "_row_num": 80
       },
       {
         "name": "VAC6DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 77
+        "_row_num": 81
       },
       {
         "name": "VAC6INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 78
+        "_row_num": 82
       },
       {
         "name": "VAC7TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 79
+        "_row_num": 83
       },
       {
         "name": "VAC7DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 80
+        "_row_num": 84
       },
       {
         "name": "VAC7INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 81
+        "_row_num": 85
       },
       {
         "name": "VAC8TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 82
+        "_row_num": 86
       },
       {
         "name": "VAC8DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 83
+        "_row_num": 87
       },
       {
         "name": "VAC8INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 84
+        "_row_num": 88
       },
       {
         "name": "VAC9TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 85
+        "_row_num": 89
       },
       {
         "name": "VAC9DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 86
+        "_row_num": 90
       },
       {
         "name": "VAC9INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 87
+        "_row_num": 91
       },
       {
         "name": "VAC10TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 88
+        "_row_num": 92
       },
       {
         "name": "VAC10DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 89
+        "_row_num": 93
       },
       {
         "name": "VAC10INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 90
+        "_row_num": 94
       },
       {
         "name": "VAC11TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 91
+        "_row_num": 95
       },
       {
         "name": "VAC11DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 92
+        "_row_num": 96
       },
       {
         "name": "VAC11INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 93
+        "_row_num": 97
       },
       {
         "name": "VAC12TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 94
+        "_row_num": 98
       },
       {
         "name": "VAC12DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 95
+        "_row_num": 99
       },
       {
         "name": "VAC12INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 96
+        "_row_num": 100
       },
       {
         "name": "VAC13TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 97
+        "_row_num": 101
       },
       {
         "name": "VAC13DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 98
+        "_row_num": 102
       },
       {
         "name": "VAC13INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 99
+        "_row_num": 103
       },
       {
         "name": "VAC14TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 100
+        "_row_num": 104
       },
       {
         "name": "VAC14DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 101
+        "_row_num": 105
       },
       {
         "name": "VAC14INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 102
+        "_row_num": 106
       },
       {
         "name": "VAC15TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 103
+        "_row_num": 107
       },
       {
         "name": "VAC15DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 104
+        "_row_num": 108
       },
       {
         "name": "VAC15INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 105
+        "_row_num": 109
       },
       {
         "name": "VAC16TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 106
+        "_row_num": 110
       },
       {
         "name": "VAC16DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 107
+        "_row_num": 111
       },
       {
         "name": "VAC16INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 108
+        "_row_num": 112
       },
       {
         "name": "VAC17TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 109
+        "_row_num": 113
       },
       {
         "name": "VAC17DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 110
+        "_row_num": 114
       },
       {
         "name": "VAC17INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 111
+        "_row_num": 115
       },
       {
         "name": "VAC18TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 112
+        "_row_num": 116
       },
       {
         "name": "VAC18DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 113
+        "_row_num": 117
       },
       {
         "name": "VAC18INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 114
+        "_row_num": 118
       },
       {
         "name": "VAC19TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 115
+        "_row_num": 119
       },
       {
         "name": "VAC19DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 116
+        "_row_num": 120
       },
       {
         "name": "VAC19INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 117
+        "_row_num": 121
       },
       {
         "name": "VAC20TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 118
+        "_row_num": 122
       },
       {
         "name": "VAC20DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 119
+        "_row_num": 123
       },
       {
         "name": "VAC20INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 120
+        "_row_num": 124
       }
     ]
   },
@@ -3654,6 +3672,18 @@
         "fieldName": "CONSENTFOR",
         "_row_num": 6
       },
+      "linked_school": {
+        "query_name": "linked_school",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFVISIT_CORE",
+        "linked_table_id": "MIFVISIT_CORE",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "CESCO",
+        "_row_num": 7
+      },
       "linked_status": {
         "query_name": "linked_status",
         "query_type": "linked_table",
@@ -3664,7 +3694,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "ESTADOVIS",
-        "_row_num": 7
+        "_row_num": 8
       },
       "linked_exitdate": {
         "query_name": "linked_exitdate",
@@ -3676,7 +3706,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "EXITDATA",
-        "_row_num": 8
+        "_row_num": 9
       },
       "linked_exitdateprec": {
         "query_name": "linked_exitdateprec",
@@ -3688,7 +3718,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "EXITPRECIS",
-        "_row_num": 9
+        "_row_num": 10
       },
       "linked_vac1tipo": {
         "query_name": "linked_vac1tipo",
@@ -3700,7 +3730,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC1TIPO",
-        "_row_num": 10
+        "_row_num": 11
       },
       "linked_vac1data": {
         "query_name": "linked_vac1data",
@@ -3712,7 +3742,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC1DATA",
-        "_row_num": 11
+        "_row_num": 12
       },
       "linked_vac1inf": {
         "query_name": "linked_vac1inf",
@@ -3724,7 +3754,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC1INF",
-        "_row_num": 12
+        "_row_num": 13
       },
       "linked_vac2tipo": {
         "query_name": "linked_vac2tipo",
@@ -3736,7 +3766,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC2TIPO",
-        "_row_num": 13
+        "_row_num": 14
       },
       "linked_vac2data": {
         "query_name": "linked_vac2data",
@@ -3748,7 +3778,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC2DATA",
-        "_row_num": 14
+        "_row_num": 15
       },
       "linked_vac2inf": {
         "query_name": "linked_vac2inf",
@@ -3760,7 +3790,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC2INF",
-        "_row_num": 15
+        "_row_num": 16
       },
       "linked_vac3tipo": {
         "query_name": "linked_vac3tipo",
@@ -3772,7 +3802,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC3TIPO",
-        "_row_num": 16
+        "_row_num": 17
       },
       "linked_vac3data": {
         "query_name": "linked_vac3data",
@@ -3784,7 +3814,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC3DATA",
-        "_row_num": 17
+        "_row_num": 18
       },
       "linked_vac3inf": {
         "query_name": "linked_vac3inf",
@@ -3796,7 +3826,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC3INF",
-        "_row_num": 18
+        "_row_num": 19
       },
       "linked_vac4tipo": {
         "query_name": "linked_vac4tipo",
@@ -3808,7 +3838,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC4TIPO",
-        "_row_num": 19
+        "_row_num": 20
       },
       "linked_vac4data": {
         "query_name": "linked_vac4data",
@@ -3820,7 +3850,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC4DATA",
-        "_row_num": 20
+        "_row_num": 21
       },
       "linked_vac4inf": {
         "query_name": "linked_vac4inf",
@@ -3832,7 +3862,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC4INF",
-        "_row_num": 21
+        "_row_num": 22
       },
       "linked_vac5tipo": {
         "query_name": "linked_vac5tipo",
@@ -3844,7 +3874,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC5TIPO",
-        "_row_num": 22
+        "_row_num": 23
       },
       "linked_vac5data": {
         "query_name": "linked_vac5data",
@@ -3856,7 +3886,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC5DATA",
-        "_row_num": 23
+        "_row_num": 24
       },
       "linked_vac5inf": {
         "query_name": "linked_vac5inf",
@@ -3868,7 +3898,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC5INF",
-        "_row_num": 24
+        "_row_num": 25
       },
       "linked_vac6tipo": {
         "query_name": "linked_vac6tipo",
@@ -3880,7 +3910,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC6TIPO",
-        "_row_num": 25
+        "_row_num": 26
       },
       "linked_vac6data": {
         "query_name": "linked_vac6data",
@@ -3892,7 +3922,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC6DATA",
-        "_row_num": 26
+        "_row_num": 27
       },
       "linked_vac6inf": {
         "query_name": "linked_vac6inf",
@@ -3904,7 +3934,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC6INF",
-        "_row_num": 27
+        "_row_num": 28
       },
       "linked_vac7tipo": {
         "query_name": "linked_vac7tipo",
@@ -3916,7 +3946,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC7TIPO",
-        "_row_num": 28
+        "_row_num": 29
       },
       "linked_vac7data": {
         "query_name": "linked_vac7data",
@@ -3928,7 +3958,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC7DATA",
-        "_row_num": 29
+        "_row_num": 30
       },
       "linked_vac7inf": {
         "query_name": "linked_vac7inf",
@@ -3940,7 +3970,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC7INF",
-        "_row_num": 30
+        "_row_num": 31
       },
       "linked_vac8tipo": {
         "query_name": "linked_vac8tipo",
@@ -3952,7 +3982,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC8TIPO",
-        "_row_num": 31
+        "_row_num": 32
       },
       "linked_vac8data": {
         "query_name": "linked_vac8data",
@@ -3964,7 +3994,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC8DATA",
-        "_row_num": 32
+        "_row_num": 33
       },
       "linked_vac8inf": {
         "query_name": "linked_vac8inf",
@@ -3976,7 +4006,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC8INF",
-        "_row_num": 33
+        "_row_num": 34
       },
       "linked_vac9tipo": {
         "query_name": "linked_vac9tipo",
@@ -3988,7 +4018,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC9TIPO",
-        "_row_num": 34
+        "_row_num": 35
       },
       "linked_vac9data": {
         "query_name": "linked_vac9data",
@@ -4000,7 +4030,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC9DATA",
-        "_row_num": 35
+        "_row_num": 36
       },
       "linked_vac9inf": {
         "query_name": "linked_vac9inf",
@@ -4012,7 +4042,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC9INF",
-        "_row_num": 36
+        "_row_num": 37
       },
       "linked_vac10tipo": {
         "query_name": "linked_vac10tipo",
@@ -4024,7 +4054,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC10TIPO",
-        "_row_num": 37
+        "_row_num": 38
       },
       "linked_vac10data": {
         "query_name": "linked_vac10data",
@@ -4036,7 +4066,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC10DATA",
-        "_row_num": 38
+        "_row_num": 39
       },
       "linked_vac10inf": {
         "query_name": "linked_vac10inf",
@@ -4048,7 +4078,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC10INF",
-        "_row_num": 39
+        "_row_num": 40
       },
       "linked_vac11tipo": {
         "query_name": "linked_vac11tipo",
@@ -4060,7 +4090,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC11TIPO",
-        "_row_num": 40
+        "_row_num": 41
       },
       "linked_vac11data": {
         "query_name": "linked_vac11data",
@@ -4072,7 +4102,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC11DATA",
-        "_row_num": 41
+        "_row_num": 42
       },
       "linked_vac11inf": {
         "query_name": "linked_vac11inf",
@@ -4084,7 +4114,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC11INF",
-        "_row_num": 42
+        "_row_num": 43
       },
       "linked_vac12tipo": {
         "query_name": "linked_vac12tipo",
@@ -4096,7 +4126,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC12TIPO",
-        "_row_num": 43
+        "_row_num": 44
       },
       "linked_vac12data": {
         "query_name": "linked_vac12data",
@@ -4108,7 +4138,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC12DATA",
-        "_row_num": 44
+        "_row_num": 45
       },
       "linked_vac12inf": {
         "query_name": "linked_vac12inf",
@@ -4120,7 +4150,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC12INF",
-        "_row_num": 45
+        "_row_num": 46
       },
       "linked_vac13tipo": {
         "query_name": "linked_vac13tipo",
@@ -4132,7 +4162,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC13TIPO",
-        "_row_num": 46
+        "_row_num": 47
       },
       "linked_vac13data": {
         "query_name": "linked_vac13data",
@@ -4144,7 +4174,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC13DATA",
-        "_row_num": 47
+        "_row_num": 48
       },
       "linked_vac13inf": {
         "query_name": "linked_vac13inf",
@@ -4156,7 +4186,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC13INF",
-        "_row_num": 48
+        "_row_num": 49
       },
       "linked_vac14tipo": {
         "query_name": "linked_vac14tipo",
@@ -4168,7 +4198,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC14TIPO",
-        "_row_num": 49
+        "_row_num": 50
       },
       "linked_vac14data": {
         "query_name": "linked_vac14data",
@@ -4180,7 +4210,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC14DATA",
-        "_row_num": 50
+        "_row_num": 51
       },
       "linked_vac14inf": {
         "query_name": "linked_vac14inf",
@@ -4192,7 +4222,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC14INF",
-        "_row_num": 51
+        "_row_num": 52
       },
       "linked_vac15tipo": {
         "query_name": "linked_vac15tipo",
@@ -4204,7 +4234,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC15TIPO",
-        "_row_num": 52
+        "_row_num": 53
       },
       "linked_vac15data": {
         "query_name": "linked_vac15data",
@@ -4216,7 +4246,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC15DATA",
-        "_row_num": 53
+        "_row_num": 54
       },
       "linked_vac15inf": {
         "query_name": "linked_vac15inf",
@@ -4228,7 +4258,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC15INF",
-        "_row_num": 54
+        "_row_num": 55
       },
       "linked_vac16tipo": {
         "query_name": "linked_vac16tipo",
@@ -4240,7 +4270,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC16TIPO",
-        "_row_num": 55
+        "_row_num": 56
       },
       "linked_vac16data": {
         "query_name": "linked_vac16data",
@@ -4252,7 +4282,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC16DATA",
-        "_row_num": 56
+        "_row_num": 57
       },
       "linked_vac16inf": {
         "query_name": "linked_vac16inf",
@@ -4264,7 +4294,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC16INF",
-        "_row_num": 57
+        "_row_num": 58
       },
       "linked_vac17tipo": {
         "query_name": "linked_vac17tipo",
@@ -4276,7 +4306,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC17TIPO",
-        "_row_num": 58
+        "_row_num": 59
       },
       "linked_vac17data": {
         "query_name": "linked_vac17data",
@@ -4288,7 +4318,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC17DATA",
-        "_row_num": 59
+        "_row_num": 60
       },
       "linked_vac17inf": {
         "query_name": "linked_vac17inf",
@@ -4300,7 +4330,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC17INF",
-        "_row_num": 60
+        "_row_num": 61
       },
       "linked_vac18tipo": {
         "query_name": "linked_vac18tipo",
@@ -4312,7 +4342,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC18TIPO",
-        "_row_num": 61
+        "_row_num": 62
       },
       "linked_vac18data": {
         "query_name": "linked_vac18data",
@@ -4324,7 +4354,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC18DATA",
-        "_row_num": 62
+        "_row_num": 63
       },
       "linked_vac18inf": {
         "query_name": "linked_vac18inf",
@@ -4336,7 +4366,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC18INF",
-        "_row_num": 63
+        "_row_num": 64
       },
       "linked_vac19tipo": {
         "query_name": "linked_vac19tipo",
@@ -4348,7 +4378,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC19TIPO",
-        "_row_num": 64
+        "_row_num": 65
       },
       "linked_vac19data": {
         "query_name": "linked_vac19data",
@@ -4360,7 +4390,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC19DATA",
-        "_row_num": 65
+        "_row_num": 66
       },
       "linked_vac19inf": {
         "query_name": "linked_vac19inf",
@@ -4372,7 +4402,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC19INF",
-        "_row_num": 66
+        "_row_num": 67
       },
       "linked_vac20tipo": {
         "query_name": "linked_vac20tipo",
@@ -4384,7 +4414,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC20TIPO",
-        "_row_num": 67
+        "_row_num": 68
       },
       "linked_vac20data": {
         "query_name": "linked_vac20data",
@@ -4396,7 +4426,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC20DATA",
-        "_row_num": 68
+        "_row_num": 69
       },
       "linked_vac20inf": {
         "query_name": "linked_vac20inf",
@@ -4408,7 +4438,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC20INF",
-        "_row_num": 69
+        "_row_num": 70
       }
     },
     "calculates": {},
@@ -4462,7 +4492,11 @@
         "elementKey": "CASA"
       },
       "CESCO": {
-        "type": "string",
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "comment": "Updates CICA variable",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 6,
@@ -4494,11 +4528,26 @@
         "isSessionVariable": false,
         "elementKey": "ESCO"
       },
+      "ESCONS": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "elementKey": "ESCONS_items"
+        },
+        "_defn": [
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ESCONS"
+      },
       "ESTADO": {
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 9,
+            "_row_num": 10,
             "section_name": "model"
           }
         ],
@@ -4519,7 +4568,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 10,
+            "_row_num": 11,
             "section_name": "model"
           }
         ],
@@ -4537,7 +4586,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 11,
+            "_row_num": 12,
             "section_name": "model"
           }
         ],
@@ -4547,7 +4596,7 @@
       "ETN": {
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 13,
             "section_name": "model"
           }
         ],
@@ -4559,7 +4608,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 13,
+            "_row_num": 14,
             "section_name": "model"
           }
         ],
@@ -4570,7 +4619,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 15,
             "section_name": "model"
           }
         ],
@@ -4581,7 +4630,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
@@ -4596,7 +4645,7 @@
         },
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 17,
             "section_name": "model"
           }
         ],
@@ -4607,7 +4656,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 17,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -4618,7 +4667,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 19,
             "section_name": "model"
           }
         ],
@@ -4629,7 +4678,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 20,
             "section_name": "model"
           }
         ],
@@ -4640,7 +4689,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 20,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
@@ -4651,7 +4700,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -4662,7 +4711,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -4673,7 +4722,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -4688,7 +4737,7 @@
         },
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -4698,7 +4747,7 @@
       "INF": {
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -4710,7 +4759,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 26,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -4721,7 +4770,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -4729,11 +4778,15 @@
         "elementKey": "INF2"
       },
       "MIFDNASC": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 28,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -4748,7 +4801,7 @@
         },
         "_defn": [
           {
-            "_row_num": 29,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -4759,7 +4812,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 30,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -4774,7 +4827,7 @@
         },
         "_defn": [
           {
-            "_row_num": 31,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -4785,7 +4838,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 32,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -4800,7 +4853,7 @@
         },
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -4811,7 +4864,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -4822,7 +4875,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 35,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -4833,7 +4886,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 36,
+            "_row_num": 37,
             "section_name": "model"
           }
         ],
@@ -4844,7 +4897,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 37,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
@@ -4859,7 +4912,7 @@
         },
         "_defn": [
           {
-            "_row_num": 38,
+            "_row_num": 39,
             "section_name": "model"
           }
         ],
@@ -4870,7 +4923,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 39,
+            "_row_num": 40,
             "section_name": "model"
           }
         ],
@@ -4881,7 +4934,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 40,
+            "_row_num": 41,
             "section_name": "model"
           }
         ],
@@ -4896,7 +4949,7 @@
         },
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 42,
             "section_name": "model"
           }
         ],
@@ -4907,7 +4960,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 42,
+            "_row_num": 43,
             "section_name": "model"
           }
         ],
@@ -4915,15 +4968,11 @@
         "elementKey": "REG"
       },
       "REGDIA": {
-        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 43,
+            "_row_num": 44,
             "section_name": "model"
           }
         ],
@@ -4934,7 +4983,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 44,
+            "_row_num": 45,
             "section_name": "model"
           }
         ],
@@ -4945,7 +4994,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 45,
+            "_row_num": 46,
             "section_name": "model"
           }
         ],
@@ -4956,7 +5005,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 46,
+            "_row_num": 47,
             "section_name": "model"
           }
         ],
@@ -4967,7 +5016,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 47,
+            "_row_num": 48,
             "section_name": "model"
           }
         ],
@@ -4978,7 +5027,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 48,
+            "_row_num": 49,
             "section_name": "model"
           }
         ],
@@ -4989,7 +5038,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 49,
+            "_row_num": 50,
             "section_name": "model"
           }
         ],
@@ -5004,7 +5053,7 @@
         },
         "_defn": [
           {
-            "_row_num": 50,
+            "_row_num": 51,
             "section_name": "model"
           }
         ],
@@ -5015,7 +5064,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 51,
+            "_row_num": 52,
             "section_name": "model"
           }
         ],
@@ -5030,7 +5079,7 @@
         },
         "_defn": [
           {
-            "_row_num": 52,
+            "_row_num": 53,
             "section_name": "model"
           }
         ],
@@ -5050,7 +5099,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 54,
+            "_row_num": 58,
             "section_name": "model"
           }
         ],
@@ -5070,7 +5119,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 55,
+            "_row_num": 59,
             "section_name": "model"
           }
         ],
@@ -5090,7 +5139,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 56,
+            "_row_num": 60,
             "section_name": "model"
           }
         ],
@@ -5110,7 +5159,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 57,
+            "_row_num": 61,
             "section_name": "model"
           }
         ],
@@ -5130,7 +5179,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 59,
+            "_row_num": 63,
             "section_name": "model"
           }
         ],
@@ -5150,7 +5199,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 61,
+            "_row_num": 65,
             "section_name": "model"
           }
         ],
@@ -5170,7 +5219,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 62,
+            "_row_num": 66,
             "section_name": "model"
           }
         ],
@@ -5190,7 +5239,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 63,
+            "_row_num": 67,
             "section_name": "model"
           }
         ],
@@ -5210,7 +5259,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 64,
+            "_row_num": 68,
             "section_name": "model"
           }
         ],
@@ -5230,7 +5279,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 65,
+            "_row_num": 69,
             "section_name": "model"
           }
         ],
@@ -5250,7 +5299,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 66,
+            "_row_num": 70,
             "section_name": "model"
           }
         ],
@@ -5270,7 +5319,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 67,
+            "_row_num": 71,
             "section_name": "model"
           }
         ],
@@ -5290,7 +5339,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 68,
+            "_row_num": 72,
             "section_name": "model"
           }
         ],
@@ -5310,7 +5359,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 69,
+            "_row_num": 73,
             "section_name": "model"
           }
         ],
@@ -5330,7 +5379,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 70,
+            "_row_num": 74,
             "section_name": "model"
           }
         ],
@@ -5350,7 +5399,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 71,
+            "_row_num": 75,
             "section_name": "model"
           }
         ],
@@ -5370,7 +5419,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 72,
+            "_row_num": 76,
             "section_name": "model"
           }
         ],
@@ -5390,7 +5439,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 73,
+            "_row_num": 77,
             "section_name": "model"
           }
         ],
@@ -5410,7 +5459,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 74,
+            "_row_num": 78,
             "section_name": "model"
           }
         ],
@@ -5430,7 +5479,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 75,
+            "_row_num": 79,
             "section_name": "model"
           }
         ],
@@ -5450,7 +5499,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 76,
+            "_row_num": 80,
             "section_name": "model"
           }
         ],
@@ -5470,7 +5519,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 77,
+            "_row_num": 81,
             "section_name": "model"
           }
         ],
@@ -5490,7 +5539,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 78,
+            "_row_num": 82,
             "section_name": "model"
           }
         ],
@@ -5510,7 +5559,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 79,
+            "_row_num": 83,
             "section_name": "model"
           }
         ],
@@ -5530,7 +5579,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 80,
+            "_row_num": 84,
             "section_name": "model"
           }
         ],
@@ -5550,7 +5599,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 81,
+            "_row_num": 85,
             "section_name": "model"
           }
         ],
@@ -5570,7 +5619,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 82,
+            "_row_num": 86,
             "section_name": "model"
           }
         ],
@@ -5590,7 +5639,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 83,
+            "_row_num": 87,
             "section_name": "model"
           }
         ],
@@ -5610,7 +5659,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 84,
+            "_row_num": 88,
             "section_name": "model"
           }
         ],
@@ -5630,7 +5679,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 85,
+            "_row_num": 89,
             "section_name": "model"
           }
         ],
@@ -5650,7 +5699,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 86,
+            "_row_num": 90,
             "section_name": "model"
           }
         ],
@@ -5670,7 +5719,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 87,
+            "_row_num": 91,
             "section_name": "model"
           }
         ],
@@ -5690,7 +5739,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 88,
+            "_row_num": 92,
             "section_name": "model"
           }
         ],
@@ -5710,7 +5759,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 89,
+            "_row_num": 93,
             "section_name": "model"
           }
         ],
@@ -5730,7 +5779,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 90,
+            "_row_num": 94,
             "section_name": "model"
           }
         ],
@@ -5750,7 +5799,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 91,
+            "_row_num": 95,
             "section_name": "model"
           }
         ],
@@ -5770,7 +5819,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 92,
+            "_row_num": 96,
             "section_name": "model"
           }
         ],
@@ -5790,7 +5839,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 93,
+            "_row_num": 97,
             "section_name": "model"
           }
         ],
@@ -5810,7 +5859,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 94,
+            "_row_num": 98,
             "section_name": "model"
           }
         ],
@@ -5830,7 +5879,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 95,
+            "_row_num": 99,
             "section_name": "model"
           }
         ],
@@ -5850,7 +5899,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 96,
+            "_row_num": 100,
             "section_name": "model"
           }
         ],
@@ -5870,7 +5919,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 97,
+            "_row_num": 101,
             "section_name": "model"
           }
         ],
@@ -5890,7 +5939,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 98,
+            "_row_num": 102,
             "section_name": "model"
           }
         ],
@@ -5910,7 +5959,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 99,
+            "_row_num": 103,
             "section_name": "model"
           }
         ],
@@ -5930,7 +5979,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 100,
+            "_row_num": 104,
             "section_name": "model"
           }
         ],
@@ -5950,7 +5999,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 101,
+            "_row_num": 105,
             "section_name": "model"
           }
         ],
@@ -5970,7 +6019,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 102,
+            "_row_num": 106,
             "section_name": "model"
           }
         ],
@@ -5990,7 +6039,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 103,
+            "_row_num": 107,
             "section_name": "model"
           }
         ],
@@ -6010,7 +6059,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 104,
+            "_row_num": 108,
             "section_name": "model"
           }
         ],
@@ -6030,7 +6079,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 105,
+            "_row_num": 109,
             "section_name": "model"
           }
         ],
@@ -6050,7 +6099,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 106,
+            "_row_num": 110,
             "section_name": "model"
           }
         ],
@@ -6070,7 +6119,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 107,
+            "_row_num": 111,
             "section_name": "model"
           }
         ],
@@ -6090,7 +6139,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 108,
+            "_row_num": 112,
             "section_name": "model"
           }
         ],
@@ -6110,7 +6159,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 109,
+            "_row_num": 113,
             "section_name": "model"
           }
         ],
@@ -6130,7 +6179,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 110,
+            "_row_num": 114,
             "section_name": "model"
           }
         ],
@@ -6150,7 +6199,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 111,
+            "_row_num": 115,
             "section_name": "model"
           }
         ],
@@ -6170,7 +6219,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 112,
+            "_row_num": 116,
             "section_name": "model"
           }
         ],
@@ -6190,7 +6239,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 113,
+            "_row_num": 117,
             "section_name": "model"
           }
         ],
@@ -6210,7 +6259,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 114,
+            "_row_num": 118,
             "section_name": "model"
           }
         ],
@@ -6230,7 +6279,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 115,
+            "_row_num": 119,
             "section_name": "model"
           }
         ],
@@ -6250,7 +6299,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 116,
+            "_row_num": 120,
             "section_name": "model"
           }
         ],
@@ -6270,7 +6319,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 117,
+            "_row_num": 121,
             "section_name": "model"
           }
         ],
@@ -6290,7 +6339,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 118,
+            "_row_num": 122,
             "section_name": "model"
           }
         ],
@@ -6310,7 +6359,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 119,
+            "_row_num": 123,
             "section_name": "model"
           }
         ],
@@ -6330,7 +6379,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 120,
+            "_row_num": 124,
             "section_name": "model"
           }
         ],
@@ -7447,7 +7496,11 @@
         "elementPath": "CASA"
       },
       "CESCO": {
-        "type": "string",
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "comment": "Updates CICA variable",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 6,
@@ -7488,11 +7541,36 @@
         "elementSet": "data",
         "elementPath": "ESCO"
       },
+      "ESCONS": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "elementKey": "ESCONS_items",
+          "elementName": "items",
+          "elementSet": "data",
+          "elementPath": "ESCONS.items",
+          "notUnitOfRetention": true
+        },
+        "_defn": [
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ESCONS",
+        "elementName": "ESCONS",
+        "elementSet": "data",
+        "elementPath": "ESCONS",
+        "listChildElementKeys": [
+          "ESCONS_items"
+        ]
+      },
       "ESTADO": {
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 9,
+            "_row_num": 10,
             "section_name": "model"
           }
         ],
@@ -7516,7 +7594,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 10,
+            "_row_num": 11,
             "section_name": "model"
           }
         ],
@@ -7537,7 +7615,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 11,
+            "_row_num": 12,
             "section_name": "model"
           }
         ],
@@ -7550,7 +7628,7 @@
       "ETN": {
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 13,
             "section_name": "model"
           }
         ],
@@ -7565,7 +7643,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 13,
+            "_row_num": 14,
             "section_name": "model"
           }
         ],
@@ -7579,7 +7657,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 15,
             "section_name": "model"
           }
         ],
@@ -7593,7 +7671,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
@@ -7615,7 +7693,7 @@
         },
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 17,
             "section_name": "model"
           }
         ],
@@ -7632,7 +7710,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 17,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -7646,7 +7724,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 19,
             "section_name": "model"
           }
         ],
@@ -7660,7 +7738,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 20,
             "section_name": "model"
           }
         ],
@@ -7674,7 +7752,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 20,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
@@ -7688,7 +7766,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -7702,7 +7780,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -7716,7 +7794,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -7738,7 +7816,7 @@
         },
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -7754,7 +7832,7 @@
       "INF": {
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -7769,7 +7847,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 26,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -7783,7 +7861,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -7794,11 +7872,15 @@
         "elementPath": "INF2"
       },
       "MIFDNASC": {
+        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 28,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -7820,7 +7902,7 @@
         },
         "_defn": [
           {
-            "_row_num": 29,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -7837,7 +7919,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 30,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -7859,7 +7941,7 @@
         },
         "_defn": [
           {
-            "_row_num": 31,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -7876,7 +7958,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 32,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -7898,7 +7980,7 @@
         },
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -7915,7 +7997,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -7929,7 +8011,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 35,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -7943,7 +8025,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 36,
+            "_row_num": 37,
             "section_name": "model"
           }
         ],
@@ -7957,7 +8039,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 37,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
@@ -7979,7 +8061,7 @@
         },
         "_defn": [
           {
-            "_row_num": 38,
+            "_row_num": 39,
             "section_name": "model"
           }
         ],
@@ -7996,7 +8078,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 39,
+            "_row_num": 40,
             "section_name": "model"
           }
         ],
@@ -8010,7 +8092,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 40,
+            "_row_num": 41,
             "section_name": "model"
           }
         ],
@@ -8032,7 +8114,7 @@
         },
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 42,
             "section_name": "model"
           }
         ],
@@ -8049,7 +8131,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 42,
+            "_row_num": 43,
             "section_name": "model"
           }
         ],
@@ -8060,15 +8142,11 @@
         "elementPath": "REG"
       },
       "REGDIA": {
-        "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 43,
+            "_row_num": 44,
             "section_name": "model"
           }
         ],
@@ -8082,7 +8160,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 44,
+            "_row_num": 45,
             "section_name": "model"
           }
         ],
@@ -8096,7 +8174,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 45,
+            "_row_num": 46,
             "section_name": "model"
           }
         ],
@@ -8110,7 +8188,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 46,
+            "_row_num": 47,
             "section_name": "model"
           }
         ],
@@ -8124,7 +8202,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 47,
+            "_row_num": 48,
             "section_name": "model"
           }
         ],
@@ -8138,7 +8216,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 48,
+            "_row_num": 49,
             "section_name": "model"
           }
         ],
@@ -8152,7 +8230,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 49,
+            "_row_num": 50,
             "section_name": "model"
           }
         ],
@@ -8174,7 +8252,7 @@
         },
         "_defn": [
           {
-            "_row_num": 50,
+            "_row_num": 51,
             "section_name": "model"
           }
         ],
@@ -8191,7 +8269,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 51,
+            "_row_num": 52,
             "section_name": "model"
           }
         ],
@@ -8213,7 +8291,7 @@
         },
         "_defn": [
           {
-            "_row_num": 52,
+            "_row_num": 53,
             "section_name": "model"
           }
         ],
@@ -8239,7 +8317,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 54,
+            "_row_num": 58,
             "section_name": "model"
           }
         ],
@@ -8262,7 +8340,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 55,
+            "_row_num": 59,
             "section_name": "model"
           }
         ],
@@ -8285,7 +8363,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 56,
+            "_row_num": 60,
             "section_name": "model"
           }
         ],
@@ -8308,7 +8386,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 57,
+            "_row_num": 61,
             "section_name": "model"
           }
         ],
@@ -8331,7 +8409,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 59,
+            "_row_num": 63,
             "section_name": "model"
           }
         ],
@@ -8354,7 +8432,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 61,
+            "_row_num": 65,
             "section_name": "model"
           }
         ],
@@ -8377,7 +8455,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 62,
+            "_row_num": 66,
             "section_name": "model"
           }
         ],
@@ -8400,7 +8478,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 63,
+            "_row_num": 67,
             "section_name": "model"
           }
         ],
@@ -8423,7 +8501,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 64,
+            "_row_num": 68,
             "section_name": "model"
           }
         ],
@@ -8446,7 +8524,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 65,
+            "_row_num": 69,
             "section_name": "model"
           }
         ],
@@ -8469,7 +8547,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 66,
+            "_row_num": 70,
             "section_name": "model"
           }
         ],
@@ -8492,7 +8570,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 67,
+            "_row_num": 71,
             "section_name": "model"
           }
         ],
@@ -8515,7 +8593,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 68,
+            "_row_num": 72,
             "section_name": "model"
           }
         ],
@@ -8538,7 +8616,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 69,
+            "_row_num": 73,
             "section_name": "model"
           }
         ],
@@ -8561,7 +8639,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 70,
+            "_row_num": 74,
             "section_name": "model"
           }
         ],
@@ -8584,7 +8662,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 71,
+            "_row_num": 75,
             "section_name": "model"
           }
         ],
@@ -8607,7 +8685,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 72,
+            "_row_num": 76,
             "section_name": "model"
           }
         ],
@@ -8630,7 +8708,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 73,
+            "_row_num": 77,
             "section_name": "model"
           }
         ],
@@ -8653,7 +8731,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 74,
+            "_row_num": 78,
             "section_name": "model"
           }
         ],
@@ -8676,7 +8754,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 75,
+            "_row_num": 79,
             "section_name": "model"
           }
         ],
@@ -8699,7 +8777,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 76,
+            "_row_num": 80,
             "section_name": "model"
           }
         ],
@@ -8722,7 +8800,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 77,
+            "_row_num": 81,
             "section_name": "model"
           }
         ],
@@ -8745,7 +8823,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 78,
+            "_row_num": 82,
             "section_name": "model"
           }
         ],
@@ -8768,7 +8846,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 79,
+            "_row_num": 83,
             "section_name": "model"
           }
         ],
@@ -8791,7 +8869,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 80,
+            "_row_num": 84,
             "section_name": "model"
           }
         ],
@@ -8814,7 +8892,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 81,
+            "_row_num": 85,
             "section_name": "model"
           }
         ],
@@ -8837,7 +8915,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 82,
+            "_row_num": 86,
             "section_name": "model"
           }
         ],
@@ -8860,7 +8938,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 83,
+            "_row_num": 87,
             "section_name": "model"
           }
         ],
@@ -8883,7 +8961,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 84,
+            "_row_num": 88,
             "section_name": "model"
           }
         ],
@@ -8906,7 +8984,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 85,
+            "_row_num": 89,
             "section_name": "model"
           }
         ],
@@ -8929,7 +9007,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 86,
+            "_row_num": 90,
             "section_name": "model"
           }
         ],
@@ -8952,7 +9030,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 87,
+            "_row_num": 91,
             "section_name": "model"
           }
         ],
@@ -8975,7 +9053,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 88,
+            "_row_num": 92,
             "section_name": "model"
           }
         ],
@@ -8998,7 +9076,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 89,
+            "_row_num": 93,
             "section_name": "model"
           }
         ],
@@ -9021,7 +9099,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 90,
+            "_row_num": 94,
             "section_name": "model"
           }
         ],
@@ -9044,7 +9122,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 91,
+            "_row_num": 95,
             "section_name": "model"
           }
         ],
@@ -9067,7 +9145,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 92,
+            "_row_num": 96,
             "section_name": "model"
           }
         ],
@@ -9090,7 +9168,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 93,
+            "_row_num": 97,
             "section_name": "model"
           }
         ],
@@ -9113,7 +9191,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 94,
+            "_row_num": 98,
             "section_name": "model"
           }
         ],
@@ -9136,7 +9214,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 95,
+            "_row_num": 99,
             "section_name": "model"
           }
         ],
@@ -9159,7 +9237,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 96,
+            "_row_num": 100,
             "section_name": "model"
           }
         ],
@@ -9182,7 +9260,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 97,
+            "_row_num": 101,
             "section_name": "model"
           }
         ],
@@ -9205,7 +9283,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 98,
+            "_row_num": 102,
             "section_name": "model"
           }
         ],
@@ -9228,7 +9306,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 99,
+            "_row_num": 103,
             "section_name": "model"
           }
         ],
@@ -9251,7 +9329,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 100,
+            "_row_num": 104,
             "section_name": "model"
           }
         ],
@@ -9274,7 +9352,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 101,
+            "_row_num": 105,
             "section_name": "model"
           }
         ],
@@ -9297,7 +9375,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 102,
+            "_row_num": 106,
             "section_name": "model"
           }
         ],
@@ -9320,7 +9398,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 103,
+            "_row_num": 107,
             "section_name": "model"
           }
         ],
@@ -9343,7 +9421,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 104,
+            "_row_num": 108,
             "section_name": "model"
           }
         ],
@@ -9366,7 +9444,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 105,
+            "_row_num": 109,
             "section_name": "model"
           }
         ],
@@ -9389,7 +9467,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 106,
+            "_row_num": 110,
             "section_name": "model"
           }
         ],
@@ -9412,7 +9490,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 107,
+            "_row_num": 111,
             "section_name": "model"
           }
         ],
@@ -9435,7 +9513,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 108,
+            "_row_num": 112,
             "section_name": "model"
           }
         ],
@@ -9458,7 +9536,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 109,
+            "_row_num": 113,
             "section_name": "model"
           }
         ],
@@ -9481,7 +9559,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 110,
+            "_row_num": 114,
             "section_name": "model"
           }
         ],
@@ -9504,7 +9582,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 111,
+            "_row_num": 115,
             "section_name": "model"
           }
         ],
@@ -9527,7 +9605,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 112,
+            "_row_num": 116,
             "section_name": "model"
           }
         ],
@@ -9550,7 +9628,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 113,
+            "_row_num": 117,
             "section_name": "model"
           }
         ],
@@ -9573,7 +9651,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 114,
+            "_row_num": 118,
             "section_name": "model"
           }
         ],
@@ -9596,7 +9674,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 115,
+            "_row_num": 119,
             "section_name": "model"
           }
         ],
@@ -9619,7 +9697,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 116,
+            "_row_num": 120,
             "section_name": "model"
           }
         ],
@@ -9642,7 +9720,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 117,
+            "_row_num": 121,
             "section_name": "model"
           }
         ],
@@ -9665,7 +9743,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 118,
+            "_row_num": 122,
             "section_name": "model"
           }
         ],
@@ -9688,7 +9766,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 119,
+            "_row_num": 123,
             "section_name": "model"
           }
         ],
@@ -9711,7 +9789,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 120,
+            "_row_num": 124,
             "section_name": "model"
           }
         ],
@@ -9727,6 +9805,14 @@
         "elementName": "items",
         "elementSet": "data",
         "elementPath": "ABNS.items",
+        "notUnitOfRetention": true
+      },
+      "ESCONS_items": {
+        "type": "string",
+        "elementKey": "ESCONS_items",
+        "elementName": "items",
+        "elementSet": "data",
+        "elementPath": "ESCONS.items",
         "notUnitOfRetention": true
       },
       "FALNS_items": {

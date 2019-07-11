@@ -10,6 +10,8 @@ CNASCCERTO,CNASCCERTO,string,[]
 CONSENTFOR,CONSENTFOR,async_assign_num_value,[]
 CONSENTSIG,CONSENTSIG,async_assign_num_value,[]
 ESCO,ESCO,integer,[]
+ESCONS,ESCONS,array,"[""ESCONS_items""]"
+ESCONS_items,items,string,[]
 ESTADO,ESTADO,integer,[]
 ESTADOVIS,ESTADOVIS,async_assign_num_value,[]
 ETN,ETN,assign,[]

@@ -187,7 +187,10 @@
         "name": "MUL",
         "display": {
           "prompt": {
-            "text": "Number of woman"
+            "text": {
+              "default": "Number of woman",
+              "portuguese": "Número de mulher"
+            }
           }
         },
         "_row_num": 15
@@ -481,6 +484,50 @@
         "_row_num": 55
       },
       {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "CESCO",
+        "display": {
+          "prompt": {
+            "text": "Have you ever attended school"
+          }
+        },
+        "_row_num": 56
+      },
+      {
+        "clause": "if",
+        "condition": "data('CESCO') == '1'",
+        "_row_num": 57
+      },
+      {
+        "type": "integer",
+        "name": "ESCO",
+        "display": {
+          "prompt": {
+            "text": "What grade?"
+          }
+        },
+        "_row_num": 58
+      },
+      {
+        "type": "select_multiple",
+        "values_list": "dontknow",
+        "name": "ESCONS",
+        "_row_num": 59
+      },
+      {
+        "clause": "end if",
+        "_row_num": 60
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 61
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 62
+      },
+      {
         "type": "custom_date",
         "name": "REGDIA",
         "display": {
@@ -491,7 +538,7 @@
             }
           }
         },
-        "_row_num": 56
+        "_row_num": 63
       },
       {
         "type": "integer",
@@ -504,15 +551,15 @@
             }
           }
         },
-        "_row_num": 57
+        "_row_num": 64
       },
       {
         "clause": "end screen",
-        "_row_num": 58
+        "_row_num": 65
       },
       {
         "clause": "begin screen",
-        "_row_num": 59
+        "_row_num": 66
       },
       {
         "type": "note",
@@ -524,7 +571,7 @@
             }
           }
         },
-        "_row_num": 60
+        "_row_num": 67
       },
       {
         "type": "select_one",
@@ -538,12 +585,12 @@
             }
           }
         },
-        "_row_num": 61
+        "_row_num": 68
       },
       {
         "clause": "if",
         "condition": "data('INF1') == '2'",
-        "_row_num": 62
+        "_row_num": 69
       },
       {
         "type": "select_one",
@@ -557,44 +604,44 @@
             }
           }
         },
-        "_row_num": 63
+        "_row_num": 70
       },
       {
         "clause": "end if",
-        "_row_num": 64
+        "_row_num": 71
       },
       {
         "clause": "if",
         "condition": "data('INF1') == '2'",
-        "_row_num": 65
+        "_row_num": 72
       },
       {
         "type": "assign",
         "name": "INF",
         "calculation": "data('INF2')",
-        "_row_num": 66
+        "_row_num": 73
       },
       {
         "clause": "else",
-        "_row_num": 67
+        "_row_num": 74
       },
       {
         "type": "assign",
         "name": "INF",
         "calculation": "data('INF1')",
-        "_row_num": 68
+        "_row_num": 75
       },
       {
         "clause": "end if",
-        "_row_num": 69
+        "_row_num": 76
       },
       {
         "clause": "end screen",
-        "_row_num": 70
+        "_row_num": 77
       },
       {
         "clause": "begin screen",
-        "_row_num": 71
+        "_row_num": 78
       },
       {
         "type": "integer",
@@ -607,13 +654,13 @@
             }
           }
         },
-        "_row_num": 72
+        "_row_num": 79
       },
       {
         "type": "select_multiple",
         "values_list": "dontknow",
         "name": "PARTNS",
-        "_row_num": 73
+        "_row_num": 80
       },
       {
         "type": "integer",
@@ -626,13 +673,13 @@
             }
           }
         },
-        "_row_num": 74
+        "_row_num": 81
       },
       {
         "type": "select_multiple",
         "values_list": "dontknow",
         "name": "VIVONS",
-        "_row_num": 75
+        "_row_num": 82
       },
       {
         "type": "integer",
@@ -645,21 +692,21 @@
             }
           }
         },
-        "_row_num": 76
+        "_row_num": 83
       },
       {
         "type": "select_multiple",
         "values_list": "dontknow",
         "name": "FALNS",
-        "_row_num": 77
+        "_row_num": 84
       },
       {
         "clause": "end screen",
-        "_row_num": 78
+        "_row_num": 85
       },
       {
         "clause": "begin screen",
-        "_row_num": 79
+        "_row_num": 86
       },
       {
         "type": "integer",
@@ -672,13 +719,13 @@
             }
           }
         },
-        "_row_num": 80
+        "_row_num": 87
       },
       {
         "type": "select_multiple",
         "values_list": "dontknow",
         "name": "NMNS",
-        "_row_num": 81
+        "_row_num": 88
       },
       {
         "type": "integer",
@@ -691,21 +738,21 @@
             }
           }
         },
-        "_row_num": 82
+        "_row_num": 89
       },
       {
         "type": "select_multiple",
         "values_list": "dontknow",
         "name": "ABNS",
-        "_row_num": 83
+        "_row_num": 90
       },
       {
         "clause": "end screen",
-        "_row_num": 84
+        "_row_num": 91
       },
       {
         "clause": "begin screen",
-        "_row_num": 85
+        "_row_num": 92
       },
       {
         "type": "select_one",
@@ -719,12 +766,12 @@
             }
           }
         },
-        "_row_num": 86
+        "_row_num": 93
       },
       {
         "clause": "if",
         "condition": "data('GEM') == '1'",
-        "_row_num": 87
+        "_row_num": 94
       },
       {
         "type": "text",
@@ -737,56 +784,6 @@
             }
           }
         },
-        "_row_num": 88
-      },
-      {
-        "clause": "end if",
-        "_row_num": 89
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 90
-      },
-      {
-        "clause": "begin screen",
-        "_row_num": 91
-      },
-      {
-        "type": "select_one",
-        "values_list": "YesNoU",
-        "name": "FAN",
-        "display": {
-          "prompt": {
-            "text": {
-              "default": "Circumcised?",
-              "portuguese": "Foi ao fanado?"
-            }
-          }
-        },
-        "_row_num": 92
-      },
-      {
-        "clause": "if",
-        "condition": "data('FAN') == '1'",
-        "_row_num": 93
-      },
-      {
-        "type": "integer",
-        "name": "IDFAN",
-        "display": {
-          "prompt": {
-            "text": {
-              "default": "Age at circumcision",
-              "portuguese": "Idade quando foi ao fanado"
-            }
-          }
-        },
-        "_row_num": 94
-      },
-      {
-        "type": "select_multiple",
-        "values_list": "dontknow",
-        "name": "IDFANNS",
         "_row_num": 95
       },
       {
@@ -802,6 +799,56 @@
         "_row_num": 98
       },
       {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "FAN",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Circumcised?",
+              "portuguese": "Foi ao fanado?"
+            }
+          }
+        },
+        "_row_num": 99
+      },
+      {
+        "clause": "if",
+        "condition": "data('FAN') == '1'",
+        "_row_num": 100
+      },
+      {
+        "type": "integer",
+        "name": "IDFAN",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Age at circumcision",
+              "portuguese": "Idade quando foi ao fanado"
+            }
+          }
+        },
+        "_row_num": 101
+      },
+      {
+        "type": "select_multiple",
+        "values_list": "dontknow",
+        "name": "IDFANNS",
+        "_row_num": 102
+      },
+      {
+        "clause": "end if",
+        "_row_num": 103
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 104
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 105
+      },
+      {
         "type": "integer",
         "name": "VACNOH",
         "display": {
@@ -812,17 +859,17 @@
             }
           }
         },
-        "_row_num": 99
+        "_row_num": 106
       },
       {
         "type": "select_multiple",
         "values_list": "dontknow",
         "name": "VACNOHNS",
-        "_row_num": 100
+        "_row_num": 107
       },
       {
         "clause": "end screen",
-        "_row_num": 101
+        "_row_num": 108
       }
     ],
     "queries": [
@@ -1565,1085 +1612,6 @@
           }
         },
         "_row_num": 56
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "1",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Ntchugal",
-              "portuguese": "Ntchugal"
-            }
-          }
-        },
-        "_row_num": 58
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "2",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Blas",
-              "portuguese": "Blas"
-            }
-          }
-        },
-        "_row_num": 59
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "3",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Colicunda",
-              "portuguese": "Colicunda"
-            }
-          }
-        },
-        "_row_num": 60
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "4",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Wanquilim",
-              "portuguese": "Wanquilim"
-            }
-          }
-        },
-        "_row_num": 61
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "5",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Mandingara",
-              "portuguese": "Mandingara"
-            }
-          }
-        },
-        "_row_num": 62
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "6",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Cutia",
-              "portuguese": "Cutia"
-            }
-          }
-        },
-        "_row_num": 63
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "7",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Rossum",
-              "portuguese": "Rossum"
-            }
-          }
-        },
-        "_row_num": 64
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "9",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Amedalae",
-              "portuguese": "Amedalae"
-            }
-          }
-        },
-        "_row_num": 65
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "10",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Ntchane",
-              "portuguese": "Ntchane"
-            }
-          }
-        },
-        "_row_num": 66
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "11",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Quinhaque Mansoa",
-              "portuguese": "Quinhaque Mansoa"
-            }
-          }
-        },
-        "_row_num": 67
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "12",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Ntchangue Bideta",
-              "portuguese": "Ntchangue Bideta"
-            }
-          }
-        },
-        "_row_num": 68
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "13",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Ntchangue Subal",
-              "portuguese": "Ntchangue Subal"
-            }
-          }
-        },
-        "_row_num": 69
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "14",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Jogudul Com",
-              "portuguese": "Jogudul Com"
-            }
-          }
-        },
-        "_row_num": 70
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "15",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Joaquim Com",
-              "portuguese": "Joaquim Com"
-            }
-          }
-        },
-        "_row_num": 71
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "16",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Cangha Ntchugal",
-              "portuguese": "Cangha Ntchugal"
-            }
-          }
-        },
-        "_row_num": 72
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "17",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Cangha Cocry",
-              "portuguese": "Cangha Cocry"
-            }
-          }
-        },
-        "_row_num": 73
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "18",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Encheia",
-              "portuguese": "Encheia"
-            }
-          }
-        },
-        "_row_num": 74
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "19",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Cadjque",
-              "portuguese": "Cadjque"
-            }
-          }
-        },
-        "_row_num": 75
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "20",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Mpas",
-              "portuguese": "Mpas"
-            }
-          }
-        },
-        "_row_num": 76
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "21",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Quinhaque Ncor",
-              "portuguese": "Quinhaque Ncor"
-            }
-          }
-        },
-        "_row_num": 77
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "22",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Quinhaque",
-              "portuguese": "Quinhaque"
-            }
-          }
-        },
-        "_row_num": 78
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "23",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Untche",
-              "portuguese": "Untche"
-            }
-          }
-        },
-        "_row_num": 79
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "24",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Cumbidjam",
-              "portuguese": "Cumbidjam"
-            }
-          }
-        },
-        "_row_num": 80
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "25",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Sintcham",
-              "portuguese": "Sintcham"
-            }
-          }
-        },
-        "_row_num": 81
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "26",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Sansancutoto",
-              "portuguese": "Sansancutoto"
-            }
-          }
-        },
-        "_row_num": 82
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "27",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Bironque",
-              "portuguese": "Bironque"
-            }
-          }
-        },
-        "_row_num": 83
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "28",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Gendo",
-              "portuguese": "Gendo"
-            }
-          }
-        },
-        "_row_num": 84
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "29",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Mansaba",
-              "portuguese": "Mansaba"
-            }
-          }
-        },
-        "_row_num": 85
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "30",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Sanaia",
-              "portuguese": "Sanaia"
-            }
-          }
-        },
-        "_row_num": 86
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "31",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Galenque",
-              "portuguese": "Galenque"
-            }
-          }
-        },
-        "_row_num": 87
-      },
-      {
-        "choice_list_name": "tab1",
-        "data_value": "32",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Demba So",
-              "portuguese": "Demba So"
-            }
-          }
-        },
-        "_row_num": 88
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "1",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Bilma",
-              "portuguese": "Bilma"
-            }
-          }
-        },
-        "_row_num": 89
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "2",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Gua",
-              "portuguese": "Gua"
-            }
-          }
-        },
-        "_row_num": 90
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "3",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Ntusse",
-              "portuguese": "Ntusse"
-            }
-          }
-        },
-        "_row_num": 91
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "4",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Ponta Vicente",
-              "portuguese": "Ponta Vicente"
-            }
-          }
-        },
-        "_row_num": 92
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "5",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Incaite",
-              "portuguese": "Incaite"
-            }
-          }
-        },
-        "_row_num": 93
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "6",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Qindinga",
-              "portuguese": "Qindinga"
-            }
-          }
-        },
-        "_row_num": 94
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "7",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Intuzinho",
-              "portuguese": "Intuzinho"
-            }
-          }
-        },
-        "_row_num": 95
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "8",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Bambadinca",
-              "portuguese": "Bambadinca"
-            }
-          }
-        },
-        "_row_num": 96
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "9",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Iem",
-              "portuguese": "Iem"
-            }
-          }
-        },
-        "_row_num": 97
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "10",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Buno",
-              "portuguese": "Buno"
-            }
-          }
-        },
-        "_row_num": 98
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "11",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Prite",
-              "portuguese": "Prite"
-            }
-          }
-        },
-        "_row_num": 99
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "12",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Reino Quicete",
-              "portuguese": "Reino Quicete"
-            }
-          }
-        },
-        "_row_num": 100
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "13",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Betafte",
-              "portuguese": "Betafte"
-            }
-          }
-        },
-        "_row_num": 101
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "14",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Bissa",
-              "portuguese": "Bissa"
-            }
-          }
-        },
-        "_row_num": 102
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "15",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Reino Tor",
-              "portuguese": "Reino Tor"
-            }
-          }
-        },
-        "_row_num": 103
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "16",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Dorse",
-              "portuguese": "Dorse"
-            }
-          }
-        },
-        "_row_num": 104
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "17",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Blim Blim",
-              "portuguese": "Blim Blim"
-            }
-          }
-        },
-        "_row_num": 105
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "18",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Quinsana",
-              "portuguese": "Quinsana"
-            }
-          }
-        },
-        "_row_num": 106
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "19",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Quita",
-              "portuguese": "Quita"
-            }
-          }
-        },
-        "_row_num": 107
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "20",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Ondame",
-              "portuguese": "Ondame"
-            }
-          }
-        },
-        "_row_num": 108
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "21",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Blom",
-              "portuguese": "Blom"
-            }
-          }
-        },
-        "_row_num": 109
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "22",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Bocomul",
-              "portuguese": "Bocomul"
-            }
-          }
-        },
-        "_row_num": 110
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "23",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Ome",
-              "portuguese": "Ome"
-            }
-          }
-        },
-        "_row_num": 111
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "24",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Quinhamel",
-              "portuguese": "Quinhamel"
-            }
-          }
-        },
-        "_row_num": 112
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "25",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Ponta Augusto Vicente",
-              "portuguese": "Ponta Augusto Vicente"
-            }
-          }
-        },
-        "_row_num": 113
-      },
-      {
-        "choice_list_name": "tab2",
-        "data_value": "26",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Bilmate",
-              "portuguese": "Bilmate"
-            }
-          }
-        },
-        "_row_num": 114
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "1",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Badjefa",
-              "portuguese": "Badjefa"
-            }
-          }
-        },
-        "_row_num": 115
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "2",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Gundjur",
-              "portuguese": "Gundjur"
-            }
-          }
-        },
-        "_row_num": 116
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "3",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Carabele",
-              "portuguese": "Carabele"
-            }
-          }
-        },
-        "_row_num": 117
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "4",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Nema",
-              "portuguese": "Nema"
-            }
-          }
-        },
-        "_row_num": 118
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "5",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Dobanla",
-              "portuguese": "Dobanla"
-            }
-          }
-        },
-        "_row_num": 119
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "6",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Sintcham Delo Mamado",
-              "portuguese": "Sintcham Delo Mamado"
-            }
-          }
-        },
-        "_row_num": 120
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "7",
-        "display": {
-          "title": {
-            "text": {
-              "default": "\"      \"     \"    \"    \"  Malam",
-              "portuguese": "\"      \"     \"    \"    \"  Malam"
-            }
-          }
-        },
-        "_row_num": 121
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "8",
-        "display": {
-          "title": {
-            "text": {
-              "default": "\"     \"      \" Umaro",
-              "portuguese": "\"     \"      \" Umaro"
-            }
-          }
-        },
-        "_row_num": 122
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "9",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Ponhe Maunde",
-              "portuguese": "Ponhe Maunde"
-            }
-          }
-        },
-        "_row_num": 123
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "10",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Candjufa",
-              "portuguese": "Candjufa"
-            }
-          }
-        },
-        "_row_num": 124
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "11",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Olocunda",
-              "portuguese": "Olocunda"
-            }
-          }
-        },
-        "_row_num": 125
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "12",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Funtufuntula",
-              "portuguese": "Funtufuntula"
-            }
-          }
-        },
-        "_row_num": 126
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "13",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Sintcham Iero Djadja",
-              "portuguese": "Sintcham Iero Djadja"
-            }
-          }
-        },
-        "_row_num": 127
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "14",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Buruntuma",
-              "portuguese": "Buruntuma"
-            }
-          }
-        },
-        "_row_num": 128
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "15",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Dara Braima",
-              "portuguese": "Dara Braima"
-            }
-          }
-        },
-        "_row_num": 129
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "16",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Padjama",
-              "portuguese": "Padjama"
-            }
-          }
-        },
-        "_row_num": 130
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "17",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Sintcham Cunadi(Camedina)",
-              "portuguese": "Sintcham Cunadi (Camedina)"
-            }
-          }
-        },
-        "_row_num": 131
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "18",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Djebacunda",
-              "portuguese": "Djebacunda"
-            }
-          }
-        },
-        "_row_num": 132
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "19",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Afia",
-              "portuguese": "Afia"
-            }
-          }
-        },
-        "_row_num": 133
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "20",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Camanca",
-              "portuguese": "Camanca"
-            }
-          }
-        },
-        "_row_num": 134
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "21",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Fasse(Bairo Ii)",
-              "portuguese": "Fasse (Bairo Ii)"
-            }
-          }
-        },
-        "_row_num": 135
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "22",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Mafonco",
-              "portuguese": "Mafonco"
-            }
-          }
-        },
-        "_row_num": 136
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "23",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Samba Canda",
-              "portuguese": "Samba Canda"
-            }
-          }
-        },
-        "_row_num": 137
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "24",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Sintcham Nhapo",
-              "portuguese": "Sintcham Nhapo"
-            }
-          }
-        },
-        "_row_num": 138
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "25",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Tabadjenque",
-              "portuguese": "Tabadjenque"
-            }
-          }
-        },
-        "_row_num": 139
-      },
-      {
-        "choice_list_name": "tab5",
-        "data_value": "26",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Tchetche",
-              "portuguese": "Tchetche"
-            }
-          }
-        },
-        "_row_num": 140
       }
     ],
     "model": [
@@ -2690,658 +1658,664 @@
         "_row_num": 8
       },
       {
+        "name": "ESCONS",
+        "type": "select_multiple",
+        "isSessionVariable": false,
+        "_row_num": 9
+      },
+      {
         "name": "ESTADO",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 9
+        "_row_num": 10
       },
       {
         "name": "EXITDATA",
         "type": "custom_date",
         "isSessionVariable": false,
-        "_row_num": 10
+        "_row_num": 11
       },
       {
         "name": "EXITPRECIS",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 11
+        "_row_num": 12
       },
       {
         "name": "ETN",
         "type": "assign",
         "isSessionVariable": false,
-        "_row_num": 12
+        "_row_num": 13
       },
       {
         "name": "ETN1",
         "type": "select_one_dropdown",
         "isSessionVariable": true,
-        "_row_num": 13
+        "_row_num": 14
       },
       {
         "name": "ETN2",
         "type": "select_one_dropdown",
         "isSessionVariable": true,
-        "_row_num": 14
+        "_row_num": 15
       },
       {
         "name": "FAL",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 15
+        "_row_num": 16
       },
       {
         "name": "FALNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 16
+        "_row_num": 17
       },
       {
         "name": "FAN",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 17
+        "_row_num": 18
       },
       {
         "name": "FOGAO",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 18
+        "_row_num": 19
       },
       {
         "name": "GEM",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 19
+        "_row_num": 20
       },
       {
         "name": "GEMEOS",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 20
+        "_row_num": 21
       },
       {
         "name": "ID",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 21
+        "_row_num": 22
       },
       {
         "name": "IDADE",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 22
+        "_row_num": 23
       },
       {
         "name": "IDFAN",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 23
+        "_row_num": 24
       },
       {
         "name": "IDFANNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 24
+        "_row_num": 25
       },
       {
         "name": "INF",
         "type": "assign",
         "isSessionVariable": false,
-        "_row_num": 25
+        "_row_num": 26
       },
       {
         "name": "INF1",
         "type": "select_one",
         "isSessionVariable": true,
-        "_row_num": 26
+        "_row_num": 27
       },
       {
         "name": "INF2",
         "type": "select_one",
         "isSessionVariable": true,
-        "_row_num": 27
+        "_row_num": 28
       },
       {
         "name": "MIFDNASC",
         "type": "custom_date",
         "isSessionVariable": false,
-        "_row_num": 28
+        "_row_num": 29
       },
       {
         "name": "MIFDNASCNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 29
+        "_row_num": 30
       },
       {
         "name": "MIFMAE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 30
+        "_row_num": 31
       },
       {
         "name": "MIFMAENS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 31
+        "_row_num": 32
       },
       {
         "name": "MIFMONDE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 32
+        "_row_num": 33
       },
       {
         "name": "MIFMONDENS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 33
+        "_row_num": 34
       },
       {
         "name": "MIFMORAVA",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 34
+        "_row_num": 35
       },
       {
         "name": "MOR",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 35
+        "_row_num": 36
       },
       {
         "name": "MUL",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 36
+        "_row_num": 37
       },
       {
         "name": "NM",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 37
+        "_row_num": 38
       },
       {
         "name": "NMNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 38
+        "_row_num": 39
       },
       {
         "name": "NOMEMAE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 39
+        "_row_num": 40
       },
       {
         "name": "PART",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 40
+        "_row_num": 41
       },
       {
         "name": "PARTNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 41
+        "_row_num": 42
       },
       {
         "name": "REG",
         "type": "select_one_dropdown",
         "isSessionVariable": false,
-        "_row_num": 42
+        "_row_num": 43
       },
       {
         "name": "REGDIA",
         "type": "date",
         "isSessionVariable": false,
-        "_row_num": 43
+        "_row_num": 44
       },
       {
         "name": "RELA1",
         "type": "select_one_dropdown",
         "isSessionVariable": false,
-        "_row_num": 44
+        "_row_num": 45
       },
       {
         "name": "RELA1NOME",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 45
+        "_row_num": 46
       },
       {
         "name": "RELA2",
         "type": "select_one_dropdown",
         "isSessionVariable": false,
-        "_row_num": 46
+        "_row_num": 47
       },
       {
         "name": "RELA2NOME",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 47
+        "_row_num": 48
       },
       {
         "name": "TAB",
         "type": "select_one_dropdown",
         "isSessionVariable": false,
-        "_row_num": 48
+        "_row_num": 49
       },
       {
         "name": "VACNOH",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 49
+        "_row_num": 50
       },
       {
         "name": "VACNOHNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 50
+        "_row_num": 51
       },
       {
         "name": "VIVO",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 51
+        "_row_num": 52
       },
       {
         "name": "VIVONS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 52
+        "_row_num": 53
       },
       {
         "name": "LASTVISIT",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 54
+        "_row_num": 58
       },
       {
         "name": "CONSENTFOR",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 55
+        "_row_num": 59
       },
       {
         "name": "CONSENTSIG",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 56
+        "_row_num": 60
       },
       {
         "name": "ESTADOVIS",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 57
+        "_row_num": 61
       },
       {
         "name": "CICA",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 59
+        "_row_num": 63
       },
       {
         "name": "VAC1TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 61
+        "_row_num": 65
       },
       {
         "name": "VAC1DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 62
+        "_row_num": 66
       },
       {
         "name": "VAC1INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 63
+        "_row_num": 67
       },
       {
         "name": "VAC2TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 64
+        "_row_num": 68
       },
       {
         "name": "VAC2DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 65
+        "_row_num": 69
       },
       {
         "name": "VAC2INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 66
+        "_row_num": 70
       },
       {
         "name": "VAC3TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 67
+        "_row_num": 71
       },
       {
         "name": "VAC3DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 68
+        "_row_num": 72
       },
       {
         "name": "VAC3INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 69
+        "_row_num": 73
       },
       {
         "name": "VAC4TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 70
+        "_row_num": 74
       },
       {
         "name": "VAC4DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 71
+        "_row_num": 75
       },
       {
         "name": "VAC4INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 72
+        "_row_num": 76
       },
       {
         "name": "VAC5TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 73
+        "_row_num": 77
       },
       {
         "name": "VAC5DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 74
+        "_row_num": 78
       },
       {
         "name": "VAC5INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 75
+        "_row_num": 79
       },
       {
         "name": "VAC6TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 76
+        "_row_num": 80
       },
       {
         "name": "VAC6DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 77
+        "_row_num": 81
       },
       {
         "name": "VAC6INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 78
+        "_row_num": 82
       },
       {
         "name": "VAC7TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 79
+        "_row_num": 83
       },
       {
         "name": "VAC7DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 80
+        "_row_num": 84
       },
       {
         "name": "VAC7INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 81
+        "_row_num": 85
       },
       {
         "name": "VAC8TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 82
+        "_row_num": 86
       },
       {
         "name": "VAC8DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 83
+        "_row_num": 87
       },
       {
         "name": "VAC8INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 84
+        "_row_num": 88
       },
       {
         "name": "VAC9TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 85
+        "_row_num": 89
       },
       {
         "name": "VAC9DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 86
+        "_row_num": 90
       },
       {
         "name": "VAC9INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 87
+        "_row_num": 91
       },
       {
         "name": "VAC10TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 88
+        "_row_num": 92
       },
       {
         "name": "VAC10DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 89
+        "_row_num": 93
       },
       {
         "name": "VAC10INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 90
+        "_row_num": 94
       },
       {
         "name": "VAC11TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 91
+        "_row_num": 95
       },
       {
         "name": "VAC11DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 92
+        "_row_num": 96
       },
       {
         "name": "VAC11INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 93
+        "_row_num": 97
       },
       {
         "name": "VAC12TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 94
+        "_row_num": 98
       },
       {
         "name": "VAC12DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 95
+        "_row_num": 99
       },
       {
         "name": "VAC12INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 96
+        "_row_num": 100
       },
       {
         "name": "VAC13TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 97
+        "_row_num": 101
       },
       {
         "name": "VAC13DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 98
+        "_row_num": 102
       },
       {
         "name": "VAC13INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 99
+        "_row_num": 103
       },
       {
         "name": "VAC14TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 100
+        "_row_num": 104
       },
       {
         "name": "VAC14DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 101
+        "_row_num": 105
       },
       {
         "name": "VAC14INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 102
+        "_row_num": 106
       },
       {
         "name": "VAC15TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 103
+        "_row_num": 107
       },
       {
         "name": "VAC15DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 104
+        "_row_num": 108
       },
       {
         "name": "VAC15INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 105
+        "_row_num": 109
       },
       {
         "name": "VAC16TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 106
+        "_row_num": 110
       },
       {
         "name": "VAC16DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 107
+        "_row_num": 111
       },
       {
         "name": "VAC16INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 108
+        "_row_num": 112
       },
       {
         "name": "VAC17TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 109
+        "_row_num": 113
       },
       {
         "name": "VAC17DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 110
+        "_row_num": 114
       },
       {
         "name": "VAC17INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 111
+        "_row_num": 115
       },
       {
         "name": "VAC18TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 112
+        "_row_num": 116
       },
       {
         "name": "VAC18DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 113
+        "_row_num": 117
       },
       {
         "name": "VAC18INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 114
+        "_row_num": 118
       },
       {
         "name": "VAC19TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 115
+        "_row_num": 119
       },
       {
         "name": "VAC19DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 116
+        "_row_num": 120
       },
       {
         "name": "VAC19INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 117
+        "_row_num": 121
       },
       {
         "name": "VAC20TIPO",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 118
+        "_row_num": 122
       },
       {
         "name": "VAC20DATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 119
+        "_row_num": 123
       },
       {
         "name": "VAC20INF",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 120
+        "_row_num": 124
       }
     ]
   },
@@ -4193,1091 +3167,6 @@
           },
           "_row_num": 56
         }
-      ],
-      "tab1": [
-        {
-          "choice_list_name": "tab1",
-          "data_value": "1",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Ntchugal",
-                "portuguese": "Ntchugal"
-              }
-            }
-          },
-          "_row_num": 58
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "2",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Blas",
-                "portuguese": "Blas"
-              }
-            }
-          },
-          "_row_num": 59
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "3",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Colicunda",
-                "portuguese": "Colicunda"
-              }
-            }
-          },
-          "_row_num": 60
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "4",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Wanquilim",
-                "portuguese": "Wanquilim"
-              }
-            }
-          },
-          "_row_num": 61
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "5",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Mandingara",
-                "portuguese": "Mandingara"
-              }
-            }
-          },
-          "_row_num": 62
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "6",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Cutia",
-                "portuguese": "Cutia"
-              }
-            }
-          },
-          "_row_num": 63
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "7",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Rossum",
-                "portuguese": "Rossum"
-              }
-            }
-          },
-          "_row_num": 64
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "9",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Amedalae",
-                "portuguese": "Amedalae"
-              }
-            }
-          },
-          "_row_num": 65
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "10",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Ntchane",
-                "portuguese": "Ntchane"
-              }
-            }
-          },
-          "_row_num": 66
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "11",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Quinhaque Mansoa",
-                "portuguese": "Quinhaque Mansoa"
-              }
-            }
-          },
-          "_row_num": 67
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "12",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Ntchangue Bideta",
-                "portuguese": "Ntchangue Bideta"
-              }
-            }
-          },
-          "_row_num": 68
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "13",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Ntchangue Subal",
-                "portuguese": "Ntchangue Subal"
-              }
-            }
-          },
-          "_row_num": 69
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "14",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Jogudul Com",
-                "portuguese": "Jogudul Com"
-              }
-            }
-          },
-          "_row_num": 70
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "15",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Joaquim Com",
-                "portuguese": "Joaquim Com"
-              }
-            }
-          },
-          "_row_num": 71
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "16",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Cangha Ntchugal",
-                "portuguese": "Cangha Ntchugal"
-              }
-            }
-          },
-          "_row_num": 72
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "17",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Cangha Cocry",
-                "portuguese": "Cangha Cocry"
-              }
-            }
-          },
-          "_row_num": 73
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "18",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Encheia",
-                "portuguese": "Encheia"
-              }
-            }
-          },
-          "_row_num": 74
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "19",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Cadjque",
-                "portuguese": "Cadjque"
-              }
-            }
-          },
-          "_row_num": 75
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "20",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Mpas",
-                "portuguese": "Mpas"
-              }
-            }
-          },
-          "_row_num": 76
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "21",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Quinhaque Ncor",
-                "portuguese": "Quinhaque Ncor"
-              }
-            }
-          },
-          "_row_num": 77
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "22",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Quinhaque",
-                "portuguese": "Quinhaque"
-              }
-            }
-          },
-          "_row_num": 78
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "23",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Untche",
-                "portuguese": "Untche"
-              }
-            }
-          },
-          "_row_num": 79
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "24",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Cumbidjam",
-                "portuguese": "Cumbidjam"
-              }
-            }
-          },
-          "_row_num": 80
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "25",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Sintcham",
-                "portuguese": "Sintcham"
-              }
-            }
-          },
-          "_row_num": 81
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "26",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Sansancutoto",
-                "portuguese": "Sansancutoto"
-              }
-            }
-          },
-          "_row_num": 82
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "27",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Bironque",
-                "portuguese": "Bironque"
-              }
-            }
-          },
-          "_row_num": 83
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "28",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Gendo",
-                "portuguese": "Gendo"
-              }
-            }
-          },
-          "_row_num": 84
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "29",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Mansaba",
-                "portuguese": "Mansaba"
-              }
-            }
-          },
-          "_row_num": 85
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "30",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Sanaia",
-                "portuguese": "Sanaia"
-              }
-            }
-          },
-          "_row_num": 86
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "31",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Galenque",
-                "portuguese": "Galenque"
-              }
-            }
-          },
-          "_row_num": 87
-        },
-        {
-          "choice_list_name": "tab1",
-          "data_value": "32",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Demba So",
-                "portuguese": "Demba So"
-              }
-            }
-          },
-          "_row_num": 88
-        }
-      ],
-      "tab2": [
-        {
-          "choice_list_name": "tab2",
-          "data_value": "1",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Bilma",
-                "portuguese": "Bilma"
-              }
-            }
-          },
-          "_row_num": 89
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "2",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Gua",
-                "portuguese": "Gua"
-              }
-            }
-          },
-          "_row_num": 90
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "3",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Ntusse",
-                "portuguese": "Ntusse"
-              }
-            }
-          },
-          "_row_num": 91
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "4",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Ponta Vicente",
-                "portuguese": "Ponta Vicente"
-              }
-            }
-          },
-          "_row_num": 92
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "5",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Incaite",
-                "portuguese": "Incaite"
-              }
-            }
-          },
-          "_row_num": 93
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "6",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Qindinga",
-                "portuguese": "Qindinga"
-              }
-            }
-          },
-          "_row_num": 94
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "7",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Intuzinho",
-                "portuguese": "Intuzinho"
-              }
-            }
-          },
-          "_row_num": 95
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "8",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Bambadinca",
-                "portuguese": "Bambadinca"
-              }
-            }
-          },
-          "_row_num": 96
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "9",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Iem",
-                "portuguese": "Iem"
-              }
-            }
-          },
-          "_row_num": 97
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "10",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Buno",
-                "portuguese": "Buno"
-              }
-            }
-          },
-          "_row_num": 98
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "11",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Prite",
-                "portuguese": "Prite"
-              }
-            }
-          },
-          "_row_num": 99
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "12",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Reino Quicete",
-                "portuguese": "Reino Quicete"
-              }
-            }
-          },
-          "_row_num": 100
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "13",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Betafte",
-                "portuguese": "Betafte"
-              }
-            }
-          },
-          "_row_num": 101
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "14",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Bissa",
-                "portuguese": "Bissa"
-              }
-            }
-          },
-          "_row_num": 102
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "15",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Reino Tor",
-                "portuguese": "Reino Tor"
-              }
-            }
-          },
-          "_row_num": 103
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "16",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Dorse",
-                "portuguese": "Dorse"
-              }
-            }
-          },
-          "_row_num": 104
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "17",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Blim Blim",
-                "portuguese": "Blim Blim"
-              }
-            }
-          },
-          "_row_num": 105
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "18",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Quinsana",
-                "portuguese": "Quinsana"
-              }
-            }
-          },
-          "_row_num": 106
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "19",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Quita",
-                "portuguese": "Quita"
-              }
-            }
-          },
-          "_row_num": 107
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "20",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Ondame",
-                "portuguese": "Ondame"
-              }
-            }
-          },
-          "_row_num": 108
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "21",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Blom",
-                "portuguese": "Blom"
-              }
-            }
-          },
-          "_row_num": 109
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "22",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Bocomul",
-                "portuguese": "Bocomul"
-              }
-            }
-          },
-          "_row_num": 110
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "23",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Ome",
-                "portuguese": "Ome"
-              }
-            }
-          },
-          "_row_num": 111
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "24",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Quinhamel",
-                "portuguese": "Quinhamel"
-              }
-            }
-          },
-          "_row_num": 112
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "25",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Ponta Augusto Vicente",
-                "portuguese": "Ponta Augusto Vicente"
-              }
-            }
-          },
-          "_row_num": 113
-        },
-        {
-          "choice_list_name": "tab2",
-          "data_value": "26",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Bilmate",
-                "portuguese": "Bilmate"
-              }
-            }
-          },
-          "_row_num": 114
-        }
-      ],
-      "tab5": [
-        {
-          "choice_list_name": "tab5",
-          "data_value": "1",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Badjefa",
-                "portuguese": "Badjefa"
-              }
-            }
-          },
-          "_row_num": 115
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "2",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Gundjur",
-                "portuguese": "Gundjur"
-              }
-            }
-          },
-          "_row_num": 116
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "3",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Carabele",
-                "portuguese": "Carabele"
-              }
-            }
-          },
-          "_row_num": 117
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "4",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Nema",
-                "portuguese": "Nema"
-              }
-            }
-          },
-          "_row_num": 118
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "5",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Dobanla",
-                "portuguese": "Dobanla"
-              }
-            }
-          },
-          "_row_num": 119
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "6",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Sintcham Delo Mamado",
-                "portuguese": "Sintcham Delo Mamado"
-              }
-            }
-          },
-          "_row_num": 120
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "7",
-          "display": {
-            "title": {
-              "text": {
-                "default": "\"      \"     \"    \"    \"  Malam",
-                "portuguese": "\"      \"     \"    \"    \"  Malam"
-              }
-            }
-          },
-          "_row_num": 121
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "8",
-          "display": {
-            "title": {
-              "text": {
-                "default": "\"     \"      \" Umaro",
-                "portuguese": "\"     \"      \" Umaro"
-              }
-            }
-          },
-          "_row_num": 122
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "9",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Ponhe Maunde",
-                "portuguese": "Ponhe Maunde"
-              }
-            }
-          },
-          "_row_num": 123
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "10",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Candjufa",
-                "portuguese": "Candjufa"
-              }
-            }
-          },
-          "_row_num": 124
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "11",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Olocunda",
-                "portuguese": "Olocunda"
-              }
-            }
-          },
-          "_row_num": 125
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "12",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Funtufuntula",
-                "portuguese": "Funtufuntula"
-              }
-            }
-          },
-          "_row_num": 126
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "13",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Sintcham Iero Djadja",
-                "portuguese": "Sintcham Iero Djadja"
-              }
-            }
-          },
-          "_row_num": 127
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "14",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Buruntuma",
-                "portuguese": "Buruntuma"
-              }
-            }
-          },
-          "_row_num": 128
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "15",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Dara Braima",
-                "portuguese": "Dara Braima"
-              }
-            }
-          },
-          "_row_num": 129
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "16",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Padjama",
-                "portuguese": "Padjama"
-              }
-            }
-          },
-          "_row_num": 130
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "17",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Sintcham Cunadi(Camedina)",
-                "portuguese": "Sintcham Cunadi (Camedina)"
-              }
-            }
-          },
-          "_row_num": 131
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "18",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Djebacunda",
-                "portuguese": "Djebacunda"
-              }
-            }
-          },
-          "_row_num": 132
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "19",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Afia",
-                "portuguese": "Afia"
-              }
-            }
-          },
-          "_row_num": 133
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "20",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Camanca",
-                "portuguese": "Camanca"
-              }
-            }
-          },
-          "_row_num": 134
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "21",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Fasse(Bairo Ii)",
-                "portuguese": "Fasse (Bairo Ii)"
-              }
-            }
-          },
-          "_row_num": 135
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "22",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Mafonco",
-                "portuguese": "Mafonco"
-              }
-            }
-          },
-          "_row_num": 136
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "23",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Samba Canda",
-                "portuguese": "Samba Canda"
-              }
-            }
-          },
-          "_row_num": 137
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "24",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Sintcham Nhapo",
-                "portuguese": "Sintcham Nhapo"
-              }
-            }
-          },
-          "_row_num": 138
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "25",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Tabadjenque",
-                "portuguese": "Tabadjenque"
-              }
-            }
-          },
-          "_row_num": 139
-        },
-        {
-          "choice_list_name": "tab5",
-          "data_value": "26",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Tchetche",
-                "portuguese": "Tchetche"
-              }
-            }
-          },
-          "_row_num": 140
-        }
       ]
     },
     "table_specific_definitions": {
@@ -5305,7 +3194,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 82,
+            "_row_num": 89,
             "section_name": "survey"
           },
           {
@@ -5325,7 +3214,7 @@
         "valuesList": "dontknow",
         "_defn": [
           {
-            "_row_num": 83,
+            "_row_num": 90,
             "section_name": "survey"
           },
           {
@@ -5368,7 +3257,12 @@
       },
       "CESCO": {
         "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
+          {
+            "_row_num": 56,
+            "section_name": "survey"
+          },
           {
             "_row_num": 6,
             "section_name": "model"
@@ -5397,6 +3291,10 @@
         "type": "integer",
         "_defn": [
           {
+            "_row_num": 58,
+            "section_name": "survey"
+          },
+          {
             "_row_num": 8,
             "section_name": "model"
           }
@@ -5404,11 +3302,31 @@
         "isSessionVariable": false,
         "elementKey": "ESCO"
       },
+      "ESCONS": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "elementKey": "ESCONS_items"
+        },
+        "valuesList": "dontknow",
+        "_defn": [
+          {
+            "_row_num": 59,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ESCONS"
+      },
       "ESTADO": {
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 9,
+            "_row_num": 10,
             "section_name": "model"
           }
         ],
@@ -5424,7 +3342,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 10,
+            "_row_num": 11,
             "section_name": "model"
           }
         ],
@@ -5435,7 +3353,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 11,
+            "_row_num": 12,
             "section_name": "model"
           }
         ],
@@ -5445,7 +3363,7 @@
       "ETN": {
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 13,
             "section_name": "model"
           }
         ],
@@ -5462,7 +3380,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 13,
+            "_row_num": 14,
             "section_name": "model"
           }
         ],
@@ -5478,7 +3396,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 14,
+            "_row_num": 15,
             "section_name": "model"
           }
         ],
@@ -5489,11 +3407,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 76,
+            "_row_num": 83,
             "section_name": "survey"
           },
           {
-            "_row_num": 15,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
@@ -5509,11 +3427,11 @@
         "valuesList": "dontknow",
         "_defn": [
           {
-            "_row_num": 77,
+            "_row_num": 84,
             "section_name": "survey"
           },
           {
-            "_row_num": 16,
+            "_row_num": 17,
             "section_name": "model"
           }
         ],
@@ -5525,11 +3443,11 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 92,
+            "_row_num": 99,
             "section_name": "survey"
           },
           {
-            "_row_num": 17,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -5544,7 +3462,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 18,
+            "_row_num": 19,
             "section_name": "model"
           }
         ],
@@ -5556,11 +3474,11 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 86,
+            "_row_num": 93,
             "section_name": "survey"
           },
           {
-            "_row_num": 19,
+            "_row_num": 20,
             "section_name": "model"
           }
         ],
@@ -5571,11 +3489,11 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 88,
+            "_row_num": 95,
             "section_name": "survey"
           },
           {
-            "_row_num": 20,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
@@ -5586,11 +3504,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 57,
+            "_row_num": 64,
             "section_name": "survey"
           },
           {
-            "_row_num": 21,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -5605,7 +3523,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 22,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -5616,11 +3534,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 94,
+            "_row_num": 101,
             "section_name": "survey"
           },
           {
-            "_row_num": 23,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -5636,11 +3554,11 @@
         "valuesList": "dontknow",
         "_defn": [
           {
-            "_row_num": 95,
+            "_row_num": 102,
             "section_name": "survey"
           },
           {
-            "_row_num": 24,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -5650,7 +3568,7 @@
       "INF": {
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -5663,11 +3581,11 @@
         "valuesList": "inf1",
         "_defn": [
           {
-            "_row_num": 61,
+            "_row_num": 68,
             "section_name": "survey"
           },
           {
-            "_row_num": 26,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -5679,11 +3597,11 @@
         "valuesList": "inf2",
         "_defn": [
           {
-            "_row_num": 63,
+            "_row_num": 70,
             "section_name": "survey"
           },
           {
-            "_row_num": 27,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -5703,7 +3621,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 28,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -5723,7 +3641,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 29,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -5738,7 +3656,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 30,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -5758,7 +3676,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 31,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -5773,7 +3691,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 32,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -5793,7 +3711,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 33,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -5809,7 +3727,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 34,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -5824,7 +3742,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 35,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -5839,7 +3757,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 36,
+            "_row_num": 37,
             "section_name": "model"
           }
         ],
@@ -5850,11 +3768,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 80,
+            "_row_num": 87,
             "section_name": "survey"
           },
           {
-            "_row_num": 37,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
@@ -5870,11 +3788,11 @@
         "valuesList": "dontknow",
         "_defn": [
           {
-            "_row_num": 81,
+            "_row_num": 88,
             "section_name": "survey"
           },
           {
-            "_row_num": 38,
+            "_row_num": 39,
             "section_name": "model"
           }
         ],
@@ -5889,7 +3807,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 39,
+            "_row_num": 40,
             "section_name": "model"
           }
         ],
@@ -5900,11 +3818,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 72,
+            "_row_num": 79,
             "section_name": "survey"
           },
           {
-            "_row_num": 40,
+            "_row_num": 41,
             "section_name": "model"
           }
         ],
@@ -5920,11 +3838,11 @@
         "valuesList": "dontknow",
         "_defn": [
           {
-            "_row_num": 73,
+            "_row_num": 80,
             "section_name": "survey"
           },
           {
-            "_row_num": 41,
+            "_row_num": 42,
             "section_name": "model"
           }
         ],
@@ -5940,7 +3858,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 42,
+            "_row_num": 43,
             "section_name": "model"
           }
         ],
@@ -5954,11 +3872,11 @@
         "comment": "Makes the date widget DD/MM/YYYY",
         "_defn": [
           {
-            "_row_num": 56,
+            "_row_num": 63,
             "section_name": "survey"
           },
           {
-            "_row_num": 43,
+            "_row_num": 44,
             "section_name": "model"
           }
         ],
@@ -5974,7 +3892,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 44,
+            "_row_num": 45,
             "section_name": "model"
           }
         ],
@@ -5989,7 +3907,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 45,
+            "_row_num": 46,
             "section_name": "model"
           }
         ],
@@ -6005,7 +3923,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 46,
+            "_row_num": 47,
             "section_name": "model"
           }
         ],
@@ -6020,7 +3938,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 47,
+            "_row_num": 48,
             "section_name": "model"
           }
         ],
@@ -6036,7 +3954,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 48,
+            "_row_num": 49,
             "section_name": "model"
           }
         ],
@@ -6047,11 +3965,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 99,
+            "_row_num": 106,
             "section_name": "survey"
           },
           {
-            "_row_num": 49,
+            "_row_num": 50,
             "section_name": "model"
           }
         ],
@@ -6067,11 +3985,11 @@
         "valuesList": "dontknow",
         "_defn": [
           {
-            "_row_num": 100,
+            "_row_num": 107,
             "section_name": "survey"
           },
           {
-            "_row_num": 50,
+            "_row_num": 51,
             "section_name": "model"
           }
         ],
@@ -6082,11 +4000,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 74,
+            "_row_num": 81,
             "section_name": "survey"
           },
           {
-            "_row_num": 51,
+            "_row_num": 52,
             "section_name": "model"
           }
         ],
@@ -6102,11 +4020,11 @@
         "valuesList": "dontknow",
         "_defn": [
           {
-            "_row_num": 75,
+            "_row_num": 82,
             "section_name": "survey"
           },
           {
-            "_row_num": 52,
+            "_row_num": 53,
             "section_name": "model"
           }
         ],
@@ -6116,7 +4034,7 @@
       "LASTVISIT": {
         "_defn": [
           {
-            "_row_num": 54,
+            "_row_num": 58,
             "section_name": "model"
           }
         ],
@@ -6127,7 +4045,7 @@
       "CONSENTFOR": {
         "_defn": [
           {
-            "_row_num": 55,
+            "_row_num": 59,
             "section_name": "model"
           }
         ],
@@ -6138,7 +4056,7 @@
       "CONSENTSIG": {
         "_defn": [
           {
-            "_row_num": 56,
+            "_row_num": 60,
             "section_name": "model"
           }
         ],
@@ -6149,7 +4067,7 @@
       "ESTADOVIS": {
         "_defn": [
           {
-            "_row_num": 57,
+            "_row_num": 61,
             "section_name": "model"
           }
         ],
@@ -6160,7 +4078,7 @@
       "CICA": {
         "_defn": [
           {
-            "_row_num": 59,
+            "_row_num": 63,
             "section_name": "model"
           }
         ],
@@ -6171,7 +4089,7 @@
       "VAC1TIPO": {
         "_defn": [
           {
-            "_row_num": 61,
+            "_row_num": 65,
             "section_name": "model"
           }
         ],
@@ -6182,7 +4100,7 @@
       "VAC1DATA": {
         "_defn": [
           {
-            "_row_num": 62,
+            "_row_num": 66,
             "section_name": "model"
           }
         ],
@@ -6193,7 +4111,7 @@
       "VAC1INF": {
         "_defn": [
           {
-            "_row_num": 63,
+            "_row_num": 67,
             "section_name": "model"
           }
         ],
@@ -6204,7 +4122,7 @@
       "VAC2TIPO": {
         "_defn": [
           {
-            "_row_num": 64,
+            "_row_num": 68,
             "section_name": "model"
           }
         ],
@@ -6215,7 +4133,7 @@
       "VAC2DATA": {
         "_defn": [
           {
-            "_row_num": 65,
+            "_row_num": 69,
             "section_name": "model"
           }
         ],
@@ -6226,7 +4144,7 @@
       "VAC2INF": {
         "_defn": [
           {
-            "_row_num": 66,
+            "_row_num": 70,
             "section_name": "model"
           }
         ],
@@ -6237,7 +4155,7 @@
       "VAC3TIPO": {
         "_defn": [
           {
-            "_row_num": 67,
+            "_row_num": 71,
             "section_name": "model"
           }
         ],
@@ -6248,7 +4166,7 @@
       "VAC3DATA": {
         "_defn": [
           {
-            "_row_num": 68,
+            "_row_num": 72,
             "section_name": "model"
           }
         ],
@@ -6259,7 +4177,7 @@
       "VAC3INF": {
         "_defn": [
           {
-            "_row_num": 69,
+            "_row_num": 73,
             "section_name": "model"
           }
         ],
@@ -6270,7 +4188,7 @@
       "VAC4TIPO": {
         "_defn": [
           {
-            "_row_num": 70,
+            "_row_num": 74,
             "section_name": "model"
           }
         ],
@@ -6281,7 +4199,7 @@
       "VAC4DATA": {
         "_defn": [
           {
-            "_row_num": 71,
+            "_row_num": 75,
             "section_name": "model"
           }
         ],
@@ -6292,7 +4210,7 @@
       "VAC4INF": {
         "_defn": [
           {
-            "_row_num": 72,
+            "_row_num": 76,
             "section_name": "model"
           }
         ],
@@ -6303,7 +4221,7 @@
       "VAC5TIPO": {
         "_defn": [
           {
-            "_row_num": 73,
+            "_row_num": 77,
             "section_name": "model"
           }
         ],
@@ -6314,7 +4232,7 @@
       "VAC5DATA": {
         "_defn": [
           {
-            "_row_num": 74,
+            "_row_num": 78,
             "section_name": "model"
           }
         ],
@@ -6325,7 +4243,7 @@
       "VAC5INF": {
         "_defn": [
           {
-            "_row_num": 75,
+            "_row_num": 79,
             "section_name": "model"
           }
         ],
@@ -6336,7 +4254,7 @@
       "VAC6TIPO": {
         "_defn": [
           {
-            "_row_num": 76,
+            "_row_num": 80,
             "section_name": "model"
           }
         ],
@@ -6347,7 +4265,7 @@
       "VAC6DATA": {
         "_defn": [
           {
-            "_row_num": 77,
+            "_row_num": 81,
             "section_name": "model"
           }
         ],
@@ -6358,7 +4276,7 @@
       "VAC6INF": {
         "_defn": [
           {
-            "_row_num": 78,
+            "_row_num": 82,
             "section_name": "model"
           }
         ],
@@ -6369,7 +4287,7 @@
       "VAC7TIPO": {
         "_defn": [
           {
-            "_row_num": 79,
+            "_row_num": 83,
             "section_name": "model"
           }
         ],
@@ -6380,7 +4298,7 @@
       "VAC7DATA": {
         "_defn": [
           {
-            "_row_num": 80,
+            "_row_num": 84,
             "section_name": "model"
           }
         ],
@@ -6391,7 +4309,7 @@
       "VAC7INF": {
         "_defn": [
           {
-            "_row_num": 81,
+            "_row_num": 85,
             "section_name": "model"
           }
         ],
@@ -6402,7 +4320,7 @@
       "VAC8TIPO": {
         "_defn": [
           {
-            "_row_num": 82,
+            "_row_num": 86,
             "section_name": "model"
           }
         ],
@@ -6413,7 +4331,7 @@
       "VAC8DATA": {
         "_defn": [
           {
-            "_row_num": 83,
+            "_row_num": 87,
             "section_name": "model"
           }
         ],
@@ -6424,7 +4342,7 @@
       "VAC8INF": {
         "_defn": [
           {
-            "_row_num": 84,
+            "_row_num": 88,
             "section_name": "model"
           }
         ],
@@ -6435,7 +4353,7 @@
       "VAC9TIPO": {
         "_defn": [
           {
-            "_row_num": 85,
+            "_row_num": 89,
             "section_name": "model"
           }
         ],
@@ -6446,7 +4364,7 @@
       "VAC9DATA": {
         "_defn": [
           {
-            "_row_num": 86,
+            "_row_num": 90,
             "section_name": "model"
           }
         ],
@@ -6457,7 +4375,7 @@
       "VAC9INF": {
         "_defn": [
           {
-            "_row_num": 87,
+            "_row_num": 91,
             "section_name": "model"
           }
         ],
@@ -6468,7 +4386,7 @@
       "VAC10TIPO": {
         "_defn": [
           {
-            "_row_num": 88,
+            "_row_num": 92,
             "section_name": "model"
           }
         ],
@@ -6479,7 +4397,7 @@
       "VAC10DATA": {
         "_defn": [
           {
-            "_row_num": 89,
+            "_row_num": 93,
             "section_name": "model"
           }
         ],
@@ -6490,7 +4408,7 @@
       "VAC10INF": {
         "_defn": [
           {
-            "_row_num": 90,
+            "_row_num": 94,
             "section_name": "model"
           }
         ],
@@ -6501,7 +4419,7 @@
       "VAC11TIPO": {
         "_defn": [
           {
-            "_row_num": 91,
+            "_row_num": 95,
             "section_name": "model"
           }
         ],
@@ -6512,7 +4430,7 @@
       "VAC11DATA": {
         "_defn": [
           {
-            "_row_num": 92,
+            "_row_num": 96,
             "section_name": "model"
           }
         ],
@@ -6523,7 +4441,7 @@
       "VAC11INF": {
         "_defn": [
           {
-            "_row_num": 93,
+            "_row_num": 97,
             "section_name": "model"
           }
         ],
@@ -6534,7 +4452,7 @@
       "VAC12TIPO": {
         "_defn": [
           {
-            "_row_num": 94,
+            "_row_num": 98,
             "section_name": "model"
           }
         ],
@@ -6545,7 +4463,7 @@
       "VAC12DATA": {
         "_defn": [
           {
-            "_row_num": 95,
+            "_row_num": 99,
             "section_name": "model"
           }
         ],
@@ -6556,7 +4474,7 @@
       "VAC12INF": {
         "_defn": [
           {
-            "_row_num": 96,
+            "_row_num": 100,
             "section_name": "model"
           }
         ],
@@ -6567,7 +4485,7 @@
       "VAC13TIPO": {
         "_defn": [
           {
-            "_row_num": 97,
+            "_row_num": 101,
             "section_name": "model"
           }
         ],
@@ -6578,7 +4496,7 @@
       "VAC13DATA": {
         "_defn": [
           {
-            "_row_num": 98,
+            "_row_num": 102,
             "section_name": "model"
           }
         ],
@@ -6589,7 +4507,7 @@
       "VAC13INF": {
         "_defn": [
           {
-            "_row_num": 99,
+            "_row_num": 103,
             "section_name": "model"
           }
         ],
@@ -6600,7 +4518,7 @@
       "VAC14TIPO": {
         "_defn": [
           {
-            "_row_num": 100,
+            "_row_num": 104,
             "section_name": "model"
           }
         ],
@@ -6611,7 +4529,7 @@
       "VAC14DATA": {
         "_defn": [
           {
-            "_row_num": 101,
+            "_row_num": 105,
             "section_name": "model"
           }
         ],
@@ -6622,7 +4540,7 @@
       "VAC14INF": {
         "_defn": [
           {
-            "_row_num": 102,
+            "_row_num": 106,
             "section_name": "model"
           }
         ],
@@ -6633,7 +4551,7 @@
       "VAC15TIPO": {
         "_defn": [
           {
-            "_row_num": 103,
+            "_row_num": 107,
             "section_name": "model"
           }
         ],
@@ -6644,7 +4562,7 @@
       "VAC15DATA": {
         "_defn": [
           {
-            "_row_num": 104,
+            "_row_num": 108,
             "section_name": "model"
           }
         ],
@@ -6655,7 +4573,7 @@
       "VAC15INF": {
         "_defn": [
           {
-            "_row_num": 105,
+            "_row_num": 109,
             "section_name": "model"
           }
         ],
@@ -6666,7 +4584,7 @@
       "VAC16TIPO": {
         "_defn": [
           {
-            "_row_num": 106,
+            "_row_num": 110,
             "section_name": "model"
           }
         ],
@@ -6677,7 +4595,7 @@
       "VAC16DATA": {
         "_defn": [
           {
-            "_row_num": 107,
+            "_row_num": 111,
             "section_name": "model"
           }
         ],
@@ -6688,7 +4606,7 @@
       "VAC16INF": {
         "_defn": [
           {
-            "_row_num": 108,
+            "_row_num": 112,
             "section_name": "model"
           }
         ],
@@ -6699,7 +4617,7 @@
       "VAC17TIPO": {
         "_defn": [
           {
-            "_row_num": 109,
+            "_row_num": 113,
             "section_name": "model"
           }
         ],
@@ -6710,7 +4628,7 @@
       "VAC17DATA": {
         "_defn": [
           {
-            "_row_num": 110,
+            "_row_num": 114,
             "section_name": "model"
           }
         ],
@@ -6721,7 +4639,7 @@
       "VAC17INF": {
         "_defn": [
           {
-            "_row_num": 111,
+            "_row_num": 115,
             "section_name": "model"
           }
         ],
@@ -6732,7 +4650,7 @@
       "VAC18TIPO": {
         "_defn": [
           {
-            "_row_num": 112,
+            "_row_num": 116,
             "section_name": "model"
           }
         ],
@@ -6743,7 +4661,7 @@
       "VAC18DATA": {
         "_defn": [
           {
-            "_row_num": 113,
+            "_row_num": 117,
             "section_name": "model"
           }
         ],
@@ -6754,7 +4672,7 @@
       "VAC18INF": {
         "_defn": [
           {
-            "_row_num": 114,
+            "_row_num": 118,
             "section_name": "model"
           }
         ],
@@ -6765,7 +4683,7 @@
       "VAC19TIPO": {
         "_defn": [
           {
-            "_row_num": 115,
+            "_row_num": 119,
             "section_name": "model"
           }
         ],
@@ -6776,7 +4694,7 @@
       "VAC19DATA": {
         "_defn": [
           {
-            "_row_num": 116,
+            "_row_num": 120,
             "section_name": "model"
           }
         ],
@@ -6787,7 +4705,7 @@
       "VAC19INF": {
         "_defn": [
           {
-            "_row_num": 117,
+            "_row_num": 121,
             "section_name": "model"
           }
         ],
@@ -6798,7 +4716,7 @@
       "VAC20TIPO": {
         "_defn": [
           {
-            "_row_num": 118,
+            "_row_num": 122,
             "section_name": "model"
           }
         ],
@@ -6809,7 +4727,7 @@
       "VAC20DATA": {
         "_defn": [
           {
-            "_row_num": 119,
+            "_row_num": 123,
             "section_name": "model"
           }
         ],
@@ -6820,7 +4738,7 @@
       "VAC20INF": {
         "_defn": [
           {
-            "_row_num": 120,
+            "_row_num": 124,
             "section_name": "model"
           }
         ],
@@ -6973,7 +4891,10 @@
             "name": "MUL",
             "display": {
               "prompt": {
-                "text": "Number of woman"
+                "text": {
+                  "default": "Number of woman",
+                  "portuguese": "Número de mulher"
+                }
               }
             },
             "_row_num": 15,
@@ -7240,6 +5161,48 @@
             "promptIdx": 22
           },
           {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "CESCO",
+            "display": {
+              "prompt": {
+                "text": "Have you ever attended school"
+              }
+            },
+            "_row_num": 56,
+            "__rowNum__": 55,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen55",
+            "promptIdx": 23
+          },
+          {
+            "type": "integer",
+            "name": "ESCO",
+            "display": {
+              "prompt": {
+                "text": "What grade?"
+              }
+            },
+            "_row_num": 58,
+            "__rowNum__": 57,
+            "_token_type": "prompt",
+            "_type": "integer",
+            "_branch_label_enclosing_screen": "survey/_screen55",
+            "promptIdx": 24
+          },
+          {
+            "type": "select_multiple",
+            "values_list": "dontknow",
+            "name": "ESCONS",
+            "_row_num": 59,
+            "__rowNum__": 58,
+            "_token_type": "prompt",
+            "_type": "select_multiple",
+            "_branch_label_enclosing_screen": "survey/_screen55",
+            "promptIdx": 25
+          },
+          {
             "type": "custom_date",
             "name": "REGDIA",
             "display": {
@@ -7250,12 +5213,12 @@
                 }
               }
             },
-            "_row_num": 56,
-            "__rowNum__": 55,
+            "_row_num": 63,
+            "__rowNum__": 62,
             "_token_type": "prompt",
             "_type": "custom_date",
-            "_branch_label_enclosing_screen": "survey/_screen55",
-            "promptIdx": 23
+            "_branch_label_enclosing_screen": "survey/_screen62",
+            "promptIdx": 26
           },
           {
             "type": "integer",
@@ -7268,12 +5231,12 @@
                 }
               }
             },
-            "_row_num": 57,
-            "__rowNum__": 56,
+            "_row_num": 64,
+            "__rowNum__": 63,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen55",
-            "promptIdx": 24
+            "_branch_label_enclosing_screen": "survey/_screen62",
+            "promptIdx": 27
           },
           {
             "type": "note",
@@ -7285,12 +5248,12 @@
                 }
               }
             },
-            "_row_num": 60,
-            "__rowNum__": 59,
+            "_row_num": 67,
+            "__rowNum__": 66,
             "_token_type": "prompt",
             "_type": "note",
-            "_branch_label_enclosing_screen": "survey/_screen59",
-            "promptIdx": 25
+            "_branch_label_enclosing_screen": "survey/_screen66",
+            "promptIdx": 28
           },
           {
             "type": "select_one",
@@ -7304,12 +5267,12 @@
                 }
               }
             },
-            "_row_num": 61,
-            "__rowNum__": 60,
+            "_row_num": 68,
+            "__rowNum__": 67,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen59",
-            "promptIdx": 26
+            "_branch_label_enclosing_screen": "survey/_screen66",
+            "promptIdx": 29
           },
           {
             "type": "select_one",
@@ -7323,12 +5286,12 @@
                 }
               }
             },
-            "_row_num": 63,
-            "__rowNum__": 62,
+            "_row_num": 70,
+            "__rowNum__": 69,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen59",
-            "promptIdx": 27
+            "_branch_label_enclosing_screen": "survey/_screen66",
+            "promptIdx": 30
           },
           {
             "type": "integer",
@@ -7341,23 +5304,23 @@
                 }
               }
             },
-            "_row_num": 72,
-            "__rowNum__": 71,
+            "_row_num": 79,
+            "__rowNum__": 78,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen71",
-            "promptIdx": 28
+            "_branch_label_enclosing_screen": "survey/_screen78",
+            "promptIdx": 31
           },
           {
             "type": "select_multiple",
             "values_list": "dontknow",
             "name": "PARTNS",
-            "_row_num": 73,
-            "__rowNum__": 72,
+            "_row_num": 80,
+            "__rowNum__": 79,
             "_token_type": "prompt",
             "_type": "select_multiple",
-            "_branch_label_enclosing_screen": "survey/_screen71",
-            "promptIdx": 29
+            "_branch_label_enclosing_screen": "survey/_screen78",
+            "promptIdx": 32
           },
           {
             "type": "integer",
@@ -7370,23 +5333,23 @@
                 }
               }
             },
-            "_row_num": 74,
-            "__rowNum__": 73,
+            "_row_num": 81,
+            "__rowNum__": 80,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen71",
-            "promptIdx": 30
+            "_branch_label_enclosing_screen": "survey/_screen78",
+            "promptIdx": 33
           },
           {
             "type": "select_multiple",
             "values_list": "dontknow",
             "name": "VIVONS",
-            "_row_num": 75,
-            "__rowNum__": 74,
+            "_row_num": 82,
+            "__rowNum__": 81,
             "_token_type": "prompt",
             "_type": "select_multiple",
-            "_branch_label_enclosing_screen": "survey/_screen71",
-            "promptIdx": 31
+            "_branch_label_enclosing_screen": "survey/_screen78",
+            "promptIdx": 34
           },
           {
             "type": "integer",
@@ -7399,23 +5362,23 @@
                 }
               }
             },
-            "_row_num": 76,
-            "__rowNum__": 75,
+            "_row_num": 83,
+            "__rowNum__": 82,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen71",
-            "promptIdx": 32
+            "_branch_label_enclosing_screen": "survey/_screen78",
+            "promptIdx": 35
           },
           {
             "type": "select_multiple",
             "values_list": "dontknow",
             "name": "FALNS",
-            "_row_num": 77,
-            "__rowNum__": 76,
+            "_row_num": 84,
+            "__rowNum__": 83,
             "_token_type": "prompt",
             "_type": "select_multiple",
-            "_branch_label_enclosing_screen": "survey/_screen71",
-            "promptIdx": 33
+            "_branch_label_enclosing_screen": "survey/_screen78",
+            "promptIdx": 36
           },
           {
             "type": "integer",
@@ -7428,23 +5391,23 @@
                 }
               }
             },
-            "_row_num": 80,
-            "__rowNum__": 79,
+            "_row_num": 87,
+            "__rowNum__": 86,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen79",
-            "promptIdx": 34
+            "_branch_label_enclosing_screen": "survey/_screen86",
+            "promptIdx": 37
           },
           {
             "type": "select_multiple",
             "values_list": "dontknow",
             "name": "NMNS",
-            "_row_num": 81,
-            "__rowNum__": 80,
+            "_row_num": 88,
+            "__rowNum__": 87,
             "_token_type": "prompt",
             "_type": "select_multiple",
-            "_branch_label_enclosing_screen": "survey/_screen79",
-            "promptIdx": 35
+            "_branch_label_enclosing_screen": "survey/_screen86",
+            "promptIdx": 38
           },
           {
             "type": "integer",
@@ -7457,23 +5420,23 @@
                 }
               }
             },
-            "_row_num": 82,
-            "__rowNum__": 81,
+            "_row_num": 89,
+            "__rowNum__": 88,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen79",
-            "promptIdx": 36
+            "_branch_label_enclosing_screen": "survey/_screen86",
+            "promptIdx": 39
           },
           {
             "type": "select_multiple",
             "values_list": "dontknow",
             "name": "ABNS",
-            "_row_num": 83,
-            "__rowNum__": 82,
+            "_row_num": 90,
+            "__rowNum__": 89,
             "_token_type": "prompt",
             "_type": "select_multiple",
-            "_branch_label_enclosing_screen": "survey/_screen79",
-            "promptIdx": 37
+            "_branch_label_enclosing_screen": "survey/_screen86",
+            "promptIdx": 40
           },
           {
             "type": "select_one",
@@ -7487,12 +5450,12 @@
                 }
               }
             },
-            "_row_num": 86,
-            "__rowNum__": 85,
+            "_row_num": 93,
+            "__rowNum__": 92,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen85",
-            "promptIdx": 38
+            "_branch_label_enclosing_screen": "survey/_screen92",
+            "promptIdx": 41
           },
           {
             "type": "text",
@@ -7505,12 +5468,12 @@
                 }
               }
             },
-            "_row_num": 88,
-            "__rowNum__": 87,
+            "_row_num": 95,
+            "__rowNum__": 94,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen85",
-            "promptIdx": 39
+            "_branch_label_enclosing_screen": "survey/_screen92",
+            "promptIdx": 42
           },
           {
             "type": "select_one",
@@ -7524,12 +5487,12 @@
                 }
               }
             },
-            "_row_num": 92,
-            "__rowNum__": 91,
+            "_row_num": 99,
+            "__rowNum__": 98,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen91",
-            "promptIdx": 40
+            "_branch_label_enclosing_screen": "survey/_screen98",
+            "promptIdx": 43
           },
           {
             "type": "integer",
@@ -7542,23 +5505,23 @@
                 }
               }
             },
-            "_row_num": 94,
-            "__rowNum__": 93,
+            "_row_num": 101,
+            "__rowNum__": 100,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen91",
-            "promptIdx": 41
+            "_branch_label_enclosing_screen": "survey/_screen98",
+            "promptIdx": 44
           },
           {
             "type": "select_multiple",
             "values_list": "dontknow",
             "name": "IDFANNS",
-            "_row_num": 95,
-            "__rowNum__": 94,
+            "_row_num": 102,
+            "__rowNum__": 101,
             "_token_type": "prompt",
             "_type": "select_multiple",
-            "_branch_label_enclosing_screen": "survey/_screen91",
-            "promptIdx": 42
+            "_branch_label_enclosing_screen": "survey/_screen98",
+            "promptIdx": 45
           },
           {
             "type": "integer",
@@ -7571,31 +5534,31 @@
                 }
               }
             },
-            "_row_num": 99,
-            "__rowNum__": 98,
+            "_row_num": 106,
+            "__rowNum__": 105,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen98",
-            "promptIdx": 43
+            "_branch_label_enclosing_screen": "survey/_screen105",
+            "promptIdx": 46
           },
           {
             "type": "select_multiple",
             "values_list": "dontknow",
             "name": "VACNOHNS",
-            "_row_num": 100,
-            "__rowNum__": 99,
+            "_row_num": 107,
+            "__rowNum__": 106,
             "_token_type": "prompt",
             "_type": "select_multiple",
-            "_branch_label_enclosing_screen": "survey/_screen98",
-            "promptIdx": 44
+            "_branch_label_enclosing_screen": "survey/_screen105",
+            "promptIdx": 47
           },
           {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 102,
-            "_branch_label_enclosing_screen": "survey/_screen102",
-            "promptIdx": 45
+            "_row_num": 109,
+            "_branch_label_enclosing_screen": "survey/_screen109",
+            "promptIdx": 48
           }
         ],
         "validation_tag_map": {
@@ -7721,73 +5684,73 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 58,
-              "__rowNum__": 57,
+              "_row_num": 61,
+              "__rowNum__": 60,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(23);\nactivePromptIndicies.push(24);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(23);\nif (data('CESCO') == '1') {\nactivePromptIndicies.push(24);\nactivePromptIndicies.push(25);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 8
           },
           {
             "clause": "begin screen",
-            "_row_num": 59,
-            "__rowNum__": 58,
+            "_row_num": 62,
+            "__rowNum__": 61,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 70,
-              "__rowNum__": 69,
+              "_row_num": 65,
+              "__rowNum__": 64,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(25);\nactivePromptIndicies.push(26);\nif (data('INF1') == '2') {\nactivePromptIndicies.push(27);\n}\nif (data('INF1') == '2') {\nassign('INF', data('INF2'));\n}\nelse {\nassign('INF', data('INF1'));\n}\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(26);\nactivePromptIndicies.push(27);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 9
           },
           {
             "clause": "begin screen",
-            "_row_num": 71,
-            "__rowNum__": 70,
+            "_row_num": 66,
+            "__rowNum__": 65,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 78,
-              "__rowNum__": 77,
+              "_row_num": 77,
+              "__rowNum__": 76,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(28);\nactivePromptIndicies.push(29);\nactivePromptIndicies.push(30);\nactivePromptIndicies.push(31);\nactivePromptIndicies.push(32);\nactivePromptIndicies.push(33);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(28);\nactivePromptIndicies.push(29);\nif (data('INF1') == '2') {\nactivePromptIndicies.push(30);\n}\nif (data('INF1') == '2') {\nassign('INF', data('INF2'));\n}\nelse {\nassign('INF', data('INF1'));\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 10
           },
           {
             "clause": "begin screen",
-            "_row_num": 79,
-            "__rowNum__": 78,
+            "_row_num": 78,
+            "__rowNum__": 77,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 84,
-              "__rowNum__": 83,
+              "_row_num": 85,
+              "__rowNum__": 84,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(34);\nactivePromptIndicies.push(35);\nactivePromptIndicies.push(36);\nactivePromptIndicies.push(37);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(31);\nactivePromptIndicies.push(32);\nactivePromptIndicies.push(33);\nactivePromptIndicies.push(34);\nactivePromptIndicies.push(35);\nactivePromptIndicies.push(36);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 11
           },
           {
             "clause": "begin screen",
-            "_row_num": 85,
-            "__rowNum__": 84,
+            "_row_num": 86,
+            "__rowNum__": 85,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 90,
-              "__rowNum__": 89,
+              "_row_num": 91,
+              "__rowNum__": 90,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(38);\nif (data('GEM') == '1') {\nactivePromptIndicies.push(39);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(37);\nactivePromptIndicies.push(38);\nactivePromptIndicies.push(39);\nactivePromptIndicies.push(40);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 12
           },
           {
             "clause": "begin screen",
-            "_row_num": 91,
-            "__rowNum__": 90,
+            "_row_num": 92,
+            "__rowNum__": 91,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
@@ -7795,7 +5758,7 @@
               "__rowNum__": 96,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(40);\nif (data('FAN') == '1') {\nactivePromptIndicies.push(41);\nactivePromptIndicies.push(42);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(41);\nif (data('GEM') == '1') {\nactivePromptIndicies.push(42);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 13
           },
           {
@@ -7805,33 +5768,47 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 101,
-              "__rowNum__": 100,
+              "_row_num": 104,
+              "__rowNum__": 103,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(43);\nactivePromptIndicies.push(44);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(43);\nif (data('FAN') == '1') {\nactivePromptIndicies.push(44);\nactivePromptIndicies.push(45);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 14
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 105,
+            "__rowNum__": 104,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 108,
+              "__rowNum__": 107,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(46);\nactivePromptIndicies.push(47);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 15
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 102,
-            "operationIdx": 15
+            "_row_num": 109,
+            "operationIdx": 16
           },
           {
-            "_row_num": 102,
+            "_row_num": 109,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(45);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(48);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 16
+            "operationIdx": 17
           },
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 102,
-            "operationIdx": 17
+            "_row_num": 109,
+            "operationIdx": 18
           }
         ],
         "branch_label_map": {
@@ -7844,14 +5821,15 @@
           "_screen37": 6,
           "_screen44": 7,
           "_screen55": 8,
-          "_screen59": 9,
-          "_screen71": 10,
-          "_screen79": 11,
-          "_screen85": 12,
-          "_screen91": 13,
+          "_screen62": 9,
+          "_screen66": 10,
+          "_screen78": 11,
+          "_screen86": 12,
+          "_screen92": 13,
           "_screen98": 14,
-          "_contents": 16,
-          "_screen102": 16
+          "_screen105": 15,
+          "_contents": 17,
+          "_screen109": 17
         }
       },
       "initial": {
@@ -8043,7 +6021,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 82,
+            "_row_num": 89,
             "section_name": "survey"
           },
           {
@@ -8070,7 +6048,7 @@
         "valuesList": "dontknow",
         "_defn": [
           {
-            "_row_num": 83,
+            "_row_num": 90,
             "section_name": "survey"
           },
           {
@@ -8125,7 +6103,12 @@
       },
       "CESCO": {
         "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
+          {
+            "_row_num": 56,
+            "section_name": "survey"
+          },
           {
             "_row_num": 6,
             "section_name": "model"
@@ -8160,6 +6143,10 @@
         "type": "integer",
         "_defn": [
           {
+            "_row_num": 58,
+            "section_name": "survey"
+          },
+          {
             "_row_num": 8,
             "section_name": "model"
           }
@@ -8170,11 +6157,41 @@
         "elementSet": "data",
         "elementPath": "ESCO"
       },
+      "ESCONS": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "elementKey": "ESCONS_items",
+          "elementName": "items",
+          "elementSet": "data",
+          "elementPath": "ESCONS.items",
+          "notUnitOfRetention": true
+        },
+        "valuesList": "dontknow",
+        "_defn": [
+          {
+            "_row_num": 59,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ESCONS",
+        "elementName": "ESCONS",
+        "elementSet": "data",
+        "elementPath": "ESCONS",
+        "listChildElementKeys": [
+          "ESCONS_items"
+        ]
+      },
       "ESTADO": {
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 9,
+            "_row_num": 10,
             "section_name": "model"
           }
         ],
@@ -8193,7 +6210,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 10,
+            "_row_num": 11,
             "section_name": "model"
           }
         ],
@@ -8207,7 +6224,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 11,
+            "_row_num": 12,
             "section_name": "model"
           }
         ],
@@ -8220,7 +6237,7 @@
       "ETN": {
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 13,
             "section_name": "model"
           }
         ],
@@ -8240,7 +6257,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 13,
+            "_row_num": 14,
             "section_name": "model"
           }
         ],
@@ -8259,7 +6276,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 14,
+            "_row_num": 15,
             "section_name": "model"
           }
         ],
@@ -8273,11 +6290,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 76,
+            "_row_num": 83,
             "section_name": "survey"
           },
           {
-            "_row_num": 15,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
@@ -8300,11 +6317,11 @@
         "valuesList": "dontknow",
         "_defn": [
           {
-            "_row_num": 77,
+            "_row_num": 84,
             "section_name": "survey"
           },
           {
-            "_row_num": 16,
+            "_row_num": 17,
             "section_name": "model"
           }
         ],
@@ -8322,11 +6339,11 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 92,
+            "_row_num": 99,
             "section_name": "survey"
           },
           {
-            "_row_num": 17,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -8344,7 +6361,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 18,
+            "_row_num": 19,
             "section_name": "model"
           }
         ],
@@ -8359,11 +6376,11 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 86,
+            "_row_num": 93,
             "section_name": "survey"
           },
           {
-            "_row_num": 19,
+            "_row_num": 20,
             "section_name": "model"
           }
         ],
@@ -8377,11 +6394,11 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 88,
+            "_row_num": 95,
             "section_name": "survey"
           },
           {
-            "_row_num": 20,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
@@ -8395,11 +6412,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 57,
+            "_row_num": 64,
             "section_name": "survey"
           },
           {
-            "_row_num": 21,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -8417,7 +6434,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 22,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -8431,11 +6448,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 94,
+            "_row_num": 101,
             "section_name": "survey"
           },
           {
-            "_row_num": 23,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -8458,11 +6475,11 @@
         "valuesList": "dontknow",
         "_defn": [
           {
-            "_row_num": 95,
+            "_row_num": 102,
             "section_name": "survey"
           },
           {
-            "_row_num": 24,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -8478,7 +6495,7 @@
       "INF": {
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -8494,11 +6511,11 @@
         "valuesList": "inf1",
         "_defn": [
           {
-            "_row_num": 61,
+            "_row_num": 68,
             "section_name": "survey"
           },
           {
-            "_row_num": 26,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -8513,11 +6530,11 @@
         "valuesList": "inf2",
         "_defn": [
           {
-            "_row_num": 63,
+            "_row_num": 70,
             "section_name": "survey"
           },
           {
-            "_row_num": 27,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -8540,7 +6557,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 28,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -8567,7 +6584,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 29,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -8588,7 +6605,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 30,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -8615,7 +6632,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 31,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -8636,7 +6653,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 32,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -8663,7 +6680,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 33,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -8685,7 +6702,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 34,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -8703,7 +6720,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 35,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -8721,7 +6738,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 36,
+            "_row_num": 37,
             "section_name": "model"
           }
         ],
@@ -8735,11 +6752,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 80,
+            "_row_num": 87,
             "section_name": "survey"
           },
           {
-            "_row_num": 37,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
@@ -8762,11 +6779,11 @@
         "valuesList": "dontknow",
         "_defn": [
           {
-            "_row_num": 81,
+            "_row_num": 88,
             "section_name": "survey"
           },
           {
-            "_row_num": 38,
+            "_row_num": 39,
             "section_name": "model"
           }
         ],
@@ -8787,7 +6804,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 39,
+            "_row_num": 40,
             "section_name": "model"
           }
         ],
@@ -8801,11 +6818,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 72,
+            "_row_num": 79,
             "section_name": "survey"
           },
           {
-            "_row_num": 40,
+            "_row_num": 41,
             "section_name": "model"
           }
         ],
@@ -8828,11 +6845,11 @@
         "valuesList": "dontknow",
         "_defn": [
           {
-            "_row_num": 73,
+            "_row_num": 80,
             "section_name": "survey"
           },
           {
-            "_row_num": 41,
+            "_row_num": 42,
             "section_name": "model"
           }
         ],
@@ -8854,7 +6871,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 42,
+            "_row_num": 43,
             "section_name": "model"
           }
         ],
@@ -8871,11 +6888,11 @@
         "comment": "Makes the date widget DD/MM/YYYY",
         "_defn": [
           {
-            "_row_num": 56,
+            "_row_num": 63,
             "section_name": "survey"
           },
           {
-            "_row_num": 43,
+            "_row_num": 44,
             "section_name": "model"
           }
         ],
@@ -8894,7 +6911,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 44,
+            "_row_num": 45,
             "section_name": "model"
           }
         ],
@@ -8912,7 +6929,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 45,
+            "_row_num": 46,
             "section_name": "model"
           }
         ],
@@ -8931,7 +6948,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 46,
+            "_row_num": 47,
             "section_name": "model"
           }
         ],
@@ -8949,7 +6966,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 47,
+            "_row_num": 48,
             "section_name": "model"
           }
         ],
@@ -8968,7 +6985,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 48,
+            "_row_num": 49,
             "section_name": "model"
           }
         ],
@@ -8982,11 +6999,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 99,
+            "_row_num": 106,
             "section_name": "survey"
           },
           {
-            "_row_num": 49,
+            "_row_num": 50,
             "section_name": "model"
           }
         ],
@@ -9009,11 +7026,11 @@
         "valuesList": "dontknow",
         "_defn": [
           {
-            "_row_num": 100,
+            "_row_num": 107,
             "section_name": "survey"
           },
           {
-            "_row_num": 50,
+            "_row_num": 51,
             "section_name": "model"
           }
         ],
@@ -9030,11 +7047,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 74,
+            "_row_num": 81,
             "section_name": "survey"
           },
           {
-            "_row_num": 51,
+            "_row_num": 52,
             "section_name": "model"
           }
         ],
@@ -9057,11 +7074,11 @@
         "valuesList": "dontknow",
         "_defn": [
           {
-            "_row_num": 75,
+            "_row_num": 82,
             "section_name": "survey"
           },
           {
-            "_row_num": 52,
+            "_row_num": 53,
             "section_name": "model"
           }
         ],
@@ -9077,7 +7094,7 @@
       "LASTVISIT": {
         "_defn": [
           {
-            "_row_num": 54,
+            "_row_num": 58,
             "section_name": "model"
           }
         ],
@@ -9091,7 +7108,7 @@
       "CONSENTFOR": {
         "_defn": [
           {
-            "_row_num": 55,
+            "_row_num": 59,
             "section_name": "model"
           }
         ],
@@ -9105,7 +7122,7 @@
       "CONSENTSIG": {
         "_defn": [
           {
-            "_row_num": 56,
+            "_row_num": 60,
             "section_name": "model"
           }
         ],
@@ -9119,7 +7136,7 @@
       "ESTADOVIS": {
         "_defn": [
           {
-            "_row_num": 57,
+            "_row_num": 61,
             "section_name": "model"
           }
         ],
@@ -9133,7 +7150,7 @@
       "CICA": {
         "_defn": [
           {
-            "_row_num": 59,
+            "_row_num": 63,
             "section_name": "model"
           }
         ],
@@ -9147,7 +7164,7 @@
       "VAC1TIPO": {
         "_defn": [
           {
-            "_row_num": 61,
+            "_row_num": 65,
             "section_name": "model"
           }
         ],
@@ -9161,7 +7178,7 @@
       "VAC1DATA": {
         "_defn": [
           {
-            "_row_num": 62,
+            "_row_num": 66,
             "section_name": "model"
           }
         ],
@@ -9175,7 +7192,7 @@
       "VAC1INF": {
         "_defn": [
           {
-            "_row_num": 63,
+            "_row_num": 67,
             "section_name": "model"
           }
         ],
@@ -9189,7 +7206,7 @@
       "VAC2TIPO": {
         "_defn": [
           {
-            "_row_num": 64,
+            "_row_num": 68,
             "section_name": "model"
           }
         ],
@@ -9203,7 +7220,7 @@
       "VAC2DATA": {
         "_defn": [
           {
-            "_row_num": 65,
+            "_row_num": 69,
             "section_name": "model"
           }
         ],
@@ -9217,7 +7234,7 @@
       "VAC2INF": {
         "_defn": [
           {
-            "_row_num": 66,
+            "_row_num": 70,
             "section_name": "model"
           }
         ],
@@ -9231,7 +7248,7 @@
       "VAC3TIPO": {
         "_defn": [
           {
-            "_row_num": 67,
+            "_row_num": 71,
             "section_name": "model"
           }
         ],
@@ -9245,7 +7262,7 @@
       "VAC3DATA": {
         "_defn": [
           {
-            "_row_num": 68,
+            "_row_num": 72,
             "section_name": "model"
           }
         ],
@@ -9259,7 +7276,7 @@
       "VAC3INF": {
         "_defn": [
           {
-            "_row_num": 69,
+            "_row_num": 73,
             "section_name": "model"
           }
         ],
@@ -9273,7 +7290,7 @@
       "VAC4TIPO": {
         "_defn": [
           {
-            "_row_num": 70,
+            "_row_num": 74,
             "section_name": "model"
           }
         ],
@@ -9287,7 +7304,7 @@
       "VAC4DATA": {
         "_defn": [
           {
-            "_row_num": 71,
+            "_row_num": 75,
             "section_name": "model"
           }
         ],
@@ -9301,7 +7318,7 @@
       "VAC4INF": {
         "_defn": [
           {
-            "_row_num": 72,
+            "_row_num": 76,
             "section_name": "model"
           }
         ],
@@ -9315,7 +7332,7 @@
       "VAC5TIPO": {
         "_defn": [
           {
-            "_row_num": 73,
+            "_row_num": 77,
             "section_name": "model"
           }
         ],
@@ -9329,7 +7346,7 @@
       "VAC5DATA": {
         "_defn": [
           {
-            "_row_num": 74,
+            "_row_num": 78,
             "section_name": "model"
           }
         ],
@@ -9343,7 +7360,7 @@
       "VAC5INF": {
         "_defn": [
           {
-            "_row_num": 75,
+            "_row_num": 79,
             "section_name": "model"
           }
         ],
@@ -9357,7 +7374,7 @@
       "VAC6TIPO": {
         "_defn": [
           {
-            "_row_num": 76,
+            "_row_num": 80,
             "section_name": "model"
           }
         ],
@@ -9371,7 +7388,7 @@
       "VAC6DATA": {
         "_defn": [
           {
-            "_row_num": 77,
+            "_row_num": 81,
             "section_name": "model"
           }
         ],
@@ -9385,7 +7402,7 @@
       "VAC6INF": {
         "_defn": [
           {
-            "_row_num": 78,
+            "_row_num": 82,
             "section_name": "model"
           }
         ],
@@ -9399,7 +7416,7 @@
       "VAC7TIPO": {
         "_defn": [
           {
-            "_row_num": 79,
+            "_row_num": 83,
             "section_name": "model"
           }
         ],
@@ -9413,7 +7430,7 @@
       "VAC7DATA": {
         "_defn": [
           {
-            "_row_num": 80,
+            "_row_num": 84,
             "section_name": "model"
           }
         ],
@@ -9427,7 +7444,7 @@
       "VAC7INF": {
         "_defn": [
           {
-            "_row_num": 81,
+            "_row_num": 85,
             "section_name": "model"
           }
         ],
@@ -9441,7 +7458,7 @@
       "VAC8TIPO": {
         "_defn": [
           {
-            "_row_num": 82,
+            "_row_num": 86,
             "section_name": "model"
           }
         ],
@@ -9455,7 +7472,7 @@
       "VAC8DATA": {
         "_defn": [
           {
-            "_row_num": 83,
+            "_row_num": 87,
             "section_name": "model"
           }
         ],
@@ -9469,7 +7486,7 @@
       "VAC8INF": {
         "_defn": [
           {
-            "_row_num": 84,
+            "_row_num": 88,
             "section_name": "model"
           }
         ],
@@ -9483,7 +7500,7 @@
       "VAC9TIPO": {
         "_defn": [
           {
-            "_row_num": 85,
+            "_row_num": 89,
             "section_name": "model"
           }
         ],
@@ -9497,7 +7514,7 @@
       "VAC9DATA": {
         "_defn": [
           {
-            "_row_num": 86,
+            "_row_num": 90,
             "section_name": "model"
           }
         ],
@@ -9511,7 +7528,7 @@
       "VAC9INF": {
         "_defn": [
           {
-            "_row_num": 87,
+            "_row_num": 91,
             "section_name": "model"
           }
         ],
@@ -9525,7 +7542,7 @@
       "VAC10TIPO": {
         "_defn": [
           {
-            "_row_num": 88,
+            "_row_num": 92,
             "section_name": "model"
           }
         ],
@@ -9539,7 +7556,7 @@
       "VAC10DATA": {
         "_defn": [
           {
-            "_row_num": 89,
+            "_row_num": 93,
             "section_name": "model"
           }
         ],
@@ -9553,7 +7570,7 @@
       "VAC10INF": {
         "_defn": [
           {
-            "_row_num": 90,
+            "_row_num": 94,
             "section_name": "model"
           }
         ],
@@ -9567,7 +7584,7 @@
       "VAC11TIPO": {
         "_defn": [
           {
-            "_row_num": 91,
+            "_row_num": 95,
             "section_name": "model"
           }
         ],
@@ -9581,7 +7598,7 @@
       "VAC11DATA": {
         "_defn": [
           {
-            "_row_num": 92,
+            "_row_num": 96,
             "section_name": "model"
           }
         ],
@@ -9595,7 +7612,7 @@
       "VAC11INF": {
         "_defn": [
           {
-            "_row_num": 93,
+            "_row_num": 97,
             "section_name": "model"
           }
         ],
@@ -9609,7 +7626,7 @@
       "VAC12TIPO": {
         "_defn": [
           {
-            "_row_num": 94,
+            "_row_num": 98,
             "section_name": "model"
           }
         ],
@@ -9623,7 +7640,7 @@
       "VAC12DATA": {
         "_defn": [
           {
-            "_row_num": 95,
+            "_row_num": 99,
             "section_name": "model"
           }
         ],
@@ -9637,7 +7654,7 @@
       "VAC12INF": {
         "_defn": [
           {
-            "_row_num": 96,
+            "_row_num": 100,
             "section_name": "model"
           }
         ],
@@ -9651,7 +7668,7 @@
       "VAC13TIPO": {
         "_defn": [
           {
-            "_row_num": 97,
+            "_row_num": 101,
             "section_name": "model"
           }
         ],
@@ -9665,7 +7682,7 @@
       "VAC13DATA": {
         "_defn": [
           {
-            "_row_num": 98,
+            "_row_num": 102,
             "section_name": "model"
           }
         ],
@@ -9679,7 +7696,7 @@
       "VAC13INF": {
         "_defn": [
           {
-            "_row_num": 99,
+            "_row_num": 103,
             "section_name": "model"
           }
         ],
@@ -9693,7 +7710,7 @@
       "VAC14TIPO": {
         "_defn": [
           {
-            "_row_num": 100,
+            "_row_num": 104,
             "section_name": "model"
           }
         ],
@@ -9707,7 +7724,7 @@
       "VAC14DATA": {
         "_defn": [
           {
-            "_row_num": 101,
+            "_row_num": 105,
             "section_name": "model"
           }
         ],
@@ -9721,7 +7738,7 @@
       "VAC14INF": {
         "_defn": [
           {
-            "_row_num": 102,
+            "_row_num": 106,
             "section_name": "model"
           }
         ],
@@ -9735,7 +7752,7 @@
       "VAC15TIPO": {
         "_defn": [
           {
-            "_row_num": 103,
+            "_row_num": 107,
             "section_name": "model"
           }
         ],
@@ -9749,7 +7766,7 @@
       "VAC15DATA": {
         "_defn": [
           {
-            "_row_num": 104,
+            "_row_num": 108,
             "section_name": "model"
           }
         ],
@@ -9763,7 +7780,7 @@
       "VAC15INF": {
         "_defn": [
           {
-            "_row_num": 105,
+            "_row_num": 109,
             "section_name": "model"
           }
         ],
@@ -9777,7 +7794,7 @@
       "VAC16TIPO": {
         "_defn": [
           {
-            "_row_num": 106,
+            "_row_num": 110,
             "section_name": "model"
           }
         ],
@@ -9791,7 +7808,7 @@
       "VAC16DATA": {
         "_defn": [
           {
-            "_row_num": 107,
+            "_row_num": 111,
             "section_name": "model"
           }
         ],
@@ -9805,7 +7822,7 @@
       "VAC16INF": {
         "_defn": [
           {
-            "_row_num": 108,
+            "_row_num": 112,
             "section_name": "model"
           }
         ],
@@ -9819,7 +7836,7 @@
       "VAC17TIPO": {
         "_defn": [
           {
-            "_row_num": 109,
+            "_row_num": 113,
             "section_name": "model"
           }
         ],
@@ -9833,7 +7850,7 @@
       "VAC17DATA": {
         "_defn": [
           {
-            "_row_num": 110,
+            "_row_num": 114,
             "section_name": "model"
           }
         ],
@@ -9847,7 +7864,7 @@
       "VAC17INF": {
         "_defn": [
           {
-            "_row_num": 111,
+            "_row_num": 115,
             "section_name": "model"
           }
         ],
@@ -9861,7 +7878,7 @@
       "VAC18TIPO": {
         "_defn": [
           {
-            "_row_num": 112,
+            "_row_num": 116,
             "section_name": "model"
           }
         ],
@@ -9875,7 +7892,7 @@
       "VAC18DATA": {
         "_defn": [
           {
-            "_row_num": 113,
+            "_row_num": 117,
             "section_name": "model"
           }
         ],
@@ -9889,7 +7906,7 @@
       "VAC18INF": {
         "_defn": [
           {
-            "_row_num": 114,
+            "_row_num": 118,
             "section_name": "model"
           }
         ],
@@ -9903,7 +7920,7 @@
       "VAC19TIPO": {
         "_defn": [
           {
-            "_row_num": 115,
+            "_row_num": 119,
             "section_name": "model"
           }
         ],
@@ -9917,7 +7934,7 @@
       "VAC19DATA": {
         "_defn": [
           {
-            "_row_num": 116,
+            "_row_num": 120,
             "section_name": "model"
           }
         ],
@@ -9931,7 +7948,7 @@
       "VAC19INF": {
         "_defn": [
           {
-            "_row_num": 117,
+            "_row_num": 121,
             "section_name": "model"
           }
         ],
@@ -9945,7 +7962,7 @@
       "VAC20TIPO": {
         "_defn": [
           {
-            "_row_num": 118,
+            "_row_num": 122,
             "section_name": "model"
           }
         ],
@@ -9959,7 +7976,7 @@
       "VAC20DATA": {
         "_defn": [
           {
-            "_row_num": 119,
+            "_row_num": 123,
             "section_name": "model"
           }
         ],
@@ -9973,7 +7990,7 @@
       "VAC20INF": {
         "_defn": [
           {
-            "_row_num": 120,
+            "_row_num": 124,
             "section_name": "model"
           }
         ],
@@ -9990,6 +8007,14 @@
         "elementName": "items",
         "elementSet": "data",
         "elementPath": "ABNS.items",
+        "notUnitOfRetention": true
+      },
+      "ESCONS_items": {
+        "type": "string",
+        "elementKey": "ESCONS_items",
+        "elementName": "items",
+        "elementSet": "data",
+        "elementPath": "ESCONS.items",
         "notUnitOfRetention": true
       },
       "FALNS_items": {
@@ -10187,10 +8212,24 @@
       },
       {
         "_partition": "Column",
+        "_aspect": "CESCO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":4}]"
+      },
+      {
+        "_partition": "Column",
         "_aspect": "CNASCCERTO",
         "_key": "displayChoicesList",
         "_type": "object",
         "_value": "[{\"choice_list_name\":\"precision\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Day certain\",\"portuguese\":\"Dia certo\"}}},\"_row_num\":36},{\"choice_list_name\":\"precision\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Month certain\",\"portuguese\":\"Mes certo\"}}},\"_row_num\":37},{\"choice_list_name\":\"precision\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Season certain\",\"portuguese\":\"Estação certo\"}}},\"_row_num\":38},{\"choice_list_name\":\"precision\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"default\":\"Year certain\",\"portuguese\":\"Ano certo\"}}},\"_row_num\":39}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "ESCONS",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"dontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":40}]"
       },
       {
         "_partition": "Column",
