@@ -82,6 +82,53 @@
       {
         "clause": "end screen",
         "_row_num": 4
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 5
+      },
+      {
+        "clause": "if",
+        "condition": "data('ADA') && data('ADA').length>0 && moment().diff(moment(data('ADA'), '\\\\D:DD,\\\\M:MM,\\\\Y:YYYY'),'years')>=2",
+        "_row_num": 6
+      },
+      {
+        "type": "note",
+        "name": "lblKnown",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "OVER 2 ÅR",
+              "portuguese": "MAS DE 2 ANOS"
+            }
+          }
+        },
+        "_row_num": 7
+      },
+      {
+        "clause": "else",
+        "_row_num": 8
+      },
+      {
+        "type": "note",
+        "name": "lblUnknown",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "IKKE OVER 2 ÅR",
+              "portuguese": "NAO MAS DE 2 ANOS"
+            }
+          }
+        },
+        "_row_num": 9
+      },
+      {
+        "clause": "end if",
+        "_row_num": 10
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 11
       }
     ],
     "queries": [
@@ -1918,6 +1965,12 @@
         "type": "string",
         "isSessionVariable": false,
         "_row_num": 2
+      },
+      {
+        "name": "TT",
+        "type": "string",
+        "isSessionVariable": false,
+        "_row_num": 3
       }
     ]
   },
@@ -3894,6 +3947,17 @@
         ],
         "isSessionVariable": false,
         "elementKey": "ADA"
+      },
+      "TT": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TT"
       }
     },
     "section_names": [
@@ -3925,12 +3989,48 @@
             "promptIdx": 0
           },
           {
+            "type": "note",
+            "name": "lblKnown",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "OVER 2 ÅR",
+                  "portuguese": "MAS DE 2 ANOS"
+                }
+              }
+            },
+            "_row_num": 7,
+            "__rowNum__": 6,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen5",
+            "promptIdx": 1
+          },
+          {
+            "type": "note",
+            "name": "lblUnknown",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "IKKE OVER 2 ÅR",
+                  "portuguese": "NAO MAS DE 2 ANOS"
+                }
+              }
+            },
+            "_row_num": 9,
+            "__rowNum__": 8,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen5",
+            "promptIdx": 2
+          },
+          {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 5,
-            "_branch_label_enclosing_screen": "survey/_screen5",
-            "promptIdx": 1
+            "_row_num": 12,
+            "_branch_label_enclosing_screen": "survey/_screen12",
+            "promptIdx": 3
           }
         ],
         "validation_tag_map": {
@@ -3952,31 +4052,46 @@
             "operationIdx": 0
           },
           {
-            "_token_type": "exit_section",
-            "clause": "exit section",
+            "clause": "begin screen",
             "_row_num": 5,
+            "__rowNum__": 4,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 11,
+              "__rowNum__": 10,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nif (data('ADA') && data('ADA').length>0 && moment().diff(moment(data('ADA'), '\\\\D:DD,\\\\M:MM,\\\\Y:YYYY'),'years')>=2) {\nactivePromptIndicies.push(1);\n}\nelse {\nactivePromptIndicies.push(2);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 1
           },
           {
-            "_row_num": 5,
+            "_token_type": "exit_section",
+            "clause": "exit section",
+            "_row_num": 12,
+            "operationIdx": 2
+          },
+          {
+            "_row_num": 12,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(1);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(3);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 2
+            "operationIdx": 3
           },
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 5,
-            "operationIdx": 3
+            "_row_num": 12,
+            "operationIdx": 4
           }
         ],
         "branch_label_map": {
           "_screen2": 0,
-          "_contents": 2,
-          "_screen5": 2
+          "_screen5": 1,
+          "_contents": 3,
+          "_screen12": 3
         }
       },
       "initial": {
@@ -4184,6 +4299,20 @@
         "elementName": "ADA",
         "elementSet": "data",
         "elementPath": "ADA"
+      },
+      "TT": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TT",
+        "elementName": "TT",
+        "elementSet": "data",
+        "elementPath": "TT"
       },
       "_id": {
         "type": "string",

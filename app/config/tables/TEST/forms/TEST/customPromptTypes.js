@@ -13,7 +13,13 @@ function elog(str) {
 
 var adate = promptTypes.input_type.extend({
     type: "adate",
-    
+    asDate: null,
+    unknownDay: false,
+    unknownMonth: false,
+    unknownYear: false,
+    TotalYears: 0,
+    TotalMonths: 0,
+    TotalDays: 0,
     templatePath: "templates/adate.handlebars",
     
     events: {
@@ -80,16 +86,68 @@ var adate = promptTypes.input_type.extend({
         //     return null;
         // }
     },
-    generateSaveValue: function(jsonFormSerialization) {
-        elog("generateSaveValue called upon");
-        var that = this;
-        if(jsonFormSerialization){
-            return "habba";
+    // generateSaveValue: function(jsonFormSerialization) {
+    //     elog("generateSaveValue called upon");
+    //     var that = this;
+    //     if(jsonFormSerialization){
+    //         return "habba";
+    //     }
+    //     return null;
+    // },
+    // parseSaveValue: function(savedValue) {
+    //     elog("parseSaveValue called upon");
+    // },
+    updateDateProps: function(d,m,y) {
+        
+        that = this;
+        if (d=="" || m=="" || y=="") {
+            that.asDate = null;
+            that.$('.adate-ageInYears').text("")
+            that.unknownDay = true;
+            that.unknownMonth = true;
+            that.unknownYear = true;
+            TotalYears = 0;
+            TotalMonths = 0;
+            TotalDays = 0;
+        } else {
+            that.asDate = new Date(y=="NS"?1900:y,m=="NS"?5:m-1,d=="NS"?15:d);
+            that.unknownDay = d == "NS";
+            that.unknownMonth = m == "NS";
+            that.unknownYear = y == "NS";
+            
+            var d = moment(that.asDate);
+            // update diffs
+            TotalYears = moment().diff(d,"years");
+            TotalMonths = moment().diff(d,"months");
+            TotalDays = moment().diff(d,"days");
+
+            // also update help text
+            var yD = moment().diff(d,"years");
+            d.add(yD,"years");
+            var mD = moment().diff(d,"months");
+            d.add(mD,"months");
+            var dD = moment().diff(d,"days");
+            var txt = "";
+            if (yD!=0) {
+                if (that.unknownYear) {
+                    txt += "~";
+                }
+                txt += yD + " anos, ";
+            }  
+            if (yD!=0 || mD!=0) {
+                if (that.unknownYear || that.unknownMonth || that.unknownDay) {
+                    txt += "~";
+                }
+                txt += mD + " meses e ";
+            }
+            if (yD!=0 || mD!=0 || dD!=0) {
+                if (that.unknownDay) {
+                    txt += "~";
+                }
+                txt += dD + " dias.";
+            }            
+            that.$('.adate-ageInYears').text(txt)
         }
-        return null;
-    },
-    parseSaveValue: function(savedValue) {
-        elog("parseSaveValue called upon");
     },
     setSelects : function(strValue) {
         var that = this;
@@ -104,6 +162,7 @@ var adate = promptTypes.input_type.extend({
                 d = dmy[0].split(":")[1];
                 m = dmy[1].split(":")[1];
                 y = dmy[2].split(":")[1];
+                that.updateDateProps(d,m,y);
             }
         } 
         elog("DAY:");
@@ -117,55 +176,57 @@ var adate = promptTypes.input_type.extend({
         elog("MODIFICATION TRIGGERED!");
         var that = this;
         odkCommon.log('D',"prompts." + that.type + ".modification px: " + that.promptIdx);
-        if ( !that.insideAfterRender ) {
-            var newValue = null;
-            var d = that.$('.adate-dayselect').val();
-            var m = that.$('.adate-monthselect').val();
-            var y = that.$('.adate-yearselect').val();
-            newValue = "D:"+d+",M:"+m+",Y:"+y;           
-            elog(newValue);
-            
-            
-            var ctxt = that.controller.newContext(evt, that.type + ".modification");
-            that.controller.enqueueTriggeringContext($.extend({},ctxt,{success:function() {
-                odkCommon.log('D',"prompts." + that.type + ".modification: determine if reRendering ", "px: " + that.promptIdx);
-                var ref = that.getValue();
-                elog("Getvalue ref:");
-                elog(ref);
-                if ( ref === null || ref === undefined ) {
-                    rerender = ( newValue !== null && newValue !== undefined );
-                } else if ( newValue === null || newValue === undefined ) {
-                    rerender = ( ref !== null && ref !== undefined );
-                } else {
-                    rerender = !(that.sameValue(ref, newValue));
-                }
+        
+        var newValue = null;
+        var d = that.$('.adate-dayselect').val();
+        var m = that.$('.adate-monthselect').val();
+        var y = that.$('.adate-yearselect').val();
+        newValue = "D:"+d+",M:"+m+",Y:"+y;
+        that.updateDateProps(d,m,y);        
+        elog(newValue);
+        
+        
+        var ctxt = that.controller.newContext(evt, that.type + ".modification");
+        that.controller.enqueueTriggeringContext($.extend({},ctxt,{success:function() {
+            odkCommon.log('D',"prompts." + that.type + ".modification: determine if reRendering ", "px: " + that.promptIdx);
+            var ref = that.getValue();
+            elog("Getvalue ref:");
+            elog(ref);
+            if ( ref === null || ref === undefined ) {
+                rerender = ( newValue !== null && newValue !== undefined );
+            } else if ( newValue === null || newValue === undefined ) {
+                rerender = ( ref !== null && ref !== undefined );
+            } else {
+                rerender = !(that.sameValue(ref, newValue));
+            }
 
-                var renderContext = that.renderContext;
-                if ( newValue === undefined || newValue === null ) {
-                    renderContext.value = '';
-                } else {
-                    renderContext.value = newValue;
-                }
+            var renderContext = that.renderContext;
+            if ( newValue === undefined || newValue === null ) {
+                renderContext.value = '';
+            } else {
+                renderContext.value = newValue;
+            }
 
-                // track original value
-                var originalValue = that.getValue();
-                //that.setValueDeferredChange(newValue);
-                elog("Setting value to: " + newValue);
-                that.setValueAndValidate(newValue);
-                renderContext.invalid = !that.validateValue();
-                if ( renderContext.invalid ) {
-                    newValue = originalValue;
-                    that.setValueDeferredChange(originalValue);
-                }
+            // track original value
+            var originalValue = ref;
+            elog("Setting value to: " + newValue);
+            //that.setValueDeferredChange(newValue);
+            that.setValueAndValidate(newValue);
+            renderContext.invalid = !that.validateValue();
+            if ( renderContext.invalid ) {
+                newValue = originalValue;
+                //that.setValueDeferredChange(originalValue);
+                that.setValueAndValidate(originalValue);
+            }
 
-                // We are now done with this
-                ctxt.success();
-            },
-            failure:function(m) {
-                ctxt.log('D',"prompts." + that.type + ".modification -- prior event terminated with an error -- aborting!", "px: " + that.promptIdx);
-                ctxt.failure(m);
-            }}));
-        }
+            // We are now done with this
+            ctxt.success();
+        },
+        failure:function(m) {
+            ctxt.log('D',"prompts." + that.type + ".modification -- prior event terminated with an error -- aborting!", "px: " + that.promptIdx);
+            ctxt.failure(m);
+        }}));
+        
     },
     getValue: function() {
         if (!this.name) {
