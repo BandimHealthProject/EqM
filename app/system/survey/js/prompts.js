@@ -1980,7 +1980,7 @@ promptTypes.datetime = promptTypes.input_type.extend({
     detectNativeDatePicker: function (){
         //For now never use the native datepicker because the samsung note's
         //native datepicker causes the webkit to freeze in some cases.
-        //return false;
+        return true; //always use it
         
         //It may be best to user modernizr for this type of functionality.
         var input = document.createElement('input');
