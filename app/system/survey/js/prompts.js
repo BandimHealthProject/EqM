@@ -2008,7 +2008,7 @@ promptTypes.datetime = promptTypes.input_type.extend({
         var renderContext = that.renderContext;
         if(that.detectNativeDatePicker()){
             renderContext.inputAttributes.type = that.type;
-            that.usePicker = false;
+            that.usePicker = true;
             ctxt.success();
         } else {
             var dateValue = that.getValue();
