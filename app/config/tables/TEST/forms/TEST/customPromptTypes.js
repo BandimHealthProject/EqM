@@ -7,8 +7,9 @@ window.is_finalized = function() {
 };
 
 function elog(str) {
-    var prefix = "**EMIL**";
-    console.error(prefix, str);
+    //var prefix = "**EMIL**";
+    //console.error(prefix, str);
+    return;
 }
 
 var adate = promptTypes.input_type.extend({
@@ -17,9 +18,6 @@ var adate = promptTypes.input_type.extend({
     unknownDay: false,
     unknownMonth: false,
     unknownYear: false,
-    TotalYears: 0,
-    TotalMonths: 0,
-    TotalDays: 0,
     templatePath: "templates/adate.handlebars",
     
     events: {
@@ -106,21 +104,18 @@ var adate = promptTypes.input_type.extend({
             that.unknownDay = true;
             that.unknownMonth = true;
             that.unknownYear = true;
-            TotalYears = 0;
-            TotalMonths = 0;
-            TotalDays = 0;
         } else {
-            that.asDate = new Date(y=="NS"?1900:y,m=="NS"?5:m-1,d=="NS"?15:d);
+            that.asDate = new Date(y=="NS"?1900:y,m=="NS"?5:m-1,d=="NS"?15:d);            
             that.unknownDay = d == "NS";
             that.unknownMonth = m == "NS";
             that.unknownYear = y == "NS";
             
             var d = moment(that.asDate);
-            // update diffs
-            TotalYears = moment().diff(d,"years");
-            TotalMonths = moment().diff(d,"months");
-            TotalDays = moment().diff(d,"days");
-
+            if (!d.isValid() || that.unknownYear) {
+                that.$('.adate-ageInYears').text()
+                return;
+            }
+            
             // also update help text
             var yD = moment().diff(d,"years");
             d.add(yD,"years");
@@ -128,22 +123,17 @@ var adate = promptTypes.input_type.extend({
             d.add(mD,"months");
             var dD = moment().diff(d,"days");
             var txt = "";
+            
             if (yD!=0) {
-                if (that.unknownYear) {
+                if (that.unknownMonth || that.unknownDay) {
                     txt += "~";
                 }
                 txt += yD + " anos, ";
             }  
             if (yD!=0 || mD!=0) {
-                if (that.unknownYear || that.unknownMonth || that.unknownDay) {
-                    txt += "~";
-                }
                 txt += mD + " meses e ";
             }
             if (yD!=0 || mD!=0 || dD!=0) {
-                if (that.unknownDay) {
-                    txt += "~";
-                }
                 txt += dD + " dias.";
             }            
             that.$('.adate-ageInYears').text(txt)
