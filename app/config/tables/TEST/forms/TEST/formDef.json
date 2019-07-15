@@ -89,7 +89,7 @@
       },
       {
         "clause": "if",
-        "condition": "data('ADA') && data('ADA').length>0 && moment().diff(moment(data('ADA'), '\\\\D:DD,\\\\M:MM,\\\\Y:YYYY'),'years')>=2",
+        "condition": "adate.ageInYears(data('ADA'))>2",
         "_row_num": 6
       },
       {
@@ -127,8 +127,47 @@
         "_row_num": 10
       },
       {
-        "clause": "end screen",
+        "clause": "if",
+        "condition": "!adate.yearUnknown()",
         "_row_num": 11
+      },
+      {
+        "type": "note",
+        "name": "lblbla",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Alder {{adate.ageInYears(data('ADA'))}}",
+              "portuguese": "Sand"
+            }
+          }
+        },
+        "_row_num": 12
+      },
+      {
+        "clause": "else",
+        "_row_num": 13
+      },
+      {
+        "type": "note",
+        "name": "lblblabla",
+        "display": {
+          "prompt": {
+            "text": {
+              "default": "Ingen alder…",
+              "portuguese": "Falsk"
+            }
+          }
+        },
+        "_row_num": 14
+      },
+      {
+        "clause": "end if",
+        "_row_num": 15
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 16
       }
     ],
     "queries": [
@@ -4025,12 +4064,48 @@
             "promptIdx": 2
           },
           {
+            "type": "note",
+            "name": "lblbla",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Alder {{adate.ageInYears(data('ADA'))}}",
+                  "portuguese": "Sand"
+                }
+              }
+            },
+            "_row_num": 12,
+            "__rowNum__": 11,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen5",
+            "promptIdx": 3
+          },
+          {
+            "type": "note",
+            "name": "lblblabla",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Ingen alder…",
+                  "portuguese": "Falsk"
+                }
+              }
+            },
+            "_row_num": 14,
+            "__rowNum__": 13,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen5",
+            "promptIdx": 4
+          },
+          {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 12,
-            "_branch_label_enclosing_screen": "survey/_screen12",
-            "promptIdx": 3
+            "_row_num": 17,
+            "_branch_label_enclosing_screen": "survey/_screen17",
+            "promptIdx": 5
           }
         ],
         "validation_tag_map": {
@@ -4058,23 +4133,23 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 11,
-              "__rowNum__": 10,
+              "_row_num": 16,
+              "__rowNum__": 15,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nif (data('ADA') && data('ADA').length>0 && moment().diff(moment(data('ADA'), '\\\\D:DD,\\\\M:MM,\\\\Y:YYYY'),'years')>=2) {\nactivePromptIndicies.push(1);\n}\nelse {\nactivePromptIndicies.push(2);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nif (adate.ageInYears(data('ADA'))>2) {\nactivePromptIndicies.push(1);\n}\nelse {\nactivePromptIndicies.push(2);\n}\nif (!adate.yearUnknown()) {\nactivePromptIndicies.push(3);\n}\nelse {\nactivePromptIndicies.push(4);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 1
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 12,
+            "_row_num": 17,
             "operationIdx": 2
           },
           {
-            "_row_num": 12,
+            "_row_num": 17,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(3);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(5);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
@@ -4083,7 +4158,7 @@
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 12,
+            "_row_num": 17,
             "operationIdx": 4
           }
         ],
@@ -4091,7 +4166,7 @@
           "_screen2": 0,
           "_screen5": 1,
           "_contents": 3,
-          "_screen12": 3
+          "_screen17": 3
         }
       },
       "initial": {
