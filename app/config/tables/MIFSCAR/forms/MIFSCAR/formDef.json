@@ -19,12 +19,9 @@
       {
         "setting_name": "survey",
         "display": {
-          "tittle": {
-            "text": "Woman in the fertile age - scars"
-          },
           "title": {
             "text": {
-              "portuguese": "Mulher na idade fertil - cicatrizes",
+              "english": "Woman in the fertile age - scars",
               "default": "Mulher na idade fertil - cicatrizes"
             }
           }
@@ -36,20 +33,20 @@
         "display": {
           "locale": {
             "text": {
-              "default": "English",
-              "portuguese": "Inglês"
+              "english": "Portuguese",
+              "default": "Portugues"
             }
           }
         },
         "_row_num": 6
       },
       {
-        "setting_name": "portuguese",
+        "setting_name": "english",
         "display": {
           "locale": {
             "text": {
-              "default": "Portuguese",
-              "portuguese": "Portugues"
+              "english": "English",
+              "default": "Inglês"
             }
           }
         },
@@ -75,8 +72,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Scars",
-              "portuguese": "Cicatriz"
+              "english": "Scars",
+              "default": "Cicatriz"
             }
           }
         },
@@ -88,8 +85,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Date of examination",
-              "portuguese": "Data de leitura"
+              "english": "Date of examination",
+              "default": "Data de leitura"
             }
           }
         },
@@ -102,8 +99,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Scars?",
-              "portuguese": "Cicatriz?"
+              "english": "Scars?",
+              "default": "Cicatriz?"
             }
           }
         },
@@ -121,8 +118,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Number of scars?",
-              "portuguese": "Numero de cicatriz?"
+              "english": "How many scars?",
+              "default": "Quantos cicatrizes?"
             }
           }
         },
@@ -150,8 +147,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Scar 1",
-              "portuguese": "Cicatriz 1"
+              "english": "Scar 1",
+              "default": "Cicatriz 1"
             }
           }
         },
@@ -164,12 +161,17 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Type of scar",
-              "portuguese": "Typo de cicatriz"
+              "english": "Type of scar",
+              "default": "Typo de cicatriz"
             }
           }
         },
         "_row_num": 13
+      },
+      {
+        "clause": "if",
+        "condition": "data('CICA1') != '3'",
+        "_row_num": 14
       },
       {
         "type": "select_one",
@@ -178,12 +180,16 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Certainty",
-              "portuguese": "Certo"
+              "english": "Certainty",
+              "default": "Certo"
             }
           }
         },
-        "_row_num": 14
+        "_row_num": 15
+      },
+      {
+        "clause": "end if",
+        "_row_num": 16
       },
       {
         "type": "integer",
@@ -191,32 +197,32 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Number of scar",
-              "portuguese": "Numero de sicatriz"
+              "english": "Number of scar",
+              "default": "Numero de sicatriz"
             }
           }
         },
-        "_row_num": 15
+        "_row_num": 17
       },
       {
         "clause": "end screen",
-        "_row_num": 16
+        "_row_num": 18
       },
       {
         "clause": "begin screen",
-        "_row_num": 17
+        "_row_num": 19
       },
       {
         "type": "note",
         "display": {
           "prompt": {
             "text": {
-              "default": "Scar 1",
-              "portuguese": "Cicatriz 1"
+              "english": "Scar 1",
+              "default": "Cicatriz 1"
             }
           }
         },
-        "_row_num": 18
+        "_row_num": 20
       },
       {
         "type": "decimal",
@@ -224,12 +230,12 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Vertical measurement",
-              "portuguese": "Medição vertical"
+              "english": "Vertical measurement",
+              "default": "Medição vertical"
             }
           }
         },
-        "_row_num": 19
+        "_row_num": 21
       },
       {
         "type": "decimal",
@@ -237,12 +243,12 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Horizontal measurement",
-              "portuguese": "Medição horizontal"
+              "english": "Horizontal measurement",
+              "default": "Medição horizontal"
             }
           }
         },
-        "_row_num": 20
+        "_row_num": 22
       },
       {
         "type": "text",
@@ -250,41 +256,41 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Observation",
-              "portuguese": "Observação"
+              "english": "Observation",
+              "default": "Observação"
             }
           }
         },
-        "_row_num": 21
+        "_row_num": 23
       },
       {
         "clause": "end screen",
-        "_row_num": 22
+        "_row_num": 24
       },
       {
         "clause": "end if",
-        "_row_num": 23
+        "_row_num": 25
       },
       {
         "clause": "if",
         "condition": "data('NCICA') > 1",
-        "_row_num": 24
+        "_row_num": 26
       },
       {
         "clause": "begin screen",
-        "_row_num": 25
+        "_row_num": 27
       },
       {
         "type": "note",
         "display": {
           "prompt": {
             "text": {
-              "default": "Scar 2",
-              "portuguese": "Cicatriz 2"
+              "english": "Scar 2",
+              "default": "Cicatriz 2"
             }
           }
         },
-        "_row_num": 26
+        "_row_num": 28
       },
       {
         "type": "select_one",
@@ -293,12 +299,17 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Type of scar",
-              "portuguese": "Typo de cicatriz"
+              "english": "Type of scar",
+              "default": "Typo de cicatriz"
             }
           }
         },
-        "_row_num": 27
+        "_row_num": 29
+      },
+      {
+        "clause": "if",
+        "condition": "data('CICA2') != '3'",
+        "_row_num": 30
       },
       {
         "type": "select_one",
@@ -307,12 +318,16 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Certainty",
-              "portuguese": "Certo"
+              "english": "Certainty",
+              "default": "Certo"
             }
           }
         },
-        "_row_num": 28
+        "_row_num": 31
+      },
+      {
+        "clause": "end if",
+        "_row_num": 32
       },
       {
         "type": "integer",
@@ -320,32 +335,32 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Number of scar",
-              "portuguese": "Numero de sicatriz"
+              "english": "Number of scar",
+              "default": "Numero de sicatriz"
             }
           }
         },
-        "_row_num": 29
+        "_row_num": 33
       },
       {
         "clause": "end screen",
-        "_row_num": 30
+        "_row_num": 34
       },
       {
         "clause": "begin screen",
-        "_row_num": 31
+        "_row_num": 35
       },
       {
         "type": "note",
         "display": {
           "prompt": {
             "text": {
-              "default": "Scar 2",
-              "portuguese": "Cicatriz 2"
+              "english": "Scar 2",
+              "default": "Cicatriz 2"
             }
           }
         },
-        "_row_num": 32
+        "_row_num": 36
       },
       {
         "type": "decimal",
@@ -353,12 +368,12 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Vertical measurement",
-              "portuguese": "Medição vertical"
+              "english": "Vertical measurement",
+              "default": "Medição vertical"
             }
           }
         },
-        "_row_num": 33
+        "_row_num": 37
       },
       {
         "type": "decimal",
@@ -366,12 +381,12 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Horizontal measurement",
-              "portuguese": "Medição horizontal"
+              "english": "Horizontal measurement",
+              "default": "Medição horizontal"
             }
           }
         },
-        "_row_num": 34
+        "_row_num": 38
       },
       {
         "type": "text",
@@ -379,41 +394,41 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Observation",
-              "portuguese": "Observação"
+              "english": "Observation",
+              "default": "Observação"
             }
           }
         },
-        "_row_num": 35
+        "_row_num": 39
       },
       {
         "clause": "end screen",
-        "_row_num": 36
+        "_row_num": 40
       },
       {
         "clause": "end if",
-        "_row_num": 37
+        "_row_num": 41
       },
       {
         "clause": "if",
         "condition": "data('NCICA') > 2",
-        "_row_num": 38
+        "_row_num": 42
       },
       {
         "clause": "begin screen",
-        "_row_num": 39
+        "_row_num": 43
       },
       {
         "type": "note",
         "display": {
           "prompt": {
             "text": {
-              "default": "Scar 3",
-              "portuguese": "Cicatriz 3"
+              "english": "Scar 3",
+              "default": "Cicatriz 3"
             }
           }
         },
-        "_row_num": 40
+        "_row_num": 44
       },
       {
         "type": "select_one",
@@ -422,12 +437,17 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Type of scar",
-              "portuguese": "Typo de cicatriz"
+              "english": "Type of scar",
+              "default": "Typo de cicatriz"
             }
           }
         },
-        "_row_num": 41
+        "_row_num": 45
+      },
+      {
+        "clause": "if",
+        "condition": "data('CICA3') != '3'",
+        "_row_num": 46
       },
       {
         "type": "select_one",
@@ -436,12 +456,16 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Certainty",
-              "portuguese": "Certo"
+              "english": "Certainty",
+              "default": "Certo"
             }
           }
         },
-        "_row_num": 42
+        "_row_num": 47
+      },
+      {
+        "clause": "end if",
+        "_row_num": 48
       },
       {
         "type": "integer",
@@ -449,67 +473,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Number of scar",
-              "portuguese": "Numero de sicatriz"
-            }
-          }
-        },
-        "_row_num": 43
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 44
-      },
-      {
-        "clause": "begin screen",
-        "_row_num": 45
-      },
-      {
-        "type": "note",
-        "display": {
-          "prompt": {
-            "text": {
-              "default": "Scar 3",
-              "portuguese": "Cicatriz 3"
-            }
-          }
-        },
-        "_row_num": 46
-      },
-      {
-        "type": "decimal",
-        "name": "CALT3",
-        "display": {
-          "prompt": {
-            "text": {
-              "default": "Vertical measurement",
-              "portuguese": "Medição vertical"
-            }
-          }
-        },
-        "_row_num": 47
-      },
-      {
-        "type": "decimal",
-        "name": "CLAR3",
-        "display": {
-          "prompt": {
-            "text": {
-              "default": "Horizontal measurement",
-              "portuguese": "Medição horizontal"
-            }
-          }
-        },
-        "_row_num": 48
-      },
-      {
-        "type": "text",
-        "name": "CICA3OBS",
-        "display": {
-          "prompt": {
-            "text": {
-              "default": "Observation",
-              "portuguese": "Observação"
+              "english": "Number of scar",
+              "default": "Numero de sicatriz"
             }
           }
         },
@@ -520,17 +485,76 @@
         "_row_num": 50
       },
       {
-        "clause": "end if",
+        "clause": "begin screen",
         "_row_num": 51
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Scar 3",
+              "default": "Cicatriz 3"
+            }
+          }
+        },
+        "_row_num": 52
+      },
+      {
+        "type": "decimal",
+        "name": "CALT3",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Vertical measurement",
+              "default": "Medição vertical"
+            }
+          }
+        },
+        "_row_num": 53
+      },
+      {
+        "type": "decimal",
+        "name": "CLAR3",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Horizontal measurement",
+              "default": "Medição horizontal"
+            }
+          }
+        },
+        "_row_num": 54
+      },
+      {
+        "type": "text",
+        "name": "CICA3OBS",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Observation",
+              "default": "Observação"
+            }
+          }
+        },
+        "_row_num": 55
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 56
+      },
+      {
+        "clause": "end if",
+        "_row_num": 57
       },
       {
         "clause": "if",
         "condition": "data('NCICA') > 3",
-        "_row_num": 52
+        "_row_num": 58
       },
       {
         "clause": "begin screen",
-        "_row_num": 53
+        "_row_num": 59
       },
       {
         "type": "select_one",
@@ -539,12 +563,17 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Type of scar",
-              "portuguese": "Typo de cicatriz"
+              "english": "Type of scar",
+              "default": "Typo de cicatriz"
             }
           }
         },
-        "_row_num": 54
+        "_row_num": 60
+      },
+      {
+        "clause": "if",
+        "condition": "data('CICA4') != '3'",
+        "_row_num": 61
       },
       {
         "type": "select_one",
@@ -553,12 +582,16 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Certainty",
-              "portuguese": "Certo"
+              "english": "Certainty",
+              "default": "Certo"
             }
           }
         },
-        "_row_num": 55
+        "_row_num": 62
+      },
+      {
+        "clause": "end if",
+        "_row_num": 63
       },
       {
         "type": "integer",
@@ -566,32 +599,32 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Number of scar",
-              "portuguese": "Numero de sicatriz"
+              "english": "Number of scar",
+              "default": "Numero de sicatriz"
             }
           }
         },
-        "_row_num": 56
+        "_row_num": 64
       },
       {
         "clause": "end screen",
-        "_row_num": 57
+        "_row_num": 65
       },
       {
         "clause": "begin screen",
-        "_row_num": 58
+        "_row_num": 66
       },
       {
         "type": "note",
         "display": {
           "prompt": {
             "text": {
-              "default": "Scar 4",
-              "portuguese": "Cicatriz 4"
+              "english": "Scar 4",
+              "default": "Cicatriz 4"
             }
           }
         },
-        "_row_num": 59
+        "_row_num": 67
       },
       {
         "type": "decimal",
@@ -599,12 +632,12 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Vertical measurement",
-              "portuguese": "Medição vertical"
+              "english": "Vertical measurement",
+              "default": "Medição vertical"
             }
           }
         },
-        "_row_num": 60
+        "_row_num": 68
       },
       {
         "type": "decimal",
@@ -612,12 +645,12 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Horizontal measurement",
-              "portuguese": "Medição horizontal"
+              "english": "Horizontal measurement",
+              "default": "Medição horizontal"
             }
           }
         },
-        "_row_num": 61
+        "_row_num": 69
       },
       {
         "type": "text",
@@ -625,20 +658,20 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Observation",
-              "portuguese": "Observação"
+              "english": "Observation",
+              "default": "Observação"
             }
           }
         },
-        "_row_num": 62
+        "_row_num": 70
       },
       {
         "clause": "end screen",
-        "_row_num": 63
+        "_row_num": 71
       },
       {
         "clause": "end if",
-        "_row_num": 64
+        "_row_num": 72
       }
     ],
     "prompt_types": [
@@ -657,8 +690,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Yes",
-              "portuguese": "Sim"
+              "english": "Yes",
+              "default": "Sim"
             }
           }
         },
@@ -670,8 +703,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "No",
-              "portuguese": "Não"
+              "english": "No",
+              "default": "Não"
             }
           }
         },
@@ -683,8 +716,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Don't know",
-              "portuguese": "Não sabe"
+              "english": "Don't know",
+              "default": "Não sabe"
             }
           }
         },
@@ -696,8 +729,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "BCG",
-              "portuguese": "BCG"
+              "english": "BCG",
+              "default": "BCG"
             }
           }
         },
@@ -709,8 +742,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Variola",
-              "portuguese": "Variola"
+              "english": "Variola",
+              "default": "Variola"
             }
           }
         },
@@ -722,8 +755,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Unknown",
-              "portuguese": "Não sabe"
+              "english": "Unknown",
+              "default": "Não sabe"
             }
           }
         },
@@ -731,12 +764,12 @@
       },
       {
         "choice_list_name": "ncica",
-        "data_value": "0",
+        "data_value": "1",
         "display": {
           "title": {
             "text": {
-              "default": "0",
-              "portuguese": "0"
+              "english": "1",
+              "default": "1"
             }
           }
         },
@@ -744,12 +777,12 @@
       },
       {
         "choice_list_name": "ncica",
-        "data_value": "1",
+        "data_value": "2",
         "display": {
           "title": {
             "text": {
-              "default": "1",
-              "portuguese": "1"
+              "english": "2",
+              "default": "2"
             }
           }
         },
@@ -757,12 +790,12 @@
       },
       {
         "choice_list_name": "ncica",
-        "data_value": "2",
+        "data_value": "3",
         "display": {
           "title": {
             "text": {
-              "default": "2",
-              "portuguese": "2"
+              "english": "3",
+              "default": "3"
             }
           }
         },
@@ -770,29 +803,16 @@
       },
       {
         "choice_list_name": "ncica",
-        "data_value": "3",
-        "display": {
-          "title": {
-            "text": {
-              "default": "3",
-              "portuguese": "3"
-            }
-          }
-        },
-        "_row_num": 11
-      },
-      {
-        "choice_list_name": "ncica",
         "data_value": "4",
         "display": {
           "title": {
             "text": {
-              "default": "4",
-              "portuguese": "4"
+              "english": "4",
+              "default": "4"
             }
           }
         },
-        "_row_num": 12
+        "_row_num": 11
       }
     ],
     "model": [
@@ -1001,12 +1021,9 @@
       "survey": {
         "setting_name": "survey",
         "display": {
-          "tittle": {
-            "text": "Woman in the fertile age - scars"
-          },
           "title": {
             "text": {
-              "portuguese": "Mulher na idade fertil - cicatrizes",
+              "english": "Woman in the fertile age - scars",
               "default": "Mulher na idade fertil - cicatrizes"
             }
           }
@@ -1018,20 +1035,20 @@
         "display": {
           "locale": {
             "text": {
-              "default": "English",
-              "portuguese": "Inglês"
+              "english": "Portuguese",
+              "default": "Portugues"
             }
           }
         },
         "_row_num": 6
       },
-      "portuguese": {
-        "setting_name": "portuguese",
+      "english": {
+        "setting_name": "english",
         "display": {
           "locale": {
             "text": {
-              "default": "Portuguese",
-              "portuguese": "Portugues"
+              "english": "English",
+              "default": "Inglês"
             }
           }
         },
@@ -1055,30 +1072,39 @@
             "display": {
               "locale": {
                 "text": {
-                  "default": "Portuguese",
-                  "portuguese": "Portugues"
+                  "english": "Portuguese",
+                  "default": "Portugues"
+                }
+              }
+            },
+            "_row_num": 6,
+            "name": "default"
+          },
+          {
+            "display": {
+              "locale": {
+                "text": {
+                  "english": "English",
+                  "default": "Inglês"
                 }
               }
             },
             "_row_num": 7,
-            "name": "portuguese"
+            "name": "english"
           }
         ]
       },
       "_default_locale": {
         "setting_name": "_default_locale",
         "_row_num": 5,
-        "value": "portuguese"
+        "value": "default"
       },
       "initial": {
         "setting_name": "survey",
         "display": {
-          "tittle": {
-            "text": "Woman in the fertile age - scars"
-          },
           "title": {
             "text": {
-              "portuguese": "Mulher na idade fertil - cicatrizes",
+              "english": "Woman in the fertile age - scars",
               "default": "Mulher na idade fertil - cicatrizes"
             }
           }
@@ -1094,8 +1120,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Yes",
-                "portuguese": "Sim"
+                "english": "Yes",
+                "default": "Sim"
               }
             }
           },
@@ -1107,8 +1133,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "No",
-                "portuguese": "Não"
+                "english": "No",
+                "default": "Não"
               }
             }
           },
@@ -1120,8 +1146,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Don't know",
-                "portuguese": "Não sabe"
+                "english": "Don't know",
+                "default": "Não sabe"
               }
             }
           },
@@ -1135,8 +1161,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "BCG",
-                "portuguese": "BCG"
+                "english": "BCG",
+                "default": "BCG"
               }
             }
           },
@@ -1148,8 +1174,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Variola",
-                "portuguese": "Variola"
+                "english": "Variola",
+                "default": "Variola"
               }
             }
           },
@@ -1161,8 +1187,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Unknown",
-                "portuguese": "Não sabe"
+                "english": "Unknown",
+                "default": "Não sabe"
               }
             }
           },
@@ -1172,12 +1198,12 @@
       "ncica": [
         {
           "choice_list_name": "ncica",
-          "data_value": "0",
+          "data_value": "1",
           "display": {
             "title": {
               "text": {
-                "default": "0",
-                "portuguese": "0"
+                "english": "1",
+                "default": "1"
               }
             }
           },
@@ -1185,12 +1211,12 @@
         },
         {
           "choice_list_name": "ncica",
-          "data_value": "1",
+          "data_value": "2",
           "display": {
             "title": {
               "text": {
-                "default": "1",
-                "portuguese": "1"
+                "english": "2",
+                "default": "2"
               }
             }
           },
@@ -1198,12 +1224,12 @@
         },
         {
           "choice_list_name": "ncica",
-          "data_value": "2",
+          "data_value": "3",
           "display": {
             "title": {
               "text": {
-                "default": "2",
-                "portuguese": "2"
+                "english": "3",
+                "default": "3"
               }
             }
           },
@@ -1211,29 +1237,16 @@
         },
         {
           "choice_list_name": "ncica",
-          "data_value": "3",
-          "display": {
-            "title": {
-              "text": {
-                "default": "3",
-                "portuguese": "3"
-              }
-            }
-          },
-          "_row_num": 11
-        },
-        {
-          "choice_list_name": "ncica",
           "data_value": "4",
           "display": {
             "title": {
               "text": {
-                "default": "4",
-                "portuguese": "4"
+                "english": "4",
+                "default": "4"
               }
             }
           },
-          "_row_num": 12
+          "_row_num": 11
         }
       ]
     },
@@ -1267,7 +1280,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 21,
             "section_name": "survey"
           },
           {
@@ -1282,7 +1295,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 37,
             "section_name": "survey"
           },
           {
@@ -1297,7 +1310,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 47,
+            "_row_num": 53,
             "section_name": "survey"
           },
           {
@@ -1312,7 +1325,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 60,
+            "_row_num": 68,
             "section_name": "survey"
           },
           {
@@ -1360,7 +1373,7 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 15,
             "section_name": "survey"
           },
           {
@@ -1375,7 +1388,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 23,
             "section_name": "survey"
           },
           {
@@ -1391,7 +1404,7 @@
         "valuesList": "vacscar",
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 29,
             "section_name": "survey"
           },
           {
@@ -1407,7 +1420,7 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 28,
+            "_row_num": 31,
             "section_name": "survey"
           },
           {
@@ -1422,7 +1435,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 35,
+            "_row_num": 39,
             "section_name": "survey"
           },
           {
@@ -1438,7 +1451,7 @@
         "valuesList": "vacscar",
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 45,
             "section_name": "survey"
           },
           {
@@ -1454,7 +1467,7 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 42,
+            "_row_num": 47,
             "section_name": "survey"
           },
           {
@@ -1469,7 +1482,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 49,
+            "_row_num": 55,
             "section_name": "survey"
           },
           {
@@ -1485,7 +1498,7 @@
         "valuesList": "vacscar",
         "_defn": [
           {
-            "_row_num": 54,
+            "_row_num": 60,
             "section_name": "survey"
           },
           {
@@ -1501,7 +1514,7 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 55,
+            "_row_num": 62,
             "section_name": "survey"
           },
           {
@@ -1516,7 +1529,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 62,
+            "_row_num": 70,
             "section_name": "survey"
           },
           {
@@ -1531,7 +1544,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 20,
+            "_row_num": 22,
             "section_name": "survey"
           },
           {
@@ -1546,7 +1559,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 38,
             "section_name": "survey"
           },
           {
@@ -1561,7 +1574,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 48,
+            "_row_num": 54,
             "section_name": "survey"
           },
           {
@@ -1576,7 +1589,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 61,
+            "_row_num": 69,
             "section_name": "survey"
           },
           {
@@ -1591,7 +1604,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 17,
             "section_name": "survey"
           },
           {
@@ -1606,7 +1619,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 29,
+            "_row_num": 33,
             "section_name": "survey"
           },
           {
@@ -1621,7 +1634,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 43,
+            "_row_num": 49,
             "section_name": "survey"
           },
           {
@@ -1636,7 +1649,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 56,
+            "_row_num": 64,
             "section_name": "survey"
           },
           {
@@ -1691,8 +1704,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Date of examination",
-                  "portuguese": "Data de leitura"
+                  "english": "Date of examination",
+                  "default": "Data de leitura"
                 }
               }
             },
@@ -1710,8 +1723,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Scars?",
-                  "portuguese": "Cicatriz?"
+                  "english": "Scars?",
+                  "default": "Cicatriz?"
                 }
               }
             },
@@ -1729,8 +1742,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Number of scars?",
-                  "portuguese": "Numero de cicatriz?"
+                  "english": "How many scars?",
+                  "default": "Quantos cicatrizes?"
                 }
               }
             },
@@ -1746,8 +1759,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Scar 1",
-                  "portuguese": "Cicatriz 1"
+                  "english": "Scar 1",
+                  "default": "Cicatriz 1"
                 }
               }
             },
@@ -1765,8 +1778,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Type of scar",
-                  "portuguese": "Typo de cicatriz"
+                  "english": "Type of scar",
+                  "default": "Typo de cicatriz"
                 }
               }
             },
@@ -1784,13 +1797,13 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Certainty",
-                  "portuguese": "Certo"
+                  "english": "Certainty",
+                  "default": "Certo"
                 }
               }
             },
-            "_row_num": 14,
-            "__rowNum__": 13,
+            "_row_num": 15,
+            "__rowNum__": 14,
             "_token_type": "prompt",
             "_type": "select_one",
             "_branch_label_enclosing_screen": "survey/_screen11",
@@ -1802,13 +1815,13 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Number of scar",
-                  "portuguese": "Numero de sicatriz"
+                  "english": "Number of scar",
+                  "default": "Numero de sicatriz"
                 }
               }
             },
-            "_row_num": 15,
-            "__rowNum__": 14,
+            "_row_num": 17,
+            "__rowNum__": 16,
             "_token_type": "prompt",
             "_type": "integer",
             "_branch_label_enclosing_screen": "survey/_screen11",
@@ -1819,16 +1832,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Scar 1",
-                  "portuguese": "Cicatriz 1"
+                  "english": "Scar 1",
+                  "default": "Cicatriz 1"
                 }
               }
             },
-            "_row_num": 18,
-            "__rowNum__": 17,
+            "_row_num": 20,
+            "__rowNum__": 19,
             "_token_type": "prompt",
             "_type": "note",
-            "_branch_label_enclosing_screen": "survey/_screen17",
+            "_branch_label_enclosing_screen": "survey/_screen19",
             "promptIdx": 7
           },
           {
@@ -1837,16 +1850,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Vertical measurement",
-                  "portuguese": "Medição vertical"
+                  "english": "Vertical measurement",
+                  "default": "Medição vertical"
                 }
               }
             },
-            "_row_num": 19,
-            "__rowNum__": 18,
+            "_row_num": 21,
+            "__rowNum__": 20,
             "_token_type": "prompt",
             "_type": "decimal",
-            "_branch_label_enclosing_screen": "survey/_screen17",
+            "_branch_label_enclosing_screen": "survey/_screen19",
             "promptIdx": 8
           },
           {
@@ -1855,16 +1868,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Horizontal measurement",
-                  "portuguese": "Medição horizontal"
+                  "english": "Horizontal measurement",
+                  "default": "Medição horizontal"
                 }
               }
             },
-            "_row_num": 20,
-            "__rowNum__": 19,
+            "_row_num": 22,
+            "__rowNum__": 21,
             "_token_type": "prompt",
             "_type": "decimal",
-            "_branch_label_enclosing_screen": "survey/_screen17",
+            "_branch_label_enclosing_screen": "survey/_screen19",
             "promptIdx": 9
           },
           {
@@ -1873,16 +1886,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Observation",
-                  "portuguese": "Observação"
+                  "english": "Observation",
+                  "default": "Observação"
                 }
               }
             },
-            "_row_num": 21,
-            "__rowNum__": 20,
+            "_row_num": 23,
+            "__rowNum__": 22,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen17",
+            "_branch_label_enclosing_screen": "survey/_screen19",
             "promptIdx": 10
           },
           {
@@ -1890,16 +1903,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Scar 2",
-                  "portuguese": "Cicatriz 2"
+                  "english": "Scar 2",
+                  "default": "Cicatriz 2"
                 }
               }
             },
-            "_row_num": 26,
-            "__rowNum__": 25,
+            "_row_num": 28,
+            "__rowNum__": 27,
             "_token_type": "prompt",
             "_type": "note",
-            "_branch_label_enclosing_screen": "survey/_screen25",
+            "_branch_label_enclosing_screen": "survey/_screen27",
             "promptIdx": 11
           },
           {
@@ -1909,16 +1922,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Type of scar",
-                  "portuguese": "Typo de cicatriz"
+                  "english": "Type of scar",
+                  "default": "Typo de cicatriz"
                 }
               }
             },
-            "_row_num": 27,
-            "__rowNum__": 26,
+            "_row_num": 29,
+            "__rowNum__": 28,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen25",
+            "_branch_label_enclosing_screen": "survey/_screen27",
             "promptIdx": 12
           },
           {
@@ -1928,16 +1941,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Certainty",
-                  "portuguese": "Certo"
+                  "english": "Certainty",
+                  "default": "Certo"
                 }
               }
             },
-            "_row_num": 28,
-            "__rowNum__": 27,
+            "_row_num": 31,
+            "__rowNum__": 30,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen25",
+            "_branch_label_enclosing_screen": "survey/_screen27",
             "promptIdx": 13
           },
           {
@@ -1946,16 +1959,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Number of scar",
-                  "portuguese": "Numero de sicatriz"
+                  "english": "Number of scar",
+                  "default": "Numero de sicatriz"
                 }
               }
             },
-            "_row_num": 29,
-            "__rowNum__": 28,
+            "_row_num": 33,
+            "__rowNum__": 32,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen25",
+            "_branch_label_enclosing_screen": "survey/_screen27",
             "promptIdx": 14
           },
           {
@@ -1963,16 +1976,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Scar 2",
-                  "portuguese": "Cicatriz 2"
+                  "english": "Scar 2",
+                  "default": "Cicatriz 2"
                 }
               }
             },
-            "_row_num": 32,
-            "__rowNum__": 31,
+            "_row_num": 36,
+            "__rowNum__": 35,
             "_token_type": "prompt",
             "_type": "note",
-            "_branch_label_enclosing_screen": "survey/_screen31",
+            "_branch_label_enclosing_screen": "survey/_screen35",
             "promptIdx": 15
           },
           {
@@ -1981,16 +1994,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Vertical measurement",
-                  "portuguese": "Medição vertical"
+                  "english": "Vertical measurement",
+                  "default": "Medição vertical"
                 }
               }
             },
-            "_row_num": 33,
-            "__rowNum__": 32,
+            "_row_num": 37,
+            "__rowNum__": 36,
             "_token_type": "prompt",
             "_type": "decimal",
-            "_branch_label_enclosing_screen": "survey/_screen31",
+            "_branch_label_enclosing_screen": "survey/_screen35",
             "promptIdx": 16
           },
           {
@@ -1999,16 +2012,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Horizontal measurement",
-                  "portuguese": "Medição horizontal"
+                  "english": "Horizontal measurement",
+                  "default": "Medição horizontal"
                 }
               }
             },
-            "_row_num": 34,
-            "__rowNum__": 33,
+            "_row_num": 38,
+            "__rowNum__": 37,
             "_token_type": "prompt",
             "_type": "decimal",
-            "_branch_label_enclosing_screen": "survey/_screen31",
+            "_branch_label_enclosing_screen": "survey/_screen35",
             "promptIdx": 17
           },
           {
@@ -2017,16 +2030,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Observation",
-                  "portuguese": "Observação"
+                  "english": "Observation",
+                  "default": "Observação"
                 }
               }
             },
-            "_row_num": 35,
-            "__rowNum__": 34,
+            "_row_num": 39,
+            "__rowNum__": 38,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen31",
+            "_branch_label_enclosing_screen": "survey/_screen35",
             "promptIdx": 18
           },
           {
@@ -2034,16 +2047,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Scar 3",
-                  "portuguese": "Cicatriz 3"
+                  "english": "Scar 3",
+                  "default": "Cicatriz 3"
                 }
               }
             },
-            "_row_num": 40,
-            "__rowNum__": 39,
+            "_row_num": 44,
+            "__rowNum__": 43,
             "_token_type": "prompt",
             "_type": "note",
-            "_branch_label_enclosing_screen": "survey/_screen39",
+            "_branch_label_enclosing_screen": "survey/_screen43",
             "promptIdx": 19
           },
           {
@@ -2053,16 +2066,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Type of scar",
-                  "portuguese": "Typo de cicatriz"
+                  "english": "Type of scar",
+                  "default": "Typo de cicatriz"
                 }
               }
             },
-            "_row_num": 41,
-            "__rowNum__": 40,
+            "_row_num": 45,
+            "__rowNum__": 44,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen39",
+            "_branch_label_enclosing_screen": "survey/_screen43",
             "promptIdx": 20
           },
           {
@@ -2072,16 +2085,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Certainty",
-                  "portuguese": "Certo"
+                  "english": "Certainty",
+                  "default": "Certo"
                 }
               }
             },
-            "_row_num": 42,
-            "__rowNum__": 41,
+            "_row_num": 47,
+            "__rowNum__": 46,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen39",
+            "_branch_label_enclosing_screen": "survey/_screen43",
             "promptIdx": 21
           },
           {
@@ -2090,16 +2103,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Number of scar",
-                  "portuguese": "Numero de sicatriz"
+                  "english": "Number of scar",
+                  "default": "Numero de sicatriz"
                 }
               }
             },
-            "_row_num": 43,
-            "__rowNum__": 42,
+            "_row_num": 49,
+            "__rowNum__": 48,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen39",
+            "_branch_label_enclosing_screen": "survey/_screen43",
             "promptIdx": 22
           },
           {
@@ -2107,16 +2120,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Scar 3",
-                  "portuguese": "Cicatriz 3"
+                  "english": "Scar 3",
+                  "default": "Cicatriz 3"
                 }
               }
             },
-            "_row_num": 46,
-            "__rowNum__": 45,
+            "_row_num": 52,
+            "__rowNum__": 51,
             "_token_type": "prompt",
             "_type": "note",
-            "_branch_label_enclosing_screen": "survey/_screen45",
+            "_branch_label_enclosing_screen": "survey/_screen51",
             "promptIdx": 23
           },
           {
@@ -2125,16 +2138,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Vertical measurement",
-                  "portuguese": "Medição vertical"
+                  "english": "Vertical measurement",
+                  "default": "Medição vertical"
                 }
               }
             },
-            "_row_num": 47,
-            "__rowNum__": 46,
+            "_row_num": 53,
+            "__rowNum__": 52,
             "_token_type": "prompt",
             "_type": "decimal",
-            "_branch_label_enclosing_screen": "survey/_screen45",
+            "_branch_label_enclosing_screen": "survey/_screen51",
             "promptIdx": 24
           },
           {
@@ -2143,16 +2156,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Horizontal measurement",
-                  "portuguese": "Medição horizontal"
+                  "english": "Horizontal measurement",
+                  "default": "Medição horizontal"
                 }
               }
             },
-            "_row_num": 48,
-            "__rowNum__": 47,
+            "_row_num": 54,
+            "__rowNum__": 53,
             "_token_type": "prompt",
             "_type": "decimal",
-            "_branch_label_enclosing_screen": "survey/_screen45",
+            "_branch_label_enclosing_screen": "survey/_screen51",
             "promptIdx": 25
           },
           {
@@ -2161,16 +2174,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Observation",
-                  "portuguese": "Observação"
+                  "english": "Observation",
+                  "default": "Observação"
                 }
               }
             },
-            "_row_num": 49,
-            "__rowNum__": 48,
+            "_row_num": 55,
+            "__rowNum__": 54,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen45",
+            "_branch_label_enclosing_screen": "survey/_screen51",
             "promptIdx": 26
           },
           {
@@ -2180,16 +2193,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Type of scar",
-                  "portuguese": "Typo de cicatriz"
+                  "english": "Type of scar",
+                  "default": "Typo de cicatriz"
                 }
               }
             },
-            "_row_num": 54,
-            "__rowNum__": 53,
+            "_row_num": 60,
+            "__rowNum__": 59,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen53",
+            "_branch_label_enclosing_screen": "survey/_screen59",
             "promptIdx": 27
           },
           {
@@ -2199,16 +2212,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Certainty",
-                  "portuguese": "Certo"
+                  "english": "Certainty",
+                  "default": "Certo"
                 }
               }
             },
-            "_row_num": 55,
-            "__rowNum__": 54,
+            "_row_num": 62,
+            "__rowNum__": 61,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen53",
+            "_branch_label_enclosing_screen": "survey/_screen59",
             "promptIdx": 28
           },
           {
@@ -2217,16 +2230,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Number of scar",
-                  "portuguese": "Numero de sicatriz"
+                  "english": "Number of scar",
+                  "default": "Numero de sicatriz"
                 }
               }
             },
-            "_row_num": 56,
-            "__rowNum__": 55,
+            "_row_num": 64,
+            "__rowNum__": 63,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen53",
+            "_branch_label_enclosing_screen": "survey/_screen59",
             "promptIdx": 29
           },
           {
@@ -2234,16 +2247,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Scar 4",
-                  "portuguese": "Cicatriz 4"
+                  "english": "Scar 4",
+                  "default": "Cicatriz 4"
                 }
               }
             },
-            "_row_num": 59,
-            "__rowNum__": 58,
+            "_row_num": 67,
+            "__rowNum__": 66,
             "_token_type": "prompt",
             "_type": "note",
-            "_branch_label_enclosing_screen": "survey/_screen58",
+            "_branch_label_enclosing_screen": "survey/_screen66",
             "promptIdx": 30
           },
           {
@@ -2252,16 +2265,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Vertical measurement",
-                  "portuguese": "Medição vertical"
+                  "english": "Vertical measurement",
+                  "default": "Medição vertical"
                 }
               }
             },
-            "_row_num": 60,
-            "__rowNum__": 59,
+            "_row_num": 68,
+            "__rowNum__": 67,
             "_token_type": "prompt",
             "_type": "decimal",
-            "_branch_label_enclosing_screen": "survey/_screen58",
+            "_branch_label_enclosing_screen": "survey/_screen66",
             "promptIdx": 31
           },
           {
@@ -2270,16 +2283,16 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Horizontal measurement",
-                  "portuguese": "Medição horizontal"
+                  "english": "Horizontal measurement",
+                  "default": "Medição horizontal"
                 }
               }
             },
-            "_row_num": 61,
-            "__rowNum__": 60,
+            "_row_num": 69,
+            "__rowNum__": 68,
             "_token_type": "prompt",
             "_type": "decimal",
-            "_branch_label_enclosing_screen": "survey/_screen58",
+            "_branch_label_enclosing_screen": "survey/_screen66",
             "promptIdx": 32
           },
           {
@@ -2288,24 +2301,24 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Observation",
-                  "portuguese": "Observação"
+                  "english": "Observation",
+                  "default": "Observação"
                 }
               }
             },
-            "_row_num": 62,
-            "__rowNum__": 61,
+            "_row_num": 70,
+            "__rowNum__": 69,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen58",
+            "_branch_label_enclosing_screen": "survey/_screen66",
             "promptIdx": 33
           },
           {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 65,
-            "_branch_label_enclosing_screen": "survey/_screen65",
+            "_row_num": 73,
+            "_branch_label_enclosing_screen": "survey/_screen73",
             "promptIdx": 34
           }
         ],
@@ -2339,8 +2352,8 @@
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else23",
-            "_row_num": 23,
+            "_branch_label": "_else25",
+            "_row_num": 25,
             "operationIdx": 2
           },
           {
@@ -2350,22 +2363,22 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 16,
-              "__rowNum__": 15,
+              "_row_num": 18,
+              "__rowNum__": 17,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(3);\nactivePromptIndicies.push(4);\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(3);\nactivePromptIndicies.push(4);\nif (data('CICA1') != '3') {\nactivePromptIndicies.push(5);\n}\nactivePromptIndicies.push(6);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 3
           },
           {
             "clause": "begin screen",
-            "_row_num": 17,
-            "__rowNum__": 16,
+            "_row_num": 19,
+            "__rowNum__": 18,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 22,
-              "__rowNum__": 21,
+              "_row_num": 24,
+              "__rowNum__": 23,
               "_token_type": "end_screen"
             },
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(7);\nactivePromptIndicies.push(8);\nactivePromptIndicies.push(9);\nactivePromptIndicies.push(10);\n\nreturn activePromptIndicies;\n}\n",
@@ -2374,49 +2387,49 @@
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif23",
-            "_row_num": 23,
+            "_branch_label": "_endif25",
+            "_row_num": 25,
             "operationIdx": 5
           },
           {
             "clause": "if",
             "condition": "data('NCICA') > 1",
-            "_row_num": 24,
-            "__rowNum__": 23,
+            "_row_num": 26,
+            "__rowNum__": 25,
             "_token_type": "goto_label",
-            "_branch_label": "_then24",
+            "_branch_label": "_then26",
             "operationIdx": 6
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else37",
-            "_row_num": 37,
+            "_branch_label": "_else41",
+            "_row_num": 41,
             "operationIdx": 7
           },
           {
             "clause": "begin screen",
-            "_row_num": 25,
-            "__rowNum__": 24,
+            "_row_num": 27,
+            "__rowNum__": 26,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 30,
-              "__rowNum__": 29,
+              "_row_num": 34,
+              "__rowNum__": 33,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(11);\nactivePromptIndicies.push(12);\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(11);\nactivePromptIndicies.push(12);\nif (data('CICA2') != '3') {\nactivePromptIndicies.push(13);\n}\nactivePromptIndicies.push(14);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 8
           },
           {
             "clause": "begin screen",
-            "_row_num": 31,
-            "__rowNum__": 30,
+            "_row_num": 35,
+            "__rowNum__": 34,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 36,
-              "__rowNum__": 35,
+              "_row_num": 40,
+              "__rowNum__": 39,
               "_token_type": "end_screen"
             },
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(15);\nactivePromptIndicies.push(16);\nactivePromptIndicies.push(17);\nactivePromptIndicies.push(18);\n\nreturn activePromptIndicies;\n}\n",
@@ -2425,49 +2438,49 @@
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif37",
-            "_row_num": 37,
+            "_branch_label": "_endif41",
+            "_row_num": 41,
             "operationIdx": 10
           },
           {
             "clause": "if",
             "condition": "data('NCICA') > 2",
-            "_row_num": 38,
-            "__rowNum__": 37,
+            "_row_num": 42,
+            "__rowNum__": 41,
             "_token_type": "goto_label",
-            "_branch_label": "_then38",
+            "_branch_label": "_then42",
             "operationIdx": 11
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else51",
-            "_row_num": 51,
+            "_branch_label": "_else57",
+            "_row_num": 57,
             "operationIdx": 12
           },
           {
             "clause": "begin screen",
-            "_row_num": 39,
-            "__rowNum__": 38,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 44,
-              "__rowNum__": 43,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(19);\nactivePromptIndicies.push(20);\nactivePromptIndicies.push(21);\nactivePromptIndicies.push(22);\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 13
-          },
-          {
-            "clause": "begin screen",
-            "_row_num": 45,
-            "__rowNum__": 44,
+            "_row_num": 43,
+            "__rowNum__": 42,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
               "_row_num": 50,
               "__rowNum__": 49,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(19);\nactivePromptIndicies.push(20);\nif (data('CICA3') != '3') {\nactivePromptIndicies.push(21);\n}\nactivePromptIndicies.push(22);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 13
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 51,
+            "__rowNum__": 50,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 56,
+              "__rowNum__": 55,
               "_token_type": "end_screen"
             },
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(23);\nactivePromptIndicies.push(24);\nactivePromptIndicies.push(25);\nactivePromptIndicies.push(26);\n\nreturn activePromptIndicies;\n}\n",
@@ -2476,49 +2489,49 @@
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif51",
-            "_row_num": 51,
+            "_branch_label": "_endif57",
+            "_row_num": 57,
             "operationIdx": 15
           },
           {
             "clause": "if",
             "condition": "data('NCICA') > 3",
-            "_row_num": 52,
-            "__rowNum__": 51,
+            "_row_num": 58,
+            "__rowNum__": 57,
             "_token_type": "goto_label",
-            "_branch_label": "_then52",
+            "_branch_label": "_then58",
             "operationIdx": 16
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else64",
-            "_row_num": 64,
+            "_branch_label": "_else72",
+            "_row_num": 72,
             "operationIdx": 17
           },
           {
             "clause": "begin screen",
-            "_row_num": 53,
-            "__rowNum__": 52,
+            "_row_num": 59,
+            "__rowNum__": 58,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 57,
-              "__rowNum__": 56,
+              "_row_num": 65,
+              "__rowNum__": 64,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(27);\nactivePromptIndicies.push(28);\nactivePromptIndicies.push(29);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(27);\nif (data('CICA4') != '3') {\nactivePromptIndicies.push(28);\n}\nactivePromptIndicies.push(29);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 18
           },
           {
             "clause": "begin screen",
-            "_row_num": 58,
-            "__rowNum__": 57,
+            "_row_num": 66,
+            "__rowNum__": 65,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 63,
-              "__rowNum__": 62,
+              "_row_num": 71,
+              "__rowNum__": 70,
               "_token_type": "end_screen"
             },
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(30);\nactivePromptIndicies.push(31);\nactivePromptIndicies.push(32);\nactivePromptIndicies.push(33);\n\nreturn activePromptIndicies;\n}\n",
@@ -2527,18 +2540,18 @@
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif64",
-            "_row_num": 64,
+            "_branch_label": "_endif72",
+            "_row_num": 72,
             "operationIdx": 20
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 65,
+            "_row_num": 73,
             "operationIdx": 21
           },
           {
-            "_row_num": 65,
+            "_row_num": 73,
             "_token_type": "begin_screen",
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(34);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
@@ -2549,7 +2562,7 @@
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 65,
+            "_row_num": 73,
             "operationIdx": 23
           }
         ],
@@ -2557,26 +2570,26 @@
           "_screen2": 0,
           "_then10": 3,
           "_screen11": 3,
-          "_screen17": 4,
-          "_else23": 6,
-          "_endif23": 6,
-          "_then24": 8,
-          "_screen25": 8,
-          "_screen31": 9,
-          "_else37": 11,
-          "_endif37": 11,
-          "_then38": 13,
-          "_screen39": 13,
-          "_screen45": 14,
-          "_else51": 16,
-          "_endif51": 16,
-          "_then52": 18,
-          "_screen53": 18,
-          "_screen58": 19,
-          "_else64": 21,
-          "_endif64": 21,
+          "_screen19": 4,
+          "_else25": 6,
+          "_endif25": 6,
+          "_then26": 8,
+          "_screen27": 8,
+          "_screen35": 9,
+          "_else41": 11,
+          "_endif41": 11,
+          "_then42": 13,
+          "_screen43": 13,
+          "_screen51": 14,
+          "_else57": 16,
+          "_endif57": 16,
+          "_then58": 18,
+          "_screen59": 18,
+          "_screen66": 19,
+          "_else72": 21,
+          "_endif72": 21,
           "_contents": 22,
-          "_screen65": 22
+          "_screen73": 22
         }
       },
       "initial": {
@@ -2607,12 +2620,9 @@
             "_type": "_section",
             "promptIdx": 1,
             "display": {
-              "tittle": {
-                "text": "Woman in the fertile age - scars"
-              },
               "title": {
                 "text": {
-                  "portuguese": "Mulher na idade fertil - cicatrizes",
+                  "english": "Woman in the fertile age - scars",
                   "default": "Mulher na idade fertil - cicatrizes"
                 }
               }
@@ -2791,7 +2801,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 21,
             "section_name": "survey"
           },
           {
@@ -2809,7 +2819,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 37,
             "section_name": "survey"
           },
           {
@@ -2827,7 +2837,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 47,
+            "_row_num": 53,
             "section_name": "survey"
           },
           {
@@ -2845,7 +2855,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 60,
+            "_row_num": 68,
             "section_name": "survey"
           },
           {
@@ -2902,7 +2912,7 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 15,
             "section_name": "survey"
           },
           {
@@ -2920,7 +2930,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 23,
             "section_name": "survey"
           },
           {
@@ -2939,7 +2949,7 @@
         "valuesList": "vacscar",
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 29,
             "section_name": "survey"
           },
           {
@@ -2958,7 +2968,7 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 28,
+            "_row_num": 31,
             "section_name": "survey"
           },
           {
@@ -2976,7 +2986,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 35,
+            "_row_num": 39,
             "section_name": "survey"
           },
           {
@@ -2995,7 +3005,7 @@
         "valuesList": "vacscar",
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 45,
             "section_name": "survey"
           },
           {
@@ -3014,7 +3024,7 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 42,
+            "_row_num": 47,
             "section_name": "survey"
           },
           {
@@ -3032,7 +3042,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 49,
+            "_row_num": 55,
             "section_name": "survey"
           },
           {
@@ -3051,7 +3061,7 @@
         "valuesList": "vacscar",
         "_defn": [
           {
-            "_row_num": 54,
+            "_row_num": 60,
             "section_name": "survey"
           },
           {
@@ -3070,7 +3080,7 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 55,
+            "_row_num": 62,
             "section_name": "survey"
           },
           {
@@ -3088,7 +3098,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 62,
+            "_row_num": 70,
             "section_name": "survey"
           },
           {
@@ -3106,7 +3116,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 20,
+            "_row_num": 22,
             "section_name": "survey"
           },
           {
@@ -3124,7 +3134,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 38,
             "section_name": "survey"
           },
           {
@@ -3142,7 +3152,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 48,
+            "_row_num": 54,
             "section_name": "survey"
           },
           {
@@ -3160,7 +3170,7 @@
         "type": "number",
         "_defn": [
           {
-            "_row_num": 61,
+            "_row_num": 69,
             "section_name": "survey"
           },
           {
@@ -3178,7 +3188,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 17,
             "section_name": "survey"
           },
           {
@@ -3196,7 +3206,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 29,
+            "_row_num": 33,
             "section_name": "survey"
           },
           {
@@ -3214,7 +3224,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 43,
+            "_row_num": 49,
             "section_name": "survey"
           },
           {
@@ -3232,7 +3242,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 56,
+            "_row_num": 64,
             "section_name": "survey"
           },
           {
@@ -3398,70 +3408,70 @@
         "_aspect": "CICA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":4}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":4}]"
       },
       {
         "_partition": "Column",
         "_aspect": "CICA1",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"vacscar\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"BCG\",\"portuguese\":\"BCG\"}}},\"_row_num\":5},{\"choice_list_name\":\"vacscar\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Variola\",\"portuguese\":\"Variola\"}}},\"_row_num\":6},{\"choice_list_name\":\"vacscar\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Unknown\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":7}]"
+        "_value": "[{\"choice_list_name\":\"vacscar\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"BCG\",\"default\":\"BCG\"}}},\"_row_num\":5},{\"choice_list_name\":\"vacscar\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Variola\",\"default\":\"Variola\"}}},\"_row_num\":6},{\"choice_list_name\":\"vacscar\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Unknown\",\"default\":\"Não sabe\"}}},\"_row_num\":7}]"
       },
       {
         "_partition": "Column",
         "_aspect": "CICA1CERT",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":4}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":4}]"
       },
       {
         "_partition": "Column",
         "_aspect": "CICA2",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"vacscar\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"BCG\",\"portuguese\":\"BCG\"}}},\"_row_num\":5},{\"choice_list_name\":\"vacscar\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Variola\",\"portuguese\":\"Variola\"}}},\"_row_num\":6},{\"choice_list_name\":\"vacscar\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Unknown\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":7}]"
+        "_value": "[{\"choice_list_name\":\"vacscar\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"BCG\",\"default\":\"BCG\"}}},\"_row_num\":5},{\"choice_list_name\":\"vacscar\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Variola\",\"default\":\"Variola\"}}},\"_row_num\":6},{\"choice_list_name\":\"vacscar\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Unknown\",\"default\":\"Não sabe\"}}},\"_row_num\":7}]"
       },
       {
         "_partition": "Column",
         "_aspect": "CICA2CERT",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":4}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":4}]"
       },
       {
         "_partition": "Column",
         "_aspect": "CICA3",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"vacscar\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"BCG\",\"portuguese\":\"BCG\"}}},\"_row_num\":5},{\"choice_list_name\":\"vacscar\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Variola\",\"portuguese\":\"Variola\"}}},\"_row_num\":6},{\"choice_list_name\":\"vacscar\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Unknown\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":7}]"
+        "_value": "[{\"choice_list_name\":\"vacscar\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"BCG\",\"default\":\"BCG\"}}},\"_row_num\":5},{\"choice_list_name\":\"vacscar\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Variola\",\"default\":\"Variola\"}}},\"_row_num\":6},{\"choice_list_name\":\"vacscar\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Unknown\",\"default\":\"Não sabe\"}}},\"_row_num\":7}]"
       },
       {
         "_partition": "Column",
         "_aspect": "CICA3CERT",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":4}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":4}]"
       },
       {
         "_partition": "Column",
         "_aspect": "CICA4",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"vacscar\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"BCG\",\"portuguese\":\"BCG\"}}},\"_row_num\":5},{\"choice_list_name\":\"vacscar\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Variola\",\"portuguese\":\"Variola\"}}},\"_row_num\":6},{\"choice_list_name\":\"vacscar\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Unknown\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":7}]"
+        "_value": "[{\"choice_list_name\":\"vacscar\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"BCG\",\"default\":\"BCG\"}}},\"_row_num\":5},{\"choice_list_name\":\"vacscar\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Variola\",\"default\":\"Variola\"}}},\"_row_num\":6},{\"choice_list_name\":\"vacscar\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Unknown\",\"default\":\"Não sabe\"}}},\"_row_num\":7}]"
       },
       {
         "_partition": "Column",
         "_aspect": "CICA4CERT",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":4}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":4}]"
       },
       {
         "_partition": "Column",
         "_aspect": "NCICA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"ncica\",\"data_value\":\"0\",\"display\":{\"title\":{\"text\":{\"default\":\"0\",\"portuguese\":\"0\"}}},\"_row_num\":8},{\"choice_list_name\":\"ncica\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"1\",\"portuguese\":\"1\"}}},\"_row_num\":9},{\"choice_list_name\":\"ncica\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"2\",\"portuguese\":\"2\"}}},\"_row_num\":10},{\"choice_list_name\":\"ncica\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"3\",\"portuguese\":\"3\"}}},\"_row_num\":11},{\"choice_list_name\":\"ncica\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"default\":\"4\",\"portuguese\":\"4\"}}},\"_row_num\":12}]"
+        "_value": "[{\"choice_list_name\":\"ncica\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"1\",\"default\":\"1\"}}},\"_row_num\":8},{\"choice_list_name\":\"ncica\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"2\",\"default\":\"2\"}}},\"_row_num\":9},{\"choice_list_name\":\"ncica\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"3\",\"default\":\"3\"}}},\"_row_num\":10},{\"choice_list_name\":\"ncica\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"4\",\"default\":\"4\"}}},\"_row_num\":11}]"
       },
       {
         "_partition": "FormType",
@@ -3489,7 +3499,7 @@
         "_aspect": "default",
         "_key": "displayName",
         "_type": "object",
-        "_value": "{\"text\":{\"portuguese\":\"Mulher na idade fertil - cicatrizes\",\"default\":\"Mulher na idade fertil - cicatrizes\"}}"
+        "_value": "{\"text\":{\"english\":\"Woman in the fertile age - scars\",\"default\":\"Mulher na idade fertil - cicatrizes\"}}"
       }
     ]
   }

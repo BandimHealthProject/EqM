@@ -19,12 +19,9 @@
       {
         "setting_name": "survey",
         "display": {
-          "tittle": {
-            "text": "Woman in the fertile age - SES"
-          },
           "title": {
             "text": {
-              "portuguese": "Mulher na idade fertil - SES",
+              "english": "Woman in the fertile age - SES",
               "default": "Mulher na idade fertil - SES"
             }
           }
@@ -36,20 +33,20 @@
         "display": {
           "locale": {
             "text": {
-              "default": "English",
-              "portuguese": "Inglês"
+              "english": "Portuguese",
+              "default": "Portugues"
             }
           }
         },
         "_row_num": 6
       },
       {
-        "setting_name": "portuguese",
+        "setting_name": "english",
         "display": {
           "locale": {
             "text": {
-              "default": "Portuguese",
-              "portuguese": "Portugues"
+              "english": "English",
+              "default": "Inglês"
             }
           }
         },
@@ -78,8 +75,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Type of roof",
-              "portuguese": "Tipo de tecto"
+              "english": "Type of roof",
+              "default": "Tipo de tecto"
             }
           }
         },
@@ -92,8 +89,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Type of bathroom",
-              "portuguese": "Tipo de casa de banho"
+              "english": "Type of bathroom",
+              "default": "Tipo de casa de banho"
             }
           }
         },
@@ -114,8 +111,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Do they have a electricity in the compound",
-              "portuguese": "Eles têm eletricidade no moranca?"
+              "english": "Do they have a electricity in the compound",
+              "default": "Eles têm eletricidade no moranca?"
             }
           }
         },
@@ -128,8 +125,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Do they have a radio in the compound",
-              "portuguese": "Eles têm um rádio no moranca?"
+              "english": "Do they have a radio in the compound",
+              "default": "Eles têm um rádio no moranca?"
             }
           }
         },
@@ -150,8 +147,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Does the mother or father own a telephone",
-              "portuguese": "A mãe ou o pai têm telemovel?"
+              "english": "Does the mother or father own a telephone",
+              "default": "A mãe ou o pai têm telemovel?"
             }
           }
         },
@@ -163,8 +160,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Phone number of mother or other",
-              "portuguese": "Número de telemovel da mãe ou outro"
+              "english": "Phone number of mother or other",
+              "default": "Número de telemovel da mãe ou outro"
             }
           }
         },
@@ -191,8 +188,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Yes",
-              "portuguese": "Sim"
+              "english": "Yes",
+              "default": "Sim"
             }
           }
         },
@@ -204,8 +201,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "No",
-              "portuguese": "Não"
+              "english": "No",
+              "default": "Não"
             }
           }
         },
@@ -217,8 +214,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Don't know",
-              "portuguese": "Não sabe"
+              "english": "Don't know",
+              "default": "Não sabe"
             }
           }
         },
@@ -230,8 +227,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Straw",
-              "portuguese": "Palha"
+              "english": "Straw",
+              "default": "Palha"
             }
           }
         },
@@ -243,8 +240,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Zinc",
-              "portuguese": "Zinco"
+              "english": "Zinc",
+              "default": "Zinco"
             }
           }
         },
@@ -256,8 +253,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Tiles",
-              "portuguese": "Telha"
+              "english": "Tiles",
+              "default": "Telha"
             }
           }
         },
@@ -269,8 +266,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Concrete",
-              "portuguese": "Fibra cimento"
+              "english": "Concrete",
+              "default": "Fibra cimento"
             }
           }
         },
@@ -282,8 +279,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Don't know",
-              "portuguese": "Não sabe"
+              "english": "Don't know",
+              "default": "Não sabe"
             }
           }
         },
@@ -295,8 +292,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "None",
-              "portuguese": "Nada"
+              "english": "None",
+              "default": "Nada"
             }
           }
         },
@@ -308,8 +305,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Latrina",
-              "portuguese": "Latrina"
+              "english": "Latrina",
+              "default": "Latrina"
             }
           }
         },
@@ -321,8 +318,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Inside",
-              "portuguese": "Dentro"
+              "english": "Inside",
+              "default": "Dentro"
             }
           }
         },
@@ -334,8 +331,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Don't know",
-              "portuguese": "Não sabe"
+              "english": "Don't know",
+              "default": "Não sabe"
             }
           }
         },
@@ -378,12 +375,9 @@
       "survey": {
         "setting_name": "survey",
         "display": {
-          "tittle": {
-            "text": "Woman in the fertile age - SES"
-          },
           "title": {
             "text": {
-              "portuguese": "Mulher na idade fertil - SES",
+              "english": "Woman in the fertile age - SES",
               "default": "Mulher na idade fertil - SES"
             }
           }
@@ -395,20 +389,20 @@
         "display": {
           "locale": {
             "text": {
-              "default": "English",
-              "portuguese": "Inglês"
+              "english": "Portuguese",
+              "default": "Portugues"
             }
           }
         },
         "_row_num": 6
       },
-      "portuguese": {
-        "setting_name": "portuguese",
+      "english": {
+        "setting_name": "english",
         "display": {
           "locale": {
             "text": {
-              "default": "Portuguese",
-              "portuguese": "Portugues"
+              "english": "English",
+              "default": "Inglês"
             }
           }
         },
@@ -432,30 +426,39 @@
             "display": {
               "locale": {
                 "text": {
-                  "default": "Portuguese",
-                  "portuguese": "Portugues"
+                  "english": "Portuguese",
+                  "default": "Portugues"
+                }
+              }
+            },
+            "_row_num": 6,
+            "name": "default"
+          },
+          {
+            "display": {
+              "locale": {
+                "text": {
+                  "english": "English",
+                  "default": "Inglês"
                 }
               }
             },
             "_row_num": 7,
-            "name": "portuguese"
+            "name": "english"
           }
         ]
       },
       "_default_locale": {
         "setting_name": "_default_locale",
         "_row_num": 5,
-        "value": "portuguese"
+        "value": "default"
       },
       "initial": {
         "setting_name": "survey",
         "display": {
-          "tittle": {
-            "text": "Woman in the fertile age - SES"
-          },
           "title": {
             "text": {
-              "portuguese": "Mulher na idade fertil - SES",
+              "english": "Woman in the fertile age - SES",
               "default": "Mulher na idade fertil - SES"
             }
           }
@@ -471,8 +474,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Yes",
-                "portuguese": "Sim"
+                "english": "Yes",
+                "default": "Sim"
               }
             }
           },
@@ -484,8 +487,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "No",
-                "portuguese": "Não"
+                "english": "No",
+                "default": "Não"
               }
             }
           },
@@ -497,8 +500,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Don't know",
-                "portuguese": "Não sabe"
+                "english": "Don't know",
+                "default": "Não sabe"
               }
             }
           },
@@ -512,8 +515,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Straw",
-                "portuguese": "Palha"
+                "english": "Straw",
+                "default": "Palha"
               }
             }
           },
@@ -525,8 +528,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Zinc",
-                "portuguese": "Zinco"
+                "english": "Zinc",
+                "default": "Zinco"
               }
             }
           },
@@ -538,8 +541,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Tiles",
-                "portuguese": "Telha"
+                "english": "Tiles",
+                "default": "Telha"
               }
             }
           },
@@ -551,8 +554,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Concrete",
-                "portuguese": "Fibra cimento"
+                "english": "Concrete",
+                "default": "Fibra cimento"
               }
             }
           },
@@ -564,8 +567,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Don't know",
-                "portuguese": "Não sabe"
+                "english": "Don't know",
+                "default": "Não sabe"
               }
             }
           },
@@ -579,8 +582,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "None",
-                "portuguese": "Nada"
+                "english": "None",
+                "default": "Nada"
               }
             }
           },
@@ -592,8 +595,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Latrina",
-                "portuguese": "Latrina"
+                "english": "Latrina",
+                "default": "Latrina"
               }
             }
           },
@@ -605,8 +608,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Inside",
-                "portuguese": "Dentro"
+                "english": "Inside",
+                "default": "Dentro"
               }
             }
           },
@@ -618,8 +621,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Don't know",
-                "portuguese": "Não sabe"
+                "english": "Don't know",
+                "default": "Não sabe"
               }
             }
           },
@@ -716,8 +719,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Type of roof",
-                  "portuguese": "Tipo de tecto"
+                  "english": "Type of roof",
+                  "default": "Tipo de tecto"
                 }
               }
             },
@@ -735,8 +738,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Type of bathroom",
-                  "portuguese": "Tipo de casa de banho"
+                  "english": "Type of bathroom",
+                  "default": "Tipo de casa de banho"
                 }
               }
             },
@@ -754,8 +757,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Do they have a electricity in the compound",
-                  "portuguese": "Eles têm eletricidade no moranca?"
+                  "english": "Do they have a electricity in the compound",
+                  "default": "Eles têm eletricidade no moranca?"
                 }
               }
             },
@@ -773,8 +776,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Do they have a radio in the compound",
-                  "portuguese": "Eles têm um rádio no moranca?"
+                  "english": "Do they have a radio in the compound",
+                  "default": "Eles têm um rádio no moranca?"
                 }
               }
             },
@@ -792,8 +795,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Does the mother or father own a telephone",
-                  "portuguese": "A mãe ou o pai têm telemovel?"
+                  "english": "Does the mother or father own a telephone",
+                  "default": "A mãe ou o pai têm telemovel?"
                 }
               }
             },
@@ -810,8 +813,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Phone number of mother or other",
-                  "portuguese": "Número de telemovel da mãe ou outro"
+                  "english": "Phone number of mother or other",
+                  "default": "Número de telemovel da mãe ou outro"
                 }
               }
             },
@@ -935,12 +938,9 @@
             "_type": "_section",
             "promptIdx": 1,
             "display": {
-              "tittle": {
-                "text": "Woman in the fertile age - SES"
-              },
               "title": {
                 "text": {
-                  "portuguese": "Mulher na idade fertil - SES",
+                  "english": "Woman in the fertile age - SES",
                   "default": "Mulher na idade fertil - SES"
                 }
               }
@@ -1294,35 +1294,35 @@
         "_aspect": "CABA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"toilet\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"None\",\"portuguese\":\"Nada\"}}},\"_row_num\":10},{\"choice_list_name\":\"toilet\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Latrina\",\"portuguese\":\"Latrina\"}}},\"_row_num\":11},{\"choice_list_name\":\"toilet\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Inside\",\"portuguese\":\"Dentro\"}}},\"_row_num\":12},{\"choice_list_name\":\"toilet\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":13}]"
+        "_value": "[{\"choice_list_name\":\"toilet\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"None\",\"default\":\"Nada\"}}},\"_row_num\":10},{\"choice_list_name\":\"toilet\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Latrina\",\"default\":\"Latrina\"}}},\"_row_num\":11},{\"choice_list_name\":\"toilet\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Inside\",\"default\":\"Dentro\"}}},\"_row_num\":12},{\"choice_list_name\":\"toilet\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":13}]"
       },
       {
         "_partition": "Column",
         "_aspect": "GERADOR",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":4}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":4}]"
       },
       {
         "_partition": "Column",
         "_aspect": "RADIO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":4}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":4}]"
       },
       {
         "_partition": "Column",
         "_aspect": "TECTO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"tecto\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Straw\",\"portuguese\":\"Palha\"}}},\"_row_num\":5},{\"choice_list_name\":\"tecto\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Zinc\",\"portuguese\":\"Zinco\"}}},\"_row_num\":6},{\"choice_list_name\":\"tecto\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Tiles\",\"portuguese\":\"Telha\"}}},\"_row_num\":7},{\"choice_list_name\":\"tecto\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"default\":\"Concrete\",\"portuguese\":\"Fibra cimento\"}}},\"_row_num\":8},{\"choice_list_name\":\"tecto\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":9}]"
+        "_value": "[{\"choice_list_name\":\"tecto\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Straw\",\"default\":\"Palha\"}}},\"_row_num\":5},{\"choice_list_name\":\"tecto\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Zinc\",\"default\":\"Zinco\"}}},\"_row_num\":6},{\"choice_list_name\":\"tecto\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Tiles\",\"default\":\"Telha\"}}},\"_row_num\":7},{\"choice_list_name\":\"tecto\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Concrete\",\"default\":\"Fibra cimento\"}}},\"_row_num\":8},{\"choice_list_name\":\"tecto\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":9}]"
       },
       {
         "_partition": "Column",
         "_aspect": "TELEMOVEL",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":4}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":4}]"
       },
       {
         "_partition": "FormType",
@@ -1350,7 +1350,7 @@
         "_aspect": "default",
         "_key": "displayName",
         "_type": "object",
-        "_value": "{\"text\":{\"portuguese\":\"Mulher na idade fertil - SES\",\"default\":\"Mulher na idade fertil - SES\"}}"
+        "_value": "{\"text\":{\"english\":\"Woman in the fertile age - SES\",\"default\":\"Mulher na idade fertil - SES\"}}"
       }
     ]
   }

@@ -19,12 +19,9 @@
       {
         "setting_name": "survey",
         "display": {
-          "tittle": {
-            "text": "Woman in the fertile age - pregnants_visits"
-          },
           "title": {
             "text": {
-              "portuguese": "Mulher na idade fertil - grávidas_visitas",
+              "english": "Woman in the fertile age - pregnants_visits",
               "default": "Mulher na idade fertil - grávidas_visitas"
             }
           }
@@ -36,20 +33,20 @@
         "display": {
           "locale": {
             "text": {
-              "default": "English",
-              "portuguese": "Inglês"
+              "english": "Portuguese",
+              "default": "Portugues"
             }
           }
         },
         "_row_num": 6
       },
       {
-        "setting_name": "portuguese",
+        "setting_name": "english",
         "display": {
           "locale": {
             "text": {
-              "default": "Portuguese",
-              "portuguese": "Portugues"
+              "english": "English",
+              "default": "Inglês"
             }
           }
         },
@@ -77,9 +74,7 @@
         "name": "MULPRESA",
         "display": {
           "prompt": {
-            "text": {
-              "portuguese": "Grávida presente"
-            }
+            "text": "Grávida presente"
           }
         },
         "_row_num": 3
@@ -103,8 +98,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Maternal MUAC",
-              "portuguese": "Perimento do braco esquardo"
+              "english": "Maternal MUAC",
+              "default": "Perimento do braco esquardo"
             }
           }
         },
@@ -128,9 +123,7 @@
         "name": "CARTONA",
         "display": {
           "prompt": {
-            "text": {
-              "portuguese": "Tem cartão de CPN"
-            }
+            "text": "Tem cartão de CPN"
           }
         },
         "_row_num": 11
@@ -148,9 +141,7 @@
         "name": "GEST",
         "display": {
           "prompt": {
-            "text": {
-              "portuguese": "Mes de gestação"
-            }
+            "text": "Mes de gestação"
           }
         },
         "_row_num": 14
@@ -167,9 +158,7 @@
         "type": "note",
         "display": {
           "prompt": {
-            "text": {
-              "portuguese": "Data de ultimo período"
-            }
+            "text": "Data de ultimo período"
           }
         },
         "_row_num": 17
@@ -180,8 +169,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Woman",
-              "portuguese": "Mulher"
+              "english": "Woman",
+              "default": "Mulher"
             }
           }
         },
@@ -198,8 +187,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Card",
-              "portuguese": "Cartão"
+              "english": "Card",
+              "default": "Cartão"
             }
           }
         },
@@ -222,7 +211,8 @@
         "display": {
           "prompt": {
             "text": {
-              "portuguese": "Quantas consultas pré-natais durante esta gravidez?"
+              "english": "How many prenatal consultations?",
+              "default": "Quantas consultas pré-natais durante esta gravidez?"
             }
           }
         },
@@ -234,8 +224,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Woman",
-              "portuguese": "Mulher"
+              "english": "Woman",
+              "default": "Mulher"
             }
           }
         },
@@ -252,8 +242,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Card",
-              "portuguese": "Cartão"
+              "english": "Card",
+              "default": "Cartão"
             }
           }
         },
@@ -276,7 +266,8 @@
         "display": {
           "prompt": {
             "text": {
-              "portuguese": "A grávida recebeu comprimidos com ferro quantas vezes?"
+              "english": "Number of times received iron/FA",
+              "default": "A grávida recebeu comprimidos com ferro quantas vezes?"
             }
           }
         },
@@ -288,8 +279,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Woman",
-              "portuguese": "Mulher"
+              "english": "Woman",
+              "default": "Mulher"
             }
           }
         },
@@ -306,8 +297,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Card",
-              "portuguese": "Cartão"
+              "english": "Card",
+              "default": "Cartão"
             }
           }
         },
@@ -329,9 +320,7 @@
         "type": "note",
         "display": {
           "prompt": {
-            "text": {
-              "portuguese": "A grávida recebeu fansidar (TPI, SP) quantas vezes?"
-            }
+            "text": "A grávida recebeu fansidar (TPI, SP) quantas vezes?"
           }
         },
         "_row_num": 38
@@ -342,8 +331,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Woman",
-              "portuguese": "Mulher"
+              "english": "Woman",
+              "default": "Mulher"
             }
           }
         },
@@ -360,8 +349,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Card",
-              "portuguese": "Cartão"
+              "english": "Card",
+              "default": "Cartão"
             }
           }
         },
@@ -389,9 +378,7 @@
         "name": "DATAEST",
         "display": {
           "prompt": {
-            "text": {
-              "portuguese": "Data provavel do parto indicado no cartão?"
-            }
+            "text": "Data provavel do parto indicado no cartão?"
           }
         },
         "_row_num": 46
@@ -421,8 +408,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Present",
-              "portuguese": "Presente"
+              "english": "Present",
+              "default": "Presente"
             }
           }
         },
@@ -434,8 +421,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Moved out",
-              "portuguese": "Mudou"
+              "english": "Moved out",
+              "default": "Mudou"
             }
           }
         },
@@ -447,8 +434,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Dead",
-              "portuguese": "Faleceu"
+              "english": "Dead",
+              "default": "Faleceu"
             }
           }
         },
@@ -460,8 +447,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Absent",
-              "portuguese": "Ausente"
+              "english": "Absent",
+              "default": "Ausente"
             }
           }
         },
@@ -473,8 +460,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Travelling",
-              "portuguese": "Viagem"
+              "english": "Travelling",
+              "default": "Viagem"
             }
           }
         },
@@ -486,8 +473,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Not visited",
-              "portuguese": "Não visitada"
+              "english": "Not visited",
+              "default": "Não visitada"
             }
           }
         },
@@ -499,8 +486,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Unborn",
-              "portuguese": "Não padido"
+              "english": "Unborn",
+              "default": "Não padido"
             }
           }
         },
@@ -512,8 +499,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Card seen",
-              "portuguese": "Cartão visto"
+              "english": "Card seen",
+              "default": "Cartão visto"
             }
           }
         },
@@ -525,8 +512,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Has no card and no ANC",
-              "portuguese": "Não tem cartão e não tem consultas"
+              "english": "Has no card and no ANC",
+              "default": "Não tem cartão e não tem consultas"
             }
           }
         },
@@ -538,8 +525,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Has no card, some ANC",
-              "portuguese": "Não tem cartão, mas tem consultas"
+              "english": "Has no card, some ANC",
+              "default": "Não tem cartão, mas tem consultas"
             }
           }
         },
@@ -551,8 +538,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Not brought card",
-              "portuguese": "Não trouxe o cartão"
+              "english": "Not brought card",
+              "default": "Não trouxe o cartão"
             }
           }
         },
@@ -564,8 +551,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Lost card",
-              "portuguese": "Perdeu o cartão"
+              "english": "Lost card",
+              "default": "Perdeu o cartão"
             }
           }
         },
@@ -577,8 +564,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Card seen and ANCs",
-              "portuguese": "Cartão visto, mas sem consultas registadas"
+              "english": "Card seen and ANCs",
+              "default": "Cartão visto, mas sem consultas registadas"
             }
           }
         },
@@ -590,8 +577,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Don't know",
-              "portuguese": "Não sabe"
+              "english": "Don't know",
+              "default": "Não sabe"
             }
           }
         },
@@ -634,12 +621,9 @@
       "survey": {
         "setting_name": "survey",
         "display": {
-          "tittle": {
-            "text": "Woman in the fertile age - pregnants_visits"
-          },
           "title": {
             "text": {
-              "portuguese": "Mulher na idade fertil - grávidas_visitas",
+              "english": "Woman in the fertile age - pregnants_visits",
               "default": "Mulher na idade fertil - grávidas_visitas"
             }
           }
@@ -651,20 +635,20 @@
         "display": {
           "locale": {
             "text": {
-              "default": "English",
-              "portuguese": "Inglês"
+              "english": "Portuguese",
+              "default": "Portugues"
             }
           }
         },
         "_row_num": 6
       },
-      "portuguese": {
-        "setting_name": "portuguese",
+      "english": {
+        "setting_name": "english",
         "display": {
           "locale": {
             "text": {
-              "default": "Portuguese",
-              "portuguese": "Portugues"
+              "english": "English",
+              "default": "Inglês"
             }
           }
         },
@@ -688,30 +672,39 @@
             "display": {
               "locale": {
                 "text": {
-                  "default": "Portuguese",
-                  "portuguese": "Portugues"
+                  "english": "Portuguese",
+                  "default": "Portugues"
+                }
+              }
+            },
+            "_row_num": 6,
+            "name": "default"
+          },
+          {
+            "display": {
+              "locale": {
+                "text": {
+                  "english": "English",
+                  "default": "Inglês"
                 }
               }
             },
             "_row_num": 7,
-            "name": "portuguese"
+            "name": "english"
           }
         ]
       },
       "_default_locale": {
         "setting_name": "_default_locale",
         "_row_num": 5,
-        "value": "portuguese"
+        "value": "default"
       },
       "initial": {
         "setting_name": "survey",
         "display": {
-          "tittle": {
-            "text": "Woman in the fertile age - pregnants_visits"
-          },
           "title": {
             "text": {
-              "portuguese": "Mulher na idade fertil - grávidas_visitas",
+              "english": "Woman in the fertile age - pregnants_visits",
               "default": "Mulher na idade fertil - grávidas_visitas"
             }
           }
@@ -727,8 +720,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Present",
-                "portuguese": "Presente"
+                "english": "Present",
+                "default": "Presente"
               }
             }
           },
@@ -740,8 +733,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Moved out",
-                "portuguese": "Mudou"
+                "english": "Moved out",
+                "default": "Mudou"
               }
             }
           },
@@ -753,8 +746,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Dead",
-                "portuguese": "Faleceu"
+                "english": "Dead",
+                "default": "Faleceu"
               }
             }
           },
@@ -766,8 +759,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Absent",
-                "portuguese": "Ausente"
+                "english": "Absent",
+                "default": "Ausente"
               }
             }
           },
@@ -779,8 +772,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Travelling",
-                "portuguese": "Viagem"
+                "english": "Travelling",
+                "default": "Viagem"
               }
             }
           },
@@ -792,8 +785,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Not visited",
-                "portuguese": "Não visitada"
+                "english": "Not visited",
+                "default": "Não visitada"
               }
             }
           },
@@ -805,8 +798,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Unborn",
-                "portuguese": "Não padido"
+                "english": "Unborn",
+                "default": "Não padido"
               }
             }
           },
@@ -820,8 +813,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Card seen",
-                "portuguese": "Cartão visto"
+                "english": "Card seen",
+                "default": "Cartão visto"
               }
             }
           },
@@ -833,8 +826,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Has no card and no ANC",
-                "portuguese": "Não tem cartão e não tem consultas"
+                "english": "Has no card and no ANC",
+                "default": "Não tem cartão e não tem consultas"
               }
             }
           },
@@ -846,8 +839,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Has no card, some ANC",
-                "portuguese": "Não tem cartão, mas tem consultas"
+                "english": "Has no card, some ANC",
+                "default": "Não tem cartão, mas tem consultas"
               }
             }
           },
@@ -859,8 +852,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Not brought card",
-                "portuguese": "Não trouxe o cartão"
+                "english": "Not brought card",
+                "default": "Não trouxe o cartão"
               }
             }
           },
@@ -872,8 +865,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Lost card",
-                "portuguese": "Perdeu o cartão"
+                "english": "Lost card",
+                "default": "Perdeu o cartão"
               }
             }
           },
@@ -885,8 +878,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Card seen and ANCs",
-                "portuguese": "Cartão visto, mas sem consultas registadas"
+                "english": "Card seen and ANCs",
+                "default": "Cartão visto, mas sem consultas registadas"
               }
             }
           },
@@ -898,8 +891,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Don't know",
-                "portuguese": "Não sabe"
+                "english": "Don't know",
+                "default": "Não sabe"
               }
             }
           },
@@ -1071,9 +1064,7 @@
             "name": "MULPRESA",
             "display": {
               "prompt": {
-                "text": {
-                  "portuguese": "Grávida presente"
-                }
+                "text": "Grávida presente"
               }
             },
             "_row_num": 3,
@@ -1089,8 +1080,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Maternal MUAC",
-                  "portuguese": "Perimento do braco esquardo"
+                  "english": "Maternal MUAC",
+                  "default": "Perimento do braco esquardo"
                 }
               }
             },
@@ -1107,9 +1098,7 @@
             "name": "CARTONA",
             "display": {
               "prompt": {
-                "text": {
-                  "portuguese": "Tem cartão de CPN"
-                }
+                "text": "Tem cartão de CPN"
               }
             },
             "_row_num": 11,
@@ -1124,9 +1113,7 @@
             "name": "GEST",
             "display": {
               "prompt": {
-                "text": {
-                  "portuguese": "Mes de gestação"
-                }
+                "text": "Mes de gestação"
               }
             },
             "_row_num": 14,
@@ -1140,9 +1127,7 @@
             "type": "note",
             "display": {
               "prompt": {
-                "text": {
-                  "portuguese": "Data de ultimo período"
-                }
+                "text": "Data de ultimo período"
               }
             },
             "_row_num": 17,
@@ -1158,8 +1143,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Woman",
-                  "portuguese": "Mulher"
+                  "english": "Woman",
+                  "default": "Mulher"
                 }
               }
             },
@@ -1176,8 +1161,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Card",
-                  "portuguese": "Cartão"
+                  "english": "Card",
+                  "default": "Cartão"
                 }
               }
             },
@@ -1193,7 +1178,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "portuguese": "Quantas consultas pré-natais durante esta gravidez?"
+                  "english": "How many prenatal consultations?",
+                  "default": "Quantas consultas pré-natais durante esta gravidez?"
                 }
               }
             },
@@ -1210,8 +1196,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Woman",
-                  "portuguese": "Mulher"
+                  "english": "Woman",
+                  "default": "Mulher"
                 }
               }
             },
@@ -1228,8 +1214,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Card",
-                  "portuguese": "Cartão"
+                  "english": "Card",
+                  "default": "Cartão"
                 }
               }
             },
@@ -1245,7 +1231,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "portuguese": "A grávida recebeu comprimidos com ferro quantas vezes?"
+                  "english": "Number of times received iron/FA",
+                  "default": "A grávida recebeu comprimidos com ferro quantas vezes?"
                 }
               }
             },
@@ -1262,8 +1249,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Woman",
-                  "portuguese": "Mulher"
+                  "english": "Woman",
+                  "default": "Mulher"
                 }
               }
             },
@@ -1280,8 +1267,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Card",
-                  "portuguese": "Cartão"
+                  "english": "Card",
+                  "default": "Cartão"
                 }
               }
             },
@@ -1296,9 +1283,7 @@
             "type": "note",
             "display": {
               "prompt": {
-                "text": {
-                  "portuguese": "A grávida recebeu fansidar (TPI, SP) quantas vezes?"
-                }
+                "text": "A grávida recebeu fansidar (TPI, SP) quantas vezes?"
               }
             },
             "_row_num": 38,
@@ -1314,8 +1299,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Woman",
-                  "portuguese": "Mulher"
+                  "english": "Woman",
+                  "default": "Mulher"
                 }
               }
             },
@@ -1332,8 +1317,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Card",
-                  "portuguese": "Cartão"
+                  "english": "Card",
+                  "default": "Cartão"
                 }
               }
             },
@@ -1349,9 +1334,7 @@
             "name": "DATAEST",
             "display": {
               "prompt": {
-                "text": {
-                  "portuguese": "Data provavel do parto indicado no cartão?"
-                }
+                "text": "Data provavel do parto indicado no cartão?"
               }
             },
             "_row_num": 46,
@@ -1616,12 +1599,9 @@
             "_type": "_section",
             "promptIdx": 1,
             "display": {
-              "tittle": {
-                "text": "Woman in the fertile age - pregnants_visits"
-              },
               "title": {
                 "text": {
-                  "portuguese": "Mulher na idade fertil - grávidas_visitas",
+                  "english": "Woman in the fertile age - pregnants_visits",
                   "default": "Mulher na idade fertil - grávidas_visitas"
                 }
               }
@@ -2072,14 +2052,14 @@
         "_aspect": "CARTONA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"vpcard\",\"data_value\":\"VIC\",\"display\":{\"title\":{\"text\":{\"default\":\"Card seen\",\"portuguese\":\"Cartão visto\"}}},\"_row_num\":9},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NTN\",\"display\":{\"title\":{\"text\":{\"default\":\"Has no card and no ANC\",\"portuguese\":\"Não tem cartão e não tem consultas\"}}},\"_row_num\":10},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NTS\",\"display\":{\"title\":{\"text\":{\"default\":\"Has no card, some ANC\",\"portuguese\":\"Não tem cartão, mas tem consultas\"}}},\"_row_num\":11},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NVC\",\"display\":{\"title\":{\"text\":{\"default\":\"Not brought card\",\"portuguese\":\"Não trouxe o cartão\"}}},\"_row_num\":12},{\"choice_list_name\":\"vpcard\",\"data_value\":\"PC\",\"display\":{\"title\":{\"text\":{\"default\":\"Lost card\",\"portuguese\":\"Perdeu o cartão\"}}},\"_row_num\":13},{\"choice_list_name\":\"vpcard\",\"data_value\":\"VCN\",\"display\":{\"title\":{\"text\":{\"default\":\"Card seen and ANCs\",\"portuguese\":\"Cartão visto, mas sem consultas registadas\"}}},\"_row_num\":14},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NA\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":15}]"
+        "_value": "[{\"choice_list_name\":\"vpcard\",\"data_value\":\"VIC\",\"display\":{\"title\":{\"text\":{\"english\":\"Card seen\",\"default\":\"Cartão visto\"}}},\"_row_num\":9},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NTN\",\"display\":{\"title\":{\"text\":{\"english\":\"Has no card and no ANC\",\"default\":\"Não tem cartão e não tem consultas\"}}},\"_row_num\":10},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NTS\",\"display\":{\"title\":{\"text\":{\"english\":\"Has no card, some ANC\",\"default\":\"Não tem cartão, mas tem consultas\"}}},\"_row_num\":11},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NVC\",\"display\":{\"title\":{\"text\":{\"english\":\"Not brought card\",\"default\":\"Não trouxe o cartão\"}}},\"_row_num\":12},{\"choice_list_name\":\"vpcard\",\"data_value\":\"PC\",\"display\":{\"title\":{\"text\":{\"english\":\"Lost card\",\"default\":\"Perdeu o cartão\"}}},\"_row_num\":13},{\"choice_list_name\":\"vpcard\",\"data_value\":\"VCN\",\"display\":{\"title\":{\"text\":{\"english\":\"Card seen and ANCs\",\"default\":\"Cartão visto, mas sem consultas registadas\"}}},\"_row_num\":14},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NA\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":15}]"
       },
       {
         "_partition": "Column",
         "_aspect": "MULPRESA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"visitstatus\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Present\",\"portuguese\":\"Presente\"}}},\"_row_num\":2},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Moved out\",\"portuguese\":\"Mudou\"}}},\"_row_num\":3},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Dead\",\"portuguese\":\"Faleceu\"}}},\"_row_num\":4},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"default\":\"Absent\",\"portuguese\":\"Ausente\"}}},\"_row_num\":5},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"default\":\"Travelling\",\"portuguese\":\"Viagem\"}}},\"_row_num\":6},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"7\",\"display\":{\"title\":{\"text\":{\"default\":\"Not visited\",\"portuguese\":\"Não visitada\"}}},\"_row_num\":7},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"default\":\"Unborn\",\"portuguese\":\"Não padido\"}}},\"_row_num\":8}]"
+        "_value": "[{\"choice_list_name\":\"visitstatus\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Present\",\"default\":\"Presente\"}}},\"_row_num\":2},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Moved out\",\"default\":\"Mudou\"}}},\"_row_num\":3},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Dead\",\"default\":\"Faleceu\"}}},\"_row_num\":4},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent\",\"default\":\"Ausente\"}}},\"_row_num\":5},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Travelling\",\"default\":\"Viagem\"}}},\"_row_num\":6},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"7\",\"display\":{\"title\":{\"text\":{\"english\":\"Not visited\",\"default\":\"Não visitada\"}}},\"_row_num\":7},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Unborn\",\"default\":\"Não padido\"}}},\"_row_num\":8}]"
       },
       {
         "_partition": "FormType",
@@ -2107,7 +2087,7 @@
         "_aspect": "default",
         "_key": "displayName",
         "_type": "object",
-        "_value": "{\"text\":{\"portuguese\":\"Mulher na idade fertil - grávidas_visitas\",\"default\":\"Mulher na idade fertil - grávidas_visitas\"}}"
+        "_value": "{\"text\":{\"english\":\"Woman in the fertile age - pregnants_visits\",\"default\":\"Mulher na idade fertil - grávidas_visitas\"}}"
       }
     ]
   }

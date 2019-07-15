@@ -19,12 +19,9 @@
       {
         "setting_name": "survey",
         "display": {
-          "tittle": {
-            "text": "Woman in the fertile age - pregnants"
-          },
           "title": {
             "text": {
-              "portuguese": "Mulher na idade fertil - grávidas",
+              "english": "Woman in the fertile age - pregnants",
               "default": "Mulher na idade fertil - grávidas"
             }
           }
@@ -36,20 +33,20 @@
         "display": {
           "locale": {
             "text": {
-              "default": "English",
-              "portuguese": "Inglês"
+              "english": "Portuguese",
+              "default": "Portugues"
             }
           }
         },
         "_row_num": 6
       },
       {
-        "setting_name": "portuguese",
+        "setting_name": "english",
         "display": {
           "locale": {
             "text": {
-              "default": "Portuguese",
-              "portuguese": "Portugues"
+              "english": "English",
+              "default": "Inglês"
             }
           }
         },
@@ -77,7 +74,9 @@
         "name": "test",
         "display": {
           "prompt": {
-            "text": "Status on pregnancy registrated {{data.PREGDIA}}"
+            "text": {
+              "english": "Status on pregnancy registrated {{data.PREGDIA}}"
+            }
           }
         },
         "_row_num": 3
@@ -136,7 +135,9 @@
         "name": "OUTSTATUS",
         "display": {
           "prompt": {
-            "text": "Status of pregnancy end"
+            "text": {
+              "english": "Status of pregnancy end"
+            }
           }
         },
         "_row_num": 17
@@ -154,7 +155,9 @@
         "name": "OUTDATE",
         "display": {
           "prompt": {
-            "text": "Date of pregnancy end"
+            "text": {
+              "english": "Date of pregnancy end"
+            }
           }
         },
         "_row_num": 20
@@ -165,7 +168,9 @@
         "name": "OUTDATE_PRECIS",
         "display": {
           "prompt": {
-            "text": "Precision of date"
+            "text": {
+              "english": "Precision of date"
+            }
           }
         },
         "_row_num": 21
@@ -188,7 +193,9 @@
         "name": "ABMES",
         "display": {
           "prompt": {
-            "text": "Length of pregnancy before miscariage"
+            "text": {
+              "english": "Length of pregnancy before miscariage"
+            }
           }
         },
         "_row_num": 25
@@ -215,7 +222,9 @@
         "name": "LITTERSIZE",
         "display": {
           "prompt": {
-            "text": "Number of children born"
+            "text": {
+              "english": "Number of children born"
+            }
           }
         },
         "_row_num": 30
@@ -239,8 +248,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Informant",
-              "portuguese": "Informador"
+              "english": "Informant",
+              "default": "Informador"
             }
           }
         },
@@ -258,8 +267,8 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Other informant",
-              "portuguese": "Outro informador"
+              "english": "Other informant",
+              "default": "Outro informador"
             }
           }
         },
@@ -308,7 +317,9 @@
         "name": "GRCONS",
         "display": {
           "prompt": {
-            "text": "Did the woman seek consultations during pregnancy?"
+            "text": {
+              "english": "Did the woman seek consultations during pregnancy?"
+            }
           }
         },
         "_row_num": 45
@@ -327,40 +338,64 @@
         "name": "CART_ANC",
         "display": {
           "prompt": {
-            "text": "Card"
+            "text": {
+              "english": "Card"
+            }
           }
         },
         "_row_num": 48
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "GRVAC",
+        "display": {
+          "prompt": {
+            "text": "Vacina anti-tetánica durante esta gravidez?"
+          }
+        },
+        "_row_num": 49
+      },
+      {
+        "clause": "if",
+        "condition": "data('GRVAC') == '1'",
+        "_row_num": 50
       },
       {
         "type": "integer",
         "name": "VACTTHI",
         "display": {
           "prompt": {
-            "text": "vac. Hist"
+            "text": {
+              "english": "vac. Hist"
+            }
           }
         },
-        "_row_num": 49
+        "_row_num": 51
+      },
+      {
+        "clause": "end if",
+        "_row_num": 52
       },
       {
         "clause": "end screen",
-        "_row_num": 50
+        "_row_num": 53
       },
       {
         "clause": "begin screen",
-        "_row_num": 51
+        "_row_num": 54
       },
       {
         "type": "note",
         "display": {
           "prompt": {
             "text": {
-              "default": "How many prenatal consultations?",
-              "portuguese": "Quantas consultas pré-natais durante esta gravidez?"
+              "english": "How many prenatal consultations?",
+              "default": "Quantas consultas pré-natais durante esta gravidez?"
             }
           }
         },
-        "_row_num": 52
+        "_row_num": 55
       },
       {
         "type": "integer",
@@ -368,17 +403,17 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Woman",
-              "portuguese": "Mulher"
+              "english": "Woman",
+              "default": "Mulher"
             }
           }
         },
-        "_row_num": 53
+        "_row_num": 56
       },
       {
         "clause": "if",
         "condition": "data('CART_ANC') == 'VIC'",
-        "_row_num": 54
+        "_row_num": 57
       },
       {
         "type": "integer",
@@ -386,36 +421,36 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Card",
-              "portuguese": "Cartão"
+              "english": "Card",
+              "default": "Cartão"
             }
           }
         },
-        "_row_num": 55
+        "_row_num": 58
       },
       {
         "clause": "end if",
-        "_row_num": 56
+        "_row_num": 59
       },
       {
         "clause": "end screen",
-        "_row_num": 57
+        "_row_num": 60
       },
       {
         "clause": "begin screen",
-        "_row_num": 58
+        "_row_num": 61
       },
       {
         "type": "note",
         "display": {
           "prompt": {
             "text": {
-              "default": "Number of times received iron/FA",
-              "portuguese": "A grávida recebeu comprimidos com ferro quantas vezes?"
+              "english": "Number of times received iron/FA",
+              "default": "A grávida recebeu comprimidos com ferro quantas vezes?"
             }
           }
         },
-        "_row_num": 59
+        "_row_num": 62
       },
       {
         "type": "integer",
@@ -423,17 +458,17 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Woman",
-              "portuguese": "Mulher"
+              "english": "Woman",
+              "default": "Mulher"
             }
           }
         },
-        "_row_num": 60
+        "_row_num": 63
       },
       {
         "clause": "if",
         "condition": "data('CART_ANC') == 'VIC'",
-        "_row_num": 61
+        "_row_num": 64
       },
       {
         "type": "integer",
@@ -441,35 +476,33 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Card",
-              "portuguese": "Cartão"
+              "english": "Card",
+              "default": "Cartão"
             }
           }
         },
-        "_row_num": 62
+        "_row_num": 65
       },
       {
         "clause": "end if",
-        "_row_num": 63
+        "_row_num": 66
       },
       {
         "clause": "end screen",
-        "_row_num": 64
+        "_row_num": 67
       },
       {
         "clause": "begin screen",
-        "_row_num": 65
+        "_row_num": 68
       },
       {
         "type": "note",
         "display": {
           "prompt": {
-            "text": {
-              "portuguese": "A grávida recebeu fansidar (TPI, SP) quantas vezes?"
-            }
+            "text": "A grávida recebeu fansidar (TPI, SP) quantas vezes?"
           }
         },
-        "_row_num": 66
+        "_row_num": 69
       },
       {
         "type": "integer",
@@ -477,17 +510,17 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Woman",
-              "portuguese": "Mulher"
+              "english": "Woman",
+              "default": "Mulher"
             }
           }
         },
-        "_row_num": 67
+        "_row_num": 70
       },
       {
         "clause": "if",
         "condition": "data('CART_ANC') == 'VIC'",
-        "_row_num": 68
+        "_row_num": 71
       },
       {
         "type": "integer",
@@ -495,34 +528,15 @@
         "display": {
           "prompt": {
             "text": {
-              "default": "Card",
-              "portuguese": "Cartão"
+              "english": "Card",
+              "default": "Cartão"
             }
           }
         },
-        "_row_num": 69
-      },
-      {
-        "clause": "end if",
-        "_row_num": 70
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 71
-      },
-      {
-        "clause": "begin screen",
         "_row_num": 72
       },
       {
-        "type": "select_one",
-        "values_list": "YesNoU",
-        "name": "TABPART",
-        "display": {
-          "prompt": {
-            "text": "Did the woman give birth in the village?"
-          }
-        },
+        "clause": "end if",
         "_row_num": 73
       },
       {
@@ -535,11 +549,13 @@
       },
       {
         "type": "select_one",
-        "values_list": "facility",
-        "name": "LOCPAR",
+        "values_list": "YesNoU",
+        "name": "TABPART",
         "display": {
           "prompt": {
-            "text": "Where did the woman give birth?"
+            "text": {
+              "english": "Did the woman give birth in the village?"
+            }
           }
         },
         "_row_num": 76
@@ -554,11 +570,13 @@
       },
       {
         "type": "select_one",
-        "values_list": "healthstaff",
-        "name": "ASSISTPART",
+        "values_list": "facility",
+        "name": "LOCPAR",
         "display": {
           "prompt": {
-            "text": "Who assisted the birth?"
+            "text": {
+              "english": "Where did the woman give birth?"
+            }
           }
         },
         "_row_num": 79
@@ -568,8 +586,29 @@
         "_row_num": 80
       },
       {
-        "clause": "end if",
+        "clause": "begin screen",
         "_row_num": 81
+      },
+      {
+        "type": "select_one",
+        "values_list": "healthstaff",
+        "name": "ASSISTPART",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Who assisted the birth?"
+            }
+          }
+        },
+        "_row_num": 82
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 83
+      },
+      {
+        "clause": "end if",
+        "_row_num": 84
       }
     ],
     "queries": [
@@ -612,8 +651,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Yes",
-              "portuguese": "Sim"
+              "english": "Yes",
+              "default": "Sim"
             }
           }
         },
@@ -625,8 +664,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "No",
-              "portuguese": "Não"
+              "english": "No",
+              "default": "Não"
             }
           }
         },
@@ -638,8 +677,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Don't know",
-              "portuguese": "Não sabe"
+              "english": "Don't know",
+              "default": "Não sabe"
             }
           }
         },
@@ -651,8 +690,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Still pregnant",
-              "portuguese": "Ainda grávida"
+              "english": "Still pregnant",
+              "default": "Ainda grávida"
             }
           }
         },
@@ -664,8 +703,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Pregnancy ended",
-              "portuguese": "Gravidez terminou"
+              "english": "Pregnancy ended",
+              "default": "Gravidez terminou"
             }
           }
         },
@@ -677,8 +716,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Live birth",
-              "portuguese": "Nado vivo"
+              "english": "Live birth",
+              "default": "Nado vivo"
             }
           }
         },
@@ -690,8 +729,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Miscarriage",
-              "portuguese": "Aborto"
+              "english": "Miscarriage",
+              "default": "Aborto"
             }
           }
         },
@@ -703,8 +742,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Day certain",
-              "portuguese": "Dia certo"
+              "english": "Day certain",
+              "default": "Dia certo"
             }
           }
         },
@@ -716,8 +755,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Month certain",
-              "portuguese": "Mes certo"
+              "english": "Month certain",
+              "default": "Mes certo"
             }
           }
         },
@@ -729,8 +768,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Season certain",
-              "portuguese": "Estação certo"
+              "english": "Season certain",
+              "default": "Estação certo"
             }
           }
         },
@@ -742,8 +781,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "year certain",
-              "portuguese": "Ano certo"
+              "english": "year certain",
+              "default": "Ano certo"
             }
           }
         },
@@ -755,8 +794,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Self",
-              "portuguese": "Ela/e"
+              "english": "Self",
+              "default": "Ela/e"
             }
           }
         },
@@ -768,8 +807,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Other",
-              "portuguese": "Outra/o"
+              "english": "Other",
+              "default": "Outra/o"
             }
           }
         },
@@ -781,8 +820,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Mother",
-              "portuguese": "Mãe"
+              "english": "Mother",
+              "default": "Mãe"
             }
           }
         },
@@ -794,8 +833,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Father",
-              "portuguese": "Pai"
+              "english": "Father",
+              "default": "Pai"
             }
           }
         },
@@ -807,8 +846,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Mothers mother",
-              "portuguese": "Avó"
+              "english": "Mothers mother",
+              "default": "Avó"
             }
           }
         },
@@ -820,8 +859,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Other family member",
-              "portuguese": "Outra mebro da familia"
+              "english": "Other family member",
+              "default": "Outra mebro da familia"
             }
           }
         },
@@ -833,8 +872,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Other",
-              "portuguese": "Outra/o"
+              "english": "Other",
+              "default": "Outra/o"
             }
           }
         },
@@ -846,8 +885,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "No informant found",
-              "portuguese": "Nenhum informador"
+              "english": "No informant found",
+              "default": "Nenhum informador"
             }
           }
         },
@@ -859,8 +898,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Not applicable",
-              "portuguese": "Não aplicável"
+              "english": "Not applicable",
+              "default": "Não aplicável"
             }
           }
         },
@@ -872,8 +911,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Missing",
-              "portuguese": "Falta informacao"
+              "english": "Missing",
+              "default": "Falta informacao"
             }
           }
         },
@@ -885,8 +924,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Card seen",
-              "portuguese": "Cartão visto"
+              "english": "Card seen",
+              "default": "Cartão visto"
             }
           }
         },
@@ -898,8 +937,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Has no card and no ANC",
-              "portuguese": "Não tem cartão e não tem consultas"
+              "english": "Has no card and no ANC",
+              "default": "Não tem cartão e não tem consultas"
             }
           }
         },
@@ -911,8 +950,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Has no card, some ANC",
-              "portuguese": "Não tem cartão, mas tem consultas"
+              "english": "Has no card, some ANC",
+              "default": "Não tem cartão, mas tem consultas"
             }
           }
         },
@@ -924,8 +963,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Not brought card",
-              "portuguese": "Não trouxe o cartão"
+              "english": "Not brought card",
+              "default": "Não trouxe o cartão"
             }
           }
         },
@@ -937,8 +976,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Lost card",
-              "portuguese": "Perdeu o cartão"
+              "english": "Lost card",
+              "default": "Perdeu o cartão"
             }
           }
         },
@@ -950,8 +989,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Card seen and ANCs",
-              "portuguese": "Cartão visto, mas sem consultas registadas"
+              "english": "Card seen and ANCs",
+              "default": "Cartão visto, mas sem consultas registadas"
             }
           }
         },
@@ -963,8 +1002,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Don't know",
-              "portuguese": "Não sabe"
+              "english": "Don't know",
+              "default": "Não sabe"
             }
           }
         },
@@ -976,8 +1015,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Hospital",
-              "portuguese": "Hospital"
+              "english": "Hospital",
+              "default": "Hospital"
             }
           }
         },
@@ -989,8 +1028,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Health Center",
-              "portuguese": "Centro de Saude"
+              "english": "Health Center",
+              "default": "Centro de Saude"
             }
           }
         },
@@ -1002,8 +1041,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Health Unit",
-              "portuguese": "Unidade de Saude Base"
+              "english": "Health Unit",
+              "default": "Unidade de Saude Base"
             }
           }
         },
@@ -1015,8 +1054,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Home",
-              "portuguese": "Casa"
+              "english": "Home",
+              "default": "Casa"
             }
           }
         },
@@ -1028,8 +1067,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Elsewhere",
-              "portuguese": "Outro"
+              "english": "Elsewhere",
+              "default": "Outro"
             }
           }
         },
@@ -1041,8 +1080,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Doctor",
-              "portuguese": "Medico"
+              "english": "Doctor",
+              "default": "Medico"
             }
           }
         },
@@ -1054,8 +1093,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Midwife",
-              "portuguese": "Parteira"
+              "english": "Midwife",
+              "default": "Parteira"
             }
           }
         },
@@ -1067,8 +1106,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Nurse",
-              "portuguese": "Enfermeira/o"
+              "english": "Nurse",
+              "default": "Enfermeira/o"
             }
           }
         },
@@ -1080,8 +1119,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Traditional birth attendant - no course",
-              "portuguese": "Matrona - sem curso"
+              "english": "Traditional birth attendant - no course",
+              "default": "Matrona - sem curso"
             }
           }
         },
@@ -1093,8 +1132,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Traditional birth attendant - course",
-              "portuguese": "Matrona - formado"
+              "english": "Traditional birth attendant - course",
+              "default": "Matrona - formado"
             }
           }
         },
@@ -1106,8 +1145,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Family member",
-              "portuguese": "Familia"
+              "english": "Family member",
+              "default": "Familia"
             }
           }
         },
@@ -1119,8 +1158,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "Neighbour",
-              "portuguese": "Vizinho"
+              "english": "Neighbour",
+              "default": "Vizinho"
             }
           }
         },
@@ -1132,8 +1171,8 @@
         "display": {
           "title": {
             "text": {
-              "default": "No one",
-              "portuguese": "Ninguem"
+              "english": "No one",
+              "default": "Ninguem"
             }
           }
         },
@@ -1176,12 +1215,9 @@
       "survey": {
         "setting_name": "survey",
         "display": {
-          "tittle": {
-            "text": "Woman in the fertile age - pregnants"
-          },
           "title": {
             "text": {
-              "portuguese": "Mulher na idade fertil - grávidas",
+              "english": "Woman in the fertile age - pregnants",
               "default": "Mulher na idade fertil - grávidas"
             }
           }
@@ -1193,20 +1229,20 @@
         "display": {
           "locale": {
             "text": {
-              "default": "English",
-              "portuguese": "Inglês"
+              "english": "Portuguese",
+              "default": "Portugues"
             }
           }
         },
         "_row_num": 6
       },
-      "portuguese": {
-        "setting_name": "portuguese",
+      "english": {
+        "setting_name": "english",
         "display": {
           "locale": {
             "text": {
-              "default": "Portuguese",
-              "portuguese": "Portugues"
+              "english": "English",
+              "default": "Inglês"
             }
           }
         },
@@ -1230,30 +1266,39 @@
             "display": {
               "locale": {
                 "text": {
-                  "default": "Portuguese",
-                  "portuguese": "Portugues"
+                  "english": "Portuguese",
+                  "default": "Portugues"
+                }
+              }
+            },
+            "_row_num": 6,
+            "name": "default"
+          },
+          {
+            "display": {
+              "locale": {
+                "text": {
+                  "english": "English",
+                  "default": "Inglês"
                 }
               }
             },
             "_row_num": 7,
-            "name": "portuguese"
+            "name": "english"
           }
         ]
       },
       "_default_locale": {
         "setting_name": "_default_locale",
         "_row_num": 5,
-        "value": "portuguese"
+        "value": "default"
       },
       "initial": {
         "setting_name": "survey",
         "display": {
-          "tittle": {
-            "text": "Woman in the fertile age - pregnants"
-          },
           "title": {
             "text": {
-              "portuguese": "Mulher na idade fertil - grávidas",
+              "english": "Woman in the fertile age - pregnants",
               "default": "Mulher na idade fertil - grávidas"
             }
           }
@@ -1269,8 +1314,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Yes",
-                "portuguese": "Sim"
+                "english": "Yes",
+                "default": "Sim"
               }
             }
           },
@@ -1282,8 +1327,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "No",
-                "portuguese": "Não"
+                "english": "No",
+                "default": "Não"
               }
             }
           },
@@ -1295,8 +1340,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Don't know",
-                "portuguese": "Não sabe"
+                "english": "Don't know",
+                "default": "Não sabe"
               }
             }
           },
@@ -1310,8 +1355,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Still pregnant",
-                "portuguese": "Ainda grávida"
+                "english": "Still pregnant",
+                "default": "Ainda grávida"
               }
             }
           },
@@ -1323,8 +1368,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Pregnancy ended",
-                "portuguese": "Gravidez terminou"
+                "english": "Pregnancy ended",
+                "default": "Gravidez terminou"
               }
             }
           },
@@ -1338,8 +1383,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Live birth",
-                "portuguese": "Nado vivo"
+                "english": "Live birth",
+                "default": "Nado vivo"
               }
             }
           },
@@ -1351,8 +1396,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Miscarriage",
-                "portuguese": "Aborto"
+                "english": "Miscarriage",
+                "default": "Aborto"
               }
             }
           },
@@ -1366,8 +1411,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Day certain",
-                "portuguese": "Dia certo"
+                "english": "Day certain",
+                "default": "Dia certo"
               }
             }
           },
@@ -1379,8 +1424,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Month certain",
-                "portuguese": "Mes certo"
+                "english": "Month certain",
+                "default": "Mes certo"
               }
             }
           },
@@ -1392,8 +1437,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Season certain",
-                "portuguese": "Estação certo"
+                "english": "Season certain",
+                "default": "Estação certo"
               }
             }
           },
@@ -1405,8 +1450,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "year certain",
-                "portuguese": "Ano certo"
+                "english": "year certain",
+                "default": "Ano certo"
               }
             }
           },
@@ -1420,8 +1465,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Self",
-                "portuguese": "Ela/e"
+                "english": "Self",
+                "default": "Ela/e"
               }
             }
           },
@@ -1433,8 +1478,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Other",
-                "portuguese": "Outra/o"
+                "english": "Other",
+                "default": "Outra/o"
               }
             }
           },
@@ -1448,8 +1493,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Mother",
-                "portuguese": "Mãe"
+                "english": "Mother",
+                "default": "Mãe"
               }
             }
           },
@@ -1461,8 +1506,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Father",
-                "portuguese": "Pai"
+                "english": "Father",
+                "default": "Pai"
               }
             }
           },
@@ -1474,8 +1519,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Mothers mother",
-                "portuguese": "Avó"
+                "english": "Mothers mother",
+                "default": "Avó"
               }
             }
           },
@@ -1487,8 +1532,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Other family member",
-                "portuguese": "Outra mebro da familia"
+                "english": "Other family member",
+                "default": "Outra mebro da familia"
               }
             }
           },
@@ -1500,8 +1545,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Other",
-                "portuguese": "Outra/o"
+                "english": "Other",
+                "default": "Outra/o"
               }
             }
           },
@@ -1513,8 +1558,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "No informant found",
-                "portuguese": "Nenhum informador"
+                "english": "No informant found",
+                "default": "Nenhum informador"
               }
             }
           },
@@ -1526,8 +1571,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Not applicable",
-                "portuguese": "Não aplicável"
+                "english": "Not applicable",
+                "default": "Não aplicável"
               }
             }
           },
@@ -1539,8 +1584,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Missing",
-                "portuguese": "Falta informacao"
+                "english": "Missing",
+                "default": "Falta informacao"
               }
             }
           },
@@ -1554,8 +1599,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Card seen",
-                "portuguese": "Cartão visto"
+                "english": "Card seen",
+                "default": "Cartão visto"
               }
             }
           },
@@ -1567,8 +1612,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Has no card and no ANC",
-                "portuguese": "Não tem cartão e não tem consultas"
+                "english": "Has no card and no ANC",
+                "default": "Não tem cartão e não tem consultas"
               }
             }
           },
@@ -1580,8 +1625,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Has no card, some ANC",
-                "portuguese": "Não tem cartão, mas tem consultas"
+                "english": "Has no card, some ANC",
+                "default": "Não tem cartão, mas tem consultas"
               }
             }
           },
@@ -1593,8 +1638,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Not brought card",
-                "portuguese": "Não trouxe o cartão"
+                "english": "Not brought card",
+                "default": "Não trouxe o cartão"
               }
             }
           },
@@ -1606,8 +1651,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Lost card",
-                "portuguese": "Perdeu o cartão"
+                "english": "Lost card",
+                "default": "Perdeu o cartão"
               }
             }
           },
@@ -1619,8 +1664,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Card seen and ANCs",
-                "portuguese": "Cartão visto, mas sem consultas registadas"
+                "english": "Card seen and ANCs",
+                "default": "Cartão visto, mas sem consultas registadas"
               }
             }
           },
@@ -1632,8 +1677,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Don't know",
-                "portuguese": "Não sabe"
+                "english": "Don't know",
+                "default": "Não sabe"
               }
             }
           },
@@ -1647,8 +1692,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Hospital",
-                "portuguese": "Hospital"
+                "english": "Hospital",
+                "default": "Hospital"
               }
             }
           },
@@ -1660,8 +1705,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Health Center",
-                "portuguese": "Centro de Saude"
+                "english": "Health Center",
+                "default": "Centro de Saude"
               }
             }
           },
@@ -1673,8 +1718,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Health Unit",
-                "portuguese": "Unidade de Saude Base"
+                "english": "Health Unit",
+                "default": "Unidade de Saude Base"
               }
             }
           },
@@ -1686,8 +1731,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Home",
-                "portuguese": "Casa"
+                "english": "Home",
+                "default": "Casa"
               }
             }
           },
@@ -1699,8 +1744,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Elsewhere",
-                "portuguese": "Outro"
+                "english": "Elsewhere",
+                "default": "Outro"
               }
             }
           },
@@ -1714,8 +1759,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Doctor",
-                "portuguese": "Medico"
+                "english": "Doctor",
+                "default": "Medico"
               }
             }
           },
@@ -1727,8 +1772,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Midwife",
-                "portuguese": "Parteira"
+                "english": "Midwife",
+                "default": "Parteira"
               }
             }
           },
@@ -1740,8 +1785,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Nurse",
-                "portuguese": "Enfermeira/o"
+                "english": "Nurse",
+                "default": "Enfermeira/o"
               }
             }
           },
@@ -1753,8 +1798,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Traditional birth attendant - no course",
-                "portuguese": "Matrona - sem curso"
+                "english": "Traditional birth attendant - no course",
+                "default": "Matrona - sem curso"
               }
             }
           },
@@ -1766,8 +1811,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Traditional birth attendant - course",
-                "portuguese": "Matrona - formado"
+                "english": "Traditional birth attendant - course",
+                "default": "Matrona - formado"
               }
             }
           },
@@ -1779,8 +1824,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Family member",
-                "portuguese": "Familia"
+                "english": "Family member",
+                "default": "Familia"
               }
             }
           },
@@ -1792,8 +1837,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "Neighbour",
-                "portuguese": "Vizinho"
+                "english": "Neighbour",
+                "default": "Vizinho"
               }
             }
           },
@@ -1805,8 +1850,8 @@
           "display": {
             "title": {
               "text": {
-                "default": "No one",
-                "portuguese": "Ninguem"
+                "english": "No one",
+                "default": "Ninguem"
               }
             }
           },
@@ -1953,10 +1998,21 @@
         "valuesList": "vpcard",
         "elementKey": "CART_ANC"
       },
-      "VACTTHI": {
+      "GRVAC": {
         "_defn": [
           {
             "_row_num": 49,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "GRVAC"
+      },
+      "VACTTHI": {
+        "_defn": [
+          {
+            "_row_num": 51,
             "section_name": "survey"
           }
         ],
@@ -1966,7 +2022,7 @@
       "CDG_M": {
         "_defn": [
           {
-            "_row_num": 53,
+            "_row_num": 56,
             "section_name": "survey"
           }
         ],
@@ -1976,7 +2032,7 @@
       "CDG_C": {
         "_defn": [
           {
-            "_row_num": 55,
+            "_row_num": 58,
             "section_name": "survey"
           }
         ],
@@ -1986,7 +2042,7 @@
       "FEDEP_M": {
         "_defn": [
           {
-            "_row_num": 60,
+            "_row_num": 63,
             "section_name": "survey"
           }
         ],
@@ -1996,7 +2052,7 @@
       "FEDEP_C": {
         "_defn": [
           {
-            "_row_num": 62,
+            "_row_num": 65,
             "section_name": "survey"
           }
         ],
@@ -2006,7 +2062,7 @@
       "QVFANSI_M": {
         "_defn": [
           {
-            "_row_num": 67,
+            "_row_num": 70,
             "section_name": "survey"
           }
         ],
@@ -2016,7 +2072,7 @@
       "QVFANSI_C": {
         "_defn": [
           {
-            "_row_num": 69,
+            "_row_num": 72,
             "section_name": "survey"
           }
         ],
@@ -2026,7 +2082,7 @@
       "TABPART": {
         "_defn": [
           {
-            "_row_num": 73,
+            "_row_num": 76,
             "section_name": "survey"
           }
         ],
@@ -2037,7 +2093,7 @@
       "LOCPAR": {
         "_defn": [
           {
-            "_row_num": 76,
+            "_row_num": 79,
             "section_name": "survey"
           }
         ],
@@ -2048,7 +2104,7 @@
       "ASSISTPART": {
         "_defn": [
           {
-            "_row_num": 79,
+            "_row_num": 82,
             "section_name": "survey"
           }
         ],
@@ -2073,7 +2129,9 @@
             "name": "test",
             "display": {
               "prompt": {
-                "text": "Status on pregnancy registrated {{data.PREGDIA}}"
+                "text": {
+                  "english": "Status on pregnancy registrated {{data.PREGDIA}}"
+                }
               }
             },
             "_row_num": 3,
@@ -2109,7 +2167,9 @@
             "name": "OUTSTATUS",
             "display": {
               "prompt": {
-                "text": "Status of pregnancy end"
+                "text": {
+                  "english": "Status of pregnancy end"
+                }
               }
             },
             "_row_num": 17,
@@ -2124,7 +2184,9 @@
             "name": "OUTDATE",
             "display": {
               "prompt": {
-                "text": "Date of pregnancy end"
+                "text": {
+                  "english": "Date of pregnancy end"
+                }
               }
             },
             "_row_num": 20,
@@ -2140,7 +2202,9 @@
             "name": "OUTDATE_PRECIS",
             "display": {
               "prompt": {
-                "text": "Precision of date"
+                "text": {
+                  "english": "Precision of date"
+                }
               }
             },
             "_row_num": 21,
@@ -2155,7 +2219,9 @@
             "name": "ABMES",
             "display": {
               "prompt": {
-                "text": "Length of pregnancy before miscariage"
+                "text": {
+                  "english": "Length of pregnancy before miscariage"
+                }
               }
             },
             "_row_num": 25,
@@ -2170,7 +2236,9 @@
             "name": "LITTERSIZE",
             "display": {
               "prompt": {
-                "text": "Number of children born"
+                "text": {
+                  "english": "Number of children born"
+                }
               }
             },
             "_row_num": 30,
@@ -2187,8 +2255,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Informant",
-                  "portuguese": "Informador"
+                  "english": "Informant",
+                  "default": "Informador"
                 }
               }
             },
@@ -2206,8 +2274,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Other informant",
-                  "portuguese": "Outro informador"
+                  "english": "Other informant",
+                  "default": "Outro informador"
                 }
               }
             },
@@ -2224,7 +2292,9 @@
             "name": "GRCONS",
             "display": {
               "prompt": {
-                "text": "Did the woman seek consultations during pregnancy?"
+                "text": {
+                  "english": "Did the woman seek consultations during pregnancy?"
+                }
               }
             },
             "_row_num": 45,
@@ -2240,7 +2310,9 @@
             "name": "CART_ANC",
             "display": {
               "prompt": {
-                "text": "Card"
+                "text": {
+                  "english": "Card"
+                }
               }
             },
             "_row_num": 48,
@@ -2251,36 +2323,54 @@
             "promptIdx": 11
           },
           {
-            "type": "integer",
-            "name": "VACTTHI",
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "GRVAC",
             "display": {
               "prompt": {
-                "text": "vac. Hist"
+                "text": "Vacina anti-tetánica durante esta gravidez?"
               }
             },
             "_row_num": 49,
             "__rowNum__": 48,
             "_token_type": "prompt",
-            "_type": "integer",
+            "_type": "select_one",
             "_branch_label_enclosing_screen": "survey/_screen47",
             "promptIdx": 12
+          },
+          {
+            "type": "integer",
+            "name": "VACTTHI",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "vac. Hist"
+                }
+              }
+            },
+            "_row_num": 51,
+            "__rowNum__": 50,
+            "_token_type": "prompt",
+            "_type": "integer",
+            "_branch_label_enclosing_screen": "survey/_screen47",
+            "promptIdx": 13
           },
           {
             "type": "note",
             "display": {
               "prompt": {
                 "text": {
-                  "default": "How many prenatal consultations?",
-                  "portuguese": "Quantas consultas pré-natais durante esta gravidez?"
+                  "english": "How many prenatal consultations?",
+                  "default": "Quantas consultas pré-natais durante esta gravidez?"
                 }
               }
             },
-            "_row_num": 52,
-            "__rowNum__": 51,
+            "_row_num": 55,
+            "__rowNum__": 54,
             "_token_type": "prompt",
             "_type": "note",
-            "_branch_label_enclosing_screen": "survey/_screen51",
-            "promptIdx": 13
+            "_branch_label_enclosing_screen": "survey/_screen54",
+            "promptIdx": 14
           },
           {
             "type": "integer",
@@ -2288,17 +2378,17 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Woman",
-                  "portuguese": "Mulher"
+                  "english": "Woman",
+                  "default": "Mulher"
                 }
               }
             },
-            "_row_num": 53,
-            "__rowNum__": 52,
+            "_row_num": 56,
+            "__rowNum__": 55,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen51",
-            "promptIdx": 14
+            "_branch_label_enclosing_screen": "survey/_screen54",
+            "promptIdx": 15
           },
           {
             "type": "integer",
@@ -2306,34 +2396,34 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Card",
-                  "portuguese": "Cartão"
+                  "english": "Card",
+                  "default": "Cartão"
                 }
               }
             },
-            "_row_num": 55,
-            "__rowNum__": 54,
+            "_row_num": 58,
+            "__rowNum__": 57,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen51",
-            "promptIdx": 15
+            "_branch_label_enclosing_screen": "survey/_screen54",
+            "promptIdx": 16
           },
           {
             "type": "note",
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Number of times received iron/FA",
-                  "portuguese": "A grávida recebeu comprimidos com ferro quantas vezes?"
+                  "english": "Number of times received iron/FA",
+                  "default": "A grávida recebeu comprimidos com ferro quantas vezes?"
                 }
               }
             },
-            "_row_num": 59,
-            "__rowNum__": 58,
+            "_row_num": 62,
+            "__rowNum__": 61,
             "_token_type": "prompt",
             "_type": "note",
-            "_branch_label_enclosing_screen": "survey/_screen58",
-            "promptIdx": 16
+            "_branch_label_enclosing_screen": "survey/_screen61",
+            "promptIdx": 17
           },
           {
             "type": "integer",
@@ -2341,17 +2431,17 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Woman",
-                  "portuguese": "Mulher"
+                  "english": "Woman",
+                  "default": "Mulher"
                 }
               }
             },
-            "_row_num": 60,
-            "__rowNum__": 59,
+            "_row_num": 63,
+            "__rowNum__": 62,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen58",
-            "promptIdx": 17
+            "_branch_label_enclosing_screen": "survey/_screen61",
+            "promptIdx": 18
           },
           {
             "type": "integer",
@@ -2359,33 +2449,31 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Card",
-                  "portuguese": "Cartão"
+                  "english": "Card",
+                  "default": "Cartão"
                 }
               }
             },
-            "_row_num": 62,
-            "__rowNum__": 61,
+            "_row_num": 65,
+            "__rowNum__": 64,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen58",
-            "promptIdx": 18
+            "_branch_label_enclosing_screen": "survey/_screen61",
+            "promptIdx": 19
           },
           {
             "type": "note",
             "display": {
               "prompt": {
-                "text": {
-                  "portuguese": "A grávida recebeu fansidar (TPI, SP) quantas vezes?"
-                }
+                "text": "A grávida recebeu fansidar (TPI, SP) quantas vezes?"
               }
             },
-            "_row_num": 66,
-            "__rowNum__": 65,
+            "_row_num": 69,
+            "__rowNum__": 68,
             "_token_type": "prompt",
             "_type": "note",
-            "_branch_label_enclosing_screen": "survey/_screen65",
-            "promptIdx": 19
+            "_branch_label_enclosing_screen": "survey/_screen68",
+            "promptIdx": 20
           },
           {
             "type": "integer",
@@ -2393,17 +2481,17 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Woman",
-                  "portuguese": "Mulher"
+                  "english": "Woman",
+                  "default": "Mulher"
                 }
               }
             },
-            "_row_num": 67,
-            "__rowNum__": 66,
+            "_row_num": 70,
+            "__rowNum__": 69,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen65",
-            "promptIdx": 20
+            "_branch_label_enclosing_screen": "survey/_screen68",
+            "promptIdx": 21
           },
           {
             "type": "integer",
@@ -2411,17 +2499,17 @@
             "display": {
               "prompt": {
                 "text": {
-                  "default": "Card",
-                  "portuguese": "Cartão"
+                  "english": "Card",
+                  "default": "Cartão"
                 }
               }
             },
-            "_row_num": 69,
-            "__rowNum__": 68,
+            "_row_num": 72,
+            "__rowNum__": 71,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen65",
-            "promptIdx": 21
+            "_branch_label_enclosing_screen": "survey/_screen68",
+            "promptIdx": 22
           },
           {
             "type": "select_one",
@@ -2429,23 +2517,9 @@
             "name": "TABPART",
             "display": {
               "prompt": {
-                "text": "Did the woman give birth in the village?"
-              }
-            },
-            "_row_num": 73,
-            "__rowNum__": 72,
-            "_token_type": "prompt",
-            "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen72",
-            "promptIdx": 22
-          },
-          {
-            "type": "select_one",
-            "values_list": "facility",
-            "name": "LOCPAR",
-            "display": {
-              "prompt": {
-                "text": "Where did the woman give birth?"
+                "text": {
+                  "english": "Did the woman give birth in the village?"
+                }
               }
             },
             "_row_num": 76,
@@ -2457,11 +2531,13 @@
           },
           {
             "type": "select_one",
-            "values_list": "healthstaff",
-            "name": "ASSISTPART",
+            "values_list": "facility",
+            "name": "LOCPAR",
             "display": {
               "prompt": {
-                "text": "Who assisted the birth?"
+                "text": {
+                  "english": "Where did the woman give birth?"
+                }
               }
             },
             "_row_num": 79,
@@ -2472,12 +2548,30 @@
             "promptIdx": 24
           },
           {
+            "type": "select_one",
+            "values_list": "healthstaff",
+            "name": "ASSISTPART",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Who assisted the birth?"
+                }
+              }
+            },
+            "_row_num": 82,
+            "__rowNum__": 81,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen81",
+            "promptIdx": 25
+          },
+          {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 82,
-            "_branch_label_enclosing_screen": "survey/_screen82",
-            "promptIdx": 25
+            "_row_num": 85,
+            "_branch_label_enclosing_screen": "survey/_screen85",
+            "promptIdx": 26
           }
         ],
         "validation_tag_map": {
@@ -2561,8 +2655,8 @@
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else81",
-            "_row_num": 81,
+            "_branch_label": "_else84",
+            "_row_num": 84,
             "operationIdx": 7
           },
           {
@@ -2702,59 +2796,45 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 50,
-              "__rowNum__": 49,
+              "_row_num": 53,
+              "__rowNum__": 52,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(11);\nactivePromptIndicies.push(12);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(11);\nactivePromptIndicies.push(12);\nif (data('GRVAC') == '1') {\nactivePromptIndicies.push(13);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 20
           },
           {
             "clause": "begin screen",
-            "_row_num": 51,
-            "__rowNum__": 50,
+            "_row_num": 54,
+            "__rowNum__": 53,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 57,
-              "__rowNum__": 56,
+              "_row_num": 60,
+              "__rowNum__": 59,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\nif (data('CART_ANC') == 'VIC') {\nactivePromptIndicies.push(15);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(14);\nactivePromptIndicies.push(15);\nif (data('CART_ANC') == 'VIC') {\nactivePromptIndicies.push(16);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 21
           },
           {
             "clause": "begin screen",
-            "_row_num": 58,
-            "__rowNum__": 57,
+            "_row_num": 61,
+            "__rowNum__": 60,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 64,
-              "__rowNum__": 63,
+              "_row_num": 67,
+              "__rowNum__": 66,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(16);\nactivePromptIndicies.push(17);\nif (data('CART_ANC') == 'VIC') {\nactivePromptIndicies.push(18);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(17);\nactivePromptIndicies.push(18);\nif (data('CART_ANC') == 'VIC') {\nactivePromptIndicies.push(19);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 22
           },
           {
             "clause": "begin screen",
-            "_row_num": 65,
-            "__rowNum__": 64,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 71,
-              "__rowNum__": 70,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(19);\nactivePromptIndicies.push(20);\nif (data('CART_ANC') == 'VIC') {\nactivePromptIndicies.push(21);\n}\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 23
-          },
-          {
-            "clause": "begin screen",
-            "_row_num": 72,
-            "__rowNum__": 71,
+            "_row_num": 68,
+            "__rowNum__": 67,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
@@ -2762,8 +2842,8 @@
               "__rowNum__": 73,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(22);\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 24
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(20);\nactivePromptIndicies.push(21);\nif (data('CART_ANC') == 'VIC') {\nactivePromptIndicies.push(22);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 23
           },
           {
             "clause": "begin screen",
@@ -2777,7 +2857,7 @@
               "_token_type": "end_screen"
             },
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(23);\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 25
+            "operationIdx": 24
           },
           {
             "clause": "begin screen",
@@ -2791,25 +2871,39 @@
               "_token_type": "end_screen"
             },
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(24);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 25
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 81,
+            "__rowNum__": 80,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 83,
+              "__rowNum__": 82,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(25);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 26
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif81",
-            "_row_num": 81,
+            "_branch_label": "_endif84",
+            "_row_num": 84,
             "operationIdx": 27
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 82,
+            "_row_num": 85,
             "operationIdx": 28
           },
           {
-            "_row_num": 82,
+            "_row_num": 85,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(25);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(26);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
@@ -2818,7 +2912,7 @@
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 82,
+            "_row_num": 85,
             "operationIdx": 30
           }
         ],
@@ -2843,16 +2937,16 @@
           "_screen33": 18,
           "_screen44": 19,
           "_screen47": 20,
-          "_screen51": 21,
-          "_screen58": 22,
-          "_screen65": 23,
-          "_screen72": 24,
-          "_screen75": 25,
-          "_screen78": 26,
-          "_else81": 28,
-          "_endif81": 28,
+          "_screen54": 21,
+          "_screen61": 22,
+          "_screen68": 23,
+          "_screen75": 24,
+          "_screen78": 25,
+          "_screen81": 26,
+          "_else84": 28,
+          "_endif84": 28,
           "_contents": 29,
-          "_screen82": 29
+          "_screen85": 29
         }
       },
       "initial": {
@@ -2883,12 +2977,9 @@
             "_type": "_section",
             "promptIdx": 1,
             "display": {
-              "tittle": {
-                "text": "Woman in the fertile age - pregnants"
-              },
               "title": {
                 "text": {
-                  "portuguese": "Mulher na idade fertil - grávidas",
+                  "english": "Woman in the fertile age - pregnants",
                   "default": "Mulher na idade fertil - grávidas"
                 }
               }
@@ -3180,10 +3271,24 @@
         "elementSet": "data",
         "elementPath": "CART_ANC"
       },
-      "VACTTHI": {
+      "GRVAC": {
         "_defn": [
           {
             "_row_num": 49,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "GRVAC",
+        "elementName": "GRVAC",
+        "elementSet": "data",
+        "elementPath": "GRVAC"
+      },
+      "VACTTHI": {
+        "_defn": [
+          {
+            "_row_num": 51,
             "section_name": "survey"
           }
         ],
@@ -3196,7 +3301,7 @@
       "CDG_M": {
         "_defn": [
           {
-            "_row_num": 53,
+            "_row_num": 56,
             "section_name": "survey"
           }
         ],
@@ -3209,7 +3314,7 @@
       "CDG_C": {
         "_defn": [
           {
-            "_row_num": 55,
+            "_row_num": 58,
             "section_name": "survey"
           }
         ],
@@ -3222,7 +3327,7 @@
       "FEDEP_M": {
         "_defn": [
           {
-            "_row_num": 60,
+            "_row_num": 63,
             "section_name": "survey"
           }
         ],
@@ -3235,7 +3340,7 @@
       "FEDEP_C": {
         "_defn": [
           {
-            "_row_num": 62,
+            "_row_num": 65,
             "section_name": "survey"
           }
         ],
@@ -3248,7 +3353,7 @@
       "QVFANSI_M": {
         "_defn": [
           {
-            "_row_num": 67,
+            "_row_num": 70,
             "section_name": "survey"
           }
         ],
@@ -3261,7 +3366,7 @@
       "QVFANSI_C": {
         "_defn": [
           {
-            "_row_num": 69,
+            "_row_num": 72,
             "section_name": "survey"
           }
         ],
@@ -3274,7 +3379,7 @@
       "TABPART": {
         "_defn": [
           {
-            "_row_num": 73,
+            "_row_num": 76,
             "section_name": "survey"
           }
         ],
@@ -3288,7 +3393,7 @@
       "LOCPAR": {
         "_defn": [
           {
-            "_row_num": 76,
+            "_row_num": 79,
             "section_name": "survey"
           }
         ],
@@ -3302,7 +3407,7 @@
       "ASSISTPART": {
         "_defn": [
           {
-            "_row_num": 79,
+            "_row_num": 82,
             "section_name": "survey"
           }
         ],
@@ -3432,70 +3537,77 @@
         "_aspect": "ASSISTPART",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"healthstaff\",\"data_value\":\"DR\",\"display\":{\"title\":{\"text\":{\"default\":\"Doctor\",\"portuguese\":\"Medico\"}}},\"_row_num\":35},{\"choice_list_name\":\"healthstaff\",\"data_value\":\"PA\",\"display\":{\"title\":{\"text\":{\"default\":\"Midwife\",\"portuguese\":\"Parteira\"}}},\"_row_num\":36},{\"choice_list_name\":\"healthstaff\",\"data_value\":\"EN\",\"display\":{\"title\":{\"text\":{\"default\":\"Nurse\",\"portuguese\":\"Enfermeira/o\"}}},\"_row_num\":37},{\"choice_list_name\":\"healthstaff\",\"data_value\":\"MA-N\",\"display\":{\"title\":{\"text\":{\"default\":\"Traditional birth attendant - no course\",\"portuguese\":\"Matrona - sem curso\"}}},\"_row_num\":38},{\"choice_list_name\":\"healthstaff\",\"data_value\":\"MA-F\",\"display\":{\"title\":{\"text\":{\"default\":\"Traditional birth attendant - course\",\"portuguese\":\"Matrona - formado\"}}},\"_row_num\":39},{\"choice_list_name\":\"healthstaff\",\"data_value\":\"FA\",\"display\":{\"title\":{\"text\":{\"default\":\"Family member\",\"portuguese\":\"Familia\"}}},\"_row_num\":40},{\"choice_list_name\":\"healthstaff\",\"data_value\":\"VI\",\"display\":{\"title\":{\"text\":{\"default\":\"Neighbour\",\"portuguese\":\"Vizinho\"}}},\"_row_num\":41},{\"choice_list_name\":\"healthstaff\",\"data_value\":\"no\",\"display\":{\"title\":{\"text\":{\"default\":\"No one\",\"portuguese\":\"Ninguem\"}}},\"_row_num\":42}]"
+        "_value": "[{\"choice_list_name\":\"healthstaff\",\"data_value\":\"DR\",\"display\":{\"title\":{\"text\":{\"english\":\"Doctor\",\"default\":\"Medico\"}}},\"_row_num\":35},{\"choice_list_name\":\"healthstaff\",\"data_value\":\"PA\",\"display\":{\"title\":{\"text\":{\"english\":\"Midwife\",\"default\":\"Parteira\"}}},\"_row_num\":36},{\"choice_list_name\":\"healthstaff\",\"data_value\":\"EN\",\"display\":{\"title\":{\"text\":{\"english\":\"Nurse\",\"default\":\"Enfermeira/o\"}}},\"_row_num\":37},{\"choice_list_name\":\"healthstaff\",\"data_value\":\"MA-N\",\"display\":{\"title\":{\"text\":{\"english\":\"Traditional birth attendant - no course\",\"default\":\"Matrona - sem curso\"}}},\"_row_num\":38},{\"choice_list_name\":\"healthstaff\",\"data_value\":\"MA-F\",\"display\":{\"title\":{\"text\":{\"english\":\"Traditional birth attendant - course\",\"default\":\"Matrona - formado\"}}},\"_row_num\":39},{\"choice_list_name\":\"healthstaff\",\"data_value\":\"FA\",\"display\":{\"title\":{\"text\":{\"english\":\"Family member\",\"default\":\"Familia\"}}},\"_row_num\":40},{\"choice_list_name\":\"healthstaff\",\"data_value\":\"VI\",\"display\":{\"title\":{\"text\":{\"english\":\"Neighbour\",\"default\":\"Vizinho\"}}},\"_row_num\":41},{\"choice_list_name\":\"healthstaff\",\"data_value\":\"no\",\"display\":{\"title\":{\"text\":{\"english\":\"No one\",\"default\":\"Ninguem\"}}},\"_row_num\":42}]"
       },
       {
         "_partition": "Column",
         "_aspect": "CART_ANC",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"vpcard\",\"data_value\":\"VIC\",\"display\":{\"title\":{\"text\":{\"default\":\"Card seen\",\"portuguese\":\"Cartão visto\"}}},\"_row_num\":23},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NTN\",\"display\":{\"title\":{\"text\":{\"default\":\"Has no card and no ANC\",\"portuguese\":\"Não tem cartão e não tem consultas\"}}},\"_row_num\":24},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NTS\",\"display\":{\"title\":{\"text\":{\"default\":\"Has no card, some ANC\",\"portuguese\":\"Não tem cartão, mas tem consultas\"}}},\"_row_num\":25},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NVC\",\"display\":{\"title\":{\"text\":{\"default\":\"Not brought card\",\"portuguese\":\"Não trouxe o cartão\"}}},\"_row_num\":26},{\"choice_list_name\":\"vpcard\",\"data_value\":\"PC\",\"display\":{\"title\":{\"text\":{\"default\":\"Lost card\",\"portuguese\":\"Perdeu o cartão\"}}},\"_row_num\":27},{\"choice_list_name\":\"vpcard\",\"data_value\":\"VCN\",\"display\":{\"title\":{\"text\":{\"default\":\"Card seen and ANCs\",\"portuguese\":\"Cartão visto, mas sem consultas registadas\"}}},\"_row_num\":28},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NA\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":29}]"
+        "_value": "[{\"choice_list_name\":\"vpcard\",\"data_value\":\"VIC\",\"display\":{\"title\":{\"text\":{\"english\":\"Card seen\",\"default\":\"Cartão visto\"}}},\"_row_num\":23},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NTN\",\"display\":{\"title\":{\"text\":{\"english\":\"Has no card and no ANC\",\"default\":\"Não tem cartão e não tem consultas\"}}},\"_row_num\":24},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NTS\",\"display\":{\"title\":{\"text\":{\"english\":\"Has no card, some ANC\",\"default\":\"Não tem cartão, mas tem consultas\"}}},\"_row_num\":25},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NVC\",\"display\":{\"title\":{\"text\":{\"english\":\"Not brought card\",\"default\":\"Não trouxe o cartão\"}}},\"_row_num\":26},{\"choice_list_name\":\"vpcard\",\"data_value\":\"PC\",\"display\":{\"title\":{\"text\":{\"english\":\"Lost card\",\"default\":\"Perdeu o cartão\"}}},\"_row_num\":27},{\"choice_list_name\":\"vpcard\",\"data_value\":\"VCN\",\"display\":{\"title\":{\"text\":{\"english\":\"Card seen and ANCs\",\"default\":\"Cartão visto, mas sem consultas registadas\"}}},\"_row_num\":28},{\"choice_list_name\":\"vpcard\",\"data_value\":\"NA\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":29}]"
       },
       {
         "_partition": "Column",
         "_aspect": "GRCONS",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":4}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":4}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "GRVAC",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":4}]"
       },
       {
         "_partition": "Column",
         "_aspect": "LOCPAR",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"facility\",\"data_value\":\"HO\",\"display\":{\"title\":{\"text\":{\"default\":\"Hospital\",\"portuguese\":\"Hospital\"}}},\"_row_num\":30},{\"choice_list_name\":\"facility\",\"data_value\":\"CS\",\"display\":{\"title\":{\"text\":{\"default\":\"Health Center\",\"portuguese\":\"Centro de Saude\"}}},\"_row_num\":31},{\"choice_list_name\":\"facility\",\"data_value\":\"US\",\"display\":{\"title\":{\"text\":{\"default\":\"Health Unit\",\"portuguese\":\"Unidade de Saude Base\"}}},\"_row_num\":32},{\"choice_list_name\":\"facility\",\"data_value\":\"CA\",\"display\":{\"title\":{\"text\":{\"default\":\"Home\",\"portuguese\":\"Casa\"}}},\"_row_num\":33},{\"choice_list_name\":\"facility\",\"data_value\":\"OU\",\"display\":{\"title\":{\"text\":{\"default\":\"Elsewhere\",\"portuguese\":\"Outro\"}}},\"_row_num\":34}]"
+        "_value": "[{\"choice_list_name\":\"facility\",\"data_value\":\"HO\",\"display\":{\"title\":{\"text\":{\"english\":\"Hospital\",\"default\":\"Hospital\"}}},\"_row_num\":30},{\"choice_list_name\":\"facility\",\"data_value\":\"CS\",\"display\":{\"title\":{\"text\":{\"english\":\"Health Center\",\"default\":\"Centro de Saude\"}}},\"_row_num\":31},{\"choice_list_name\":\"facility\",\"data_value\":\"US\",\"display\":{\"title\":{\"text\":{\"english\":\"Health Unit\",\"default\":\"Unidade de Saude Base\"}}},\"_row_num\":32},{\"choice_list_name\":\"facility\",\"data_value\":\"CA\",\"display\":{\"title\":{\"text\":{\"english\":\"Home\",\"default\":\"Casa\"}}},\"_row_num\":33},{\"choice_list_name\":\"facility\",\"data_value\":\"OU\",\"display\":{\"title\":{\"text\":{\"english\":\"Elsewhere\",\"default\":\"Outro\"}}},\"_row_num\":34}]"
       },
       {
         "_partition": "Column",
         "_aspect": "OUTDATE_PRECIS",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"precision\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Day certain\",\"portuguese\":\"Dia certo\"}}},\"_row_num\":9},{\"choice_list_name\":\"precision\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Month certain\",\"portuguese\":\"Mes certo\"}}},\"_row_num\":10},{\"choice_list_name\":\"precision\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Season certain\",\"portuguese\":\"Estação certo\"}}},\"_row_num\":11},{\"choice_list_name\":\"precision\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"default\":\"year certain\",\"portuguese\":\"Ano certo\"}}},\"_row_num\":12}]"
+        "_value": "[{\"choice_list_name\":\"precision\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Day certain\",\"default\":\"Dia certo\"}}},\"_row_num\":9},{\"choice_list_name\":\"precision\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Month certain\",\"default\":\"Mes certo\"}}},\"_row_num\":10},{\"choice_list_name\":\"precision\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Season certain\",\"default\":\"Estação certo\"}}},\"_row_num\":11},{\"choice_list_name\":\"precision\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"year certain\",\"default\":\"Ano certo\"}}},\"_row_num\":12}]"
       },
       {
         "_partition": "Column",
         "_aspect": "OUTSTATUS",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"pregstat\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Live birth\",\"portuguese\":\"Nado vivo\"}}},\"_row_num\":7},{\"choice_list_name\":\"pregstat\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Miscarriage\",\"portuguese\":\"Aborto\"}}},\"_row_num\":8}]"
+        "_value": "[{\"choice_list_name\":\"pregstat\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Live birth\",\"default\":\"Nado vivo\"}}},\"_row_num\":7},{\"choice_list_name\":\"pregstat\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Miscarriage\",\"default\":\"Aborto\"}}},\"_row_num\":8}]"
       },
       {
         "_partition": "Column",
         "_aspect": "TABPART",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Yes\",\"portuguese\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"No\",\"portuguese\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Don't know\",\"portuguese\":\"Não sabe\"}}},\"_row_num\":4}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":4}]"
       },
       {
         "_partition": "Column",
         "_aspect": "inf1",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"inf1\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Self\",\"portuguese\":\"Ela/e\"}}},\"_row_num\":13},{\"choice_list_name\":\"inf1\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Other\",\"portuguese\":\"Outra/o\"}}},\"_row_num\":14}]"
+        "_value": "[{\"choice_list_name\":\"inf1\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Self\",\"default\":\"Ela/e\"}}},\"_row_num\":13},{\"choice_list_name\":\"inf1\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outra/o\"}}},\"_row_num\":14}]"
       },
       {
         "_partition": "Column",
         "_aspect": "inf2",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"inf2\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Mother\",\"portuguese\":\"Mãe\"}}},\"_row_num\":15},{\"choice_list_name\":\"inf2\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Father\",\"portuguese\":\"Pai\"}}},\"_row_num\":16},{\"choice_list_name\":\"inf2\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"default\":\"Mothers mother\",\"portuguese\":\"Avó\"}}},\"_row_num\":17},{\"choice_list_name\":\"inf2\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"default\":\"Other family member\",\"portuguese\":\"Outra mebro da familia\"}}},\"_row_num\":18},{\"choice_list_name\":\"inf2\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"default\":\"Other\",\"portuguese\":\"Outra/o\"}}},\"_row_num\":19},{\"choice_list_name\":\"inf2\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"default\":\"No informant found\",\"portuguese\":\"Nenhum informador\"}}},\"_row_num\":20},{\"choice_list_name\":\"inf2\",\"data_value\":\"88\",\"display\":{\"title\":{\"text\":{\"default\":\"Not applicable\",\"portuguese\":\"Não aplicável\"}}},\"_row_num\":21},{\"choice_list_name\":\"inf2\",\"data_value\":\"99\",\"display\":{\"title\":{\"text\":{\"default\":\"Missing\",\"portuguese\":\"Falta informacao\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"inf2\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Mother\",\"default\":\"Mãe\"}}},\"_row_num\":15},{\"choice_list_name\":\"inf2\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Father\",\"default\":\"Pai\"}}},\"_row_num\":16},{\"choice_list_name\":\"inf2\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Mothers mother\",\"default\":\"Avó\"}}},\"_row_num\":17},{\"choice_list_name\":\"inf2\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Other family member\",\"default\":\"Outra mebro da familia\"}}},\"_row_num\":18},{\"choice_list_name\":\"inf2\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outra/o\"}}},\"_row_num\":19},{\"choice_list_name\":\"inf2\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"No informant found\",\"default\":\"Nenhum informador\"}}},\"_row_num\":20},{\"choice_list_name\":\"inf2\",\"data_value\":\"88\",\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicável\"}}},\"_row_num\":21},{\"choice_list_name\":\"inf2\",\"data_value\":\"99\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing\",\"default\":\"Falta informacao\"}}},\"_row_num\":22}]"
       },
       {
         "_partition": "Column",
         "_aspect": "test",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"pregnant\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"default\":\"Still pregnant\",\"portuguese\":\"Ainda grávida\"}}},\"_row_num\":5},{\"choice_list_name\":\"pregnant\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"default\":\"Pregnancy ended\",\"portuguese\":\"Gravidez terminou\"}}},\"_row_num\":6}]"
+        "_value": "[{\"choice_list_name\":\"pregnant\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Still pregnant\",\"default\":\"Ainda grávida\"}}},\"_row_num\":5},{\"choice_list_name\":\"pregnant\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Pregnancy ended\",\"default\":\"Gravidez terminou\"}}},\"_row_num\":6}]"
       },
       {
         "_partition": "FormType",
@@ -3523,7 +3635,7 @@
         "_aspect": "default",
         "_key": "displayName",
         "_type": "object",
-        "_value": "{\"text\":{\"portuguese\":\"Mulher na idade fertil - grávidas\",\"default\":\"Mulher na idade fertil - grávidas\"}}"
+        "_value": "{\"text\":{\"english\":\"Woman in the fertile age - pregnants\",\"default\":\"Mulher na idade fertil - grávidas\"}}"
       }
     ]
   }

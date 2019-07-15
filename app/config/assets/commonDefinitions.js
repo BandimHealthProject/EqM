@@ -8,8 +8,8 @@ window.odkCommonDefinitions = {
         "display": {
           "locale": {
             "text": {
-              "default": "English",
-              "portuguese": "Inglês"
+              "english": "Portuguese",
+              "default": "Português"
             }
           }
         },
@@ -20,13 +20,13 @@ window.odkCommonDefinitions = {
         "display": {
           "locale": {
             "text": {
-              "default": "Portuguese",
-              "portuguese": "Português"
+              "english": "English",
+              "default": "Inglês"
             }
           }
         },
         "_row_num": 7,
-        "name": "portuguese"
+        "name": "english"
       }
     ]
   },
