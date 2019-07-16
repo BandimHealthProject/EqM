@@ -18,7 +18,7 @@ var adate = promptTypes.input_type.extend({
     unknownDay: false,
     unknownMonth: false,
     unknownYear: false,
-    templatePath: "templates/adate.handlebars",
+    templatePath: '../config/tables/TEST/forms/TEST/templates/adate.handlebars',
     
     events: {
         "change select": "modification",
