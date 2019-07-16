@@ -68,7 +68,8 @@
         "display": {
           "prompt": {
             "text": {
-              "english": "Visit interview with {{data.NOMEMAE}} and ID: {{data.ID}}"
+              "english": "Visit interview with {{data.NOMEMAE}} and ID: {{data.ID}}",
+              "default": "Visit interview with {{data.NOMEMAE}} and ID: {{data.ID}}"
             }
           }
         },
@@ -131,390 +132,396 @@
       },
       {
         "type": "async_assign_num_value",
+        "values_list": "linked_pregnant",
+        "name": "GR",
+        "_row_num": 14
+      },
+      {
+        "type": "async_assign_num_value",
         "values_list": "linked_vac1tipo",
         "name": "VAC1TIPO",
-        "_row_num": 14
+        "_row_num": 16
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac1data",
         "name": "VAC1DATA",
-        "_row_num": 15
+        "_row_num": 17
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac1inf",
         "name": "VAC1INF",
-        "_row_num": 16
+        "_row_num": 18
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac2tipo",
         "name": "VAC2TIPO",
-        "_row_num": 17
+        "_row_num": 19
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac2data",
         "name": "VAC2DATA",
-        "_row_num": 18
+        "_row_num": 20
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac2inf",
         "name": "VAC2INF",
-        "_row_num": 19
+        "_row_num": 21
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac3tipo",
         "name": "VAC3TIPO",
-        "_row_num": 20
+        "_row_num": 22
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac3data",
         "name": "VAC3DATA",
-        "_row_num": 21
+        "_row_num": 23
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac3inf",
         "name": "VAC3INF",
-        "_row_num": 22
+        "_row_num": 24
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac4tipo",
         "name": "VAC4TIPO",
-        "_row_num": 23
+        "_row_num": 25
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac4data",
         "name": "VAC4DATA",
-        "_row_num": 24
+        "_row_num": 26
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac4inf",
         "name": "VAC4INF",
-        "_row_num": 25
+        "_row_num": 27
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac5tipo",
         "name": "VAC5TIPO",
-        "_row_num": 26
+        "_row_num": 28
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac5data",
         "name": "VAC5DATA",
-        "_row_num": 27
+        "_row_num": 29
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac5inf",
         "name": "VAC5INF",
-        "_row_num": 28
+        "_row_num": 30
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac6tipo",
         "name": "VAC6TIPO",
-        "_row_num": 29
+        "_row_num": 31
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac6data",
         "name": "VAC6DATA",
-        "_row_num": 30
+        "_row_num": 32
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac6inf",
         "name": "VAC6INF",
-        "_row_num": 31
+        "_row_num": 33
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac7tipo",
         "name": "VAC7TIPO",
-        "_row_num": 32
+        "_row_num": 34
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac7data",
         "name": "VAC7DATA",
-        "_row_num": 33
+        "_row_num": 35
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac7inf",
         "name": "VAC7INF",
-        "_row_num": 34
+        "_row_num": 36
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac8tipo",
         "name": "VAC8TIPO",
-        "_row_num": 35
+        "_row_num": 37
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac8data",
         "name": "VAC8DATA",
-        "_row_num": 36
+        "_row_num": 38
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac8inf",
         "name": "VAC8INF",
-        "_row_num": 37
+        "_row_num": 39
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac9tipo",
         "name": "VAC9TIPO",
-        "_row_num": 38
+        "_row_num": 40
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac9data",
         "name": "VAC9DATA",
-        "_row_num": 39
+        "_row_num": 41
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac9inf",
         "name": "VAC9INF",
-        "_row_num": 40
+        "_row_num": 42
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac10tipo",
         "name": "VAC10TIPO",
-        "_row_num": 41
+        "_row_num": 43
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac10data",
         "name": "VAC10DATA",
-        "_row_num": 42
+        "_row_num": 44
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac10inf",
         "name": "VAC10INF",
-        "_row_num": 43
+        "_row_num": 45
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac11tipo",
         "name": "VAC11TIPO",
-        "_row_num": 44
+        "_row_num": 46
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac11data",
         "name": "VAC11DATA",
-        "_row_num": 45
+        "_row_num": 47
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac11inf",
         "name": "VAC11INF",
-        "_row_num": 46
+        "_row_num": 48
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac12tipo",
         "name": "VAC12TIPO",
-        "_row_num": 47
+        "_row_num": 49
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac12data",
         "name": "VAC12DATA",
-        "_row_num": 48
+        "_row_num": 50
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac12inf",
         "name": "VAC12INF",
-        "_row_num": 49
+        "_row_num": 51
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac13tipo",
         "name": "VAC13TIPO",
-        "_row_num": 50
+        "_row_num": 52
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac13data",
         "name": "VAC13DATA",
-        "_row_num": 51
+        "_row_num": 53
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac13inf",
         "name": "VAC13INF",
-        "_row_num": 52
+        "_row_num": 54
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac14tipo",
         "name": "VAC14TIPO",
-        "_row_num": 53
+        "_row_num": 55
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac14data",
         "name": "VAC14DATA",
-        "_row_num": 54
+        "_row_num": 56
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac14inf",
         "name": "VAC14INF",
-        "_row_num": 55
+        "_row_num": 57
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac15tipo",
         "name": "VAC15TIPO",
-        "_row_num": 56
+        "_row_num": 58
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac15data",
         "name": "VAC15DATA",
-        "_row_num": 57
+        "_row_num": 59
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac15inf",
         "name": "VAC15INF",
-        "_row_num": 58
+        "_row_num": 60
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac16tipo",
         "name": "VAC16TIPO",
-        "_row_num": 59
+        "_row_num": 61
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac16data",
         "name": "VAC16DATA",
-        "_row_num": 60
+        "_row_num": 62
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac16inf",
         "name": "VAC16INF",
-        "_row_num": 61
+        "_row_num": 63
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac17tipo",
         "name": "VAC17TIPO",
-        "_row_num": 62
+        "_row_num": 64
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac17data",
         "name": "VAC17DATA",
-        "_row_num": 63
+        "_row_num": 65
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac17inf",
         "name": "VAC17INF",
-        "_row_num": 64
+        "_row_num": 66
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac18tipo",
         "name": "VAC18TIPO",
-        "_row_num": 65
+        "_row_num": 67
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac18data",
         "name": "VAC18DATA",
-        "_row_num": 66
+        "_row_num": 68
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac18inf",
         "name": "VAC18INF",
-        "_row_num": 67
+        "_row_num": 69
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac19tipo",
         "name": "VAC19TIPO",
-        "_row_num": 68
+        "_row_num": 70
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac19data",
         "name": "VAC19DATA",
-        "_row_num": 69
+        "_row_num": 71
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac19inf",
         "name": "VAC19INF",
-        "_row_num": 70
+        "_row_num": 72
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac20tipo",
         "name": "VAC20TIPO",
-        "_row_num": 71
+        "_row_num": 73
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_vac20data",
         "name": "VAC20DATA",
-        "_row_num": 72
+        "_row_num": 74
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_vac20inf",
         "name": "VAC20INF",
-        "_row_num": 73
+        "_row_num": 75
       },
       {
         "clause": "end screen",
-        "_row_num": 74
+        "_row_num": 76
       },
       {
         "clause": "begin screen",
-        "_row_num": 75
+        "_row_num": 77
       },
       {
         "clause": "if",
         "condition": "data('ESTADOVIS') == '1' || data('ESTADOVIS') == '2'  || data('ESTADOVIS') == '3'",
-        "_row_num": 76
+        "_row_num": 78
       },
       {
         "type": "assign",
         "name": "ESTADO",
         "calculation": "data('ESTADOVIS')",
-        "_row_num": 77
+        "_row_num": 79
       },
       {
         "clause": "end if",
-        "_row_num": 78
+        "_row_num": 80
       },
       {
         "clause": "end screen",
-        "_row_num": 79
+        "_row_num": 81
       }
     ],
     "queries": [
@@ -525,7 +532,7 @@
         "linked_table_id": "MIFVISIT_CORE",
         "selection": "ID = ?",
         "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), LASTVISIT: data('LASTVISIT'), CICA:data('CICA'), CONSENTSIG:data('CONSENTSIG'), VAC1TIPO:data('VAC1TIPO'), VAC1DATA:data('VAC1DATA'), VAC1INF:data('VAC1INF'), VAC2TIPO:data('VAC2TIPO'), VAC2DATA:data('VAC2DATA'), VAC2INF:data('VAC2INF'), VAC3TIPO:data('VAC3TIPO'), VAC3DATA:data('VAC3DATA'), VAC3INF:data('VAC3INF'), VAC4TIPO:data('VAC4TIPO'), VAC4DATA:data('VAC4DATA'), VAC4INF:data('VAC4INF'), VAC5TIPO:data('VAC5TIPO'), VAC5DATA:data('VAC5DATA'), VAC5INF:data('VAC5INF'), VAC6TIPO:data('VAC6TIPO'), VAC6DATA:data('VAC6DATA'), VAC6INF:data('VAC6INF'), VAC7TIPO:data('VAC7TIPO'), VAC7DATA:data('VAC7DATA'), VAC7INF:data('VAC7INF'), VAC8TIPO:data('VAC8TIPO'), VAC8DATA:data('VAC8DATA'), VAC8INF:data('VAC8INF'), VAC9TIPO:data('VAC9TIPO'), VAC9DATA:data('VAC9DATA'), VAC9INF:data('VAC9INF'), VAC10TIPO:data('VAC10TIPO'), VAC10DATA:data('VAC10DATA'), VAC10INF:data('VAC10INF'), VAC11TIPO:data('VAC11TIPO'), VAC11DATA:data('VAC11DATA'), VAC11INF:data('VAC11INF'), VAC12TIPO:data('VAC12TIPO'), VAC12DATA:data('VAC12DATA'), VAC12INF:data('VAC12INF'), VAC13TIPO:data('VAC13TIPO'), VAC13DATA:data('VAC13DATA'), VAC13INF:data('VAC13INF'), VAC14TIPO:data('VAC14TIPO'), VAC14DATA:data('VAC14DATA'), VAC14INF:data('VAC14INF'), VAC15TIPO:data('VAC15TIPO'), VAC15DATA:data('VAC15DATA'), VAC15INF:data('VAC15INF'), VAC16TIPO:data('VAC16TIPO'), VAC16DATA:data('VAC16DATA'), VAC16INF:data('VAC16INF'), VAC17TIPO:data('VAC17TIPO'), VAC17DATA:data('VAC17DATA'), VAC17INF:data('VAC17INF'), VAC18TIPO:data('VAC18TIPO'), VAC18DATA:data('VAC18DATA'), VAC18INF:data('VAC18INF'), VAC19TIPO:data('VAC19TIPO'), VAC19DATA:data('VAC19DATA'), VAC19INF:data('VAC19INF'), VAC20TIPO:data('VAC20TIPO'), VAC20DATA:data('VAC20DATA'), VAC20INF:data('VAC20INF') }",
+        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), LASTVISIT: data('LASTVISIT'), CICA:data('CICA'), CONSENTSIG:data('CONSENTSIG'), GRCORE: data('GR'), VAC1TIPO:data('VAC1TIPO'), VAC1DATA:data('VAC1DATA'), VAC1INF:data('VAC1INF'), VAC2TIPO:data('VAC2TIPO'), VAC2DATA:data('VAC2DATA'), VAC2INF:data('VAC2INF'), VAC3TIPO:data('VAC3TIPO'), VAC3DATA:data('VAC3DATA'), VAC3INF:data('VAC3INF'), VAC4TIPO:data('VAC4TIPO'), VAC4DATA:data('VAC4DATA'), VAC4INF:data('VAC4INF'), VAC5TIPO:data('VAC5TIPO'), VAC5DATA:data('VAC5DATA'), VAC5INF:data('VAC5INF'), VAC6TIPO:data('VAC6TIPO'), VAC6DATA:data('VAC6DATA'), VAC6INF:data('VAC6INF'), VAC7TIPO:data('VAC7TIPO'), VAC7DATA:data('VAC7DATA'), VAC7INF:data('VAC7INF'), VAC8TIPO:data('VAC8TIPO'), VAC8DATA:data('VAC8DATA'), VAC8INF:data('VAC8INF'), VAC9TIPO:data('VAC9TIPO'), VAC9DATA:data('VAC9DATA'), VAC9INF:data('VAC9INF'), VAC10TIPO:data('VAC10TIPO'), VAC10DATA:data('VAC10DATA'), VAC10INF:data('VAC10INF'), VAC11TIPO:data('VAC11TIPO'), VAC11DATA:data('VAC11DATA'), VAC11INF:data('VAC11INF'), VAC12TIPO:data('VAC12TIPO'), VAC12DATA:data('VAC12DATA'), VAC12INF:data('VAC12INF'), VAC13TIPO:data('VAC13TIPO'), VAC13DATA:data('VAC13DATA'), VAC13INF:data('VAC13INF'), VAC14TIPO:data('VAC14TIPO'), VAC14DATA:data('VAC14DATA'), VAC14INF:data('VAC14INF'), VAC15TIPO:data('VAC15TIPO'), VAC15DATA:data('VAC15DATA'), VAC15INF:data('VAC15INF'), VAC16TIPO:data('VAC16TIPO'), VAC16DATA:data('VAC16DATA'), VAC16INF:data('VAC16INF'), VAC17TIPO:data('VAC17TIPO'), VAC17DATA:data('VAC17DATA'), VAC17INF:data('VAC17INF'), VAC18TIPO:data('VAC18TIPO'), VAC18DATA:data('VAC18DATA'), VAC18INF:data('VAC18INF'), VAC19TIPO:data('VAC19TIPO'), VAC19DATA:data('VAC19DATA'), VAC19INF:data('VAC19INF'), VAC20TIPO:data('VAC20TIPO'), VAC20DATA:data('VAC20DATA'), VAC20INF:data('VAC20INF') }",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       },
@@ -539,7 +546,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "CONT",
-        "_row_num": 3
+        "_row_num": 4
       },
       {
         "query_name": "linked_scarstatus",
@@ -551,7 +558,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "CICA",
-        "_row_num": 4
+        "_row_num": 5
       },
       {
         "query_name": "linked_signature",
@@ -563,7 +570,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "CONSENTSIG",
-        "_row_num": 5
+        "_row_num": 6
       },
       {
         "query_name": "linked_consent",
@@ -575,18 +582,6 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "CONSENTFOR",
-        "_row_num": 6
-      },
-      {
-        "query_name": "linked_school",
-        "query_type": "linked_table",
-        "linked_form_id": "MIFVISIT_CORE",
-        "linked_table_id": "MIFVISIT_CORE",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{}",
-        "openRowInitialElementKeyToValueMap": "{}",
-        "fieldName": "CESCO",
         "_row_num": 7
       },
       {
@@ -626,6 +621,18 @@
         "_row_num": 10
       },
       {
+        "query_name": "linked_pregnant",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFVISIT_CORE",
+        "linked_table_id": "MIFVISIT_CORE",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "GR",
+        "_row_num": 11
+      },
+      {
         "query_name": "linked_vac1tipo",
         "query_type": "linked_table",
         "linked_form_id": "MIFVISIT_CORE",
@@ -635,7 +642,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC1TIPO",
-        "_row_num": 11
+        "_row_num": 13
       },
       {
         "query_name": "linked_vac1data",
@@ -647,7 +654,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC1DATA",
-        "_row_num": 12
+        "_row_num": 14
       },
       {
         "query_name": "linked_vac1inf",
@@ -659,7 +666,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC1INF",
-        "_row_num": 13
+        "_row_num": 15
       },
       {
         "query_name": "linked_vac2tipo",
@@ -671,7 +678,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC2TIPO",
-        "_row_num": 14
+        "_row_num": 16
       },
       {
         "query_name": "linked_vac2data",
@@ -683,7 +690,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC2DATA",
-        "_row_num": 15
+        "_row_num": 17
       },
       {
         "query_name": "linked_vac2inf",
@@ -695,7 +702,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC2INF",
-        "_row_num": 16
+        "_row_num": 18
       },
       {
         "query_name": "linked_vac3tipo",
@@ -707,7 +714,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC3TIPO",
-        "_row_num": 17
+        "_row_num": 19
       },
       {
         "query_name": "linked_vac3data",
@@ -719,7 +726,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC3DATA",
-        "_row_num": 18
+        "_row_num": 20
       },
       {
         "query_name": "linked_vac3inf",
@@ -731,7 +738,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC3INF",
-        "_row_num": 19
+        "_row_num": 21
       },
       {
         "query_name": "linked_vac4tipo",
@@ -743,7 +750,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC4TIPO",
-        "_row_num": 20
+        "_row_num": 22
       },
       {
         "query_name": "linked_vac4data",
@@ -755,7 +762,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC4DATA",
-        "_row_num": 21
+        "_row_num": 23
       },
       {
         "query_name": "linked_vac4inf",
@@ -767,7 +774,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC4INF",
-        "_row_num": 22
+        "_row_num": 24
       },
       {
         "query_name": "linked_vac5tipo",
@@ -779,7 +786,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC5TIPO",
-        "_row_num": 23
+        "_row_num": 25
       },
       {
         "query_name": "linked_vac5data",
@@ -791,7 +798,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC5DATA",
-        "_row_num": 24
+        "_row_num": 26
       },
       {
         "query_name": "linked_vac5inf",
@@ -803,7 +810,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC5INF",
-        "_row_num": 25
+        "_row_num": 27
       },
       {
         "query_name": "linked_vac6tipo",
@@ -815,7 +822,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC6TIPO",
-        "_row_num": 26
+        "_row_num": 28
       },
       {
         "query_name": "linked_vac6data",
@@ -827,7 +834,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC6DATA",
-        "_row_num": 27
+        "_row_num": 29
       },
       {
         "query_name": "linked_vac6inf",
@@ -839,7 +846,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC6INF",
-        "_row_num": 28
+        "_row_num": 30
       },
       {
         "query_name": "linked_vac7tipo",
@@ -851,7 +858,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC7TIPO",
-        "_row_num": 29
+        "_row_num": 31
       },
       {
         "query_name": "linked_vac7data",
@@ -863,7 +870,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC7DATA",
-        "_row_num": 30
+        "_row_num": 32
       },
       {
         "query_name": "linked_vac7inf",
@@ -875,7 +882,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC7INF",
-        "_row_num": 31
+        "_row_num": 33
       },
       {
         "query_name": "linked_vac8tipo",
@@ -887,7 +894,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC8TIPO",
-        "_row_num": 32
+        "_row_num": 34
       },
       {
         "query_name": "linked_vac8data",
@@ -899,7 +906,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC8DATA",
-        "_row_num": 33
+        "_row_num": 35
       },
       {
         "query_name": "linked_vac8inf",
@@ -911,7 +918,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC8INF",
-        "_row_num": 34
+        "_row_num": 36
       },
       {
         "query_name": "linked_vac9tipo",
@@ -923,7 +930,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC9TIPO",
-        "_row_num": 35
+        "_row_num": 37
       },
       {
         "query_name": "linked_vac9data",
@@ -935,7 +942,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC9DATA",
-        "_row_num": 36
+        "_row_num": 38
       },
       {
         "query_name": "linked_vac9inf",
@@ -947,7 +954,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC9INF",
-        "_row_num": 37
+        "_row_num": 39
       },
       {
         "query_name": "linked_vac10tipo",
@@ -959,7 +966,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC10TIPO",
-        "_row_num": 38
+        "_row_num": 40
       },
       {
         "query_name": "linked_vac10data",
@@ -971,7 +978,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC10DATA",
-        "_row_num": 39
+        "_row_num": 41
       },
       {
         "query_name": "linked_vac10inf",
@@ -983,7 +990,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC10INF",
-        "_row_num": 40
+        "_row_num": 42
       },
       {
         "query_name": "linked_vac11tipo",
@@ -995,7 +1002,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC11TIPO",
-        "_row_num": 41
+        "_row_num": 43
       },
       {
         "query_name": "linked_vac11data",
@@ -1007,7 +1014,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC11DATA",
-        "_row_num": 42
+        "_row_num": 44
       },
       {
         "query_name": "linked_vac11inf",
@@ -1019,7 +1026,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC11INF",
-        "_row_num": 43
+        "_row_num": 45
       },
       {
         "query_name": "linked_vac12tipo",
@@ -1031,7 +1038,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC12TIPO",
-        "_row_num": 44
+        "_row_num": 46
       },
       {
         "query_name": "linked_vac12data",
@@ -1043,7 +1050,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC12DATA",
-        "_row_num": 45
+        "_row_num": 47
       },
       {
         "query_name": "linked_vac12inf",
@@ -1055,7 +1062,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC12INF",
-        "_row_num": 46
+        "_row_num": 48
       },
       {
         "query_name": "linked_vac13tipo",
@@ -1067,7 +1074,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC13TIPO",
-        "_row_num": 47
+        "_row_num": 49
       },
       {
         "query_name": "linked_vac13data",
@@ -1079,7 +1086,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC13DATA",
-        "_row_num": 48
+        "_row_num": 50
       },
       {
         "query_name": "linked_vac13inf",
@@ -1091,7 +1098,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC13INF",
-        "_row_num": 49
+        "_row_num": 51
       },
       {
         "query_name": "linked_vac14tipo",
@@ -1103,7 +1110,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC14TIPO",
-        "_row_num": 50
+        "_row_num": 52
       },
       {
         "query_name": "linked_vac14data",
@@ -1115,7 +1122,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC14DATA",
-        "_row_num": 51
+        "_row_num": 53
       },
       {
         "query_name": "linked_vac14inf",
@@ -1127,7 +1134,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC14INF",
-        "_row_num": 52
+        "_row_num": 54
       },
       {
         "query_name": "linked_vac15tipo",
@@ -1139,7 +1146,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC15TIPO",
-        "_row_num": 53
+        "_row_num": 55
       },
       {
         "query_name": "linked_vac15data",
@@ -1151,7 +1158,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC15DATA",
-        "_row_num": 54
+        "_row_num": 56
       },
       {
         "query_name": "linked_vac15inf",
@@ -1163,7 +1170,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC15INF",
-        "_row_num": 55
+        "_row_num": 57
       },
       {
         "query_name": "linked_vac16tipo",
@@ -1175,7 +1182,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC16TIPO",
-        "_row_num": 56
+        "_row_num": 58
       },
       {
         "query_name": "linked_vac16data",
@@ -1187,7 +1194,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC16DATA",
-        "_row_num": 57
+        "_row_num": 59
       },
       {
         "query_name": "linked_vac16inf",
@@ -1199,7 +1206,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC16INF",
-        "_row_num": 58
+        "_row_num": 60
       },
       {
         "query_name": "linked_vac17tipo",
@@ -1211,7 +1218,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC17TIPO",
-        "_row_num": 59
+        "_row_num": 61
       },
       {
         "query_name": "linked_vac17data",
@@ -1223,7 +1230,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC17DATA",
-        "_row_num": 60
+        "_row_num": 62
       },
       {
         "query_name": "linked_vac17inf",
@@ -1235,7 +1242,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC17INF",
-        "_row_num": 61
+        "_row_num": 63
       },
       {
         "query_name": "linked_vac18tipo",
@@ -1247,7 +1254,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC18TIPO",
-        "_row_num": 62
+        "_row_num": 64
       },
       {
         "query_name": "linked_vac18data",
@@ -1259,7 +1266,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC18DATA",
-        "_row_num": 63
+        "_row_num": 65
       },
       {
         "query_name": "linked_vac18inf",
@@ -1271,7 +1278,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC18INF",
-        "_row_num": 64
+        "_row_num": 66
       },
       {
         "query_name": "linked_vac19tipo",
@@ -1283,7 +1290,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC19TIPO",
-        "_row_num": 65
+        "_row_num": 67
       },
       {
         "query_name": "linked_vac19data",
@@ -1295,7 +1302,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC19DATA",
-        "_row_num": 66
+        "_row_num": 68
       },
       {
         "query_name": "linked_vac19inf",
@@ -1307,7 +1314,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC19INF",
-        "_row_num": 67
+        "_row_num": 69
       },
       {
         "query_name": "linked_vac20tipo",
@@ -1319,7 +1326,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC20TIPO",
-        "_row_num": 68
+        "_row_num": 70
       },
       {
         "query_name": "linked_vac20data",
@@ -1331,7 +1338,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC20DATA",
-        "_row_num": 69
+        "_row_num": 71
       },
       {
         "query_name": "linked_vac20inf",
@@ -1343,20 +1350,18 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC20INF",
-        "_row_num": 70
+        "_row_num": 72
       }
     ],
     "prompt_types": [
       {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "_row_num": 2
       },
       {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "_row_num": 3
       },
       {
@@ -2127,280 +2132,292 @@
         "_row_num": 10
       },
       {
-        "name": "EXITDATA",
-        "type": "custom_date",
-        "isSessionVariable": false,
-        "_row_num": 11
-      },
-      {
-        "name": "EXITPRECIS",
-        "type": "integer",
-        "isSessionVariable": false,
-        "_row_num": 12
-      },
-      {
         "name": "ETN",
         "type": "assign",
         "isSessionVariable": false,
-        "_row_num": 13
+        "_row_num": 11
       },
       {
         "name": "etn1",
         "type": "select_one_dropdown",
         "isSessionVariable": true,
-        "_row_num": 14
+        "_row_num": 12
       },
       {
         "name": "etn2",
         "type": "select_one_dropdown",
         "isSessionVariable": true,
-        "_row_num": 15
+        "_row_num": 13
       },
       {
         "name": "FAL",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 16
+        "_row_num": 14
       },
       {
         "name": "FALNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 17
+        "_row_num": 15
       },
       {
         "name": "FAN",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 18
+        "_row_num": 16
       },
       {
         "name": "FOGAO",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 19
+        "_row_num": 17
       },
       {
         "name": "GEM",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 20
+        "_row_num": 18
       },
       {
         "name": "GEMEOS",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 21
+        "_row_num": 19
       },
       {
         "name": "ID",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 22
+        "_row_num": 20
       },
       {
         "name": "IDADE",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 23
+        "_row_num": 21
       },
       {
         "name": "IDFAN",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 24
+        "_row_num": 22
       },
       {
         "name": "IDFANNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 25
+        "_row_num": 23
       },
       {
         "name": "INF",
         "type": "assign",
         "isSessionVariable": false,
-        "_row_num": 26
+        "_row_num": 24
       },
       {
         "name": "inf1",
         "type": "select_one",
         "isSessionVariable": true,
-        "_row_num": 27
+        "_row_num": 25
       },
       {
         "name": "inf2",
         "type": "select_one",
         "isSessionVariable": true,
-        "_row_num": 28
+        "_row_num": 26
       },
       {
         "name": "MIFDNASC",
         "type": "custom_date",
         "isSessionVariable": false,
-        "_row_num": 29
+        "_row_num": 27
       },
       {
         "name": "MIFDNASCNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 30
+        "_row_num": 28
       },
       {
         "name": "MIFMAE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 31
+        "_row_num": 29
       },
       {
         "name": "MIFMAENS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 32
+        "_row_num": 30
       },
       {
         "name": "MIFMONDE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 33
+        "_row_num": 31
       },
       {
         "name": "MIFMONDENS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 34
+        "_row_num": 32
       },
       {
         "name": "MIFMORAVA",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 35
+        "_row_num": 33
       },
       {
         "name": "MOR",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 36
+        "_row_num": 34
       },
       {
         "name": "MUL",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 37
+        "_row_num": 35
       },
       {
         "name": "NM",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 38
+        "_row_num": 36
       },
       {
         "name": "NMNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 39
+        "_row_num": 37
       },
       {
         "name": "NOMEMAE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 40
+        "_row_num": 38
       },
       {
         "name": "PART",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 41
+        "_row_num": 39
       },
       {
         "name": "PARTNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 42
+        "_row_num": 40
       },
       {
         "name": "REG",
         "type": "select_one_dropdown",
         "isSessionVariable": false,
-        "_row_num": 43
+        "_row_num": 41
       },
       {
         "name": "REGDIA",
         "type": "date",
         "isSessionVariable": false,
-        "_row_num": 44
+        "_row_num": 42
       },
       {
         "name": "RELA1",
         "type": "select_one_dropdown",
         "isSessionVariable": false,
-        "_row_num": 45
+        "_row_num": 43
       },
       {
         "name": "RELA1NOME",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 46
+        "_row_num": 44
       },
       {
         "name": "TAB",
         "type": "select_one_dropdown",
         "isSessionVariable": false,
-        "_row_num": 47
+        "_row_num": 45
       },
       {
         "name": "VACNOH",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 48
+        "_row_num": 46
+      },
+      {
+        "name": "VACNOHCERTO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 47
       },
       {
         "name": "VACNOHNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 49
+        "_row_num": 48
       },
       {
         "name": "VIVO",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 50
+        "_row_num": 49
       },
       {
         "name": "VIVONS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 51
-      },
-      {
-        "name": "LASTVISIT",
-        "type": "async_assign_date",
-        "isSessionVariable": false,
-        "_row_num": 56
-      },
-      {
-        "name": "CONSENTFOR",
-        "type": "async_assign_num_value",
-        "isSessionVariable": false,
-        "_row_num": 57
-      },
-      {
-        "name": "CONSENTSIG",
-        "type": "async_assign_num_value",
-        "isSessionVariable": false,
-        "_row_num": 58
-      },
-      {
-        "name": "ESTADOVIS",
-        "type": "async_assign_num_value",
-        "isSessionVariable": false,
-        "_row_num": 59
+        "_row_num": 50
       },
       {
         "name": "CICA",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 61
+        "_row_num": 53
+      },
+      {
+        "name": "CONSENTFOR",
+        "type": "async_assign_num_value",
+        "isSessionVariable": false,
+        "_row_num": 54
+      },
+      {
+        "name": "CONSENTSIG",
+        "type": "async_assign_num_value",
+        "isSessionVariable": false,
+        "_row_num": 55
+      },
+      {
+        "name": "ESTADOVIS",
+        "type": "async_assign_num_value",
+        "isSessionVariable": false,
+        "_row_num": 56
+      },
+      {
+        "name": "EXITDATA",
+        "type": "async_assign_date",
+        "isSessionVariable": false,
+        "_row_num": 57
+      },
+      {
+        "name": "EXITPRECIS",
+        "type": "async_assign_num_value",
+        "isSessionVariable": false,
+        "_row_num": 58
+      },
+      {
+        "name": "GR",
+        "type": "async_assign_num_value",
+        "isSessionVariable": false,
+        "_row_num": 59
+      },
+      {
+        "name": "LASTVISIT",
+        "type": "async_assign_date",
+        "isSessionVariable": false,
+        "_row_num": 60
       },
       {
         "name": "VAC1TIPO",
@@ -3613,7 +3630,7 @@
         "linked_table_id": "MIFVISIT_CORE",
         "selection": "ID = ?",
         "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), LASTVISIT: data('LASTVISIT'), CICA:data('CICA'), CONSENTSIG:data('CONSENTSIG'), VAC1TIPO:data('VAC1TIPO'), VAC1DATA:data('VAC1DATA'), VAC1INF:data('VAC1INF'), VAC2TIPO:data('VAC2TIPO'), VAC2DATA:data('VAC2DATA'), VAC2INF:data('VAC2INF'), VAC3TIPO:data('VAC3TIPO'), VAC3DATA:data('VAC3DATA'), VAC3INF:data('VAC3INF'), VAC4TIPO:data('VAC4TIPO'), VAC4DATA:data('VAC4DATA'), VAC4INF:data('VAC4INF'), VAC5TIPO:data('VAC5TIPO'), VAC5DATA:data('VAC5DATA'), VAC5INF:data('VAC5INF'), VAC6TIPO:data('VAC6TIPO'), VAC6DATA:data('VAC6DATA'), VAC6INF:data('VAC6INF'), VAC7TIPO:data('VAC7TIPO'), VAC7DATA:data('VAC7DATA'), VAC7INF:data('VAC7INF'), VAC8TIPO:data('VAC8TIPO'), VAC8DATA:data('VAC8DATA'), VAC8INF:data('VAC8INF'), VAC9TIPO:data('VAC9TIPO'), VAC9DATA:data('VAC9DATA'), VAC9INF:data('VAC9INF'), VAC10TIPO:data('VAC10TIPO'), VAC10DATA:data('VAC10DATA'), VAC10INF:data('VAC10INF'), VAC11TIPO:data('VAC11TIPO'), VAC11DATA:data('VAC11DATA'), VAC11INF:data('VAC11INF'), VAC12TIPO:data('VAC12TIPO'), VAC12DATA:data('VAC12DATA'), VAC12INF:data('VAC12INF'), VAC13TIPO:data('VAC13TIPO'), VAC13DATA:data('VAC13DATA'), VAC13INF:data('VAC13INF'), VAC14TIPO:data('VAC14TIPO'), VAC14DATA:data('VAC14DATA'), VAC14INF:data('VAC14INF'), VAC15TIPO:data('VAC15TIPO'), VAC15DATA:data('VAC15DATA'), VAC15INF:data('VAC15INF'), VAC16TIPO:data('VAC16TIPO'), VAC16DATA:data('VAC16DATA'), VAC16INF:data('VAC16INF'), VAC17TIPO:data('VAC17TIPO'), VAC17DATA:data('VAC17DATA'), VAC17INF:data('VAC17INF'), VAC18TIPO:data('VAC18TIPO'), VAC18DATA:data('VAC18DATA'), VAC18INF:data('VAC18INF'), VAC19TIPO:data('VAC19TIPO'), VAC19DATA:data('VAC19DATA'), VAC19INF:data('VAC19INF'), VAC20TIPO:data('VAC20TIPO'), VAC20DATA:data('VAC20DATA'), VAC20INF:data('VAC20INF') }",
+        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), LASTVISIT: data('LASTVISIT'), CICA:data('CICA'), CONSENTSIG:data('CONSENTSIG'), GRCORE: data('GR'), VAC1TIPO:data('VAC1TIPO'), VAC1DATA:data('VAC1DATA'), VAC1INF:data('VAC1INF'), VAC2TIPO:data('VAC2TIPO'), VAC2DATA:data('VAC2DATA'), VAC2INF:data('VAC2INF'), VAC3TIPO:data('VAC3TIPO'), VAC3DATA:data('VAC3DATA'), VAC3INF:data('VAC3INF'), VAC4TIPO:data('VAC4TIPO'), VAC4DATA:data('VAC4DATA'), VAC4INF:data('VAC4INF'), VAC5TIPO:data('VAC5TIPO'), VAC5DATA:data('VAC5DATA'), VAC5INF:data('VAC5INF'), VAC6TIPO:data('VAC6TIPO'), VAC6DATA:data('VAC6DATA'), VAC6INF:data('VAC6INF'), VAC7TIPO:data('VAC7TIPO'), VAC7DATA:data('VAC7DATA'), VAC7INF:data('VAC7INF'), VAC8TIPO:data('VAC8TIPO'), VAC8DATA:data('VAC8DATA'), VAC8INF:data('VAC8INF'), VAC9TIPO:data('VAC9TIPO'), VAC9DATA:data('VAC9DATA'), VAC9INF:data('VAC9INF'), VAC10TIPO:data('VAC10TIPO'), VAC10DATA:data('VAC10DATA'), VAC10INF:data('VAC10INF'), VAC11TIPO:data('VAC11TIPO'), VAC11DATA:data('VAC11DATA'), VAC11INF:data('VAC11INF'), VAC12TIPO:data('VAC12TIPO'), VAC12DATA:data('VAC12DATA'), VAC12INF:data('VAC12INF'), VAC13TIPO:data('VAC13TIPO'), VAC13DATA:data('VAC13DATA'), VAC13INF:data('VAC13INF'), VAC14TIPO:data('VAC14TIPO'), VAC14DATA:data('VAC14DATA'), VAC14INF:data('VAC14INF'), VAC15TIPO:data('VAC15TIPO'), VAC15DATA:data('VAC15DATA'), VAC15INF:data('VAC15INF'), VAC16TIPO:data('VAC16TIPO'), VAC16DATA:data('VAC16DATA'), VAC16INF:data('VAC16INF'), VAC17TIPO:data('VAC17TIPO'), VAC17DATA:data('VAC17DATA'), VAC17INF:data('VAC17INF'), VAC18TIPO:data('VAC18TIPO'), VAC18DATA:data('VAC18DATA'), VAC18INF:data('VAC18INF'), VAC19TIPO:data('VAC19TIPO'), VAC19DATA:data('VAC19DATA'), VAC19INF:data('VAC19INF'), VAC20TIPO:data('VAC20TIPO'), VAC20DATA:data('VAC20DATA'), VAC20INF:data('VAC20INF') }",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       },
@@ -3627,7 +3644,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "CONT",
-        "_row_num": 3
+        "_row_num": 4
       },
       "linked_scarstatus": {
         "query_name": "linked_scarstatus",
@@ -3639,7 +3656,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "CICA",
-        "_row_num": 4
+        "_row_num": 5
       },
       "linked_signature": {
         "query_name": "linked_signature",
@@ -3651,7 +3668,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "CONSENTSIG",
-        "_row_num": 5
+        "_row_num": 6
       },
       "linked_consent": {
         "query_name": "linked_consent",
@@ -3663,18 +3680,6 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "CONSENTFOR",
-        "_row_num": 6
-      },
-      "linked_school": {
-        "query_name": "linked_school",
-        "query_type": "linked_table",
-        "linked_form_id": "MIFVISIT_CORE",
-        "linked_table_id": "MIFVISIT_CORE",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{}",
-        "openRowInitialElementKeyToValueMap": "{}",
-        "fieldName": "CESCO",
         "_row_num": 7
       },
       "linked_status": {
@@ -3713,6 +3718,18 @@
         "fieldName": "EXITPRECIS",
         "_row_num": 10
       },
+      "linked_pregnant": {
+        "query_name": "linked_pregnant",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFVISIT_CORE",
+        "linked_table_id": "MIFVISIT_CORE",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "GR",
+        "_row_num": 11
+      },
       "linked_vac1tipo": {
         "query_name": "linked_vac1tipo",
         "query_type": "linked_table",
@@ -3723,7 +3740,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC1TIPO",
-        "_row_num": 11
+        "_row_num": 13
       },
       "linked_vac1data": {
         "query_name": "linked_vac1data",
@@ -3735,7 +3752,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC1DATA",
-        "_row_num": 12
+        "_row_num": 14
       },
       "linked_vac1inf": {
         "query_name": "linked_vac1inf",
@@ -3747,7 +3764,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC1INF",
-        "_row_num": 13
+        "_row_num": 15
       },
       "linked_vac2tipo": {
         "query_name": "linked_vac2tipo",
@@ -3759,7 +3776,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC2TIPO",
-        "_row_num": 14
+        "_row_num": 16
       },
       "linked_vac2data": {
         "query_name": "linked_vac2data",
@@ -3771,7 +3788,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC2DATA",
-        "_row_num": 15
+        "_row_num": 17
       },
       "linked_vac2inf": {
         "query_name": "linked_vac2inf",
@@ -3783,7 +3800,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC2INF",
-        "_row_num": 16
+        "_row_num": 18
       },
       "linked_vac3tipo": {
         "query_name": "linked_vac3tipo",
@@ -3795,7 +3812,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC3TIPO",
-        "_row_num": 17
+        "_row_num": 19
       },
       "linked_vac3data": {
         "query_name": "linked_vac3data",
@@ -3807,7 +3824,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC3DATA",
-        "_row_num": 18
+        "_row_num": 20
       },
       "linked_vac3inf": {
         "query_name": "linked_vac3inf",
@@ -3819,7 +3836,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC3INF",
-        "_row_num": 19
+        "_row_num": 21
       },
       "linked_vac4tipo": {
         "query_name": "linked_vac4tipo",
@@ -3831,7 +3848,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC4TIPO",
-        "_row_num": 20
+        "_row_num": 22
       },
       "linked_vac4data": {
         "query_name": "linked_vac4data",
@@ -3843,7 +3860,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC4DATA",
-        "_row_num": 21
+        "_row_num": 23
       },
       "linked_vac4inf": {
         "query_name": "linked_vac4inf",
@@ -3855,7 +3872,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC4INF",
-        "_row_num": 22
+        "_row_num": 24
       },
       "linked_vac5tipo": {
         "query_name": "linked_vac5tipo",
@@ -3867,7 +3884,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC5TIPO",
-        "_row_num": 23
+        "_row_num": 25
       },
       "linked_vac5data": {
         "query_name": "linked_vac5data",
@@ -3879,7 +3896,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC5DATA",
-        "_row_num": 24
+        "_row_num": 26
       },
       "linked_vac5inf": {
         "query_name": "linked_vac5inf",
@@ -3891,7 +3908,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC5INF",
-        "_row_num": 25
+        "_row_num": 27
       },
       "linked_vac6tipo": {
         "query_name": "linked_vac6tipo",
@@ -3903,7 +3920,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC6TIPO",
-        "_row_num": 26
+        "_row_num": 28
       },
       "linked_vac6data": {
         "query_name": "linked_vac6data",
@@ -3915,7 +3932,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC6DATA",
-        "_row_num": 27
+        "_row_num": 29
       },
       "linked_vac6inf": {
         "query_name": "linked_vac6inf",
@@ -3927,7 +3944,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC6INF",
-        "_row_num": 28
+        "_row_num": 30
       },
       "linked_vac7tipo": {
         "query_name": "linked_vac7tipo",
@@ -3939,7 +3956,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC7TIPO",
-        "_row_num": 29
+        "_row_num": 31
       },
       "linked_vac7data": {
         "query_name": "linked_vac7data",
@@ -3951,7 +3968,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC7DATA",
-        "_row_num": 30
+        "_row_num": 32
       },
       "linked_vac7inf": {
         "query_name": "linked_vac7inf",
@@ -3963,7 +3980,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC7INF",
-        "_row_num": 31
+        "_row_num": 33
       },
       "linked_vac8tipo": {
         "query_name": "linked_vac8tipo",
@@ -3975,7 +3992,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC8TIPO",
-        "_row_num": 32
+        "_row_num": 34
       },
       "linked_vac8data": {
         "query_name": "linked_vac8data",
@@ -3987,7 +4004,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC8DATA",
-        "_row_num": 33
+        "_row_num": 35
       },
       "linked_vac8inf": {
         "query_name": "linked_vac8inf",
@@ -3999,7 +4016,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC8INF",
-        "_row_num": 34
+        "_row_num": 36
       },
       "linked_vac9tipo": {
         "query_name": "linked_vac9tipo",
@@ -4011,7 +4028,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC9TIPO",
-        "_row_num": 35
+        "_row_num": 37
       },
       "linked_vac9data": {
         "query_name": "linked_vac9data",
@@ -4023,7 +4040,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC9DATA",
-        "_row_num": 36
+        "_row_num": 38
       },
       "linked_vac9inf": {
         "query_name": "linked_vac9inf",
@@ -4035,7 +4052,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC9INF",
-        "_row_num": 37
+        "_row_num": 39
       },
       "linked_vac10tipo": {
         "query_name": "linked_vac10tipo",
@@ -4047,7 +4064,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC10TIPO",
-        "_row_num": 38
+        "_row_num": 40
       },
       "linked_vac10data": {
         "query_name": "linked_vac10data",
@@ -4059,7 +4076,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC10DATA",
-        "_row_num": 39
+        "_row_num": 41
       },
       "linked_vac10inf": {
         "query_name": "linked_vac10inf",
@@ -4071,7 +4088,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC10INF",
-        "_row_num": 40
+        "_row_num": 42
       },
       "linked_vac11tipo": {
         "query_name": "linked_vac11tipo",
@@ -4083,7 +4100,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC11TIPO",
-        "_row_num": 41
+        "_row_num": 43
       },
       "linked_vac11data": {
         "query_name": "linked_vac11data",
@@ -4095,7 +4112,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC11DATA",
-        "_row_num": 42
+        "_row_num": 44
       },
       "linked_vac11inf": {
         "query_name": "linked_vac11inf",
@@ -4107,7 +4124,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC11INF",
-        "_row_num": 43
+        "_row_num": 45
       },
       "linked_vac12tipo": {
         "query_name": "linked_vac12tipo",
@@ -4119,7 +4136,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC12TIPO",
-        "_row_num": 44
+        "_row_num": 46
       },
       "linked_vac12data": {
         "query_name": "linked_vac12data",
@@ -4131,7 +4148,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC12DATA",
-        "_row_num": 45
+        "_row_num": 47
       },
       "linked_vac12inf": {
         "query_name": "linked_vac12inf",
@@ -4143,7 +4160,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC12INF",
-        "_row_num": 46
+        "_row_num": 48
       },
       "linked_vac13tipo": {
         "query_name": "linked_vac13tipo",
@@ -4155,7 +4172,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC13TIPO",
-        "_row_num": 47
+        "_row_num": 49
       },
       "linked_vac13data": {
         "query_name": "linked_vac13data",
@@ -4167,7 +4184,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC13DATA",
-        "_row_num": 48
+        "_row_num": 50
       },
       "linked_vac13inf": {
         "query_name": "linked_vac13inf",
@@ -4179,7 +4196,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC13INF",
-        "_row_num": 49
+        "_row_num": 51
       },
       "linked_vac14tipo": {
         "query_name": "linked_vac14tipo",
@@ -4191,7 +4208,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC14TIPO",
-        "_row_num": 50
+        "_row_num": 52
       },
       "linked_vac14data": {
         "query_name": "linked_vac14data",
@@ -4203,7 +4220,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC14DATA",
-        "_row_num": 51
+        "_row_num": 53
       },
       "linked_vac14inf": {
         "query_name": "linked_vac14inf",
@@ -4215,7 +4232,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC14INF",
-        "_row_num": 52
+        "_row_num": 54
       },
       "linked_vac15tipo": {
         "query_name": "linked_vac15tipo",
@@ -4227,7 +4244,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC15TIPO",
-        "_row_num": 53
+        "_row_num": 55
       },
       "linked_vac15data": {
         "query_name": "linked_vac15data",
@@ -4239,7 +4256,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC15DATA",
-        "_row_num": 54
+        "_row_num": 56
       },
       "linked_vac15inf": {
         "query_name": "linked_vac15inf",
@@ -4251,7 +4268,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC15INF",
-        "_row_num": 55
+        "_row_num": 57
       },
       "linked_vac16tipo": {
         "query_name": "linked_vac16tipo",
@@ -4263,7 +4280,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC16TIPO",
-        "_row_num": 56
+        "_row_num": 58
       },
       "linked_vac16data": {
         "query_name": "linked_vac16data",
@@ -4275,7 +4292,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC16DATA",
-        "_row_num": 57
+        "_row_num": 59
       },
       "linked_vac16inf": {
         "query_name": "linked_vac16inf",
@@ -4287,7 +4304,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC16INF",
-        "_row_num": 58
+        "_row_num": 60
       },
       "linked_vac17tipo": {
         "query_name": "linked_vac17tipo",
@@ -4299,7 +4316,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC17TIPO",
-        "_row_num": 59
+        "_row_num": 61
       },
       "linked_vac17data": {
         "query_name": "linked_vac17data",
@@ -4311,7 +4328,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC17DATA",
-        "_row_num": 60
+        "_row_num": 62
       },
       "linked_vac17inf": {
         "query_name": "linked_vac17inf",
@@ -4323,7 +4340,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC17INF",
-        "_row_num": 61
+        "_row_num": 63
       },
       "linked_vac18tipo": {
         "query_name": "linked_vac18tipo",
@@ -4335,7 +4352,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC18TIPO",
-        "_row_num": 62
+        "_row_num": 64
       },
       "linked_vac18data": {
         "query_name": "linked_vac18data",
@@ -4347,7 +4364,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC18DATA",
-        "_row_num": 63
+        "_row_num": 65
       },
       "linked_vac18inf": {
         "query_name": "linked_vac18inf",
@@ -4359,7 +4376,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC18INF",
-        "_row_num": 64
+        "_row_num": 66
       },
       "linked_vac19tipo": {
         "query_name": "linked_vac19tipo",
@@ -4371,7 +4388,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC19TIPO",
-        "_row_num": 65
+        "_row_num": 67
       },
       "linked_vac19data": {
         "query_name": "linked_vac19data",
@@ -4383,7 +4400,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC19DATA",
-        "_row_num": 66
+        "_row_num": 68
       },
       "linked_vac19inf": {
         "query_name": "linked_vac19inf",
@@ -4395,7 +4412,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC19INF",
-        "_row_num": 67
+        "_row_num": 69
       },
       "linked_vac20tipo": {
         "query_name": "linked_vac20tipo",
@@ -4407,7 +4424,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC20TIPO",
-        "_row_num": 68
+        "_row_num": 70
       },
       "linked_vac20data": {
         "query_name": "linked_vac20data",
@@ -4419,7 +4436,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC20DATA",
-        "_row_num": 69
+        "_row_num": 71
       },
       "linked_vac20inf": {
         "query_name": "linked_vac20inf",
@@ -4431,7 +4448,7 @@
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VAC20INF",
-        "_row_num": 70
+        "_row_num": 72
       }
     },
     "calculates": {},
@@ -4543,49 +4560,10 @@
         "isSessionVariable": false,
         "elementKey": "ESTADO"
       },
-      "EXITDATA": {
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "valuesList": "linked_exitdate",
-        "elementType": "date",
-        "_row_num": 4,
-        "__rowNum__": 3,
-        "_defn": [
-          {
-            "_row_num": 12,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 11,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "EXITDATA"
-      },
-      "EXITPRECIS": {
-        "prompt_type_name": "async_assign_num_value",
-        "type": "integer",
-        "comment": "Updates CICA variable",
-        "valuesList": "linked_exitdateprec",
-        "_defn": [
-          {
-            "_row_num": 13,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 12,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "EXITPRECIS"
-      },
       "ETN": {
         "_defn": [
           {
-            "_row_num": 13,
+            "_row_num": 11,
             "section_name": "model"
           }
         ],
@@ -4597,7 +4575,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 12,
             "section_name": "model"
           }
         ],
@@ -4608,7 +4586,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 13,
             "section_name": "model"
           }
         ],
@@ -4619,7 +4597,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 14,
             "section_name": "model"
           }
         ],
@@ -4634,7 +4612,7 @@
         },
         "_defn": [
           {
-            "_row_num": 17,
+            "_row_num": 15,
             "section_name": "model"
           }
         ],
@@ -4645,7 +4623,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
@@ -4656,7 +4634,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 17,
             "section_name": "model"
           }
         ],
@@ -4667,7 +4645,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 20,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -4678,7 +4656,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 19,
             "section_name": "model"
           }
         ],
@@ -4689,7 +4667,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 20,
             "section_name": "model"
           }
         ],
@@ -4700,7 +4678,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
@@ -4711,7 +4689,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -4726,7 +4704,7 @@
         },
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -4736,7 +4714,7 @@
       "INF": {
         "_defn": [
           {
-            "_row_num": 26,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -4748,7 +4726,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -4759,7 +4737,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 28,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -4775,7 +4753,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 29,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -4790,7 +4768,7 @@
         },
         "_defn": [
           {
-            "_row_num": 30,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -4801,7 +4779,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 31,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -4816,7 +4794,7 @@
         },
         "_defn": [
           {
-            "_row_num": 32,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -4827,7 +4805,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -4842,7 +4820,7 @@
         },
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -4853,7 +4831,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 35,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -4864,7 +4842,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 36,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -4875,7 +4853,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 37,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -4886,7 +4864,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 38,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -4901,7 +4879,7 @@
         },
         "_defn": [
           {
-            "_row_num": 39,
+            "_row_num": 37,
             "section_name": "model"
           }
         ],
@@ -4912,7 +4890,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 40,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
@@ -4923,7 +4901,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 39,
             "section_name": "model"
           }
         ],
@@ -4938,7 +4916,7 @@
         },
         "_defn": [
           {
-            "_row_num": 42,
+            "_row_num": 40,
             "section_name": "model"
           }
         ],
@@ -4949,7 +4927,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 43,
+            "_row_num": 41,
             "section_name": "model"
           }
         ],
@@ -4961,7 +4939,7 @@
         "elementType": "date",
         "_defn": [
           {
-            "_row_num": 44,
+            "_row_num": 42,
             "section_name": "model"
           }
         ],
@@ -4972,7 +4950,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 45,
+            "_row_num": 43,
             "section_name": "model"
           }
         ],
@@ -4983,7 +4961,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 46,
+            "_row_num": 44,
             "section_name": "model"
           }
         ],
@@ -4994,7 +4972,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 47,
+            "_row_num": 45,
             "section_name": "model"
           }
         ],
@@ -5005,12 +4983,23 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 48,
+            "_row_num": 46,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "VACNOH"
+      },
+      "VACNOHCERTO": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 47,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VACNOHCERTO"
       },
       "VACNOHNS": {
         "type": "array",
@@ -5020,7 +5009,7 @@
         },
         "_defn": [
           {
-            "_row_num": 49,
+            "_row_num": 48,
             "section_name": "model"
           }
         ],
@@ -5031,7 +5020,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 50,
+            "_row_num": 49,
             "section_name": "model"
           }
         ],
@@ -5046,97 +5035,16 @@
         },
         "_defn": [
           {
-            "_row_num": 51,
+            "_row_num": 50,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "VIVONS"
       },
-      "LASTVISIT": {
-        "prompt_type_name": "async_assign_date",
-        "type": "date",
-        "comment": "Updates LASTVISIT variable",
-        "valuesList": "linked_visitdate",
-        "_row_num": 2,
-        "__rowNum__": 1,
-        "_defn": [
-          {
-            "_row_num": 7,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 56,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "LASTVISIT"
-      },
-      "CONSENTFOR": {
-        "prompt_type_name": "async_assign_num_value",
-        "type": "integer",
-        "comment": "Updates CICA variable",
-        "valuesList": "linked_consent",
-        "_row_num": 3,
-        "__rowNum__": 2,
-        "_defn": [
-          {
-            "_row_num": 10,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 57,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CONSENTFOR"
-      },
-      "CONSENTSIG": {
-        "prompt_type_name": "async_assign_num_value",
-        "type": "integer",
-        "comment": "Updates CICA variable",
-        "valuesList": "linked_signature",
-        "_row_num": 3,
-        "__rowNum__": 2,
-        "_defn": [
-          {
-            "_row_num": 9,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 58,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CONSENTSIG"
-      },
-      "ESTADOVIS": {
-        "prompt_type_name": "async_assign_num_value",
-        "type": "integer",
-        "comment": "Updates CICA variable",
-        "valuesList": "linked_status",
-        "_row_num": 3,
-        "__rowNum__": 2,
-        "_defn": [
-          {
-            "_row_num": 11,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 59,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "ESTADOVIS"
-      },
       "CICA": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_scarstatus",
         "_row_num": 3,
         "__rowNum__": 2,
@@ -5146,23 +5054,155 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 61,
+            "_row_num": 53,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "CICA"
       },
-      "VAC1TIPO": {
+      "CONSENTFOR": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
-        "valuesList": "linked_vac1tipo",
+        "valuesList": "linked_consent",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 10,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 54,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONSENTFOR"
+      },
+      "CONSENTSIG": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_signature",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 9,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 55,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONSENTSIG"
+      },
+      "ESTADOVIS": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_status",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 56,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ESTADOVIS"
+      },
+      "EXITDATA": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_exitdate",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 57,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITDATA"
+      },
+      "EXITPRECIS": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_exitdateprec",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 13,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 58,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITPRECIS"
+      },
+      "GR": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_pregnant",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 14,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 59,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "GR"
+      },
+      "LASTVISIT": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_visitdate",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 7,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 60,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "LASTVISIT"
+      },
+      "VAC1TIPO": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_vac1tipo",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 16,
             "section_name": "survey"
           },
           {
@@ -5176,13 +5216,12 @@
       "VAC1DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac1data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 17,
             "section_name": "survey"
           },
           {
@@ -5196,13 +5235,12 @@
       "VAC1INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac1inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 18,
             "section_name": "survey"
           },
           {
@@ -5216,13 +5254,12 @@
       "VAC2TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac2tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 17,
+            "_row_num": 19,
             "section_name": "survey"
           },
           {
@@ -5236,13 +5273,12 @@
       "VAC2DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac2data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 20,
             "section_name": "survey"
           },
           {
@@ -5256,13 +5292,12 @@
       "VAC2INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac2inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 21,
             "section_name": "survey"
           },
           {
@@ -5276,13 +5311,12 @@
       "VAC3TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac3tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 20,
+            "_row_num": 22,
             "section_name": "survey"
           },
           {
@@ -5296,13 +5330,12 @@
       "VAC3DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac3data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 23,
             "section_name": "survey"
           },
           {
@@ -5316,13 +5349,12 @@
       "VAC3INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac3inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 24,
             "section_name": "survey"
           },
           {
@@ -5336,13 +5368,12 @@
       "VAC4TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac4tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 25,
             "section_name": "survey"
           },
           {
@@ -5356,13 +5387,12 @@
       "VAC4DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac4data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 26,
             "section_name": "survey"
           },
           {
@@ -5376,13 +5406,12 @@
       "VAC4INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac4inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 27,
             "section_name": "survey"
           },
           {
@@ -5396,13 +5425,12 @@
       "VAC5TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac5tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 26,
+            "_row_num": 28,
             "section_name": "survey"
           },
           {
@@ -5416,13 +5444,12 @@
       "VAC5DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac5data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 29,
             "section_name": "survey"
           },
           {
@@ -5436,13 +5463,12 @@
       "VAC5INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac5inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 28,
+            "_row_num": 30,
             "section_name": "survey"
           },
           {
@@ -5456,13 +5482,12 @@
       "VAC6TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac6tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 29,
+            "_row_num": 31,
             "section_name": "survey"
           },
           {
@@ -5476,13 +5501,12 @@
       "VAC6DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac6data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 30,
+            "_row_num": 32,
             "section_name": "survey"
           },
           {
@@ -5496,13 +5520,12 @@
       "VAC6INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac6inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 31,
+            "_row_num": 33,
             "section_name": "survey"
           },
           {
@@ -5516,13 +5539,12 @@
       "VAC7TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac7tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 32,
+            "_row_num": 34,
             "section_name": "survey"
           },
           {
@@ -5536,13 +5558,12 @@
       "VAC7DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac7data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 35,
             "section_name": "survey"
           },
           {
@@ -5556,13 +5577,12 @@
       "VAC7INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac7inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 36,
             "section_name": "survey"
           },
           {
@@ -5576,13 +5596,12 @@
       "VAC8TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac8tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 35,
+            "_row_num": 37,
             "section_name": "survey"
           },
           {
@@ -5596,13 +5615,12 @@
       "VAC8DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac8data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 36,
+            "_row_num": 38,
             "section_name": "survey"
           },
           {
@@ -5616,13 +5634,12 @@
       "VAC8INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac8inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 37,
+            "_row_num": 39,
             "section_name": "survey"
           },
           {
@@ -5636,13 +5653,12 @@
       "VAC9TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac9tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 38,
+            "_row_num": 40,
             "section_name": "survey"
           },
           {
@@ -5656,13 +5672,12 @@
       "VAC9DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac9data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 39,
+            "_row_num": 41,
             "section_name": "survey"
           },
           {
@@ -5676,13 +5691,12 @@
       "VAC9INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac9inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 40,
+            "_row_num": 42,
             "section_name": "survey"
           },
           {
@@ -5696,13 +5710,12 @@
       "VAC10TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac10tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 43,
             "section_name": "survey"
           },
           {
@@ -5716,13 +5729,12 @@
       "VAC10DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac10data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 42,
+            "_row_num": 44,
             "section_name": "survey"
           },
           {
@@ -5736,13 +5748,12 @@
       "VAC10INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac10inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 43,
+            "_row_num": 45,
             "section_name": "survey"
           },
           {
@@ -5756,13 +5767,12 @@
       "VAC11TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac11tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 44,
+            "_row_num": 46,
             "section_name": "survey"
           },
           {
@@ -5776,13 +5786,12 @@
       "VAC11DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac11data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 45,
+            "_row_num": 47,
             "section_name": "survey"
           },
           {
@@ -5796,13 +5805,12 @@
       "VAC11INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac11inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 46,
+            "_row_num": 48,
             "section_name": "survey"
           },
           {
@@ -5816,13 +5824,12 @@
       "VAC12TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac12tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 47,
+            "_row_num": 49,
             "section_name": "survey"
           },
           {
@@ -5836,13 +5843,12 @@
       "VAC12DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac12data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 48,
+            "_row_num": 50,
             "section_name": "survey"
           },
           {
@@ -5856,13 +5862,12 @@
       "VAC12INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac12inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 49,
+            "_row_num": 51,
             "section_name": "survey"
           },
           {
@@ -5876,13 +5881,12 @@
       "VAC13TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac13tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 50,
+            "_row_num": 52,
             "section_name": "survey"
           },
           {
@@ -5896,13 +5900,12 @@
       "VAC13DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac13data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 51,
+            "_row_num": 53,
             "section_name": "survey"
           },
           {
@@ -5916,13 +5919,12 @@
       "VAC13INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac13inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 52,
+            "_row_num": 54,
             "section_name": "survey"
           },
           {
@@ -5936,13 +5938,12 @@
       "VAC14TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac14tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 53,
+            "_row_num": 55,
             "section_name": "survey"
           },
           {
@@ -5956,13 +5957,12 @@
       "VAC14DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac14data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 54,
+            "_row_num": 56,
             "section_name": "survey"
           },
           {
@@ -5976,13 +5976,12 @@
       "VAC14INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac14inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 55,
+            "_row_num": 57,
             "section_name": "survey"
           },
           {
@@ -5996,13 +5995,12 @@
       "VAC15TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac15tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 56,
+            "_row_num": 58,
             "section_name": "survey"
           },
           {
@@ -6016,13 +6014,12 @@
       "VAC15DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac15data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 57,
+            "_row_num": 59,
             "section_name": "survey"
           },
           {
@@ -6036,13 +6033,12 @@
       "VAC15INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac15inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 58,
+            "_row_num": 60,
             "section_name": "survey"
           },
           {
@@ -6056,13 +6052,12 @@
       "VAC16TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac16tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 59,
+            "_row_num": 61,
             "section_name": "survey"
           },
           {
@@ -6076,13 +6071,12 @@
       "VAC16DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac16data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 60,
+            "_row_num": 62,
             "section_name": "survey"
           },
           {
@@ -6096,13 +6090,12 @@
       "VAC16INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac16inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 61,
+            "_row_num": 63,
             "section_name": "survey"
           },
           {
@@ -6116,13 +6109,12 @@
       "VAC17TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac17tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 62,
+            "_row_num": 64,
             "section_name": "survey"
           },
           {
@@ -6136,13 +6128,12 @@
       "VAC17DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac17data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 63,
+            "_row_num": 65,
             "section_name": "survey"
           },
           {
@@ -6156,13 +6147,12 @@
       "VAC17INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac17inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 64,
+            "_row_num": 66,
             "section_name": "survey"
           },
           {
@@ -6176,13 +6166,12 @@
       "VAC18TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac18tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 65,
+            "_row_num": 67,
             "section_name": "survey"
           },
           {
@@ -6196,13 +6185,12 @@
       "VAC18DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac18data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 66,
+            "_row_num": 68,
             "section_name": "survey"
           },
           {
@@ -6216,13 +6204,12 @@
       "VAC18INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac18inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 67,
+            "_row_num": 69,
             "section_name": "survey"
           },
           {
@@ -6236,13 +6223,12 @@
       "VAC19TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac19tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 68,
+            "_row_num": 70,
             "section_name": "survey"
           },
           {
@@ -6256,13 +6242,12 @@
       "VAC19DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac19data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 69,
+            "_row_num": 71,
             "section_name": "survey"
           },
           {
@@ -6276,13 +6261,12 @@
       "VAC19INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac19inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 70,
+            "_row_num": 72,
             "section_name": "survey"
           },
           {
@@ -6296,13 +6280,12 @@
       "VAC20TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac20tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 71,
+            "_row_num": 73,
             "section_name": "survey"
           },
           {
@@ -6316,13 +6299,12 @@
       "VAC20DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac20data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 72,
+            "_row_num": 74,
             "section_name": "survey"
           },
           {
@@ -6336,13 +6318,12 @@
       "VAC20INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac20inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 73,
+            "_row_num": 75,
             "section_name": "survey"
           },
           {
@@ -6369,7 +6350,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "english": "Visit interview with {{data.NOMEMAE}} and ID: {{data.ID}}"
+                  "english": "Visit interview with {{data.NOMEMAE}} and ID: {{data.ID}}",
+                  "default": "Visit interview with {{data.NOMEMAE}} and ID: {{data.ID}}"
                 }
               }
             },
@@ -6469,8 +6451,8 @@
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac1tipo",
-            "name": "VAC1TIPO",
+            "values_list": "linked_pregnant",
+            "name": "GR",
             "_row_num": 14,
             "__rowNum__": 13,
             "_token_type": "prompt",
@@ -6479,661 +6461,672 @@
             "promptIdx": 9
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac1data",
-            "name": "VAC1DATA",
-            "_row_num": 15,
-            "__rowNum__": 14,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 10
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac1inf",
-            "name": "VAC1INF",
+            "values_list": "linked_vac1tipo",
+            "name": "VAC1TIPO",
             "_row_num": 16,
             "__rowNum__": 15,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 10
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac1data",
+            "name": "VAC1DATA",
+            "_row_num": 17,
+            "__rowNum__": 16,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 11
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac2tipo",
-            "name": "VAC2TIPO",
-            "_row_num": 17,
-            "__rowNum__": 16,
+            "values_list": "linked_vac1inf",
+            "name": "VAC1INF",
+            "_row_num": 18,
+            "__rowNum__": 17,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 12
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac2data",
-            "name": "VAC2DATA",
-            "_row_num": 18,
-            "__rowNum__": 17,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 13
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac2inf",
-            "name": "VAC2INF",
+            "values_list": "linked_vac2tipo",
+            "name": "VAC2TIPO",
             "_row_num": 19,
             "__rowNum__": 18,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 13
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac2data",
+            "name": "VAC2DATA",
+            "_row_num": 20,
+            "__rowNum__": 19,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 14
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac3tipo",
-            "name": "VAC3TIPO",
-            "_row_num": 20,
-            "__rowNum__": 19,
+            "values_list": "linked_vac2inf",
+            "name": "VAC2INF",
+            "_row_num": 21,
+            "__rowNum__": 20,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 15
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac3data",
-            "name": "VAC3DATA",
-            "_row_num": 21,
-            "__rowNum__": 20,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 16
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac3inf",
-            "name": "VAC3INF",
+            "values_list": "linked_vac3tipo",
+            "name": "VAC3TIPO",
             "_row_num": 22,
             "__rowNum__": 21,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 16
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac3data",
+            "name": "VAC3DATA",
+            "_row_num": 23,
+            "__rowNum__": 22,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 17
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac4tipo",
-            "name": "VAC4TIPO",
-            "_row_num": 23,
-            "__rowNum__": 22,
+            "values_list": "linked_vac3inf",
+            "name": "VAC3INF",
+            "_row_num": 24,
+            "__rowNum__": 23,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 18
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac4data",
-            "name": "VAC4DATA",
-            "_row_num": 24,
-            "__rowNum__": 23,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 19
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac4inf",
-            "name": "VAC4INF",
+            "values_list": "linked_vac4tipo",
+            "name": "VAC4TIPO",
             "_row_num": 25,
             "__rowNum__": 24,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 19
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac4data",
+            "name": "VAC4DATA",
+            "_row_num": 26,
+            "__rowNum__": 25,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 20
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac5tipo",
-            "name": "VAC5TIPO",
-            "_row_num": 26,
-            "__rowNum__": 25,
+            "values_list": "linked_vac4inf",
+            "name": "VAC4INF",
+            "_row_num": 27,
+            "__rowNum__": 26,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 21
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac5data",
-            "name": "VAC5DATA",
-            "_row_num": 27,
-            "__rowNum__": 26,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 22
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac5inf",
-            "name": "VAC5INF",
+            "values_list": "linked_vac5tipo",
+            "name": "VAC5TIPO",
             "_row_num": 28,
             "__rowNum__": 27,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 22
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac5data",
+            "name": "VAC5DATA",
+            "_row_num": 29,
+            "__rowNum__": 28,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 23
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac6tipo",
-            "name": "VAC6TIPO",
-            "_row_num": 29,
-            "__rowNum__": 28,
+            "values_list": "linked_vac5inf",
+            "name": "VAC5INF",
+            "_row_num": 30,
+            "__rowNum__": 29,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 24
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac6data",
-            "name": "VAC6DATA",
-            "_row_num": 30,
-            "__rowNum__": 29,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 25
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac6inf",
-            "name": "VAC6INF",
+            "values_list": "linked_vac6tipo",
+            "name": "VAC6TIPO",
             "_row_num": 31,
             "__rowNum__": 30,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 25
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac6data",
+            "name": "VAC6DATA",
+            "_row_num": 32,
+            "__rowNum__": 31,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 26
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac7tipo",
-            "name": "VAC7TIPO",
-            "_row_num": 32,
-            "__rowNum__": 31,
+            "values_list": "linked_vac6inf",
+            "name": "VAC6INF",
+            "_row_num": 33,
+            "__rowNum__": 32,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 27
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac7data",
-            "name": "VAC7DATA",
-            "_row_num": 33,
-            "__rowNum__": 32,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 28
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac7inf",
-            "name": "VAC7INF",
+            "values_list": "linked_vac7tipo",
+            "name": "VAC7TIPO",
             "_row_num": 34,
             "__rowNum__": 33,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 28
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac7data",
+            "name": "VAC7DATA",
+            "_row_num": 35,
+            "__rowNum__": 34,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 29
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac8tipo",
-            "name": "VAC8TIPO",
-            "_row_num": 35,
-            "__rowNum__": 34,
+            "values_list": "linked_vac7inf",
+            "name": "VAC7INF",
+            "_row_num": 36,
+            "__rowNum__": 35,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 30
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac8data",
-            "name": "VAC8DATA",
-            "_row_num": 36,
-            "__rowNum__": 35,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 31
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac8inf",
-            "name": "VAC8INF",
+            "values_list": "linked_vac8tipo",
+            "name": "VAC8TIPO",
             "_row_num": 37,
             "__rowNum__": 36,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 31
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac8data",
+            "name": "VAC8DATA",
+            "_row_num": 38,
+            "__rowNum__": 37,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 32
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac9tipo",
-            "name": "VAC9TIPO",
-            "_row_num": 38,
-            "__rowNum__": 37,
+            "values_list": "linked_vac8inf",
+            "name": "VAC8INF",
+            "_row_num": 39,
+            "__rowNum__": 38,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 33
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac9data",
-            "name": "VAC9DATA",
-            "_row_num": 39,
-            "__rowNum__": 38,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 34
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac9inf",
-            "name": "VAC9INF",
+            "values_list": "linked_vac9tipo",
+            "name": "VAC9TIPO",
             "_row_num": 40,
             "__rowNum__": 39,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 34
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac9data",
+            "name": "VAC9DATA",
+            "_row_num": 41,
+            "__rowNum__": 40,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 35
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac10tipo",
-            "name": "VAC10TIPO",
-            "_row_num": 41,
-            "__rowNum__": 40,
+            "values_list": "linked_vac9inf",
+            "name": "VAC9INF",
+            "_row_num": 42,
+            "__rowNum__": 41,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 36
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac10data",
-            "name": "VAC10DATA",
-            "_row_num": 42,
-            "__rowNum__": 41,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 37
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac10inf",
-            "name": "VAC10INF",
+            "values_list": "linked_vac10tipo",
+            "name": "VAC10TIPO",
             "_row_num": 43,
             "__rowNum__": 42,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 37
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac10data",
+            "name": "VAC10DATA",
+            "_row_num": 44,
+            "__rowNum__": 43,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 38
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac11tipo",
-            "name": "VAC11TIPO",
-            "_row_num": 44,
-            "__rowNum__": 43,
+            "values_list": "linked_vac10inf",
+            "name": "VAC10INF",
+            "_row_num": 45,
+            "__rowNum__": 44,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 39
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac11data",
-            "name": "VAC11DATA",
-            "_row_num": 45,
-            "__rowNum__": 44,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 40
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac11inf",
-            "name": "VAC11INF",
+            "values_list": "linked_vac11tipo",
+            "name": "VAC11TIPO",
             "_row_num": 46,
             "__rowNum__": 45,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 40
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac11data",
+            "name": "VAC11DATA",
+            "_row_num": 47,
+            "__rowNum__": 46,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 41
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac12tipo",
-            "name": "VAC12TIPO",
-            "_row_num": 47,
-            "__rowNum__": 46,
+            "values_list": "linked_vac11inf",
+            "name": "VAC11INF",
+            "_row_num": 48,
+            "__rowNum__": 47,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 42
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac12data",
-            "name": "VAC12DATA",
-            "_row_num": 48,
-            "__rowNum__": 47,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 43
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac12inf",
-            "name": "VAC12INF",
+            "values_list": "linked_vac12tipo",
+            "name": "VAC12TIPO",
             "_row_num": 49,
             "__rowNum__": 48,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 43
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac12data",
+            "name": "VAC12DATA",
+            "_row_num": 50,
+            "__rowNum__": 49,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 44
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac13tipo",
-            "name": "VAC13TIPO",
-            "_row_num": 50,
-            "__rowNum__": 49,
+            "values_list": "linked_vac12inf",
+            "name": "VAC12INF",
+            "_row_num": 51,
+            "__rowNum__": 50,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 45
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac13data",
-            "name": "VAC13DATA",
-            "_row_num": 51,
-            "__rowNum__": 50,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 46
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac13inf",
-            "name": "VAC13INF",
+            "values_list": "linked_vac13tipo",
+            "name": "VAC13TIPO",
             "_row_num": 52,
             "__rowNum__": 51,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 46
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac13data",
+            "name": "VAC13DATA",
+            "_row_num": 53,
+            "__rowNum__": 52,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 47
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac14tipo",
-            "name": "VAC14TIPO",
-            "_row_num": 53,
-            "__rowNum__": 52,
+            "values_list": "linked_vac13inf",
+            "name": "VAC13INF",
+            "_row_num": 54,
+            "__rowNum__": 53,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 48
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac14data",
-            "name": "VAC14DATA",
-            "_row_num": 54,
-            "__rowNum__": 53,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 49
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac14inf",
-            "name": "VAC14INF",
+            "values_list": "linked_vac14tipo",
+            "name": "VAC14TIPO",
             "_row_num": 55,
             "__rowNum__": 54,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 49
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac14data",
+            "name": "VAC14DATA",
+            "_row_num": 56,
+            "__rowNum__": 55,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 50
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac15tipo",
-            "name": "VAC15TIPO",
-            "_row_num": 56,
-            "__rowNum__": 55,
+            "values_list": "linked_vac14inf",
+            "name": "VAC14INF",
+            "_row_num": 57,
+            "__rowNum__": 56,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 51
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac15data",
-            "name": "VAC15DATA",
-            "_row_num": 57,
-            "__rowNum__": 56,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 52
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac15inf",
-            "name": "VAC15INF",
+            "values_list": "linked_vac15tipo",
+            "name": "VAC15TIPO",
             "_row_num": 58,
             "__rowNum__": 57,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 52
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac15data",
+            "name": "VAC15DATA",
+            "_row_num": 59,
+            "__rowNum__": 58,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 53
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac16tipo",
-            "name": "VAC16TIPO",
-            "_row_num": 59,
-            "__rowNum__": 58,
+            "values_list": "linked_vac15inf",
+            "name": "VAC15INF",
+            "_row_num": 60,
+            "__rowNum__": 59,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 54
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac16data",
-            "name": "VAC16DATA",
-            "_row_num": 60,
-            "__rowNum__": 59,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 55
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac16inf",
-            "name": "VAC16INF",
+            "values_list": "linked_vac16tipo",
+            "name": "VAC16TIPO",
             "_row_num": 61,
             "__rowNum__": 60,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 55
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac16data",
+            "name": "VAC16DATA",
+            "_row_num": 62,
+            "__rowNum__": 61,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 56
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac17tipo",
-            "name": "VAC17TIPO",
-            "_row_num": 62,
-            "__rowNum__": 61,
+            "values_list": "linked_vac16inf",
+            "name": "VAC16INF",
+            "_row_num": 63,
+            "__rowNum__": 62,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 57
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac17data",
-            "name": "VAC17DATA",
-            "_row_num": 63,
-            "__rowNum__": 62,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 58
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac17inf",
-            "name": "VAC17INF",
+            "values_list": "linked_vac17tipo",
+            "name": "VAC17TIPO",
             "_row_num": 64,
             "__rowNum__": 63,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 58
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac17data",
+            "name": "VAC17DATA",
+            "_row_num": 65,
+            "__rowNum__": 64,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 59
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac18tipo",
-            "name": "VAC18TIPO",
-            "_row_num": 65,
-            "__rowNum__": 64,
+            "values_list": "linked_vac17inf",
+            "name": "VAC17INF",
+            "_row_num": 66,
+            "__rowNum__": 65,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 60
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac18data",
-            "name": "VAC18DATA",
-            "_row_num": 66,
-            "__rowNum__": 65,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 61
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac18inf",
-            "name": "VAC18INF",
+            "values_list": "linked_vac18tipo",
+            "name": "VAC18TIPO",
             "_row_num": 67,
             "__rowNum__": 66,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 61
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac18data",
+            "name": "VAC18DATA",
+            "_row_num": 68,
+            "__rowNum__": 67,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 62
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac19tipo",
-            "name": "VAC19TIPO",
-            "_row_num": 68,
-            "__rowNum__": 67,
+            "values_list": "linked_vac18inf",
+            "name": "VAC18INF",
+            "_row_num": 69,
+            "__rowNum__": 68,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 63
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac19data",
-            "name": "VAC19DATA",
-            "_row_num": 69,
-            "__rowNum__": 68,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 64
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac19inf",
-            "name": "VAC19INF",
+            "values_list": "linked_vac19tipo",
+            "name": "VAC19TIPO",
             "_row_num": 70,
             "__rowNum__": 69,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 64
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac19data",
+            "name": "VAC19DATA",
+            "_row_num": 71,
+            "__rowNum__": 70,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 65
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac20tipo",
-            "name": "VAC20TIPO",
-            "_row_num": 71,
-            "__rowNum__": 70,
+            "values_list": "linked_vac19inf",
+            "name": "VAC19INF",
+            "_row_num": 72,
+            "__rowNum__": 71,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 66
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_vac20data",
-            "name": "VAC20DATA",
-            "_row_num": 72,
-            "__rowNum__": 71,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen6",
-            "promptIdx": 67
-          },
-          {
             "type": "async_assign_num_value",
-            "values_list": "linked_vac20inf",
-            "name": "VAC20INF",
+            "values_list": "linked_vac20tipo",
+            "name": "VAC20TIPO",
             "_row_num": 73,
             "__rowNum__": 72,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 67
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac20data",
+            "name": "VAC20DATA",
+            "_row_num": 74,
+            "__rowNum__": 73,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 68
+          },
+          {
+            "type": "async_assign_num_value",
+            "values_list": "linked_vac20inf",
+            "name": "VAC20INF",
+            "_row_num": 75,
+            "__rowNum__": 74,
+            "_token_type": "prompt",
+            "_type": "async_assign_num_value",
+            "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 69
           },
           {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 80,
-            "_branch_label_enclosing_screen": "survey/_screen80",
-            "promptIdx": 69
+            "_row_num": 82,
+            "_branch_label_enclosing_screen": "survey/_screen82",
+            "promptIdx": 70
           }
         ],
         "validation_tag_map": {
@@ -7161,22 +7154,22 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 74,
-              "__rowNum__": 73,
+              "_row_num": 76,
+              "__rowNum__": 75,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(2);\nactivePromptIndicies.push(3);\nactivePromptIndicies.push(4);\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\nactivePromptIndicies.push(7);\nactivePromptIndicies.push(8);\nactivePromptIndicies.push(9);\nactivePromptIndicies.push(10);\nactivePromptIndicies.push(11);\nactivePromptIndicies.push(12);\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\nactivePromptIndicies.push(15);\nactivePromptIndicies.push(16);\nactivePromptIndicies.push(17);\nactivePromptIndicies.push(18);\nactivePromptIndicies.push(19);\nactivePromptIndicies.push(20);\nactivePromptIndicies.push(21);\nactivePromptIndicies.push(22);\nactivePromptIndicies.push(23);\nactivePromptIndicies.push(24);\nactivePromptIndicies.push(25);\nactivePromptIndicies.push(26);\nactivePromptIndicies.push(27);\nactivePromptIndicies.push(28);\nactivePromptIndicies.push(29);\nactivePromptIndicies.push(30);\nactivePromptIndicies.push(31);\nactivePromptIndicies.push(32);\nactivePromptIndicies.push(33);\nactivePromptIndicies.push(34);\nactivePromptIndicies.push(35);\nactivePromptIndicies.push(36);\nactivePromptIndicies.push(37);\nactivePromptIndicies.push(38);\nactivePromptIndicies.push(39);\nactivePromptIndicies.push(40);\nactivePromptIndicies.push(41);\nactivePromptIndicies.push(42);\nactivePromptIndicies.push(43);\nactivePromptIndicies.push(44);\nactivePromptIndicies.push(45);\nactivePromptIndicies.push(46);\nactivePromptIndicies.push(47);\nactivePromptIndicies.push(48);\nactivePromptIndicies.push(49);\nactivePromptIndicies.push(50);\nactivePromptIndicies.push(51);\nactivePromptIndicies.push(52);\nactivePromptIndicies.push(53);\nactivePromptIndicies.push(54);\nactivePromptIndicies.push(55);\nactivePromptIndicies.push(56);\nactivePromptIndicies.push(57);\nactivePromptIndicies.push(58);\nactivePromptIndicies.push(59);\nactivePromptIndicies.push(60);\nactivePromptIndicies.push(61);\nactivePromptIndicies.push(62);\nactivePromptIndicies.push(63);\nactivePromptIndicies.push(64);\nactivePromptIndicies.push(65);\nactivePromptIndicies.push(66);\nactivePromptIndicies.push(67);\nactivePromptIndicies.push(68);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(2);\nactivePromptIndicies.push(3);\nactivePromptIndicies.push(4);\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\nactivePromptIndicies.push(7);\nactivePromptIndicies.push(8);\nactivePromptIndicies.push(9);\nactivePromptIndicies.push(10);\nactivePromptIndicies.push(11);\nactivePromptIndicies.push(12);\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\nactivePromptIndicies.push(15);\nactivePromptIndicies.push(16);\nactivePromptIndicies.push(17);\nactivePromptIndicies.push(18);\nactivePromptIndicies.push(19);\nactivePromptIndicies.push(20);\nactivePromptIndicies.push(21);\nactivePromptIndicies.push(22);\nactivePromptIndicies.push(23);\nactivePromptIndicies.push(24);\nactivePromptIndicies.push(25);\nactivePromptIndicies.push(26);\nactivePromptIndicies.push(27);\nactivePromptIndicies.push(28);\nactivePromptIndicies.push(29);\nactivePromptIndicies.push(30);\nactivePromptIndicies.push(31);\nactivePromptIndicies.push(32);\nactivePromptIndicies.push(33);\nactivePromptIndicies.push(34);\nactivePromptIndicies.push(35);\nactivePromptIndicies.push(36);\nactivePromptIndicies.push(37);\nactivePromptIndicies.push(38);\nactivePromptIndicies.push(39);\nactivePromptIndicies.push(40);\nactivePromptIndicies.push(41);\nactivePromptIndicies.push(42);\nactivePromptIndicies.push(43);\nactivePromptIndicies.push(44);\nactivePromptIndicies.push(45);\nactivePromptIndicies.push(46);\nactivePromptIndicies.push(47);\nactivePromptIndicies.push(48);\nactivePromptIndicies.push(49);\nactivePromptIndicies.push(50);\nactivePromptIndicies.push(51);\nactivePromptIndicies.push(52);\nactivePromptIndicies.push(53);\nactivePromptIndicies.push(54);\nactivePromptIndicies.push(55);\nactivePromptIndicies.push(56);\nactivePromptIndicies.push(57);\nactivePromptIndicies.push(58);\nactivePromptIndicies.push(59);\nactivePromptIndicies.push(60);\nactivePromptIndicies.push(61);\nactivePromptIndicies.push(62);\nactivePromptIndicies.push(63);\nactivePromptIndicies.push(64);\nactivePromptIndicies.push(65);\nactivePromptIndicies.push(66);\nactivePromptIndicies.push(67);\nactivePromptIndicies.push(68);\nactivePromptIndicies.push(69);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 1
           },
           {
             "clause": "begin screen",
-            "_row_num": 75,
-            "__rowNum__": 74,
+            "_row_num": 77,
+            "__rowNum__": 76,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 79,
-              "__rowNum__": 78,
+              "_row_num": 81,
+              "__rowNum__": 80,
               "_token_type": "end_screen"
             },
             "_screen_block": "function() {var activePromptIndicies = [];\nif (data('ESTADOVIS') == '1' || data('ESTADOVIS') == '2'  || data('ESTADOVIS') == '3') {\nassign('ESTADO', data('ESTADOVIS'));\n}\n\nreturn activePromptIndicies;\n}\n",
@@ -7185,13 +7178,13 @@
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 80,
+            "_row_num": 82,
             "operationIdx": 3
           },
           {
-            "_row_num": 80,
+            "_row_num": 82,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(69);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(70);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
@@ -7200,16 +7193,16 @@
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 80,
+            "_row_num": 82,
             "operationIdx": 5
           }
         ],
         "branch_label_map": {
           "_screen2": 0,
           "_screen6": 1,
-          "_screen75": 2,
+          "_screen77": 2,
           "_contents": 4,
-          "_screen80": 4
+          "_screen82": 4
         }
       },
       "initial": {
@@ -7542,55 +7535,10 @@
         "elementSet": "data",
         "elementPath": "ESTADO"
       },
-      "EXITDATA": {
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "valuesList": "linked_exitdate",
-        "elementType": "date",
-        "_row_num": 4,
-        "__rowNum__": 3,
-        "_defn": [
-          {
-            "_row_num": 12,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 11,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "EXITDATA",
-        "elementName": "EXITDATA",
-        "elementSet": "data",
-        "elementPath": "EXITDATA"
-      },
-      "EXITPRECIS": {
-        "prompt_type_name": "async_assign_num_value",
-        "type": "integer",
-        "comment": "Updates CICA variable",
-        "valuesList": "linked_exitdateprec",
-        "_defn": [
-          {
-            "_row_num": 13,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 12,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "EXITPRECIS",
-        "elementName": "EXITPRECIS",
-        "elementSet": "data",
-        "elementPath": "EXITPRECIS"
-      },
       "ETN": {
         "_defn": [
           {
-            "_row_num": 13,
+            "_row_num": 11,
             "section_name": "model"
           }
         ],
@@ -7605,7 +7553,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 12,
             "section_name": "model"
           }
         ],
@@ -7619,7 +7567,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 13,
             "section_name": "model"
           }
         ],
@@ -7633,7 +7581,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 14,
             "section_name": "model"
           }
         ],
@@ -7655,7 +7603,7 @@
         },
         "_defn": [
           {
-            "_row_num": 17,
+            "_row_num": 15,
             "section_name": "model"
           }
         ],
@@ -7672,7 +7620,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
@@ -7686,7 +7634,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 17,
             "section_name": "model"
           }
         ],
@@ -7700,7 +7648,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 20,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -7714,7 +7662,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 19,
             "section_name": "model"
           }
         ],
@@ -7728,7 +7676,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 20,
             "section_name": "model"
           }
         ],
@@ -7742,7 +7690,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
@@ -7756,7 +7704,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -7778,7 +7726,7 @@
         },
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -7794,7 +7742,7 @@
       "INF": {
         "_defn": [
           {
-            "_row_num": 26,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -7809,7 +7757,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -7823,7 +7771,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 28,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -7842,7 +7790,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 29,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -7864,7 +7812,7 @@
         },
         "_defn": [
           {
-            "_row_num": 30,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -7881,7 +7829,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 31,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -7903,7 +7851,7 @@
         },
         "_defn": [
           {
-            "_row_num": 32,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -7920,7 +7868,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -7942,7 +7890,7 @@
         },
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -7959,7 +7907,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 35,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -7973,7 +7921,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 36,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -7987,7 +7935,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 37,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -8001,7 +7949,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 38,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -8023,7 +7971,7 @@
         },
         "_defn": [
           {
-            "_row_num": 39,
+            "_row_num": 37,
             "section_name": "model"
           }
         ],
@@ -8040,7 +7988,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 40,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
@@ -8054,7 +8002,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 39,
             "section_name": "model"
           }
         ],
@@ -8076,7 +8024,7 @@
         },
         "_defn": [
           {
-            "_row_num": 42,
+            "_row_num": 40,
             "section_name": "model"
           }
         ],
@@ -8093,7 +8041,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 43,
+            "_row_num": 41,
             "section_name": "model"
           }
         ],
@@ -8108,7 +8056,7 @@
         "elementType": "date",
         "_defn": [
           {
-            "_row_num": 44,
+            "_row_num": 42,
             "section_name": "model"
           }
         ],
@@ -8122,7 +8070,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 45,
+            "_row_num": 43,
             "section_name": "model"
           }
         ],
@@ -8136,7 +8084,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 46,
+            "_row_num": 44,
             "section_name": "model"
           }
         ],
@@ -8150,7 +8098,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 47,
+            "_row_num": 45,
             "section_name": "model"
           }
         ],
@@ -8164,7 +8112,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 48,
+            "_row_num": 46,
             "section_name": "model"
           }
         ],
@@ -8173,6 +8121,20 @@
         "elementName": "VACNOH",
         "elementSet": "data",
         "elementPath": "VACNOH"
+      },
+      "VACNOHCERTO": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 47,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VACNOHCERTO",
+        "elementName": "VACNOHCERTO",
+        "elementSet": "data",
+        "elementPath": "VACNOHCERTO"
       },
       "VACNOHNS": {
         "type": "array",
@@ -8186,7 +8148,7 @@
         },
         "_defn": [
           {
-            "_row_num": 49,
+            "_row_num": 48,
             "section_name": "model"
           }
         ],
@@ -8203,7 +8165,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 50,
+            "_row_num": 49,
             "section_name": "model"
           }
         ],
@@ -8225,7 +8187,7 @@
         },
         "_defn": [
           {
-            "_row_num": 51,
+            "_row_num": 50,
             "section_name": "model"
           }
         ],
@@ -8238,33 +8200,31 @@
           "VIVONS_items"
         ]
       },
-      "LASTVISIT": {
-        "prompt_type_name": "async_assign_date",
-        "type": "date",
-        "comment": "Updates LASTVISIT variable",
-        "valuesList": "linked_visitdate",
-        "_row_num": 2,
-        "__rowNum__": 1,
+      "CICA": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_scarstatus",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 7,
+            "_row_num": 8,
             "section_name": "survey"
           },
           {
-            "_row_num": 56,
+            "_row_num": 53,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "LASTVISIT",
-        "elementName": "LASTVISIT",
+        "elementKey": "CICA",
+        "elementName": "CICA",
         "elementSet": "data",
-        "elementPath": "LASTVISIT"
+        "elementPath": "CICA"
       },
       "CONSENTFOR": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_consent",
         "_row_num": 3,
         "__rowNum__": 2,
@@ -8274,7 +8234,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 57,
+            "_row_num": 54,
             "section_name": "model"
           }
         ],
@@ -8287,7 +8247,6 @@
       "CONSENTSIG": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_signature",
         "_row_num": 3,
         "__rowNum__": 2,
@@ -8297,7 +8256,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 58,
+            "_row_num": 55,
             "section_name": "model"
           }
         ],
@@ -8310,7 +8269,6 @@
       "ESTADOVIS": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_status",
         "_row_num": 3,
         "__rowNum__": 2,
@@ -8320,7 +8278,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 59,
+            "_row_num": 56,
             "section_name": "model"
           }
         ],
@@ -8330,39 +8288,103 @@
         "elementSet": "data",
         "elementPath": "ESTADOVIS"
       },
-      "CICA": {
-        "prompt_type_name": "async_assign_num_value",
-        "type": "integer",
-        "comment": "Updates CICA variable",
-        "valuesList": "linked_scarstatus",
-        "_row_num": 3,
-        "__rowNum__": 2,
+      "EXITDATA": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_exitdate",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 8,
+            "_row_num": 12,
             "section_name": "survey"
           },
           {
-            "_row_num": 61,
+            "_row_num": 57,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "CICA",
-        "elementName": "CICA",
+        "elementKey": "EXITDATA",
+        "elementName": "EXITDATA",
         "elementSet": "data",
-        "elementPath": "CICA"
+        "elementPath": "EXITDATA"
       },
-      "VAC1TIPO": {
+      "EXITPRECIS": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
-        "valuesList": "linked_vac1tipo",
+        "valuesList": "linked_exitdateprec",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 13,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 58,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITPRECIS",
+        "elementName": "EXITPRECIS",
+        "elementSet": "data",
+        "elementPath": "EXITPRECIS"
+      },
+      "GR": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_pregnant",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 14,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 59,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "GR",
+        "elementName": "GR",
+        "elementSet": "data",
+        "elementPath": "GR"
+      },
+      "LASTVISIT": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_visitdate",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 7,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 60,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "LASTVISIT",
+        "elementName": "LASTVISIT",
+        "elementSet": "data",
+        "elementPath": "LASTVISIT"
+      },
+      "VAC1TIPO": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_vac1tipo",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 16,
             "section_name": "survey"
           },
           {
@@ -8379,13 +8401,12 @@
       "VAC1DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac1data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 17,
             "section_name": "survey"
           },
           {
@@ -8402,13 +8423,12 @@
       "VAC1INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac1inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 18,
             "section_name": "survey"
           },
           {
@@ -8425,13 +8445,12 @@
       "VAC2TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac2tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 17,
+            "_row_num": 19,
             "section_name": "survey"
           },
           {
@@ -8448,13 +8467,12 @@
       "VAC2DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac2data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 20,
             "section_name": "survey"
           },
           {
@@ -8471,13 +8489,12 @@
       "VAC2INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac2inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 21,
             "section_name": "survey"
           },
           {
@@ -8494,13 +8511,12 @@
       "VAC3TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac3tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 20,
+            "_row_num": 22,
             "section_name": "survey"
           },
           {
@@ -8517,13 +8533,12 @@
       "VAC3DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac3data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 23,
             "section_name": "survey"
           },
           {
@@ -8540,13 +8555,12 @@
       "VAC3INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac3inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 24,
             "section_name": "survey"
           },
           {
@@ -8563,13 +8577,12 @@
       "VAC4TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac4tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 25,
             "section_name": "survey"
           },
           {
@@ -8586,13 +8599,12 @@
       "VAC4DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac4data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 26,
             "section_name": "survey"
           },
           {
@@ -8609,13 +8621,12 @@
       "VAC4INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac4inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 27,
             "section_name": "survey"
           },
           {
@@ -8632,13 +8643,12 @@
       "VAC5TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac5tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 26,
+            "_row_num": 28,
             "section_name": "survey"
           },
           {
@@ -8655,13 +8665,12 @@
       "VAC5DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac5data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 29,
             "section_name": "survey"
           },
           {
@@ -8678,13 +8687,12 @@
       "VAC5INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac5inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 28,
+            "_row_num": 30,
             "section_name": "survey"
           },
           {
@@ -8701,13 +8709,12 @@
       "VAC6TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac6tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 29,
+            "_row_num": 31,
             "section_name": "survey"
           },
           {
@@ -8724,13 +8731,12 @@
       "VAC6DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac6data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 30,
+            "_row_num": 32,
             "section_name": "survey"
           },
           {
@@ -8747,13 +8753,12 @@
       "VAC6INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac6inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 31,
+            "_row_num": 33,
             "section_name": "survey"
           },
           {
@@ -8770,13 +8775,12 @@
       "VAC7TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac7tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 32,
+            "_row_num": 34,
             "section_name": "survey"
           },
           {
@@ -8793,13 +8797,12 @@
       "VAC7DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac7data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 35,
             "section_name": "survey"
           },
           {
@@ -8816,13 +8819,12 @@
       "VAC7INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac7inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 36,
             "section_name": "survey"
           },
           {
@@ -8839,13 +8841,12 @@
       "VAC8TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac8tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 35,
+            "_row_num": 37,
             "section_name": "survey"
           },
           {
@@ -8862,13 +8863,12 @@
       "VAC8DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac8data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 36,
+            "_row_num": 38,
             "section_name": "survey"
           },
           {
@@ -8885,13 +8885,12 @@
       "VAC8INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac8inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 37,
+            "_row_num": 39,
             "section_name": "survey"
           },
           {
@@ -8908,13 +8907,12 @@
       "VAC9TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac9tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 38,
+            "_row_num": 40,
             "section_name": "survey"
           },
           {
@@ -8931,13 +8929,12 @@
       "VAC9DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac9data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 39,
+            "_row_num": 41,
             "section_name": "survey"
           },
           {
@@ -8954,13 +8951,12 @@
       "VAC9INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac9inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 40,
+            "_row_num": 42,
             "section_name": "survey"
           },
           {
@@ -8977,13 +8973,12 @@
       "VAC10TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac10tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 43,
             "section_name": "survey"
           },
           {
@@ -9000,13 +8995,12 @@
       "VAC10DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac10data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 42,
+            "_row_num": 44,
             "section_name": "survey"
           },
           {
@@ -9023,13 +9017,12 @@
       "VAC10INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac10inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 43,
+            "_row_num": 45,
             "section_name": "survey"
           },
           {
@@ -9046,13 +9039,12 @@
       "VAC11TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac11tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 44,
+            "_row_num": 46,
             "section_name": "survey"
           },
           {
@@ -9069,13 +9061,12 @@
       "VAC11DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac11data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 45,
+            "_row_num": 47,
             "section_name": "survey"
           },
           {
@@ -9092,13 +9083,12 @@
       "VAC11INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac11inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 46,
+            "_row_num": 48,
             "section_name": "survey"
           },
           {
@@ -9115,13 +9105,12 @@
       "VAC12TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac12tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 47,
+            "_row_num": 49,
             "section_name": "survey"
           },
           {
@@ -9138,13 +9127,12 @@
       "VAC12DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac12data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 48,
+            "_row_num": 50,
             "section_name": "survey"
           },
           {
@@ -9161,13 +9149,12 @@
       "VAC12INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac12inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 49,
+            "_row_num": 51,
             "section_name": "survey"
           },
           {
@@ -9184,13 +9171,12 @@
       "VAC13TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac13tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 50,
+            "_row_num": 52,
             "section_name": "survey"
           },
           {
@@ -9207,13 +9193,12 @@
       "VAC13DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac13data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 51,
+            "_row_num": 53,
             "section_name": "survey"
           },
           {
@@ -9230,13 +9215,12 @@
       "VAC13INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac13inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 52,
+            "_row_num": 54,
             "section_name": "survey"
           },
           {
@@ -9253,13 +9237,12 @@
       "VAC14TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac14tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 53,
+            "_row_num": 55,
             "section_name": "survey"
           },
           {
@@ -9276,13 +9259,12 @@
       "VAC14DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac14data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 54,
+            "_row_num": 56,
             "section_name": "survey"
           },
           {
@@ -9299,13 +9281,12 @@
       "VAC14INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac14inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 55,
+            "_row_num": 57,
             "section_name": "survey"
           },
           {
@@ -9322,13 +9303,12 @@
       "VAC15TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac15tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 56,
+            "_row_num": 58,
             "section_name": "survey"
           },
           {
@@ -9345,13 +9325,12 @@
       "VAC15DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac15data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 57,
+            "_row_num": 59,
             "section_name": "survey"
           },
           {
@@ -9368,13 +9347,12 @@
       "VAC15INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac15inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 58,
+            "_row_num": 60,
             "section_name": "survey"
           },
           {
@@ -9391,13 +9369,12 @@
       "VAC16TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac16tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 59,
+            "_row_num": 61,
             "section_name": "survey"
           },
           {
@@ -9414,13 +9391,12 @@
       "VAC16DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac16data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 60,
+            "_row_num": 62,
             "section_name": "survey"
           },
           {
@@ -9437,13 +9413,12 @@
       "VAC16INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac16inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 61,
+            "_row_num": 63,
             "section_name": "survey"
           },
           {
@@ -9460,13 +9435,12 @@
       "VAC17TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac17tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 62,
+            "_row_num": 64,
             "section_name": "survey"
           },
           {
@@ -9483,13 +9457,12 @@
       "VAC17DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac17data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 63,
+            "_row_num": 65,
             "section_name": "survey"
           },
           {
@@ -9506,13 +9479,12 @@
       "VAC17INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac17inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 64,
+            "_row_num": 66,
             "section_name": "survey"
           },
           {
@@ -9529,13 +9501,12 @@
       "VAC18TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac18tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 65,
+            "_row_num": 67,
             "section_name": "survey"
           },
           {
@@ -9552,13 +9523,12 @@
       "VAC18DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac18data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 66,
+            "_row_num": 68,
             "section_name": "survey"
           },
           {
@@ -9575,13 +9545,12 @@
       "VAC18INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac18inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 67,
+            "_row_num": 69,
             "section_name": "survey"
           },
           {
@@ -9598,13 +9567,12 @@
       "VAC19TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac19tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 68,
+            "_row_num": 70,
             "section_name": "survey"
           },
           {
@@ -9621,13 +9589,12 @@
       "VAC19DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac19data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 69,
+            "_row_num": 71,
             "section_name": "survey"
           },
           {
@@ -9644,13 +9611,12 @@
       "VAC19INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac19inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 70,
+            "_row_num": 72,
             "section_name": "survey"
           },
           {
@@ -9667,13 +9633,12 @@
       "VAC20TIPO": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac20tipo",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 71,
+            "_row_num": 73,
             "section_name": "survey"
           },
           {
@@ -9690,13 +9655,12 @@
       "VAC20DATA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "comment": "Updates LASTVISIT variable",
         "valuesList": "linked_vac20data",
         "_row_num": 2,
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 72,
+            "_row_num": 74,
             "section_name": "survey"
           },
           {
@@ -9713,13 +9677,12 @@
       "VAC20INF": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "comment": "Updates CICA variable",
         "valuesList": "linked_vac20inf",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 73,
+            "_row_num": 75,
             "section_name": "survey"
           },
           {

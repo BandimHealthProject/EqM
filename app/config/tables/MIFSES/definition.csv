@@ -1,7 +1,10 @@
 _element_key,_element_name,_element_type,_list_child_element_keys
 CABA,CABA,string,[]
 GERADOR,GERADOR,string,[]
+ID,ID,integer,[]
 RADIO,RADIO,string,[]
+SESDATA,SESDATA,date,[]
+SES_ESTADO,SES_ESTADO,integer,[]
 TECTO,TECTO,string,[]
 TELEMOVEL,TELEMOVEL,string,[]
-test,test,integer,[]
+TELENUMERO,TELENUMERO,integer,[]

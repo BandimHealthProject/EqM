@@ -59,7 +59,7 @@
       },
       {
         "setting_name": "instance_name",
-        "value": "NCICA",
+        "value": "SES_ESTADO",
         "_row_num": 9
       }
     ],
@@ -156,7 +156,7 @@
       },
       {
         "type": "integer",
-        "name": "test",
+        "name": "TELENUMERO",
         "display": {
           "prompt": {
             "text": {
@@ -168,8 +168,14 @@
         "_row_num": 12
       },
       {
-        "clause": "end screen",
+        "type": "assign",
+        "name": "SES_ESTADO",
+        "calculation": 1,
         "_row_num": 13
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 14
       }
     ],
     "prompt_types": [
@@ -338,6 +344,62 @@
         },
         "_row_num": 13
       }
+    ],
+    "model": [
+      {
+        "name": "CABA",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 2
+      },
+      {
+        "name": "SES_ESTADO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 3
+      },
+      {
+        "name": "GERADOR",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 4
+      },
+      {
+        "name": "RADIO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 5
+      },
+      {
+        "name": "TECTO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 6
+      },
+      {
+        "name": "TELEMOVEL",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 7
+      },
+      {
+        "name": "TELENUMERO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 8
+      },
+      {
+        "name": "ID",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 10
+      },
+      {
+        "name": "SESDATA",
+        "type": "custom_date",
+        "isSessionVariable": false,
+        "_row_num": 11
+      }
     ]
   },
   "specification": {
@@ -415,7 +477,7 @@
       },
       "instance_name": {
         "setting_name": "instance_name",
-        "value": "NCICA",
+        "value": "SES_ESTADO",
         "_row_num": 9
       },
       "_locales": {
@@ -636,70 +698,138 @@
     "queries": {},
     "calculates": {},
     "model": {
-      "TECTO": {
-        "_defn": [
-          {
-            "_row_num": 3,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "tecto",
-        "elementKey": "TECTO"
-      },
       "CABA": {
+        "type": "string",
+        "valuesList": "toilet",
         "_defn": [
           {
             "_row_num": 4,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 2,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "toilet",
+        "isSessionVariable": false,
         "elementKey": "CABA"
       },
+      "SES_ESTADO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "SES_ESTADO"
+      },
       "GERADOR": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 7,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 4,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "GERADOR"
       },
       "RADIO": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 8,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 5,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "RADIO"
       },
+      "TECTO": {
+        "type": "string",
+        "valuesList": "tecto",
+        "_defn": [
+          {
+            "_row_num": 3,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 6,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TECTO"
+      },
       "TELEMOVEL": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 11,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 7,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "TELEMOVEL"
       },
-      "test": {
+      "TELENUMERO": {
+        "type": "integer",
         "_defn": [
           {
             "_row_num": 12,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 8,
+            "section_name": "model"
           }
         ],
+        "isSessionVariable": false,
+        "elementKey": "TELENUMERO"
+      },
+      "ID": {
         "type": "integer",
-        "elementKey": "test"
+        "_defn": [
+          {
+            "_row_num": 10,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ID"
+      },
+      "SESDATA": {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "SESDATA"
       }
     },
     "section_names": [
@@ -809,7 +939,7 @@
           },
           {
             "type": "integer",
-            "name": "test",
+            "name": "TELENUMERO",
             "display": {
               "prompt": {
                 "text": {
@@ -829,8 +959,8 @@
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 14,
-            "_branch_label_enclosing_screen": "survey/_screen14",
+            "_row_num": 15,
+            "_branch_label_enclosing_screen": "survey/_screen15",
             "promptIdx": 6
           }
         ],
@@ -873,21 +1003,21 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 13,
-              "__rowNum__": 12,
+              "_row_num": 14,
+              "__rowNum__": 13,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(4);\nactivePromptIndicies.push(5);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(4);\nactivePromptIndicies.push(5);\nassign('SES_ESTADO', 1);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 2
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 14,
+            "_row_num": 15,
             "operationIdx": 3
           },
           {
-            "_row_num": 14,
+            "_row_num": 15,
             "_token_type": "begin_screen",
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(6);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
@@ -898,7 +1028,7 @@
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 14,
+            "_row_num": 15,
             "operationIdx": 5
           }
         ],
@@ -907,7 +1037,7 @@
           "_screen6": 1,
           "_screen10": 2,
           "_contents": 4,
-          "_screen14": 4
+          "_screen15": 4
         }
       },
       "initial": {
@@ -1092,88 +1222,165 @@
       }
     },
     "dataTableModel": {
-      "TECTO": {
-        "_defn": [
-          {
-            "_row_num": 3,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "tecto",
-        "elementKey": "TECTO",
-        "elementName": "TECTO",
-        "elementSet": "data",
-        "elementPath": "TECTO"
-      },
       "CABA": {
+        "type": "string",
+        "valuesList": "toilet",
         "_defn": [
           {
             "_row_num": 4,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 2,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "toilet",
+        "isSessionVariable": false,
         "elementKey": "CABA",
         "elementName": "CABA",
         "elementSet": "data",
         "elementPath": "CABA"
       },
+      "SES_ESTADO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "SES_ESTADO",
+        "elementName": "SES_ESTADO",
+        "elementSet": "data",
+        "elementPath": "SES_ESTADO"
+      },
       "GERADOR": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 7,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 4,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "GERADOR",
         "elementName": "GERADOR",
         "elementSet": "data",
         "elementPath": "GERADOR"
       },
       "RADIO": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 8,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 5,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "RADIO",
         "elementName": "RADIO",
         "elementSet": "data",
         "elementPath": "RADIO"
       },
+      "TECTO": {
+        "type": "string",
+        "valuesList": "tecto",
+        "_defn": [
+          {
+            "_row_num": 3,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 6,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TECTO",
+        "elementName": "TECTO",
+        "elementSet": "data",
+        "elementPath": "TECTO"
+      },
       "TELEMOVEL": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 11,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 7,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "TELEMOVEL",
         "elementName": "TELEMOVEL",
         "elementSet": "data",
         "elementPath": "TELEMOVEL"
       },
-      "test": {
+      "TELENUMERO": {
+        "type": "integer",
         "_defn": [
           {
             "_row_num": 12,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 8,
+            "section_name": "model"
           }
         ],
-        "type": "integer",
-        "elementKey": "test",
-        "elementName": "test",
+        "isSessionVariable": false,
+        "elementKey": "TELENUMERO",
+        "elementName": "TELENUMERO",
         "elementSet": "data",
-        "elementPath": "test"
+        "elementPath": "TELENUMERO"
+      },
+      "ID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 10,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ID",
+        "elementName": "ID",
+        "elementSet": "data",
+        "elementPath": "ID"
+      },
+      "SESDATA": {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "SESDATA",
+        "elementName": "SESDATA",
+        "elementSet": "data",
+        "elementPath": "SESDATA"
       },
       "_id": {
         "type": "string",
