@@ -1,0 +1,7 @@
+_element_key,_element_name,_element_type,_list_child_element_keys
+ID,ID,integer,[]
+VAC1CHECK,VAC1CHECK,string,[]
+VAC1DATA,VAC1DATA,date,[]
+VAC1INF,VAC1INF,string,[]
+VAC1TIPO,VAC1TIPO,string,[]
+VISITDATA,VISITDATA,date,[]

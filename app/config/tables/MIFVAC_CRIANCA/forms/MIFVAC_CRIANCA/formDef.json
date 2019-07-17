@@ -1,0 +1,1948 @@
+{
+  "xlsx": {
+    "settings": [
+      {
+        "setting_name": "form_id",
+        "value": "MIFVAC_CRIANCA",
+        "_row_num": 2
+      },
+      {
+        "setting_name": "form_version",
+        "value": 17072019,
+        "_row_num": 3
+      },
+      {
+        "setting_name": "table_id",
+        "value": "MIFVAC_CRIANCA",
+        "_row_num": 4
+      },
+      {
+        "setting_name": "survey",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Woman in the fertile age -vaccines_children",
+              "default": "Mulher na idade fertil - vacinas_crianca"
+            }
+          }
+        },
+        "_row_num": 5
+      },
+      {
+        "setting_name": "default",
+        "display": {
+          "locale": {
+            "text": {
+              "english": "Portuguese",
+              "default": "Portugues"
+            }
+          }
+        },
+        "_row_num": 6
+      },
+      {
+        "setting_name": "english",
+        "display": {
+          "locale": {
+            "text": {
+              "english": "English",
+              "default": "Inglês"
+            }
+          }
+        },
+        "_row_num": 7
+      },
+      {
+        "setting_name": "font-size",
+        "value": "20pt",
+        "_row_num": 8
+      },
+      {
+        "setting_name": "instance_name",
+        "value": "GRAVIDA_ESTADO",
+        "_row_num": 9
+      }
+    ],
+    "survey": [
+      {
+        "clause": "begin screen",
+        "_row_num": 2
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Load vac1",
+              "default": "load vac1"
+            }
+          }
+        },
+        "_row_num": 3
+      },
+      {
+        "type": "async_assign_num_value",
+        "values_list": "linked_vac1tipo",
+        "name": "vac1tipo",
+        "_row_num": 4
+      },
+      {
+        "type": "async_assign_date",
+        "values_list": "linked_vac1data",
+        "name": "vac1data",
+        "_row_num": 5
+      },
+      {
+        "type": "async_assign_num_value",
+        "values_list": "linked_vac1inf",
+        "name": "vac1inf",
+        "_row_num": 6
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 7
+      },
+      {
+        "branch_label": "vac1",
+        "clause": "if",
+        "condition": "data('vac1data') == null",
+        "_row_num": 8
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 9
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNo",
+        "name": "addvac1",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Add new vaccine?",
+              "default": "Adicione uma nova vacina?"
+            }
+          }
+        },
+        "_row_num": 10
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 11
+      },
+      {
+        "clause": "if",
+        "condition": "data('addvac1') == '1'",
+        "_row_num": 12
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 13
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Vaccine 1",
+              "default": "Vacina 1"
+            }
+          }
+        },
+        "_row_num": 14
+      },
+      {
+        "type": "select_one",
+        "values_list": "vactype",
+        "name": "VAC1TIPO",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Type of vaccine",
+              "default": "Typo de vacina"
+            }
+          }
+        },
+        "_row_num": 15
+      },
+      {
+        "type": "select_one",
+        "values_list": "vacinf",
+        "name": "VAC1INF",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Informant",
+              "default": "Informante"
+            }
+          }
+        },
+        "_row_num": 16
+      },
+      {
+        "type": "custom_date",
+        "name": "VAC1DATA",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Date of vaccine",
+              "default": "Data da vacina"
+            }
+          }
+        },
+        "_row_num": 17
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 18
+      },
+      {
+        "clause": "else",
+        "_row_num": 19
+      },
+      {
+        "clause": "exit section",
+        "_row_num": 20
+      },
+      {
+        "clause": "end if",
+        "_row_num": 21
+      },
+      {
+        "clause": "else",
+        "_row_num": 22
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 23
+      },
+      {
+        "type": "select_one",
+        "values_list": "vaccheck",
+        "name": "VAC1CHECK",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Vaccine type: {{data.vac1tipo}}\nInformation: {{data.vac1inf}}\nDate: {{data.vac1data}}",
+              "default": "Typo de vacina: {{data.vac1tipo}}\nInformação: {{data.vac1inf}}\nData da vacina: {{data.vac1data}}"
+            }
+          }
+        },
+        "_row_num": 24
+      },
+      {
+        "clause": "if",
+        "condition": "data('VAC1CHECK') == '2'",
+        "_row_num": 25
+      },
+      {
+        "type": "select_one",
+        "values_list": "vactype",
+        "name": "VAC1TIPO",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Type of vaccine",
+              "default": "Typo de vacina"
+            }
+          }
+        },
+        "_row_num": 26
+      },
+      {
+        "type": "select_one",
+        "values_list": "vacinf",
+        "name": "VAC1INF",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Informant",
+              "default": "Informante"
+            }
+          }
+        },
+        "_row_num": 27
+      },
+      {
+        "type": "custom_date",
+        "name": "VAC1DATA",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Date of vaccine",
+              "default": "Data da vacina"
+            }
+          }
+        },
+        "_row_num": 28
+      },
+      {
+        "clause": "else",
+        "_row_num": 29
+      },
+      {
+        "type": "assign",
+        "name": "VAC1TIPO",
+        "calculation": "data('vac1tipo')",
+        "_row_num": 30
+      },
+      {
+        "type": "assign",
+        "name": "VAC1INF",
+        "calculation": "data('vac1inf')",
+        "_row_num": 31
+      },
+      {
+        "type": "assign",
+        "name": "VAC1DATA",
+        "calculation": "data('vac1data')",
+        "_row_num": 32
+      },
+      {
+        "clause": "end if",
+        "_row_num": 33
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 34
+      },
+      {
+        "clause": "end if",
+        "_row_num": 35
+      }
+    ],
+    "queries": [
+      {
+        "query_name": "linked_vac1tipo",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFVAC_CRINCA",
+        "linked_table_id": "MIFVAC_CRINCA",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "VAC1TIPO",
+        "_row_num": 2
+      },
+      {
+        "query_name": "linked_vac1data",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFVAC_CRINCA",
+        "linked_table_id": "MIFVAC_CRINCA",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "VAC1DATA",
+        "_row_num": 3
+      },
+      {
+        "query_name": "linked_vac1inf",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFVAC_CRINCA",
+        "linked_table_id": "MIFVAC_CRINCA",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "VAC1INF",
+        "_row_num": 4
+      }
+    ],
+    "prompt_types": [
+      {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "_row_num": 2
+      },
+      {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "_row_num": 3
+      },
+      {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 4
+      }
+    ],
+    "choices": [
+      {
+        "choice_list_name": "YesNo",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Yes",
+              "default": "Sim"
+            }
+          }
+        },
+        "_row_num": 2
+      },
+      {
+        "choice_list_name": "YesNo",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "english": "No",
+              "default": "Não"
+            }
+          }
+        },
+        "_row_num": 3
+      },
+      {
+        "choice_list_name": "vactype",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "english": "TT vaccine",
+              "default": "Vacina anti-tetánica"
+            }
+          }
+        },
+        "_row_num": 4
+      },
+      {
+        "choice_list_name": "vacinf",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Vaccination card",
+              "default": "Cartão da vacina"
+            }
+          }
+        },
+        "_row_num": 5
+      },
+      {
+        "choice_list_name": "vacinf",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Pregnancy card",
+              "default": "Cartão de gravidez"
+            }
+          }
+        },
+        "_row_num": 6
+      },
+      {
+        "choice_list_name": "vaccheck",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Correct information",
+              "default": "Informação correta"
+            }
+          }
+        },
+        "_row_num": 7
+      },
+      {
+        "choice_list_name": "vaccheck",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Change information",
+              "default": "Alterar informações"
+            }
+          }
+        },
+        "_row_num": 8
+      },
+      {
+        "choice_list_name": "vaccheck",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Don't know",
+              "default": "Não sabe"
+            }
+          }
+        },
+        "_row_num": 9
+      }
+    ],
+    "model": [
+      {
+        "name": "VAC1TIPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 2
+      },
+      {
+        "name": "VAC1INF",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 3
+      },
+      {
+        "name": "VAC1DATA",
+        "type": "custom_date",
+        "isSessionVariable": false,
+        "_row_num": 4
+      },
+      {
+        "name": "VAC1CHECK",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 5
+      },
+      {
+        "name": "vac1tipo",
+        "type": "async_assign_num_value",
+        "isSessionVariable": true,
+        "_row_num": 6
+      },
+      {
+        "name": "vac1data",
+        "type": "async_assign_date",
+        "isSessionVariable": true,
+        "_row_num": 7
+      },
+      {
+        "name": "vac1inf",
+        "type": "async_assign_num_value",
+        "isSessionVariable": true,
+        "_row_num": 8
+      },
+      {
+        "name": "addvac1",
+        "type": "select_one",
+        "isSessionVariable": true,
+        "_row_num": 9
+      },
+      {
+        "name": "ID",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 11
+      },
+      {
+        "name": "VISITDATA",
+        "type": "custom_date",
+        "isSessionVariable": false,
+        "_row_num": 12
+      }
+    ]
+  },
+  "specification": {
+    "column_types": {
+      "_screen_block": "function",
+      "condition": "formula",
+      "constraint": "formula",
+      "required": "formula",
+      "calculation": "formula",
+      "newRowInitialElementKeyToValueMap": "formula",
+      "openRowInitialElementKeyToValueMap": "formula",
+      "selectionArgs": "formula",
+      "url": "formula",
+      "uri": "formula",
+      "callback": "formula(context)",
+      "choice_filter": "formula(choice_item)",
+      "templatePath": "requirejs_path"
+    },
+    "settings": {
+      "form_id": {
+        "setting_name": "form_id",
+        "value": "MIFVAC_CRIANCA",
+        "_row_num": 2
+      },
+      "form_version": {
+        "setting_name": "form_version",
+        "value": 17072019,
+        "_row_num": 3
+      },
+      "table_id": {
+        "setting_name": "table_id",
+        "value": "MIFVAC_CRIANCA",
+        "_row_num": 4
+      },
+      "survey": {
+        "setting_name": "survey",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Woman in the fertile age -vaccines_children",
+              "default": "Mulher na idade fertil - vacinas_crianca"
+            }
+          }
+        },
+        "_row_num": 5
+      },
+      "default": {
+        "setting_name": "default",
+        "display": {
+          "locale": {
+            "text": {
+              "english": "Portuguese",
+              "default": "Portugues"
+            }
+          }
+        },
+        "_row_num": 6
+      },
+      "english": {
+        "setting_name": "english",
+        "display": {
+          "locale": {
+            "text": {
+              "english": "English",
+              "default": "Inglês"
+            }
+          }
+        },
+        "_row_num": 7
+      },
+      "font-size": {
+        "setting_name": "font-size",
+        "value": "20pt",
+        "_row_num": 8
+      },
+      "instance_name": {
+        "setting_name": "instance_name",
+        "value": "GRAVIDA_ESTADO",
+        "_row_num": 9
+      },
+      "_locales": {
+        "setting_name": "_locales",
+        "_row_num": 5,
+        "value": [
+          {
+            "display": {
+              "locale": {
+                "text": {
+                  "english": "Portuguese",
+                  "default": "Portugues"
+                }
+              }
+            },
+            "_row_num": 6,
+            "name": "default"
+          },
+          {
+            "display": {
+              "locale": {
+                "text": {
+                  "english": "English",
+                  "default": "Inglês"
+                }
+              }
+            },
+            "_row_num": 7,
+            "name": "english"
+          }
+        ]
+      },
+      "_default_locale": {
+        "setting_name": "_default_locale",
+        "_row_num": 5,
+        "value": "default"
+      },
+      "initial": {
+        "setting_name": "survey",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Woman in the fertile age -vaccines_children",
+              "default": "Mulher na idade fertil - vacinas_crianca"
+            }
+          }
+        },
+        "_row_num": 5
+      }
+    },
+    "choices": {
+      "YesNo": [
+        {
+          "choice_list_name": "YesNo",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Yes",
+                "default": "Sim"
+              }
+            }
+          },
+          "_row_num": 2
+        },
+        {
+          "choice_list_name": "YesNo",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "english": "No",
+                "default": "Não"
+              }
+            }
+          },
+          "_row_num": 3
+        }
+      ],
+      "vactype": [
+        {
+          "choice_list_name": "vactype",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "english": "TT vaccine",
+                "default": "Vacina anti-tetánica"
+              }
+            }
+          },
+          "_row_num": 4
+        }
+      ],
+      "vacinf": [
+        {
+          "choice_list_name": "vacinf",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Vaccination card",
+                "default": "Cartão da vacina"
+              }
+            }
+          },
+          "_row_num": 5
+        },
+        {
+          "choice_list_name": "vacinf",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Pregnancy card",
+                "default": "Cartão de gravidez"
+              }
+            }
+          },
+          "_row_num": 6
+        }
+      ],
+      "vaccheck": [
+        {
+          "choice_list_name": "vaccheck",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Correct information",
+                "default": "Informação correta"
+              }
+            }
+          },
+          "_row_num": 7
+        },
+        {
+          "choice_list_name": "vaccheck",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Change information",
+                "default": "Alterar informações"
+              }
+            }
+          },
+          "_row_num": 8
+        },
+        {
+          "choice_list_name": "vaccheck",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Don't know",
+                "default": "Não sabe"
+              }
+            }
+          },
+          "_row_num": 9
+        }
+      ]
+    },
+    "table_specific_definitions": {
+      "_tokens": {}
+    },
+    "queries": {
+      "linked_vac1tipo": {
+        "query_name": "linked_vac1tipo",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFVAC_CRINCA",
+        "linked_table_id": "MIFVAC_CRINCA",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "VAC1TIPO",
+        "_row_num": 2
+      },
+      "linked_vac1data": {
+        "query_name": "linked_vac1data",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFVAC_CRINCA",
+        "linked_table_id": "MIFVAC_CRINCA",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "VAC1DATA",
+        "_row_num": 3
+      },
+      "linked_vac1inf": {
+        "query_name": "linked_vac1inf",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFVAC_CRINCA",
+        "linked_table_id": "MIFVAC_CRINCA",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "VAC1INF",
+        "_row_num": 4
+      }
+    },
+    "calculates": {},
+    "model": {
+      "VAC1TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 15,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 26,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 2,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1TIPO"
+      },
+      "VAC1INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 16,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 27,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1INF"
+      },
+      "VAC1DATA": {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 17,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 28,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 4,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1DATA"
+      },
+      "VAC1CHECK": {
+        "type": "string",
+        "valuesList": "vaccheck",
+        "_defn": [
+          {
+            "_row_num": 24,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 5,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1CHECK"
+      },
+      "vac1tipo": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_vac1tipo",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 4,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 6,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "vac1tipo"
+      },
+      "vac1data": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_vac1data",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 5,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 7,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "vac1data"
+      },
+      "vac1inf": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_vac1inf",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 6,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 8,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "vac1inf"
+      },
+      "addvac1": {
+        "type": "string",
+        "valuesList": "YesNo",
+        "_defn": [
+          {
+            "_row_num": 10,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "addvac1"
+      },
+      "ID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ID"
+      },
+      "VISITDATA": {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VISITDATA"
+      }
+    },
+    "section_names": [
+      "initial",
+      "survey"
+    ],
+    "sections": {
+      "survey": {
+        "section_name": "survey",
+        "nested_sections": {},
+        "reachable_sections": {},
+        "prompts": [
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Load vac1",
+                  "default": "load vac1"
+                }
+              }
+            },
+            "_row_num": 3,
+            "__rowNum__": 2,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 0
+          },
+          {
+            "type": "async_assign_num_value",
+            "values_list": "linked_vac1tipo",
+            "name": "vac1tipo",
+            "_row_num": 4,
+            "__rowNum__": 3,
+            "_token_type": "prompt",
+            "_type": "async_assign_num_value",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 1
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_vac1data",
+            "name": "vac1data",
+            "_row_num": 5,
+            "__rowNum__": 4,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 2
+          },
+          {
+            "type": "async_assign_num_value",
+            "values_list": "linked_vac1inf",
+            "name": "vac1inf",
+            "_row_num": 6,
+            "__rowNum__": 5,
+            "_token_type": "prompt",
+            "_type": "async_assign_num_value",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 3
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNo",
+            "name": "addvac1",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Add new vaccine?",
+                  "default": "Adicione uma nova vacina?"
+                }
+              }
+            },
+            "_row_num": 10,
+            "__rowNum__": 9,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen9",
+            "promptIdx": 4
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Vaccine 1",
+                  "default": "Vacina 1"
+                }
+              }
+            },
+            "_row_num": 14,
+            "__rowNum__": 13,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen13",
+            "promptIdx": 5
+          },
+          {
+            "type": "select_one",
+            "values_list": "vactype",
+            "name": "VAC1TIPO",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Type of vaccine",
+                  "default": "Typo de vacina"
+                }
+              }
+            },
+            "_row_num": 15,
+            "__rowNum__": 14,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen13",
+            "promptIdx": 6
+          },
+          {
+            "type": "select_one",
+            "values_list": "vacinf",
+            "name": "VAC1INF",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Informant",
+                  "default": "Informante"
+                }
+              }
+            },
+            "_row_num": 16,
+            "__rowNum__": 15,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen13",
+            "promptIdx": 7
+          },
+          {
+            "type": "custom_date",
+            "name": "VAC1DATA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Date of vaccine",
+                  "default": "Data da vacina"
+                }
+              }
+            },
+            "_row_num": 17,
+            "__rowNum__": 16,
+            "_token_type": "prompt",
+            "_type": "custom_date",
+            "_branch_label_enclosing_screen": "survey/_screen13",
+            "promptIdx": 8
+          },
+          {
+            "type": "select_one",
+            "values_list": "vaccheck",
+            "name": "VAC1CHECK",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Vaccine type: {{data.vac1tipo}}\nInformation: {{data.vac1inf}}\nDate: {{data.vac1data}}",
+                  "default": "Typo de vacina: {{data.vac1tipo}}\nInformação: {{data.vac1inf}}\nData da vacina: {{data.vac1data}}"
+                }
+              }
+            },
+            "_row_num": 24,
+            "__rowNum__": 23,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen23",
+            "promptIdx": 9
+          },
+          {
+            "type": "select_one",
+            "values_list": "vactype",
+            "name": "VAC1TIPO",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Type of vaccine",
+                  "default": "Typo de vacina"
+                }
+              }
+            },
+            "_row_num": 26,
+            "__rowNum__": 25,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen23",
+            "promptIdx": 10
+          },
+          {
+            "type": "select_one",
+            "values_list": "vacinf",
+            "name": "VAC1INF",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Informant",
+                  "default": "Informante"
+                }
+              }
+            },
+            "_row_num": 27,
+            "__rowNum__": 26,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen23",
+            "promptIdx": 11
+          },
+          {
+            "type": "custom_date",
+            "name": "VAC1DATA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Date of vaccine",
+                  "default": "Data da vacina"
+                }
+              }
+            },
+            "_row_num": 28,
+            "__rowNum__": 27,
+            "_token_type": "prompt",
+            "_type": "custom_date",
+            "_branch_label_enclosing_screen": "survey/_screen23",
+            "promptIdx": 12
+          },
+          {
+            "_token_type": "prompt",
+            "type": "contents",
+            "_type": "contents",
+            "_row_num": 36,
+            "_branch_label_enclosing_screen": "survey/_screen36",
+            "promptIdx": 13
+          }
+        ],
+        "validation_tag_map": {
+          "finalize": []
+        },
+        "operations": [
+          {
+            "clause": "begin screen",
+            "_row_num": 2,
+            "__rowNum__": 1,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 7,
+              "__rowNum__": 6,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\nactivePromptIndicies.push(1);\nactivePromptIndicies.push(2);\nactivePromptIndicies.push(3);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 0
+          },
+          {
+            "clause": "if",
+            "condition": "data('vac1data') == null",
+            "_row_num": 8,
+            "__rowNum__": 7,
+            "_token_type": "goto_label",
+            "_branch_label": "_then8",
+            "operationIdx": 1
+          },
+          {
+            "clause": "else",
+            "_token_type": "goto_label",
+            "_branch_label": "_else22",
+            "_row_num": 22,
+            "operationIdx": 2
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 9,
+            "__rowNum__": 8,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 11,
+              "__rowNum__": 10,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(4);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 3
+          },
+          {
+            "clause": "if",
+            "condition": "data('addvac1') == '1'",
+            "_row_num": 12,
+            "__rowNum__": 11,
+            "_token_type": "goto_label",
+            "_branch_label": "_then12",
+            "operationIdx": 4
+          },
+          {
+            "clause": "else",
+            "_token_type": "goto_label",
+            "_branch_label": "_else19",
+            "_row_num": 19,
+            "operationIdx": 5
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 13,
+            "__rowNum__": 12,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 18,
+              "__rowNum__": 17,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\nactivePromptIndicies.push(7);\nactivePromptIndicies.push(8);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 6
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif21",
+            "_row_num": 21,
+            "operationIdx": 7
+          },
+          {
+            "clause": "exit section",
+            "_row_num": 20,
+            "__rowNum__": 19,
+            "_token_type": "exit_section",
+            "operationIdx": 8
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif35",
+            "_row_num": 35,
+            "operationIdx": 9
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 23,
+            "__rowNum__": 22,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 34,
+              "__rowNum__": 33,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(9);\nif (data('VAC1CHECK') == '2') {\nactivePromptIndicies.push(10);\nactivePromptIndicies.push(11);\nactivePromptIndicies.push(12);\n}\nelse {\nassign('VAC1TIPO', data('vac1tipo'));\nassign('VAC1INF', data('vac1inf'));\nassign('VAC1DATA', data('vac1data'));\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 10
+          },
+          {
+            "_token_type": "exit_section",
+            "clause": "exit section",
+            "_row_num": 36,
+            "operationIdx": 11
+          },
+          {
+            "_row_num": 36,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(13);\n\nreturn activePromptIndicies;\n}\n",
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 12
+          },
+          {
+            "_token_type": "resume",
+            "clause": "resume",
+            "_row_num": 36,
+            "operationIdx": 13
+          }
+        ],
+        "branch_label_map": {
+          "_screen2": 0,
+          "vac1": 1,
+          "_then8": 3,
+          "_screen9": 3,
+          "_then12": 6,
+          "_screen13": 6,
+          "_else19": 8,
+          "_endif21": 9,
+          "_else22": 10,
+          "_screen23": 10,
+          "_endif35": 11,
+          "_contents": 12,
+          "_screen36": 12
+        }
+      },
+      "initial": {
+        "section_name": "initial",
+        "nested_sections": {
+          "survey": true
+        },
+        "reachable_sections": {
+          "survey": true
+        },
+        "prompts": [
+          {
+            "_row_num": 3,
+            "type": "opening",
+            "display": {
+              "text": "Edit form"
+            },
+            "_token_type": "prompt",
+            "_type": "opening",
+            "_branch_label_enclosing_screen": "initial/_screen3",
+            "promptIdx": 0
+          },
+          {
+            "_row_num": 4,
+            "clause": "do section survey",
+            "_token_type": "prompt",
+            "_do_section_name": "survey",
+            "_type": "_section",
+            "promptIdx": 1,
+            "display": {
+              "title": {
+                "text": {
+                  "english": "Woman in the fertile age -vaccines_children",
+                  "default": "Mulher na idade fertil - vacinas_crianca"
+                }
+              }
+            },
+            "_branch_label_enclosing_screen": "survey/0"
+          },
+          {
+            "_row_num": 5,
+            "type": "finalize",
+            "display": {
+              "text": "Save form"
+            },
+            "_token_type": "prompt",
+            "_type": "finalize",
+            "_branch_label_enclosing_screen": "initial/_screen5",
+            "promptIdx": 2
+          },
+          {
+            "_row_num": 7,
+            "type": "instances",
+            "display": {
+              "text": "Saved instances"
+            },
+            "_token_type": "prompt",
+            "_type": "instances",
+            "_branch_label_enclosing_screen": "initial/_screen7",
+            "promptIdx": 3
+          },
+          {
+            "_token_type": "prompt",
+            "type": "contents",
+            "_type": "contents",
+            "_row_num": 9,
+            "_branch_label_enclosing_screen": "initial/_screen9",
+            "promptIdx": 4
+          }
+        ],
+        "validation_tag_map": {
+          "finalize": []
+        },
+        "operations": [
+          {
+            "_row_num": 2,
+            "clause": "if // start",
+            "condition": "(opendatakit.getCurrentInstanceId() != null)",
+            "_token_type": "goto_label",
+            "_tag_name": "start",
+            "_branch_label": "_then2",
+            "operationIdx": 0
+          },
+          {
+            "clause": "else // start",
+            "_token_type": "goto_label",
+            "_branch_label": "_else6",
+            "_row_num": 6,
+            "operationIdx": 1
+          },
+          {
+            "_row_num": 3,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 2
+          },
+          {
+            "_row_num": 4,
+            "clause": "do section survey",
+            "_token_type": "do_section",
+            "_do_section_name": "survey",
+            "operationIdx": 3
+          },
+          {
+            "_row_num": 5,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(2);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 4
+          },
+          {
+            "clause": "end if // start",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif8",
+            "_row_num": 8,
+            "operationIdx": 5
+          },
+          {
+            "_row_num": 7,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(3);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 6
+          },
+          {
+            "_token_type": "exit_section",
+            "clause": "exit section",
+            "_row_num": 9,
+            "operationIdx": 7
+          },
+          {
+            "_row_num": 9,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(4);\n\nreturn activePromptIndicies;\n}\n",
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 8
+          },
+          {
+            "_token_type": "resume",
+            "clause": "resume",
+            "_row_num": 9,
+            "operationIdx": 9
+          },
+          {
+            "_token_type": "validate",
+            "clause": "validate finalize",
+            "_sweep_name": "finalize",
+            "_row_num": 9,
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 10
+          },
+          {
+            "_token_type": "save_and_terminate",
+            "clause": "save and terminate",
+            "calculation": true,
+            "_row_num": 9,
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 11
+          },
+          {
+            "_token_type": "resume",
+            "clause": "resume",
+            "_row_num": 9,
+            "operationIdx": 12
+          }
+        ],
+        "branch_label_map": {
+          "_then2": 2,
+          "_screen3": 2,
+          "_screen5": 4,
+          "_else6": 6,
+          "_screen7": 6,
+          "_endif8": 7,
+          "_contents": 8,
+          "_screen9": 8,
+          "_finalize": 10
+        }
+      }
+    },
+    "dataTableModel": {
+      "VAC1TIPO": {
+        "type": "string",
+        "valuesList": "vactype",
+        "_defn": [
+          {
+            "_row_num": 15,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 26,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 2,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1TIPO",
+        "elementName": "VAC1TIPO",
+        "elementSet": "data",
+        "elementPath": "VAC1TIPO"
+      },
+      "VAC1INF": {
+        "type": "string",
+        "valuesList": "vacinf",
+        "_defn": [
+          {
+            "_row_num": 16,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 27,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1INF",
+        "elementName": "VAC1INF",
+        "elementSet": "data",
+        "elementPath": "VAC1INF"
+      },
+      "VAC1DATA": {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 17,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 28,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 4,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1DATA",
+        "elementName": "VAC1DATA",
+        "elementSet": "data",
+        "elementPath": "VAC1DATA"
+      },
+      "VAC1CHECK": {
+        "type": "string",
+        "valuesList": "vaccheck",
+        "_defn": [
+          {
+            "_row_num": 24,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 5,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VAC1CHECK",
+        "elementName": "VAC1CHECK",
+        "elementSet": "data",
+        "elementPath": "VAC1CHECK"
+      },
+      "vac1tipo": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_vac1tipo",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 4,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 6,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "vac1tipo",
+        "elementName": "vac1tipo",
+        "elementSet": "data",
+        "elementPath": "vac1tipo"
+      },
+      "vac1data": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_vac1data",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 5,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 7,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "vac1data",
+        "elementName": "vac1data",
+        "elementSet": "data",
+        "elementPath": "vac1data"
+      },
+      "vac1inf": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_vac1inf",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 6,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 8,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "vac1inf",
+        "elementName": "vac1inf",
+        "elementSet": "data",
+        "elementPath": "vac1inf"
+      },
+      "addvac1": {
+        "type": "string",
+        "valuesList": "YesNo",
+        "_defn": [
+          {
+            "_row_num": 10,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "addvac1",
+        "elementName": "addvac1",
+        "elementSet": "data",
+        "elementPath": "addvac1"
+      },
+      "ID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ID",
+        "elementName": "ID",
+        "elementSet": "data",
+        "elementPath": "ID"
+      },
+      "VISITDATA": {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VISITDATA",
+        "elementName": "VISITDATA",
+        "elementSet": "data",
+        "elementPath": "VISITDATA"
+      },
+      "_id": {
+        "type": "string",
+        "isNotNullable": true,
+        "elementKey": "_id",
+        "elementName": "_id",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_id"
+      },
+      "_row_etag": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_row_etag",
+        "elementName": "_row_etag",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_row_etag"
+      },
+      "_sync_state": {
+        "type": "string",
+        "isNotNullable": true,
+        "elementKey": "_sync_state",
+        "elementName": "_sync_state",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_sync_state"
+      },
+      "_conflict_type": {
+        "type": "integer",
+        "isNotNullable": false,
+        "elementKey": "_conflict_type",
+        "elementName": "_conflict_type",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_conflict_type"
+      },
+      "_default_access": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_default_access",
+        "elementName": "_default_access",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_default_access"
+      },
+      "_form_id": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_form_id",
+        "elementName": "_form_id",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_form_id"
+      },
+      "_group_modify": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_group_modify",
+        "elementName": "_group_modify",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_group_modify"
+      },
+      "_group_privileged": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_group_privileged",
+        "elementName": "_group_privileged",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_group_privileged"
+      },
+      "_group_read_only": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_group_read_only",
+        "elementName": "_group_read_only",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_group_read_only"
+      },
+      "_locale": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_locale",
+        "elementName": "_locale",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_locale"
+      },
+      "_row_owner": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_row_owner",
+        "elementName": "_row_owner",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_row_owner"
+      },
+      "_savepoint_type": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_savepoint_type",
+        "elementName": "_savepoint_type",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_savepoint_type"
+      },
+      "_savepoint_timestamp": {
+        "type": "string",
+        "isNotNullable": true,
+        "elementKey": "_savepoint_timestamp",
+        "elementName": "_savepoint_timestamp",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_savepoint_timestamp"
+      },
+      "_savepoint_creator": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_savepoint_creator",
+        "elementName": "_savepoint_creator",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_savepoint_creator"
+      }
+    },
+    "properties": [
+      {
+        "_partition": "Column",
+        "_aspect": "VAC1CHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":7},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":8},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":9}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC1INF",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vacinf\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Vaccination card\",\"default\":\"Cartão da vacina\"}}},\"_row_num\":5},{\"choice_list_name\":\"vacinf\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Pregnancy card\",\"default\":\"Cartão de gravidez\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VAC1TIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vactype\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"TT vaccine\",\"default\":\"Vacina anti-tetánica\"}}},\"_row_num\":4}]"
+      },
+      {
+        "_partition": "FormType",
+        "_aspect": "default",
+        "_key": "FormType.formType",
+        "_type": "string",
+        "_value": "SURVEY"
+      },
+      {
+        "_partition": "SurveyUtil",
+        "_aspect": "default",
+        "_key": "SurveyUtil.formId",
+        "_type": "string",
+        "_value": "MIFVAC_CRIANCA"
+      },
+      {
+        "_partition": "Table",
+        "_aspect": "default",
+        "_key": "defaultViewType",
+        "_type": "string",
+        "_value": "SPREADSHEET"
+      },
+      {
+        "_partition": "Table",
+        "_aspect": "default",
+        "_key": "displayName",
+        "_type": "object",
+        "_value": "{\"text\":{\"english\":\"Woman in the fertile age -vaccines_children\",\"default\":\"Mulher na idade fertil - vacinas_crianca\"}}"
+      }
+    ]
+  }
+}
