@@ -92,6 +92,19 @@
       },
       {
         "choice_list_name": "forms",
+        "data_value": "MIFVISIT_CORE",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Woman in the fertile age - visit_core",
+              "default": "Mulher na idade fertil - visitas_núcleo"
+            }
+          }
+        },
+        "_row_num": 4
+      },
+      {
+        "choice_list_name": "forms",
         "data_value": "MIFSCAR",
         "display": {
           "title": {
@@ -101,20 +114,46 @@
             }
           }
         },
-        "_row_num": 4
+        "_row_num": 5
       },
       {
         "choice_list_name": "forms",
-        "data_value": "MIFVAC",
+        "data_value": "MIFSES",
         "display": {
           "title": {
             "text": {
-              "english": "Woman in the fertile age - vaccinations",
-              "default": "Mulher na idade fertil - vacinas"
+              "english": "Woman in the fertile age - SES",
+              "default": "Mulher na idade fertil - SES"
             }
           }
         },
-        "_row_num": 5
+        "_row_num": 6
+      },
+      {
+        "choice_list_name": "forms",
+        "data_value": "MIFGRAVIDA",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Woman in the fertile age - pregnants",
+              "default": "Mulher na idade fertil - grávidas"
+            }
+          }
+        },
+        "_row_num": 7
+      },
+      {
+        "choice_list_name": "forms",
+        "data_value": "MIFGRAVIDA_VISIT",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Woman in the fertile age - pregnants_visits",
+              "default": "Mulher na idade fertil - grávidas_visitas"
+            }
+          }
+        },
+        "_row_num": 8
       },
       {
         "choice_list_name": "forms",
@@ -122,12 +161,12 @@
         "display": {
           "title": {
             "text": {
-              "default": "TEST Form",
-              "portuguese": "Test formulario"
+              "english": "Test form",
+              "default": "Test Formulario"
             }
           }
         },
-        "_row_num": 6
+        "_row_num": 9
       }
     ],
     "survey": [
@@ -204,11 +243,11 @@
         "_row_num": 13
       },
       {
-        "branch_label": "MIFSCAR",
+        "branch_label": "MIFVISIT_CORE",
         "_row_num": 14
       },
       {
-        "url": "'?' + odkSurvey.getHashString('MIFSCAR')",
+        "url": "'?' + odkSurvey.getHashString('MIFVISIT_CORE')",
         "type": "external_link",
         "display": {
           "prompt": {
@@ -222,11 +261,11 @@
         "_row_num": 16
       },
       {
-        "branch_label": "MIFVAC",
+        "branch_label": "MIFSCAR",
         "_row_num": 17
       },
       {
-        "url": "'?' + odkSurvey.getHashString('MIFVAC')",
+        "url": "'?' + odkSurvey.getHashString('MIFSCAR')",
         "type": "external_link",
         "display": {
           "prompt": {
@@ -240,15 +279,15 @@
         "_row_num": 19
       },
       {
-        "branch_label": "TEST",
+        "branch_label": "MIFSES",
         "_row_num": 20
       },
       {
-        "url": "'?' + odkSurvey.getHashString('TEST')",
+        "url": "'?' + odkSurvey.getHashString('MIFSES')",
         "type": "external_link",
         "display": {
           "prompt": {
-            "text": "Open test"
+            "text": "Open form"
           }
         },
         "_row_num": 21
@@ -256,6 +295,60 @@
       {
         "clause": "exit section",
         "_row_num": 22
+      },
+      {
+        "branch_label": "MIFGRAVIDA",
+        "_row_num": 23
+      },
+      {
+        "url": "'?' + odkSurvey.getHashString('MIFGRAVIDA')",
+        "type": "external_link",
+        "display": {
+          "prompt": {
+            "text": "Open form"
+          }
+        },
+        "_row_num": 24
+      },
+      {
+        "clause": "exit section",
+        "_row_num": 25
+      },
+      {
+        "branch_label": "MIFGRAVIDA_VISIT",
+        "_row_num": 26
+      },
+      {
+        "url": "'?' + odkSurvey.getHashString('MIFGRAVIDA_VISIT')",
+        "type": "external_link",
+        "display": {
+          "prompt": {
+            "text": "Open form"
+          }
+        },
+        "_row_num": 27
+      },
+      {
+        "clause": "exit section",
+        "_row_num": 28
+      },
+      {
+        "branch_label": "TEST",
+        "_row_num": 29
+      },
+      {
+        "url": "'?' + odkSurvey.getHashString('TEST')",
+        "type": "external_link",
+        "display": {
+          "prompt": {
+            "text": "Open form"
+          }
+        },
+        "_row_num": 30
+      },
+      {
+        "clause": "exit section",
+        "_row_num": 31
       }
     ],
     "framework_translations": [
@@ -875,6 +968,19 @@
         },
         {
           "choice_list_name": "forms",
+          "data_value": "MIFVISIT_CORE",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Woman in the fertile age - visit_core",
+                "default": "Mulher na idade fertil - visitas_núcleo"
+              }
+            }
+          },
+          "_row_num": 4
+        },
+        {
+          "choice_list_name": "forms",
           "data_value": "MIFSCAR",
           "display": {
             "title": {
@@ -884,20 +990,46 @@
               }
             }
           },
-          "_row_num": 4
+          "_row_num": 5
         },
         {
           "choice_list_name": "forms",
-          "data_value": "MIFVAC",
+          "data_value": "MIFSES",
           "display": {
             "title": {
               "text": {
-                "english": "Woman in the fertile age - vaccinations",
-                "default": "Mulher na idade fertil - vacinas"
+                "english": "Woman in the fertile age - SES",
+                "default": "Mulher na idade fertil - SES"
               }
             }
           },
-          "_row_num": 5
+          "_row_num": 6
+        },
+        {
+          "choice_list_name": "forms",
+          "data_value": "MIFGRAVIDA",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Woman in the fertile age - pregnants",
+                "default": "Mulher na idade fertil - grávidas"
+              }
+            }
+          },
+          "_row_num": 7
+        },
+        {
+          "choice_list_name": "forms",
+          "data_value": "MIFGRAVIDA_VISIT",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Woman in the fertile age - pregnants_visits",
+                "default": "Mulher na idade fertil - grávidas_visitas"
+              }
+            }
+          },
+          "_row_num": 8
         },
         {
           "choice_list_name": "forms",
@@ -905,12 +1037,12 @@
           "display": {
             "title": {
               "text": {
-                "default": "TEST Form",
-                "portuguese": "Test formulario"
+                "english": "Test form",
+                "default": "Test Formulario"
               }
             }
           },
-          "_row_num": 6
+          "_row_num": 9
         }
       ]
     },
@@ -1595,7 +1727,7 @@
             "promptIdx": 3
           },
           {
-            "url": "'?' + odkSurvey.getHashString('MIFSCAR')",
+            "url": "'?' + odkSurvey.getHashString('MIFVISIT_CORE')",
             "type": "external_link",
             "display": {
               "prompt": {
@@ -1610,7 +1742,7 @@
             "promptIdx": 4
           },
           {
-            "url": "'?' + odkSurvey.getHashString('MIFVAC')",
+            "url": "'?' + odkSurvey.getHashString('MIFSCAR')",
             "type": "external_link",
             "display": {
               "prompt": {
@@ -1625,11 +1757,11 @@
             "promptIdx": 5
           },
           {
-            "url": "'?' + odkSurvey.getHashString('TEST')",
+            "url": "'?' + odkSurvey.getHashString('MIFSES')",
             "type": "external_link",
             "display": {
               "prompt": {
-                "text": "Open test"
+                "text": "Open form"
               }
             },
             "_row_num": 21,
@@ -1640,12 +1772,57 @@
             "promptIdx": 6
           },
           {
+            "url": "'?' + odkSurvey.getHashString('MIFGRAVIDA')",
+            "type": "external_link",
+            "display": {
+              "prompt": {
+                "text": "Open form"
+              }
+            },
+            "_row_num": 24,
+            "__rowNum__": 23,
+            "_token_type": "prompt",
+            "_type": "external_link",
+            "_branch_label_enclosing_screen": "survey/_screen24",
+            "promptIdx": 7
+          },
+          {
+            "url": "'?' + odkSurvey.getHashString('MIFGRAVIDA_VISIT')",
+            "type": "external_link",
+            "display": {
+              "prompt": {
+                "text": "Open form"
+              }
+            },
+            "_row_num": 27,
+            "__rowNum__": 26,
+            "_token_type": "prompt",
+            "_type": "external_link",
+            "_branch_label_enclosing_screen": "survey/_screen27",
+            "promptIdx": 8
+          },
+          {
+            "url": "'?' + odkSurvey.getHashString('TEST')",
+            "type": "external_link",
+            "display": {
+              "prompt": {
+                "text": "Open form"
+              }
+            },
+            "_row_num": 30,
+            "__rowNum__": 29,
+            "_token_type": "prompt",
+            "_type": "external_link",
+            "_branch_label_enclosing_screen": "survey/_screen30",
+            "promptIdx": 9
+          },
+          {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 23,
-            "_branch_label_enclosing_screen": "survey/_screen23",
-            "promptIdx": 7
+            "_row_num": 32,
+            "_branch_label_enclosing_screen": "survey/_screen32",
+            "promptIdx": 10
           }
         ],
         "validation_tag_map": {
@@ -1760,25 +1937,64 @@
             "operationIdx": 15
           },
           {
-            "_token_type": "exit_section",
-            "clause": "exit section",
-            "_row_num": 23,
+            "_row_num": 24,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(7);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 16
           },
           {
-            "_row_num": 23,
+            "clause": "exit section",
+            "_row_num": 25,
+            "__rowNum__": 24,
+            "_token_type": "exit_section",
+            "operationIdx": 17
+          },
+          {
+            "_row_num": 27,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(7);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(8);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 18
+          },
+          {
+            "clause": "exit section",
+            "_row_num": 28,
+            "__rowNum__": 27,
+            "_token_type": "exit_section",
+            "operationIdx": 19
+          },
+          {
+            "_row_num": 30,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(9);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 20
+          },
+          {
+            "clause": "exit section",
+            "_row_num": 31,
+            "__rowNum__": 30,
+            "_token_type": "exit_section",
+            "operationIdx": 21
+          },
+          {
+            "_token_type": "exit_section",
+            "clause": "exit section",
+            "_row_num": 32,
+            "operationIdx": 22
+          },
+          {
+            "_row_num": 32,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(10);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 17
+            "operationIdx": 23
           },
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 23,
-            "operationIdx": 18
+            "_row_num": 32,
+            "operationIdx": 24
           }
         ],
         "branch_label_map": {
@@ -1791,14 +2007,20 @@
           "_screen9": 6,
           "MIFVISIT": 8,
           "_screen12": 8,
-          "MIFSCAR": 10,
+          "MIFVISIT_CORE": 10,
           "_screen15": 10,
-          "MIFVAC": 12,
+          "MIFSCAR": 12,
           "_screen18": 12,
-          "TEST": 14,
+          "MIFSES": 14,
           "_screen21": 14,
-          "_contents": 17,
-          "_screen23": 17
+          "MIFGRAVIDA": 16,
+          "_screen24": 16,
+          "MIFGRAVIDA_VISIT": 18,
+          "_screen27": 18,
+          "TEST": 20,
+          "_screen30": 20,
+          "_contents": 23,
+          "_screen32": 23
         }
       }
     },

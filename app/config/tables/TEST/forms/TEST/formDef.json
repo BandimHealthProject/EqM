@@ -128,7 +128,7 @@
       },
       {
         "clause": "if",
-        "condition": "!adate.yearUnknown()",
+        "condition": "!adate.yearUnknown(data('ADA'))",
         "_row_num": 11
       },
       {
@@ -4137,7 +4137,7 @@
               "__rowNum__": 15,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nif (adate.ageInYears(data('ADA'))>2) {\nactivePromptIndicies.push(1);\n}\nelse {\nactivePromptIndicies.push(2);\n}\nif (!adate.yearUnknown()) {\nactivePromptIndicies.push(3);\n}\nelse {\nactivePromptIndicies.push(4);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nif (adate.ageInYears(data('ADA'))>2) {\nactivePromptIndicies.push(1);\n}\nelse {\nactivePromptIndicies.push(2);\n}\nif (!adate.yearUnknown(data('ADA'))) {\nactivePromptIndicies.push(3);\n}\nelse {\nactivePromptIndicies.push(4);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 1
           },
           {
