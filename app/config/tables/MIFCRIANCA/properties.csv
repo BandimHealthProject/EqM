@@ -1,4 +1,5 @@
 _partition,_aspect,_key,_type,_value
+Column,SEX,displayChoicesList,object,"[{""choice_list_name"":""sex"",""data_value"":""1"",""display"":{""title"":{""text"":{""english"":""Male"",""default"":""Macho""}}},""_row_num"":2},{""choice_list_name"":""sex"",""data_value"":""2"",""display"":{""title"":{""text"":{""english"":""Female"",""default"":""Fêmea""}}},""_row_num"":3},{""choice_list_name"":""sex"",""data_value"":""3"",""display"":{""title"":{""text"":{""english"":""Dont know"",""default"":""Não sabe""}}},""_row_num"":4}]"
 FormType,default,FormType.formType,string,SURVEY
 SurveyUtil,default,SurveyUtil.formId,string,MIFCRIANCA
 Table,default,defaultViewType,string,SPREADSHEET
