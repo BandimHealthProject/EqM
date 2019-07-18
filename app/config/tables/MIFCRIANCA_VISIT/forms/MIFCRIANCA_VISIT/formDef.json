@@ -91,7 +91,7 @@
       {
         "type": "select_one",
         "values_list": "visitstatus",
-        "name": "ESTADO",
+        "name": "PRES",
         "display": {
           "prompt": {
             "text": {
@@ -104,7 +104,7 @@
       },
       {
         "clause": "if",
-        "condition": "data('ESTADO') ==  '2' || data('ESTADO') ==  '3'",
+        "condition": "data('PRES') ==  '2' || data('PRES') ==  '3'",
         "_row_num": 7
       },
       {
@@ -136,7 +136,7 @@
       },
       {
         "clause": "if",
-        "condition": "data('ESTADOVIS') ==  '2'",
+        "condition": "data('PRES') ==  '2'",
         "_row_num": 10
       },
       {
@@ -171,7 +171,7 @@
       {
         "type": "select_one",
         "values_list": "vcard",
-        "name": "V",
+        "name": "CARTVAC",
         "display": {
           "prompt": {
             "text": {
@@ -379,7 +379,7 @@
       },
       {
         "clause": "if",
-        "condition": "data('ESTADOVIS') ==  '1'",
+        "condition": "data('PRES') ==  '1'",
         "_row_num": 43
       },
       {
@@ -877,118 +877,130 @@
     ],
     "model": [
       {
-        "name": "ABMES",
-        "type": "integer",
+        "name": "PRES",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 2
       },
       {
-        "name": "ASSISTPART",
-        "type": "select_one",
+        "name": "EXITDATA",
+        "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 3
       },
       {
-        "name": "CART_ANC",
+        "name": "EXITPRECIS",
         "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 4
       },
       {
-        "name": "CDG_C",
-        "type": "integer",
+        "name": "EXITMUDO",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 5
       },
       {
-        "name": "CDG_M",
-        "type": "integer",
+        "name": "CARTVAC",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 6
       },
       {
-        "name": "FEDEP_C",
-        "type": "integer",
+        "name": "TENDAYN",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 7
       },
       {
-        "name": "FEDEP_M",
-        "type": "integer",
+        "name": "TENDA",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 8
       },
       {
-        "name": "GRAVIDA_ESTADO",
+        "name": "TENDATIPO",
         "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 9
       },
       {
-        "name": "GRCONS",
+        "name": "COMSUP",
         "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 10
       },
       {
-        "name": "GRINFOS",
-        "type": "assign",
+        "name": "PARMA",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 11
       },
       {
-        "name": "GRVAC",
+        "name": "PORCA",
         "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 12
       },
       {
-        "name": "inf1",
+        "name": "PORMO",
         "type": "select_one",
         "isSessionVariable": true,
         "_row_num": 13
       },
       {
-        "name": "inf2",
+        "name": "MOMA",
         "type": "select_one",
         "isSessionVariable": true,
         "_row_num": 14
       },
       {
-        "name": "LITTERSIZE",
-        "type": "integer",
+        "name": "HOSP",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 15
       },
       {
-        "name": "LOCPAR",
-        "type": "select_one",
+        "name": "BRACOCRI",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 16
       },
       {
-        "name": "OUTDATE",
-        "type": "custom_date",
+        "name": "CICBCGN",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 17
       },
       {
-        "name": "OUTDATE_PRECIS",
-        "type": "select_one",
+        "name": "CICBCGV",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 18
       },
       {
-        "name": "OUTSTATUS",
-        "type": "select_one",
+        "name": "CICBCGH",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 19
       },
       {
-        "name": "QVFANSI_C",
-        "type": "integer",
+        "name": "LINFADENOP",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 20
+      },
+      {
+        "name": "LINFADESUP",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 21
+      },
+      {
+        "name": "PASSARAMPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 22
       }
     ]
   },
@@ -1463,172 +1475,23 @@
     "queries": {},
     "calculates": {},
     "model": {
-      "ABMES": {
-        "type": "integer",
+      "PRES": {
+        "type": "string",
+        "valuesList": "visitstatus",
         "_defn": [
+          {
+            "_row_num": 6,
+            "section_name": "survey"
+          },
           {
             "_row_num": 2,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ABMES"
+        "elementKey": "PRES"
       },
-      "ASSISTPART": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 3,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "ASSISTPART"
-      },
-      "CART_ANC": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 4,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CART_ANC"
-      },
-      "CDG_C": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 5,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CDG_C"
-      },
-      "CDG_M": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 6,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CDG_M"
-      },
-      "FEDEP_C": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 7,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "FEDEP_C"
-      },
-      "FEDEP_M": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 8,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "FEDEP_M"
-      },
-      "GRAVIDA_ESTADO": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 9,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "GRAVIDA_ESTADO"
-      },
-      "GRCONS": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 10,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "GRCONS"
-      },
-      "GRINFOS": {
-        "_defn": [
-          {
-            "_row_num": 11,
-            "section_name": "model"
-          }
-        ],
-        "type": "assign",
-        "isSessionVariable": false,
-        "elementKey": "GRINFOS"
-      },
-      "GRVAC": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 12,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "GRVAC"
-      },
-      "inf1": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 13,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": true,
-        "elementKey": "inf1"
-      },
-      "inf2": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 14,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": true,
-        "elementKey": "inf2"
-      },
-      "LITTERSIZE": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 15,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "LITTERSIZE"
-      },
-      "LOCPAR": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 16,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "LOCPAR"
-      },
-      "OUTDATE": {
+      "EXITDATA": {
         "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
@@ -1637,273 +1500,315 @@
         "__rowNum__": 1,
         "_defn": [
           {
+            "_row_num": 8,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITDATA"
+      },
+      "EXITPRECIS": {
+        "type": "string",
+        "valuesList": "precision",
+        "_defn": [
+          {
+            "_row_num": 9,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 4,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITPRECIS"
+      },
+      "EXITMUDO": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 5,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITMUDO"
+      },
+      "CARTVAC": {
+        "type": "string",
+        "valuesList": "vcard",
+        "_defn": [
+          {
+            "_row_num": 16,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 6,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CARTVAC"
+      },
+      "TENDAYN": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 19,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 7,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TENDAYN"
+      },
+      "TENDA": {
+        "type": "string",
+        "valuesList": "bednettime",
+        "_defn": [
+          {
+            "_row_num": 20,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 8,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TENDA"
+      },
+      "TENDATIPO": {
+        "type": "string",
+        "valuesList": "bednet",
+        "_defn": [
+          {
+            "_row_num": 22,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TENDATIPO"
+      },
+      "COMSUP": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 26,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 10,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "COMSUP"
+      },
+      "PARMA": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 29,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "PARMA"
+      },
+      "PORCA": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 32,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "PORCA"
+      },
+      "PORMO": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 35,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 13,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "PORMO"
+      },
+      "MOMA": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 38,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "MOMA"
+      },
+      "HOSP": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 41,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 15,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "HOSP"
+      },
+      "BRACOCRI": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 45,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 16,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "BRACOCRI"
+      },
+      "CICBCGN": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 48,
+            "section_name": "survey"
+          },
+          {
             "_row_num": 17,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "OUTDATE"
+        "elementKey": "CICBCGN"
       },
-      "OUTDATE_PRECIS": {
+      "CICBCGV": {
         "type": "string",
         "_defn": [
+          {
+            "_row_num": 52,
+            "section_name": "survey"
+          },
           {
             "_row_num": 18,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "OUTDATE_PRECIS"
-      },
-      "OUTSTATUS": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 19,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "OUTSTATUS"
-      },
-      "QVFANSI_C": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 20,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "QVFANSI_C"
-      },
-      "ESTADO": {
-        "_defn": [
-          {
-            "_row_num": 6,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "visitstatus",
-        "elementKey": "ESTADO"
-      },
-      "EXITDATA": {
-        "_defn": [
-          {
-            "_row_num": 8,
-            "section_name": "survey"
-          }
-        ],
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "elementKey": "EXITDATA"
-      },
-      "EXITPRECIS": {
-        "_defn": [
-          {
-            "_row_num": 9,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "precision",
-        "elementKey": "EXITPRECIS"
-      },
-      "EXITMUDO": {
-        "_defn": [
-          {
-            "_row_num": 11,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "elementKey": "EXITMUDO"
-      },
-      "V": {
-        "_defn": [
-          {
-            "_row_num": 16,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "vcard",
-        "elementKey": "V"
-      },
-      "TENDAYN": {
-        "_defn": [
-          {
-            "_row_num": 19,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "YesNoU",
-        "elementKey": "TENDAYN"
-      },
-      "TENDA": {
-        "_defn": [
-          {
-            "_row_num": 20,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "bednettime",
-        "elementKey": "TENDA"
-      },
-      "TENDATIPO": {
-        "_defn": [
-          {
-            "_row_num": 22,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "bednet",
-        "elementKey": "TENDATIPO"
-      },
-      "COMSUP": {
-        "_defn": [
-          {
-            "_row_num": 26,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "YesNoU",
-        "elementKey": "COMSUP"
-      },
-      "PARMA": {
-        "_defn": [
-          {
-            "_row_num": 29,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "YesNoU",
-        "elementKey": "PARMA"
-      },
-      "PORCA": {
-        "_defn": [
-          {
-            "_row_num": 32,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "YesNoU",
-        "elementKey": "PORCA"
-      },
-      "PORMO": {
-        "_defn": [
-          {
-            "_row_num": 35,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "YesNoU",
-        "elementKey": "PORMO"
-      },
-      "MOMA": {
-        "_defn": [
-          {
-            "_row_num": 38,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "YesNoU",
-        "elementKey": "MOMA"
-      },
-      "HOSP": {
-        "_defn": [
-          {
-            "_row_num": 41,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "YesNoU",
-        "elementKey": "HOSP"
-      },
-      "BRACOCRI": {
-        "_defn": [
-          {
-            "_row_num": 45,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "elementKey": "BRACOCRI"
-      },
-      "CICBCGN": {
-        "_defn": [
-          {
-            "_row_num": 48,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "YesNoU",
-        "elementKey": "CICBCGN"
-      },
-      "CICBCGV": {
-        "_defn": [
-          {
-            "_row_num": 52,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
         "elementKey": "CICBCGV"
       },
       "CICBCGH": {
+        "type": "string",
         "_defn": [
           {
             "_row_num": 53,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 19,
+            "section_name": "model"
           }
         ],
-        "type": "string",
+        "isSessionVariable": false,
         "elementKey": "CICBCGH"
       },
       "LINFADENOP": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 58,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 20,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "LINFADENOP"
       },
       "LINFADESUP": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 61,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "LINFADESUP"
       },
       "PASSARAMPO": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 64,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 22,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "PASSARAMPO"
       }
     },
@@ -1937,7 +1842,7 @@
           {
             "type": "select_one",
             "values_list": "visitstatus",
-            "name": "ESTADO",
+            "name": "PRES",
             "display": {
               "prompt": {
                 "text": {
@@ -2011,7 +1916,7 @@
           {
             "type": "select_one",
             "values_list": "vcard",
-            "name": "V",
+            "name": "CARTVAC",
             "display": {
               "prompt": {
                 "text": {
@@ -2366,7 +2271,7 @@
               "__rowNum__": 13,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(1);\nif (data('ESTADO') ==  '2' || data('ESTADO') ==  '3') {\nactivePromptIndicies.push(2);\nactivePromptIndicies.push(3);\nif (data('ESTADOVIS') ==  '2') {\nactivePromptIndicies.push(4);\n}\n}\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(1);\nif (data('PRES') ==  '2' || data('PRES') ==  '3') {\nactivePromptIndicies.push(2);\nactivePromptIndicies.push(3);\nif (data('PRES') ==  '2') {\nactivePromptIndicies.push(4);\n}\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 1
           },
           {
@@ -2483,7 +2388,7 @@
           },
           {
             "clause": "if",
-            "condition": "data('ESTADOVIS') ==  '1'",
+            "condition": "data('PRES') ==  '1'",
             "_row_num": 43,
             "__rowNum__": 42,
             "_token_type": "goto_label",
@@ -2842,217 +2747,26 @@
       }
     },
     "dataTableModel": {
-      "ABMES": {
-        "type": "integer",
+      "PRES": {
+        "type": "string",
+        "valuesList": "visitstatus",
         "_defn": [
+          {
+            "_row_num": 6,
+            "section_name": "survey"
+          },
           {
             "_row_num": 2,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ABMES",
-        "elementName": "ABMES",
+        "elementKey": "PRES",
+        "elementName": "PRES",
         "elementSet": "data",
-        "elementPath": "ABMES"
+        "elementPath": "PRES"
       },
-      "ASSISTPART": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 3,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "ASSISTPART",
-        "elementName": "ASSISTPART",
-        "elementSet": "data",
-        "elementPath": "ASSISTPART"
-      },
-      "CART_ANC": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 4,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CART_ANC",
-        "elementName": "CART_ANC",
-        "elementSet": "data",
-        "elementPath": "CART_ANC"
-      },
-      "CDG_C": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 5,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CDG_C",
-        "elementName": "CDG_C",
-        "elementSet": "data",
-        "elementPath": "CDG_C"
-      },
-      "CDG_M": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 6,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CDG_M",
-        "elementName": "CDG_M",
-        "elementSet": "data",
-        "elementPath": "CDG_M"
-      },
-      "FEDEP_C": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 7,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "FEDEP_C",
-        "elementName": "FEDEP_C",
-        "elementSet": "data",
-        "elementPath": "FEDEP_C"
-      },
-      "FEDEP_M": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 8,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "FEDEP_M",
-        "elementName": "FEDEP_M",
-        "elementSet": "data",
-        "elementPath": "FEDEP_M"
-      },
-      "GRAVIDA_ESTADO": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 9,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "GRAVIDA_ESTADO",
-        "elementName": "GRAVIDA_ESTADO",
-        "elementSet": "data",
-        "elementPath": "GRAVIDA_ESTADO"
-      },
-      "GRCONS": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 10,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "GRCONS",
-        "elementName": "GRCONS",
-        "elementSet": "data",
-        "elementPath": "GRCONS"
-      },
-      "GRINFOS": {
-        "_defn": [
-          {
-            "_row_num": 11,
-            "section_name": "model"
-          }
-        ],
-        "type": "assign",
-        "isSessionVariable": false,
-        "elementKey": "GRINFOS",
-        "elementName": "GRINFOS",
-        "elementSet": "data",
-        "elementPath": "GRINFOS"
-      },
-      "GRVAC": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 12,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "GRVAC",
-        "elementName": "GRVAC",
-        "elementSet": "data",
-        "elementPath": "GRVAC"
-      },
-      "inf1": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 13,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": true,
-        "elementKey": "inf1",
-        "elementName": "inf1",
-        "elementSet": "data",
-        "elementPath": "inf1"
-      },
-      "inf2": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 14,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": true,
-        "elementKey": "inf2",
-        "elementName": "inf2",
-        "elementSet": "data",
-        "elementPath": "inf2"
-      },
-      "LITTERSIZE": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 15,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "LITTERSIZE",
-        "elementName": "LITTERSIZE",
-        "elementSet": "data",
-        "elementPath": "LITTERSIZE"
-      },
-      "LOCPAR": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 16,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "LOCPAR",
-        "elementName": "LOCPAR",
-        "elementSet": "data",
-        "elementPath": "LOCPAR"
-      },
-      "OUTDATE": {
+      "EXITDATA": {
         "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
@@ -3061,345 +2775,372 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 17,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "OUTDATE",
-        "elementName": "OUTDATE",
-        "elementSet": "data",
-        "elementPath": "OUTDATE"
-      },
-      "OUTDATE_PRECIS": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 18,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "OUTDATE_PRECIS",
-        "elementName": "OUTDATE_PRECIS",
-        "elementSet": "data",
-        "elementPath": "OUTDATE_PRECIS"
-      },
-      "OUTSTATUS": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 19,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "OUTSTATUS",
-        "elementName": "OUTSTATUS",
-        "elementSet": "data",
-        "elementPath": "OUTSTATUS"
-      },
-      "QVFANSI_C": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 20,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "QVFANSI_C",
-        "elementName": "QVFANSI_C",
-        "elementSet": "data",
-        "elementPath": "QVFANSI_C"
-      },
-      "ESTADO": {
-        "_defn": [
-          {
-            "_row_num": 6,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "visitstatus",
-        "elementKey": "ESTADO",
-        "elementName": "ESTADO",
-        "elementSet": "data",
-        "elementPath": "ESTADO"
-      },
-      "EXITDATA": {
-        "_defn": [
-          {
             "_row_num": 8,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 3,
+            "section_name": "model"
           }
         ],
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
+        "isSessionVariable": false,
         "elementKey": "EXITDATA",
         "elementName": "EXITDATA",
         "elementSet": "data",
         "elementPath": "EXITDATA"
       },
       "EXITPRECIS": {
+        "type": "string",
+        "valuesList": "precision",
         "_defn": [
           {
             "_row_num": 9,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 4,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "precision",
+        "isSessionVariable": false,
         "elementKey": "EXITPRECIS",
         "elementName": "EXITPRECIS",
         "elementSet": "data",
         "elementPath": "EXITPRECIS"
       },
       "EXITMUDO": {
+        "type": "string",
         "_defn": [
           {
             "_row_num": 11,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 5,
+            "section_name": "model"
           }
         ],
-        "type": "string",
+        "isSessionVariable": false,
         "elementKey": "EXITMUDO",
         "elementName": "EXITMUDO",
         "elementSet": "data",
         "elementPath": "EXITMUDO"
       },
-      "V": {
+      "CARTVAC": {
+        "type": "string",
+        "valuesList": "vcard",
         "_defn": [
           {
             "_row_num": 16,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 6,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "vcard",
-        "elementKey": "V",
-        "elementName": "V",
+        "isSessionVariable": false,
+        "elementKey": "CARTVAC",
+        "elementName": "CARTVAC",
         "elementSet": "data",
-        "elementPath": "V"
+        "elementPath": "CARTVAC"
       },
       "TENDAYN": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 19,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 7,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "TENDAYN",
         "elementName": "TENDAYN",
         "elementSet": "data",
         "elementPath": "TENDAYN"
       },
       "TENDA": {
+        "type": "string",
+        "valuesList": "bednettime",
         "_defn": [
           {
             "_row_num": 20,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 8,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "bednettime",
+        "isSessionVariable": false,
         "elementKey": "TENDA",
         "elementName": "TENDA",
         "elementSet": "data",
         "elementPath": "TENDA"
       },
       "TENDATIPO": {
+        "type": "string",
+        "valuesList": "bednet",
         "_defn": [
           {
             "_row_num": 22,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 9,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "bednet",
+        "isSessionVariable": false,
         "elementKey": "TENDATIPO",
         "elementName": "TENDATIPO",
         "elementSet": "data",
         "elementPath": "TENDATIPO"
       },
       "COMSUP": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 26,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 10,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "COMSUP",
         "elementName": "COMSUP",
         "elementSet": "data",
         "elementPath": "COMSUP"
       },
       "PARMA": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 29,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 11,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "PARMA",
         "elementName": "PARMA",
         "elementSet": "data",
         "elementPath": "PARMA"
       },
       "PORCA": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 32,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 12,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "PORCA",
         "elementName": "PORCA",
         "elementSet": "data",
         "elementPath": "PORCA"
       },
       "PORMO": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 35,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 13,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": true,
         "elementKey": "PORMO",
         "elementName": "PORMO",
         "elementSet": "data",
         "elementPath": "PORMO"
       },
       "MOMA": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 38,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 14,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": true,
         "elementKey": "MOMA",
         "elementName": "MOMA",
         "elementSet": "data",
         "elementPath": "MOMA"
       },
       "HOSP": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 41,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 15,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "HOSP",
         "elementName": "HOSP",
         "elementSet": "data",
         "elementPath": "HOSP"
       },
       "BRACOCRI": {
+        "type": "string",
         "_defn": [
           {
             "_row_num": 45,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 16,
+            "section_name": "model"
           }
         ],
-        "type": "string",
+        "isSessionVariable": false,
         "elementKey": "BRACOCRI",
         "elementName": "BRACOCRI",
         "elementSet": "data",
         "elementPath": "BRACOCRI"
       },
       "CICBCGN": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 48,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 17,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "CICBCGN",
         "elementName": "CICBCGN",
         "elementSet": "data",
         "elementPath": "CICBCGN"
       },
       "CICBCGV": {
+        "type": "string",
         "_defn": [
           {
             "_row_num": 52,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 18,
+            "section_name": "model"
           }
         ],
-        "type": "string",
+        "isSessionVariable": false,
         "elementKey": "CICBCGV",
         "elementName": "CICBCGV",
         "elementSet": "data",
         "elementPath": "CICBCGV"
       },
       "CICBCGH": {
+        "type": "string",
         "_defn": [
           {
             "_row_num": 53,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 19,
+            "section_name": "model"
           }
         ],
-        "type": "string",
+        "isSessionVariable": false,
         "elementKey": "CICBCGH",
         "elementName": "CICBCGH",
         "elementSet": "data",
         "elementPath": "CICBCGH"
       },
       "LINFADENOP": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 58,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 20,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "LINFADENOP",
         "elementName": "LINFADENOP",
         "elementSet": "data",
         "elementPath": "LINFADENOP"
       },
       "LINFADESUP": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 61,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "LINFADESUP",
         "elementName": "LINFADESUP",
         "elementSet": "data",
         "elementPath": "LINFADESUP"
       },
       "PASSARAMPO": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
             "_row_num": 64,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 22,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNoU",
+        "isSessionVariable": false,
         "elementKey": "PASSARAMPO",
         "elementName": "PASSARAMPO",
         "elementSet": "data",
@@ -3521,6 +3262,13 @@
     "properties": [
       {
         "_partition": "Column",
+        "_aspect": "CARTVAC",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vcard\",\"data_value\":\"VIC\",\"display\":{\"title\":{\"text\":{\"english\":\"Card seen\",\"default\":\"Cartão visto\"}}},\"_row_num\":8},{\"choice_list_name\":\"vcard\",\"data_value\":\"NTN\",\"display\":{\"title\":{\"text\":{\"english\":\"Has no card and no vaccines\",\"default\":\"Não tem cartão e não tem vacinas\"}}},\"_row_num\":9},{\"choice_list_name\":\"vcard\",\"data_value\":\"NTS\",\"display\":{\"title\":{\"text\":{\"english\":\"Has no card, some vaccines\",\"default\":\"Não tem cartão, mas tem vacinas\"}}},\"_row_num\":10},{\"choice_list_name\":\"vcard\",\"data_value\":\"NVC\",\"display\":{\"title\":{\"text\":{\"english\":\"Not brought card\",\"default\":\"Não trouxe o cartão\"}}},\"_row_num\":11},{\"choice_list_name\":\"vcard\",\"data_value\":\"PC\",\"display\":{\"title\":{\"text\":{\"english\":\"Lost card\",\"default\":\"Perdeu o cartão\"}}},\"_row_num\":12},{\"choice_list_name\":\"vcard\",\"data_value\":\"VCN\",\"display\":{\"title\":{\"text\":{\"english\":\"Card seen and NO vaccines\",\"default\":\"Cartão visto, mas sem vacinas registadas\"}}},\"_row_num\":13}]"
+      },
+      {
+        "_partition": "Column",
         "_aspect": "CICBCGN",
         "_key": "displayChoicesList",
         "_type": "object",
@@ -3532,13 +3280,6 @@
         "_key": "displayChoicesList",
         "_type": "object",
         "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
-      },
-      {
-        "_partition": "Column",
-        "_aspect": "ESTADO",
-        "_key": "displayChoicesList",
-        "_type": "object",
-        "_value": "[{\"choice_list_name\":\"visitstatus\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Present\",\"default\":\"Presente\"}}},\"_row_num\":2},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Moved out\",\"default\":\"Mudou\"}}},\"_row_num\":3},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Dead\",\"default\":\"Faleceu\"}}},\"_row_num\":4},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent\",\"default\":\"Ausente\"}}},\"_row_num\":5},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Travelling\",\"default\":\"Viagem\"}}},\"_row_num\":6},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Not visited\",\"default\":\"Não visitada\"}}},\"_row_num\":7}]"
       },
       {
         "_partition": "Column",
@@ -3570,13 +3311,6 @@
       },
       {
         "_partition": "Column",
-        "_aspect": "MOMA",
-        "_key": "displayChoicesList",
-        "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
-      },
-      {
-        "_partition": "Column",
         "_aspect": "PARMA",
         "_key": "displayChoicesList",
         "_type": "object",
@@ -3598,10 +3332,10 @@
       },
       {
         "_partition": "Column",
-        "_aspect": "PORMO",
+        "_aspect": "PRES",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"visitstatus\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Present\",\"default\":\"Presente\"}}},\"_row_num\":2},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Moved out\",\"default\":\"Mudou\"}}},\"_row_num\":3},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Dead\",\"default\":\"Faleceu\"}}},\"_row_num\":4},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent\",\"default\":\"Ausente\"}}},\"_row_num\":5},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Travelling\",\"default\":\"Viagem\"}}},\"_row_num\":6},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Not visited\",\"default\":\"Não visitada\"}}},\"_row_num\":7}]"
       },
       {
         "_partition": "Column",
@@ -3623,13 +3357,6 @@
         "_key": "displayChoicesList",
         "_type": "object",
         "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
-      },
-      {
-        "_partition": "Column",
-        "_aspect": "V",
-        "_key": "displayChoicesList",
-        "_type": "object",
-        "_value": "[{\"choice_list_name\":\"vcard\",\"data_value\":\"VIC\",\"display\":{\"title\":{\"text\":{\"english\":\"Card seen\",\"default\":\"Cartão visto\"}}},\"_row_num\":8},{\"choice_list_name\":\"vcard\",\"data_value\":\"NTN\",\"display\":{\"title\":{\"text\":{\"english\":\"Has no card and no vaccines\",\"default\":\"Não tem cartão e não tem vacinas\"}}},\"_row_num\":9},{\"choice_list_name\":\"vcard\",\"data_value\":\"NTS\",\"display\":{\"title\":{\"text\":{\"english\":\"Has no card, some vaccines\",\"default\":\"Não tem cartão, mas tem vacinas\"}}},\"_row_num\":10},{\"choice_list_name\":\"vcard\",\"data_value\":\"NVC\",\"display\":{\"title\":{\"text\":{\"english\":\"Not brought card\",\"default\":\"Não trouxe o cartão\"}}},\"_row_num\":11},{\"choice_list_name\":\"vcard\",\"data_value\":\"PC\",\"display\":{\"title\":{\"text\":{\"english\":\"Lost card\",\"default\":\"Perdeu o cartão\"}}},\"_row_num\":12},{\"choice_list_name\":\"vcard\",\"data_value\":\"VCN\",\"display\":{\"title\":{\"text\":{\"english\":\"Card seen and NO vaccines\",\"default\":\"Cartão visto, mas sem vacinas registadas\"}}},\"_row_num\":13}]"
       },
       {
         "_partition": "FormType",

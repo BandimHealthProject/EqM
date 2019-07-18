@@ -167,6 +167,19 @@
           }
         },
         "_row_num": 9
+      },
+      {
+        "choice_list_name": "forms",
+        "data_value": "MIFCRIANCA_VISIT",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Child Visit",
+              "default": "Child visit"
+            }
+          }
+        },
+        "_row_num": 10
       }
     ],
     "survey": [
@@ -1061,6 +1074,19 @@
             }
           },
           "_row_num": 9
+        },
+        {
+          "choice_list_name": "forms",
+          "data_value": "MIFCRIANCA_VISIT",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Child Visit",
+                "default": "Child visit"
+              }
+            }
+          },
+          "_row_num": 10
         }
       ]
     },
