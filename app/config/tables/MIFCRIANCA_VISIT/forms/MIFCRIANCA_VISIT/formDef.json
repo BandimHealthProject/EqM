@@ -21,8 +21,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Woman in the fertile age - children",
-              "default": "Mulher na idade fertil - criancas"
+              "english": "Woman in the fertile age - children_visit",
+              "default": "Mulher na idade fertil - criancas_visitas"
             }
           }
         },
@@ -83,6 +83,796 @@
       {
         "clause": "end screen",
         "_row_num": 4
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 5
+      },
+      {
+        "type": "select_one",
+        "values_list": "visitstatus",
+        "name": "ESTADO",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Status of the child",
+              "default": "Estado da crianca"
+            }
+          }
+        },
+        "_row_num": 6
+      },
+      {
+        "clause": "if",
+        "condition": "data('ESTADO') ==  '2' || data('ESTADO') ==  '3'",
+        "_row_num": 7
+      },
+      {
+        "type": "custom_date",
+        "name": "EXITDATA",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Exit date",
+              "default": "Data de saída"
+            }
+          }
+        },
+        "_row_num": 8
+      },
+      {
+        "type": "select_one",
+        "values_list": "precision",
+        "name": "EXITPRECIS",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Precision of exit date",
+              "default": "Certo da data de saída"
+            }
+          }
+        },
+        "_row_num": 9
+      },
+      {
+        "clause": "if",
+        "condition": "data('ESTADOVIS') ==  '2'",
+        "_row_num": 10
+      },
+      {
+        "type": "text",
+        "name": "EXITMUDO",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Where?",
+              "default": "Onde?"
+            }
+          }
+        },
+        "_row_num": 11
+      },
+      {
+        "clause": "end if",
+        "_row_num": 12
+      },
+      {
+        "clause": "end if",
+        "_row_num": 13
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 14
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 15
+      },
+      {
+        "type": "select_one",
+        "values_list": "vcard",
+        "name": "V",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Vaccination cart",
+              "default": "Cartão de vacina"
+            }
+          }
+        },
+        "_row_num": 16
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 17
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 18
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "TENDAYN",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Did the child sleep under a bednet last night?",
+              "default": "Dormir na tenda ontem?"
+            }
+          }
+        },
+        "_row_num": 19
+      },
+      {
+        "type": "select_one",
+        "values_list": "bednettime",
+        "name": "TENDA",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Period using bednet",
+              "default": "Todo tempo?"
+            }
+          }
+        },
+        "_row_num": 20
+      },
+      {
+        "clause": "if",
+        "condition": "data('TENDAYN') == '1'",
+        "_row_num": 21
+      },
+      {
+        "type": "select_one",
+        "values_list": "bednet",
+        "name": "TENDATIPO",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Type of bednet",
+              "default": "Qual tipo?"
+            }
+          }
+        },
+        "_row_num": 22
+      },
+      {
+        "clause": "end if",
+        "_row_num": 23
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 24
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 25
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "COMSUP",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Does the child recieve supplementary foods?",
+              "default": "Does the child recieve supplementary foods?"
+            }
+          }
+        },
+        "_row_num": 26
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 27
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 28
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "PARMA",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Has the child stopped breastfeeding?",
+              "default": "Has the child stopped breastfeeding?"
+            }
+          }
+        },
+        "_row_num": 29
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 30
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 31
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "PORCA",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Are pigs living in the house?",
+              "default": "Are pigs living in the house?"
+            }
+          }
+        },
+        "_row_num": 32
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 33
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 34
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "PORMO",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Are there pigs living in the compound?",
+              "default": "Are there pigs living in the compound?"
+            }
+          }
+        },
+        "_row_num": 35
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 36
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 37
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "MOMA",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Is the child living with their mother?",
+              "default": "Is the child living with their mother?"
+            }
+          }
+        },
+        "_row_num": 38
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 39
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 40
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "HOSP",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Has the child been amitted to the hostpital since last visist?",
+              "default": "Has the child been amitted to the hostpital since last visist?"
+            }
+          }
+        },
+        "_row_num": 41
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 42
+      },
+      {
+        "clause": "if",
+        "condition": "data('ESTADOVIS') ==  '1'",
+        "_row_num": 43
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 44
+      },
+      {
+        "type": "text",
+        "name": "BRACOCRI",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "What is the childs MUAC Mesurements in MM",
+              "default": "What is the childs MUAC Mesurements in MM"
+            }
+          }
+        },
+        "_row_num": 45
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 46
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 47
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "CICBCGN",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Does the child have a BSG scar?",
+              "default": "Does the child have a BSG scar?"
+            }
+          }
+        },
+        "_row_num": 48
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 49
+      },
+      {
+        "clause": "if",
+        "condition": "data('CICBCGN') ==  '1'",
+        "_row_num": 50
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 51
+      },
+      {
+        "type": "text",
+        "name": "CICBCGV",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Vertical measurement of the scar in MM",
+              "default": "Vertical measurement of the scar in MM"
+            }
+          }
+        },
+        "_row_num": 52
+      },
+      {
+        "type": "text",
+        "name": "CICBCGH",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Horizontal measurement of the scar in MM",
+              "default": "Horizontal measurement of the scar in MM"
+            }
+          }
+        },
+        "_row_num": 53
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 54
+      },
+      {
+        "clause": "end if",
+        "_row_num": 55
+      },
+      {
+        "clause": "end if",
+        "_row_num": 56
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 57
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "LINFADENOP",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Limphadenopaty",
+              "default": "Limphadenopaty"
+            }
+          }
+        },
+        "_row_num": 58
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 59
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 60
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "LINFADESUP",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Suppurative limfadenopaty",
+              "default": "Suppurative limfadenopaty"
+            }
+          }
+        },
+        "_row_num": 61
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 62
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 63
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "PASSARAMPO",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Has the child had measles",
+              "default": "Has the child had measles"
+            }
+          }
+        },
+        "_row_num": 64
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 65
+      }
+    ],
+    "prompt_types": [
+      {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2
+      }
+    ],
+    "choices": [
+      {
+        "choice_list_name": "visitstatus",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Present",
+              "default": "Presente"
+            }
+          }
+        },
+        "_row_num": 2
+      },
+      {
+        "choice_list_name": "visitstatus",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Moved out",
+              "default": "Mudou"
+            }
+          }
+        },
+        "_row_num": 3
+      },
+      {
+        "choice_list_name": "visitstatus",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Dead",
+              "default": "Faleceu"
+            }
+          }
+        },
+        "_row_num": 4
+      },
+      {
+        "choice_list_name": "visitstatus",
+        "data_value": "4",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Absent",
+              "default": "Ausente"
+            }
+          }
+        },
+        "_row_num": 5
+      },
+      {
+        "choice_list_name": "visitstatus",
+        "data_value": "5",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Travelling",
+              "default": "Viagem"
+            }
+          }
+        },
+        "_row_num": 6
+      },
+      {
+        "choice_list_name": "visitstatus",
+        "data_value": "6",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Not visited",
+              "default": "Não visitada"
+            }
+          }
+        },
+        "_row_num": 7
+      },
+      {
+        "choice_list_name": "vcard",
+        "data_value": "VIC",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Card seen",
+              "default": "Cartão visto"
+            }
+          }
+        },
+        "_row_num": 8
+      },
+      {
+        "choice_list_name": "vcard",
+        "data_value": "NTN",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Has no card and no vaccines",
+              "default": "Não tem cartão e não tem vacinas"
+            }
+          }
+        },
+        "_row_num": 9
+      },
+      {
+        "choice_list_name": "vcard",
+        "data_value": "NTS",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Has no card, some vaccines",
+              "default": "Não tem cartão, mas tem vacinas"
+            }
+          }
+        },
+        "_row_num": 10
+      },
+      {
+        "choice_list_name": "vcard",
+        "data_value": "NVC",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Not brought card",
+              "default": "Não trouxe o cartão"
+            }
+          }
+        },
+        "_row_num": 11
+      },
+      {
+        "choice_list_name": "vcard",
+        "data_value": "PC",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Lost card",
+              "default": "Perdeu o cartão"
+            }
+          }
+        },
+        "_row_num": 12
+      },
+      {
+        "choice_list_name": "vcard",
+        "data_value": "VCN",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Card seen and NO vaccines",
+              "default": "Cartão visto, mas sem vacinas registadas"
+            }
+          }
+        },
+        "_row_num": 13
+      },
+      {
+        "choice_list_name": "bednet",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Impregnated net",
+              "default": "Tenda impregnada"
+            }
+          }
+        },
+        "_row_num": 14
+      },
+      {
+        "choice_list_name": "bednet",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Simple bednet",
+              "default": "Tenda simples"
+            }
+          }
+        },
+        "_row_num": 15
+      },
+      {
+        "choice_list_name": "bednet",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Unknown type",
+              "default": "Não sabe"
+            }
+          }
+        },
+        "_row_num": 16
+      },
+      {
+        "choice_list_name": "bednettime",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "english": "All year",
+              "default": "Tudo Ano"
+            }
+          }
+        },
+        "_row_num": 17
+      },
+      {
+        "choice_list_name": "bednettime",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Rainy season",
+              "default": "Chuva"
+            }
+          }
+        },
+        "_row_num": 18
+      },
+      {
+        "choice_list_name": "bednettime",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Other",
+              "default": "Outra/o"
+            }
+          }
+        },
+        "_row_num": 19
+      },
+      {
+        "choice_list_name": "YesNoU",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Yes",
+              "default": "Sim"
+            }
+          }
+        },
+        "_row_num": 20
+      },
+      {
+        "choice_list_name": "YesNoU",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "english": "No",
+              "default": "Não"
+            }
+          }
+        },
+        "_row_num": 21
+      },
+      {
+        "choice_list_name": "YesNoU",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Don't know",
+              "default": "Não sabe"
+            }
+          }
+        },
+        "_row_num": 22
+      },
+      {
+        "choice_list_name": "precision",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Day certain",
+              "default": "Dia certo"
+            }
+          }
+        },
+        "_row_num": 23
+      },
+      {
+        "choice_list_name": "precision",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Month certain",
+              "default": "Mes certo"
+            }
+          }
+        },
+        "_row_num": 24
+      },
+      {
+        "choice_list_name": "precision",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Season certain",
+              "default": "Estação certo"
+            }
+          }
+        },
+        "_row_num": 25
+      },
+      {
+        "choice_list_name": "precision",
+        "data_value": "4",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Year certain",
+              "default": "Ano certo"
+            }
+          }
+        },
+        "_row_num": 26
       }
     ],
     "model": [
@@ -239,8 +1029,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Woman in the fertile age - children",
-              "default": "Mulher na idade fertil - criancas"
+              "english": "Woman in the fertile age - children_visit",
+              "default": "Mulher na idade fertil - criancas_visitas"
             }
           }
         },
@@ -320,15 +1110,353 @@
         "display": {
           "title": {
             "text": {
-              "english": "Woman in the fertile age - children",
-              "default": "Mulher na idade fertil - criancas"
+              "english": "Woman in the fertile age - children_visit",
+              "default": "Mulher na idade fertil - criancas_visitas"
             }
           }
         },
         "_row_num": 5
       }
     },
-    "choices": {},
+    "choices": {
+      "visitstatus": [
+        {
+          "choice_list_name": "visitstatus",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Present",
+                "default": "Presente"
+              }
+            }
+          },
+          "_row_num": 2
+        },
+        {
+          "choice_list_name": "visitstatus",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Moved out",
+                "default": "Mudou"
+              }
+            }
+          },
+          "_row_num": 3
+        },
+        {
+          "choice_list_name": "visitstatus",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Dead",
+                "default": "Faleceu"
+              }
+            }
+          },
+          "_row_num": 4
+        },
+        {
+          "choice_list_name": "visitstatus",
+          "data_value": "4",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Absent",
+                "default": "Ausente"
+              }
+            }
+          },
+          "_row_num": 5
+        },
+        {
+          "choice_list_name": "visitstatus",
+          "data_value": "5",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Travelling",
+                "default": "Viagem"
+              }
+            }
+          },
+          "_row_num": 6
+        },
+        {
+          "choice_list_name": "visitstatus",
+          "data_value": "6",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Not visited",
+                "default": "Não visitada"
+              }
+            }
+          },
+          "_row_num": 7
+        }
+      ],
+      "vcard": [
+        {
+          "choice_list_name": "vcard",
+          "data_value": "VIC",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Card seen",
+                "default": "Cartão visto"
+              }
+            }
+          },
+          "_row_num": 8
+        },
+        {
+          "choice_list_name": "vcard",
+          "data_value": "NTN",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Has no card and no vaccines",
+                "default": "Não tem cartão e não tem vacinas"
+              }
+            }
+          },
+          "_row_num": 9
+        },
+        {
+          "choice_list_name": "vcard",
+          "data_value": "NTS",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Has no card, some vaccines",
+                "default": "Não tem cartão, mas tem vacinas"
+              }
+            }
+          },
+          "_row_num": 10
+        },
+        {
+          "choice_list_name": "vcard",
+          "data_value": "NVC",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Not brought card",
+                "default": "Não trouxe o cartão"
+              }
+            }
+          },
+          "_row_num": 11
+        },
+        {
+          "choice_list_name": "vcard",
+          "data_value": "PC",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Lost card",
+                "default": "Perdeu o cartão"
+              }
+            }
+          },
+          "_row_num": 12
+        },
+        {
+          "choice_list_name": "vcard",
+          "data_value": "VCN",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Card seen and NO vaccines",
+                "default": "Cartão visto, mas sem vacinas registadas"
+              }
+            }
+          },
+          "_row_num": 13
+        }
+      ],
+      "bednet": [
+        {
+          "choice_list_name": "bednet",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Impregnated net",
+                "default": "Tenda impregnada"
+              }
+            }
+          },
+          "_row_num": 14
+        },
+        {
+          "choice_list_name": "bednet",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Simple bednet",
+                "default": "Tenda simples"
+              }
+            }
+          },
+          "_row_num": 15
+        },
+        {
+          "choice_list_name": "bednet",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Unknown type",
+                "default": "Não sabe"
+              }
+            }
+          },
+          "_row_num": 16
+        }
+      ],
+      "bednettime": [
+        {
+          "choice_list_name": "bednettime",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "english": "All year",
+                "default": "Tudo Ano"
+              }
+            }
+          },
+          "_row_num": 17
+        },
+        {
+          "choice_list_name": "bednettime",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Rainy season",
+                "default": "Chuva"
+              }
+            }
+          },
+          "_row_num": 18
+        },
+        {
+          "choice_list_name": "bednettime",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Other",
+                "default": "Outra/o"
+              }
+            }
+          },
+          "_row_num": 19
+        }
+      ],
+      "YesNoU": [
+        {
+          "choice_list_name": "YesNoU",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Yes",
+                "default": "Sim"
+              }
+            }
+          },
+          "_row_num": 20
+        },
+        {
+          "choice_list_name": "YesNoU",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "english": "No",
+                "default": "Não"
+              }
+            }
+          },
+          "_row_num": 21
+        },
+        {
+          "choice_list_name": "YesNoU",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Don't know",
+                "default": "Não sabe"
+              }
+            }
+          },
+          "_row_num": 22
+        }
+      ],
+      "precision": [
+        {
+          "choice_list_name": "precision",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Day certain",
+                "default": "Dia certo"
+              }
+            }
+          },
+          "_row_num": 23
+        },
+        {
+          "choice_list_name": "precision",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Month certain",
+                "default": "Mes certo"
+              }
+            }
+          },
+          "_row_num": 24
+        },
+        {
+          "choice_list_name": "precision",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Season certain",
+                "default": "Estação certo"
+              }
+            }
+          },
+          "_row_num": 25
+        },
+        {
+          "choice_list_name": "precision",
+          "data_value": "4",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Year certain",
+                "default": "Ano certo"
+              }
+            }
+          },
+          "_row_num": 26
+        }
+      ]
+    },
     "table_specific_definitions": {
       "_tokens": {}
     },
@@ -501,13 +1629,18 @@
         "elementKey": "LOCPAR"
       },
       "OUTDATE": {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 17,
             "section_name": "model"
           }
         ],
-        "type": "custom_date",
         "isSessionVariable": false,
         "elementKey": "OUTDATE"
       },
@@ -543,6 +1676,235 @@
         ],
         "isSessionVariable": false,
         "elementKey": "QVFANSI_C"
+      },
+      "ESTADO": {
+        "_defn": [
+          {
+            "_row_num": 6,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "visitstatus",
+        "elementKey": "ESTADO"
+      },
+      "EXITDATA": {
+        "_defn": [
+          {
+            "_row_num": 8,
+            "section_name": "survey"
+          }
+        ],
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "elementKey": "EXITDATA"
+      },
+      "EXITPRECIS": {
+        "_defn": [
+          {
+            "_row_num": 9,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "precision",
+        "elementKey": "EXITPRECIS"
+      },
+      "EXITMUDO": {
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "elementKey": "EXITMUDO"
+      },
+      "V": {
+        "_defn": [
+          {
+            "_row_num": 16,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "vcard",
+        "elementKey": "V"
+      },
+      "TENDAYN": {
+        "_defn": [
+          {
+            "_row_num": 19,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "TENDAYN"
+      },
+      "TENDA": {
+        "_defn": [
+          {
+            "_row_num": 20,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "bednettime",
+        "elementKey": "TENDA"
+      },
+      "TENDATIPO": {
+        "_defn": [
+          {
+            "_row_num": 22,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "bednet",
+        "elementKey": "TENDATIPO"
+      },
+      "COMSUP": {
+        "_defn": [
+          {
+            "_row_num": 26,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "COMSUP"
+      },
+      "PARMA": {
+        "_defn": [
+          {
+            "_row_num": 29,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "PARMA"
+      },
+      "PORCA": {
+        "_defn": [
+          {
+            "_row_num": 32,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "PORCA"
+      },
+      "PORMO": {
+        "_defn": [
+          {
+            "_row_num": 35,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "PORMO"
+      },
+      "MOMA": {
+        "_defn": [
+          {
+            "_row_num": 38,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "MOMA"
+      },
+      "HOSP": {
+        "_defn": [
+          {
+            "_row_num": 41,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "HOSP"
+      },
+      "BRACOCRI": {
+        "_defn": [
+          {
+            "_row_num": 45,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "elementKey": "BRACOCRI"
+      },
+      "CICBCGN": {
+        "_defn": [
+          {
+            "_row_num": 48,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "CICBCGN"
+      },
+      "CICBCGV": {
+        "_defn": [
+          {
+            "_row_num": 52,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "elementKey": "CICBCGV"
+      },
+      "CICBCGH": {
+        "_defn": [
+          {
+            "_row_num": 53,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "elementKey": "CICBCGH"
+      },
+      "LINFADENOP": {
+        "_defn": [
+          {
+            "_row_num": 58,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "LINFADENOP"
+      },
+      "LINFADESUP": {
+        "_defn": [
+          {
+            "_row_num": 61,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "LINFADESUP"
+      },
+      "PASSARAMPO": {
+        "_defn": [
+          {
+            "_row_num": 64,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "PASSARAMPO"
       }
     },
     "section_names": [
@@ -573,12 +1935,406 @@
             "promptIdx": 0
           },
           {
+            "type": "select_one",
+            "values_list": "visitstatus",
+            "name": "ESTADO",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Status of the child",
+                  "default": "Estado da crianca"
+                }
+              }
+            },
+            "_row_num": 6,
+            "__rowNum__": 5,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen5",
+            "promptIdx": 1
+          },
+          {
+            "type": "custom_date",
+            "name": "EXITDATA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Exit date",
+                  "default": "Data de saída"
+                }
+              }
+            },
+            "_row_num": 8,
+            "__rowNum__": 7,
+            "_token_type": "prompt",
+            "_type": "custom_date",
+            "_branch_label_enclosing_screen": "survey/_screen5",
+            "promptIdx": 2
+          },
+          {
+            "type": "select_one",
+            "values_list": "precision",
+            "name": "EXITPRECIS",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Precision of exit date",
+                  "default": "Certo da data de saída"
+                }
+              }
+            },
+            "_row_num": 9,
+            "__rowNum__": 8,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen5",
+            "promptIdx": 3
+          },
+          {
+            "type": "text",
+            "name": "EXITMUDO",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Where?",
+                  "default": "Onde?"
+                }
+              }
+            },
+            "_row_num": 11,
+            "__rowNum__": 10,
+            "_token_type": "prompt",
+            "_type": "text",
+            "_branch_label_enclosing_screen": "survey/_screen5",
+            "promptIdx": 4
+          },
+          {
+            "type": "select_one",
+            "values_list": "vcard",
+            "name": "V",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Vaccination cart",
+                  "default": "Cartão de vacina"
+                }
+              }
+            },
+            "_row_num": 16,
+            "__rowNum__": 15,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen15",
+            "promptIdx": 5
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "TENDAYN",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Did the child sleep under a bednet last night?",
+                  "default": "Dormir na tenda ontem?"
+                }
+              }
+            },
+            "_row_num": 19,
+            "__rowNum__": 18,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen18",
+            "promptIdx": 6
+          },
+          {
+            "type": "select_one",
+            "values_list": "bednettime",
+            "name": "TENDA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Period using bednet",
+                  "default": "Todo tempo?"
+                }
+              }
+            },
+            "_row_num": 20,
+            "__rowNum__": 19,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen18",
+            "promptIdx": 7
+          },
+          {
+            "type": "select_one",
+            "values_list": "bednet",
+            "name": "TENDATIPO",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Type of bednet",
+                  "default": "Qual tipo?"
+                }
+              }
+            },
+            "_row_num": 22,
+            "__rowNum__": 21,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen18",
+            "promptIdx": 8
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "COMSUP",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Does the child recieve supplementary foods?",
+                  "default": "Does the child recieve supplementary foods?"
+                }
+              }
+            },
+            "_row_num": 26,
+            "__rowNum__": 25,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen25",
+            "promptIdx": 9
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "PARMA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Has the child stopped breastfeeding?",
+                  "default": "Has the child stopped breastfeeding?"
+                }
+              }
+            },
+            "_row_num": 29,
+            "__rowNum__": 28,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen28",
+            "promptIdx": 10
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "PORCA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Are pigs living in the house?",
+                  "default": "Are pigs living in the house?"
+                }
+              }
+            },
+            "_row_num": 32,
+            "__rowNum__": 31,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen31",
+            "promptIdx": 11
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "PORMO",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Are there pigs living in the compound?",
+                  "default": "Are there pigs living in the compound?"
+                }
+              }
+            },
+            "_row_num": 35,
+            "__rowNum__": 34,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen34",
+            "promptIdx": 12
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "MOMA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Is the child living with their mother?",
+                  "default": "Is the child living with their mother?"
+                }
+              }
+            },
+            "_row_num": 38,
+            "__rowNum__": 37,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen37",
+            "promptIdx": 13
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "HOSP",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Has the child been amitted to the hostpital since last visist?",
+                  "default": "Has the child been amitted to the hostpital since last visist?"
+                }
+              }
+            },
+            "_row_num": 41,
+            "__rowNum__": 40,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen40",
+            "promptIdx": 14
+          },
+          {
+            "type": "text",
+            "name": "BRACOCRI",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "What is the childs MUAC Mesurements in MM",
+                  "default": "What is the childs MUAC Mesurements in MM"
+                }
+              }
+            },
+            "_row_num": 45,
+            "__rowNum__": 44,
+            "_token_type": "prompt",
+            "_type": "text",
+            "_branch_label_enclosing_screen": "survey/_screen44",
+            "promptIdx": 15
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "CICBCGN",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Does the child have a BSG scar?",
+                  "default": "Does the child have a BSG scar?"
+                }
+              }
+            },
+            "_row_num": 48,
+            "__rowNum__": 47,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen47",
+            "promptIdx": 16
+          },
+          {
+            "type": "text",
+            "name": "CICBCGV",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Vertical measurement of the scar in MM",
+                  "default": "Vertical measurement of the scar in MM"
+                }
+              }
+            },
+            "_row_num": 52,
+            "__rowNum__": 51,
+            "_token_type": "prompt",
+            "_type": "text",
+            "_branch_label_enclosing_screen": "survey/_screen51",
+            "promptIdx": 17
+          },
+          {
+            "type": "text",
+            "name": "CICBCGH",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Horizontal measurement of the scar in MM",
+                  "default": "Horizontal measurement of the scar in MM"
+                }
+              }
+            },
+            "_row_num": 53,
+            "__rowNum__": 52,
+            "_token_type": "prompt",
+            "_type": "text",
+            "_branch_label_enclosing_screen": "survey/_screen51",
+            "promptIdx": 18
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "LINFADENOP",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Limphadenopaty",
+                  "default": "Limphadenopaty"
+                }
+              }
+            },
+            "_row_num": 58,
+            "__rowNum__": 57,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen57",
+            "promptIdx": 19
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "LINFADESUP",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Suppurative limfadenopaty",
+                  "default": "Suppurative limfadenopaty"
+                }
+              }
+            },
+            "_row_num": 61,
+            "__rowNum__": 60,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen60",
+            "promptIdx": 20
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "PASSARAMPO",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Has the child had measles",
+                  "default": "Has the child had measles"
+                }
+              }
+            },
+            "_row_num": 64,
+            "__rowNum__": 63,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen63",
+            "promptIdx": 21
+          },
+          {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 5,
-            "_branch_label_enclosing_screen": "survey/_screen5",
-            "promptIdx": 1
+            "_row_num": 66,
+            "_branch_label_enclosing_screen": "survey/_screen66",
+            "promptIdx": 22
           }
         ],
         "validation_tag_map": {
@@ -600,31 +2356,308 @@
             "operationIdx": 0
           },
           {
-            "_token_type": "exit_section",
-            "clause": "exit section",
+            "clause": "begin screen",
             "_row_num": 5,
+            "__rowNum__": 4,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 14,
+              "__rowNum__": 13,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(1);\nif (data('ESTADO') ==  '2' || data('ESTADO') ==  '3') {\nactivePromptIndicies.push(2);\nactivePromptIndicies.push(3);\nif (data('ESTADOVIS') ==  '2') {\nactivePromptIndicies.push(4);\n}\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 1
           },
           {
-            "_row_num": 5,
+            "clause": "begin screen",
+            "_row_num": 15,
+            "__rowNum__": 14,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(1);\n\nreturn activePromptIndicies;\n}\n",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 17,
+              "__rowNum__": 16,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(5);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 2
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 18,
+            "__rowNum__": 17,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 24,
+              "__rowNum__": 23,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(6);\nactivePromptIndicies.push(7);\nif (data('TENDAYN') == '1') {\nactivePromptIndicies.push(8);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 3
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 25,
+            "__rowNum__": 24,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 27,
+              "__rowNum__": 26,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(9);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 4
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 28,
+            "__rowNum__": 27,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 30,
+              "__rowNum__": 29,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(10);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 5
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 31,
+            "__rowNum__": 30,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 33,
+              "__rowNum__": 32,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(11);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 6
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 34,
+            "__rowNum__": 33,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 36,
+              "__rowNum__": 35,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(12);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 7
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 37,
+            "__rowNum__": 36,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 39,
+              "__rowNum__": 38,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(13);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 8
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 40,
+            "__rowNum__": 39,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 42,
+              "__rowNum__": 41,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(14);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 9
+          },
+          {
+            "clause": "if",
+            "condition": "data('ESTADOVIS') ==  '1'",
+            "_row_num": 43,
+            "__rowNum__": 42,
+            "_token_type": "goto_label",
+            "_branch_label": "_then43",
+            "operationIdx": 10
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_else56",
+            "_row_num": 56,
+            "operationIdx": 11
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 44,
+            "__rowNum__": 43,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 46,
+              "__rowNum__": 45,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(15);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 12
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 47,
+            "__rowNum__": 46,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 49,
+              "__rowNum__": 48,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(16);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 13
+          },
+          {
+            "clause": "if",
+            "condition": "data('CICBCGN') ==  '1'",
+            "_row_num": 50,
+            "__rowNum__": 49,
+            "_token_type": "goto_label",
+            "_branch_label": "_then50",
+            "operationIdx": 14
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_else55",
+            "_row_num": 55,
+            "operationIdx": 15
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 51,
+            "__rowNum__": 50,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 54,
+              "__rowNum__": 53,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(17);\nactivePromptIndicies.push(18);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 16
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif55",
+            "_row_num": 55,
+            "operationIdx": 17
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif56",
+            "_row_num": 56,
+            "operationIdx": 18
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 57,
+            "__rowNum__": 56,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 59,
+              "__rowNum__": 58,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(19);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 19
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 60,
+            "__rowNum__": 59,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 62,
+              "__rowNum__": 61,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(20);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 20
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 63,
+            "__rowNum__": 62,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 65,
+              "__rowNum__": 64,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(21);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 21
+          },
+          {
+            "_token_type": "exit_section",
+            "clause": "exit section",
+            "_row_num": 66,
+            "operationIdx": 22
+          },
+          {
+            "_row_num": 66,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(22);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 2
+            "operationIdx": 23
           },
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 5,
-            "operationIdx": 3
+            "_row_num": 66,
+            "operationIdx": 24
           }
         ],
         "branch_label_map": {
           "_screen2": 0,
-          "_contents": 2,
-          "_screen5": 2
+          "_screen5": 1,
+          "_screen15": 2,
+          "_screen18": 3,
+          "_screen25": 4,
+          "_screen28": 5,
+          "_screen31": 6,
+          "_screen34": 7,
+          "_screen37": 8,
+          "_screen40": 9,
+          "_then43": 12,
+          "_screen44": 12,
+          "_screen47": 13,
+          "_then50": 16,
+          "_screen51": 16,
+          "_else55": 18,
+          "_endif55": 18,
+          "_else56": 19,
+          "_endif56": 19,
+          "_screen57": 19,
+          "_screen60": 20,
+          "_screen63": 21,
+          "_contents": 23,
+          "_screen66": 23
         }
       },
       "initial": {
@@ -657,8 +2690,8 @@
             "display": {
               "title": {
                 "text": {
-                  "english": "Woman in the fertile age - children",
-                  "default": "Mulher na idade fertil - criancas"
+                  "english": "Woman in the fertile age - children_visit",
+                  "default": "Mulher na idade fertil - criancas_visitas"
                 }
               }
             },
@@ -1020,13 +3053,18 @@
         "elementPath": "LOCPAR"
       },
       "OUTDATE": {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 17,
             "section_name": "model"
           }
         ],
-        "type": "custom_date",
         "isSessionVariable": false,
         "elementKey": "OUTDATE",
         "elementName": "OUTDATE",
@@ -1074,6 +3112,298 @@
         "elementName": "QVFANSI_C",
         "elementSet": "data",
         "elementPath": "QVFANSI_C"
+      },
+      "ESTADO": {
+        "_defn": [
+          {
+            "_row_num": 6,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "visitstatus",
+        "elementKey": "ESTADO",
+        "elementName": "ESTADO",
+        "elementSet": "data",
+        "elementPath": "ESTADO"
+      },
+      "EXITDATA": {
+        "_defn": [
+          {
+            "_row_num": 8,
+            "section_name": "survey"
+          }
+        ],
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "elementKey": "EXITDATA",
+        "elementName": "EXITDATA",
+        "elementSet": "data",
+        "elementPath": "EXITDATA"
+      },
+      "EXITPRECIS": {
+        "_defn": [
+          {
+            "_row_num": 9,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "precision",
+        "elementKey": "EXITPRECIS",
+        "elementName": "EXITPRECIS",
+        "elementSet": "data",
+        "elementPath": "EXITPRECIS"
+      },
+      "EXITMUDO": {
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "elementKey": "EXITMUDO",
+        "elementName": "EXITMUDO",
+        "elementSet": "data",
+        "elementPath": "EXITMUDO"
+      },
+      "V": {
+        "_defn": [
+          {
+            "_row_num": 16,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "vcard",
+        "elementKey": "V",
+        "elementName": "V",
+        "elementSet": "data",
+        "elementPath": "V"
+      },
+      "TENDAYN": {
+        "_defn": [
+          {
+            "_row_num": 19,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "TENDAYN",
+        "elementName": "TENDAYN",
+        "elementSet": "data",
+        "elementPath": "TENDAYN"
+      },
+      "TENDA": {
+        "_defn": [
+          {
+            "_row_num": 20,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "bednettime",
+        "elementKey": "TENDA",
+        "elementName": "TENDA",
+        "elementSet": "data",
+        "elementPath": "TENDA"
+      },
+      "TENDATIPO": {
+        "_defn": [
+          {
+            "_row_num": 22,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "bednet",
+        "elementKey": "TENDATIPO",
+        "elementName": "TENDATIPO",
+        "elementSet": "data",
+        "elementPath": "TENDATIPO"
+      },
+      "COMSUP": {
+        "_defn": [
+          {
+            "_row_num": 26,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "COMSUP",
+        "elementName": "COMSUP",
+        "elementSet": "data",
+        "elementPath": "COMSUP"
+      },
+      "PARMA": {
+        "_defn": [
+          {
+            "_row_num": 29,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "PARMA",
+        "elementName": "PARMA",
+        "elementSet": "data",
+        "elementPath": "PARMA"
+      },
+      "PORCA": {
+        "_defn": [
+          {
+            "_row_num": 32,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "PORCA",
+        "elementName": "PORCA",
+        "elementSet": "data",
+        "elementPath": "PORCA"
+      },
+      "PORMO": {
+        "_defn": [
+          {
+            "_row_num": 35,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "PORMO",
+        "elementName": "PORMO",
+        "elementSet": "data",
+        "elementPath": "PORMO"
+      },
+      "MOMA": {
+        "_defn": [
+          {
+            "_row_num": 38,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "MOMA",
+        "elementName": "MOMA",
+        "elementSet": "data",
+        "elementPath": "MOMA"
+      },
+      "HOSP": {
+        "_defn": [
+          {
+            "_row_num": 41,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "HOSP",
+        "elementName": "HOSP",
+        "elementSet": "data",
+        "elementPath": "HOSP"
+      },
+      "BRACOCRI": {
+        "_defn": [
+          {
+            "_row_num": 45,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "elementKey": "BRACOCRI",
+        "elementName": "BRACOCRI",
+        "elementSet": "data",
+        "elementPath": "BRACOCRI"
+      },
+      "CICBCGN": {
+        "_defn": [
+          {
+            "_row_num": 48,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "CICBCGN",
+        "elementName": "CICBCGN",
+        "elementSet": "data",
+        "elementPath": "CICBCGN"
+      },
+      "CICBCGV": {
+        "_defn": [
+          {
+            "_row_num": 52,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "elementKey": "CICBCGV",
+        "elementName": "CICBCGV",
+        "elementSet": "data",
+        "elementPath": "CICBCGV"
+      },
+      "CICBCGH": {
+        "_defn": [
+          {
+            "_row_num": 53,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "elementKey": "CICBCGH",
+        "elementName": "CICBCGH",
+        "elementSet": "data",
+        "elementPath": "CICBCGH"
+      },
+      "LINFADENOP": {
+        "_defn": [
+          {
+            "_row_num": 58,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "LINFADENOP",
+        "elementName": "LINFADENOP",
+        "elementSet": "data",
+        "elementPath": "LINFADENOP"
+      },
+      "LINFADESUP": {
+        "_defn": [
+          {
+            "_row_num": 61,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "LINFADESUP",
+        "elementName": "LINFADESUP",
+        "elementSet": "data",
+        "elementPath": "LINFADESUP"
+      },
+      "PASSARAMPO": {
+        "_defn": [
+          {
+            "_row_num": 64,
+            "section_name": "survey"
+          }
+        ],
+        "type": "string",
+        "valuesList": "YesNoU",
+        "elementKey": "PASSARAMPO",
+        "elementName": "PASSARAMPO",
+        "elementSet": "data",
+        "elementPath": "PASSARAMPO"
       },
       "_id": {
         "type": "string",
@@ -1190,6 +3520,118 @@
     },
     "properties": [
       {
+        "_partition": "Column",
+        "_aspect": "CICBCGN",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "COMSUP",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "ESTADO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"visitstatus\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Present\",\"default\":\"Presente\"}}},\"_row_num\":2},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Moved out\",\"default\":\"Mudou\"}}},\"_row_num\":3},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Dead\",\"default\":\"Faleceu\"}}},\"_row_num\":4},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent\",\"default\":\"Ausente\"}}},\"_row_num\":5},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Travelling\",\"default\":\"Viagem\"}}},\"_row_num\":6},{\"choice_list_name\":\"visitstatus\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Not visited\",\"default\":\"Não visitada\"}}},\"_row_num\":7}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "EXITPRECIS",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"precision\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Day certain\",\"default\":\"Dia certo\"}}},\"_row_num\":23},{\"choice_list_name\":\"precision\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Month certain\",\"default\":\"Mes certo\"}}},\"_row_num\":24},{\"choice_list_name\":\"precision\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Season certain\",\"default\":\"Estação certo\"}}},\"_row_num\":25},{\"choice_list_name\":\"precision\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Year certain\",\"default\":\"Ano certo\"}}},\"_row_num\":26}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "HOSP",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "LINFADENOP",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "LINFADESUP",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "MOMA",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "PARMA",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "PASSARAMPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "PORCA",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "PORMO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "TENDA",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"bednettime\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"All year\",\"default\":\"Tudo Ano\"}}},\"_row_num\":17},{\"choice_list_name\":\"bednettime\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Rainy season\",\"default\":\"Chuva\"}}},\"_row_num\":18},{\"choice_list_name\":\"bednettime\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outra/o\"}}},\"_row_num\":19}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "TENDATIPO",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"bednet\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Impregnated net\",\"default\":\"Tenda impregnada\"}}},\"_row_num\":14},{\"choice_list_name\":\"bednet\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Simple bednet\",\"default\":\"Tenda simples\"}}},\"_row_num\":15},{\"choice_list_name\":\"bednet\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Unknown type\",\"default\":\"Não sabe\"}}},\"_row_num\":16}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "TENDAYN",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "V",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vcard\",\"data_value\":\"VIC\",\"display\":{\"title\":{\"text\":{\"english\":\"Card seen\",\"default\":\"Cartão visto\"}}},\"_row_num\":8},{\"choice_list_name\":\"vcard\",\"data_value\":\"NTN\",\"display\":{\"title\":{\"text\":{\"english\":\"Has no card and no vaccines\",\"default\":\"Não tem cartão e não tem vacinas\"}}},\"_row_num\":9},{\"choice_list_name\":\"vcard\",\"data_value\":\"NTS\",\"display\":{\"title\":{\"text\":{\"english\":\"Has no card, some vaccines\",\"default\":\"Não tem cartão, mas tem vacinas\"}}},\"_row_num\":10},{\"choice_list_name\":\"vcard\",\"data_value\":\"NVC\",\"display\":{\"title\":{\"text\":{\"english\":\"Not brought card\",\"default\":\"Não trouxe o cartão\"}}},\"_row_num\":11},{\"choice_list_name\":\"vcard\",\"data_value\":\"PC\",\"display\":{\"title\":{\"text\":{\"english\":\"Lost card\",\"default\":\"Perdeu o cartão\"}}},\"_row_num\":12},{\"choice_list_name\":\"vcard\",\"data_value\":\"VCN\",\"display\":{\"title\":{\"text\":{\"english\":\"Card seen and NO vaccines\",\"default\":\"Cartão visto, mas sem vacinas registadas\"}}},\"_row_num\":13}]"
+      },
+      {
         "_partition": "FormType",
         "_aspect": "default",
         "_key": "FormType.formType",
@@ -1215,7 +3657,7 @@
         "_aspect": "default",
         "_key": "displayName",
         "_type": "object",
-        "_value": "{\"text\":{\"english\":\"Woman in the fertile age - children\",\"default\":\"Mulher na idade fertil - criancas\"}}"
+        "_value": "{\"text\":{\"english\":\"Woman in the fertile age - children_visit\",\"default\":\"Mulher na idade fertil - criancas_visitas\"}}"
       }
     ]
   }
