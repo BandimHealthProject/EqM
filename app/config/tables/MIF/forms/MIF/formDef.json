@@ -21,8 +21,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Woman in the fertile age - core",
-              "default": "Mulher na idade fertil - núcleo"
+              "english": "Woman in the fertile age",
+              "default": "Mulher na idade fertil"
             }
           }
         },
@@ -1998,8 +1998,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Woman in the fertile age - core",
-              "default": "Mulher na idade fertil - núcleo"
+              "english": "Woman in the fertile age",
+              "default": "Mulher na idade fertil"
             }
           }
         },
@@ -2074,8 +2074,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Woman in the fertile age - core",
-              "default": "Mulher na idade fertil - núcleo"
+              "english": "Woman in the fertile age",
+              "default": "Mulher na idade fertil"
             }
           }
         },
@@ -4833,8 +4833,8 @@
             "display": {
               "title": {
                 "text": {
-                  "english": "Woman in the fertile age - core",
-                  "default": "Mulher na idade fertil - núcleo"
+                  "english": "Woman in the fertile age",
+                  "default": "Mulher na idade fertil"
                 }
               }
             },
@@ -6462,7 +6462,7 @@
         "_aspect": "default",
         "_key": "displayName",
         "_type": "object",
-        "_value": "{\"text\":{\"english\":\"Woman in the fertile age - core\",\"default\":\"Mulher na idade fertil - núcleo\"}}"
+        "_value": "{\"text\":{\"english\":\"Woman in the fertile age\",\"default\":\"Mulher na idade fertil\"}}"
       }
     ]
   }

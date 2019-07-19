@@ -19,4 +19,4 @@ Column,VIVONS,displayChoicesList,object,"[{""choice_list_name"":""dontknow"",""d
 FormType,default,FormType.formType,string,SURVEY
 SurveyUtil,default,SurveyUtil.formId,string,MIF
 Table,default,defaultViewType,string,SPREADSHEET
-Table,default,displayName,object,"{""text"":{""english"":""Woman in the fertile age - core"",""default"":""Mulher na idade fertil - núcleo""}}"
+Table,default,displayName,object,"{""text"":{""english"":""Woman in the fertile age"",""default"":""Mulher na idade fertil""}}"

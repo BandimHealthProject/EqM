@@ -695,8 +695,8 @@
       {
         "query_name": "vac",
         "query_type": "linked_table",
-        "linked_form_id": "MIFVAC_CRIANCA",
-        "linked_table_id": "MIFVAC",
+        "linked_form_id": "VAC_CRIANCA",
+        "linked_table_id": "VAC",
         "selection": "ID = ?",
         "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{ID: data('REGIDC')}",
@@ -1665,8 +1665,8 @@
       "vac": {
         "query_name": "vac",
         "query_type": "linked_table",
-        "linked_form_id": "MIFVAC_CRIANCA",
-        "linked_table_id": "MIFVAC",
+        "linked_form_id": "VAC_CRIANCA",
+        "linked_table_id": "VAC",
         "selection": "ID = ?",
         "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{ID: data('REGIDC')}",
