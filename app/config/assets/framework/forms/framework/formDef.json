@@ -70,8 +70,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Woman in the fertile age - core",
-              "default": "Mulher na idade fertil - núcleo"
+              "english": "Woman in the fertile age",
+              "default": "Mulher na idade fertil"
             }
           }
         },
@@ -92,12 +92,12 @@
       },
       {
         "choice_list_name": "forms",
-        "data_value": "MIFVISIT_CORE",
+        "data_value": "VAC",
         "display": {
           "title": {
             "text": {
-              "english": "Woman in the fertile age - visit_core",
-              "default": "Mulher na idade fertil - visitas_núcleo"
+              "english": "Vaccine",
+              "default": "Mulher na idade fertil - visitas"
             }
           }
         },
@@ -105,12 +105,12 @@
       },
       {
         "choice_list_name": "forms",
-        "data_value": "MIFSCAR",
+        "data_value": "SCAR",
         "display": {
           "title": {
             "text": {
-              "english": "Woman in the fertile age - scars",
-              "default": "Mulher na idade fertil - cicatrizes"
+              "english": "Scars",
+              "default": "Cicatrizes"
             }
           }
         },
@@ -118,12 +118,12 @@
       },
       {
         "choice_list_name": "forms",
-        "data_value": "MIFSES",
+        "data_value": "SES",
         "display": {
           "title": {
             "text": {
-              "english": "Woman in the fertile age - SES",
-              "default": "Mulher na idade fertil - SES"
+              "english": "SES",
+              "default": "SES"
             }
           }
         },
@@ -131,12 +131,12 @@
       },
       {
         "choice_list_name": "forms",
-        "data_value": "MIFGRAVIDA",
+        "data_value": "GRAVIDA",
         "display": {
           "title": {
             "text": {
-              "english": "Woman in the fertile age - pregnants",
-              "default": "Mulher na idade fertil - grávidas"
+              "english": "Pregnant",
+              "default": "Grávidas"
             }
           }
         },
@@ -144,12 +144,12 @@
       },
       {
         "choice_list_name": "forms",
-        "data_value": "MIFGRAVIDA_VISIT",
+        "data_value": "GRAVIDA_VISIT",
         "display": {
           "title": {
             "text": {
-              "english": "Woman in the fertile age - pregnants_visits",
-              "default": "Mulher na idade fertil - grávidas_visitas"
+              "english": "Pregnants_visits",
+              "default": "Grávidas_visitas"
             }
           }
         },
@@ -170,7 +170,7 @@
       },
       {
         "choice_list_name": "forms",
-        "data_value": "MIFCRIANCA_VISIT",
+        "data_value": "CRIANCA_VISIT",
         "display": {
           "title": {
             "text": {
@@ -183,7 +183,7 @@
       },
       {
         "choice_list_name": "forms",
-        "data_value": "MIFCRIANCA",
+        "data_value": "CRIANCA",
         "display": {
           "title": {
             "text": {
@@ -269,11 +269,11 @@
         "_row_num": 13
       },
       {
-        "branch_label": "MIFVISIT_CORE",
+        "branch_label": "VAC",
         "_row_num": 14
       },
       {
-        "url": "'?' + odkSurvey.getHashString('MIFVISIT_CORE')",
+        "url": "'?' + odkSurvey.getHashString('VAC')",
         "type": "external_link",
         "display": {
           "prompt": {
@@ -287,11 +287,11 @@
         "_row_num": 16
       },
       {
-        "branch_label": "MIFSCAR",
+        "branch_label": "SCAR",
         "_row_num": 17
       },
       {
-        "url": "'?' + odkSurvey.getHashString('MIFSCAR')",
+        "url": "'?' + odkSurvey.getHashString('SCAR')",
         "type": "external_link",
         "display": {
           "prompt": {
@@ -305,11 +305,11 @@
         "_row_num": 19
       },
       {
-        "branch_label": "MIFSES",
+        "branch_label": "CRIANCA",
         "_row_num": 20
       },
       {
-        "url": "'?' + odkSurvey.getHashString('MIFSES')",
+        "url": "'?' + odkSurvey.getHashString('CRIANCA')",
         "type": "external_link",
         "display": {
           "prompt": {
@@ -323,11 +323,11 @@
         "_row_num": 22
       },
       {
-        "branch_label": "MIFGRAVIDA",
+        "branch_label": "GRAVIDA",
         "_row_num": 23
       },
       {
-        "url": "'?' + odkSurvey.getHashString('MIFGRAVIDA')",
+        "url": "'?' + odkSurvey.getHashString('GRAVIDA')",
         "type": "external_link",
         "display": {
           "prompt": {
@@ -341,11 +341,11 @@
         "_row_num": 25
       },
       {
-        "branch_label": "MIFGRAVIDA_VISIT",
+        "branch_label": "GRAVIDA_VISIT",
         "_row_num": 26
       },
       {
-        "url": "'?' + odkSurvey.getHashString('MIFGRAVIDA_VISIT')",
+        "url": "'?' + odkSurvey.getHashString('GRAVIDA_VISIT')",
         "type": "external_link",
         "display": {
           "prompt": {
@@ -377,11 +377,11 @@
         "_row_num": 31
       },
       {
-        "branch_label": "MIFCRIANCA_VISIT",
+        "branch_label": "CRIANCA_VISIT",
         "_row_num": 32
       },
       {
-        "url": "'?' + odkSurvey.getHashString('MIFCRIANCA_VISIT')",
+        "url": "'?' + odkSurvey.getHashString('CRIANCA_VISIT')",
         "type": "external_link",
         "display": {
           "prompt": {
@@ -395,11 +395,11 @@
         "_row_num": 34
       },
       {
-        "branch_label": "MIFCRIANCA",
+        "branch_label": "SES",
         "_row_num": 35
       },
       {
-        "url": "'?' + odkSurvey.getHashString('MIFCRIANCA')",
+        "url": "'?' + odkSurvey.getHashString('SES')",
         "type": "external_link",
         "display": {
           "prompt": {
@@ -1008,8 +1008,8 @@
           "display": {
             "title": {
               "text": {
-                "english": "Woman in the fertile age - core",
-                "default": "Mulher na idade fertil - núcleo"
+                "english": "Woman in the fertile age",
+                "default": "Mulher na idade fertil"
               }
             }
           },
@@ -1030,12 +1030,12 @@
         },
         {
           "choice_list_name": "forms",
-          "data_value": "MIFVISIT_CORE",
+          "data_value": "VAC",
           "display": {
             "title": {
               "text": {
-                "english": "Woman in the fertile age - visit_core",
-                "default": "Mulher na idade fertil - visitas_núcleo"
+                "english": "Vaccine",
+                "default": "Mulher na idade fertil - visitas"
               }
             }
           },
@@ -1043,12 +1043,12 @@
         },
         {
           "choice_list_name": "forms",
-          "data_value": "MIFSCAR",
+          "data_value": "SCAR",
           "display": {
             "title": {
               "text": {
-                "english": "Woman in the fertile age - scars",
-                "default": "Mulher na idade fertil - cicatrizes"
+                "english": "Scars",
+                "default": "Cicatrizes"
               }
             }
           },
@@ -1056,12 +1056,12 @@
         },
         {
           "choice_list_name": "forms",
-          "data_value": "MIFSES",
+          "data_value": "SES",
           "display": {
             "title": {
               "text": {
-                "english": "Woman in the fertile age - SES",
-                "default": "Mulher na idade fertil - SES"
+                "english": "SES",
+                "default": "SES"
               }
             }
           },
@@ -1069,12 +1069,12 @@
         },
         {
           "choice_list_name": "forms",
-          "data_value": "MIFGRAVIDA",
+          "data_value": "GRAVIDA",
           "display": {
             "title": {
               "text": {
-                "english": "Woman in the fertile age - pregnants",
-                "default": "Mulher na idade fertil - grávidas"
+                "english": "Pregnant",
+                "default": "Grávidas"
               }
             }
           },
@@ -1082,12 +1082,12 @@
         },
         {
           "choice_list_name": "forms",
-          "data_value": "MIFGRAVIDA_VISIT",
+          "data_value": "GRAVIDA_VISIT",
           "display": {
             "title": {
               "text": {
-                "english": "Woman in the fertile age - pregnants_visits",
-                "default": "Mulher na idade fertil - grávidas_visitas"
+                "english": "Pregnants_visits",
+                "default": "Grávidas_visitas"
               }
             }
           },
@@ -1108,7 +1108,7 @@
         },
         {
           "choice_list_name": "forms",
-          "data_value": "MIFCRIANCA_VISIT",
+          "data_value": "CRIANCA_VISIT",
           "display": {
             "title": {
               "text": {
@@ -1121,7 +1121,7 @@
         },
         {
           "choice_list_name": "forms",
-          "data_value": "MIFCRIANCA",
+          "data_value": "CRIANCA",
           "display": {
             "title": {
               "text": {
@@ -1815,7 +1815,7 @@
             "promptIdx": 3
           },
           {
-            "url": "'?' + odkSurvey.getHashString('MIFVISIT_CORE')",
+            "url": "'?' + odkSurvey.getHashString('VAC')",
             "type": "external_link",
             "display": {
               "prompt": {
@@ -1830,7 +1830,7 @@
             "promptIdx": 4
           },
           {
-            "url": "'?' + odkSurvey.getHashString('MIFSCAR')",
+            "url": "'?' + odkSurvey.getHashString('SCAR')",
             "type": "external_link",
             "display": {
               "prompt": {
@@ -1845,7 +1845,7 @@
             "promptIdx": 5
           },
           {
-            "url": "'?' + odkSurvey.getHashString('MIFSES')",
+            "url": "'?' + odkSurvey.getHashString('CRIANCA')",
             "type": "external_link",
             "display": {
               "prompt": {
@@ -1860,7 +1860,7 @@
             "promptIdx": 6
           },
           {
-            "url": "'?' + odkSurvey.getHashString('MIFGRAVIDA')",
+            "url": "'?' + odkSurvey.getHashString('GRAVIDA')",
             "type": "external_link",
             "display": {
               "prompt": {
@@ -1875,7 +1875,7 @@
             "promptIdx": 7
           },
           {
-            "url": "'?' + odkSurvey.getHashString('MIFGRAVIDA_VISIT')",
+            "url": "'?' + odkSurvey.getHashString('GRAVIDA_VISIT')",
             "type": "external_link",
             "display": {
               "prompt": {
@@ -1905,7 +1905,7 @@
             "promptIdx": 9
           },
           {
-            "url": "'?' + odkSurvey.getHashString('MIFCRIANCA_VISIT')",
+            "url": "'?' + odkSurvey.getHashString('CRIANCA_VISIT')",
             "type": "external_link",
             "display": {
               "prompt": {
@@ -1920,7 +1920,7 @@
             "promptIdx": 10
           },
           {
-            "url": "'?' + odkSurvey.getHashString('MIFCRIANCA')",
+            "url": "'?' + odkSurvey.getHashString('SES')",
             "type": "external_link",
             "display": {
               "prompt": {
@@ -2151,21 +2151,21 @@
           "_screen9": 6,
           "MIFVISIT": 8,
           "_screen12": 8,
-          "MIFVISIT_CORE": 10,
+          "VAC": 10,
           "_screen15": 10,
-          "MIFSCAR": 12,
+          "SCAR": 12,
           "_screen18": 12,
-          "MIFSES": 14,
+          "CRIANCA": 14,
           "_screen21": 14,
-          "MIFGRAVIDA": 16,
+          "GRAVIDA": 16,
           "_screen24": 16,
-          "MIFGRAVIDA_VISIT": 18,
+          "GRAVIDA_VISIT": 18,
           "_screen27": 18,
           "TEST": 20,
           "_screen30": 20,
-          "MIFCRIANCA_VISIT": 22,
+          "CRIANCA_VISIT": 22,
           "_screen33": 22,
-          "MIFCRIANCA": 24,
+          "SES": 24,
           "_screen36": 24,
           "_contents": 27,
           "_screen38": 27
