@@ -174,7 +174,7 @@
           "prompt": {
             "text": {
               "english": "Number of scar",
-              "default": "Numero de sicatriz"
+              "default": "Numero de cicatriz"
             }
           }
         },
@@ -312,7 +312,7 @@
           "prompt": {
             "text": {
               "english": "Number of scar",
-              "default": "Numero de sicatriz"
+              "default": "Numero de cicatriz"
             }
           }
         },
@@ -450,7 +450,7 @@
           "prompt": {
             "text": {
               "english": "Number of scar",
-              "default": "Numero de sicatriz"
+              "default": "Numero de cicatriz"
             }
           }
         },
@@ -576,7 +576,7 @@
           "prompt": {
             "text": {
               "english": "Number of scar",
-              "default": "Numero de sicatriz"
+              "default": "Numero de cicatriz"
             }
           }
         },
@@ -1770,7 +1770,7 @@
               "prompt": {
                 "text": {
                   "english": "Number of scar",
-                  "default": "Numero de sicatriz"
+                  "default": "Numero de cicatriz"
                 }
               }
             },
@@ -1914,7 +1914,7 @@
               "prompt": {
                 "text": {
                   "english": "Number of scar",
-                  "default": "Numero de sicatriz"
+                  "default": "Numero de cicatriz"
                 }
               }
             },
@@ -2058,7 +2058,7 @@
               "prompt": {
                 "text": {
                   "english": "Number of scar",
-                  "default": "Numero de sicatriz"
+                  "default": "Numero de cicatriz"
                 }
               }
             },
@@ -2185,7 +2185,7 @@
               "prompt": {
                 "text": {
                   "english": "Number of scar",
-                  "default": "Numero de sicatriz"
+                  "default": "Numero de cicatriz"
                 }
               }
             },
