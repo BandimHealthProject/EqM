@@ -372,8 +372,8 @@
         "display": {
           "prompt": {
             "text": {
-              "english": "What is the childs MUAC Mesurements in MM",
-              "default": "What is the childs MUAC Mesurements in MM"
+              "english": "What are the childs MUAC Mesurements in MM",
+              "default": "What are the childs MUAC Mesurements in MM"
             }
           }
         },
@@ -981,6 +981,12 @@
         "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 22
+      },
+      {
+        "name": "REGIDC",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 24
       }
     ]
   },
@@ -1790,6 +1796,17 @@
         ],
         "isSessionVariable": false,
         "elementKey": "PASSARAMPO"
+      },
+      "REGIDC": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 24,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REGIDC"
       }
     },
     "section_names": [
@@ -2072,8 +2089,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "english": "What is the childs MUAC Mesurements in MM",
-                  "default": "What is the childs MUAC Mesurements in MM"
+                  "english": "What are the childs MUAC Mesurements in MM",
+                  "default": "What are the childs MUAC Mesurements in MM"
                 }
               }
             },
@@ -3093,6 +3110,20 @@
         "elementName": "PASSARAMPO",
         "elementSet": "data",
         "elementPath": "PASSARAMPO"
+      },
+      "REGIDC": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 24,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REGIDC",
+        "elementName": "REGIDC",
+        "elementSet": "data",
+        "elementPath": "REGIDC"
       },
       "_id": {
         "type": "string",

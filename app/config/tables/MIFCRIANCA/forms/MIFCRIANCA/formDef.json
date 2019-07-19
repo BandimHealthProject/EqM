@@ -302,6 +302,31 @@
       {
         "clause": "end screen",
         "_row_num": 30
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 31
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Child Visit",
+              "default": "Child visit"
+            }
+          }
+        },
+        "_row_num": 32
+      },
+      {
+        "type": "linked_table",
+        "values_list": "CHILD_VISIT",
+        "_row_num": 33
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 34
       }
     ],
     "queries": [
@@ -320,13 +345,13 @@
         "_row_num": 3
       },
       {
-        "query_name": "same",
+        "query_name": "CHILD_VISIT",
         "query_type": "linked_table",
-        "linked_form_id": "MIFCRIANCA",
-        "linked_table_id": "MIFCRIANCA",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID')}",
+        "linked_form_id": "MIFCRIANCA_VISIT",
+        "linked_table_id": "MIFCRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 5
       }
@@ -729,14 +754,14 @@
         "callback": "_.map(context, function(place){place.data_value = place.TAB;\nplace.display = {title: {text: place.TABANCA} };\nreturn place;\n})",
         "_row_num": 3
       },
-      "same": {
-        "query_name": "same",
+      "CHILD_VISIT": {
+        "query_name": "CHILD_VISIT",
         "query_type": "linked_table",
-        "linked_form_id": "MIFCRIANCA",
-        "linked_table_id": "MIFCRIANCA",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID')}",
+        "linked_form_id": "MIFCRIANCA_VISIT",
+        "linked_table_id": "MIFCRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 5
       }
@@ -1210,12 +1235,39 @@
             "promptIdx": 12
           },
           {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Child Visit",
+                  "default": "Child visit"
+                }
+              }
+            },
+            "_row_num": 32,
+            "__rowNum__": 31,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen31",
+            "promptIdx": 13
+          },
+          {
+            "type": "linked_table",
+            "values_list": "CHILD_VISIT",
+            "_row_num": 33,
+            "__rowNum__": 32,
+            "_token_type": "prompt",
+            "_type": "linked_table",
+            "_branch_label_enclosing_screen": "survey/_screen31",
+            "promptIdx": 14
+          },
+          {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 31,
-            "_branch_label_enclosing_screen": "survey/_screen31",
-            "promptIdx": 13
+            "_row_num": 35,
+            "_branch_label_enclosing_screen": "survey/_screen35",
+            "promptIdx": 15
           }
         ],
         "validation_tag_map": {
@@ -1330,25 +1382,39 @@
             "operationIdx": 8
           },
           {
-            "_token_type": "exit_section",
-            "clause": "exit section",
+            "clause": "begin screen",
             "_row_num": 31,
+            "__rowNum__": 30,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 34,
+              "__rowNum__": 33,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 9
           },
           {
-            "_row_num": 31,
+            "_token_type": "exit_section",
+            "clause": "exit section",
+            "_row_num": 35,
+            "operationIdx": 10
+          },
+          {
+            "_row_num": 35,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(13);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(15);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 10
+            "operationIdx": 11
           },
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 31,
-            "operationIdx": 11
+            "_row_num": 35,
+            "operationIdx": 12
           }
         ],
         "branch_label_map": {
@@ -1361,8 +1427,9 @@
           "_screen17": 6,
           "_screen22": 7,
           "_screen25": 8,
-          "_contents": 10,
-          "_screen31": 10
+          "_screen31": 9,
+          "_contents": 11,
+          "_screen35": 11
         }
       },
       "initial": {
