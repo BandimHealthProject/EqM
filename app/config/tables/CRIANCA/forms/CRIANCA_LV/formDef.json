@@ -1,0 +1,2438 @@
+{
+  "xlsx": {
+    "settings": [
+      {
+        "setting_name": "form_id",
+        "value": "CRIANCA_LV",
+        "_row_num": 2
+      },
+      {
+        "setting_name": "form_version",
+        "value": 17072019,
+        "_row_num": 3
+      },
+      {
+        "setting_name": "table_id",
+        "value": "CRIANCA",
+        "_row_num": 4
+      },
+      {
+        "setting_name": "survey",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Children - launch visit",
+              "default": "Children - launch visit"
+            }
+          }
+        },
+        "_row_num": 5
+      },
+      {
+        "setting_name": "default",
+        "display": {
+          "locale": {
+            "text": {
+              "english": "Portuguese",
+              "default": "Portugues"
+            }
+          }
+        },
+        "_row_num": 6
+      },
+      {
+        "setting_name": "english",
+        "display": {
+          "locale": {
+            "text": {
+              "english": "English",
+              "default": "Inglês"
+            }
+          }
+        },
+        "_row_num": 7
+      },
+      {
+        "setting_name": "font-size",
+        "value": "20pt",
+        "_row_num": 8
+      },
+      {
+        "setting_name": "instance_name",
+        "value": "GRAVIDA_ESTADO",
+        "_row_num": 9
+      }
+    ],
+    "survey": [
+      {
+        "clause": "if",
+        "condition": "data('SEX') == '3' || data('SEX') == null",
+        "_row_num": 2
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 3
+      },
+      {
+        "type": "select_one",
+        "values_list": "sex",
+        "name": "SEX",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Sex of the child",
+              "default": "Sexo da criança"
+            }
+          }
+        },
+        "_row_num": 4
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 5
+      },
+      {
+        "clause": "end if",
+        "_row_num": 6
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 7
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Child Visit",
+              "default": "Child visit"
+            }
+          }
+        },
+        "_row_num": 8
+      },
+      {
+        "type": "linked_table",
+        "values_list": "visit",
+        "_row_num": 9
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 10
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 11
+      },
+      {
+        "type": "async_assign_num_value",
+        "values_list": "linked_status",
+        "name": "ESTADOVIS",
+        "_row_num": 12
+      },
+      {
+        "type": "async_assign_date",
+        "values_list": "linked_exitdate",
+        "name": "EXITDATE",
+        "_row_num": 13
+      },
+      {
+        "type": "async_assign_num_value",
+        "values_list": "linked_exitdateprec",
+        "name": "EXITPRECIS",
+        "_row_num": 14
+      },
+      {
+        "type": "async_assign_num_value",
+        "values_list": "linked_comsup",
+        "name": "COMSUP",
+        "_row_num": 16
+      },
+      {
+        "type": "async_assign_date",
+        "values_list": "linked_dacomsup",
+        "name": "DACOMSUP",
+        "_row_num": 17
+      },
+      {
+        "type": "async_assign_num_value",
+        "values_list": "linked_idcomsup",
+        "name": "IDCOMSUP",
+        "_row_num": 18
+      },
+      {
+        "type": "async_assign_num_value",
+        "values_list": "linked_parma",
+        "name": "PARMA",
+        "_row_num": 19
+      },
+      {
+        "type": "async_assign_date",
+        "values_list": "linked_daparma",
+        "name": "DAPARMA",
+        "_row_num": 20
+      },
+      {
+        "type": "async_assign_num_value",
+        "values_list": "linked_idparma",
+        "name": "IDPARMA",
+        "_row_num": 21
+      },
+      {
+        "type": "async_assign_num_value",
+        "values_list": "linked_moma",
+        "name": "MOMA",
+        "_row_num": 22
+      },
+      {
+        "type": "async_assign_date",
+        "values_list": "linked_dasep",
+        "name": "DASEP",
+        "_row_num": 23
+      },
+      {
+        "type": "async_assign_num_value",
+        "values_list": "linked_idsep",
+        "name": "IDSEP",
+        "_row_num": 24
+      },
+      {
+        "type": "async_assign_text_value",
+        "values_list": "linked_causasep",
+        "name": "CAUSASEP",
+        "_row_num": 25
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 26
+      }
+    ],
+    "queries": [
+      {
+        "query_name": "visit",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), comsup: data('COMSUP'), parma: data('PARMA'), moma: data('MOMA')}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "_row_num": 2
+      },
+      {
+        "query_name": "linked_status",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "PRES",
+        "_row_num": 4
+      },
+      {
+        "query_name": "linked_exitdate",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "EXITDATA",
+        "_row_num": 5
+      },
+      {
+        "query_name": "linked_exitdateprec",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "EXITPRECIS",
+        "_row_num": 6
+      },
+      {
+        "query_name": "linked_comsup",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "COMSUP",
+        "_row_num": 8
+      },
+      {
+        "query_name": "linked_dacomsup",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "DACOMSUP",
+        "_row_num": 9
+      },
+      {
+        "query_name": "linked_idcomsup",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "IDCOMSUP",
+        "_row_num": 10
+      },
+      {
+        "query_name": "linked_parma",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "PARMA",
+        "_row_num": 11
+      },
+      {
+        "query_name": "linked_daparma",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "DAPARMA",
+        "_row_num": 12
+      },
+      {
+        "query_name": "linked_idparma",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "IDPARMA",
+        "_row_num": 13
+      },
+      {
+        "query_name": "linked_moma",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "MOMA",
+        "_row_num": 14
+      },
+      {
+        "query_name": "linked_dasep",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "DASEP",
+        "_row_num": 15
+      },
+      {
+        "query_name": "linked_idsep",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "IDSEP",
+        "_row_num": 16
+      },
+      {
+        "query_name": "linked_causasep",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "CAUSASEP",
+        "_row_num": 17
+      }
+    ],
+    "prompt_types": [
+      {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2
+      },
+      {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "_row_num": 3
+      },
+      {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "_row_num": 4
+      },
+      {
+        "prompt_type_name": "async_assign_text_value",
+        "type": "text",
+        "_row_num": 5
+      }
+    ],
+    "choices": [
+      {
+        "choice_list_name": "sex",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Male",
+              "default": "Macho"
+            }
+          }
+        },
+        "_row_num": 2
+      },
+      {
+        "choice_list_name": "sex",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Female",
+              "default": "Fêmea"
+            }
+          }
+        },
+        "_row_num": 3
+      },
+      {
+        "choice_list_name": "sex",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Dont know",
+              "default": "Não sabe"
+            }
+          }
+        },
+        "_row_num": 4
+      }
+    ],
+    "model": [
+      {
+        "name": "NAME",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 2
+      },
+      {
+        "name": "SEX",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 3
+      },
+      {
+        "name": "REG",
+        "type": "select_one_dropdown",
+        "isSessionVariable": false,
+        "_row_num": 4
+      },
+      {
+        "name": "TAB",
+        "type": "select_one_dropdown",
+        "isSessionVariable": false,
+        "_row_num": 5
+      },
+      {
+        "name": "AMO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 6
+      },
+      {
+        "name": "MOR",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 7
+      },
+      {
+        "name": "CASA",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 8
+      },
+      {
+        "name": "FOGAO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 9
+      },
+      {
+        "name": "REGIDC",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 10
+      },
+      {
+        "name": "ID",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 12
+      },
+      {
+        "name": "OUTDATE",
+        "type": "custom_date",
+        "isSessionVariable": false,
+        "_row_num": 13
+      },
+      {
+        "name": "PREGID",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 14
+      },
+      {
+        "name": "REGDIA",
+        "type": "custom_date",
+        "isSessionVariable": false,
+        "_row_num": 15
+      },
+      {
+        "name": "ESTADOVIS",
+        "type": "async_assign_num_value",
+        "isSessionVariable": false,
+        "_row_num": 17
+      },
+      {
+        "name": "EXITDATE",
+        "type": "async_assign_date",
+        "isSessionVariable": false,
+        "_row_num": 18
+      },
+      {
+        "name": "EXITPRECIS",
+        "type": "async_assign_num_value",
+        "isSessionVariable": false,
+        "_row_num": 19
+      },
+      {
+        "name": "COMSUP",
+        "type": "async_assign_num_value",
+        "isSessionVariable": false,
+        "_row_num": 20
+      },
+      {
+        "name": "DACOMSUP",
+        "type": "async_assign_date",
+        "isSessionVariable": false,
+        "_row_num": 21
+      },
+      {
+        "name": "IDCOMSUP",
+        "type": "async_assign_num_value",
+        "isSessionVariable": false,
+        "_row_num": 22
+      },
+      {
+        "name": "PARMA",
+        "type": "async_assign_num_value",
+        "isSessionVariable": false,
+        "_row_num": 23
+      },
+      {
+        "name": "DAPARMA",
+        "type": "async_assign_date",
+        "isSessionVariable": false,
+        "_row_num": 24
+      },
+      {
+        "name": "IDPARMA",
+        "type": "async_assign_num_value",
+        "isSessionVariable": false,
+        "_row_num": 25
+      },
+      {
+        "name": "MOMA",
+        "type": "async_assign_num_value",
+        "isSessionVariable": false,
+        "_row_num": 26
+      },
+      {
+        "name": "DASEP",
+        "type": "async_assign_date",
+        "isSessionVariable": false,
+        "_row_num": 27
+      },
+      {
+        "name": "IDSEP",
+        "type": "async_assign_num_value",
+        "isSessionVariable": false,
+        "_row_num": 28
+      },
+      {
+        "name": "CAUSASEP",
+        "type": "async_assign_text_value",
+        "isSessionVariable": false,
+        "_row_num": 29
+      }
+    ]
+  },
+  "specification": {
+    "column_types": {
+      "_screen_block": "function",
+      "condition": "formula",
+      "constraint": "formula",
+      "required": "formula",
+      "calculation": "formula",
+      "newRowInitialElementKeyToValueMap": "formula",
+      "openRowInitialElementKeyToValueMap": "formula",
+      "selectionArgs": "formula",
+      "url": "formula",
+      "uri": "formula",
+      "callback": "formula(context)",
+      "choice_filter": "formula(choice_item)",
+      "templatePath": "requirejs_path"
+    },
+    "settings": {
+      "form_id": {
+        "setting_name": "form_id",
+        "value": "CRIANCA_LV",
+        "_row_num": 2
+      },
+      "form_version": {
+        "setting_name": "form_version",
+        "value": 17072019,
+        "_row_num": 3
+      },
+      "table_id": {
+        "setting_name": "table_id",
+        "value": "CRIANCA",
+        "_row_num": 4
+      },
+      "survey": {
+        "setting_name": "survey",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Children - launch visit",
+              "default": "Children - launch visit"
+            }
+          }
+        },
+        "_row_num": 5
+      },
+      "default": {
+        "setting_name": "default",
+        "display": {
+          "locale": {
+            "text": {
+              "english": "Portuguese",
+              "default": "Portugues"
+            }
+          }
+        },
+        "_row_num": 6
+      },
+      "english": {
+        "setting_name": "english",
+        "display": {
+          "locale": {
+            "text": {
+              "english": "English",
+              "default": "Inglês"
+            }
+          }
+        },
+        "_row_num": 7
+      },
+      "font-size": {
+        "setting_name": "font-size",
+        "value": "20pt",
+        "_row_num": 8
+      },
+      "instance_name": {
+        "setting_name": "instance_name",
+        "value": "GRAVIDA_ESTADO",
+        "_row_num": 9
+      },
+      "_locales": {
+        "setting_name": "_locales",
+        "_row_num": 5,
+        "value": [
+          {
+            "display": {
+              "locale": {
+                "text": {
+                  "english": "Portuguese",
+                  "default": "Portugues"
+                }
+              }
+            },
+            "_row_num": 6,
+            "name": "default"
+          },
+          {
+            "display": {
+              "locale": {
+                "text": {
+                  "english": "English",
+                  "default": "Inglês"
+                }
+              }
+            },
+            "_row_num": 7,
+            "name": "english"
+          }
+        ]
+      },
+      "_default_locale": {
+        "setting_name": "_default_locale",
+        "_row_num": 5,
+        "value": "default"
+      },
+      "initial": {
+        "setting_name": "survey",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Children - launch visit",
+              "default": "Children - launch visit"
+            }
+          }
+        },
+        "_row_num": 5
+      }
+    },
+    "choices": {
+      "sex": [
+        {
+          "choice_list_name": "sex",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Male",
+                "default": "Macho"
+              }
+            }
+          },
+          "_row_num": 2
+        },
+        {
+          "choice_list_name": "sex",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Female",
+                "default": "Fêmea"
+              }
+            }
+          },
+          "_row_num": 3
+        },
+        {
+          "choice_list_name": "sex",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Dont know",
+                "default": "Não sabe"
+              }
+            }
+          },
+          "_row_num": 4
+        }
+      ]
+    },
+    "queries": {
+      "visit": {
+        "query_name": "visit",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), comsup: data('COMSUP'), parma: data('PARMA'), moma: data('MOMA')}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "_row_num": 2
+      },
+      "linked_status": {
+        "query_name": "linked_status",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "PRES",
+        "_row_num": 4
+      },
+      "linked_exitdate": {
+        "query_name": "linked_exitdate",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "EXITDATA",
+        "_row_num": 5
+      },
+      "linked_exitdateprec": {
+        "query_name": "linked_exitdateprec",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "EXITPRECIS",
+        "_row_num": 6
+      },
+      "linked_comsup": {
+        "query_name": "linked_comsup",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "COMSUP",
+        "_row_num": 8
+      },
+      "linked_dacomsup": {
+        "query_name": "linked_dacomsup",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "DACOMSUP",
+        "_row_num": 9
+      },
+      "linked_idcomsup": {
+        "query_name": "linked_idcomsup",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "IDCOMSUP",
+        "_row_num": 10
+      },
+      "linked_parma": {
+        "query_name": "linked_parma",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "PARMA",
+        "_row_num": 11
+      },
+      "linked_daparma": {
+        "query_name": "linked_daparma",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "DAPARMA",
+        "_row_num": 12
+      },
+      "linked_idparma": {
+        "query_name": "linked_idparma",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "IDPARMA",
+        "_row_num": 13
+      },
+      "linked_moma": {
+        "query_name": "linked_moma",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "MOMA",
+        "_row_num": 14
+      },
+      "linked_dasep": {
+        "query_name": "linked_dasep",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "DASEP",
+        "_row_num": 15
+      },
+      "linked_idsep": {
+        "query_name": "linked_idsep",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "IDSEP",
+        "_row_num": 16
+      },
+      "linked_causasep": {
+        "query_name": "linked_causasep",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA_VISIT",
+        "linked_table_id": "CRIANCA_VISIT",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "CAUSASEP",
+        "_row_num": 17
+      }
+    },
+    "calculates": {},
+    "model": {
+      "NAME": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 2,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NAME"
+      },
+      "SEX": {
+        "type": "string",
+        "valuesList": "sex",
+        "_defn": [
+          {
+            "_row_num": 4,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "SEX"
+      },
+      "REG": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 4,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REG"
+      },
+      "TAB": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 5,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TAB"
+      },
+      "AMO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 6,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "AMO"
+      },
+      "MOR": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 7,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "MOR"
+      },
+      "CASA": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 8,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CASA"
+      },
+      "FOGAO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "FOGAO"
+      },
+      "REGIDC": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 10,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REGIDC"
+      },
+      "ID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ID"
+      },
+      "OUTDATE": {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 13,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "OUTDATE"
+      },
+      "PREGID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "PREGID"
+      },
+      "REGDIA": {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 15,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REGDIA"
+      },
+      "ESTADOVIS": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_status",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 17,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ESTADOVIS"
+      },
+      "EXITDATE": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_exitdate",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 13,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 18,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITDATE"
+      },
+      "EXITPRECIS": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_exitdateprec",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 14,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 19,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITPRECIS"
+      },
+      "COMSUP": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_comsup",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 16,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 20,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "COMSUP"
+      },
+      "DACOMSUP": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_dacomsup",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 17,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DACOMSUP"
+      },
+      "IDCOMSUP": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_idcomsup",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 18,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 22,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDCOMSUP"
+      },
+      "PARMA": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_parma",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 19,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 23,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "PARMA"
+      },
+      "DAPARMA": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_daparma",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 20,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 24,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DAPARMA"
+      },
+      "IDPARMA": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_idparma",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 21,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 25,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDPARMA"
+      },
+      "MOMA": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_moma",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 22,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 26,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "MOMA"
+      },
+      "DASEP": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_dasep",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 23,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 27,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DASEP"
+      },
+      "IDSEP": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_idsep",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 24,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 28,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDSEP"
+      },
+      "CAUSASEP": {
+        "prompt_type_name": "async_assign_text_value",
+        "type": "text",
+        "valuesList": "linked_causasep",
+        "_row_num": 5,
+        "__rowNum__": 4,
+        "_defn": [
+          {
+            "_row_num": 25,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 29,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CAUSASEP"
+      }
+    },
+    "section_names": [
+      "initial",
+      "survey"
+    ],
+    "sections": {
+      "survey": {
+        "section_name": "survey",
+        "nested_sections": {},
+        "reachable_sections": {},
+        "prompts": [
+          {
+            "type": "select_one",
+            "values_list": "sex",
+            "name": "SEX",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Sex of the child",
+                  "default": "Sexo da criança"
+                }
+              }
+            },
+            "_row_num": 4,
+            "__rowNum__": 3,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen3",
+            "promptIdx": 0
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Child Visit",
+                  "default": "Child visit"
+                }
+              }
+            },
+            "_row_num": 8,
+            "__rowNum__": 7,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen7",
+            "promptIdx": 1
+          },
+          {
+            "type": "linked_table",
+            "values_list": "visit",
+            "_row_num": 9,
+            "__rowNum__": 8,
+            "_token_type": "prompt",
+            "_type": "linked_table",
+            "_branch_label_enclosing_screen": "survey/_screen7",
+            "promptIdx": 2
+          },
+          {
+            "type": "async_assign_num_value",
+            "values_list": "linked_status",
+            "name": "ESTADOVIS",
+            "_row_num": 12,
+            "__rowNum__": 11,
+            "_token_type": "prompt",
+            "_type": "async_assign_num_value",
+            "_branch_label_enclosing_screen": "survey/_screen11",
+            "promptIdx": 3
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_exitdate",
+            "name": "EXITDATE",
+            "_row_num": 13,
+            "__rowNum__": 12,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen11",
+            "promptIdx": 4
+          },
+          {
+            "type": "async_assign_num_value",
+            "values_list": "linked_exitdateprec",
+            "name": "EXITPRECIS",
+            "_row_num": 14,
+            "__rowNum__": 13,
+            "_token_type": "prompt",
+            "_type": "async_assign_num_value",
+            "_branch_label_enclosing_screen": "survey/_screen11",
+            "promptIdx": 5
+          },
+          {
+            "type": "async_assign_num_value",
+            "values_list": "linked_comsup",
+            "name": "COMSUP",
+            "_row_num": 16,
+            "__rowNum__": 15,
+            "_token_type": "prompt",
+            "_type": "async_assign_num_value",
+            "_branch_label_enclosing_screen": "survey/_screen11",
+            "promptIdx": 6
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_dacomsup",
+            "name": "DACOMSUP",
+            "_row_num": 17,
+            "__rowNum__": 16,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen11",
+            "promptIdx": 7
+          },
+          {
+            "type": "async_assign_num_value",
+            "values_list": "linked_idcomsup",
+            "name": "IDCOMSUP",
+            "_row_num": 18,
+            "__rowNum__": 17,
+            "_token_type": "prompt",
+            "_type": "async_assign_num_value",
+            "_branch_label_enclosing_screen": "survey/_screen11",
+            "promptIdx": 8
+          },
+          {
+            "type": "async_assign_num_value",
+            "values_list": "linked_parma",
+            "name": "PARMA",
+            "_row_num": 19,
+            "__rowNum__": 18,
+            "_token_type": "prompt",
+            "_type": "async_assign_num_value",
+            "_branch_label_enclosing_screen": "survey/_screen11",
+            "promptIdx": 9
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_daparma",
+            "name": "DAPARMA",
+            "_row_num": 20,
+            "__rowNum__": 19,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen11",
+            "promptIdx": 10
+          },
+          {
+            "type": "async_assign_num_value",
+            "values_list": "linked_idparma",
+            "name": "IDPARMA",
+            "_row_num": 21,
+            "__rowNum__": 20,
+            "_token_type": "prompt",
+            "_type": "async_assign_num_value",
+            "_branch_label_enclosing_screen": "survey/_screen11",
+            "promptIdx": 11
+          },
+          {
+            "type": "async_assign_num_value",
+            "values_list": "linked_moma",
+            "name": "MOMA",
+            "_row_num": 22,
+            "__rowNum__": 21,
+            "_token_type": "prompt",
+            "_type": "async_assign_num_value",
+            "_branch_label_enclosing_screen": "survey/_screen11",
+            "promptIdx": 12
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_dasep",
+            "name": "DASEP",
+            "_row_num": 23,
+            "__rowNum__": 22,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen11",
+            "promptIdx": 13
+          },
+          {
+            "type": "async_assign_num_value",
+            "values_list": "linked_idsep",
+            "name": "IDSEP",
+            "_row_num": 24,
+            "__rowNum__": 23,
+            "_token_type": "prompt",
+            "_type": "async_assign_num_value",
+            "_branch_label_enclosing_screen": "survey/_screen11",
+            "promptIdx": 14
+          },
+          {
+            "type": "async_assign_text_value",
+            "values_list": "linked_causasep",
+            "name": "CAUSASEP",
+            "_row_num": 25,
+            "__rowNum__": 24,
+            "_token_type": "prompt",
+            "_type": "async_assign_text_value",
+            "_branch_label_enclosing_screen": "survey/_screen11",
+            "promptIdx": 15
+          },
+          {
+            "_token_type": "prompt",
+            "type": "contents",
+            "_type": "contents",
+            "_row_num": 27,
+            "_branch_label_enclosing_screen": "survey/_screen27",
+            "promptIdx": 16
+          }
+        ],
+        "validation_tag_map": {
+          "finalize": []
+        },
+        "operations": [
+          {
+            "clause": "if",
+            "condition": "data('SEX') == '3' || data('SEX') == null",
+            "_row_num": 2,
+            "__rowNum__": 1,
+            "_token_type": "goto_label",
+            "_branch_label": "_then2",
+            "operationIdx": 0
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_else6",
+            "_row_num": 6,
+            "operationIdx": 1
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 3,
+            "__rowNum__": 2,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 5,
+              "__rowNum__": 4,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 2
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif6",
+            "_row_num": 6,
+            "operationIdx": 3
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 7,
+            "__rowNum__": 6,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 10,
+              "__rowNum__": 9,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(1);\nactivePromptIndicies.push(2);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 4
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 11,
+            "__rowNum__": 10,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 26,
+              "__rowNum__": 25,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(3);\nactivePromptIndicies.push(4);\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\nactivePromptIndicies.push(7);\nactivePromptIndicies.push(8);\nactivePromptIndicies.push(9);\nactivePromptIndicies.push(10);\nactivePromptIndicies.push(11);\nactivePromptIndicies.push(12);\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\nactivePromptIndicies.push(15);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 5
+          },
+          {
+            "_token_type": "exit_section",
+            "clause": "exit section",
+            "_row_num": 27,
+            "operationIdx": 6
+          },
+          {
+            "_row_num": 27,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(16);\n\nreturn activePromptIndicies;\n}\n",
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 7
+          },
+          {
+            "_token_type": "resume",
+            "clause": "resume",
+            "_row_num": 27,
+            "operationIdx": 8
+          }
+        ],
+        "branch_label_map": {
+          "_then2": 2,
+          "_screen3": 2,
+          "_else6": 4,
+          "_endif6": 4,
+          "_screen7": 4,
+          "_screen11": 5,
+          "_contents": 7,
+          "_screen27": 7
+        }
+      },
+      "initial": {
+        "section_name": "initial",
+        "nested_sections": {
+          "survey": true
+        },
+        "reachable_sections": {
+          "survey": true
+        },
+        "prompts": [
+          {
+            "_row_num": 3,
+            "type": "opening",
+            "display": {
+              "text": "Edit form"
+            },
+            "_token_type": "prompt",
+            "_type": "opening",
+            "_branch_label_enclosing_screen": "initial/_screen3",
+            "promptIdx": 0
+          },
+          {
+            "_row_num": 4,
+            "clause": "do section survey",
+            "_token_type": "prompt",
+            "_do_section_name": "survey",
+            "_type": "_section",
+            "promptIdx": 1,
+            "display": {
+              "title": {
+                "text": {
+                  "english": "Children - launch visit",
+                  "default": "Children - launch visit"
+                }
+              }
+            },
+            "_branch_label_enclosing_screen": "survey/0"
+          },
+          {
+            "_row_num": 5,
+            "type": "finalize",
+            "display": {
+              "text": "Save form"
+            },
+            "_token_type": "prompt",
+            "_type": "finalize",
+            "_branch_label_enclosing_screen": "initial/_screen5",
+            "promptIdx": 2
+          },
+          {
+            "_row_num": 7,
+            "type": "instances",
+            "display": {
+              "text": "Saved instances"
+            },
+            "_token_type": "prompt",
+            "_type": "instances",
+            "_branch_label_enclosing_screen": "initial/_screen7",
+            "promptIdx": 3
+          },
+          {
+            "_token_type": "prompt",
+            "type": "contents",
+            "_type": "contents",
+            "_row_num": 9,
+            "_branch_label_enclosing_screen": "initial/_screen9",
+            "promptIdx": 4
+          }
+        ],
+        "validation_tag_map": {
+          "finalize": []
+        },
+        "operations": [
+          {
+            "_row_num": 2,
+            "clause": "if // start",
+            "condition": "(opendatakit.getCurrentInstanceId() != null)",
+            "_token_type": "goto_label",
+            "_tag_name": "start",
+            "_branch_label": "_then2",
+            "operationIdx": 0
+          },
+          {
+            "clause": "else // start",
+            "_token_type": "goto_label",
+            "_branch_label": "_else6",
+            "_row_num": 6,
+            "operationIdx": 1
+          },
+          {
+            "_row_num": 3,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 2
+          },
+          {
+            "_row_num": 4,
+            "clause": "do section survey",
+            "_token_type": "do_section",
+            "_do_section_name": "survey",
+            "operationIdx": 3
+          },
+          {
+            "_row_num": 5,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(2);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 4
+          },
+          {
+            "clause": "end if // start",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif8",
+            "_row_num": 8,
+            "operationIdx": 5
+          },
+          {
+            "_row_num": 7,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(3);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 6
+          },
+          {
+            "_token_type": "exit_section",
+            "clause": "exit section",
+            "_row_num": 9,
+            "operationIdx": 7
+          },
+          {
+            "_row_num": 9,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(4);\n\nreturn activePromptIndicies;\n}\n",
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 8
+          },
+          {
+            "_token_type": "resume",
+            "clause": "resume",
+            "_row_num": 9,
+            "operationIdx": 9
+          },
+          {
+            "_token_type": "validate",
+            "clause": "validate finalize",
+            "_sweep_name": "finalize",
+            "_row_num": 9,
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 10
+          },
+          {
+            "_token_type": "save_and_terminate",
+            "clause": "save and terminate",
+            "calculation": true,
+            "_row_num": 9,
+            "screen": {
+              "hideInBackHistory": true
+            },
+            "operationIdx": 11
+          },
+          {
+            "_token_type": "resume",
+            "clause": "resume",
+            "_row_num": 9,
+            "operationIdx": 12
+          }
+        ],
+        "branch_label_map": {
+          "_then2": 2,
+          "_screen3": 2,
+          "_screen5": 4,
+          "_else6": 6,
+          "_screen7": 6,
+          "_endif8": 7,
+          "_contents": 8,
+          "_screen9": 8,
+          "_finalize": 10
+        }
+      }
+    },
+    "dataTableModel": {
+      "NAME": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 2,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NAME",
+        "elementName": "NAME",
+        "elementSet": "data",
+        "elementPath": "NAME"
+      },
+      "SEX": {
+        "type": "string",
+        "valuesList": "sex",
+        "_defn": [
+          {
+            "_row_num": 4,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "SEX",
+        "elementName": "SEX",
+        "elementSet": "data",
+        "elementPath": "SEX"
+      },
+      "REG": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 4,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REG",
+        "elementName": "REG",
+        "elementSet": "data",
+        "elementPath": "REG"
+      },
+      "TAB": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 5,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TAB",
+        "elementName": "TAB",
+        "elementSet": "data",
+        "elementPath": "TAB"
+      },
+      "AMO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 6,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "AMO",
+        "elementName": "AMO",
+        "elementSet": "data",
+        "elementPath": "AMO"
+      },
+      "MOR": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 7,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "MOR",
+        "elementName": "MOR",
+        "elementSet": "data",
+        "elementPath": "MOR"
+      },
+      "CASA": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 8,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CASA",
+        "elementName": "CASA",
+        "elementSet": "data",
+        "elementPath": "CASA"
+      },
+      "FOGAO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "FOGAO",
+        "elementName": "FOGAO",
+        "elementSet": "data",
+        "elementPath": "FOGAO"
+      },
+      "REGIDC": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 10,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REGIDC",
+        "elementName": "REGIDC",
+        "elementSet": "data",
+        "elementPath": "REGIDC"
+      },
+      "ID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ID",
+        "elementName": "ID",
+        "elementSet": "data",
+        "elementPath": "ID"
+      },
+      "OUTDATE": {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 13,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "OUTDATE",
+        "elementName": "OUTDATE",
+        "elementSet": "data",
+        "elementPath": "OUTDATE"
+      },
+      "PREGID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "PREGID",
+        "elementName": "PREGID",
+        "elementSet": "data",
+        "elementPath": "PREGID"
+      },
+      "REGDIA": {
+        "prompt_type_name": "custom_date",
+        "type": "string",
+        "elementType": "date",
+        "comment": "Makes the date widget DD/MM/YYYY",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 15,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REGDIA",
+        "elementName": "REGDIA",
+        "elementSet": "data",
+        "elementPath": "REGDIA"
+      },
+      "ESTADOVIS": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_status",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 17,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ESTADOVIS",
+        "elementName": "ESTADOVIS",
+        "elementSet": "data",
+        "elementPath": "ESTADOVIS"
+      },
+      "EXITDATE": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_exitdate",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 13,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 18,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITDATE",
+        "elementName": "EXITDATE",
+        "elementSet": "data",
+        "elementPath": "EXITDATE"
+      },
+      "EXITPRECIS": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_exitdateprec",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 14,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 19,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "EXITPRECIS",
+        "elementName": "EXITPRECIS",
+        "elementSet": "data",
+        "elementPath": "EXITPRECIS"
+      },
+      "COMSUP": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_comsup",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 16,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 20,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "COMSUP",
+        "elementName": "COMSUP",
+        "elementSet": "data",
+        "elementPath": "COMSUP"
+      },
+      "DACOMSUP": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_dacomsup",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 17,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DACOMSUP",
+        "elementName": "DACOMSUP",
+        "elementSet": "data",
+        "elementPath": "DACOMSUP"
+      },
+      "IDCOMSUP": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_idcomsup",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 18,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 22,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDCOMSUP",
+        "elementName": "IDCOMSUP",
+        "elementSet": "data",
+        "elementPath": "IDCOMSUP"
+      },
+      "PARMA": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_parma",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 19,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 23,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "PARMA",
+        "elementName": "PARMA",
+        "elementSet": "data",
+        "elementPath": "PARMA"
+      },
+      "DAPARMA": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_daparma",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 20,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 24,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DAPARMA",
+        "elementName": "DAPARMA",
+        "elementSet": "data",
+        "elementPath": "DAPARMA"
+      },
+      "IDPARMA": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_idparma",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 21,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 25,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDPARMA",
+        "elementName": "IDPARMA",
+        "elementSet": "data",
+        "elementPath": "IDPARMA"
+      },
+      "MOMA": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_moma",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 22,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 26,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "MOMA",
+        "elementName": "MOMA",
+        "elementSet": "data",
+        "elementPath": "MOMA"
+      },
+      "DASEP": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_dasep",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 23,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 27,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DASEP",
+        "elementName": "DASEP",
+        "elementSet": "data",
+        "elementPath": "DASEP"
+      },
+      "IDSEP": {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "valuesList": "linked_idsep",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 24,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 28,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDSEP",
+        "elementName": "IDSEP",
+        "elementSet": "data",
+        "elementPath": "IDSEP"
+      },
+      "CAUSASEP": {
+        "prompt_type_name": "async_assign_text_value",
+        "type": "text",
+        "valuesList": "linked_causasep",
+        "_row_num": 5,
+        "__rowNum__": 4,
+        "_defn": [
+          {
+            "_row_num": 25,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 29,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CAUSASEP",
+        "elementName": "CAUSASEP",
+        "elementSet": "data",
+        "elementPath": "CAUSASEP"
+      },
+      "_id": {
+        "type": "string",
+        "isNotNullable": true,
+        "elementKey": "_id",
+        "elementName": "_id",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_id"
+      },
+      "_row_etag": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_row_etag",
+        "elementName": "_row_etag",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_row_etag"
+      },
+      "_sync_state": {
+        "type": "string",
+        "isNotNullable": true,
+        "elementKey": "_sync_state",
+        "elementName": "_sync_state",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_sync_state"
+      },
+      "_conflict_type": {
+        "type": "integer",
+        "isNotNullable": false,
+        "elementKey": "_conflict_type",
+        "elementName": "_conflict_type",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_conflict_type"
+      },
+      "_default_access": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_default_access",
+        "elementName": "_default_access",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_default_access"
+      },
+      "_form_id": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_form_id",
+        "elementName": "_form_id",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_form_id"
+      },
+      "_group_modify": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_group_modify",
+        "elementName": "_group_modify",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_group_modify"
+      },
+      "_group_privileged": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_group_privileged",
+        "elementName": "_group_privileged",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_group_privileged"
+      },
+      "_group_read_only": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_group_read_only",
+        "elementName": "_group_read_only",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_group_read_only"
+      },
+      "_locale": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_locale",
+        "elementName": "_locale",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_locale"
+      },
+      "_row_owner": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_row_owner",
+        "elementName": "_row_owner",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_row_owner"
+      },
+      "_savepoint_type": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_savepoint_type",
+        "elementName": "_savepoint_type",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_savepoint_type"
+      },
+      "_savepoint_timestamp": {
+        "type": "string",
+        "isNotNullable": true,
+        "elementKey": "_savepoint_timestamp",
+        "elementName": "_savepoint_timestamp",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_savepoint_timestamp"
+      },
+      "_savepoint_creator": {
+        "type": "string",
+        "isNotNullable": false,
+        "elementKey": "_savepoint_creator",
+        "elementName": "_savepoint_creator",
+        "elementSet": "instanceMetadata",
+        "elementPath": "_savepoint_creator"
+      }
+    }
+  }
+}

@@ -167,6 +167,32 @@
           }
         },
         "_row_num": 9
+      },
+      {
+        "choice_list_name": "forms",
+        "data_value": "MIFCRIANCA_VISIT",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Child Visit",
+              "default": "Child visit"
+            }
+          }
+        },
+        "_row_num": 10
+      },
+      {
+        "choice_list_name": "forms",
+        "data_value": "MIFCRIANCA",
+        "display": {
+          "title": {
+            "text": {
+              "english": "CHILD",
+              "default": "CHILD"
+            }
+          }
+        },
+        "_row_num": 11
       }
     ],
     "survey": [
@@ -349,6 +375,42 @@
       {
         "clause": "exit section",
         "_row_num": 31
+      },
+      {
+        "branch_label": "MIFCRIANCA_VISIT",
+        "_row_num": 32
+      },
+      {
+        "url": "'?' + odkSurvey.getHashString('MIFCRIANCA_VISIT')",
+        "type": "external_link",
+        "display": {
+          "prompt": {
+            "text": "Open form"
+          }
+        },
+        "_row_num": 33
+      },
+      {
+        "clause": "exit section",
+        "_row_num": 34
+      },
+      {
+        "branch_label": "MIFCRIANCA",
+        "_row_num": 35
+      },
+      {
+        "url": "'?' + odkSurvey.getHashString('MIFCRIANCA')",
+        "type": "external_link",
+        "display": {
+          "prompt": {
+            "text": "Open form"
+          }
+        },
+        "_row_num": 36
+      },
+      {
+        "clause": "exit section",
+        "_row_num": 37
       }
     ],
     "framework_translations": [
@@ -1043,6 +1105,32 @@
             }
           },
           "_row_num": 9
+        },
+        {
+          "choice_list_name": "forms",
+          "data_value": "MIFCRIANCA_VISIT",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Child Visit",
+                "default": "Child visit"
+              }
+            }
+          },
+          "_row_num": 10
+        },
+        {
+          "choice_list_name": "forms",
+          "data_value": "MIFCRIANCA",
+          "display": {
+            "title": {
+              "text": {
+                "english": "CHILD",
+                "default": "CHILD"
+              }
+            }
+          },
+          "_row_num": 11
         }
       ]
     },
@@ -1817,12 +1905,42 @@
             "promptIdx": 9
           },
           {
+            "url": "'?' + odkSurvey.getHashString('MIFCRIANCA_VISIT')",
+            "type": "external_link",
+            "display": {
+              "prompt": {
+                "text": "Open form"
+              }
+            },
+            "_row_num": 33,
+            "__rowNum__": 32,
+            "_token_type": "prompt",
+            "_type": "external_link",
+            "_branch_label_enclosing_screen": "survey/_screen33",
+            "promptIdx": 10
+          },
+          {
+            "url": "'?' + odkSurvey.getHashString('MIFCRIANCA')",
+            "type": "external_link",
+            "display": {
+              "prompt": {
+                "text": "Open form"
+              }
+            },
+            "_row_num": 36,
+            "__rowNum__": 35,
+            "_token_type": "prompt",
+            "_type": "external_link",
+            "_branch_label_enclosing_screen": "survey/_screen36",
+            "promptIdx": 11
+          },
+          {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 32,
-            "_branch_label_enclosing_screen": "survey/_screen32",
-            "promptIdx": 10
+            "_row_num": 38,
+            "_branch_label_enclosing_screen": "survey/_screen38",
+            "promptIdx": 12
           }
         ],
         "validation_tag_map": {
@@ -1976,25 +2094,51 @@
             "operationIdx": 21
           },
           {
-            "_token_type": "exit_section",
-            "clause": "exit section",
-            "_row_num": 32,
+            "_row_num": 33,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(10);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 22
           },
           {
-            "_row_num": 32,
+            "clause": "exit section",
+            "_row_num": 34,
+            "__rowNum__": 33,
+            "_token_type": "exit_section",
+            "operationIdx": 23
+          },
+          {
+            "_row_num": 36,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(10);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(11);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 24
+          },
+          {
+            "clause": "exit section",
+            "_row_num": 37,
+            "__rowNum__": 36,
+            "_token_type": "exit_section",
+            "operationIdx": 25
+          },
+          {
+            "_token_type": "exit_section",
+            "clause": "exit section",
+            "_row_num": 38,
+            "operationIdx": 26
+          },
+          {
+            "_row_num": 38,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(12);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 23
+            "operationIdx": 27
           },
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 32,
-            "operationIdx": 24
+            "_row_num": 38,
+            "operationIdx": 28
           }
         ],
         "branch_label_map": {
@@ -2019,8 +2163,12 @@
           "_screen27": 18,
           "TEST": 20,
           "_screen30": 20,
-          "_contents": 23,
-          "_screen32": 23
+          "MIFCRIANCA_VISIT": 22,
+          "_screen33": 22,
+          "MIFCRIANCA": 24,
+          "_screen36": 24,
+          "_contents": 27,
+          "_screen38": 27
         }
       }
     },
