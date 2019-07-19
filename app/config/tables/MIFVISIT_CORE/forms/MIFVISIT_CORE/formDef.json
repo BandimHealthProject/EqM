@@ -1709,8 +1709,8 @@
       {
         "query_name": "vaccines",
         "query_type": "linked_table",
-        "linked_form_id": "MIFVAC_MUL",
-        "linked_table_id": "MIFVAC_MUL",
+        "linked_form_id": "MIFVAC",
+        "linked_table_id": "MIFVAC",
         "selection": "ID = ?",
         "selectionArgs": "[data('ID')]",
         "newRowInitialElementKeyToValueMap": "{ID: data('ID'), VISITDATA: data('CONT')}",
@@ -2970,8 +2970,8 @@
       "vaccines": {
         "query_name": "vaccines",
         "query_type": "linked_table",
-        "linked_form_id": "MIFVAC_MUL",
-        "linked_table_id": "MIFVAC_MUL",
+        "linked_form_id": "MIFVAC",
+        "linked_table_id": "MIFVAC",
         "selection": "ID = ?",
         "selectionArgs": "[data('ID')]",
         "newRowInitialElementKeyToValueMap": "{ID: data('ID'), VISITDATA: data('CONT')}",

@@ -60,6 +60,6 @@ Column,VAC9CHECK,displayChoicesList,object,"[{""choice_list_name"":""vaccheck"",
 Column,VAC9INF,displayChoicesList,object,"[{""choice_list_name"":""vacinf"",""data_value"":""1"",""display"":{""title"":{""text"":{""english"":""Vaccination card"",""default"":""Cartão da vacina""}}},""_row_num"":5},{""choice_list_name"":""vacinf"",""data_value"":""2"",""display"":{""title"":{""text"":{""english"":""Pregnancy card"",""default"":""Cartão de gravidez""}}},""_row_num"":6}]"
 Column,VAC9TIPO,displayChoicesList,object,"[{""choice_list_name"":""vactype"",""data_value"":""1"",""display"":{""title"":{""text"":{""english"":""TT vaccine"",""default"":""Vacina anti-tetánica""}}},""_row_num"":4}]"
 FormType,default,FormType.formType,string,SURVEY
-SurveyUtil,default,SurveyUtil.formId,string,MIFVAC_MUL
+SurveyUtil,default,SurveyUtil.formId,string,MIFVAC
 Table,default,defaultViewType,string,SPREADSHEET
 Table,default,displayName,object,"{""text"":{""english"":""Woman in the fertile age -vaccines_women"",""default"":""Mulher na idade fertil - vacinas_mulhers""}}"
