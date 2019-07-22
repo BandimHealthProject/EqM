@@ -21,8 +21,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Children visit",
-              "default": "Criancas visita"
+              "english": "Children - visit",
+              "default": "Criancas - visita"
             }
           }
         },
@@ -1230,8 +1230,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Children visit",
-              "default": "Criancas visita"
+              "english": "Children - visit",
+              "default": "Criancas - visita"
             }
           }
         },
@@ -1311,8 +1311,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Children visit",
-              "default": "Criancas visita"
+              "english": "Children - visit",
+              "default": "Criancas - visita"
             }
           }
         },
@@ -3129,8 +3129,8 @@
             "display": {
               "title": {
                 "text": {
-                  "english": "Children visit",
-                  "default": "Criancas visita"
+                  "english": "Children - visit",
+                  "default": "Criancas - visita"
                 }
               }
             },
@@ -4088,7 +4088,7 @@
         "_aspect": "default",
         "_key": "displayName",
         "_type": "object",
-        "_value": "{\"text\":{\"english\":\"Children visit\",\"default\":\"Criancas visita\"}}"
+        "_value": "{\"text\":{\"english\":\"Children - visit\",\"default\":\"Criancas - visita\"}}"
       }
     ]
   }

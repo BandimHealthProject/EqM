@@ -18,4 +18,4 @@ Column,TENDAYN,displayChoicesList,object,"[{""choice_list_name"":""YesNoU"",""da
 FormType,default,FormType.formType,string,SURVEY
 SurveyUtil,default,SurveyUtil.formId,string,CRIANCA_VISIT
 Table,default,defaultViewType,string,SPREADSHEET
-Table,default,displayName,object,"{""text"":{""english"":""Children visit"",""default"":""Criancas visita""}}"
+Table,default,displayName,object,"{""text"":{""english"":""Children - visit"",""default"":""Criancas - visita""}}"
