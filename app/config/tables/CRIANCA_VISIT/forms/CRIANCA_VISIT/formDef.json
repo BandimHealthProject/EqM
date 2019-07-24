@@ -409,7 +409,7 @@
       },
       {
         "clause": "if",
-        "condition": "data('moma') != '1'",
+        "condition": "data('moma') != '2'",
         "_row_num": 49
       },
       {
@@ -2987,7 +2987,7 @@
           },
           {
             "clause": "if",
-            "condition": "data('moma') != '1'",
+            "condition": "data('moma') != '2'",
             "_row_num": 49,
             "__rowNum__": 48,
             "_token_type": "goto_label",
