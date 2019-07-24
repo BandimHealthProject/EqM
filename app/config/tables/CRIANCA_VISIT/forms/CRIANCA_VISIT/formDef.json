@@ -986,12 +986,25 @@
         "display": {
           "title": {
             "text": {
+              "english": "Never",
+              "default": "Nunca"
+            }
+          }
+        },
+        "_row_num": 19
+      },
+      {
+        "choice_list_name": "bednettime",
+        "data_value": "4",
+        "display": {
+          "title": {
+            "text": {
               "english": "Other",
               "default": "Outra/o"
             }
           }
         },
-        "_row_num": 19
+        "_row_num": 20
       },
       {
         "choice_list_name": "YesNoU",
@@ -1004,7 +1017,7 @@
             }
           }
         },
-        "_row_num": 20
+        "_row_num": 21
       },
       {
         "choice_list_name": "YesNoU",
@@ -1017,7 +1030,7 @@
             }
           }
         },
-        "_row_num": 21
+        "_row_num": 22
       },
       {
         "choice_list_name": "YesNoU",
@@ -1030,7 +1043,7 @@
             }
           }
         },
-        "_row_num": 22
+        "_row_num": 23
       },
       {
         "choice_list_name": "precision",
@@ -1043,7 +1056,7 @@
             }
           }
         },
-        "_row_num": 23
+        "_row_num": 24
       },
       {
         "choice_list_name": "precision",
@@ -1056,7 +1069,7 @@
             }
           }
         },
-        "_row_num": 24
+        "_row_num": 25
       },
       {
         "choice_list_name": "precision",
@@ -1069,7 +1082,7 @@
             }
           }
         },
-        "_row_num": 25
+        "_row_num": 26
       },
       {
         "choice_list_name": "precision",
@@ -1082,7 +1095,7 @@
             }
           }
         },
-        "_row_num": 26
+        "_row_num": 27
       }
     ],
     "model": [
@@ -1599,12 +1612,25 @@
           "display": {
             "title": {
               "text": {
+                "english": "Never",
+                "default": "Nunca"
+              }
+            }
+          },
+          "_row_num": 19
+        },
+        {
+          "choice_list_name": "bednettime",
+          "data_value": "4",
+          "display": {
+            "title": {
+              "text": {
                 "english": "Other",
                 "default": "Outra/o"
               }
             }
           },
-          "_row_num": 19
+          "_row_num": 20
         }
       ],
       "YesNoU": [
@@ -1619,7 +1645,7 @@
               }
             }
           },
-          "_row_num": 20
+          "_row_num": 21
         },
         {
           "choice_list_name": "YesNoU",
@@ -1632,7 +1658,7 @@
               }
             }
           },
-          "_row_num": 21
+          "_row_num": 22
         },
         {
           "choice_list_name": "YesNoU",
@@ -1645,7 +1671,7 @@
               }
             }
           },
-          "_row_num": 22
+          "_row_num": 23
         }
       ],
       "precision": [
@@ -1660,7 +1686,7 @@
               }
             }
           },
-          "_row_num": 23
+          "_row_num": 24
         },
         {
           "choice_list_name": "precision",
@@ -1673,7 +1699,7 @@
               }
             }
           },
-          "_row_num": 24
+          "_row_num": 25
         },
         {
           "choice_list_name": "precision",
@@ -1686,7 +1712,7 @@
               }
             }
           },
-          "_row_num": 25
+          "_row_num": 26
         },
         {
           "choice_list_name": "precision",
@@ -1699,7 +1725,7 @@
               }
             }
           },
-          "_row_num": 26
+          "_row_num": 27
         }
       ]
     },
@@ -4137,77 +4163,77 @@
         "_aspect": "CICBCGN",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":23}]"
       },
       {
         "_partition": "Column",
         "_aspect": "COMSUP",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":23}]"
       },
       {
         "_partition": "Column",
         "_aspect": "EXITPRECIS",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"precision\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Day certain\",\"default\":\"Dia certo\"}}},\"_row_num\":23},{\"choice_list_name\":\"precision\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Month certain\",\"default\":\"Mes certo\"}}},\"_row_num\":24},{\"choice_list_name\":\"precision\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Season certain\",\"default\":\"Estação certo\"}}},\"_row_num\":25},{\"choice_list_name\":\"precision\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Year certain\",\"default\":\"Ano certo\"}}},\"_row_num\":26}]"
+        "_value": "[{\"choice_list_name\":\"precision\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Day certain\",\"default\":\"Dia certo\"}}},\"_row_num\":24},{\"choice_list_name\":\"precision\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Month certain\",\"default\":\"Mes certo\"}}},\"_row_num\":25},{\"choice_list_name\":\"precision\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Season certain\",\"default\":\"Estação certo\"}}},\"_row_num\":26},{\"choice_list_name\":\"precision\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Year certain\",\"default\":\"Ano certo\"}}},\"_row_num\":27}]"
       },
       {
         "_partition": "Column",
         "_aspect": "HOSP",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":23}]"
       },
       {
         "_partition": "Column",
         "_aspect": "LINFADENOP",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":23}]"
       },
       {
         "_partition": "Column",
         "_aspect": "LINFADESUP",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":23}]"
       },
       {
         "_partition": "Column",
         "_aspect": "MOMA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":23}]"
       },
       {
         "_partition": "Column",
         "_aspect": "PARMA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":23}]"
       },
       {
         "_partition": "Column",
         "_aspect": "PASSARAMPO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":23}]"
       },
       {
         "_partition": "Column",
         "_aspect": "PORCA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":23}]"
       },
       {
         "_partition": "Column",
         "_aspect": "PORMO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":23}]"
       },
       {
         "_partition": "Column",
@@ -4221,7 +4247,7 @@
         "_aspect": "TENDA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"bednettime\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"All year\",\"default\":\"Tudo Ano\"}}},\"_row_num\":17},{\"choice_list_name\":\"bednettime\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Rainy season\",\"default\":\"Chuva\"}}},\"_row_num\":18},{\"choice_list_name\":\"bednettime\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outra/o\"}}},\"_row_num\":19}]"
+        "_value": "[{\"choice_list_name\":\"bednettime\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"All year\",\"default\":\"Tudo Ano\"}}},\"_row_num\":17},{\"choice_list_name\":\"bednettime\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Rainy season\",\"default\":\"Chuva\"}}},\"_row_num\":18},{\"choice_list_name\":\"bednettime\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Never\",\"default\":\"Nunca\"}}},\"_row_num\":19},{\"choice_list_name\":\"bednettime\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outra/o\"}}},\"_row_num\":20}]"
       },
       {
         "_partition": "Column",
@@ -4235,7 +4261,7 @@
         "_aspect": "TENDAYN",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":23}]"
       },
       {
         "_partition": "FormType",
