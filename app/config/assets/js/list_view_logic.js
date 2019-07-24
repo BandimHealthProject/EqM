@@ -41,6 +41,7 @@ window.listViewLogic = {
     showEditAndDelButtons: false,
 
     lastvisit: null,
+    DetailView: null,
     
     hdrLabel: null,
     hdrColId: null,
@@ -238,7 +239,14 @@ window.listViewLogic = {
     		that.lastvisit = lastvisit;
     	}
     },
-
+    
+    detailView: function(detailView){
+        var that = this;
+        if (detailView !== null && detailView !==undefined && detailView.length !==0) {
+            that.detailView = detailView;
+        }
+    },
+    
     setColIdsToDisplayInList: function(headerLabel, headerColId, 
             firstDetailLabel1, firstDetailColId1, firstDetailLabel2, firstDetailColId2, 
             secondDetailLabel1, secondDetailColId1, secondDetailLabel2, secondDetailColId2,
@@ -547,9 +555,12 @@ window.listViewLogic = {
                 // make sure we retrieved the rowId
                 if (rowId !== null && rowId !== undefined) {
                     // we'll pass null as the relative path to use the default file
-                    //odkTables.openDetailView(null, that.tableId, rowId, null);
-                    odkTables.editRowWithSurvey(null, that.tableId, rowId, that.formId, null, null);
-                    console.log('opened detail view');
+                    if (that.detailView === true) {
+                    	odkTables.openDetailView(null, that.tableId, rowId, 'config/tables/MIF/html/MIF_detail.html');
+                    	console.log('opened detail view');
+                    } else {
+                    	odkTables.editRowWithSurvey(null, that.tableId, rowId, that.formId, null, null);	
+                    }
                 }
             });
         }
@@ -569,7 +580,7 @@ window.listViewLogic = {
         var locale = odkCommon.getPreferredLocale();
         /* Number of rows displayed per 'chunk' - can modify this value */
         for (var i = 0; i < resultSet.getCount(); i++) {
-            
+ 
         		/* Creates the item space */
         		var item = $('<li>');
         		item.attr('rowId', resultSet.getRowId(i));
@@ -674,7 +685,7 @@ window.listViewLogic = {
         		var borderDiv = $('<div>');
         		borderDiv.addClass('divider');
         		$(that.listElemId).append(borderDiv);
-        }    
+        }
     },
 
     clearRows: function() {

@@ -1,0 +1,7 @@
+_partition,_aspect,_key,_type,_value
+Column,MALFORM,displayChoicesList,array,"[{""choice_list_name"":""YesNoU"",""data_value"":""1"",""display"":{""title"":{""text"":{""english"":""Yes"",""default"":""Sim""}}},""_row_num"":2},{""choice_list_name"":""YesNoU"",""data_value"":""2"",""display"":{""title"":{""text"":{""english"":""No"",""default"":""Não""}}},""_row_num"":3},{""choice_list_name"":""YesNoU"",""data_value"":""3"",""display"":{""title"":{""text"":{""english"":""Don't know"",""default"":""Não sabe""}}},""_row_num"":4}]"
+Column,SEX,displayChoicesList,array,"[{""choice_list_name"":""sex"",""data_value"":""1"",""display"":{""title"":{""text"":{""english"":""Male"",""default"":""Macho""}}},""_row_num"":5},{""choice_list_name"":""sex"",""data_value"":""2"",""display"":{""title"":{""text"":{""english"":""Female"",""default"":""Fêmea""}}},""_row_num"":6},{""choice_list_name"":""sex"",""data_value"":""3"",""display"":{""title"":{""text"":{""english"":""Dont know"",""default"":""Não sabe""}}},""_row_num"":7}]"
+FormType,default,FormType.formType,string,SURVEY
+SurveyUtil,default,SurveyUtil.formId,string,CRIANCA
+Table,default,defaultViewType,string,SPREADSHEET
+Table,default,displayName,object,"{""text"":{""english"":""Children"",""default"":""Criancas""}}"

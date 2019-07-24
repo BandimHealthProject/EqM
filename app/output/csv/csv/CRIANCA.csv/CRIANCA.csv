@@ -1,0 +1,4 @@
+_id,_form_id,_locale,_savepoint_type,_savepoint_timestamp,_savepoint_creator,AMO,CASA,CAUSASEP,COMSUP,DACOMSUP,DAPARMA,DASEP,ESTADOVIS,EXITDATE,EXITPRECIS,FOGAO,ID,IDCOMSUP,IDPARMA,IDSEP,MALFORM,MALFORM_TYPE,MOMA,MOR,NAME,OUTDATE,PARMA,PREGID,REG,REGDIA,REGIDC,SEX,TAB,_default_access,_group_modify,_group_privileged,_group_read_only,_row_etag,_row_owner
+uuid:662091e0-6a21-459c-b42e-f9efdc0eac54,CRIANCA,en_US,COMPLETE,2019-07-23T11:32:59.626000000,anonymous,1,5,,,,,,,,,2,1001001001,,,,,,,1,Linked id,2019-03-07T01:00:00.000000000,,,1,,10,1,2,FULL,,,,,anonymous
+uuid:66202391e0-6a21-459c-b42e-f9efdc0eac54,CRIANCA,en_US,COMPLETE,2019-07-23T11:32:59.626000000,anonymous,1,2,,,,,,,,,1,102,,,,,,,1,not linked,2019-03-07T01:00:00.000000000,,,1,,10,1,2,FULL,,,,,anonymous
+uuid:1487481c-7c61-42cd-ad5d-0515e5f37e1e,CRIANCA,en_US,COMPLETE,2019-07-23T18:26:00.588000000,anonymous,,,,,,,,,,,,1001001001,,,,,,,,Test,,,,,,11,,,FULL,,,,,anonymous

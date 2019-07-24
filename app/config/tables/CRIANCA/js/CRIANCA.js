@@ -5,16 +5,16 @@
 /* exported display, handleClick, getResults */
 'use strict';
 
-var listQuery = 'SELECT * FROM MIF';
+
+var listQuery = 'SELECT * FROM CRIANCA';
 
 var searchParams = '(MOR LIKE ?)';
-
 
 function resumeFunc(state) {
     if (state === 'init') {
         // set the parameters for the list view
-        listViewLogic.setTableId('MIF');
-        listViewLogic.setFormId('MIF_LV');
+        listViewLogic.setTableId('CRIANCA');
+        listViewLogic.setFormId('CRIANCA_LV');
         listViewLogic.setListQuery(listQuery);
         listViewLogic.setSearchParams(searchParams);
         listViewLogic.setListElement('#list');
@@ -25,29 +25,15 @@ function resumeFunc(state) {
         listViewLogic.showEditAndDeleteButtons(false);
         listViewLogic.setLastvisit('LASTVISIT');
         
-        listViewLogic.detailView(true);
-        
-        listViewLogic.setColIdsToDisplayInList(null, 'NOMEMAE',
+        listViewLogic.detailView(false);
+     
+        listViewLogic.setColIdsToDisplayInList(null, 'NAME',
         		'Relação 1', 'RELA1', null, 'RELA1NOME', 
         		'Relação 2', 'RELA2', null, 'RELA2NOME',
         		'Morança', 'MOR', 'Casa', 'CASA', 'Fogao', 'FOGAO');
     }
 
     listViewLogic.resumeFn(state);
-    
- // create button that adds patients to the system - launches diagnosticQuick form
-    var addClient = document.createElement('p');
-    addClient.onclick = function() {
-        odkTables.addRowWithSurvey(
-        		null,
-                'MIF',
-                'MIF',
-                null,
-                null);
-    };
-    addClient.setAttribute('class', 'launchForm');
-    addClient.innerHTML = 'Nova mulher';
-    document.getElementById('searchBox').appendChild(addClient);
 }
 
 function clearListResults() {
