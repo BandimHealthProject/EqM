@@ -1,10 +1,10 @@
 _element_key,_element_name,_element_type,_list_child_element_keys
-BRACOCRI,BRACOCRI,string,[]
+BRACOCRI,BRACOCRI,integer,[]
 CARTVAC,CARTVAC,string,[]
 CAUSASEP,CAUSASEP,string,[]
-CICBCGH,CICBCGH,string,[]
+CICBCGH,CICBCGH,integer,[]
 CICBCGN,CICBCGN,string,[]
-CICBCGV,CICBCGV,string,[]
+CICBCGV,CICBCGV,integer,[]
 COMSUP,COMSUP,string,[]
 DACOMSUP,DACOMSUP,date,[]
 DAPARMA,DAPARMA,date,[]
