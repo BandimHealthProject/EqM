@@ -125,86 +125,92 @@
         "_row_num": 11
       },
       {
+        "type": "async_assign_date",
+        "values_list": "linked_visitdate",
+        "name": "LASTVISIT",
+        "_row_num": 12
+      },
+      {
         "type": "async_assign_num_value",
         "values_list": "linked_status",
         "name": "ESTADOVIS",
-        "_row_num": 12
+        "_row_num": 13
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_exitdate",
         "name": "EXITDATE",
-        "_row_num": 13
+        "_row_num": 14
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_exitdateprec",
         "name": "EXITPRECIS",
-        "_row_num": 14
+        "_row_num": 15
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_comsup",
         "name": "COMSUP",
-        "_row_num": 16
+        "_row_num": 17
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_dacomsup",
         "name": "DACOMSUP",
-        "_row_num": 17
+        "_row_num": 18
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_idcomsup",
         "name": "IDCOMSUP",
-        "_row_num": 18
+        "_row_num": 19
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_parma",
         "name": "PARMA",
-        "_row_num": 19
+        "_row_num": 20
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_daparma",
         "name": "DAPARMA",
-        "_row_num": 20
+        "_row_num": 21
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_idparma",
         "name": "IDPARMA",
-        "_row_num": 21
+        "_row_num": 22
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_moma",
         "name": "MOMA",
-        "_row_num": 22
+        "_row_num": 23
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_dasep",
         "name": "DASEP",
-        "_row_num": 23
+        "_row_num": 24
       },
       {
         "type": "async_assign_num_value",
         "values_list": "linked_idsep",
         "name": "IDSEP",
-        "_row_num": 24
+        "_row_num": 25
       },
       {
         "type": "async_assign_text_value",
         "values_list": "linked_causasep",
         "name": "CAUSASEP",
-        "_row_num": 25
+        "_row_num": 26
       },
       {
         "clause": "end screen",
-        "_row_num": 26
+        "_row_num": 27
       }
     ],
     "queries": [
@@ -374,6 +380,18 @@
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "CAUSASEP",
         "_row_num": 17
+      },
+      {
+        "query_name": "linked_visitdate",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFVISIT",
+        "linked_table_id": "MIFVISIT",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "CONT",
+        "_row_num": 19
       }
     ],
     "prompt_types": [
@@ -597,6 +615,12 @@
         "type": "async_assign_text_value",
         "isSessionVariable": false,
         "_row_num": 29
+      },
+      {
+        "name": "LASTVISIT",
+        "type": "async_assign_date",
+        "isSessionVariable": false,
+        "_row_num": 30
       }
     ]
   },
@@ -936,6 +960,18 @@
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "CAUSASEP",
         "_row_num": 17
+      },
+      "linked_visitdate": {
+        "query_name": "linked_visitdate",
+        "query_type": "linked_table",
+        "linked_form_id": "MIFVISIT",
+        "linked_table_id": "MIFVISIT",
+        "selection": "ID = ?",
+        "selectionArgs": "[data('ID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "CONT",
+        "_row_num": 19
       }
     },
     "calculates": {},
@@ -1106,7 +1142,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 13,
             "section_name": "survey"
           },
           {
@@ -1125,7 +1161,7 @@
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 13,
+            "_row_num": 14,
             "section_name": "survey"
           },
           {
@@ -1144,7 +1180,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 15,
             "section_name": "survey"
           },
           {
@@ -1163,7 +1199,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 17,
             "section_name": "survey"
           },
           {
@@ -1182,7 +1218,7 @@
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 17,
+            "_row_num": 18,
             "section_name": "survey"
           },
           {
@@ -1201,7 +1237,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 19,
             "section_name": "survey"
           },
           {
@@ -1220,7 +1256,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 20,
             "section_name": "survey"
           },
           {
@@ -1239,7 +1275,7 @@
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 20,
+            "_row_num": 21,
             "section_name": "survey"
           },
           {
@@ -1258,7 +1294,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 22,
             "section_name": "survey"
           },
           {
@@ -1277,7 +1313,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 23,
             "section_name": "survey"
           },
           {
@@ -1296,7 +1332,7 @@
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 24,
             "section_name": "survey"
           },
           {
@@ -1315,7 +1351,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 25,
             "section_name": "survey"
           },
           {
@@ -1334,7 +1370,7 @@
         "__rowNum__": 4,
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 26,
             "section_name": "survey"
           },
           {
@@ -1344,6 +1380,25 @@
         ],
         "isSessionVariable": false,
         "elementKey": "CAUSASEP"
+      },
+      "LASTVISIT": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_visitdate",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 30,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "LASTVISIT"
       }
     },
     "section_names": [
@@ -1403,75 +1458,75 @@
             "promptIdx": 2
           },
           {
-            "type": "async_assign_num_value",
-            "values_list": "linked_status",
-            "name": "ESTADOVIS",
+            "type": "async_assign_date",
+            "values_list": "linked_visitdate",
+            "name": "LASTVISIT",
             "_row_num": 12,
             "__rowNum__": 11,
             "_token_type": "prompt",
-            "_type": "async_assign_num_value",
+            "_type": "async_assign_date",
             "_branch_label_enclosing_screen": "survey/_screen11",
             "promptIdx": 3
+          },
+          {
+            "type": "async_assign_num_value",
+            "values_list": "linked_status",
+            "name": "ESTADOVIS",
+            "_row_num": 13,
+            "__rowNum__": 12,
+            "_token_type": "prompt",
+            "_type": "async_assign_num_value",
+            "_branch_label_enclosing_screen": "survey/_screen11",
+            "promptIdx": 4
           },
           {
             "type": "async_assign_date",
             "values_list": "linked_exitdate",
             "name": "EXITDATE",
-            "_row_num": 13,
-            "__rowNum__": 12,
-            "_token_type": "prompt",
-            "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen11",
-            "promptIdx": 4
-          },
-          {
-            "type": "async_assign_num_value",
-            "values_list": "linked_exitdateprec",
-            "name": "EXITPRECIS",
             "_row_num": 14,
             "__rowNum__": 13,
             "_token_type": "prompt",
-            "_type": "async_assign_num_value",
+            "_type": "async_assign_date",
             "_branch_label_enclosing_screen": "survey/_screen11",
             "promptIdx": 5
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_comsup",
-            "name": "COMSUP",
-            "_row_num": 16,
-            "__rowNum__": 15,
+            "values_list": "linked_exitdateprec",
+            "name": "EXITPRECIS",
+            "_row_num": 15,
+            "__rowNum__": 14,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen11",
             "promptIdx": 6
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_dacomsup",
-            "name": "DACOMSUP",
+            "type": "async_assign_num_value",
+            "values_list": "linked_comsup",
+            "name": "COMSUP",
             "_row_num": 17,
             "__rowNum__": 16,
             "_token_type": "prompt",
-            "_type": "async_assign_date",
+            "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen11",
             "promptIdx": 7
           },
           {
-            "type": "async_assign_num_value",
-            "values_list": "linked_idcomsup",
-            "name": "IDCOMSUP",
+            "type": "async_assign_date",
+            "values_list": "linked_dacomsup",
+            "name": "DACOMSUP",
             "_row_num": 18,
             "__rowNum__": 17,
             "_token_type": "prompt",
-            "_type": "async_assign_num_value",
+            "_type": "async_assign_date",
             "_branch_label_enclosing_screen": "survey/_screen11",
             "promptIdx": 8
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_parma",
-            "name": "PARMA",
+            "values_list": "linked_idcomsup",
+            "name": "IDCOMSUP",
             "_row_num": 19,
             "__rowNum__": 18,
             "_token_type": "prompt",
@@ -1480,31 +1535,31 @@
             "promptIdx": 9
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_daparma",
-            "name": "DAPARMA",
+            "type": "async_assign_num_value",
+            "values_list": "linked_parma",
+            "name": "PARMA",
             "_row_num": 20,
             "__rowNum__": 19,
             "_token_type": "prompt",
-            "_type": "async_assign_date",
+            "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen11",
             "promptIdx": 10
           },
           {
-            "type": "async_assign_num_value",
-            "values_list": "linked_idparma",
-            "name": "IDPARMA",
+            "type": "async_assign_date",
+            "values_list": "linked_daparma",
+            "name": "DAPARMA",
             "_row_num": 21,
             "__rowNum__": 20,
             "_token_type": "prompt",
-            "_type": "async_assign_num_value",
+            "_type": "async_assign_date",
             "_branch_label_enclosing_screen": "survey/_screen11",
             "promptIdx": 11
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_moma",
-            "name": "MOMA",
+            "values_list": "linked_idparma",
+            "name": "IDPARMA",
             "_row_num": 22,
             "__rowNum__": 21,
             "_token_type": "prompt",
@@ -1513,45 +1568,56 @@
             "promptIdx": 12
           },
           {
-            "type": "async_assign_date",
-            "values_list": "linked_dasep",
-            "name": "DASEP",
+            "type": "async_assign_num_value",
+            "values_list": "linked_moma",
+            "name": "MOMA",
             "_row_num": 23,
             "__rowNum__": 22,
             "_token_type": "prompt",
-            "_type": "async_assign_date",
+            "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen11",
             "promptIdx": 13
+          },
+          {
+            "type": "async_assign_date",
+            "values_list": "linked_dasep",
+            "name": "DASEP",
+            "_row_num": 24,
+            "__rowNum__": 23,
+            "_token_type": "prompt",
+            "_type": "async_assign_date",
+            "_branch_label_enclosing_screen": "survey/_screen11",
+            "promptIdx": 14
           },
           {
             "type": "async_assign_num_value",
             "values_list": "linked_idsep",
             "name": "IDSEP",
-            "_row_num": 24,
-            "__rowNum__": 23,
+            "_row_num": 25,
+            "__rowNum__": 24,
             "_token_type": "prompt",
             "_type": "async_assign_num_value",
             "_branch_label_enclosing_screen": "survey/_screen11",
-            "promptIdx": 14
+            "promptIdx": 15
           },
           {
             "type": "async_assign_text_value",
             "values_list": "linked_causasep",
             "name": "CAUSASEP",
-            "_row_num": 25,
-            "__rowNum__": 24,
+            "_row_num": 26,
+            "__rowNum__": 25,
             "_token_type": "prompt",
             "_type": "async_assign_text_value",
             "_branch_label_enclosing_screen": "survey/_screen11",
-            "promptIdx": 15
+            "promptIdx": 16
           },
           {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 27,
-            "_branch_label_enclosing_screen": "survey/_screen27",
-            "promptIdx": 16
+            "_row_num": 28,
+            "_branch_label_enclosing_screen": "survey/_screen28",
+            "promptIdx": 17
           }
         ],
         "validation_tag_map": {
@@ -1616,23 +1682,23 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 26,
-              "__rowNum__": 25,
+              "_row_num": 27,
+              "__rowNum__": 26,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(3);\nactivePromptIndicies.push(4);\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\nactivePromptIndicies.push(7);\nactivePromptIndicies.push(8);\nactivePromptIndicies.push(9);\nactivePromptIndicies.push(10);\nactivePromptIndicies.push(11);\nactivePromptIndicies.push(12);\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\nactivePromptIndicies.push(15);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(3);\nactivePromptIndicies.push(4);\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\nactivePromptIndicies.push(7);\nactivePromptIndicies.push(8);\nactivePromptIndicies.push(9);\nactivePromptIndicies.push(10);\nactivePromptIndicies.push(11);\nactivePromptIndicies.push(12);\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\nactivePromptIndicies.push(15);\nactivePromptIndicies.push(16);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 5
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 27,
+            "_row_num": 28,
             "operationIdx": 6
           },
           {
-            "_row_num": 27,
+            "_row_num": 28,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(16);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(17);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
@@ -1641,7 +1707,7 @@
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 27,
+            "_row_num": 28,
             "operationIdx": 8
           }
         ],
@@ -1653,7 +1719,7 @@
           "_screen7": 4,
           "_screen11": 5,
           "_contents": 7,
-          "_screen27": 7
+          "_screen28": 7
         }
       },
       "initial": {
@@ -2043,7 +2109,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 13,
             "section_name": "survey"
           },
           {
@@ -2065,7 +2131,7 @@
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 13,
+            "_row_num": 14,
             "section_name": "survey"
           },
           {
@@ -2087,7 +2153,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 15,
             "section_name": "survey"
           },
           {
@@ -2109,7 +2175,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 17,
             "section_name": "survey"
           },
           {
@@ -2131,7 +2197,7 @@
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 17,
+            "_row_num": 18,
             "section_name": "survey"
           },
           {
@@ -2153,7 +2219,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 19,
             "section_name": "survey"
           },
           {
@@ -2175,7 +2241,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 20,
             "section_name": "survey"
           },
           {
@@ -2197,7 +2263,7 @@
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 20,
+            "_row_num": 21,
             "section_name": "survey"
           },
           {
@@ -2219,7 +2285,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 22,
             "section_name": "survey"
           },
           {
@@ -2241,7 +2307,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 23,
             "section_name": "survey"
           },
           {
@@ -2263,7 +2329,7 @@
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 24,
             "section_name": "survey"
           },
           {
@@ -2285,7 +2351,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 25,
             "section_name": "survey"
           },
           {
@@ -2307,7 +2373,7 @@
         "__rowNum__": 4,
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 26,
             "section_name": "survey"
           },
           {
@@ -2320,6 +2386,28 @@
         "elementName": "CAUSASEP",
         "elementSet": "data",
         "elementPath": "CAUSASEP"
+      },
+      "LASTVISIT": {
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
+        "valuesList": "linked_visitdate",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 30,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "LASTVISIT",
+        "elementName": "LASTVISIT",
+        "elementSet": "data",
+        "elementPath": "LASTVISIT"
       },
       "_id": {
         "type": "string",

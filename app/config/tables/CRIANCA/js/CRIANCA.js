@@ -28,8 +28,8 @@ function resumeFunc(state) {
         listViewLogic.detailView(false);
      
         listViewLogic.setColIdsToDisplayInList(null, 'NAME',
-        		'Relação 1', 'RELA1', null, 'RELA1NOME', 
-        		'Relação 2', 'RELA2', null, 'RELA2NOME',
+        		'Idade', 'IDADE', null, null, 
+        		'Sexo', 'SEX', null, null,
         		'Morança', 'MOR', 'Casa', 'CASA', 'Fogao', 'FOGAO');
     }
 

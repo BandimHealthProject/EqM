@@ -547,6 +547,12 @@
         "type": "async_assign_text_value",
         "isSessionVariable": false,
         "_row_num": 29
+      },
+      {
+        "name": "LASTVISIT",
+        "type": "async_assign_date",
+        "isSessionVariable": false,
+        "_row_num": 30
       }
     ]
   },
@@ -1130,6 +1136,17 @@
         "type": "async_assign_text_value",
         "isSessionVariable": false,
         "elementKey": "CAUSASEP"
+      },
+      "LASTVISIT": {
+        "_defn": [
+          {
+            "_row_num": 30,
+            "section_name": "model"
+          }
+        ],
+        "type": "async_assign_date",
+        "isSessionVariable": false,
+        "elementKey": "LASTVISIT"
       },
       "MALFORM": {
         "_defn": [
@@ -2097,6 +2114,20 @@
         "elementName": "CAUSASEP",
         "elementSet": "data",
         "elementPath": "CAUSASEP"
+      },
+      "LASTVISIT": {
+        "_defn": [
+          {
+            "_row_num": 30,
+            "section_name": "model"
+          }
+        ],
+        "type": "async_assign_date",
+        "isSessionVariable": false,
+        "elementKey": "LASTVISIT",
+        "elementName": "LASTVISIT",
+        "elementSet": "data",
+        "elementPath": "LASTVISIT"
       },
       "MALFORM": {
         "_defn": [

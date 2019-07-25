@@ -616,7 +616,7 @@ window.listViewLogic = {
         			chevron.attr('class', 'chevron');
         			item.append(chevron);
         		}
-
+        		if (that.tableId === 'MIF') {
         		if (that.firstDetColId1 !== null && that.firstDetColId1 !== undefined && that.firstDetColId1.length !== 0) {
         			var field1 = $('<li>');
         			field1.attr('class', 'detail');
@@ -630,11 +630,26 @@ window.listViewLogic = {
         					f2Detail = 'NS'
         				}
         			}
-        			
+        	
         			field1.text(that.createLabel(that.firstDetLabel1) + f1Detail + '; ' + f2Detail);
         			item.append(field1);
         		}
-
+        		} 
+        		if (that.tableId === 'CRIANCA') {
+            		if (that.firstDetColId1 !== null && that.firstDetColId1 !== undefined && that.firstDetColId1.length !== 0) {
+            			var field1 = $('<li>');
+            			field1.attr('class', 'detail');
+            			var f1Detail = util.formatColIdForDisplay(that.firstDetColId1, i, resultSet, true);
+            			if (that.firstDetColId1 === 'IDADE') {
+            				if (f1Detail === '') {
+            					f1Detail = 'NS'
+            				}
+            			}
+            			field1.text(that.createLabel(that.firstDetLabel1) + f1Detail);
+            			item.append(field1);
+            		}
+            		}
+        		if (that.tableId === 'MIF') {
         		if (that.secondDetColId1 !== null && that.secondDetColId1 !== undefined && that.secondDetColId1.length !== 0) {
         			var field2 = $('<li>');
         			field2.attr('class', 'detail');
@@ -652,7 +667,27 @@ window.listViewLogic = {
                 	field2.text(that.createLabel(that.secondDetLabel1) + s1Detail + '; ' + s2Detail);
                 	item.append(field2);
         		}
-            
+        		}
+        		if (that.tableId === 'CRIANCA') {
+            		if (that.secondDetColId1 !== null && that.secondDetColId1 !== undefined && that.secondDetColId1.length !== 0) {
+            			var field2 = $('<li>');
+            			field2.attr('class', 'detail');
+                    	var s1Detail = util.formatColIdForDisplay(that.secondDetColId1, i, resultSet, true);
+                    	if (that.secondDetColId1 === 'SEX') {
+            				if (s1Detail === '1') {
+            					s1Detail = 'Macho'
+            				} else if (s1Detail === '2') {
+            					s1Detail = 'Femea'
+            				} else {
+            					s1Detail = 'NS'
+            				} 
+            			}
+                    	
+                    	field2.text(that.createLabel(that.secondDetLabel1) + s1Detail);
+                    	item.append(field2);
+            		}
+            		}
+        		
         		if (that.thirdDetColId1 !== null && that.thirdDetColId1 !== undefined && that.thirdDetColId1.length !== 0) {
         			var field3 = $('<li>');
         			field3.attr('class', 'detail');

@@ -4,17 +4,17 @@
 /* global $, odkTables, util, odkData */
 'use strict';
 
-var healthFacilityResultSet = {};
+var MIFResultSet = {};
 
 function onAddVisitClick() {
-	odkTables.editRowWithSurvey(null, 'MIF', healthFacilityResultSet.get('_id'), 'MIF_LV', null, null);
+	odkTables.editRowWithSurvey(null, 'MIF', MIFResultSet.get('_id'), 'MIF_LV', null, null);
 }
 
 
 function onLinkClick() {
-    if (!$.isEmptyObject(healthFacilityResultSet))
+    if (!$.isEmptyObject(MIFResultSet))
     {
-        var rowIdQueryParams = util.getKeyToAppendToColdChainURL(util.motherId, healthFacilityResultSet.get('_id'));
+        var rowIdQueryParams = util.getKeyToAppendToChildURL(util.motherId, MIFResultSet.get('_id'));
         odkTables.launchHTML(null, 
             'config/tables/CRIANCA/html/CRIANCA.html' + rowIdQueryParams);
     }
@@ -22,16 +22,16 @@ function onLinkClick() {
 
 function onAddChildClick() {
     var jsonMap = {};
-    jsonMap.ID = healthFacilityResultSet.getRowId(0);
+    jsonMap.ID = MIFResultSet.getRowId(0);
 	
     odkTables.addRowWithSurvey(null, 'CRIANCA', 'CRIANCA', null, jsonMap);
 }
 
 function cbSuccess(result) {
 
-    healthFacilityResultSet = result;
+    MIFResultSet = result;
 
-     var access = healthFacilityResultSet.get('_effective_access');
+     var access = MIFResultSet.get('_effective_access');
 
     if (access.indexOf('w') !== -1) {
         var editButton = $('#editFacilityBtn');
@@ -43,7 +43,7 @@ function cbSuccess(result) {
         deleteButton.removeClass('hideButton');
     }
 
-    odkData.query('CRIANCA', 'ID = ?', [healthFacilityResultSet.get('_id')],
+    odkData.query('CRIANCA', 'ID = ?', [MIFResultSet.get('_id')],
         null, null, null, null, null, null, true, refrigeratorsCBSuccess, refrigeratorsCBFailure);
 }
 
@@ -81,57 +81,45 @@ function display() {
     $('#vac-res-stock-req').text(odkCommon.localizeText(locale, "vaccine_reserve_stock_req"));
     $('#vac-sup-mode').text(odkCommon.localizeText(locale, "vaccine_supply_mode"));
 
-    $('#refrig-inv').text(odkCommon.localizeText(locale, "refrigerator_inventory"));
-    $('#add-fridge').text(odkCommon.localizeText(locale, "add_refrigerator"));
-    $('#edit-fac').text(odkCommon.localizeText(locale, "edit_facility"));
-    $('#del-fac').text(odkCommon.localizeText(locale, "delete_facility"));
+    $('#child').text(odkCommon.localizeText(locale, "refrigerator_inventory"));
+    $('#add-child').text(odkCommon.localizeText(locale, "add_refrigerator"));
+    $('#add-visit').text(odkCommon.localizeText(locale, "edit_facility"));
 
     odkData.getViewData(cbSuccess, cbFailure);
 }
 
 function refrigeratorsCBSuccess(invData) {
 
-    $('#TITLE').text(healthFacilityResultSet.get('NOMEMAE'));
+    $('#TITLE').text(MIFResultSet.get('NOMEMAE'));
 
-    $('#facility_id').text(healthFacilityResultSet.get('facility_id'));
-    $('#facility_type').text(util.formatDisplayText(
-        healthFacilityResultSet.get('facility_type')));
-    $('#facility_ownership').text(util.formatDisplayText(
-        healthFacilityResultSet.get('facility_ownership')));
-    $('#facility_population').text(healthFacilityResultSet.get('facility_population'));
-    $('#facility_coverage').text(healthFacilityResultSet.get('facility_coverage') + '%');
-    $('#admin_region').text(healthFacilityResultSet.get('admin_region'));
+    $('#facility_id').text(MIFResultSet.get('facility_id'));
+    $('#facility_type').text(util.formatDisplayText(MIFResultSet.get('facility_type')));
+    $('#facility_ownership').text(util.formatDisplayText(MIFResultSet.get('facility_ownership')));
+    $('#facility_population').text(MIFResultSet.get('facility_population'));
+    $('#facility_coverage').text(MIFResultSet.get('facility_coverage') + '%');
+    $('#admin_region').text(MIFResultSet.get('admin_region'));
 
-    $('#electricity_source').text(util.formatDisplayText(
-        healthFacilityResultSet.get('electricity_source')));
-    $('#grid_availability').text(util.formatDisplayText(
-        healthFacilityResultSet.get('grid_power_availability')));
-    $('#gas_availability').text(util.formatDisplayText(
-        healthFacilityResultSet.get('gas_availability')));
-    $('#kerosene_availability').text(util.formatDisplayText(
-        healthFacilityResultSet.get('kerosene_availability')));
-    $('#solar_suitable_climate').text(util.formatDisplayText(
-        healthFacilityResultSet.get('solar_suitable_climate')));
-    $('#solar_suitable_site').text(util.formatDisplayText(
-        healthFacilityResultSet.get('solar_suitable_site')));
+    $('#electricity_source').text(util.formatDisplayText(MIFResultSet.get('electricity_source')));
+    $('#grid_availability').text(util.formatDisplayText(MIFResultSet.get('grid_power_availability')));
+    $('#gas_availability').text(util.formatDisplayText(MIFResultSet.get('gas_availability')));
+    $('#kerosene_availability').text(util.formatDisplayText( MIFResultSet.get('kerosene_availability')));
+    $('#solar_suitable_climate').text(util.formatDisplayText( MIFResultSet.get('solar_suitable_climate')));
+    $('#solar_suitable_site').text(util.formatDisplayText( MIFResultSet.get('solar_suitable_site')));
 
-    $('#climate').text(util.formatDisplayText(
-        healthFacilityResultSet.get('climate_zone')));
+    $('#climate').text(util.formatDisplayText(MIFResultSet.get('climate_zone')));
     // The latitude and longitude are stored in a single column as GeoPoint.
     // We need to extract the lat/lon from the GeoPoint.
-    var lat = healthFacilityResultSet.get('Location.latitude');
-    var lon = healthFacilityResultSet.get('Location.longitude');
+    var lat = MIFResultSet.get('Location.latitude');
+    var lon = MIFResultSet.get('Location.longitude');
     $('#lat').text(lat);
     $('#lon').text(lon);
 
-    $('#distance_to_supply').text(healthFacilityResultSet.get('distance_to_supply') + ' km');
-    $('#supply_interval').text(healthFacilityResultSet.get('vaccine_supply_interval'));
-    $('#stock_requirement').text(healthFacilityResultSet.get(
-        'vaccine_reserve_stock_requirement'));
-    $('#supply_mode').text(util.formatDisplayText(
-        healthFacilityResultSet.get('vaccine_supply_mode')));
+    $('#distance_to_supply').text(MIFResultSet.get('distance_to_supply') + ' km');
+    $('#supply_interval').text(MIFResultSet.get('vaccine_supply_interval'));
+    $('#stock_requirement').text(MIFResultSet.get('vaccine_reserve_stock_requirement'));
+    $('#supply_mode').text(util.formatDisplayText(MIFResultSet.get('vaccine_supply_mode')));
 
-    $('#fridge_list').text(invData.getCount());
+    $('#child_list').text(invData.getCount());
 
 }
 

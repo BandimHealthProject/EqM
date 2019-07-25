@@ -167,7 +167,7 @@ util.getQueryParameter = function(key) {
  * Get a string to append to a url that will contain information the date and
  * time. The values can then be retrieved using getQueryParameter.
  */
-util.getKeyToAppendToColdChainURL = function(key, value, shouldBeFirst) {
+util.getKeyToAppendToChildURL = function(key, value, shouldBeFirst) {
 
     var first = true;
     if (shouldBeFirst !== null && shouldBeFirst !== undefined) {
