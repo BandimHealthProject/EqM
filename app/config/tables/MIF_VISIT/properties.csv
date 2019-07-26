@@ -21,6 +21,6 @@ Column,TENDA,displayChoicesList,object,"[{""choice_list_name"":""bednettime"",""
 Column,TENDATIPO,displayChoicesList,object,"[{""choice_list_name"":""bednet"",""data_value"":""1"",""display"":{""title"":{""text"":{""english"":""Impregnated net"",""default"":""Tenda impregnada""}}},""_row_num"":47},{""choice_list_name"":""bednet"",""data_value"":""2"",""display"":{""title"":{""text"":{""english"":""Simple bednet"",""default"":""Tenda simples""}}},""_row_num"":48},{""choice_list_name"":""bednet"",""data_value"":""3"",""display"":{""title"":{""text"":{""english"":""Unknown type"",""default"":""Não sabe""}}},""_row_num"":49}]"
 Column,TENDAYN,displayChoicesList,object,"[{""choice_list_name"":""YesNoU"",""data_value"":""1"",""display"":{""title"":{""text"":{""english"":""Yes"",""default"":""Sim""}}},""_row_num"":4},{""choice_list_name"":""YesNoU"",""data_value"":""2"",""display"":{""title"":{""text"":{""english"":""No"",""default"":""Não""}}},""_row_num"":5},{""choice_list_name"":""YesNoU"",""data_value"":""3"",""display"":{""title"":{""text"":{""english"":""Don't know"",""default"":""Não sabe""}}},""_row_num"":6}]"
 FormType,default,FormType.formType,string,SURVEY
-SurveyUtil,default,SurveyUtil.formId,string,MIFVISIT
+SurveyUtil,default,SurveyUtil.formId,string,MIF_VISIT
 Table,default,defaultViewType,string,SPREADSHEET
 Table,default,displayName,object,"{""text"":{""english"":""Woman in the fertile age - visit"",""default"":""Mulher na idade fertil - visita""}}"

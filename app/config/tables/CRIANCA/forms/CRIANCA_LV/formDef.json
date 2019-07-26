@@ -384,8 +384,8 @@
       {
         "query_name": "linked_visitdate",
         "query_type": "linked_table",
-        "linked_form_id": "MIFVISIT",
-        "linked_table_id": "MIFVISIT",
+        "linked_form_id": "MIF_VISIT",
+        "linked_table_id": "MIF_VISIT",
         "selection": "ID = ?",
         "selectionArgs": "[data('ID')]",
         "newRowInitialElementKeyToValueMap": "{}",
@@ -964,8 +964,8 @@
       "linked_visitdate": {
         "query_name": "linked_visitdate",
         "query_type": "linked_table",
-        "linked_form_id": "MIFVISIT",
-        "linked_table_id": "MIFVISIT",
+        "linked_form_id": "MIF_VISIT",
+        "linked_table_id": "MIF_VISIT",
         "selection": "ID = ?",
         "selectionArgs": "[data('ID')]",
         "newRowInitialElementKeyToValueMap": "{}",

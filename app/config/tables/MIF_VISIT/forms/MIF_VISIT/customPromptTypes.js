@@ -17,7 +17,7 @@ var async_assign = promptTypes.base.extend({
     type: "async_assign",
     debug: false,
     valid: true,
-    templatePath: '../config/tables/MIFVISIT/forms/MIFVISIT/templates/async_assign.handlebars',
+    templatePath: '../config/tables/MIF_VISIT/forms/MIF_VISIT/templates/async_assign.handlebars',
     _cachedSelection: null,
     getLinkedTableId: function() {
         var queryDefn = opendatakit.getQueriesDefinition(this.values_list);
