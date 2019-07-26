@@ -21,8 +21,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Vaccines - women",
-              "default": "Vacinas - mulhers"
+              "english": "Vaccines",
+              "default": "Vacinas"
             }
           }
         },
@@ -6893,7 +6893,7 @@
       },
       {
         "name": "REGID",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 232
       },
@@ -6905,19 +6905,19 @@
       },
       {
         "name": "VISITID",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 234
       },
       {
         "name": "REGIDC",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 235
       },
       {
         "name": "VISITIDC",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 236
       }
@@ -6960,8 +6960,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Vaccines - women",
-              "default": "Vacinas - mulhers"
+              "english": "Vaccines",
+              "default": "Vacinas"
             }
           }
         },
@@ -7041,8 +7041,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Vaccines - women",
-              "default": "Vacinas - mulhers"
+              "english": "Vaccines",
+              "default": "Vacinas"
             }
           }
         },
@@ -11891,7 +11891,7 @@
         "elementKey": "vping"
       },
       "REGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 232,
@@ -11918,7 +11918,7 @@
         "elementKey": "VISITDATE"
       },
       "VISITID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 234,
@@ -11929,7 +11929,7 @@
         "elementKey": "VISITID"
       },
       "REGIDC": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 235,
@@ -11940,7 +11940,7 @@
         "elementKey": "REGIDC"
       },
       "VISITIDC": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 236,
@@ -18233,8 +18233,8 @@
             "display": {
               "title": {
                 "text": {
-                  "english": "Vaccines - women",
-                  "default": "Vacinas - mulhers"
+                  "english": "Vaccines",
+                  "default": "Vacinas"
                 }
               }
             },
@@ -23198,7 +23198,7 @@
         ]
       },
       "REGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 232,
@@ -23231,7 +23231,7 @@
         "elementPath": "VISITDATE"
       },
       "VISITID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 234,
@@ -23245,7 +23245,7 @@
         "elementPath": "VISITID"
       },
       "REGIDC": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 235,
@@ -23259,7 +23259,7 @@
         "elementPath": "REGIDC"
       },
       "VISITIDC": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 236,
@@ -23976,7 +23976,7 @@
         "_aspect": "default",
         "_key": "displayName",
         "_type": "object",
-        "_value": "{\"text\":{\"english\":\"Vaccines - women\",\"default\":\"Vacinas - mulhers\"}}"
+        "_value": "{\"text\":{\"english\":\"Vaccines\",\"default\":\"Vacinas\"}}"
       }
     ]
   }

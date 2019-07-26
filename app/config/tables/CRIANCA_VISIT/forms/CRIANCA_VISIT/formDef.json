@@ -750,7 +750,7 @@
         "linked_table_id": "VAC",
         "selection": "REGIDC = ?",
         "selectionArgs": "[data('REGIDC')]",
-        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), VISITDATE: data('CONT'), VISITIDC: data('_id')}",
+        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), VISITDATE: data('CONT'), VISITIDC: opendatakit.getCurrentInstanceId()}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       },
@@ -1769,7 +1769,7 @@
         "linked_table_id": "VAC",
         "selection": "REGIDC = ?",
         "selectionArgs": "[data('REGIDC')]",
-        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), VISITDATE: data('CONT'), VISITIDC: data('_id')}",
+        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), VISITDATE: data('CONT'), VISITIDC: opendatakit.getCurrentInstanceId()}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       },

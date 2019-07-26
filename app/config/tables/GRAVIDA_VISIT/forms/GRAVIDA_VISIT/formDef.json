@@ -696,10 +696,16 @@
         "_row_num": 15
       },
       {
-        "name": "PREGID",
-        "type": "integer",
+        "name": "REGID",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 17
+      },
+      {
+        "name": "PREGID",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 18
       }
     ]
   },
@@ -1269,11 +1275,22 @@
         "isSessionVariable": false,
         "elementKey": "QC_M"
       },
-      "PREGID": {
-        "type": "integer",
+      "REGID": {
+        "type": "string",
         "_defn": [
           {
             "_row_num": 17,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REGID"
+      },
+      "PREGID": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -2272,11 +2289,25 @@
         "elementSet": "data",
         "elementPath": "QC_M"
       },
-      "PREGID": {
-        "type": "integer",
+      "REGID": {
+        "type": "string",
         "_defn": [
           {
             "_row_num": 17,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REGID",
+        "elementName": "REGID",
+        "elementSet": "data",
+        "elementPath": "REGID"
+      },
+      "PREGID": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 18,
             "section_name": "model"
           }
         ],

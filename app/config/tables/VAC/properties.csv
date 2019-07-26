@@ -62,4 +62,4 @@ Column,VAC9TIPO,displayChoicesList,object,"[{""choice_list_name"":""vactype"",""
 FormType,default,FormType.formType,string,SURVEY
 SurveyUtil,default,SurveyUtil.formId,string,VAC
 Table,default,defaultViewType,string,SPREADSHEET
-Table,default,displayName,object,"{""text"":{""english"":""Vaccines - women"",""default"":""Vacinas - mulhers""}}"
+Table,default,displayName,object,"{""text"":{""english"":""Vaccines"",""default"":""Vacinas""}}"

@@ -510,13 +510,13 @@
       },
       {
         "name": "REGIDC",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 10
       },
       {
         "name": "REGID",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 12
       },
@@ -528,7 +528,7 @@
       },
       {
         "name": "PREGID",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 14
       },
@@ -1070,7 +1070,7 @@
         "elementKey": "FOGAO"
       },
       "REGIDC": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 10,
@@ -1081,7 +1081,7 @@
         "elementKey": "REGIDC"
       },
       "REGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 12,
@@ -1108,7 +1108,7 @@
         "elementKey": "OUTDATE"
       },
       "PREGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 14,
@@ -2022,7 +2022,7 @@
         "elementPath": "FOGAO"
       },
       "REGIDC": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 10,
@@ -2036,7 +2036,7 @@
         "elementPath": "REGIDC"
       },
       "REGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 12,
@@ -2069,7 +2069,7 @@
         "elementPath": "OUTDATE"
       },
       "PREGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 14,

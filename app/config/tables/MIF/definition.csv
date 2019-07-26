@@ -52,7 +52,7 @@ PARTNS,PARTNS,array,"[""PARTNS_items""]"
 PARTNS_items,items,string,[]
 REG,REG,string,[]
 REGDIA,REGDIA,date,[]
-REGID,REGID,integer,[]
+REGID,REGID,string,[]
 RELA1,RELA1,string,[]
 RELA1NOME,RELA1NOME,string,[]
 TAB,TAB,string,[]

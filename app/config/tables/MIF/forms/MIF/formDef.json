@@ -1859,7 +1859,7 @@
       },
       {
         "name": "REGID",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 42
       },
@@ -3518,7 +3518,7 @@
         "elementKey": "REGDIA"
       },
       "REGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 61,
@@ -5820,7 +5820,7 @@
         "elementPath": "REGDIA"
       },
       "REGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 61,

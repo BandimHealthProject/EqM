@@ -956,13 +956,13 @@
       },
       {
         "name": "REGID",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 31
       },
       {
         "name": "VISITID",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 32
       }
@@ -1655,7 +1655,7 @@
         "elementKey": "CICADATA"
       },
       "REGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 31,
@@ -1666,7 +1666,7 @@
         "elementKey": "REGID"
       },
       "VISITID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 32,
@@ -3243,7 +3243,7 @@
         "elementPath": "CICADATA"
       },
       "REGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 31,
@@ -3257,7 +3257,7 @@
         "elementPath": "REGID"
       },
       "VISITID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 32,

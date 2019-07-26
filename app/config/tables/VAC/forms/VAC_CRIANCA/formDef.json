@@ -3244,7 +3244,7 @@
       },
       {
         "name": "REGID",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 232
       },
@@ -3256,19 +3256,19 @@
       },
       {
         "name": "VISITID",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 234
       },
       {
         "name": "REGIDC",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 235
       },
       {
         "name": "VISITIDC",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 236
       }
@@ -6971,7 +6971,7 @@
         "elementKey": "vping"
       },
       "REGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 232,
@@ -6998,7 +6998,7 @@
         "elementKey": "VISITDATE"
       },
       "VISITID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 234,
@@ -7009,7 +7009,7 @@
         "elementKey": "VISITID"
       },
       "REGIDC": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 235,
@@ -7020,7 +7020,7 @@
         "elementKey": "REGIDC"
       },
       "VISITIDC": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 236,
@@ -13074,7 +13074,7 @@
         ]
       },
       "REGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 232,
@@ -13107,7 +13107,7 @@
         "elementPath": "VISITDATE"
       },
       "VISITID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 234,
@@ -13121,7 +13121,7 @@
         "elementPath": "VISITID"
       },
       "REGIDC": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 235,
@@ -13135,7 +13135,7 @@
         "elementPath": "REGIDC"
       },
       "VISITIDC": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 236,

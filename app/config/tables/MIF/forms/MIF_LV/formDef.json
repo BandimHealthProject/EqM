@@ -68,8 +68,8 @@
         "display": {
           "prompt": {
             "text": {
-              "english": "Visit interview with {{data.NOMEMAE}} and ID: {{data.ID}}",
-              "default": "Visit interview with {{data.NOMEMAE}} and ID: {{data.ID}}"
+              "english": "Visit interview with {{data.NOMEMAE}} and ID: {{data.REGID}}",
+              "default": "Visit interview with {{data.NOMEMAE}} and ID: {{data.REGID}}"
             }
           }
         },
@@ -1239,7 +1239,7 @@
       },
       {
         "name": "REGID",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 42
       },
@@ -2776,7 +2776,7 @@
         "elementKey": "REGDIA"
       },
       "REGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 42,
@@ -3050,8 +3050,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "english": "Visit interview with {{data.NOMEMAE}} and ID: {{data.ID}}",
-                  "default": "Visit interview with {{data.NOMEMAE}} and ID: {{data.ID}}"
+                  "english": "Visit interview with {{data.NOMEMAE}} and ID: {{data.REGID}}",
+                  "default": "Visit interview with {{data.NOMEMAE}} and ID: {{data.REGID}}"
                 }
               }
             },
@@ -4093,7 +4093,7 @@
         "elementPath": "REGDIA"
       },
       "REGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 42,

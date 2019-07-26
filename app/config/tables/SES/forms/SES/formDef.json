@@ -390,7 +390,7 @@
       },
       {
         "name": "REGID",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 10
       },
@@ -407,22 +407,16 @@
         "_row_num": 12
       },
       {
-        "name": "VISITID",
+        "name": "REGIDC",
         "type": "text",
         "isSessionVariable": false,
         "_row_num": 13
       },
       {
-        "name": "REGIDC",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 14
-      },
-      {
         "name": "VISITIDC",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 15
+        "_row_num": 14
       }
     ]
   },
@@ -829,7 +823,7 @@
         "elementKey": "TELENUMERO"
       },
       "REGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 10,
@@ -866,22 +860,11 @@
         "isSessionVariable": false,
         "elementKey": "PREGID"
       },
-      "VISITID": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 13,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "VISITID"
-      },
       "REGIDC": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 13,
             "section_name": "model"
           }
         ],
@@ -892,7 +875,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 14,
             "section_name": "model"
           }
         ],
@@ -1418,7 +1401,7 @@
         "elementPath": "TELENUMERO"
       },
       "REGID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 10,
@@ -1464,25 +1447,11 @@
         "elementSet": "data",
         "elementPath": "PREGID"
       },
-      "VISITID": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 13,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "VISITID",
-        "elementName": "VISITID",
-        "elementSet": "data",
-        "elementPath": "VISITID"
-      },
       "REGIDC": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 13,
             "section_name": "model"
           }
         ],
@@ -1496,7 +1465,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 14,
             "section_name": "model"
           }
         ],
