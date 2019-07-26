@@ -1791,7 +1791,7 @@
         "linked_table_id": "VAC",
         "selection": "ID = ?",
         "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), PREGDIA: data('CONT'), ESTADOVIS: data('ESTADOVIS'), VISITID: data('_id')}",
+        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), VISITDATE: data('CONT'), VISITID: data('_id')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 4
       }
@@ -3736,7 +3736,7 @@
         "linked_table_id": "VAC",
         "selection": "ID = ?",
         "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), PREGDIA: data('CONT'), ESTADOVIS: data('ESTADOVIS'), VISITID: data('_id')}",
+        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), VISITDATE: data('CONT'), VISITID: data('_id')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 4
       }

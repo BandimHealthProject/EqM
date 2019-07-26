@@ -6898,10 +6898,16 @@
         "_row_num": 232
       },
       {
-        "name": "VISITDATA",
+        "name": "VISITDATE",
         "type": "custom_date",
         "isSessionVariable": false,
         "_row_num": 233
+      },
+      {
+        "name": "VISITID",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 234
       }
     ]
   },
@@ -11883,7 +11889,7 @@
         "isSessionVariable": false,
         "elementKey": "ID"
       },
-      "VISITDATA": {
+      "VISITDATE": {
         "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
@@ -11897,7 +11903,18 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "VISITDATA"
+        "elementKey": "VISITDATE"
+      },
+      "VISITID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 234,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VISITID"
       }
     },
     "section_names": [
@@ -23160,7 +23177,7 @@
         "elementSet": "data",
         "elementPath": "ID"
       },
-      "VISITDATA": {
+      "VISITDATE": {
         "prompt_type_name": "custom_date",
         "type": "string",
         "elementType": "date",
@@ -23174,10 +23191,24 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "VISITDATA",
-        "elementName": "VISITDATA",
+        "elementKey": "VISITDATE",
+        "elementName": "VISITDATE",
         "elementSet": "data",
-        "elementPath": "VISITDATA"
+        "elementPath": "VISITDATE"
+      },
+      "VISITID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 234,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VISITID",
+        "elementName": "VISITID",
+        "elementSet": "data",
+        "elementPath": "VISITID"
       },
       "bcgng_items": {
         "type": "string",
