@@ -14,7 +14,7 @@ function onAddVisitClick() {
 function onLinkClick() {
     if (!$.isEmptyObject(MIFResultSet))
     {
-        var rowIdQueryParams = util.getKeyToAppendToChildURL(util.motherId, MIFResultSet.get('_id'));
+        var rowIdQueryParams = util.getKeyToAppendToChildURL(util.motherId, MIFResultSet.get('REGID'));
         odkTables.launchHTML(null, 
             'config/tables/CRIANCA/html/CRIANCA.html' + rowIdQueryParams);
     }
@@ -22,7 +22,7 @@ function onLinkClick() {
 
 function onAddChildClick() {
     var jsonMap = {};
-    jsonMap.ID = MIFResultSet.getRowId(0);
+    jsonMap.REGID = MIFResultSet.get('REGID');
 	
     odkTables.addRowWithSurvey(null, 'CRIANCA', 'CRIANCA', null, jsonMap);
 }
@@ -43,7 +43,7 @@ function cbSuccess(result) {
         deleteButton.removeClass('hideButton');
     }
 
-    odkData.query('CRIANCA', 'ID = ?', [MIFResultSet.get('_id')],
+    odkData.query('CRIANCA', 'REGID = ?', [MIFResultSet.get('REGID')],
         null, null, null, null, null, null, true, refrigeratorsCBSuccess, refrigeratorsCBFailure);
 }
 

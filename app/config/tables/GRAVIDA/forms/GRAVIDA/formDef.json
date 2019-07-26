@@ -686,9 +686,9 @@
         "query_type": "linked_table",
         "linked_form_id": "GRAVIDA_VISIT",
         "linked_table_id": "GRAVIDA_VISIT",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID')}",
+        "selection": "PREGID = ?",
+        "selectionArgs": "[data('PREGID')]",
+        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       },
@@ -697,9 +697,9 @@
         "query_type": "linked_table",
         "linked_form_id": "SES",
         "linked_table_id": "SES",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), SESDATA: data('PREGDIA')}",
+        "selection": "PREGID = ?",
+        "selectionArgs": "[data('PREGID')]",
+        "newRowInitialElementKeyToValueMap": "{PREGID: data('PREGID'), REGID: data('REGID'), VISITID: data('VISITID'), SESDATA: data('PREGDIA')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 3
       },
@@ -708,8 +708,8 @@
         "query_type": "linked_table",
         "linked_form_id": "SES",
         "linked_table_id": "SES",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "PREGID = ?",
+        "selectionArgs": "[data('PREGID')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "SES_ESTADO",
@@ -1425,7 +1425,7 @@
         "_row_num": 23
       },
       {
-        "name": "ID",
+        "name": "REGID",
         "type": "integer",
         "isSessionVariable": false,
         "_row_num": 25
@@ -1444,7 +1444,7 @@
       },
       {
         "name": "VISITID",
-        "type": "text",
+        "type": "integer",
         "isSessionVariable": false,
         "_row_num": 28
       },
@@ -2170,9 +2170,9 @@
         "query_type": "linked_table",
         "linked_form_id": "GRAVIDA_VISIT",
         "linked_table_id": "GRAVIDA_VISIT",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID')}",
+        "selection": "PREGID = ?",
+        "selectionArgs": "[data('PREGID')]",
+        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       },
@@ -2181,9 +2181,9 @@
         "query_type": "linked_table",
         "linked_form_id": "SES",
         "linked_table_id": "SES",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), SESDATA: data('PREGDIA')}",
+        "selection": "PREGID = ?",
+        "selectionArgs": "[data('PREGID')]",
+        "newRowInitialElementKeyToValueMap": "{PREGID: data('PREGID'), REGID: data('REGID'), VISITID: data('VISITID'), SESDATA: data('PREGDIA')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 3
       },
@@ -2192,8 +2192,8 @@
         "query_type": "linked_table",
         "linked_form_id": "SES",
         "linked_table_id": "SES",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "PREGID = ?",
+        "selectionArgs": "[data('PREGID')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "SES_ESTADO",
@@ -2544,7 +2544,7 @@
         "isSessionVariable": false,
         "elementKey": "VACTTHI"
       },
-      "ID": {
+      "REGID": {
         "type": "integer",
         "_defn": [
           {
@@ -2553,7 +2553,7 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ID"
+        "elementKey": "REGID"
       },
       "ESTADOVIS": {
         "type": "integer",
@@ -2583,7 +2583,7 @@
         "elementKey": "PREGDIA"
       },
       "VISITID": {
-        "type": "string",
+        "type": "integer",
         "_defn": [
           {
             "_row_num": 28,
@@ -4164,7 +4164,7 @@
         "elementSet": "data",
         "elementPath": "VACTTHI"
       },
-      "ID": {
+      "REGID": {
         "type": "integer",
         "_defn": [
           {
@@ -4173,10 +4173,10 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ID",
-        "elementName": "ID",
+        "elementKey": "REGID",
+        "elementName": "REGID",
         "elementSet": "data",
-        "elementPath": "ID"
+        "elementPath": "REGID"
       },
       "ESTADOVIS": {
         "type": "integer",
@@ -4212,7 +4212,7 @@
         "elementPath": "PREGDIA"
       },
       "VISITID": {
-        "type": "string",
+        "type": "integer",
         "_defn": [
           {
             "_row_num": 28,

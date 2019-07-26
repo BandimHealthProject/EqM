@@ -14,7 +14,7 @@ util.leafRegion = 'admin_region';
 util.rowId = '_id';
 util.modelRowId = 'model_row_id';
 util.refrigeratorId = 'refrigerator_id';
-util.motherId = 'ID';
+util.motherId = 'REGID';
 util.maintenancePriority = 'maintenance_priority';
 util.adminRegions = [
         {'token':'central', 'label': 'Central', 'region':'Central', 

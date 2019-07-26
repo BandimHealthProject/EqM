@@ -1767,9 +1767,9 @@
         "query_type": "linked_table",
         "linked_form_id": "SCAR",
         "linked_table_id": "SCAR",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), CICADATA: data('CONT')}",
+        "selection": "REGID = ?",
+        "selectionArgs": "[data('REGID')]",
+        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), CICADATA: data('CONT'), VISITID: data('_id')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       },
@@ -1778,9 +1778,9 @@
         "query_type": "linked_table",
         "linked_form_id": "GRAVIDA",
         "linked_table_id": "GRAVIDA",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), PREGDIA: data('CONT'), ESTADOVIS: data('ESTADOVIS'), VISITID: data('_id')}",
+        "selection": "REGID = ?",
+        "selectionArgs": "[data('REGID')]",
+        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), PREGDIA: data('CONT'), ESTADOVIS: data('ESTADOVIS'), VISITID: data('_id')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 3
       },
@@ -1789,9 +1789,9 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), VISITDATE: data('CONT'), VISITID: data('_id')}",
+        "selection": "REGID = ?",
+        "selectionArgs": "[data('REGID')]",
+        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), VISITDATE: data('CONT'), VISITID: data('_id')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 4
       }
@@ -2572,8 +2572,8 @@
         "_row_num": 132
       },
       {
-        "name": "ID",
-        "type": "text",
+        "name": "REGID",
+        "type": "integer",
         "isSessionVariable": false,
         "_row_num": 133
       },
@@ -3712,9 +3712,9 @@
         "query_type": "linked_table",
         "linked_form_id": "SCAR",
         "linked_table_id": "SCAR",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), CICADATA: data('CONT')}",
+        "selection": "REGID = ?",
+        "selectionArgs": "[data('REGID')]",
+        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), CICADATA: data('CONT'), VISITID: data('_id')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       },
@@ -3723,9 +3723,9 @@
         "query_type": "linked_table",
         "linked_form_id": "GRAVIDA",
         "linked_table_id": "GRAVIDA",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), PREGDIA: data('CONT'), ESTADOVIS: data('ESTADOVIS'), VISITID: data('_id')}",
+        "selection": "REGID = ?",
+        "selectionArgs": "[data('REGID')]",
+        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), PREGDIA: data('CONT'), ESTADOVIS: data('ESTADOVIS'), VISITID: data('_id')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 3
       },
@@ -3734,9 +3734,9 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('ID'), VISITDATE: data('CONT'), VISITID: data('_id')}",
+        "selection": "REGID = ?",
+        "selectionArgs": "[data('REGID')]",
+        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), VISITDATE: data('CONT'), VISITID: data('_id')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 4
       }
@@ -5419,8 +5419,8 @@
         "isSessionVariable": false,
         "elementKey": "GRCORE"
       },
-      "ID": {
-        "type": "string",
+      "REGID": {
+        "type": "integer",
         "_defn": [
           {
             "_row_num": 133,
@@ -5428,7 +5428,7 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ID"
+        "elementKey": "REGID"
       },
       "LASTVISIT": {
         "prompt_type_name": "custom_date",
@@ -8838,8 +8838,8 @@
         "elementSet": "data",
         "elementPath": "GRCORE"
       },
-      "ID": {
-        "type": "string",
+      "REGID": {
+        "type": "integer",
         "_defn": [
           {
             "_row_num": 133,
@@ -8847,10 +8847,10 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ID",
-        "elementName": "ID",
+        "elementKey": "REGID",
+        "elementName": "REGID",
         "elementSet": "data",
-        "elementPath": "ID"
+        "elementPath": "REGID"
       },
       "LASTVISIT": {
         "prompt_type_name": "custom_date",

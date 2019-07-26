@@ -289,17 +289,6 @@
         "uri": "\"TABANCAS.csv\"",
         "callback": "_.map(context, function(place){place.data_value = place.TAB;\nplace.display = {title: {text: place.TABANCA} };\nreturn place;\n})",
         "_row_num": 3
-      },
-      {
-        "query_name": "visit",
-        "query_type": "linked_table",
-        "linked_form_id": "CRIANCA_VISIT",
-        "linked_table_id": "CRIANCA_VISIT",
-        "selection": "REGIDC = ?",
-        "selectionArgs": "[data('REGIDC')]",
-        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC')}",
-        "openRowInitialElementKeyToValueMap": "{}",
-        "_row_num": 5
       }
     ],
     "prompt_types": [
@@ -447,7 +436,7 @@
         "_row_num": 10
       },
       {
-        "name": "ID",
+        "name": "REGID",
         "type": "integer",
         "isSessionVariable": false,
         "_row_num": 12
@@ -783,17 +772,6 @@
         "uri": "\"TABANCAS.csv\"",
         "callback": "_.map(context, function(place){place.data_value = place.TAB;\nplace.display = {title: {text: place.TABANCA} };\nreturn place;\n})",
         "_row_num": 3
-      },
-      "visit": {
-        "query_name": "visit",
-        "query_type": "linked_table",
-        "linked_form_id": "CRIANCA_VISIT",
-        "linked_table_id": "CRIANCA_VISIT",
-        "selection": "REGIDC = ?",
-        "selectionArgs": "[data('REGIDC')]",
-        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC')}",
-        "openRowInitialElementKeyToValueMap": "{}",
-        "_row_num": 5
       }
     },
     "calculates": {},
@@ -936,7 +914,7 @@
         "isSessionVariable": false,
         "elementKey": "REGIDC"
       },
-      "ID": {
+      "REGID": {
         "type": "integer",
         "_defn": [
           {
@@ -945,7 +923,7 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ID"
+        "elementKey": "REGID"
       },
       "OUTDATE": {
         "prompt_type_name": "custom_date",
@@ -1863,7 +1841,7 @@
         "elementSet": "data",
         "elementPath": "REGIDC"
       },
-      "ID": {
+      "REGID": {
         "type": "integer",
         "_defn": [
           {
@@ -1872,10 +1850,10 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ID",
-        "elementName": "ID",
+        "elementKey": "REGID",
+        "elementName": "REGID",
         "elementSet": "data",
-        "elementPath": "ID"
+        "elementPath": "REGID"
       },
       "OUTDATE": {
         "prompt_type_name": "custom_date",

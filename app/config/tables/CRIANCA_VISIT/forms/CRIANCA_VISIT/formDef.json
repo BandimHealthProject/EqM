@@ -748,9 +748,9 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
+        "selection": "REGIDC = ?",
         "selectionArgs": "[data('REGIDC')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('REGIDC'), VISITDATE: data('CONT'), VISITID: data('_id')}",
+        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), VISITDATE: data('CONT'), VISITIDC: data('_id')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       },
@@ -759,12 +759,12 @@
         "query_type": "linked_table",
         "linked_form_id": "MIF_VISIT",
         "linked_table_id": "MIF_VISIT",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "CONT",
-        "_row_num": 3
+        "_row_num": 4
       }
     ],
     "prompt_types": [
@@ -1767,9 +1767,9 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
+        "selection": "REGIDC = ?",
         "selectionArgs": "[data('REGIDC')]",
-        "newRowInitialElementKeyToValueMap": "{ID: data('REGIDC'), VISITDATE: data('CONT'), VISITID: data('_id')}",
+        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), VISITDATE: data('CONT'), VISITIDC: data('_id')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       },
@@ -1778,12 +1778,12 @@
         "query_type": "linked_table",
         "linked_form_id": "MIF_VISIT",
         "linked_table_id": "MIF_VISIT",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "CONT",
-        "_row_num": 3
+        "_row_num": 4
       }
     },
     "calculates": {},

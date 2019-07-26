@@ -518,7 +518,7 @@
       },
       {
         "type": "integer",
-        "name": "ID",
+        "name": "REGID",
         "display": {
           "prompt": {
             "text": {
@@ -1726,140 +1726,140 @@
         "_row_num": 19
       },
       {
-        "name": "ID",
+        "name": "IDADE",
         "type": "integer",
         "isSessionVariable": false,
         "_row_num": 20
       },
       {
-        "name": "IDADE",
+        "name": "IDFAN",
         "type": "integer",
         "isSessionVariable": false,
         "_row_num": 21
       },
       {
-        "name": "IDFAN",
-        "type": "integer",
-        "isSessionVariable": false,
-        "_row_num": 22
-      },
-      {
         "name": "IDFANNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 23
+        "_row_num": 22
       },
       {
         "name": "INF",
         "type": "assign",
         "isSessionVariable": false,
-        "_row_num": 24
+        "_row_num": 23
       },
       {
         "name": "inf1",
         "type": "select_one",
         "isSessionVariable": true,
-        "_row_num": 25
+        "_row_num": 24
       },
       {
         "name": "inf2",
         "type": "select_one",
         "isSessionVariable": true,
-        "_row_num": 26
+        "_row_num": 25
       },
       {
         "name": "MIFDNASC",
         "type": "custom_date",
         "isSessionVariable": false,
-        "_row_num": 27
+        "_row_num": 26
       },
       {
         "name": "MIFDNASCNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 28
+        "_row_num": 27
       },
       {
         "name": "MIFMAE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 29
+        "_row_num": 28
       },
       {
         "name": "MIFMAENS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 30
+        "_row_num": 29
       },
       {
         "name": "MIFMONDE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 31
+        "_row_num": 30
       },
       {
         "name": "MIFMONDENS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 32
+        "_row_num": 31
       },
       {
         "name": "MIFMORAVA",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 33
+        "_row_num": 32
       },
       {
         "name": "MOR",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 34
+        "_row_num": 33
       },
       {
         "name": "MUL",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 35
+        "_row_num": 34
       },
       {
         "name": "NM",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 36
+        "_row_num": 35
       },
       {
         "name": "NMNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 37
+        "_row_num": 36
       },
       {
         "name": "NOMEMAE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 38
+        "_row_num": 37
       },
       {
         "name": "PART",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 39
+        "_row_num": 38
       },
       {
         "name": "PARTNS",
         "type": "select_multiple",
         "isSessionVariable": false,
-        "_row_num": 40
+        "_row_num": 39
       },
       {
         "name": "REG",
         "type": "select_one_dropdown",
         "isSessionVariable": false,
-        "_row_num": 41
+        "_row_num": 40
       },
       {
         "name": "REGDIA",
         "type": "date",
+        "isSessionVariable": false,
+        "_row_num": 41
+      },
+      {
+        "name": "REGID",
+        "type": "integer",
         "isSessionVariable": false,
         "_row_num": 42
       },
@@ -3149,21 +3149,6 @@
         "isSessionVariable": false,
         "elementKey": "GEMEOS"
       },
-      "ID": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 61,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 20,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "ID"
-      },
       "IDADE": {
         "type": "integer",
         "_defn": [
@@ -3172,7 +3157,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 21,
+            "_row_num": 20,
             "section_name": "model"
           }
         ],
@@ -3187,7 +3172,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 22,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
@@ -3207,7 +3192,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 23,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -3217,7 +3202,7 @@
       "INF": {
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -3234,7 +3219,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 25,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -3250,7 +3235,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 26,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -3270,7 +3255,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 27,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -3290,7 +3275,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 28,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -3305,7 +3290,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 29,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -3325,7 +3310,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 30,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -3340,7 +3325,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 31,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -3360,7 +3345,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 32,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -3376,7 +3361,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 33,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -3391,7 +3376,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 34,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -3406,7 +3391,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 35,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -3421,7 +3406,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 36,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -3441,7 +3426,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 37,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -3456,7 +3441,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 38,
+            "_row_num": 37,
             "section_name": "model"
           }
         ],
@@ -3471,7 +3456,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 39,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
@@ -3491,7 +3476,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 40,
+            "_row_num": 39,
             "section_name": "model"
           }
         ],
@@ -3507,7 +3492,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 41,
+            "_row_num": 40,
             "section_name": "model"
           }
         ],
@@ -3525,12 +3510,27 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 42,
+            "_row_num": 41,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "REGDIA"
+      },
+      "REGID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 61,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 42,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REGID"
       },
       "RELA1": {
         "type": "string",
@@ -4193,7 +4193,7 @@
           },
           {
             "type": "integer",
-            "name": "ID",
+            "name": "REGID",
             "display": {
               "prompt": {
                 "text": {
@@ -5343,24 +5343,6 @@
         "elementSet": "data",
         "elementPath": "GEMEOS"
       },
-      "ID": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 61,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 20,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "ID",
-        "elementName": "ID",
-        "elementSet": "data",
-        "elementPath": "ID"
-      },
       "IDADE": {
         "type": "integer",
         "_defn": [
@@ -5369,7 +5351,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 21,
+            "_row_num": 20,
             "section_name": "model"
           }
         ],
@@ -5387,7 +5369,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 22,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
@@ -5414,7 +5396,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 23,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -5430,7 +5412,7 @@
       "INF": {
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -5450,7 +5432,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 25,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -5469,7 +5451,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 26,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -5492,7 +5474,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 27,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -5519,7 +5501,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 28,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -5540,7 +5522,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 29,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -5567,7 +5549,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 30,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -5588,7 +5570,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 31,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -5615,7 +5597,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 32,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -5637,7 +5619,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 33,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -5655,7 +5637,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 34,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -5673,7 +5655,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 35,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -5691,7 +5673,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 36,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -5718,7 +5700,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 37,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -5739,7 +5721,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 38,
+            "_row_num": 37,
             "section_name": "model"
           }
         ],
@@ -5757,7 +5739,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 39,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
@@ -5784,7 +5766,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 40,
+            "_row_num": 39,
             "section_name": "model"
           }
         ],
@@ -5806,7 +5788,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 41,
+            "_row_num": 40,
             "section_name": "model"
           }
         ],
@@ -5827,7 +5809,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 42,
+            "_row_num": 41,
             "section_name": "model"
           }
         ],
@@ -5836,6 +5818,24 @@
         "elementName": "REGDIA",
         "elementSet": "data",
         "elementPath": "REGDIA"
+      },
+      "REGID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 61,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 42,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REGID",
+        "elementName": "REGID",
+        "elementSet": "data",
+        "elementPath": "REGID"
       },
       "RELA1": {
         "type": "string",

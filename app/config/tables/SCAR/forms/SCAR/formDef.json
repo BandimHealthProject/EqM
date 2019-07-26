@@ -955,10 +955,16 @@
         "_row_num": 30
       },
       {
-        "name": "ID",
+        "name": "REGID",
         "type": "integer",
         "isSessionVariable": false,
         "_row_num": 31
+      },
+      {
+        "name": "VISITID",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 32
       }
     ]
   },
@@ -1648,7 +1654,7 @@
         "isSessionVariable": false,
         "elementKey": "CICADATA"
       },
-      "ID": {
+      "REGID": {
         "type": "integer",
         "_defn": [
           {
@@ -1657,7 +1663,18 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ID"
+        "elementKey": "REGID"
+      },
+      "VISITID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 32,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VISITID"
       }
     },
     "section_names": [
@@ -3225,7 +3242,7 @@
         "elementSet": "data",
         "elementPath": "CICADATA"
       },
-      "ID": {
+      "REGID": {
         "type": "integer",
         "_defn": [
           {
@@ -3234,10 +3251,24 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ID",
-        "elementName": "ID",
+        "elementKey": "REGID",
+        "elementName": "REGID",
         "elementSet": "data",
-        "elementPath": "ID"
+        "elementPath": "REGID"
+      },
+      "VISITID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 32,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VISITID",
+        "elementName": "VISITID",
+        "elementSet": "data",
+        "elementPath": "VISITID"
       },
       "_id": {
         "type": "string",

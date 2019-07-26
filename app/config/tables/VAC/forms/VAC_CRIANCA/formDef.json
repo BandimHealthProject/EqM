@@ -1591,8 +1591,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "BCG",
@@ -1603,8 +1603,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "POLIONAS",
@@ -1615,8 +1615,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "POLIO1",
@@ -1627,8 +1627,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "PENTA1",
@@ -1639,8 +1639,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "PCV1",
@@ -1651,8 +1651,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "ROX1",
@@ -1663,8 +1663,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "POLIO2",
@@ -1675,8 +1675,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "PENTA2",
@@ -1687,8 +1687,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "PCV2",
@@ -1699,8 +1699,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "ROX2",
@@ -1711,8 +1711,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "POLIO3",
@@ -1723,8 +1723,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "PENTA3",
@@ -1735,8 +1735,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "PCV3",
@@ -1747,8 +1747,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VPI",
@@ -1759,8 +1759,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "SARAMPO1",
@@ -1771,8 +1771,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "FEBAMAREL",
@@ -3243,7 +3243,7 @@
         "_row_num": 230
       },
       {
-        "name": "ID",
+        "name": "REGID",
         "type": "integer",
         "isSessionVariable": false,
         "_row_num": 232
@@ -3259,6 +3259,18 @@
         "type": "integer",
         "isSessionVariable": false,
         "_row_num": 234
+      },
+      {
+        "name": "REGIDC",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 235
+      },
+      {
+        "name": "VISITIDC",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 236
       }
     ]
   },
@@ -3480,8 +3492,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "BCG",
@@ -3492,8 +3504,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "POLIONAS",
@@ -3504,8 +3516,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "POLIO1",
@@ -3516,8 +3528,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "PENTA1",
@@ -3528,8 +3540,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "PCV1",
@@ -3540,8 +3552,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "ROX1",
@@ -3552,8 +3564,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "POLIO2",
@@ -3564,8 +3576,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "PENTA2",
@@ -3576,8 +3588,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "PCV2",
@@ -3588,8 +3600,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "ROX2",
@@ -3600,8 +3612,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "POLIO3",
@@ -3612,8 +3624,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "PENTA3",
@@ -3624,8 +3636,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "PCV3",
@@ -3636,8 +3648,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "VPI",
@@ -3648,8 +3660,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "SARAMPO1",
@@ -3660,8 +3672,8 @@
         "query_type": "linked_table",
         "linked_form_id": "VAC_CRIANCA",
         "linked_table_id": "VAC",
-        "selection": "ID = ?",
-        "selectionArgs": "[data('ID')]",
+        "selection": "REGIDC = ?",
+        "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "fieldName": "FEBAMAREL",
@@ -6958,7 +6970,7 @@
         "isSessionVariable": true,
         "elementKey": "vping"
       },
-      "ID": {
+      "REGID": {
         "type": "integer",
         "_defn": [
           {
@@ -6967,7 +6979,7 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ID"
+        "elementKey": "REGID"
       },
       "VISITDATE": {
         "prompt_type_name": "custom_date",
@@ -6995,6 +7007,28 @@
         ],
         "isSessionVariable": false,
         "elementKey": "VISITID"
+      },
+      "REGIDC": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 235,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REGIDC"
+      },
+      "VISITIDC": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 236,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VISITIDC"
       }
     },
     "section_names": [
@@ -13039,7 +13073,7 @@
           "vping_items"
         ]
       },
-      "ID": {
+      "REGID": {
         "type": "integer",
         "_defn": [
           {
@@ -13048,10 +13082,10 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ID",
-        "elementName": "ID",
+        "elementKey": "REGID",
+        "elementName": "REGID",
         "elementSet": "data",
-        "elementPath": "ID"
+        "elementPath": "REGID"
       },
       "VISITDATE": {
         "prompt_type_name": "custom_date",
@@ -13085,6 +13119,34 @@
         "elementName": "VISITID",
         "elementSet": "data",
         "elementPath": "VISITID"
+      },
+      "REGIDC": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 235,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REGIDC",
+        "elementName": "REGIDC",
+        "elementSet": "data",
+        "elementPath": "REGIDC"
+      },
+      "VISITIDC": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 236,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VISITIDC",
+        "elementName": "VISITIDC",
+        "elementSet": "data",
+        "elementPath": "VISITIDC"
       },
       "bcgng_items": {
         "type": "string",
