@@ -1250,7 +1250,7 @@
       },
       {
         "name": "REGIDC",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 24
       },
@@ -2125,7 +2125,7 @@
         "elementKey": "PASSARAMPO"
       },
       "REGIDC": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 24,
@@ -3953,7 +3953,7 @@
         "elementPath": "PASSARAMPO"
       },
       "REGIDC": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 24,

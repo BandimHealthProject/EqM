@@ -621,6 +621,12 @@
         "type": "async_assign_date",
         "isSessionVariable": false,
         "_row_num": 30
+      },
+      {
+        "name": "NOMEMAE",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 32
       }
     ]
   },
@@ -1399,6 +1405,17 @@
         ],
         "isSessionVariable": false,
         "elementKey": "LASTVISIT"
+      },
+      "NOMEMAE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 32,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NOMEMAE"
       }
     },
     "section_names": [
@@ -2408,6 +2425,20 @@
         "elementName": "LASTVISIT",
         "elementSet": "data",
         "elementPath": "LASTVISIT"
+      },
+      "NOMEMAE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 32,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NOMEMAE",
+        "elementName": "NOMEMAE",
+        "elementSet": "data",
+        "elementPath": "NOMEMAE"
       },
       "_id": {
         "type": "string",
