@@ -186,7 +186,7 @@
       },
       {
         "clause": "if",
-        "condition": "data('CONSENTSIG') != '1' && data('CONSENTSIG') != '5' && data('ESTADOVIS') == '1'",
+        "condition": "data('CONSENTSIG') != '1' && data('CONSENTSIG') != '4' && data('ESTADOVIS') == '1'",
         "_row_num": 17
       },
       {
@@ -4335,7 +4335,7 @@
           },
           {
             "clause": "if",
-            "condition": "data('CONSENTSIG') != '1' && data('CONSENTSIG') != '5' && data('ESTADOVIS') == '1'",
+            "condition": "data('CONSENTSIG') != '1' && data('CONSENTSIG') != '4' && data('ESTADOVIS') == '1'",
             "_row_num": 17,
             "__rowNum__": 16,
             "_token_type": "goto_label",
