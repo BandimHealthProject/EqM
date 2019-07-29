@@ -84,3 +84,11 @@ app/config/assets/csv/MIF.bio6.csv
 app/config/assets/csv/MIF.bio7.csv
 app/config/assets/csv/MIF.bio8.csv
 app/config/assets/csv/MIF.bio9.csv
+app/config/assets/csv/CRIANCA.gab.csv
+app/config/assets/csv/CRIANCA.gab16.csv
+app/config/assets/csv/CRIANCA.gab8.csv
+app/config/assets/csv/CRIANCA.gab9.csv
+app/config/assets/csv/MIF.gab.csv
+app/config/assets/csv/MIF.gab16.csv
+app/config/assets/csv/MIF.gab8.csv
+app/config/assets/csv/MIF.gab9.csv

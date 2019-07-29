@@ -332,11 +332,12 @@
       },
       {
         "clause": "if",
-        "condition": "data('LASTVISIT') != null",
+        "condition": "data('PARPAD') != '1'",
         "_row_num": 37
       },
       {
         "clause": "begin screen",
+        "comment": "data('LASTVISIT') != null",
         "_row_num": 38
       },
       {
@@ -4402,7 +4403,7 @@
           },
           {
             "clause": "if",
-            "condition": "data('LASTVISIT') != null",
+            "condition": "data('PARPAD') != '1'",
             "_row_num": 37,
             "__rowNum__": 36,
             "_token_type": "goto_label",
@@ -4418,6 +4419,7 @@
           },
           {
             "clause": "begin screen",
+            "comment": "data('LASTVISIT') != null",
             "_row_num": 38,
             "__rowNum__": 37,
             "_token_type": "begin_screen",
