@@ -79,7 +79,7 @@
       },
       {
         "choice_list_name": "forms",
-        "data_value": "MIFVISIT",
+        "data_value": "MIF_VISIT",
         "display": {
           "title": {
             "text": {
@@ -175,7 +175,7 @@
           "title": {
             "text": {
               "english": "Child Visit",
-              "default": "Child visit"
+              "default": "Crianca_visitas"
             }
           }
         },
@@ -187,8 +187,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "CHILD",
-              "default": "CHILD"
+              "english": "Child",
+              "default": "Crianca"
             }
           }
         },
@@ -251,11 +251,11 @@
         "_row_num": 10
       },
       {
-        "branch_label": "MIFVISIT",
+        "branch_label": "MIF_VISIT",
         "_row_num": 11
       },
       {
-        "url": "'?' + odkSurvey.getHashString('MIFVISIT')",
+        "url": "'?' + odkSurvey.getHashString('MIF_VISIT')",
         "type": "external_link",
         "display": {
           "prompt": {
@@ -1017,7 +1017,7 @@
         },
         {
           "choice_list_name": "forms",
-          "data_value": "MIFVISIT",
+          "data_value": "MIF_VISIT",
           "display": {
             "title": {
               "text": {
@@ -1113,7 +1113,7 @@
             "title": {
               "text": {
                 "english": "Child Visit",
-                "default": "Child visit"
+                "default": "Crianca_visitas"
               }
             }
           },
@@ -1125,8 +1125,8 @@
           "display": {
             "title": {
               "text": {
-                "english": "CHILD",
-                "default": "CHILD"
+                "english": "Child",
+                "default": "Crianca"
               }
             }
           },
@@ -1800,7 +1800,7 @@
             "promptIdx": 2
           },
           {
-            "url": "'?' + odkSurvey.getHashString('MIFVISIT')",
+            "url": "'?' + odkSurvey.getHashString('MIF_VISIT')",
             "type": "external_link",
             "display": {
               "prompt": {
@@ -2149,7 +2149,7 @@
           "_endif6": 5,
           "MIF": 6,
           "_screen9": 6,
-          "MIFVISIT": 8,
+          "MIF_VISIT": 8,
           "_screen12": 8,
           "VAC": 10,
           "_screen15": 10,
