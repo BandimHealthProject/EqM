@@ -580,7 +580,7 @@
       },
       {
         "clause": "if",
-        "condition": "data('TENDAYN') == '1' || data('TENDAYN') == '3'",
+        "condition": "data('TENDAYN') != '2' || data('TENDA') !=3",
         "_row_num": 69
       },
       {
@@ -4559,7 +4559,7 @@
               "__rowNum__": 71,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(21);\nactivePromptIndicies.push(22);\nif (data('TENDAYN') == '1' || data('TENDAYN') == '3') {\nactivePromptIndicies.push(23);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(21);\nactivePromptIndicies.push(22);\nif (data('TENDAYN') != '2' || data('TENDA') !=3) {\nactivePromptIndicies.push(23);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 27
           },
           {
