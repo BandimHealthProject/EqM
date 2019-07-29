@@ -617,23 +617,23 @@ window.listViewLogic = {
         			item.append(chevron);
         		}
         		if (that.tableId === 'MIF') {
-        		if (that.firstDetColId1 !== null && that.firstDetColId1 !== undefined && that.firstDetColId1.length !== 0) {
-        			var field1 = $('<li>');
-        			field1.attr('class', 'detail');
-        			var f1Detail = util.formatColIdForDisplay(that.firstDetColId1, i, resultSet, true);
-        			var f2Detail = util.formatColIdForDisplay(that.firstDetColId2, i, resultSet, true);
-        			if (that.firstDetColId1 === 'RELA1') {
-        				if (f1Detail === '') {
-        					f1Detail = 'NS'
+        			if (that.firstDetColId1 !== null && that.firstDetColId1 !== undefined && that.firstDetColId1.length !== 0) {
+        				var field1 = $('<li>');
+        				field1.attr('class', 'detail');
+        				var f1Detail = util.formatColIdForDisplay(that.firstDetColId1, i, resultSet, true);
+        				var f2Detail = util.formatColIdForDisplay(that.firstDetColId2, i, resultSet, true);
+        				if (that.firstDetColId1 === 'RELA1') {
+        					if (f1Detail === '') {
+        						f1Detail = 'NS'
+        					}
+        					if (f2Detail === '') {
+        						f2Detail = 'NS'
+        					}
         				}
-        				if (f2Detail === '') {
-        					f2Detail = 'NS'
-        				}
-        			}
         	
-        			field1.text(that.createLabel(that.firstDetLabel1) + f1Detail + '; ' + f2Detail);
-        			item.append(field1);
-        		}
+        				field1.text(that.createLabel(that.firstDetLabel1) + f1Detail + '; ' + f2Detail);
+        				item.append(field1);
+        			}
         		} 
         		if (that.tableId === 'CRIANCA') {
             		if (that.firstDetColId1 !== null && that.firstDetColId1 !== undefined && that.firstDetColId1.length !== 0) {
@@ -648,25 +648,26 @@ window.listViewLogic = {
             			field1.text(that.createLabel(that.firstDetLabel1) + f1Detail);
             			item.append(field1);
             		}
-            		}
+            	}
+        		
         		if (that.tableId === 'MIF') {
-        		if (that.secondDetColId1 !== null && that.secondDetColId1 !== undefined && that.secondDetColId1.length !== 0) {
-        			var field2 = $('<li>');
-        			field2.attr('class', 'detail');
-                	var s1Detail = util.formatColIdForDisplay(that.secondDetColId1, i, resultSet, true);
-                	var s2Detail = util.formatColIdForDisplay(that.secondDetColId2, i, resultSet, true);
-                	if (that.secondDetColId1 === 'RELA2') {
-        				if (s1Detail === '') {
-        					s1Detail = 'NS'
+        			if (that.secondDetColId1 !== null && that.secondDetColId1 !== undefined && that.secondDetColId1.length !== 0) {
+        				var field2 = $('<li>');
+        				field2.attr('class', 'detail');
+        				var s1Detail = util.formatColIdForDisplay(that.secondDetColId1, i, resultSet, true);
+        				var s2Detail = util.formatColIdForDisplay(that.secondDetColId2, i, resultSet, true);
+        				if (that.secondDetColId1 === 'RELA2') {
+        					if (s1Detail === '') {
+        						s1Detail = 'NS'
+        					}
+        					if (s2Detail === '') {
+        						s2Detail = 'NS'
+        					}
         				}
-        				if (s2Detail === '') {
-        					s2Detail = 'NS'
-        				}
-        			}
                 	
-                	field2.text(that.createLabel(that.secondDetLabel1) + s1Detail + '; ' + s2Detail);
-                	item.append(field2);
-        		}
+        				field2.text(that.createLabel(that.secondDetLabel1) + s1Detail + '; ' + s2Detail);
+                		item.append(field2);
+        			}
         		}
         		if (that.tableId === 'CRIANCA') {
             		if (that.secondDetColId1 !== null && that.secondDetColId1 !== undefined && that.secondDetColId1.length !== 0) {
@@ -686,33 +687,49 @@ window.listViewLogic = {
                     	field2.text(that.createLabel(that.secondDetLabel1) + s1Detail);
                     	item.append(field2);
             		}
-            		}
+            	}
         		
-        		if (that.thirdDetColId1 !== null && that.thirdDetColId1 !== undefined && that.thirdDetColId1.length !== 0) {
-        			var field3 = $('<li>');
-        			field3.attr('class', 'detail');
-        			var t1Detail = util.formatColIdForDisplay(that.thirdDetColId1, i, resultSet, true);
-        			var t2Detail = util.formatColIdForDisplay(that.thirdDetColId2, i, resultSet, true);
-        			var t3Detail = util.formatColIdForDisplay(that.thirdDetColId3, i, resultSet, true);
-        			if (that.thirdDetColId1 === 'MOR') {
-        				if (t1Detail === '') {
-        					t1Detail = 'NS'
+        		if (that.tableId === 'MIF') {
+        			if (that.thirdDetColId1 !== null && that.thirdDetColId1 !== undefined && that.thirdDetColId1.length !== 0) {
+        				var field3 = $('<li>');
+        				field3.attr('class', 'detail');
+        				var t1Detail = util.formatColIdForDisplay(that.thirdDetColId1, i, resultSet, true);
+        				var t2Detail = util.formatColIdForDisplay(that.thirdDetColId2, i, resultSet, true);
+        				var t3Detail = util.formatColIdForDisplay(that.thirdDetColId3, i, resultSet, true);
+        				if (that.thirdDetColId1 === 'MOR') {
+        					if (t1Detail === '') {
+        						t1Detail = 'NS'
+        					}
+        					if (t2Detail === '') {
+        						t2Detail = 'NS'
+        					}
+        					if (t3Detail === '') {
+        						t3Detail = 'NS'
+        					}		
         				}
-        				if (t2Detail === '') {
-        					t2Detail = 'NS'
-        				}
-        				if (t3Detail === '') {
-        					t3Detail = 'NS'
-        				}		
+        			
+        				field3.text(that.createLabel(that.thirdDetLabel1) + t1Detail + ' ' +
+        						that.createLabel(that.thirdDetLabel2) + t2Detail + ' ' + 
+        						that.createLabel(that.thirdDetLabel3) + t3Detail);
+        				item.append(field3);
         			}
-        			
-        			field3.text(that.createLabel(that.thirdDetLabel1) + t1Detail + ' ' +
-        					that.createLabel(that.thirdDetLabel2) + t2Detail + ' ' + 
-        					that.createLabel(that.thirdDetLabel3) + t3Detail);
-        			item.append(field3);
         		}
-
+        		if (that.tableId === 'CRIANCA') {
+        			if (that.thirdDetColId1 !== null && that.thirdDetColId1 !== undefined && that.thirdDetColId1.length !== 0) {
+        				var field3 = $('<li>');
+        				field3.attr('class', 'detail');
+        				var t1Detail = util.formatColIdForDisplay(that.thirdDetColId1, i, resultSet, true);
+        				if (that.thirdDetColId1 === 'NOMEMAE') {
+        					if (t1Detail === '') {
+        						t1Detail = 'NS'
+        					}
+        				}
         			
+        				field3.text(that.createLabel(that.thirdDetLabel1) + t1Detail);
+        				item.append(field3);
+        			}
+        		}
+        		
         		$(that.listElemId).append(item);
         		
         		

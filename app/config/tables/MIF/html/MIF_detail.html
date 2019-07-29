@@ -21,84 +21,50 @@
         <br>
 
         <div class="detail col-12">
-            <h3 id="basic-facility-information">Basic Facility Information<span id="facility_info"></span></h3>
+            <h3>Informacao da mulher</h3>
         </div>
 
         <div class="row">
 
             <div class="col-6">
-                <p><span class="detailHdr" id="health-fac-id">Health Facility ID:</span> <span id="facility_id"></span></p>
-                <p><span class="detailHdr" id="fac-type">Facility Type:</span> <span id="facility_type"></span></p>
-                <p><span class="detailHdr" id="ownership">Ownership:</span> <span id="facility_ownership"></span></p>
+                <p><span class="detailHdr">Moranca:</span> <span id="mif_moranca"></span></p>
+                <p><span class="detailHdr">Casa:</span> <span id="mif_casa"></span></p>
+                <p><span class="detailHdr">Fogao:</span> <span id="mif_fogao"></span></p>
             </div>
 
             <div class="col-6">
-                <p><span class="detailHdr" id="population">Population:</span> <span id="facility_population"></span></p>
-                <p><span class="detailHdr" id="coverage">Coverage:</span> <span id="facility_coverage"></span></p>
-                <p><span class="detailHdr" id="admin-reg">Admin Region:</span> <span id="admin_region"></span></p>
+                <p><span class="detailHdr">Data de nascimento:</span> <span id="mif_dob"></span></p>
+                <p><span class="detailHdr">Data de registo:</span> <span id="mif_reg"></span></p>
+                <p><span class="detailHdr">Data da ultima visita:</span> <span id="mif_lastvisit"></span></p>
             </div>
         </div>
 
         <div class="detail col-12">
-            <h3 id="power-information">Power Information<span id="power_info"></span></h3>
+            <h3>Informacao de relacoes</h3>
         </div>
 
         <div class="row">
             <div class="col-6">
-                <p><span class="detailHdr" id="elec-source">Electricity Source:</span> <span id="electricity_source"></span></p>
-                <p><span class="detailHdr" id="grid-avail">Grid Availability:</span> <span id="grid_availability"></span></p>
-                <p><span class="detailHdr" id="gas-avail">Gas Availability:</span> <span id="gas_availability"></span></p>
+                <p><span class="detailHdr">Relacao:</span> <span id="mif_rel"></span></p>
+                <p><span class="detailHdr">Nome de relacao:</span> <span id="mif_nomerel"></span></p>
             </div>
 
             <div class="col-6">
-                <p><span class="detailHdr" id="kerosene-avail">Kerosene Availability:</span> <span id="kerosene_availability"></span></p>
-                <p><span class="detailHdr" id="solar-suit-clim">Solar Suitable Climate?</span> <span id="solar_suitable_climate"></span></p>
-                <p><span class="detailHdr" id="solar-suit-site">Solar Suitable Site?</span> <span id="solar_suitable_site"></span></p>
-            </div>
-        </div>
-
-        <div class="detail col-12">
-            <h3 id="loc-info">Location Information<span id="location_info"></span></h3>
-        </div>
-
-        <div class="row">
-            <div class="col-6">
-                <p><span class="detailHdr" id="lat-gps">Latitude (GPS):</span> <span id="lat"></span></p>
-                <p><span class="detailHdr" id="long-gps">Longitude (GPS):</span> <span id="lon"></span></p>
-            </div>
-
-            <div class="col-6">
-                <p><span class="detailHdr" id="clim">Climate:</span> <span id="climate"></span></p>
-            </div>
-        </div>
-
-        <div class="detail col-12">
-            <h3 id="stk-info">Stock Information<span id="stock_info"></span></h3>
-        </div>
-
-        <div class="row">
-            <div class="col-6">
-                <p><span class="detailHdr" id="dist-to-sup-pt">Distance to Supply Point:</span> <span id="distance_to_supply"></span></p>
-                <p><span class="detailHdr" id="vac-sup-interval">Vaccine Supply Interval:</span> <span id="supply_interval"></span></p>
-            </div>
-
-            <div class="col-6">
-                <p><span class="detailHdr" id="vac-res-stock-req">Vaccine Reserve Stock Req:</span> <span id="stock_requirement"></span></p>
-                <p><span class="detailHdr" id="vac-sup-mode">Vaccine Supply Mode:</span> <span id="supply_mode"></span></p>
+                <p><span class="detailHdr">Mome da mae:</span> <span id="mif_mae"></span></p>
             </div>
         </div>
 
         <div class="button">
-            <h3 id="add-visit" href="#" onclick="onAddVisitClick()">Visita</h3>
+            <h3 href="#" onclick="onAddVisitClick()">Visita</h3>
         </div>
 
         <div class="button">
-            <h3 id="child" href="#" onclick="onLinkClick()">Criancas</h3>
+            <h3 href="#" onclick="onLinkClick()">Criancas</h3>
             <h3>(<span id="child_list"></span>)</h3>
         </div>
 
         <div class="button">
-            <h3 id="add-child" href="#" onclick="onAddChildClick()">Nova Crianca</h3>
+            <h3 CDhref="#" onclick="onAddChildClick()">Nova Crianca</h3>
         </div>
 
         <script>

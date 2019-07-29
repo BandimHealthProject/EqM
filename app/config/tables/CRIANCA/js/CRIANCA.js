@@ -30,7 +30,7 @@ function resumeFunc(state) {
         listViewLogic.setColIdsToDisplayInList(null, 'NAME',
         		'Idade', 'IDADE', null, null, 
         		'Sexo', 'SEX', null, null,
-        		'Morança', 'MOR', 'Casa', 'CASA', 'Fogao', 'FOGAO');
+        		'Nome de mãe', 'NOMEMAE', null, null, null, null);
     }
 
     listViewLogic.resumeFn(state);
