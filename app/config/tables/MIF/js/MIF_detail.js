@@ -23,6 +23,7 @@ function onLinkClick() {
 function onAddChildClick() {
     var jsonMap = {};
     jsonMap.REGID = MIFResultSet.get('REGID');
+    jsonMap.NOMEMAE = MIFResultSet.get('NOMEMAE');
 	
     odkTables.addRowWithSurvey(null, 'CRIANCA', 'CRIANCA', null, jsonMap);
 }
