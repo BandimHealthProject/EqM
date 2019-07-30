@@ -221,7 +221,7 @@
         "linked_table_id": "CRIANCA_VISIT",
         "selection": "REGIDC = ?",
         "selectionArgs": "[data('REGIDC')]",
-        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), comsup: data('COMSUP'), parma: data('PARMA'), moma: data('MOMA')}",
+        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), comsup: data('COMSUP'), parma: data('PARMA'), moma: data('MOMA'), REGID: data('REGID')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       },
@@ -807,7 +807,7 @@
         "linked_table_id": "CRIANCA_VISIT",
         "selection": "REGIDC = ?",
         "selectionArgs": "[data('REGIDC')]",
-        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), comsup: data('COMSUP'), parma: data('PARMA'), moma: data('MOMA')}",
+        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), comsup: data('COMSUP'), parma: data('PARMA'), moma: data('MOMA'), REGID: data('REGID')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       },
