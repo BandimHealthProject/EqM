@@ -216,7 +216,7 @@
         "_row_num": 27
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "OUTDATE",
         "display": {
           "prompt": {
@@ -734,6 +734,13 @@
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
         "_row_num": 3
+      },
+      {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4
       }
     ],
     "choices": [
@@ -1390,7 +1397,7 @@
       },
       {
         "name": "OUTDATE",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 17
       },
@@ -1450,7 +1457,7 @@
       },
       {
         "name": "PREGDIA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 28
       },
@@ -2444,12 +2451,12 @@
         "elementKey": "LOCPAR"
       },
       "OUTDATE": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 28,
@@ -2590,12 +2597,12 @@
         "elementKey": "ESTADOVIS"
       },
       "PREGDIA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 28,
@@ -2750,7 +2757,7 @@
             "promptIdx": 6
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "OUTDATE",
             "display": {
               "prompt": {
@@ -2763,7 +2770,7 @@
             "_row_num": 28,
             "__rowNum__": 27,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen27",
             "promptIdx": 7
           },
@@ -4054,12 +4061,12 @@
         "elementPath": "LOCPAR"
       },
       "OUTDATE": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 28,
@@ -4230,12 +4237,12 @@
         "elementPath": "ESTADOVIS"
       },
       "PREGDIA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 28,

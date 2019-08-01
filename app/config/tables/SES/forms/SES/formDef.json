@@ -185,6 +185,13 @@
         "elementType": "date",
         "comment": "Makes the date widget DD/MM/YYYY",
         "_row_num": 2
+      },
+      {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3
       }
     ],
     "choices": [
@@ -396,7 +403,7 @@
       },
       {
         "name": "SESDATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 11
       },
@@ -834,12 +841,12 @@
         "elementKey": "REGID"
       },
       "SESDATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 11,
@@ -1415,12 +1422,12 @@
         "elementPath": "REGID"
       },
       "SESDATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 11,

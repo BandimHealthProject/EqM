@@ -201,7 +201,7 @@
         "_row_num": 17
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "MIFDNASC",
         "display": {
           "prompt": {
@@ -504,7 +504,7 @@
         "_row_num": 59
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "REGDIA",
         "display": {
           "prompt": {
@@ -517,7 +517,7 @@
         "_row_num": 60
       },
       {
-        "type": "integer",
+        "type": "text",
         "name": "REGID",
         "display": {
           "prompt": {
@@ -931,6 +931,13 @@
         "elementType": "date",
         "comment": "Makes the date widget DD/MM/YYYY",
         "_row_num": 2
+      },
+      {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3
       }
     ],
     "choices": [
@@ -1823,7 +1830,7 @@
       },
       {
         "name": "MIFDNASC",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 26
       },
@@ -1913,7 +1920,7 @@
       },
       {
         "name": "REGDIA",
-        "type": "date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 41
       },
@@ -3303,12 +3310,12 @@
         "elementKey": "inf2"
       },
       "MIFDNASC": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 18,
@@ -3560,10 +3567,12 @@
         "elementKey": "REG"
       },
       "REGDIA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 60,
@@ -3967,7 +3976,7 @@
             "promptIdx": 7
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "MIFDNASC",
             "display": {
               "prompt": {
@@ -3980,7 +3989,7 @@
             "_row_num": 18,
             "__rowNum__": 17,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen17",
             "promptIdx": 8
           },
@@ -4234,7 +4243,7 @@
             "promptIdx": 23
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "REGDIA",
             "display": {
               "prompt": {
@@ -4247,12 +4256,12 @@
             "_row_num": 60,
             "__rowNum__": 59,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen59",
             "promptIdx": 24
           },
           {
-            "type": "integer",
+            "type": "text",
             "name": "REGID",
             "display": {
               "prompt": {
@@ -4265,7 +4274,7 @@
             "_row_num": 61,
             "__rowNum__": 60,
             "_token_type": "prompt",
-            "_type": "integer",
+            "_type": "text",
             "_branch_label_enclosing_screen": "survey/_screen59",
             "promptIdx": 25
           },
@@ -5607,12 +5616,12 @@
         "elementPath": "inf2"
       },
       "MIFDNASC": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 18,
@@ -5944,10 +5953,12 @@
         "elementPath": "REG"
       },
       "REGDIA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 60,

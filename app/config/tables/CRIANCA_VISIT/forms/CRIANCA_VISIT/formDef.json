@@ -66,7 +66,7 @@
     "survey": [
       {
         "clause": "begin screen",
-        "_row_num": 2
+        "_row_num": 3
       },
       {
         "type": "select_one",
@@ -80,15 +80,15 @@
             }
           }
         },
-        "_row_num": 3
+        "_row_num": 4
       },
       {
         "clause": "if",
         "condition": "data('PRES') ==  '2' || data('PRES') ==  '3'",
-        "_row_num": 4
+        "_row_num": 5
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "EXITDATA",
         "display": {
           "prompt": {
@@ -98,7 +98,7 @@
             }
           }
         },
-        "_row_num": 5
+        "_row_num": 6
       },
       {
         "type": "select_one",
@@ -112,12 +112,12 @@
             }
           }
         },
-        "_row_num": 6
+        "_row_num": 7
       },
       {
         "clause": "if",
         "condition": "data('PRES') ==  '2'",
-        "_row_num": 7
+        "_row_num": 8
       },
       {
         "type": "text",
@@ -130,564 +130,29 @@
             }
           }
         },
-        "_row_num": 8
+        "_row_num": 9
       },
       {
         "clause": "end if",
-        "_row_num": 9
+        "_row_num": 10
       },
       {
         "type": "async_assign_date",
         "values_list": "linked_visitdate",
         "name": "CONT",
-        "_row_num": 10
-      },
-      {
-        "clause": "end if",
         "_row_num": 11
       },
       {
-        "clause": "end screen",
+        "clause": "end if",
         "_row_num": 12
       },
       {
-        "clause": "if",
-        "condition": "data('PRES') !='2' && data('PRES') !='3'",
+        "clause": "end screen",
         "_row_num": 13
       },
       {
         "clause": "begin screen",
         "_row_num": 14
-      },
-      {
-        "type": "select_one",
-        "values_list": "YesNoU",
-        "name": "TENDAYN",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Did the child sleep under a bednet last night?",
-              "default": "Dormir na tenda ontem?"
-            }
-          }
-        },
-        "_row_num": 15
-      },
-      {
-        "type": "select_one",
-        "values_list": "bednettime",
-        "name": "TENDA",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Period using bednet",
-              "default": "Todo tempo?"
-            }
-          }
-        },
-        "_row_num": 16
-      },
-      {
-        "clause": "if",
-        "condition": "data('TENDAYN') != '2' || data('TENDA') !=3",
-        "_row_num": 17
-      },
-      {
-        "type": "select_one",
-        "values_list": "bednet",
-        "name": "TENDATIPO",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Type of bednet",
-              "default": "Qual tipo?"
-            }
-          }
-        },
-        "_row_num": 18
-      },
-      {
-        "clause": "end if",
-        "_row_num": 19
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 20
-      },
-      {
-        "clause": "end if",
-        "_row_num": 21
-      },
-      {
-        "clause": "if",
-        "condition": "data('comsup') != '1'",
-        "_row_num": 22
-      },
-      {
-        "clause": "if",
-        "condition": "data('PRES') !='2' && data('PRES') !='3'",
-        "_row_num": 23
-      },
-      {
-        "clause": "begin screen",
-        "_row_num": 24
-      },
-      {
-        "type": "select_one",
-        "values_list": "YesNoU",
-        "name": "COMSUP",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Does the child recieve supplementary foods?",
-              "default": "Does the child recieve supplementary foods?"
-            }
-          }
-        },
-        "_row_num": 25
-      },
-      {
-        "clause": "if",
-        "condition": "data('COMSUP') == '1'",
-        "_row_num": 26
-      },
-      {
-        "type": "custom_date",
-        "name": "DACOMSUP",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Date of starting supplementary feeding",
-              "default": "Date of starting supplementary feeding"
-            }
-          }
-        },
-        "_row_num": 27
-      },
-      {
-        "type": "integer",
-        "name": "IDCOMSUP",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Age of starting supplementary feeding",
-              "default": "Age of starting supplementary feeding"
-            }
-          }
-        },
-        "_row_num": 28
-      },
-      {
-        "clause": "end if",
-        "_row_num": 29
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 30
-      },
-      {
-        "clause": "end if",
-        "_row_num": 31
-      },
-      {
-        "clause": "end if",
-        "_row_num": 32
-      },
-      {
-        "clause": "if",
-        "condition": "data('parma') != '1'",
-        "_row_num": 33
-      },
-      {
-        "clause": "if",
-        "condition": "data('PRES') !='2' && data('PRES') !='3'",
-        "_row_num": 34
-      },
-      {
-        "clause": "begin screen",
-        "_row_num": 35
-      },
-      {
-        "type": "select_one",
-        "values_list": "YesNoU",
-        "name": "PARMA",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Has the child stopped breastfeeding?",
-              "default": "Has the child stopped breastfeeding?"
-            }
-          }
-        },
-        "_row_num": 36
-      },
-      {
-        "clause": "if",
-        "condition": "data('PARMA') == '1'",
-        "_row_num": 37
-      },
-      {
-        "type": "custom_date",
-        "name": "DAPARMA",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Date of stopping breastfeeding",
-              "default": "Date of stopping breastfeeding"
-            }
-          }
-        },
-        "_row_num": 38
-      },
-      {
-        "type": "integer",
-        "name": "IDPARMA",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Age of stopping breastfeeding",
-              "default": "Age of stopping breastfeeding"
-            }
-          }
-        },
-        "_row_num": 39
-      },
-      {
-        "clause": "end if",
-        "_row_num": 40
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 41
-      },
-      {
-        "clause": "end if",
-        "_row_num": 42
-      },
-      {
-        "clause": "end if",
-        "_row_num": 43
-      },
-      {
-        "clause": "if",
-        "condition": "data('PRES') !='2' && data('PRES') !='3'",
-        "_row_num": 44
-      },
-      {
-        "clause": "begin screen",
-        "_row_num": 45
-      },
-      {
-        "type": "select_one",
-        "values_list": "YesNoU",
-        "name": "PORCA",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Are pigs living in the house?",
-              "default": "Are pigs living in the house?"
-            }
-          }
-        },
-        "_row_num": 46
-      },
-      {
-        "type": "select_one",
-        "values_list": "YesNoU",
-        "name": "PORMO",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Are there pigs living in the compound?",
-              "default": "Are there pigs living in the compound?"
-            }
-          }
-        },
-        "_row_num": 47
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 48
-      },
-      {
-        "clause": "end if",
-        "_row_num": 49
-      },
-      {
-        "clause": "if",
-        "condition": "data('moma') != '2'",
-        "_row_num": 50
-      },
-      {
-        "clause": "begin screen",
-        "_row_num": 51
-      },
-      {
-        "type": "select_one",
-        "values_list": "YesNoU",
-        "name": "MOMA",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Is/was the child living with their mother?",
-              "default": "Is/was the child living with their mother?"
-            }
-          }
-        },
-        "_row_num": 52
-      },
-      {
-        "clause": "if",
-        "condition": "data('MOMA') == '2'",
-        "_row_num": 53
-      },
-      {
-        "type": "custom_date",
-        "name": "DASEP",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Date of separation from mother",
-              "default": "Date of separation from mother"
-            }
-          }
-        },
-        "_row_num": 54
-      },
-      {
-        "type": "integer",
-        "name": "IDSEP",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Age of separation from mother",
-              "default": "Age of separation from mother"
-            }
-          }
-        },
-        "_row_num": 55
-      },
-      {
-        "type": "text",
-        "name": "CAUSASEP",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Cause of separation from the mother",
-              "default": "Cause of separation from the mother"
-            }
-          }
-        },
-        "_row_num": 56
-      },
-      {
-        "clause": "end if",
-        "_row_num": 57
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 58
-      },
-      {
-        "clause": "end if",
-        "_row_num": 59
-      },
-      {
-        "clause": "begin screen",
-        "_row_num": 60
-      },
-      {
-        "type": "select_one",
-        "values_list": "YesNoU",
-        "name": "HOSP",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Has the child been amitted to the hostpital since last visist?",
-              "default": "Has the child been amitted to the hostpital since last visist?"
-            }
-          }
-        },
-        "_row_num": 61
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 62
-      },
-      {
-        "clause": "if",
-        "condition": "data('PRES') ==  '1'",
-        "_row_num": 63
-      },
-      {
-        "clause": "begin screen",
-        "_row_num": 64
-      },
-      {
-        "type": "integer",
-        "name": "BRACOCRI",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "What are the childs MUAC Mesurements in MM",
-              "default": "What are the childs MUAC Mesurements in MM"
-            }
-          }
-        },
-        "_row_num": 65
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 66
-      },
-      {
-        "clause": "begin screen",
-        "_row_num": 67
-      },
-      {
-        "type": "select_one",
-        "values_list": "Scar",
-        "name": "CICBCGN",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Does the child have a BSG scar?",
-              "default": "Does the child have a BSG scar?"
-            }
-          }
-        },
-        "_row_num": 68
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 69
-      },
-      {
-        "clause": "if",
-        "condition": "data('CICBCGN') ==  '1'",
-        "_row_num": 70
-      },
-      {
-        "clause": "begin screen",
-        "_row_num": 71
-      },
-      {
-        "type": "integer",
-        "name": "CICBCGV",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Vertical measurement of the scar in MM",
-              "default": "Vertical measurement of the scar in MM"
-            }
-          }
-        },
-        "_row_num": 72
-      },
-      {
-        "type": "integer",
-        "name": "CICBCGH",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Horizontal measurement of the scar in MM",
-              "default": "Horizontal measurement of the scar in MM"
-            }
-          }
-        },
-        "_row_num": 73
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 74
-      },
-      {
-        "clause": "end if",
-        "_row_num": 75
-      },
-      {
-        "clause": "end if",
-        "_row_num": 76
-      },
-      {
-        "clause": "if",
-        "condition": "data('PRES') !='2' && data('PRES') !='3'",
-        "_row_num": 77
-      },
-      {
-        "clause": "begin screen",
-        "_row_num": 78
-      },
-      {
-        "type": "select_one",
-        "values_list": "YesNoU",
-        "name": "LINFADENOP",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Limphadenopaty",
-              "default": "Limphadenopaty"
-            }
-          }
-        },
-        "_row_num": 79
-      },
-      {
-        "clause": "if",
-        "condition": "data('LINFADENOP') == '1'",
-        "_row_num": 80
-      },
-      {
-        "type": "select_one",
-        "values_list": "YesNoU",
-        "name": "LINFADESUP",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Suppurative limfadenopaty",
-              "default": "Suppurative limfadenopaty"
-            }
-          }
-        },
-        "_row_num": 81
-      },
-      {
-        "clause": "end if",
-        "_row_num": 82
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 83
-      },
-      {
-        "clause": "begin screen",
-        "_row_num": 84
-      },
-      {
-        "type": "select_one",
-        "values_list": "YesNoU",
-        "name": "PASSARAMPO",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Has the child had measles",
-              "default": "Has the child had measles"
-            }
-          }
-        },
-        "_row_num": 85
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 86
-      },
-      {
-        "clause": "end if",
-        "_row_num": 87
-      },
-      {
-        "clause": "begin screen",
-        "_row_num": 88
       },
       {
         "type": "select_one",
@@ -701,20 +166,20 @@
             }
           }
         },
-        "_row_num": 89
+        "_row_num": 15
       },
       {
         "clause": "end screen",
-        "_row_num": 90
+        "_row_num": 16
       },
       {
         "clause": "if",
         "condition": "data('CARTVAC') == 'VIC'",
-        "_row_num": 91
+        "_row_num": 17
       },
       {
         "clause": "begin screen",
-        "_row_num": 92
+        "_row_num": 18
       },
       {
         "type": "note",
@@ -726,11 +191,537 @@
             }
           }
         },
-        "_row_num": 93
+        "_row_num": 19
       },
       {
         "type": "linked_table",
         "values_list": "vac",
+        "_row_num": 20
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 21
+      },
+      {
+        "clause": "end if",
+        "_row_num": 22
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 23
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "TENDAYN",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Did the child sleep under a bednet last night?",
+              "default": "Dormir na tenda ontem?"
+            }
+          }
+        },
+        "_row_num": 24
+      },
+      {
+        "type": "select_one",
+        "values_list": "bednettime",
+        "name": "TENDA",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Period using bednet",
+              "default": "Todo tempo?"
+            }
+          }
+        },
+        "_row_num": 25
+      },
+      {
+        "clause": "if",
+        "condition": "data('TENDAYN') != '2' || data('TENDA') !=3",
+        "_row_num": 26
+      },
+      {
+        "type": "select_one",
+        "values_list": "bednet",
+        "name": "TENDATIPO",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Type of bednet",
+              "default": "Qual tipo?"
+            }
+          }
+        },
+        "_row_num": 27
+      },
+      {
+        "clause": "end if",
+        "_row_num": 28
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 29
+      },
+      {
+        "clause": "if",
+        "condition": "data('comsup') != '1'",
+        "_row_num": 31
+      },
+      {
+        "clause": "if",
+        "condition": "data('PRES') !='2' && data('PRES') !='3'",
+        "_row_num": 32
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 33
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "COMSUP",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Does the child recieve supplementary foods?",
+              "default": "Does the child recieve supplementary foods?"
+            }
+          }
+        },
+        "_row_num": 34
+      },
+      {
+        "clause": "if",
+        "condition": "data('COMSUP') == '1'",
+        "_row_num": 35
+      },
+      {
+        "type": "adate",
+        "name": "DACOMSUP",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Date of starting supplementary feeding",
+              "default": "Date of starting supplementary feeding"
+            }
+          }
+        },
+        "_row_num": 36
+      },
+      {
+        "type": "integer",
+        "name": "IDCOMSUP",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Age of starting supplementary feeding",
+              "default": "Age of starting supplementary feeding"
+            }
+          }
+        },
+        "_row_num": 37
+      },
+      {
+        "clause": "end if",
+        "_row_num": 38
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 39
+      },
+      {
+        "clause": "end if",
+        "_row_num": 40
+      },
+      {
+        "clause": "end if",
+        "_row_num": 41
+      },
+      {
+        "clause": "if",
+        "condition": "data('parma') != '1'",
+        "_row_num": 42
+      },
+      {
+        "clause": "if",
+        "condition": "data('PRES') !='2' && data('PRES') !='3'",
+        "_row_num": 43
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 44
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "PARMA",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Has the child stopped breastfeeding?",
+              "default": "Has the child stopped breastfeeding?"
+            }
+          }
+        },
+        "_row_num": 45
+      },
+      {
+        "clause": "if",
+        "condition": "data('PARMA') == '1'",
+        "_row_num": 46
+      },
+      {
+        "type": "adate",
+        "name": "DAPARMA",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Date of stopping breastfeeding",
+              "default": "Date of stopping breastfeeding"
+            }
+          }
+        },
+        "_row_num": 47
+      },
+      {
+        "type": "integer",
+        "name": "IDPARMA",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Age of stopping breastfeeding",
+              "default": "Age of stopping breastfeeding"
+            }
+          }
+        },
+        "_row_num": 48
+      },
+      {
+        "clause": "end if",
+        "_row_num": 49
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 50
+      },
+      {
+        "clause": "end if",
+        "_row_num": 51
+      },
+      {
+        "clause": "end if",
+        "_row_num": 52
+      },
+      {
+        "clause": "if",
+        "condition": "data('PRES') !='2' && data('PRES') !='3'",
+        "_row_num": 53
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 54
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "PORCA",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Are pigs living in the house?",
+              "default": "Are pigs living in the house?"
+            }
+          }
+        },
+        "_row_num": 55
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "PORMO",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Are there pigs living in the compound?",
+              "default": "Are there pigs living in the compound?"
+            }
+          }
+        },
+        "_row_num": 56
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 57
+      },
+      {
+        "clause": "end if",
+        "_row_num": 58
+      },
+      {
+        "clause": "if",
+        "condition": "data('moma') != '2'",
+        "_row_num": 59
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 60
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "MOMA",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Is/was the child living with their mother?",
+              "default": "Is/was the child living with their mother?"
+            }
+          }
+        },
+        "_row_num": 61
+      },
+      {
+        "clause": "if",
+        "condition": "data('MOMA') == '2'",
+        "_row_num": 62
+      },
+      {
+        "type": "adate",
+        "name": "DASEP",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Date of separation from mother",
+              "default": "Date of separation from mother"
+            }
+          }
+        },
+        "_row_num": 63
+      },
+      {
+        "type": "integer",
+        "name": "IDSEP",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Age of separation from mother",
+              "default": "Age of separation from mother"
+            }
+          }
+        },
+        "_row_num": 64
+      },
+      {
+        "type": "text",
+        "name": "CAUSASEP",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Cause of separation from the mother",
+              "default": "Cause of separation from the mother"
+            }
+          }
+        },
+        "_row_num": 65
+      },
+      {
+        "clause": "end if",
+        "_row_num": 66
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 67
+      },
+      {
+        "clause": "end if",
+        "_row_num": 68
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 69
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "HOSP",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Has the child been amitted to the hostpital since last visist?",
+              "default": "Has the child been amitted to the hostpital since last visist?"
+            }
+          }
+        },
+        "_row_num": 70
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 71
+      },
+      {
+        "clause": "if",
+        "condition": "data('PRES') ==  '1'",
+        "_row_num": 72
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 73
+      },
+      {
+        "type": "integer",
+        "name": "BRACOCRI",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "What are the childs MUAC Mesurements in MM",
+              "default": "What are the childs MUAC Mesurements in MM"
+            }
+          }
+        },
+        "_row_num": 74
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 75
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 76
+      },
+      {
+        "type": "select_one",
+        "values_list": "Scar",
+        "name": "CICBCGN",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Does the child have a BSG scar?",
+              "default": "Does the child have a BSG scar?"
+            }
+          }
+        },
+        "_row_num": 77
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 78
+      },
+      {
+        "clause": "if",
+        "condition": "data('CICBCGN') ==  '1'",
+        "_row_num": 79
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 80
+      },
+      {
+        "type": "integer",
+        "name": "CICBCGV",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Vertical measurement of the scar in MM",
+              "default": "Vertical measurement of the scar in MM"
+            }
+          }
+        },
+        "_row_num": 81
+      },
+      {
+        "type": "integer",
+        "name": "CICBCGH",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Horizontal measurement of the scar in MM",
+              "default": "Horizontal measurement of the scar in MM"
+            }
+          }
+        },
+        "_row_num": 82
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 83
+      },
+      {
+        "clause": "end if",
+        "_row_num": 84
+      },
+      {
+        "clause": "end if",
+        "_row_num": 85
+      },
+      {
+        "clause": "if",
+        "condition": "data('PRES') !='2' && data('PRES') !='3'",
+        "_row_num": 86
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 87
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "LINFADENOP",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Limphadenopaty",
+              "default": "Limphadenopaty"
+            }
+          }
+        },
+        "_row_num": 88
+      },
+      {
+        "clause": "if",
+        "condition": "data('LINFADENOP') == '1'",
+        "_row_num": 89
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "LINFADESUP",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Suppurative limfadenopaty",
+              "default": "Suppurative limfadenopaty"
+            }
+          }
+        },
+        "_row_num": 90
+      },
+      {
+        "clause": "end if",
+        "_row_num": 91
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 92
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 93
+      },
+      {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "PASSARAMPO",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Has the child had measles",
+              "default": "Has the child had measles"
+            }
+          }
+        },
         "_row_num": 94
       },
       {
@@ -779,6 +770,13 @@
         "prompt_type_name": "async_assign_date",
         "type": "date",
         "_row_num": 3
+      },
+      {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4
       }
     ],
     "choices": [
@@ -1156,7 +1154,7 @@
       },
       {
         "name": "EXITDATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 3
       },
@@ -1203,112 +1201,154 @@
         "_row_num": 10
       },
       {
-        "name": "PARMA",
-        "type": "select_one",
+        "name": "DACOMSUP",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 11
       },
       {
-        "name": "PORCA",
-        "type": "select_one",
+        "name": "IDCOMSUP",
+        "type": "integer",
         "isSessionVariable": false,
         "_row_num": 12
       },
       {
-        "name": "PORMO",
+        "name": "PARMA",
         "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 13
       },
       {
-        "name": "MOMA",
-        "type": "select_one",
+        "name": "DAPARMA",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 14
       },
       {
-        "name": "HOSP",
-        "type": "select_one",
+        "name": "IDPARMA",
+        "type": "integer",
         "isSessionVariable": false,
         "_row_num": 15
       },
       {
-        "name": "BRACOCRI",
-        "type": "integer",
+        "name": "PORCA",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 16
       },
       {
-        "name": "CICBCGN",
+        "name": "PORMO",
         "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 17
       },
       {
-        "name": "CICBCGV",
-        "type": "integer",
+        "name": "MOMA",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 18
       },
       {
-        "name": "CICBCGH",
-        "type": "integer",
+        "name": "DASEP",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 19
       },
       {
-        "name": "LINFADENOP",
-        "type": "select_one",
+        "name": "IDSEP",
+        "type": "integer",
         "isSessionVariable": false,
         "_row_num": 20
       },
       {
-        "name": "LINFADESUP",
-        "type": "select_one",
+        "name": "CAUSASEP",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 21
       },
       {
-        "name": "PASSARAMPO",
+        "name": "HOSP",
         "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 22
       },
       {
-        "name": "REGID",
-        "type": "test",
+        "name": "BRACOCRI",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 23
+      },
+      {
+        "name": "CICBCGN",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 24
+      },
+      {
+        "name": "CICBCGV",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 25
+      },
+      {
+        "name": "CICBCGH",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 26
+      },
+      {
+        "name": "LINFADENOP",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 27
+      },
+      {
+        "name": "LINFADESUP",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 28
+      },
+      {
+        "name": "PASSARAMPO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 29
+      },
+      {
+        "name": "REGID",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 31
       },
       {
         "name": "REGIDC",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 25
+        "_row_num": 32
       },
       {
         "name": "CONT",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 26
+        "_row_num": 33
       },
       {
         "name": "comsup",
         "type": "integer",
         "isSessionVariable": true,
-        "_row_num": 27
+        "_row_num": 34
       },
       {
         "name": "parma",
         "type": "integer",
         "isSessionVariable": true,
-        "_row_num": 28
+        "_row_num": 35
       },
       {
         "name": "moma",
         "type": "integer",
         "isSessionVariable": true,
-        "_row_num": 29
+        "_row_num": 36
       }
     ]
   },
@@ -1853,7 +1893,7 @@
         "valuesList": "visitstatus",
         "_defn": [
           {
-            "_row_num": 3,
+            "_row_num": 4,
             "section_name": "survey"
           },
           {
@@ -1865,15 +1905,15 @@
         "elementKey": "PRES"
       },
       "EXITDATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 5,
+            "_row_num": 6,
             "section_name": "survey"
           },
           {
@@ -1889,7 +1929,7 @@
         "valuesList": "precision",
         "_defn": [
           {
-            "_row_num": 6,
+            "_row_num": 7,
             "section_name": "survey"
           },
           {
@@ -1904,7 +1944,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 8,
+            "_row_num": 9,
             "section_name": "survey"
           },
           {
@@ -1920,7 +1960,7 @@
         "valuesList": "vcard",
         "_defn": [
           {
-            "_row_num": 89,
+            "_row_num": 15,
             "section_name": "survey"
           },
           {
@@ -1936,7 +1976,7 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 24,
             "section_name": "survey"
           },
           {
@@ -1952,7 +1992,7 @@
         "valuesList": "bednettime",
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 25,
             "section_name": "survey"
           },
           {
@@ -1968,7 +2008,7 @@
         "valuesList": "bednet",
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 27,
             "section_name": "survey"
           },
           {
@@ -1984,7 +2024,7 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 34,
             "section_name": "survey"
           },
           {
@@ -1995,9 +2035,13 @@
         "isSessionVariable": false,
         "elementKey": "COMSUP"
       },
-      "PARMA": {
+      "DACOMSUP": {
+        "prompt_type_name": "adate",
         "type": "string",
-        "valuesList": "YesNoU",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 36,
@@ -2009,18 +2053,84 @@
           }
         ],
         "isSessionVariable": false,
+        "elementKey": "DACOMSUP"
+      },
+      "IDCOMSUP": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 37,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDCOMSUP"
+      },
+      "PARMA": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 45,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 13,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
         "elementKey": "PARMA"
+      },
+      "DAPARMA": {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 47,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DAPARMA"
+      },
+      "IDPARMA": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 48,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 15,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDPARMA"
       },
       "PORCA": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 46,
+            "_row_num": 55,
             "section_name": "survey"
           },
           {
-            "_row_num": 12,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
@@ -2032,11 +2142,11 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 47,
+            "_row_num": 56,
             "section_name": "survey"
           },
           {
-            "_row_num": 13,
+            "_row_num": 17,
             "section_name": "model"
           }
         ],
@@ -2048,27 +2158,77 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 52,
+            "_row_num": 61,
             "section_name": "survey"
           },
           {
-            "_row_num": 14,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "MOMA"
       },
+      "DASEP": {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 63,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 19,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DASEP"
+      },
+      "IDSEP": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 64,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 20,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDSEP"
+      },
+      "CAUSASEP": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 65,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CAUSASEP"
+      },
       "HOSP": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 61,
+            "_row_num": 70,
             "section_name": "survey"
           },
           {
-            "_row_num": 15,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -2079,11 +2239,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 65,
+            "_row_num": 74,
             "section_name": "survey"
           },
           {
-            "_row_num": 16,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -2095,11 +2255,11 @@
         "valuesList": "Scar",
         "_defn": [
           {
-            "_row_num": 68,
+            "_row_num": 77,
             "section_name": "survey"
           },
           {
-            "_row_num": 17,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -2110,11 +2270,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 72,
+            "_row_num": 81,
             "section_name": "survey"
           },
           {
-            "_row_num": 18,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -2125,11 +2285,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 73,
+            "_row_num": 82,
             "section_name": "survey"
           },
           {
-            "_row_num": 19,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -2141,11 +2301,11 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 79,
+            "_row_num": 88,
             "section_name": "survey"
           },
           {
-            "_row_num": 20,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -2157,11 +2317,11 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 81,
+            "_row_num": 90,
             "section_name": "survey"
           },
           {
-            "_row_num": 21,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -2173,11 +2333,11 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 85,
+            "_row_num": 94,
             "section_name": "survey"
           },
           {
-            "_row_num": 22,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -2185,13 +2345,13 @@
         "elementKey": "PASSARAMPO"
       },
       "REGID": {
+        "type": "string",
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
-        "type": "test",
         "isSessionVariable": false,
         "elementKey": "REGID"
       },
@@ -2199,7 +2359,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -2214,11 +2374,11 @@
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 10,
+            "_row_num": 11,
             "section_name": "survey"
           },
           {
-            "_row_num": 26,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -2229,7 +2389,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -2240,7 +2400,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 28,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -2251,91 +2411,12 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 29,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
         "isSessionVariable": true,
         "elementKey": "moma"
-      },
-      "DACOMSUP": {
-        "_defn": [
-          {
-            "_row_num": 27,
-            "section_name": "survey"
-          }
-        ],
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "elementKey": "DACOMSUP"
-      },
-      "IDCOMSUP": {
-        "_defn": [
-          {
-            "_row_num": 28,
-            "section_name": "survey"
-          }
-        ],
-        "type": "integer",
-        "elementKey": "IDCOMSUP"
-      },
-      "DAPARMA": {
-        "_defn": [
-          {
-            "_row_num": 38,
-            "section_name": "survey"
-          }
-        ],
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "elementKey": "DAPARMA"
-      },
-      "IDPARMA": {
-        "_defn": [
-          {
-            "_row_num": 39,
-            "section_name": "survey"
-          }
-        ],
-        "type": "integer",
-        "elementKey": "IDPARMA"
-      },
-      "DASEP": {
-        "_defn": [
-          {
-            "_row_num": 54,
-            "section_name": "survey"
-          }
-        ],
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "elementKey": "DASEP"
-      },
-      "IDSEP": {
-        "_defn": [
-          {
-            "_row_num": 55,
-            "section_name": "survey"
-          }
-        ],
-        "type": "integer",
-        "elementKey": "IDSEP"
-      },
-      "CAUSASEP": {
-        "_defn": [
-          {
-            "_row_num": 56,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "elementKey": "CAUSASEP"
       }
     },
     "section_names": [
@@ -2360,15 +2441,15 @@
                 }
               }
             },
-            "_row_num": 3,
-            "__rowNum__": 2,
+            "_row_num": 4,
+            "__rowNum__": 3,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen2",
+            "_branch_label_enclosing_screen": "survey/_screen3",
             "promptIdx": 0
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "EXITDATA",
             "display": {
               "prompt": {
@@ -2378,11 +2459,11 @@
                 }
               }
             },
-            "_row_num": 5,
-            "__rowNum__": 4,
+            "_row_num": 6,
+            "__rowNum__": 5,
             "_token_type": "prompt",
-            "_type": "custom_date",
-            "_branch_label_enclosing_screen": "survey/_screen2",
+            "_type": "adate",
+            "_branch_label_enclosing_screen": "survey/_screen3",
             "promptIdx": 1
           },
           {
@@ -2397,11 +2478,11 @@
                 }
               }
             },
-            "_row_num": 6,
-            "__rowNum__": 5,
+            "_row_num": 7,
+            "__rowNum__": 6,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen2",
+            "_branch_label_enclosing_screen": "survey/_screen3",
             "promptIdx": 2
           },
           {
@@ -2415,450 +2496,23 @@
                 }
               }
             },
-            "_row_num": 8,
-            "__rowNum__": 7,
+            "_row_num": 9,
+            "__rowNum__": 8,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen2",
+            "_branch_label_enclosing_screen": "survey/_screen3",
             "promptIdx": 3
           },
           {
             "type": "async_assign_date",
             "values_list": "linked_visitdate",
             "name": "CONT",
-            "_row_num": 10,
-            "__rowNum__": 9,
+            "_row_num": 11,
+            "__rowNum__": 10,
             "_token_type": "prompt",
             "_type": "async_assign_date",
-            "_branch_label_enclosing_screen": "survey/_screen2",
+            "_branch_label_enclosing_screen": "survey/_screen3",
             "promptIdx": 4
-          },
-          {
-            "type": "select_one",
-            "values_list": "YesNoU",
-            "name": "TENDAYN",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Did the child sleep under a bednet last night?",
-                  "default": "Dormir na tenda ontem?"
-                }
-              }
-            },
-            "_row_num": 15,
-            "__rowNum__": 14,
-            "_token_type": "prompt",
-            "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen14",
-            "promptIdx": 5
-          },
-          {
-            "type": "select_one",
-            "values_list": "bednettime",
-            "name": "TENDA",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Period using bednet",
-                  "default": "Todo tempo?"
-                }
-              }
-            },
-            "_row_num": 16,
-            "__rowNum__": 15,
-            "_token_type": "prompt",
-            "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen14",
-            "promptIdx": 6
-          },
-          {
-            "type": "select_one",
-            "values_list": "bednet",
-            "name": "TENDATIPO",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Type of bednet",
-                  "default": "Qual tipo?"
-                }
-              }
-            },
-            "_row_num": 18,
-            "__rowNum__": 17,
-            "_token_type": "prompt",
-            "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen14",
-            "promptIdx": 7
-          },
-          {
-            "type": "select_one",
-            "values_list": "YesNoU",
-            "name": "COMSUP",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Does the child recieve supplementary foods?",
-                  "default": "Does the child recieve supplementary foods?"
-                }
-              }
-            },
-            "_row_num": 25,
-            "__rowNum__": 24,
-            "_token_type": "prompt",
-            "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen24",
-            "promptIdx": 8
-          },
-          {
-            "type": "custom_date",
-            "name": "DACOMSUP",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Date of starting supplementary feeding",
-                  "default": "Date of starting supplementary feeding"
-                }
-              }
-            },
-            "_row_num": 27,
-            "__rowNum__": 26,
-            "_token_type": "prompt",
-            "_type": "custom_date",
-            "_branch_label_enclosing_screen": "survey/_screen24",
-            "promptIdx": 9
-          },
-          {
-            "type": "integer",
-            "name": "IDCOMSUP",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Age of starting supplementary feeding",
-                  "default": "Age of starting supplementary feeding"
-                }
-              }
-            },
-            "_row_num": 28,
-            "__rowNum__": 27,
-            "_token_type": "prompt",
-            "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen24",
-            "promptIdx": 10
-          },
-          {
-            "type": "select_one",
-            "values_list": "YesNoU",
-            "name": "PARMA",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Has the child stopped breastfeeding?",
-                  "default": "Has the child stopped breastfeeding?"
-                }
-              }
-            },
-            "_row_num": 36,
-            "__rowNum__": 35,
-            "_token_type": "prompt",
-            "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen35",
-            "promptIdx": 11
-          },
-          {
-            "type": "custom_date",
-            "name": "DAPARMA",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Date of stopping breastfeeding",
-                  "default": "Date of stopping breastfeeding"
-                }
-              }
-            },
-            "_row_num": 38,
-            "__rowNum__": 37,
-            "_token_type": "prompt",
-            "_type": "custom_date",
-            "_branch_label_enclosing_screen": "survey/_screen35",
-            "promptIdx": 12
-          },
-          {
-            "type": "integer",
-            "name": "IDPARMA",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Age of stopping breastfeeding",
-                  "default": "Age of stopping breastfeeding"
-                }
-              }
-            },
-            "_row_num": 39,
-            "__rowNum__": 38,
-            "_token_type": "prompt",
-            "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen35",
-            "promptIdx": 13
-          },
-          {
-            "type": "select_one",
-            "values_list": "YesNoU",
-            "name": "PORCA",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Are pigs living in the house?",
-                  "default": "Are pigs living in the house?"
-                }
-              }
-            },
-            "_row_num": 46,
-            "__rowNum__": 45,
-            "_token_type": "prompt",
-            "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen45",
-            "promptIdx": 14
-          },
-          {
-            "type": "select_one",
-            "values_list": "YesNoU",
-            "name": "PORMO",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Are there pigs living in the compound?",
-                  "default": "Are there pigs living in the compound?"
-                }
-              }
-            },
-            "_row_num": 47,
-            "__rowNum__": 46,
-            "_token_type": "prompt",
-            "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen45",
-            "promptIdx": 15
-          },
-          {
-            "type": "select_one",
-            "values_list": "YesNoU",
-            "name": "MOMA",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Is/was the child living with their mother?",
-                  "default": "Is/was the child living with their mother?"
-                }
-              }
-            },
-            "_row_num": 52,
-            "__rowNum__": 51,
-            "_token_type": "prompt",
-            "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen51",
-            "promptIdx": 16
-          },
-          {
-            "type": "custom_date",
-            "name": "DASEP",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Date of separation from mother",
-                  "default": "Date of separation from mother"
-                }
-              }
-            },
-            "_row_num": 54,
-            "__rowNum__": 53,
-            "_token_type": "prompt",
-            "_type": "custom_date",
-            "_branch_label_enclosing_screen": "survey/_screen51",
-            "promptIdx": 17
-          },
-          {
-            "type": "integer",
-            "name": "IDSEP",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Age of separation from mother",
-                  "default": "Age of separation from mother"
-                }
-              }
-            },
-            "_row_num": 55,
-            "__rowNum__": 54,
-            "_token_type": "prompt",
-            "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen51",
-            "promptIdx": 18
-          },
-          {
-            "type": "text",
-            "name": "CAUSASEP",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Cause of separation from the mother",
-                  "default": "Cause of separation from the mother"
-                }
-              }
-            },
-            "_row_num": 56,
-            "__rowNum__": 55,
-            "_token_type": "prompt",
-            "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen51",
-            "promptIdx": 19
-          },
-          {
-            "type": "select_one",
-            "values_list": "YesNoU",
-            "name": "HOSP",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Has the child been amitted to the hostpital since last visist?",
-                  "default": "Has the child been amitted to the hostpital since last visist?"
-                }
-              }
-            },
-            "_row_num": 61,
-            "__rowNum__": 60,
-            "_token_type": "prompt",
-            "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen60",
-            "promptIdx": 20
-          },
-          {
-            "type": "integer",
-            "name": "BRACOCRI",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "What are the childs MUAC Mesurements in MM",
-                  "default": "What are the childs MUAC Mesurements in MM"
-                }
-              }
-            },
-            "_row_num": 65,
-            "__rowNum__": 64,
-            "_token_type": "prompt",
-            "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen64",
-            "promptIdx": 21
-          },
-          {
-            "type": "select_one",
-            "values_list": "Scar",
-            "name": "CICBCGN",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Does the child have a BSG scar?",
-                  "default": "Does the child have a BSG scar?"
-                }
-              }
-            },
-            "_row_num": 68,
-            "__rowNum__": 67,
-            "_token_type": "prompt",
-            "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen67",
-            "promptIdx": 22
-          },
-          {
-            "type": "integer",
-            "name": "CICBCGV",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Vertical measurement of the scar in MM",
-                  "default": "Vertical measurement of the scar in MM"
-                }
-              }
-            },
-            "_row_num": 72,
-            "__rowNum__": 71,
-            "_token_type": "prompt",
-            "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen71",
-            "promptIdx": 23
-          },
-          {
-            "type": "integer",
-            "name": "CICBCGH",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Horizontal measurement of the scar in MM",
-                  "default": "Horizontal measurement of the scar in MM"
-                }
-              }
-            },
-            "_row_num": 73,
-            "__rowNum__": 72,
-            "_token_type": "prompt",
-            "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen71",
-            "promptIdx": 24
-          },
-          {
-            "type": "select_one",
-            "values_list": "YesNoU",
-            "name": "LINFADENOP",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Limphadenopaty",
-                  "default": "Limphadenopaty"
-                }
-              }
-            },
-            "_row_num": 79,
-            "__rowNum__": 78,
-            "_token_type": "prompt",
-            "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen78",
-            "promptIdx": 25
-          },
-          {
-            "type": "select_one",
-            "values_list": "YesNoU",
-            "name": "LINFADESUP",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Suppurative limfadenopaty",
-                  "default": "Suppurative limfadenopaty"
-                }
-              }
-            },
-            "_row_num": 81,
-            "__rowNum__": 80,
-            "_token_type": "prompt",
-            "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen78",
-            "promptIdx": 26
-          },
-          {
-            "type": "select_one",
-            "values_list": "YesNoU",
-            "name": "PASSARAMPO",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "Has the child had measles",
-                  "default": "Has the child had measles"
-                }
-              }
-            },
-            "_row_num": 85,
-            "__rowNum__": 84,
-            "_token_type": "prompt",
-            "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen84",
-            "promptIdx": 27
           },
           {
             "type": "select_one",
@@ -2872,12 +2526,12 @@
                 }
               }
             },
-            "_row_num": 89,
-            "__rowNum__": 88,
+            "_row_num": 15,
+            "__rowNum__": 14,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen88",
-            "promptIdx": 28
+            "_branch_label_enclosing_screen": "survey/_screen14",
+            "promptIdx": 5
           },
           {
             "type": "note",
@@ -2889,21 +2543,448 @@
                 }
               }
             },
-            "_row_num": 93,
-            "__rowNum__": 92,
+            "_row_num": 19,
+            "__rowNum__": 18,
             "_token_type": "prompt",
             "_type": "note",
-            "_branch_label_enclosing_screen": "survey/_screen92",
-            "promptIdx": 29
+            "_branch_label_enclosing_screen": "survey/_screen18",
+            "promptIdx": 6
           },
           {
             "type": "linked_table",
             "values_list": "vac",
+            "_row_num": 20,
+            "__rowNum__": 19,
+            "_token_type": "prompt",
+            "_type": "linked_table",
+            "_branch_label_enclosing_screen": "survey/_screen18",
+            "promptIdx": 7
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "TENDAYN",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Did the child sleep under a bednet last night?",
+                  "default": "Dormir na tenda ontem?"
+                }
+              }
+            },
+            "_row_num": 24,
+            "__rowNum__": 23,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen23",
+            "promptIdx": 8
+          },
+          {
+            "type": "select_one",
+            "values_list": "bednettime",
+            "name": "TENDA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Period using bednet",
+                  "default": "Todo tempo?"
+                }
+              }
+            },
+            "_row_num": 25,
+            "__rowNum__": 24,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen23",
+            "promptIdx": 9
+          },
+          {
+            "type": "select_one",
+            "values_list": "bednet",
+            "name": "TENDATIPO",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Type of bednet",
+                  "default": "Qual tipo?"
+                }
+              }
+            },
+            "_row_num": 27,
+            "__rowNum__": 26,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen23",
+            "promptIdx": 10
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "COMSUP",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Does the child recieve supplementary foods?",
+                  "default": "Does the child recieve supplementary foods?"
+                }
+              }
+            },
+            "_row_num": 34,
+            "__rowNum__": 33,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen33",
+            "promptIdx": 11
+          },
+          {
+            "type": "adate",
+            "name": "DACOMSUP",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Date of starting supplementary feeding",
+                  "default": "Date of starting supplementary feeding"
+                }
+              }
+            },
+            "_row_num": 36,
+            "__rowNum__": 35,
+            "_token_type": "prompt",
+            "_type": "adate",
+            "_branch_label_enclosing_screen": "survey/_screen33",
+            "promptIdx": 12
+          },
+          {
+            "type": "integer",
+            "name": "IDCOMSUP",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Age of starting supplementary feeding",
+                  "default": "Age of starting supplementary feeding"
+                }
+              }
+            },
+            "_row_num": 37,
+            "__rowNum__": 36,
+            "_token_type": "prompt",
+            "_type": "integer",
+            "_branch_label_enclosing_screen": "survey/_screen33",
+            "promptIdx": 13
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "PARMA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Has the child stopped breastfeeding?",
+                  "default": "Has the child stopped breastfeeding?"
+                }
+              }
+            },
+            "_row_num": 45,
+            "__rowNum__": 44,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen44",
+            "promptIdx": 14
+          },
+          {
+            "type": "adate",
+            "name": "DAPARMA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Date of stopping breastfeeding",
+                  "default": "Date of stopping breastfeeding"
+                }
+              }
+            },
+            "_row_num": 47,
+            "__rowNum__": 46,
+            "_token_type": "prompt",
+            "_type": "adate",
+            "_branch_label_enclosing_screen": "survey/_screen44",
+            "promptIdx": 15
+          },
+          {
+            "type": "integer",
+            "name": "IDPARMA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Age of stopping breastfeeding",
+                  "default": "Age of stopping breastfeeding"
+                }
+              }
+            },
+            "_row_num": 48,
+            "__rowNum__": 47,
+            "_token_type": "prompt",
+            "_type": "integer",
+            "_branch_label_enclosing_screen": "survey/_screen44",
+            "promptIdx": 16
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "PORCA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Are pigs living in the house?",
+                  "default": "Are pigs living in the house?"
+                }
+              }
+            },
+            "_row_num": 55,
+            "__rowNum__": 54,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen54",
+            "promptIdx": 17
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "PORMO",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Are there pigs living in the compound?",
+                  "default": "Are there pigs living in the compound?"
+                }
+              }
+            },
+            "_row_num": 56,
+            "__rowNum__": 55,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen54",
+            "promptIdx": 18
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "MOMA",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Is/was the child living with their mother?",
+                  "default": "Is/was the child living with their mother?"
+                }
+              }
+            },
+            "_row_num": 61,
+            "__rowNum__": 60,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen60",
+            "promptIdx": 19
+          },
+          {
+            "type": "adate",
+            "name": "DASEP",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Date of separation from mother",
+                  "default": "Date of separation from mother"
+                }
+              }
+            },
+            "_row_num": 63,
+            "__rowNum__": 62,
+            "_token_type": "prompt",
+            "_type": "adate",
+            "_branch_label_enclosing_screen": "survey/_screen60",
+            "promptIdx": 20
+          },
+          {
+            "type": "integer",
+            "name": "IDSEP",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Age of separation from mother",
+                  "default": "Age of separation from mother"
+                }
+              }
+            },
+            "_row_num": 64,
+            "__rowNum__": 63,
+            "_token_type": "prompt",
+            "_type": "integer",
+            "_branch_label_enclosing_screen": "survey/_screen60",
+            "promptIdx": 21
+          },
+          {
+            "type": "text",
+            "name": "CAUSASEP",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Cause of separation from the mother",
+                  "default": "Cause of separation from the mother"
+                }
+              }
+            },
+            "_row_num": 65,
+            "__rowNum__": 64,
+            "_token_type": "prompt",
+            "_type": "text",
+            "_branch_label_enclosing_screen": "survey/_screen60",
+            "promptIdx": 22
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "HOSP",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Has the child been amitted to the hostpital since last visist?",
+                  "default": "Has the child been amitted to the hostpital since last visist?"
+                }
+              }
+            },
+            "_row_num": 70,
+            "__rowNum__": 69,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen69",
+            "promptIdx": 23
+          },
+          {
+            "type": "integer",
+            "name": "BRACOCRI",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "What are the childs MUAC Mesurements in MM",
+                  "default": "What are the childs MUAC Mesurements in MM"
+                }
+              }
+            },
+            "_row_num": 74,
+            "__rowNum__": 73,
+            "_token_type": "prompt",
+            "_type": "integer",
+            "_branch_label_enclosing_screen": "survey/_screen73",
+            "promptIdx": 24
+          },
+          {
+            "type": "select_one",
+            "values_list": "Scar",
+            "name": "CICBCGN",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Does the child have a BSG scar?",
+                  "default": "Does the child have a BSG scar?"
+                }
+              }
+            },
+            "_row_num": 77,
+            "__rowNum__": 76,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen76",
+            "promptIdx": 25
+          },
+          {
+            "type": "integer",
+            "name": "CICBCGV",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Vertical measurement of the scar in MM",
+                  "default": "Vertical measurement of the scar in MM"
+                }
+              }
+            },
+            "_row_num": 81,
+            "__rowNum__": 80,
+            "_token_type": "prompt",
+            "_type": "integer",
+            "_branch_label_enclosing_screen": "survey/_screen80",
+            "promptIdx": 26
+          },
+          {
+            "type": "integer",
+            "name": "CICBCGH",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Horizontal measurement of the scar in MM",
+                  "default": "Horizontal measurement of the scar in MM"
+                }
+              }
+            },
+            "_row_num": 82,
+            "__rowNum__": 81,
+            "_token_type": "prompt",
+            "_type": "integer",
+            "_branch_label_enclosing_screen": "survey/_screen80",
+            "promptIdx": 27
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "LINFADENOP",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Limphadenopaty",
+                  "default": "Limphadenopaty"
+                }
+              }
+            },
+            "_row_num": 88,
+            "__rowNum__": 87,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen87",
+            "promptIdx": 28
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "LINFADESUP",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Suppurative limfadenopaty",
+                  "default": "Suppurative limfadenopaty"
+                }
+              }
+            },
+            "_row_num": 90,
+            "__rowNum__": 89,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen87",
+            "promptIdx": 29
+          },
+          {
+            "type": "select_one",
+            "values_list": "YesNoU",
+            "name": "PASSARAMPO",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Has the child had measles",
+                  "default": "Has the child had measles"
+                }
+              }
+            },
             "_row_num": 94,
             "__rowNum__": 93,
             "_token_type": "prompt",
-            "_type": "linked_table",
-            "_branch_label_enclosing_screen": "survey/_screen92",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen93",
             "promptIdx": 30
           },
           {
@@ -2921,33 +3002,17 @@
         "operations": [
           {
             "clause": "begin screen",
-            "_row_num": 2,
-            "__rowNum__": 1,
+            "_row_num": 3,
+            "__rowNum__": 2,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 12,
-              "__rowNum__": 11,
+              "_row_num": 13,
+              "__rowNum__": 12,
               "_token_type": "end_screen"
             },
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\nif (data('PRES') ==  '2' || data('PRES') ==  '3') {\nactivePromptIndicies.push(1);\nactivePromptIndicies.push(2);\nif (data('PRES') ==  '2') {\nactivePromptIndicies.push(3);\n}\nactivePromptIndicies.push(4);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 0
-          },
-          {
-            "clause": "if",
-            "condition": "data('PRES') !='2' && data('PRES') !='3'",
-            "_row_num": 13,
-            "__rowNum__": 12,
-            "_token_type": "goto_label",
-            "_branch_label": "_then13",
-            "operationIdx": 1
-          },
-          {
-            "clause": "end if",
-            "_token_type": "goto_label",
-            "_branch_label": "_else21",
-            "_row_num": 21,
-            "operationIdx": 2
           },
           {
             "clause": "begin screen",
@@ -2956,212 +3021,235 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 20,
-              "__rowNum__": 19,
+              "_row_num": 16,
+              "__rowNum__": 15,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\nif (data('TENDAYN') != '2' || data('TENDA') !=3) {\nactivePromptIndicies.push(7);\n}\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 3
-          },
-          {
-            "clause": "end if",
-            "_token_type": "goto_label",
-            "_branch_label": "_endif21",
-            "_row_num": 21,
-            "operationIdx": 4
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(5);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 1
           },
           {
             "clause": "if",
-            "condition": "data('comsup') != '1'",
-            "_row_num": 22,
-            "__rowNum__": 21,
+            "condition": "data('CARTVAC') == 'VIC'",
+            "_row_num": 17,
+            "__rowNum__": 16,
             "_token_type": "goto_label",
-            "_branch_label": "_then22",
-            "operationIdx": 5
+            "_branch_label": "_then17",
+            "operationIdx": 2
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else32",
-            "_row_num": 32,
+            "_branch_label": "_else22",
+            "_row_num": 22,
+            "operationIdx": 3
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 18,
+            "__rowNum__": 17,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 21,
+              "__rowNum__": 20,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(6);\nactivePromptIndicies.push(7);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 4
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif22",
+            "_row_num": 22,
+            "operationIdx": 5
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 23,
+            "__rowNum__": 22,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 29,
+              "__rowNum__": 28,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(8);\nactivePromptIndicies.push(9);\nif (data('TENDAYN') != '2' || data('TENDA') !=3) {\nactivePromptIndicies.push(10);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 6
           },
           {
             "clause": "if",
-            "condition": "data('PRES') !='2' && data('PRES') !='3'",
-            "_row_num": 23,
-            "__rowNum__": 22,
+            "condition": "data('comsup') != '1'",
+            "_row_num": 31,
+            "__rowNum__": 30,
             "_token_type": "goto_label",
-            "_branch_label": "_then23",
+            "_branch_label": "_then31",
             "operationIdx": 7
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else31",
-            "_row_num": 31,
+            "_branch_label": "_else41",
+            "_row_num": 41,
             "operationIdx": 8
           },
           {
-            "clause": "begin screen",
-            "_row_num": 24,
-            "__rowNum__": 23,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 30,
-              "__rowNum__": 29,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(8);\nif (data('COMSUP') == '1') {\nactivePromptIndicies.push(9);\nactivePromptIndicies.push(10);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "clause": "if",
+            "condition": "data('PRES') !='2' && data('PRES') !='3'",
+            "_row_num": 32,
+            "__rowNum__": 31,
+            "_token_type": "goto_label",
+            "_branch_label": "_then32",
             "operationIdx": 9
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif31",
-            "_row_num": 31,
+            "_branch_label": "_else40",
+            "_row_num": 40,
             "operationIdx": 10
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 33,
+            "__rowNum__": 32,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 39,
+              "__rowNum__": 38,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(11);\nif (data('COMSUP') == '1') {\nactivePromptIndicies.push(12);\nactivePromptIndicies.push(13);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 11
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif32",
-            "_row_num": 32,
-            "operationIdx": 11
-          },
-          {
-            "clause": "if",
-            "condition": "data('parma') != '1'",
-            "_row_num": 33,
-            "__rowNum__": 32,
-            "_token_type": "goto_label",
-            "_branch_label": "_then33",
+            "_branch_label": "_endif40",
+            "_row_num": 40,
             "operationIdx": 12
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else43",
-            "_row_num": 43,
+            "_branch_label": "_endif41",
+            "_row_num": 41,
             "operationIdx": 13
           },
           {
             "clause": "if",
-            "condition": "data('PRES') !='2' && data('PRES') !='3'",
-            "_row_num": 34,
-            "__rowNum__": 33,
+            "condition": "data('parma') != '1'",
+            "_row_num": 42,
+            "__rowNum__": 41,
             "_token_type": "goto_label",
-            "_branch_label": "_then34",
+            "_branch_label": "_then42",
             "operationIdx": 14
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else42",
-            "_row_num": 42,
+            "_branch_label": "_else52",
+            "_row_num": 52,
             "operationIdx": 15
           },
           {
-            "clause": "begin screen",
-            "_row_num": 35,
-            "__rowNum__": 34,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 41,
-              "__rowNum__": 40,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(11);\nif (data('PARMA') == '1') {\nactivePromptIndicies.push(12);\nactivePromptIndicies.push(13);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "clause": "if",
+            "condition": "data('PRES') !='2' && data('PRES') !='3'",
+            "_row_num": 43,
+            "__rowNum__": 42,
+            "_token_type": "goto_label",
+            "_branch_label": "_then43",
             "operationIdx": 16
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif42",
-            "_row_num": 42,
+            "_branch_label": "_else51",
+            "_row_num": 51,
             "operationIdx": 17
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 44,
+            "__rowNum__": 43,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 50,
+              "__rowNum__": 49,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(14);\nif (data('PARMA') == '1') {\nactivePromptIndicies.push(15);\nactivePromptIndicies.push(16);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 18
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif43",
-            "_row_num": 43,
-            "operationIdx": 18
-          },
-          {
-            "clause": "if",
-            "condition": "data('PRES') !='2' && data('PRES') !='3'",
-            "_row_num": 44,
-            "__rowNum__": 43,
-            "_token_type": "goto_label",
-            "_branch_label": "_then44",
+            "_branch_label": "_endif51",
+            "_row_num": 51,
             "operationIdx": 19
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else49",
-            "_row_num": 49,
+            "_branch_label": "_endif52",
+            "_row_num": 52,
             "operationIdx": 20
           },
           {
-            "clause": "begin screen",
-            "_row_num": 45,
-            "__rowNum__": 44,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 48,
-              "__rowNum__": 47,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(14);\nactivePromptIndicies.push(15);\n\nreturn activePromptIndicies;\n}\n",
+            "clause": "if",
+            "condition": "data('PRES') !='2' && data('PRES') !='3'",
+            "_row_num": 53,
+            "__rowNum__": 52,
+            "_token_type": "goto_label",
+            "_branch_label": "_then53",
             "operationIdx": 21
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif49",
-            "_row_num": 49,
+            "_branch_label": "_else58",
+            "_row_num": 58,
             "operationIdx": 22
           },
           {
-            "clause": "if",
-            "condition": "data('moma') != '2'",
-            "_row_num": 50,
-            "__rowNum__": 49,
-            "_token_type": "goto_label",
-            "_branch_label": "_then50",
+            "clause": "begin screen",
+            "_row_num": 54,
+            "__rowNum__": 53,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 57,
+              "__rowNum__": 56,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(17);\nactivePromptIndicies.push(18);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 23
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else59",
-            "_row_num": 59,
+            "_branch_label": "_endif58",
+            "_row_num": 58,
             "operationIdx": 24
           },
           {
-            "clause": "begin screen",
-            "_row_num": 51,
-            "__rowNum__": 50,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 58,
-              "__rowNum__": 57,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(16);\nif (data('MOMA') == '2') {\nactivePromptIndicies.push(17);\nactivePromptIndicies.push(18);\nactivePromptIndicies.push(19);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "clause": "if",
+            "condition": "data('moma') != '2'",
+            "_row_num": 59,
+            "__rowNum__": 58,
+            "_token_type": "goto_label",
+            "_branch_label": "_then59",
             "operationIdx": 25
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif59",
-            "_row_num": 59,
+            "_branch_label": "_else68",
+            "_row_num": 68,
             "operationIdx": 26
           },
           {
@@ -3171,121 +3259,98 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 62,
-              "__rowNum__": 61,
+              "_row_num": 67,
+              "__rowNum__": 66,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(20);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(19);\nif (data('MOMA') == '2') {\nactivePromptIndicies.push(20);\nactivePromptIndicies.push(21);\nactivePromptIndicies.push(22);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 27
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif68",
+            "_row_num": 68,
+            "operationIdx": 28
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 69,
+            "__rowNum__": 68,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 71,
+              "__rowNum__": 70,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(23);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 29
           },
           {
             "clause": "if",
             "condition": "data('PRES') ==  '1'",
-            "_row_num": 63,
-            "__rowNum__": 62,
+            "_row_num": 72,
+            "__rowNum__": 71,
             "_token_type": "goto_label",
-            "_branch_label": "_then63",
-            "operationIdx": 28
+            "_branch_label": "_then72",
+            "operationIdx": 30
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else76",
-            "_row_num": 76,
-            "operationIdx": 29
-          },
-          {
-            "clause": "begin screen",
-            "_row_num": 64,
-            "__rowNum__": 63,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 66,
-              "__rowNum__": 65,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(21);\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 30
-          },
-          {
-            "clause": "begin screen",
-            "_row_num": 67,
-            "__rowNum__": 66,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 69,
-              "__rowNum__": 68,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(22);\n\nreturn activePromptIndicies;\n}\n",
+            "_branch_label": "_else85",
+            "_row_num": 85,
             "operationIdx": 31
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 73,
+            "__rowNum__": 72,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 75,
+              "__rowNum__": 74,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(24);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 32
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 76,
+            "__rowNum__": 75,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 78,
+              "__rowNum__": 77,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(25);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 33
           },
           {
             "clause": "if",
             "condition": "data('CICBCGN') ==  '1'",
-            "_row_num": 70,
-            "__rowNum__": 69,
+            "_row_num": 79,
+            "__rowNum__": 78,
             "_token_type": "goto_label",
-            "_branch_label": "_then70",
-            "operationIdx": 32
-          },
-          {
-            "clause": "end if",
-            "_token_type": "goto_label",
-            "_branch_label": "_else75",
-            "_row_num": 75,
-            "operationIdx": 33
-          },
-          {
-            "clause": "begin screen",
-            "_row_num": 71,
-            "__rowNum__": 70,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 74,
-              "__rowNum__": 73,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(23);\nactivePromptIndicies.push(24);\n\nreturn activePromptIndicies;\n}\n",
+            "_branch_label": "_then79",
             "operationIdx": 34
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif75",
-            "_row_num": 75,
+            "_branch_label": "_else84",
+            "_row_num": 84,
             "operationIdx": 35
           },
           {
-            "clause": "end if",
-            "_token_type": "goto_label",
-            "_branch_label": "_endif76",
-            "_row_num": 76,
-            "operationIdx": 36
-          },
-          {
-            "clause": "if",
-            "condition": "data('PRES') !='2' && data('PRES') !='3'",
-            "_row_num": 77,
-            "__rowNum__": 76,
-            "_token_type": "goto_label",
-            "_branch_label": "_then77",
-            "operationIdx": 37
-          },
-          {
-            "clause": "end if",
-            "_token_type": "goto_label",
-            "_branch_label": "_else87",
-            "_row_num": 87,
-            "operationIdx": 38
-          },
-          {
             "clause": "begin screen",
-            "_row_num": 78,
-            "__rowNum__": 77,
+            "_row_num": 80,
+            "__rowNum__": 79,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
@@ -3293,64 +3358,57 @@
               "__rowNum__": 82,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(25);\nif (data('LINFADENOP') == '1') {\nactivePromptIndicies.push(26);\n}\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 39
-          },
-          {
-            "clause": "begin screen",
-            "_row_num": 84,
-            "__rowNum__": 83,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 86,
-              "__rowNum__": 85,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(27);\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 40
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(26);\nactivePromptIndicies.push(27);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 36
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif87",
-            "_row_num": 87,
-            "operationIdx": 41
+            "_branch_label": "_endif84",
+            "_row_num": 84,
+            "operationIdx": 37
           },
           {
-            "clause": "begin screen",
-            "_row_num": 88,
-            "__rowNum__": 87,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 90,
-              "__rowNum__": 89,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(28);\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 42
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif85",
+            "_row_num": 85,
+            "operationIdx": 38
           },
           {
             "clause": "if",
-            "condition": "data('CARTVAC') == 'VIC'",
-            "_row_num": 91,
-            "__rowNum__": 90,
+            "condition": "data('PRES') !='2' && data('PRES') !='3'",
+            "_row_num": 86,
+            "__rowNum__": 85,
             "_token_type": "goto_label",
-            "_branch_label": "_then91",
-            "operationIdx": 43
+            "_branch_label": "_then86",
+            "operationIdx": 39
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
             "_branch_label": "_else96",
             "_row_num": 96,
-            "operationIdx": 44
+            "operationIdx": 40
           },
           {
             "clause": "begin screen",
-            "_row_num": 92,
-            "__rowNum__": 91,
+            "_row_num": 87,
+            "__rowNum__": 86,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 92,
+              "__rowNum__": 91,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(28);\nif (data('LINFADENOP') == '1') {\nactivePromptIndicies.push(29);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 41
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 93,
+            "__rowNum__": 92,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
@@ -3358,21 +3416,21 @@
               "__rowNum__": 94,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(29);\nactivePromptIndicies.push(30);\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 45
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(30);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 42
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
             "_branch_label": "_endif96",
             "_row_num": 96,
-            "operationIdx": 46
+            "operationIdx": 43
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
             "_row_num": 97,
-            "operationIdx": 47
+            "operationIdx": 44
           },
           {
             "_row_num": 97,
@@ -3381,65 +3439,62 @@
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 48
+            "operationIdx": 45
           },
           {
             "_token_type": "resume",
             "clause": "resume",
             "_row_num": 97,
-            "operationIdx": 49
+            "operationIdx": 46
           }
         ],
         "branch_label_map": {
-          "_screen2": 0,
-          "_then13": 3,
-          "_screen14": 3,
-          "_else21": 5,
-          "_endif21": 5,
-          "_then22": 7,
-          "_then23": 9,
-          "_screen24": 9,
-          "_else31": 11,
-          "_endif31": 11,
-          "_else32": 12,
-          "_endif32": 12,
-          "_then33": 14,
-          "_then34": 16,
-          "_screen35": 16,
-          "_else42": 18,
-          "_endif42": 18,
-          "_else43": 19,
-          "_endif43": 19,
-          "_then44": 21,
-          "_screen45": 21,
-          "_else49": 23,
-          "_endif49": 23,
-          "_then50": 25,
-          "_screen51": 25,
-          "_else59": 27,
-          "_endif59": 27,
+          "_screen3": 0,
+          "_screen14": 1,
+          "_then17": 4,
+          "_screen18": 4,
+          "_else22": 6,
+          "_endif22": 6,
+          "_screen23": 6,
+          "_then31": 9,
+          "_then32": 11,
+          "_screen33": 11,
+          "_else40": 13,
+          "_endif40": 13,
+          "_else41": 14,
+          "_endif41": 14,
+          "_then42": 16,
+          "_then43": 18,
+          "_screen44": 18,
+          "_else51": 20,
+          "_endif51": 20,
+          "_else52": 21,
+          "_endif52": 21,
+          "_then53": 23,
+          "_screen54": 23,
+          "_else58": 25,
+          "_endif58": 25,
+          "_then59": 27,
           "_screen60": 27,
-          "_then63": 30,
-          "_screen64": 30,
-          "_screen67": 31,
-          "_then70": 34,
-          "_screen71": 34,
-          "_else75": 36,
-          "_endif75": 36,
-          "_else76": 37,
-          "_endif76": 37,
-          "_then77": 39,
-          "_screen78": 39,
-          "_screen84": 40,
-          "_else87": 42,
-          "_endif87": 42,
-          "_screen88": 42,
-          "_then91": 45,
-          "_screen92": 45,
-          "_else96": 47,
-          "_endif96": 47,
-          "_contents": 48,
-          "_screen97": 48
+          "_else68": 29,
+          "_endif68": 29,
+          "_screen69": 29,
+          "_then72": 32,
+          "_screen73": 32,
+          "_screen76": 33,
+          "_then79": 36,
+          "_screen80": 36,
+          "_else84": 38,
+          "_endif84": 38,
+          "_else85": 39,
+          "_endif85": 39,
+          "_then86": 41,
+          "_screen87": 41,
+          "_screen93": 42,
+          "_else96": 44,
+          "_endif96": 44,
+          "_contents": 45,
+          "_screen97": 45
         }
       },
       "initial": {
@@ -3629,7 +3684,7 @@
         "valuesList": "visitstatus",
         "_defn": [
           {
-            "_row_num": 3,
+            "_row_num": 4,
             "section_name": "survey"
           },
           {
@@ -3644,15 +3699,15 @@
         "elementPath": "PRES"
       },
       "EXITDATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 5,
+            "_row_num": 6,
             "section_name": "survey"
           },
           {
@@ -3671,7 +3726,7 @@
         "valuesList": "precision",
         "_defn": [
           {
-            "_row_num": 6,
+            "_row_num": 7,
             "section_name": "survey"
           },
           {
@@ -3689,7 +3744,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 8,
+            "_row_num": 9,
             "section_name": "survey"
           },
           {
@@ -3708,7 +3763,7 @@
         "valuesList": "vcard",
         "_defn": [
           {
-            "_row_num": 89,
+            "_row_num": 15,
             "section_name": "survey"
           },
           {
@@ -3727,7 +3782,7 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 24,
             "section_name": "survey"
           },
           {
@@ -3746,7 +3801,7 @@
         "valuesList": "bednettime",
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 25,
             "section_name": "survey"
           },
           {
@@ -3765,7 +3820,7 @@
         "valuesList": "bednet",
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 27,
             "section_name": "survey"
           },
           {
@@ -3784,7 +3839,7 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 34,
             "section_name": "survey"
           },
           {
@@ -3798,9 +3853,13 @@
         "elementSet": "data",
         "elementPath": "COMSUP"
       },
-      "PARMA": {
+      "DACOMSUP": {
+        "prompt_type_name": "adate",
         "type": "string",
-        "valuesList": "YesNoU",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 36,
@@ -3812,21 +3871,99 @@
           }
         ],
         "isSessionVariable": false,
+        "elementKey": "DACOMSUP",
+        "elementName": "DACOMSUP",
+        "elementSet": "data",
+        "elementPath": "DACOMSUP"
+      },
+      "IDCOMSUP": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 37,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDCOMSUP",
+        "elementName": "IDCOMSUP",
+        "elementSet": "data",
+        "elementPath": "IDCOMSUP"
+      },
+      "PARMA": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 45,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 13,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
         "elementKey": "PARMA",
         "elementName": "PARMA",
         "elementSet": "data",
         "elementPath": "PARMA"
+      },
+      "DAPARMA": {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 47,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DAPARMA",
+        "elementName": "DAPARMA",
+        "elementSet": "data",
+        "elementPath": "DAPARMA"
+      },
+      "IDPARMA": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 48,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 15,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDPARMA",
+        "elementName": "IDPARMA",
+        "elementSet": "data",
+        "elementPath": "IDPARMA"
       },
       "PORCA": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 46,
+            "_row_num": 55,
             "section_name": "survey"
           },
           {
-            "_row_num": 12,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
@@ -3841,11 +3978,11 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 47,
+            "_row_num": 56,
             "section_name": "survey"
           },
           {
-            "_row_num": 13,
+            "_row_num": 17,
             "section_name": "model"
           }
         ],
@@ -3860,11 +3997,11 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 52,
+            "_row_num": 61,
             "section_name": "survey"
           },
           {
-            "_row_num": 14,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -3874,16 +4011,75 @@
         "elementSet": "data",
         "elementPath": "MOMA"
       },
+      "DASEP": {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
+        "_defn": [
+          {
+            "_row_num": 63,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 19,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DASEP",
+        "elementName": "DASEP",
+        "elementSet": "data",
+        "elementPath": "DASEP"
+      },
+      "IDSEP": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 64,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 20,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDSEP",
+        "elementName": "IDSEP",
+        "elementSet": "data",
+        "elementPath": "IDSEP"
+      },
+      "CAUSASEP": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 65,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CAUSASEP",
+        "elementName": "CAUSASEP",
+        "elementSet": "data",
+        "elementPath": "CAUSASEP"
+      },
       "HOSP": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 61,
+            "_row_num": 70,
             "section_name": "survey"
           },
           {
-            "_row_num": 15,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -3897,11 +4093,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 65,
+            "_row_num": 74,
             "section_name": "survey"
           },
           {
-            "_row_num": 16,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -3916,11 +4112,11 @@
         "valuesList": "Scar",
         "_defn": [
           {
-            "_row_num": 68,
+            "_row_num": 77,
             "section_name": "survey"
           },
           {
-            "_row_num": 17,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -3934,11 +4130,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 72,
+            "_row_num": 81,
             "section_name": "survey"
           },
           {
-            "_row_num": 18,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -3952,11 +4148,11 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 73,
+            "_row_num": 82,
             "section_name": "survey"
           },
           {
-            "_row_num": 19,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -3971,11 +4167,11 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 79,
+            "_row_num": 88,
             "section_name": "survey"
           },
           {
-            "_row_num": 20,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -3990,11 +4186,11 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 81,
+            "_row_num": 90,
             "section_name": "survey"
           },
           {
-            "_row_num": 21,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -4009,11 +4205,11 @@
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 85,
+            "_row_num": 94,
             "section_name": "survey"
           },
           {
-            "_row_num": 22,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -4024,13 +4220,13 @@
         "elementPath": "PASSARAMPO"
       },
       "REGID": {
+        "type": "string",
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
-        "type": "test",
         "isSessionVariable": false,
         "elementKey": "REGID",
         "elementName": "REGID",
@@ -4041,7 +4237,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -4059,11 +4255,11 @@
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 10,
+            "_row_num": 11,
             "section_name": "survey"
           },
           {
-            "_row_num": 26,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -4077,7 +4273,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -4091,7 +4287,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 28,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -4105,7 +4301,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 29,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -4114,106 +4310,6 @@
         "elementName": "moma",
         "elementSet": "data",
         "elementPath": "moma"
-      },
-      "DACOMSUP": {
-        "_defn": [
-          {
-            "_row_num": 27,
-            "section_name": "survey"
-          }
-        ],
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "elementKey": "DACOMSUP",
-        "elementName": "DACOMSUP",
-        "elementSet": "data",
-        "elementPath": "DACOMSUP"
-      },
-      "IDCOMSUP": {
-        "_defn": [
-          {
-            "_row_num": 28,
-            "section_name": "survey"
-          }
-        ],
-        "type": "integer",
-        "elementKey": "IDCOMSUP",
-        "elementName": "IDCOMSUP",
-        "elementSet": "data",
-        "elementPath": "IDCOMSUP"
-      },
-      "DAPARMA": {
-        "_defn": [
-          {
-            "_row_num": 38,
-            "section_name": "survey"
-          }
-        ],
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "elementKey": "DAPARMA",
-        "elementName": "DAPARMA",
-        "elementSet": "data",
-        "elementPath": "DAPARMA"
-      },
-      "IDPARMA": {
-        "_defn": [
-          {
-            "_row_num": 39,
-            "section_name": "survey"
-          }
-        ],
-        "type": "integer",
-        "elementKey": "IDPARMA",
-        "elementName": "IDPARMA",
-        "elementSet": "data",
-        "elementPath": "IDPARMA"
-      },
-      "DASEP": {
-        "_defn": [
-          {
-            "_row_num": 54,
-            "section_name": "survey"
-          }
-        ],
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "elementKey": "DASEP",
-        "elementName": "DASEP",
-        "elementSet": "data",
-        "elementPath": "DASEP"
-      },
-      "IDSEP": {
-        "_defn": [
-          {
-            "_row_num": 55,
-            "section_name": "survey"
-          }
-        ],
-        "type": "integer",
-        "elementKey": "IDSEP",
-        "elementName": "IDSEP",
-        "elementSet": "data",
-        "elementPath": "IDSEP"
-      },
-      "CAUSASEP": {
-        "_defn": [
-          {
-            "_row_num": 56,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "elementKey": "CAUSASEP",
-        "elementName": "CAUSASEP",
-        "elementSet": "data",
-        "elementPath": "CAUSASEP"
       },
       "_id": {
         "type": "string",

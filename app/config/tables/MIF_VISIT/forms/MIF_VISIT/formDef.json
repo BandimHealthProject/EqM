@@ -69,7 +69,7 @@
         "_row_num": 2
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "CONT",
         "display": {
           "prompt": {
@@ -123,7 +123,7 @@
         "_row_num": 8
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "EXITDATA",
         "display": {
           "prompt": {
@@ -246,7 +246,7 @@
         "_row_num": 23
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "CONSENTDAT",
         "display": {
           "prompt": {
@@ -378,7 +378,7 @@
         "_row_num": 43
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "ABPARTDATA",
         "display": {
           "prompt": {
@@ -451,7 +451,7 @@
         "_row_num": 51
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "ABPARTNVDATA",
         "display": {
           "prompt": {
@@ -796,6 +796,13 @@
         "elementType": "date",
         "comment": "Makes the date widget DD/MM/YYYY",
         "_row_num": 2
+      },
+      {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3
       }
     ],
     "choices": [
@@ -1806,7 +1813,7 @@
       },
       {
         "name": "ABPARTDATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 3
       },
@@ -1818,7 +1825,7 @@
       },
       {
         "name": "ABPARTNVDATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 5
       },
@@ -1860,7 +1867,7 @@
       },
       {
         "name": "CONSENTDAT",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 12
       },
@@ -1884,7 +1891,7 @@
       },
       {
         "name": "CONT",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 16
       },
@@ -1914,7 +1921,7 @@
       },
       {
         "name": "EXITDATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 21
       },
@@ -1980,7 +1987,7 @@
       },
       {
         "name": "LASTVISIT",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 34
       }
@@ -3161,12 +3168,12 @@
         "elementKey": "ABPART"
       },
       "ABPARTDATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 44,
@@ -3197,12 +3204,12 @@
         "elementKey": "ABPARTNV"
       },
       "ABPARTNVDATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 52,
@@ -3313,12 +3320,12 @@
         "elementKey": "CESCO"
       },
       "CONSENTDAT": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 24,
@@ -3381,12 +3388,12 @@
         "elementKey": "CONSENTTYP"
       },
       "CONT": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 3,
@@ -3468,12 +3475,12 @@
         "elementKey": "EVITA2"
       },
       "EXITDATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 9,
@@ -3632,12 +3639,12 @@
         "elementKey": "REGID"
       },
       "LASTVISIT": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 34,
@@ -3674,7 +3681,7 @@
         "reachable_sections": {},
         "prompts": [
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "CONT",
             "display": {
               "prompt": {
@@ -3687,7 +3694,7 @@
             "_row_num": 3,
             "__rowNum__": 2,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen2",
             "promptIdx": 0
           },
@@ -3730,7 +3737,7 @@
             "promptIdx": 2
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "EXITDATA",
             "display": {
               "prompt": {
@@ -3743,7 +3750,7 @@
             "_row_num": 9,
             "__rowNum__": 8,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 3
           },
@@ -3842,7 +3849,7 @@
             "promptIdx": 8
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "CONSENTDAT",
             "display": {
               "prompt": {
@@ -3855,7 +3862,7 @@
             "_row_num": 24,
             "__rowNum__": 23,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen18",
             "promptIdx": 9
           },
@@ -3923,7 +3930,7 @@
             "promptIdx": 12
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "ABPARTDATA",
             "display": {
               "prompt": {
@@ -3936,7 +3943,7 @@
             "_row_num": 44,
             "__rowNum__": 43,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen43",
             "promptIdx": 13
           },
@@ -3998,7 +4005,7 @@
             "promptIdx": 16
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "ABPARTNVDATA",
             "display": {
               "prompt": {
@@ -4011,7 +4018,7 @@
             "_row_num": 52,
             "__rowNum__": 51,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen49",
             "promptIdx": 17
           },
@@ -4990,12 +4997,12 @@
         "elementPath": "ABPART"
       },
       "ABPARTDATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 44,
@@ -5032,12 +5039,12 @@
         "elementPath": "ABPARTNV"
       },
       "ABPARTNVDATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 52,
@@ -5169,12 +5176,12 @@
         "elementPath": "CESCO"
       },
       "CONSENTDAT": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 24,
@@ -5249,12 +5256,12 @@
         "elementPath": "CONSENTTYP"
       },
       "CONT": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 3,
@@ -5358,12 +5365,12 @@
         ]
       },
       "EXITDATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 9,
@@ -5555,12 +5562,12 @@
         "elementPath": "REGID"
       },
       "LASTVISIT": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 34,
