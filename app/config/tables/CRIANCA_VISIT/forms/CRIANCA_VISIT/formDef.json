@@ -607,7 +607,7 @@
             }
           }
         },
-        "constraint": "data('BRACOCRI') <='50' && data('BRACOCRI') >='342'",
+        "constraint": "data('BRACOCRI') >='50' && data('BRACOCRI') <='342'",
         "_row_num": 78
       },
       {
@@ -1339,7 +1339,7 @@
         "linked_form_id": "CRIANCA_FAL",
         "linked_table_id": "CRIANCA_FAL",
         "selection": "REGID = ?",
-        "selectionArgs": "[]",
+        "selectionArgs": "[data('REGID')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 8
@@ -2807,7 +2807,7 @@
         "linked_form_id": "CRIANCA_FAL",
         "linked_table_id": "CRIANCA_FAL",
         "selection": "REGID = ?",
-        "selectionArgs": "[]",
+        "selectionArgs": "[data('REGID')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 8
@@ -4162,7 +4162,7 @@
                 }
               }
             },
-            "constraint": "data('BRACOCRI') <='50' && data('BRACOCRI') >='342'",
+            "constraint": "data('BRACOCRI') >='50' && data('BRACOCRI') <='342'",
             "_row_num": 78,
             "__rowNum__": 77,
             "_token_type": "prompt",
