@@ -180,7 +180,7 @@
         "_row_num": 16
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC1DATA",
         "display": {
           "prompt": {
@@ -264,7 +264,7 @@
         "_row_num": 27
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC1DATA",
         "display": {
           "prompt": {
@@ -406,7 +406,7 @@
         "_row_num": 47
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC2DATA",
         "display": {
           "prompt": {
@@ -497,7 +497,7 @@
         "_row_num": 58
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC2DATA",
         "display": {
           "prompt": {
@@ -639,7 +639,7 @@
         "_row_num": 78
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC3DATA",
         "display": {
           "prompt": {
@@ -723,7 +723,7 @@
         "_row_num": 89
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC3DATA",
         "display": {
           "prompt": {
@@ -865,7 +865,7 @@
         "_row_num": 109
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC4DATA",
         "display": {
           "prompt": {
@@ -956,7 +956,7 @@
         "_row_num": 120
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC4DATA",
         "display": {
           "prompt": {
@@ -1098,7 +1098,7 @@
         "_row_num": 140
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC5DATA",
         "display": {
           "prompt": {
@@ -1182,7 +1182,7 @@
         "_row_num": 151
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC5DATA",
         "display": {
           "prompt": {
@@ -1324,7 +1324,7 @@
         "_row_num": 171
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC6DATA",
         "display": {
           "prompt": {
@@ -1415,7 +1415,7 @@
         "_row_num": 182
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC6DATA",
         "display": {
           "prompt": {
@@ -1557,7 +1557,7 @@
         "_row_num": 202
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC7DATA",
         "display": {
           "prompt": {
@@ -1641,7 +1641,7 @@
         "_row_num": 213
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC7DATA",
         "display": {
           "prompt": {
@@ -1783,7 +1783,7 @@
         "_row_num": 233
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC8DATA",
         "display": {
           "prompt": {
@@ -1874,7 +1874,7 @@
         "_row_num": 244
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC8DATA",
         "display": {
           "prompt": {
@@ -2016,7 +2016,7 @@
         "_row_num": 264
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC9DATA",
         "display": {
           "prompt": {
@@ -2100,7 +2100,7 @@
         "_row_num": 275
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC9DATA",
         "display": {
           "prompt": {
@@ -2242,7 +2242,7 @@
         "_row_num": 295
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC10DATA",
         "display": {
           "prompt": {
@@ -2333,7 +2333,7 @@
         "_row_num": 306
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC10DATA",
         "display": {
           "prompt": {
@@ -2475,7 +2475,7 @@
         "_row_num": 326
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC11DATA",
         "display": {
           "prompt": {
@@ -2559,7 +2559,7 @@
         "_row_num": 337
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC11DATA",
         "display": {
           "prompt": {
@@ -2701,7 +2701,7 @@
         "_row_num": 357
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC12DATA",
         "display": {
           "prompt": {
@@ -2792,7 +2792,7 @@
         "_row_num": 368
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC12DATA",
         "display": {
           "prompt": {
@@ -2934,7 +2934,7 @@
         "_row_num": 388
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC13DATA",
         "display": {
           "prompt": {
@@ -3018,7 +3018,7 @@
         "_row_num": 399
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC13DATA",
         "display": {
           "prompt": {
@@ -3160,7 +3160,7 @@
         "_row_num": 419
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC14DATA",
         "display": {
           "prompt": {
@@ -3251,7 +3251,7 @@
         "_row_num": 430
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC14DATA",
         "display": {
           "prompt": {
@@ -3393,7 +3393,7 @@
         "_row_num": 450
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC15DATA",
         "display": {
           "prompt": {
@@ -3477,7 +3477,7 @@
         "_row_num": 461
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC15DATA",
         "display": {
           "prompt": {
@@ -3619,7 +3619,7 @@
         "_row_num": 481
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC16DATA",
         "display": {
           "prompt": {
@@ -3710,7 +3710,7 @@
         "_row_num": 492
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC16DATA",
         "display": {
           "prompt": {
@@ -3852,7 +3852,7 @@
         "_row_num": 512
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC17DATA",
         "display": {
           "prompt": {
@@ -3936,7 +3936,7 @@
         "_row_num": 523
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC17DATA",
         "display": {
           "prompt": {
@@ -4078,7 +4078,7 @@
         "_row_num": 543
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC18DATA",
         "display": {
           "prompt": {
@@ -4169,7 +4169,7 @@
         "_row_num": 554
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC18DATA",
         "display": {
           "prompt": {
@@ -4311,7 +4311,7 @@
         "_row_num": 574
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC19DATA",
         "display": {
           "prompt": {
@@ -4395,7 +4395,7 @@
         "_row_num": 585
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC19DATA",
         "display": {
           "prompt": {
@@ -4537,7 +4537,7 @@
         "_row_num": 605
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC20DATA",
         "display": {
           "prompt": {
@@ -4628,7 +4628,7 @@
         "_row_num": 616
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "VAC20DATA",
         "display": {
           "prompt": {
@@ -5414,6 +5414,13 @@
         "elementType": "date",
         "comment": "Makes the date widget DD/MM/YYYY",
         "_row_num": 4
+      },
+      {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5
       }
     ],
     "choices": [
@@ -5765,121 +5772,121 @@
       },
       {
         "name": "VAC1DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 42
       },
       {
         "name": "VAC2DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 43
       },
       {
         "name": "VAC3DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 44
       },
       {
         "name": "VAC4DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 45
       },
       {
         "name": "VAC5DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 46
       },
       {
         "name": "VAC6DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 47
       },
       {
         "name": "VAC7DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 48
       },
       {
         "name": "VAC8DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 49
       },
       {
         "name": "VAC9DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 50
       },
       {
         "name": "VAC10DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 51
       },
       {
         "name": "VAC11DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 52
       },
       {
         "name": "VAC12DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 53
       },
       {
         "name": "VAC13DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 54
       },
       {
         "name": "VAC14DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 55
       },
       {
         "name": "VAC15DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 56
       },
       {
         "name": "VAC16DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 57
       },
       {
         "name": "VAC17DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 58
       },
       {
         "name": "VAC18DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 59
       },
       {
         "name": "VAC19DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 60
       },
       {
         "name": "VAC20DATA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 61
       },
@@ -6485,7 +6492,7 @@
       },
       {
         "name": "BCG",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 163
       },
@@ -6509,7 +6516,7 @@
       },
       {
         "name": "FEBAMAREL",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 167
       },
@@ -6533,7 +6540,7 @@
       },
       {
         "name": "PCV1",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 171
       },
@@ -6557,7 +6564,7 @@
       },
       {
         "name": "PCV2",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 175
       },
@@ -6581,7 +6588,7 @@
       },
       {
         "name": "PCV3",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 179
       },
@@ -6605,7 +6612,7 @@
       },
       {
         "name": "PENTA1",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 183
       },
@@ -6629,7 +6636,7 @@
       },
       {
         "name": "PENTA2",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 187
       },
@@ -6653,7 +6660,7 @@
       },
       {
         "name": "PENTA3",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 191
       },
@@ -6677,7 +6684,7 @@
       },
       {
         "name": "POLIO1",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 195
       },
@@ -6701,7 +6708,7 @@
       },
       {
         "name": "POLIO2",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 199
       },
@@ -6725,7 +6732,7 @@
       },
       {
         "name": "POLIO3",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 203
       },
@@ -6749,7 +6756,7 @@
       },
       {
         "name": "POLIONAS",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 207
       },
@@ -6773,7 +6780,7 @@
       },
       {
         "name": "ROX1",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 211
       },
@@ -6797,7 +6804,7 @@
       },
       {
         "name": "ROX2",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 215
       },
@@ -6821,7 +6828,7 @@
       },
       {
         "name": "SARAMPO1",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 219
       },
@@ -6869,7 +6876,7 @@
       },
       {
         "name": "VPI",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 227
       },
@@ -6899,7 +6906,7 @@
       },
       {
         "name": "VISITDATE",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 233
       },
@@ -8691,12 +8698,12 @@
         "elementKey": "VAC20INF"
       },
       "VAC1DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 17,
@@ -8715,12 +8722,12 @@
         "elementKey": "VAC1DATA"
       },
       "VAC2DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 48,
@@ -8739,12 +8746,12 @@
         "elementKey": "VAC2DATA"
       },
       "VAC3DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 79,
@@ -8763,12 +8770,12 @@
         "elementKey": "VAC3DATA"
       },
       "VAC4DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 110,
@@ -8787,12 +8794,12 @@
         "elementKey": "VAC4DATA"
       },
       "VAC5DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 141,
@@ -8811,12 +8818,12 @@
         "elementKey": "VAC5DATA"
       },
       "VAC6DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 172,
@@ -8835,12 +8842,12 @@
         "elementKey": "VAC6DATA"
       },
       "VAC7DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 203,
@@ -8859,12 +8866,12 @@
         "elementKey": "VAC7DATA"
       },
       "VAC8DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 234,
@@ -8883,12 +8890,12 @@
         "elementKey": "VAC8DATA"
       },
       "VAC9DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 265,
@@ -8907,12 +8914,12 @@
         "elementKey": "VAC9DATA"
       },
       "VAC10DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 296,
@@ -8931,12 +8938,12 @@
         "elementKey": "VAC10DATA"
       },
       "VAC11DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 327,
@@ -8955,12 +8962,12 @@
         "elementKey": "VAC11DATA"
       },
       "VAC12DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 358,
@@ -8979,12 +8986,12 @@
         "elementKey": "VAC12DATA"
       },
       "VAC13DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 389,
@@ -9003,12 +9010,12 @@
         "elementKey": "VAC13DATA"
       },
       "VAC14DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 420,
@@ -9027,12 +9034,12 @@
         "elementKey": "VAC14DATA"
       },
       "VAC15DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 451,
@@ -9051,12 +9058,12 @@
         "elementKey": "VAC15DATA"
       },
       "VAC16DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 482,
@@ -9075,12 +9082,12 @@
         "elementKey": "VAC16DATA"
       },
       "VAC17DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 513,
@@ -9099,12 +9106,12 @@
         "elementKey": "VAC17DATA"
       },
       "VAC18DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 544,
@@ -9123,12 +9130,12 @@
         "elementKey": "VAC18DATA"
       },
       "VAC19DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 575,
@@ -9147,12 +9154,12 @@
         "elementKey": "VAC19DATA"
       },
       "VAC20DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 606,
@@ -10951,12 +10958,12 @@
         "elementKey": "addvac20"
       },
       "BCG": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 163,
@@ -11007,12 +11014,12 @@
         "elementKey": "bcgng"
       },
       "FEBAMAREL": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 167,
@@ -11063,12 +11070,12 @@
         "elementKey": "febamarelng"
       },
       "PCV1": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 171,
@@ -11119,12 +11126,12 @@
         "elementKey": "pcv1ng"
       },
       "PCV2": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 175,
@@ -11175,12 +11182,12 @@
         "elementKey": "pcv2ng"
       },
       "PCV3": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 179,
@@ -11231,12 +11238,12 @@
         "elementKey": "pcv3ng"
       },
       "PENTA1": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 183,
@@ -11287,12 +11294,12 @@
         "elementKey": "penta1ng"
       },
       "PENTA2": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 187,
@@ -11343,12 +11350,12 @@
         "elementKey": "penta2ng"
       },
       "PENTA3": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 191,
@@ -11399,12 +11406,12 @@
         "elementKey": "penta3ng"
       },
       "POLIO1": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 195,
@@ -11455,12 +11462,12 @@
         "elementKey": "polio1ng"
       },
       "POLIO2": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 199,
@@ -11511,12 +11518,12 @@
         "elementKey": "polio2ng"
       },
       "POLIO3": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 203,
@@ -11567,12 +11574,12 @@
         "elementKey": "polio3ng"
       },
       "POLIONAS": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 207,
@@ -11623,12 +11630,12 @@
         "elementKey": "polionasng"
       },
       "ROX1": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 211,
@@ -11679,12 +11686,12 @@
         "elementKey": "rox1ng"
       },
       "ROX2": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 215,
@@ -11735,12 +11742,12 @@
         "elementKey": "rox2ng"
       },
       "SARAMPO1": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 219,
@@ -11835,12 +11842,12 @@
         "elementKey": "vac4"
       },
       "VPI": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 227,
@@ -11902,12 +11909,12 @@
         "elementKey": "REGID"
       },
       "VISITDATE": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 233,
@@ -12086,7 +12093,7 @@
             "promptIdx": 7
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC1DATA",
             "display": {
               "prompt": {
@@ -12099,7 +12106,7 @@
             "_row_num": 17,
             "__rowNum__": 16,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen13",
             "promptIdx": 8
           },
@@ -12161,7 +12168,7 @@
             "promptIdx": 11
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC1DATA",
             "display": {
               "prompt": {
@@ -12174,7 +12181,7 @@
             "_row_num": 28,
             "__rowNum__": 27,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen23",
             "promptIdx": 12
           },
@@ -12286,7 +12293,7 @@
             "promptIdx": 19
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC2DATA",
             "display": {
               "prompt": {
@@ -12299,7 +12306,7 @@
             "_row_num": 48,
             "__rowNum__": 47,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen44",
             "promptIdx": 20
           },
@@ -12361,7 +12368,7 @@
             "promptIdx": 23
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC2DATA",
             "display": {
               "prompt": {
@@ -12374,7 +12381,7 @@
             "_row_num": 59,
             "__rowNum__": 58,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen54",
             "promptIdx": 24
           },
@@ -12486,7 +12493,7 @@
             "promptIdx": 31
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC3DATA",
             "display": {
               "prompt": {
@@ -12499,7 +12506,7 @@
             "_row_num": 79,
             "__rowNum__": 78,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen75",
             "promptIdx": 32
           },
@@ -12561,7 +12568,7 @@
             "promptIdx": 35
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC3DATA",
             "display": {
               "prompt": {
@@ -12574,7 +12581,7 @@
             "_row_num": 90,
             "__rowNum__": 89,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen85",
             "promptIdx": 36
           },
@@ -12686,7 +12693,7 @@
             "promptIdx": 43
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC4DATA",
             "display": {
               "prompt": {
@@ -12699,7 +12706,7 @@
             "_row_num": 110,
             "__rowNum__": 109,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen106",
             "promptIdx": 44
           },
@@ -12761,7 +12768,7 @@
             "promptIdx": 47
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC4DATA",
             "display": {
               "prompt": {
@@ -12774,7 +12781,7 @@
             "_row_num": 121,
             "__rowNum__": 120,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen116",
             "promptIdx": 48
           },
@@ -12886,7 +12893,7 @@
             "promptIdx": 55
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC5DATA",
             "display": {
               "prompt": {
@@ -12899,7 +12906,7 @@
             "_row_num": 141,
             "__rowNum__": 140,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen137",
             "promptIdx": 56
           },
@@ -12961,7 +12968,7 @@
             "promptIdx": 59
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC5DATA",
             "display": {
               "prompt": {
@@ -12974,7 +12981,7 @@
             "_row_num": 152,
             "__rowNum__": 151,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen147",
             "promptIdx": 60
           },
@@ -13086,7 +13093,7 @@
             "promptIdx": 67
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC6DATA",
             "display": {
               "prompt": {
@@ -13099,7 +13106,7 @@
             "_row_num": 172,
             "__rowNum__": 171,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen168",
             "promptIdx": 68
           },
@@ -13161,7 +13168,7 @@
             "promptIdx": 71
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC6DATA",
             "display": {
               "prompt": {
@@ -13174,7 +13181,7 @@
             "_row_num": 183,
             "__rowNum__": 182,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen178",
             "promptIdx": 72
           },
@@ -13286,7 +13293,7 @@
             "promptIdx": 79
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC7DATA",
             "display": {
               "prompt": {
@@ -13299,7 +13306,7 @@
             "_row_num": 203,
             "__rowNum__": 202,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen199",
             "promptIdx": 80
           },
@@ -13361,7 +13368,7 @@
             "promptIdx": 83
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC7DATA",
             "display": {
               "prompt": {
@@ -13374,7 +13381,7 @@
             "_row_num": 214,
             "__rowNum__": 213,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen209",
             "promptIdx": 84
           },
@@ -13486,7 +13493,7 @@
             "promptIdx": 91
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC8DATA",
             "display": {
               "prompt": {
@@ -13499,7 +13506,7 @@
             "_row_num": 234,
             "__rowNum__": 233,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen230",
             "promptIdx": 92
           },
@@ -13561,7 +13568,7 @@
             "promptIdx": 95
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC8DATA",
             "display": {
               "prompt": {
@@ -13574,7 +13581,7 @@
             "_row_num": 245,
             "__rowNum__": 244,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen240",
             "promptIdx": 96
           },
@@ -13686,7 +13693,7 @@
             "promptIdx": 103
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC9DATA",
             "display": {
               "prompt": {
@@ -13699,7 +13706,7 @@
             "_row_num": 265,
             "__rowNum__": 264,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen261",
             "promptIdx": 104
           },
@@ -13761,7 +13768,7 @@
             "promptIdx": 107
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC9DATA",
             "display": {
               "prompt": {
@@ -13774,7 +13781,7 @@
             "_row_num": 276,
             "__rowNum__": 275,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen271",
             "promptIdx": 108
           },
@@ -13886,7 +13893,7 @@
             "promptIdx": 115
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC10DATA",
             "display": {
               "prompt": {
@@ -13899,7 +13906,7 @@
             "_row_num": 296,
             "__rowNum__": 295,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen292",
             "promptIdx": 116
           },
@@ -13961,7 +13968,7 @@
             "promptIdx": 119
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC10DATA",
             "display": {
               "prompt": {
@@ -13974,7 +13981,7 @@
             "_row_num": 307,
             "__rowNum__": 306,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen302",
             "promptIdx": 120
           },
@@ -14086,7 +14093,7 @@
             "promptIdx": 127
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC11DATA",
             "display": {
               "prompt": {
@@ -14099,7 +14106,7 @@
             "_row_num": 327,
             "__rowNum__": 326,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen323",
             "promptIdx": 128
           },
@@ -14161,7 +14168,7 @@
             "promptIdx": 131
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC11DATA",
             "display": {
               "prompt": {
@@ -14174,7 +14181,7 @@
             "_row_num": 338,
             "__rowNum__": 337,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen333",
             "promptIdx": 132
           },
@@ -14286,7 +14293,7 @@
             "promptIdx": 139
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC12DATA",
             "display": {
               "prompt": {
@@ -14299,7 +14306,7 @@
             "_row_num": 358,
             "__rowNum__": 357,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen354",
             "promptIdx": 140
           },
@@ -14361,7 +14368,7 @@
             "promptIdx": 143
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC12DATA",
             "display": {
               "prompt": {
@@ -14374,7 +14381,7 @@
             "_row_num": 369,
             "__rowNum__": 368,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen364",
             "promptIdx": 144
           },
@@ -14486,7 +14493,7 @@
             "promptIdx": 151
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC13DATA",
             "display": {
               "prompt": {
@@ -14499,7 +14506,7 @@
             "_row_num": 389,
             "__rowNum__": 388,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen385",
             "promptIdx": 152
           },
@@ -14561,7 +14568,7 @@
             "promptIdx": 155
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC13DATA",
             "display": {
               "prompt": {
@@ -14574,7 +14581,7 @@
             "_row_num": 400,
             "__rowNum__": 399,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen395",
             "promptIdx": 156
           },
@@ -14686,7 +14693,7 @@
             "promptIdx": 163
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC14DATA",
             "display": {
               "prompt": {
@@ -14699,7 +14706,7 @@
             "_row_num": 420,
             "__rowNum__": 419,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen416",
             "promptIdx": 164
           },
@@ -14761,7 +14768,7 @@
             "promptIdx": 167
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC14DATA",
             "display": {
               "prompt": {
@@ -14774,7 +14781,7 @@
             "_row_num": 431,
             "__rowNum__": 430,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen426",
             "promptIdx": 168
           },
@@ -14886,7 +14893,7 @@
             "promptIdx": 175
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC15DATA",
             "display": {
               "prompt": {
@@ -14899,7 +14906,7 @@
             "_row_num": 451,
             "__rowNum__": 450,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen447",
             "promptIdx": 176
           },
@@ -14961,7 +14968,7 @@
             "promptIdx": 179
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC15DATA",
             "display": {
               "prompt": {
@@ -14974,7 +14981,7 @@
             "_row_num": 462,
             "__rowNum__": 461,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen457",
             "promptIdx": 180
           },
@@ -15086,7 +15093,7 @@
             "promptIdx": 187
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC16DATA",
             "display": {
               "prompt": {
@@ -15099,7 +15106,7 @@
             "_row_num": 482,
             "__rowNum__": 481,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen478",
             "promptIdx": 188
           },
@@ -15161,7 +15168,7 @@
             "promptIdx": 191
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC16DATA",
             "display": {
               "prompt": {
@@ -15174,7 +15181,7 @@
             "_row_num": 493,
             "__rowNum__": 492,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen488",
             "promptIdx": 192
           },
@@ -15286,7 +15293,7 @@
             "promptIdx": 199
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC17DATA",
             "display": {
               "prompt": {
@@ -15299,7 +15306,7 @@
             "_row_num": 513,
             "__rowNum__": 512,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen509",
             "promptIdx": 200
           },
@@ -15361,7 +15368,7 @@
             "promptIdx": 203
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC17DATA",
             "display": {
               "prompt": {
@@ -15374,7 +15381,7 @@
             "_row_num": 524,
             "__rowNum__": 523,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen519",
             "promptIdx": 204
           },
@@ -15486,7 +15493,7 @@
             "promptIdx": 211
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC18DATA",
             "display": {
               "prompt": {
@@ -15499,7 +15506,7 @@
             "_row_num": 544,
             "__rowNum__": 543,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen540",
             "promptIdx": 212
           },
@@ -15561,7 +15568,7 @@
             "promptIdx": 215
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC18DATA",
             "display": {
               "prompt": {
@@ -15574,7 +15581,7 @@
             "_row_num": 555,
             "__rowNum__": 554,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen550",
             "promptIdx": 216
           },
@@ -15686,7 +15693,7 @@
             "promptIdx": 223
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC19DATA",
             "display": {
               "prompt": {
@@ -15699,7 +15706,7 @@
             "_row_num": 575,
             "__rowNum__": 574,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen571",
             "promptIdx": 224
           },
@@ -15761,7 +15768,7 @@
             "promptIdx": 227
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC19DATA",
             "display": {
               "prompt": {
@@ -15774,7 +15781,7 @@
             "_row_num": 586,
             "__rowNum__": 585,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen581",
             "promptIdx": 228
           },
@@ -15886,7 +15893,7 @@
             "promptIdx": 235
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC20DATA",
             "display": {
               "prompt": {
@@ -15899,7 +15906,7 @@
             "_row_num": 606,
             "__rowNum__": 605,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen602",
             "promptIdx": 236
           },
@@ -15961,7 +15968,7 @@
             "promptIdx": 239
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "VAC20DATA",
             "display": {
               "prompt": {
@@ -15974,7 +15981,7 @@
             "_row_num": 617,
             "__rowNum__": 616,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen612",
             "promptIdx": 240
           },
@@ -19306,12 +19313,12 @@
         "elementPath": "VAC20INF"
       },
       "VAC1DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 17,
@@ -19333,12 +19340,12 @@
         "elementPath": "VAC1DATA"
       },
       "VAC2DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 48,
@@ -19360,12 +19367,12 @@
         "elementPath": "VAC2DATA"
       },
       "VAC3DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 79,
@@ -19387,12 +19394,12 @@
         "elementPath": "VAC3DATA"
       },
       "VAC4DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 110,
@@ -19414,12 +19421,12 @@
         "elementPath": "VAC4DATA"
       },
       "VAC5DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 141,
@@ -19441,12 +19448,12 @@
         "elementPath": "VAC5DATA"
       },
       "VAC6DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 172,
@@ -19468,12 +19475,12 @@
         "elementPath": "VAC6DATA"
       },
       "VAC7DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 203,
@@ -19495,12 +19502,12 @@
         "elementPath": "VAC7DATA"
       },
       "VAC8DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 234,
@@ -19522,12 +19529,12 @@
         "elementPath": "VAC8DATA"
       },
       "VAC9DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 265,
@@ -19549,12 +19556,12 @@
         "elementPath": "VAC9DATA"
       },
       "VAC10DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 296,
@@ -19576,12 +19583,12 @@
         "elementPath": "VAC10DATA"
       },
       "VAC11DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 327,
@@ -19603,12 +19610,12 @@
         "elementPath": "VAC11DATA"
       },
       "VAC12DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 358,
@@ -19630,12 +19637,12 @@
         "elementPath": "VAC12DATA"
       },
       "VAC13DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 389,
@@ -19657,12 +19664,12 @@
         "elementPath": "VAC13DATA"
       },
       "VAC14DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 420,
@@ -19684,12 +19691,12 @@
         "elementPath": "VAC14DATA"
       },
       "VAC15DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 451,
@@ -19711,12 +19718,12 @@
         "elementPath": "VAC15DATA"
       },
       "VAC16DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 482,
@@ -19738,12 +19745,12 @@
         "elementPath": "VAC16DATA"
       },
       "VAC17DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 513,
@@ -19765,12 +19772,12 @@
         "elementPath": "VAC17DATA"
       },
       "VAC18DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 544,
@@ -19792,12 +19799,12 @@
         "elementPath": "VAC18DATA"
       },
       "VAC19DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 575,
@@ -19819,12 +19826,12 @@
         "elementPath": "VAC19DATA"
       },
       "VAC20DATA": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 606,
@@ -21926,12 +21933,12 @@
         "elementPath": "addvac20"
       },
       "BCG": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 163,
@@ -22002,12 +22009,12 @@
         ]
       },
       "FEBAMAREL": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 167,
@@ -22078,12 +22085,12 @@
         ]
       },
       "PCV1": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 171,
@@ -22154,12 +22161,12 @@
         ]
       },
       "PCV2": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 175,
@@ -22230,12 +22237,12 @@
         ]
       },
       "PCV3": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 179,
@@ -22306,12 +22313,12 @@
         ]
       },
       "PENTA1": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 183,
@@ -22382,12 +22389,12 @@
         ]
       },
       "PENTA2": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 187,
@@ -22458,12 +22465,12 @@
         ]
       },
       "PENTA3": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 191,
@@ -22534,12 +22541,12 @@
         ]
       },
       "POLIO1": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 195,
@@ -22610,12 +22617,12 @@
         ]
       },
       "POLIO2": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 199,
@@ -22686,12 +22693,12 @@
         ]
       },
       "POLIO3": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 203,
@@ -22762,12 +22769,12 @@
         ]
       },
       "POLIONAS": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 207,
@@ -22838,12 +22845,12 @@
         ]
       },
       "ROX1": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 211,
@@ -22914,12 +22921,12 @@
         ]
       },
       "ROX2": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 215,
@@ -22990,12 +22997,12 @@
         ]
       },
       "SARAMPO1": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 219,
@@ -23122,12 +23129,12 @@
         "elementPath": "vac4"
       },
       "VPI": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 227,
@@ -23212,12 +23219,12 @@
         "elementPath": "REGID"
       },
       "VISITDATE": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 5,
+        "__rowNum__": 4,
         "_defn": [
           {
             "_row_num": 233,
