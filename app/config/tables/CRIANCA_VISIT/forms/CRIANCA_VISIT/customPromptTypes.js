@@ -18,7 +18,7 @@ var adate = promptTypes.input_type.extend({
     unknownDay: false,
     unknownMonth: false,
     unknownYear: false,
-    templatePath: '../config/tables/CRIANCA_VISIT/forms/CRIANCA_VIST/templates/adate.handlebars',
+    templatePath: '../config/tables/CRIANCA_VISIT/forms/CRIANCA_VISIT/templates/adate.handlebars',
     
     events: {
         "change select": "modification",
@@ -244,7 +244,7 @@ var async_assign = promptTypes.base.extend({
     type: "async_assign",
     debug: false,
     valid: true,
-    templatePath: '../config/tables/CRIANCA_VIST/forms/CRIANCA_VISIT/templates/async_assign.handlebars',
+    templatePath: '../config/tables/CRIANCA_VISIT/forms/CRIANCA_VISIT/templates/async_assign.handlebars',
     _cachedSelection: null,
     getLinkedTableId: function() {
         var queryDefn = opendatakit.getQueriesDefinition(this.values_list);

@@ -142,7 +142,7 @@
             }
           }
         },
-        "comment": "choice_item.REG === data('REG')",
+        "choice_filter": "choice_item.REG === data('REG')",
         "_row_num": 9
       },
       {
@@ -1268,7 +1268,7 @@
                 }
               }
             },
-            "comment": "choice_item.REG === data('REG')",
+            "choice_filter": "choice_item.REG === data('REG')",
             "_row_num": 9,
             "__rowNum__": 8,
             "_token_type": "prompt",

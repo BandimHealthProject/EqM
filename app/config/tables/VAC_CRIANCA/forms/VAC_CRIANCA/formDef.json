@@ -13,7 +13,7 @@
       },
       {
         "setting_name": "table_id",
-        "value": "VAC",
+        "value": "VAC_CRIANCA",
         "_row_num": 4
       },
       {
@@ -3310,7 +3310,7 @@
       },
       "table_id": {
         "setting_name": "table_id",
-        "value": "VAC",
+        "value": "VAC_CRIANCA",
         "_row_num": 4
       },
       "survey": {
@@ -3492,6 +3492,9 @@
           "_row_num": 7
         }
       ]
+    },
+    "table_specific_definitions": {
+      "_tokens": {}
     },
     "queries": {
       "linked_bcg": {
@@ -13411,6 +13414,148 @@
         "elementSet": "instanceMetadata",
         "elementPath": "_savepoint_creator"
       }
-    }
+    },
+    "properties": [
+      {
+        "_partition": "Column",
+        "_aspect": "BCGCHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "FEBAMARELCHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "PCV1CHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "PCV2CHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "PCV3CHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "PENTA1CHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "PENTA2CHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "PENTA3CHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "POLIO1CHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "POLIO2CHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "POLIO3CHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "POLIONASCHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "ROX1CHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "ROX2CHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "SARAMPO1CHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "VPICHECK",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"vaccheck\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Correct information\",\"default\":\"Informação correta\"}}},\"_row_num\":4},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Change information\",\"default\":\"Alterar informações\"}}},\"_row_num\":5},{\"choice_list_name\":\"vaccheck\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":6}]"
+      },
+      {
+        "_partition": "FormType",
+        "_aspect": "default",
+        "_key": "FormType.formType",
+        "_type": "string",
+        "_value": "SURVEY"
+      },
+      {
+        "_partition": "SurveyUtil",
+        "_aspect": "default",
+        "_key": "SurveyUtil.formId",
+        "_type": "string",
+        "_value": "VAC_CRIANCA"
+      },
+      {
+        "_partition": "Table",
+        "_aspect": "default",
+        "_key": "defaultViewType",
+        "_type": "string",
+        "_value": "SPREADSHEET"
+      },
+      {
+        "_partition": "Table",
+        "_aspect": "default",
+        "_key": "displayName",
+        "_type": "object",
+        "_value": "{\"text\":{\"english\":\"Vaccines - children\",\"default\":\"Vacinas - crianca\"}}"
+      }
+    ]
   }
 }
