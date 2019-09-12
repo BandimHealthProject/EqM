@@ -1799,7 +1799,7 @@
         "linked_table_id": "MIF_FAL",
         "selection": "REGID = ?",
         "selectionArgs": "[data('REGID')]",
-        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), DEATHDATE:data('EXITPRECIS'), VISITDATE: data('CONT'), VISITID: opendatakit.getCurrentInstanceId()}",
+        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), DEATHDATE:data('EXITDATA'), VISITDATE: data('CONT'), VISITID: opendatakit.getCurrentInstanceId()}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 5
       }
@@ -3155,7 +3155,7 @@
         "linked_table_id": "MIF_FAL",
         "selection": "REGID = ?",
         "selectionArgs": "[data('REGID')]",
-        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), DEATHDATE:data('EXITPRECIS'), VISITDATE: data('CONT'), VISITID: opendatakit.getCurrentInstanceId()}",
+        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), DEATHDATE:data('EXITDATA'), VISITDATE: data('CONT'), VISITID: opendatakit.getCurrentInstanceId()}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 5
       }

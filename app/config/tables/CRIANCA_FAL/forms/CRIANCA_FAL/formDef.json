@@ -542,6 +542,14 @@
         "_row_num": 60
       },
       {
+        "clause": "end screen",
+        "_row_num": 61
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 62
+      },
+      {
         "type": "select_one",
         "values_list": "YesNoU",
         "name": "DIARREIA",
@@ -553,12 +561,12 @@
             }
           }
         },
-        "_row_num": 61
+        "_row_num": 63
       },
       {
         "clause": "if",
         "condition": "data('DIARREIA') =='1'",
-        "_row_num": 62
+        "_row_num": 64
       },
       {
         "type": "text",
@@ -571,7 +579,7 @@
             }
           }
         },
-        "_row_num": 63
+        "_row_num": 65
       },
       {
         "type": "text",
@@ -584,11 +592,19 @@
             }
           }
         },
-        "_row_num": 64
+        "_row_num": 66
       },
       {
         "clause": "end if",
-        "_row_num": 65
+        "_row_num": 67
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 68
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 69
       },
       {
         "type": "select_one",
@@ -602,12 +618,12 @@
             }
           }
         },
-        "_row_num": 66
+        "_row_num": 70
       },
       {
         "clause": "if",
         "condition": "data('PALIDEZ') =='1'",
-        "_row_num": 67
+        "_row_num": 71
       },
       {
         "type": "text",
@@ -620,11 +636,19 @@
             }
           }
         },
-        "_row_num": 68
+        "_row_num": 72
       },
       {
         "clause": "end if",
-        "_row_num": 69
+        "_row_num": 73
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 74
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 75
       },
       {
         "type": "select_one",
@@ -638,12 +662,12 @@
             }
           }
         },
-        "_row_num": 70
+        "_row_num": 76
       },
       {
         "clause": "if",
         "condition": "data('RESP') =='1'",
-        "_row_num": 71
+        "_row_num": 77
       },
       {
         "type": "text",
@@ -656,11 +680,19 @@
             }
           }
         },
-        "_row_num": 72
+        "_row_num": 78
       },
       {
         "clause": "end if",
-        "_row_num": 73
+        "_row_num": 79
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 80
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 81
       },
       {
         "type": "select_one",
@@ -674,12 +706,12 @@
             }
           }
         },
-        "_row_num": 74
+        "_row_num": 82
       },
       {
         "clause": "if",
         "condition": "data('CONVUL') =='1'",
-        "_row_num": 75
+        "_row_num": 83
       },
       {
         "type": "text",
@@ -692,11 +724,19 @@
             }
           }
         },
-        "_row_num": 76
+        "_row_num": 84
       },
       {
         "clause": "end if",
-        "_row_num": 77
+        "_row_num": 85
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 86
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 87
       },
       {
         "type": "select_one",
@@ -710,12 +750,12 @@
             }
           }
         },
-        "_row_num": 78
+        "_row_num": 88
       },
       {
         "clause": "if",
         "condition": "data('TEVSAR') =='1'",
-        "_row_num": 79
+        "_row_num": 89
       },
       {
         "type": "text",
@@ -728,86 +768,6 @@
             }
           }
         },
-        "_row_num": 80
-      },
-      {
-        "clause": "end if",
-        "_row_num": 81
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 82
-      },
-      {
-        "clause": "begin screen",
-        "_row_num": 83
-      },
-      {
-        "type": "select_one",
-        "values_list": "YesNoU",
-        "name": "DIAGNOST",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Was a diagnosis given by health personel?",
-              "default": "Diagnostico dado pelo pessoal de saúde"
-            }
-          }
-        },
-        "_row_num": 84
-      },
-      {
-        "clause": "if",
-        "condition": "data('DIAGNOST') =='1'",
-        "_row_num": 85
-      },
-      {
-        "type": "text",
-        "name": "QUALDIAGN",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Which diagnose",
-              "default": "Qual"
-            }
-          }
-        },
-        "_row_num": 86
-      },
-      {
-        "type": "select_one",
-        "values_list": "healthstaff",
-        "name": "DIAGNQUEM",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Who diagnosed",
-              "default": "Quem"
-            }
-          }
-        },
-        "_row_num": 87
-      },
-      {
-        "clause": "if",
-        "condition": "data('DIAGNQUEM') =='5'",
-        "_row_num": 88
-      },
-      {
-        "type": "text",
-        "name": "DIAGNOUTRO",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "Other giving the diagnose",
-              "default": "Other giving the diagnose"
-            }
-          }
-        },
-        "_row_num": 89
-      },
-      {
-        "clause": "end if",
         "_row_num": 90
       },
       {
@@ -823,6 +783,103 @@
         "_row_num": 93
       },
       {
+        "type": "select_one",
+        "values_list": "YesNoU",
+        "name": "DIAGNOST",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Was a diagnosis given by health personel?",
+              "default": "Diagnostico dado pelo pessoal de saúde"
+            }
+          }
+        },
+        "_row_num": 94
+      },
+      {
+        "clause": "if",
+        "condition": "data('DIAGNOST') =='1'",
+        "_row_num": 95
+      },
+      {
+        "type": "text",
+        "name": "QUALDIAGN",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Which diagnose",
+              "default": "Qual"
+            }
+          }
+        },
+        "_row_num": 96
+      },
+      {
+        "clause": "end if",
+        "_row_num": 97
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 98
+      },
+      {
+        "clause": "if",
+        "condition": "data('DIAGNOST') =='1'",
+        "_row_num": 99
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 100
+      },
+      {
+        "type": "select_one",
+        "values_list": "healthstaff",
+        "name": "DIAGNQUEM",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Who diagnosed",
+              "default": "Quem"
+            }
+          }
+        },
+        "_row_num": 101
+      },
+      {
+        "clause": "if",
+        "condition": "data('DIAGNQUEM') =='5'",
+        "_row_num": 102
+      },
+      {
+        "type": "text",
+        "name": "DIAGNOUTRO",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Other giving the diagnose",
+              "default": "Other giving the diagnose"
+            }
+          }
+        },
+        "_row_num": 103
+      },
+      {
+        "clause": "end if",
+        "_row_num": 104
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 105
+      },
+      {
+        "clause": "end if",
+        "_row_num": 106
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 107
+      },
+      {
         "type": "text",
         "name": "HISTORIA1",
         "display": {
@@ -833,7 +890,7 @@
             }
           }
         },
-        "_row_num": 94
+        "_row_num": 108
       },
       {
         "type": "text",
@@ -846,15 +903,15 @@
             }
           }
         },
-        "_row_num": 95
+        "_row_num": 109
       },
       {
         "clause": "end screen",
-        "_row_num": 96
+        "_row_num": 110
       },
       {
         "clause": "begin screen",
-        "_row_num": 97
+        "_row_num": 111
       },
       {
         "type": "select_one",
@@ -868,12 +925,20 @@
             }
           }
         },
-        "_row_num": 98
+        "_row_num": 112
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 113
       },
       {
         "clause": "if",
         "condition": "data('NASCVIVA') =='2'",
-        "_row_num": 99
+        "_row_num": 114
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 115
       },
       {
         "type": "select_one",
@@ -887,16 +952,24 @@
             }
           }
         },
-        "_row_num": 100
+        "_row_num": 116
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 117
       },
       {
         "clause": "end if",
-        "_row_num": 101
+        "_row_num": 118
       },
       {
         "clause": "if",
         "condition": "data('NASCVIVA') =='1'",
-        "_row_num": 102
+        "_row_num": 119
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 120
       },
       {
         "type": "integer",
@@ -909,12 +982,12 @@
             }
           }
         },
-        "_row_num": 103
+        "_row_num": 121
       },
       {
         "clause": "if",
         "condition": "data('DIASDEVIDA') >='1'",
-        "_row_num": 104
+        "_row_num": 122
       },
       {
         "type": "select_one",
@@ -928,11 +1001,19 @@
             }
           }
         },
-        "_row_num": 105
+        "_row_num": 123
       },
       {
         "clause": "end if",
-        "_row_num": 106
+        "_row_num": 124
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 125
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 126
       },
       {
         "type": "text",
@@ -945,7 +1026,7 @@
             }
           }
         },
-        "_row_num": 107
+        "_row_num": 127
       },
       {
         "type": "select_one",
@@ -959,7 +1040,15 @@
             }
           }
         },
-        "_row_num": 108
+        "_row_num": 128
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 129
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 130
       },
       {
         "type": "select_one",
@@ -973,7 +1062,7 @@
             }
           }
         },
-        "_row_num": 109
+        "_row_num": 131
       },
       {
         "type": "select_one",
@@ -987,19 +1076,19 @@
             }
           }
         },
-        "_row_num": 110
-      },
-      {
-        "clause": "end if",
-        "_row_num": 111
+        "_row_num": 132
       },
       {
         "clause": "end screen",
-        "_row_num": 112
+        "_row_num": 133
+      },
+      {
+        "clause": "end if",
+        "_row_num": 134
       },
       {
         "clause": "begin screen",
-        "_row_num": 113
+        "_row_num": 135
       },
       {
         "type": "select_one",
@@ -1013,12 +1102,12 @@
             }
           }
         },
-        "_row_num": 114
+        "_row_num": 136
       },
       {
         "clause": "if",
         "condition": "data('DEFEITO') =='1'",
-        "_row_num": 115
+        "_row_num": 137
       },
       {
         "type": "text",
@@ -1031,11 +1120,19 @@
             }
           }
         },
-        "_row_num": 116
+        "_row_num": 138
       },
       {
         "clause": "end if",
-        "_row_num": 117
+        "_row_num": 139
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 140
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 141
       },
       {
         "type": "select_one",
@@ -1049,12 +1146,12 @@
             }
           }
         },
-        "_row_num": 118
+        "_row_num": 142
       },
       {
         "clause": "if",
         "condition": "data('AMARELO') =='1'",
-        "_row_num": 119
+        "_row_num": 143
       },
       {
         "type": "text",
@@ -1067,7 +1164,7 @@
             }
           }
         },
-        "_row_num": 120
+        "_row_num": 144
       },
       {
         "type": "integer",
@@ -1080,15 +1177,15 @@
             }
           }
         },
-        "_row_num": 121
+        "_row_num": 145
       },
       {
         "clause": "end if",
-        "_row_num": 122
+        "_row_num": 146
       },
       {
         "clause": "end screen",
-        "_row_num": 123
+        "_row_num": 147
       }
     ],
     "prompt_types": [
@@ -1319,334 +1416,352 @@
     ],
     "model": [
       {
-        "name": "ONDEFALEC",
+        "name": "ACCID",
         "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 2
       },
       {
-        "name": "ONDEFALO",
+        "name": "ACCIDQUAL",
         "type": "text",
         "isSessionVariable": false,
         "_row_num": 3
       },
       {
-        "name": "BSG",
+        "name": "AMARELO",
         "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 4
       },
       {
-        "name": "POLIONAS",
-        "type": "select_one",
+        "name": "AMARELODUR",
+        "type": "integer",
         "isSessionVariable": false,
         "_row_num": 5
-      },
-      {
-        "name": "POLIO",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 6
-      },
-      {
-        "name": "POLQUANTO",
-        "type": "integer",
-        "isSessionVariable": false,
-        "_row_num": 7
-      },
-      {
-        "name": "PENTA",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 8
-      },
-      {
-        "name": "PENQUANTO",
-        "type": "integer",
-        "isSessionVariable": false,
-        "_row_num": 9
-      },
-      {
-        "name": "FAMAR",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 10
-      },
-      {
-        "name": "SARAM",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 11
-      },
-      {
-        "name": "SARQUANTO",
-        "type": "integer",
-        "isSessionVariable": false,
-        "_row_num": 12
-      },
-      {
-        "name": "OUTRO1TIPO",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 13
-      },
-      {
-        "name": "OUTRO1DATA",
-        "type": "adate",
-        "isSessionVariable": false,
-        "_row_num": 14
-      },
-      {
-        "name": "OUTRO2TIPO",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 15
-      },
-      {
-        "name": "OUTRO2DATA",
-        "type": "adate",
-        "isSessionVariable": false,
-        "_row_num": 16
-      },
-      {
-        "name": "ANTIPALUD",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 17
-      },
-      {
-        "name": "DORMTENDA",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 18
-      },
-      {
-        "name": "DORMTENTI",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 19
-      },
-      {
-        "name": "MAMAVA",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 20
-      },
-      {
-        "name": "ACCID",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 21
-      },
-      {
-        "name": "ACCIDQUAL",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 22
-      },
-      {
-        "name": "CRES",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 23
-      },
-      {
-        "name": "CRESTE",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 24
-      },
-      {
-        "name": "FEBRE",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 25
-      },
-      {
-        "name": "FEBRETE",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 26
-      },
-      {
-        "name": "DIARREIA",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 27
-      },
-      {
-        "name": "DIARREIATE",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 28
-      },
-      {
-        "name": "DIARREIATI",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 29
-      },
-      {
-        "name": "PALIDEZ",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 30
-      },
-      {
-        "name": "PALIDEZTE",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 31
-      },
-      {
-        "name": "RESP",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 32
-      },
-      {
-        "name": "RESPTE",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 33
-      },
-      {
-        "name": "CONVUL",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 34
-      },
-      {
-        "name": "CONVULTE",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 35
-      },
-      {
-        "name": "TEVSAR",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 36
-      },
-      {
-        "name": "TEVSARTE",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 37
-      },
-      {
-        "name": "DIAGNOST",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 38
-      },
-      {
-        "name": "QUALDIAGN",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 39
-      },
-      {
-        "name": "DIAGNQUEM",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 40
-      },
-      {
-        "name": "DIAGNOUTRO",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 41
-      },
-      {
-        "name": "HISTORIA1",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 42
-      },
-      {
-        "name": "HISTORIA2",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 43
-      },
-      {
-        "name": "NASCVIVA",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 44
-      },
-      {
-        "name": "MORT_ANTE",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 45
-      },
-      {
-        "name": "DIASDEVIDA",
-        "type": "integer",
-        "isSessionVariable": false,
-        "_row_num": 46
-      },
-      {
-        "name": "CHOROU",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 47
-      },
-      {
-        "name": "BICO_ONDE",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 48
-      },
-      {
-        "name": "BICO_MATER",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 49
-      },
-      {
-        "name": "BOCA_RIJA",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 50
-      },
-      {
-        "name": "CORPO_TESO",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 51
-      },
-      {
-        "name": "DEFEITO",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 52
-      },
-      {
-        "name": "DEFEITOQUA",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 53
-      },
-      {
-        "name": "AMARELO",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 54
       },
       {
         "name": "AMERELOINI",
         "type": "text",
         "isSessionVariable": false,
+        "_row_num": 6
+      },
+      {
+        "name": "ANTIPALUD",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 7
+      },
+      {
+        "name": "BICO_MATER",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 8
+      },
+      {
+        "name": "BICO_ONDE",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 9
+      },
+      {
+        "name": "BOCA_RIJA",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 10
+      },
+      {
+        "name": "BSG",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 11
+      },
+      {
+        "name": "CHOROU",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 12
+      },
+      {
+        "name": "CONVUL",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 13
+      },
+      {
+        "name": "CONVULTE",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 14
+      },
+      {
+        "name": "CORPO_TESO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 15
+      },
+      {
+        "name": "CRES",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 16
+      },
+      {
+        "name": "CRESTE",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 17
+      },
+      {
+        "name": "DEFEITO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 18
+      },
+      {
+        "name": "DEFEITOQUA",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 19
+      },
+      {
+        "name": "DIAGNOST",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 20
+      },
+      {
+        "name": "DIAGNOUTRO",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 21
+      },
+      {
+        "name": "DIAGNQUEM",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 22
+      },
+      {
+        "name": "DIARREIA",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 23
+      },
+      {
+        "name": "DIARREIATE",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 24
+      },
+      {
+        "name": "DIARREIATI",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 25
+      },
+      {
+        "name": "DIASDEVIDA",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 26
+      },
+      {
+        "name": "DORMTENDA",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 27
+      },
+      {
+        "name": "DORMTENTI",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 28
+      },
+      {
+        "name": "FAMAR",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 29
+      },
+      {
+        "name": "FEBRE",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 30
+      },
+      {
+        "name": "FEBRETE",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 31
+      },
+      {
+        "name": "HISTORIA1",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 32
+      },
+      {
+        "name": "HISTORIA2",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 33
+      },
+      {
+        "name": "MAMAVA",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 34
+      },
+      {
+        "name": "MORT_ANTE",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 35
+      },
+      {
+        "name": "NASCVIVA",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 36
+      },
+      {
+        "name": "ONDEFALEC",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 37
+      },
+      {
+        "name": "ONDEFALO",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 38
+      },
+      {
+        "name": "OUTRO1DATA",
+        "type": "adate",
+        "isSessionVariable": false,
+        "_row_num": 39
+      },
+      {
+        "name": "OUTRO1TIPO",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 40
+      },
+      {
+        "name": "OUTRO2DATA",
+        "type": "adate",
+        "isSessionVariable": false,
+        "_row_num": 41
+      },
+      {
+        "name": "OUTRO2TIPO",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 42
+      },
+      {
+        "name": "PALIDEZ",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 43
+      },
+      {
+        "name": "PALIDEZTE",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 44
+      },
+      {
+        "name": "PENQUANTO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 45
+      },
+      {
+        "name": "PENTA",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 46
+      },
+      {
+        "name": "POLIO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 47
+      },
+      {
+        "name": "POLIONAS",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 48
+      },
+      {
+        "name": "POLQUANTO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 49
+      },
+      {
+        "name": "QUALDIAGN",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 50
+      },
+      {
+        "name": "RESP",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 51
+      },
+      {
+        "name": "RESPTE",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 52
+      },
+      {
+        "name": "SARAM",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 53
+      },
+      {
+        "name": "SARQUANTO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 54
+      },
+      {
+        "name": "TEVSAR",
+        "type": "select_one",
+        "isSessionVariable": false,
         "_row_num": 55
       },
       {
-        "name": "AMARELODUR",
-        "type": "integer",
+        "name": "TEVSARTE",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 56
+      },
+      {
+        "name": "REGIDC",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 58
+      },
+      {
+        "name": "VISITDATE",
+        "type": "adate",
+        "isSessionVariable": false,
+        "_row_num": 59
+      },
+      {
+        "name": "VISITIDC",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 60
       }
     ]
   },
@@ -2000,12 +2115,12 @@
     "queries": {},
     "calculates": {},
     "model": {
-      "ONDEFALEC": {
+      "ACCID": {
         "type": "string",
-        "valuesList": "Facility",
+        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 3,
+            "_row_num": 44,
             "section_name": "survey"
           },
           {
@@ -2014,13 +2129,13 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ONDEFALEC"
+        "elementKey": "ACCID"
       },
-      "ONDEFALO": {
+      "ACCIDQUAL": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 5,
+            "_row_num": 46,
             "section_name": "survey"
           },
           {
@@ -2029,14 +2144,14 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ONDEFALO"
+        "elementKey": "ACCIDQUAL"
       },
-      "BSG": {
+      "AMARELO": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 10,
+            "_row_num": 142,
             "section_name": "survey"
           },
           {
@@ -2045,14 +2160,13 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "BSG"
+        "elementKey": "AMARELO"
       },
-      "POLIONAS": {
-        "type": "string",
-        "valuesList": "YesNoU",
+      "AMARELODUR": {
+        "type": "integer",
         "_defn": [
           {
-            "_row_num": 11,
+            "_row_num": 145,
             "section_name": "survey"
           },
           {
@@ -2061,14 +2175,13 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "POLIONAS"
+        "elementKey": "AMARELODUR"
       },
-      "POLIO": {
+      "AMERELOINI": {
         "type": "string",
-        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 144,
             "section_name": "survey"
           },
           {
@@ -2077,170 +2190,7 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "POLIO"
-      },
-      "POLQUANTO": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 13,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 7,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "POLQUANTO"
-      },
-      "PENTA": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 16,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 8,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "PENTA"
-      },
-      "PENQUANTO": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 17,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 9,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "PENQUANTO"
-      },
-      "FAMAR": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 18,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 10,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "FAMAR"
-      },
-      "SARAM": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 19,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 11,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "SARAM"
-      },
-      "SARQUANTO": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 20,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 12,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "SARQUANTO"
-      },
-      "OUTRO1TIPO": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 24,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 13,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "OUTRO1TIPO"
-      },
-      "OUTRO1DATA": {
-        "prompt_type_name": "adate",
-        "type": "string",
-        "elementType": "string",
-        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
-        "_row_num": 3,
-        "__rowNum__": 2,
-        "_defn": [
-          {
-            "_row_num": 25,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 14,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "OUTRO1DATA"
-      },
-      "OUTRO2TIPO": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 28,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 15,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "OUTRO2TIPO"
-      },
-      "OUTRO2DATA": {
-        "prompt_type_name": "adate",
-        "type": "string",
-        "elementType": "string",
-        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
-        "_row_num": 3,
-        "__rowNum__": 2,
-        "_defn": [
-          {
-            "_row_num": 29,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 16,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "OUTRO2DATA"
+        "elementKey": "AMERELOINI"
       },
       "ANTIPALUD": {
         "type": "string",
@@ -2251,12 +2201,308 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 17,
+            "_row_num": 7,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "ANTIPALUD"
+      },
+      "BICO_MATER": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 128,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 8,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "BICO_MATER"
+      },
+      "BICO_ONDE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 127,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "BICO_ONDE"
+      },
+      "BOCA_RIJA": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 131,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 10,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "BOCA_RIJA"
+      },
+      "BSG": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 10,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "BSG"
+      },
+      "CHOROU": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 123,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CHOROU"
+      },
+      "CONVUL": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 82,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 13,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONVUL"
+      },
+      "CONVULTE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 84,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONVULTE"
+      },
+      "CORPO_TESO": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 132,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 15,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CORPO_TESO"
+      },
+      "CRES": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 50,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 16,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CRES"
+      },
+      "CRESTE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 53,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 17,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CRESTE"
+      },
+      "DEFEITO": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 136,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 18,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DEFEITO"
+      },
+      "DEFEITOQUA": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 138,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 19,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DEFEITOQUA"
+      },
+      "DIAGNOST": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 94,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 20,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DIAGNOST"
+      },
+      "DIAGNOUTRO": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 103,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DIAGNOUTRO"
+      },
+      "DIAGNQUEM": {
+        "type": "string",
+        "valuesList": "healthstaff",
+        "_defn": [
+          {
+            "_row_num": 101,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 22,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DIAGNQUEM"
+      },
+      "DIARREIA": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 63,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 23,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DIARREIA"
+      },
+      "DIARREIATE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 65,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 24,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DIARREIATE"
+      },
+      "DIARREIATI": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 66,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 25,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DIARREIATI"
+      },
+      "DIASDEVIDA": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 121,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 26,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DIASDEVIDA"
       },
       "DORMTENDA": {
         "type": "string",
@@ -2267,7 +2513,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 18,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -2283,90 +2529,28 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 19,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "DORMTENTI"
       },
-      "MAMAVA": {
+      "FAMAR": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 18,
             "section_name": "survey"
           },
           {
-            "_row_num": 20,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "MAMAVA"
-      },
-      "ACCID": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 44,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 21,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "ACCID"
-      },
-      "ACCIDQUAL": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 46,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 22,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "ACCIDQUAL"
-      },
-      "CRES": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 50,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 23,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CRES"
-      },
-      "CRESTE": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 53,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 24,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CRESTE"
+        "elementKey": "FAMAR"
       },
       "FEBRE": {
         "type": "string",
@@ -2377,7 +2561,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 25,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -2392,254 +2576,22 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 26,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "FEBRETE"
       },
-      "DIARREIA": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 61,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 27,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DIARREIA"
-      },
-      "DIARREIATE": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 63,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 28,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DIARREIATE"
-      },
-      "DIARREIATI": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 64,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 29,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DIARREIATI"
-      },
-      "PALIDEZ": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 66,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 30,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "PALIDEZ"
-      },
-      "PALIDEZTE": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 68,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 31,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "PALIDEZTE"
-      },
-      "RESP": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 70,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 32,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "RESP"
-      },
-      "RESPTE": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 72,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 33,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "RESPTE"
-      },
-      "CONVUL": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 74,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 34,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CONVUL"
-      },
-      "CONVULTE": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 76,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 35,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CONVULTE"
-      },
-      "TEVSAR": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 78,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 36,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "TEVSAR"
-      },
-      "TEVSARTE": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 80,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 37,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "TEVSARTE"
-      },
-      "DIAGNOST": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 84,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 38,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DIAGNOST"
-      },
-      "QUALDIAGN": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 86,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 39,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "QUALDIAGN"
-      },
-      "DIAGNQUEM": {
-        "type": "string",
-        "valuesList": "healthstaff",
-        "_defn": [
-          {
-            "_row_num": 87,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 40,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DIAGNQUEM"
-      },
-      "DIAGNOUTRO": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 89,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 41,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DIAGNOUTRO"
-      },
       "HISTORIA1": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 94,
+            "_row_num": 108,
             "section_name": "survey"
           },
           {
-            "_row_num": 42,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -2650,7 +2602,172 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 95,
+            "_row_num": 109,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 33,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "HISTORIA2"
+      },
+      "MAMAVA": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 41,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 34,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "MAMAVA"
+      },
+      "MORT_ANTE": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 116,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 35,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "MORT_ANTE"
+      },
+      "NASCVIVA": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 112,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 36,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NASCVIVA"
+      },
+      "ONDEFALEC": {
+        "type": "string",
+        "valuesList": "Facility",
+        "_defn": [
+          {
+            "_row_num": 3,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 37,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ONDEFALEC"
+      },
+      "ONDEFALO": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 5,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 38,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ONDEFALO"
+      },
+      "OUTRO1DATA": {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 25,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 39,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "OUTRO1DATA"
+      },
+      "OUTRO1TIPO": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 24,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 40,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "OUTRO1TIPO"
+      },
+      "OUTRO2DATA": {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 29,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 41,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "OUTRO2DATA"
+      },
+      "OUTRO2TIPO": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 28,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 42,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "OUTRO2TIPO"
+      },
+      "PALIDEZ": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 70,
             "section_name": "survey"
           },
           {
@@ -2659,14 +2776,13 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "HISTORIA2"
+        "elementKey": "PALIDEZ"
       },
-      "NASCVIVA": {
+      "PALIDEZTE": {
         "type": "string",
-        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 98,
+            "_row_num": 72,
             "section_name": "survey"
           },
           {
@@ -2675,14 +2791,13 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "NASCVIVA"
+        "elementKey": "PALIDEZTE"
       },
-      "MORT_ANTE": {
-        "type": "string",
-        "valuesList": "YesNoU",
+      "PENQUANTO": {
+        "type": "integer",
         "_defn": [
           {
-            "_row_num": 100,
+            "_row_num": 17,
             "section_name": "survey"
           },
           {
@@ -2691,13 +2806,14 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "MORT_ANTE"
+        "elementKey": "PENQUANTO"
       },
-      "DIASDEVIDA": {
-        "type": "integer",
+      "PENTA": {
+        "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 103,
+            "_row_num": 16,
             "section_name": "survey"
           },
           {
@@ -2706,14 +2822,14 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "DIASDEVIDA"
+        "elementKey": "PENTA"
       },
-      "CHOROU": {
+      "POLIO": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 105,
+            "_row_num": 12,
             "section_name": "survey"
           },
           {
@@ -2722,13 +2838,14 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "CHOROU"
+        "elementKey": "POLIO"
       },
-      "BICO_ONDE": {
+      "POLIONAS": {
         "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 107,
+            "_row_num": 11,
             "section_name": "survey"
           },
           {
@@ -2737,14 +2854,13 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "BICO_ONDE"
+        "elementKey": "POLIONAS"
       },
-      "BICO_MATER": {
-        "type": "string",
-        "valuesList": "YesNoU",
+      "POLQUANTO": {
+        "type": "integer",
         "_defn": [
           {
-            "_row_num": 108,
+            "_row_num": 13,
             "section_name": "survey"
           },
           {
@@ -2753,14 +2869,13 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "BICO_MATER"
+        "elementKey": "POLQUANTO"
       },
-      "BOCA_RIJA": {
+      "QUALDIAGN": {
         "type": "string",
-        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 109,
+            "_row_num": 96,
             "section_name": "survey"
           },
           {
@@ -2769,14 +2884,14 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "BOCA_RIJA"
+        "elementKey": "QUALDIAGN"
       },
-      "CORPO_TESO": {
+      "RESP": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 110,
+            "_row_num": 76,
             "section_name": "survey"
           },
           {
@@ -2785,14 +2900,13 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "CORPO_TESO"
+        "elementKey": "RESP"
       },
-      "DEFEITO": {
+      "RESPTE": {
         "type": "string",
-        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 114,
+            "_row_num": 78,
             "section_name": "survey"
           },
           {
@@ -2801,13 +2915,14 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "DEFEITO"
+        "elementKey": "RESPTE"
       },
-      "DEFEITOQUA": {
+      "SARAM": {
         "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 116,
+            "_row_num": 19,
             "section_name": "survey"
           },
           {
@@ -2816,14 +2931,13 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "DEFEITOQUA"
+        "elementKey": "SARAM"
       },
-      "AMARELO": {
-        "type": "string",
-        "valuesList": "YesNoU",
+      "SARQUANTO": {
+        "type": "integer",
         "_defn": [
           {
-            "_row_num": 118,
+            "_row_num": 20,
             "section_name": "survey"
           },
           {
@@ -2832,13 +2946,14 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "AMARELO"
+        "elementKey": "SARQUANTO"
       },
-      "AMERELOINI": {
+      "TEVSAR": {
         "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 120,
+            "_row_num": 88,
             "section_name": "survey"
           },
           {
@@ -2847,13 +2962,13 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "AMERELOINI"
+        "elementKey": "TEVSAR"
       },
-      "AMARELODUR": {
-        "type": "integer",
+      "TEVSARTE": {
+        "type": "string",
         "_defn": [
           {
-            "_row_num": 121,
+            "_row_num": 90,
             "section_name": "survey"
           },
           {
@@ -2862,7 +2977,45 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "AMARELODUR"
+        "elementKey": "TEVSARTE"
+      },
+      "REGIDC": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 58,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REGIDC"
+      },
+      "VISITDATE": {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 59,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VISITDATE"
+      },
+      "VISITIDC": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 60,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VISITIDC"
       }
     },
     "section_names": [
@@ -3351,11 +3504,11 @@
                 }
               }
             },
-            "_row_num": 61,
-            "__rowNum__": 60,
+            "_row_num": 63,
+            "__rowNum__": 62,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen56",
+            "_branch_label_enclosing_screen": "survey/_screen62",
             "promptIdx": 25
           },
           {
@@ -3369,11 +3522,11 @@
                 }
               }
             },
-            "_row_num": 63,
-            "__rowNum__": 62,
+            "_row_num": 65,
+            "__rowNum__": 64,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen56",
+            "_branch_label_enclosing_screen": "survey/_screen62",
             "promptIdx": 26
           },
           {
@@ -3387,11 +3540,11 @@
                 }
               }
             },
-            "_row_num": 64,
-            "__rowNum__": 63,
+            "_row_num": 66,
+            "__rowNum__": 65,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen56",
+            "_branch_label_enclosing_screen": "survey/_screen62",
             "promptIdx": 27
           },
           {
@@ -3406,11 +3559,11 @@
                 }
               }
             },
-            "_row_num": 66,
-            "__rowNum__": 65,
+            "_row_num": 70,
+            "__rowNum__": 69,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen56",
+            "_branch_label_enclosing_screen": "survey/_screen69",
             "promptIdx": 28
           },
           {
@@ -3424,11 +3577,11 @@
                 }
               }
             },
-            "_row_num": 68,
-            "__rowNum__": 67,
+            "_row_num": 72,
+            "__rowNum__": 71,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen56",
+            "_branch_label_enclosing_screen": "survey/_screen69",
             "promptIdx": 29
           },
           {
@@ -3443,11 +3596,11 @@
                 }
               }
             },
-            "_row_num": 70,
-            "__rowNum__": 69,
+            "_row_num": 76,
+            "__rowNum__": 75,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen56",
+            "_branch_label_enclosing_screen": "survey/_screen75",
             "promptIdx": 30
           },
           {
@@ -3461,11 +3614,11 @@
                 }
               }
             },
-            "_row_num": 72,
-            "__rowNum__": 71,
+            "_row_num": 78,
+            "__rowNum__": 77,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen56",
+            "_branch_label_enclosing_screen": "survey/_screen75",
             "promptIdx": 31
           },
           {
@@ -3480,11 +3633,11 @@
                 }
               }
             },
-            "_row_num": 74,
-            "__rowNum__": 73,
+            "_row_num": 82,
+            "__rowNum__": 81,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen56",
+            "_branch_label_enclosing_screen": "survey/_screen81",
             "promptIdx": 32
           },
           {
@@ -3498,11 +3651,11 @@
                 }
               }
             },
-            "_row_num": 76,
-            "__rowNum__": 75,
+            "_row_num": 84,
+            "__rowNum__": 83,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen56",
+            "_branch_label_enclosing_screen": "survey/_screen81",
             "promptIdx": 33
           },
           {
@@ -3517,11 +3670,11 @@
                 }
               }
             },
-            "_row_num": 78,
-            "__rowNum__": 77,
+            "_row_num": 88,
+            "__rowNum__": 87,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen56",
+            "_branch_label_enclosing_screen": "survey/_screen87",
             "promptIdx": 34
           },
           {
@@ -3535,11 +3688,11 @@
                 }
               }
             },
-            "_row_num": 80,
-            "__rowNum__": 79,
+            "_row_num": 90,
+            "__rowNum__": 89,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen56",
+            "_branch_label_enclosing_screen": "survey/_screen87",
             "promptIdx": 35
           },
           {
@@ -3554,11 +3707,11 @@
                 }
               }
             },
-            "_row_num": 84,
-            "__rowNum__": 83,
+            "_row_num": 94,
+            "__rowNum__": 93,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen83",
+            "_branch_label_enclosing_screen": "survey/_screen93",
             "promptIdx": 36
           },
           {
@@ -3572,11 +3725,11 @@
                 }
               }
             },
-            "_row_num": 86,
-            "__rowNum__": 85,
+            "_row_num": 96,
+            "__rowNum__": 95,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen83",
+            "_branch_label_enclosing_screen": "survey/_screen93",
             "promptIdx": 37
           },
           {
@@ -3591,11 +3744,11 @@
                 }
               }
             },
-            "_row_num": 87,
-            "__rowNum__": 86,
+            "_row_num": 101,
+            "__rowNum__": 100,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen83",
+            "_branch_label_enclosing_screen": "survey/_screen100",
             "promptIdx": 38
           },
           {
@@ -3609,11 +3762,11 @@
                 }
               }
             },
-            "_row_num": 89,
-            "__rowNum__": 88,
+            "_row_num": 103,
+            "__rowNum__": 102,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen83",
+            "_branch_label_enclosing_screen": "survey/_screen100",
             "promptIdx": 39
           },
           {
@@ -3627,11 +3780,11 @@
                 }
               }
             },
-            "_row_num": 94,
-            "__rowNum__": 93,
+            "_row_num": 108,
+            "__rowNum__": 107,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen93",
+            "_branch_label_enclosing_screen": "survey/_screen107",
             "promptIdx": 40
           },
           {
@@ -3645,11 +3798,11 @@
                 }
               }
             },
-            "_row_num": 95,
-            "__rowNum__": 94,
+            "_row_num": 109,
+            "__rowNum__": 108,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen93",
+            "_branch_label_enclosing_screen": "survey/_screen107",
             "promptIdx": 41
           },
           {
@@ -3664,11 +3817,11 @@
                 }
               }
             },
-            "_row_num": 98,
-            "__rowNum__": 97,
+            "_row_num": 112,
+            "__rowNum__": 111,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen97",
+            "_branch_label_enclosing_screen": "survey/_screen111",
             "promptIdx": 42
           },
           {
@@ -3683,11 +3836,11 @@
                 }
               }
             },
-            "_row_num": 100,
-            "__rowNum__": 99,
+            "_row_num": 116,
+            "__rowNum__": 115,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen97",
+            "_branch_label_enclosing_screen": "survey/_screen115",
             "promptIdx": 43
           },
           {
@@ -3701,11 +3854,11 @@
                 }
               }
             },
-            "_row_num": 103,
-            "__rowNum__": 102,
+            "_row_num": 121,
+            "__rowNum__": 120,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen97",
+            "_branch_label_enclosing_screen": "survey/_screen120",
             "promptIdx": 44
           },
           {
@@ -3720,11 +3873,11 @@
                 }
               }
             },
-            "_row_num": 105,
-            "__rowNum__": 104,
+            "_row_num": 123,
+            "__rowNum__": 122,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen97",
+            "_branch_label_enclosing_screen": "survey/_screen120",
             "promptIdx": 45
           },
           {
@@ -3738,11 +3891,11 @@
                 }
               }
             },
-            "_row_num": 107,
-            "__rowNum__": 106,
+            "_row_num": 127,
+            "__rowNum__": 126,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen97",
+            "_branch_label_enclosing_screen": "survey/_screen126",
             "promptIdx": 46
           },
           {
@@ -3757,11 +3910,11 @@
                 }
               }
             },
-            "_row_num": 108,
-            "__rowNum__": 107,
+            "_row_num": 128,
+            "__rowNum__": 127,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen97",
+            "_branch_label_enclosing_screen": "survey/_screen126",
             "promptIdx": 47
           },
           {
@@ -3776,11 +3929,11 @@
                 }
               }
             },
-            "_row_num": 109,
-            "__rowNum__": 108,
+            "_row_num": 131,
+            "__rowNum__": 130,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen97",
+            "_branch_label_enclosing_screen": "survey/_screen130",
             "promptIdx": 48
           },
           {
@@ -3795,11 +3948,11 @@
                 }
               }
             },
-            "_row_num": 110,
-            "__rowNum__": 109,
+            "_row_num": 132,
+            "__rowNum__": 131,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen97",
+            "_branch_label_enclosing_screen": "survey/_screen130",
             "promptIdx": 49
           },
           {
@@ -3814,11 +3967,11 @@
                 }
               }
             },
-            "_row_num": 114,
-            "__rowNum__": 113,
+            "_row_num": 136,
+            "__rowNum__": 135,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen113",
+            "_branch_label_enclosing_screen": "survey/_screen135",
             "promptIdx": 50
           },
           {
@@ -3832,11 +3985,11 @@
                 }
               }
             },
-            "_row_num": 116,
-            "__rowNum__": 115,
+            "_row_num": 138,
+            "__rowNum__": 137,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen113",
+            "_branch_label_enclosing_screen": "survey/_screen135",
             "promptIdx": 51
           },
           {
@@ -3851,11 +4004,11 @@
                 }
               }
             },
-            "_row_num": 118,
-            "__rowNum__": 117,
+            "_row_num": 142,
+            "__rowNum__": 141,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen113",
+            "_branch_label_enclosing_screen": "survey/_screen141",
             "promptIdx": 52
           },
           {
@@ -3869,11 +4022,11 @@
                 }
               }
             },
-            "_row_num": 120,
-            "__rowNum__": 119,
+            "_row_num": 144,
+            "__rowNum__": 143,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen113",
+            "_branch_label_enclosing_screen": "survey/_screen141",
             "promptIdx": 53
           },
           {
@@ -3887,19 +4040,19 @@
                 }
               }
             },
-            "_row_num": 121,
-            "__rowNum__": 120,
+            "_row_num": 145,
+            "__rowNum__": 144,
             "_token_type": "prompt",
             "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen113",
+            "_branch_label_enclosing_screen": "survey/_screen141",
             "promptIdx": 54
           },
           {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 124,
-            "_branch_label_enclosing_screen": "survey/_screen124",
+            "_row_num": 148,
+            "_branch_label_enclosing_screen": "survey/_screen148",
             "promptIdx": 55
           }
         ],
@@ -4077,17 +4230,73 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 82,
-              "__rowNum__": 81,
+              "_row_num": 61,
+              "__rowNum__": 60,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(23);\nif (data('FEBRE') =='1') {\nactivePromptIndicies.push(24);\n}\nactivePromptIndicies.push(25);\nif (data('DIARREIA') =='1') {\nactivePromptIndicies.push(26);\nactivePromptIndicies.push(27);\n}\nactivePromptIndicies.push(28);\nif (data('PALIDEZ') =='1') {\nactivePromptIndicies.push(29);\n}\nactivePromptIndicies.push(30);\nif (data('RESP') =='1') {\nactivePromptIndicies.push(31);\n}\nactivePromptIndicies.push(32);\nif (data('CONVUL') =='1') {\nactivePromptIndicies.push(33);\n}\nactivePromptIndicies.push(34);\nif (data('TEVSAR') =='1') {\nactivePromptIndicies.push(35);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(23);\nif (data('FEBRE') =='1') {\nactivePromptIndicies.push(24);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 13
           },
           {
             "clause": "begin screen",
-            "_row_num": 83,
-            "__rowNum__": 82,
+            "_row_num": 62,
+            "__rowNum__": 61,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 68,
+              "__rowNum__": 67,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(25);\nif (data('DIARREIA') =='1') {\nactivePromptIndicies.push(26);\nactivePromptIndicies.push(27);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 14
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 69,
+            "__rowNum__": 68,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 74,
+              "__rowNum__": 73,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(28);\nif (data('PALIDEZ') =='1') {\nactivePromptIndicies.push(29);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 15
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 75,
+            "__rowNum__": 74,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 80,
+              "__rowNum__": 79,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(30);\nif (data('RESP') =='1') {\nactivePromptIndicies.push(31);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 16
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 81,
+            "__rowNum__": 80,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 86,
+              "__rowNum__": 85,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(32);\nif (data('CONVUL') =='1') {\nactivePromptIndicies.push(33);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 17
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 87,
+            "__rowNum__": 86,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
@@ -4095,8 +4304,8 @@
               "__rowNum__": 91,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(36);\nif (data('DIAGNOST') =='1') {\nactivePromptIndicies.push(37);\nactivePromptIndicies.push(38);\nif (data('DIAGNQUEM') =='5') {\nactivePromptIndicies.push(39);\n}\n}\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 14
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(34);\nif (data('TEVSAR') =='1') {\nactivePromptIndicies.push(35);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 18
           },
           {
             "clause": "begin screen",
@@ -4105,61 +4314,228 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 96,
-              "__rowNum__": 95,
+              "_row_num": 98,
+              "__rowNum__": 97,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(36);\nif (data('DIAGNOST') =='1') {\nactivePromptIndicies.push(37);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 19
+          },
+          {
+            "clause": "if",
+            "condition": "data('DIAGNOST') =='1'",
+            "_row_num": 99,
+            "__rowNum__": 98,
+            "_token_type": "goto_label",
+            "_branch_label": "_then99",
+            "operationIdx": 20
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_else106",
+            "_row_num": 106,
+            "operationIdx": 21
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 100,
+            "__rowNum__": 99,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 105,
+              "__rowNum__": 104,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(38);\nif (data('DIAGNQUEM') =='5') {\nactivePromptIndicies.push(39);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 22
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif106",
+            "_row_num": 106,
+            "operationIdx": 23
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 107,
+            "__rowNum__": 106,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 110,
+              "__rowNum__": 109,
               "_token_type": "end_screen"
             },
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(40);\nactivePromptIndicies.push(41);\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 15
+            "operationIdx": 24
           },
           {
             "clause": "begin screen",
-            "_row_num": 97,
-            "__rowNum__": 96,
+            "_row_num": 111,
+            "__rowNum__": 110,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 112,
-              "__rowNum__": 111,
+              "_row_num": 113,
+              "__rowNum__": 112,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(42);\nif (data('NASCVIVA') =='2') {\nactivePromptIndicies.push(43);\n}\nif (data('NASCVIVA') =='1') {\nactivePromptIndicies.push(44);\nif (data('DIASDEVIDA') >='1') {\nactivePromptIndicies.push(45);\n}\nactivePromptIndicies.push(46);\nactivePromptIndicies.push(47);\nactivePromptIndicies.push(48);\nactivePromptIndicies.push(49);\n}\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 16
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(42);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 25
+          },
+          {
+            "clause": "if",
+            "condition": "data('NASCVIVA') =='2'",
+            "_row_num": 114,
+            "__rowNum__": 113,
+            "_token_type": "goto_label",
+            "_branch_label": "_then114",
+            "operationIdx": 26
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_else118",
+            "_row_num": 118,
+            "operationIdx": 27
           },
           {
             "clause": "begin screen",
-            "_row_num": 113,
-            "__rowNum__": 112,
+            "_row_num": 115,
+            "__rowNum__": 114,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 123,
-              "__rowNum__": 122,
+              "_row_num": 117,
+              "__rowNum__": 116,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(50);\nif (data('DEFEITO') =='1') {\nactivePromptIndicies.push(51);\n}\nactivePromptIndicies.push(52);\nif (data('AMARELO') =='1') {\nactivePromptIndicies.push(53);\nactivePromptIndicies.push(54);\n}\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 17
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(43);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 28
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif118",
+            "_row_num": 118,
+            "operationIdx": 29
+          },
+          {
+            "clause": "if",
+            "condition": "data('NASCVIVA') =='1'",
+            "_row_num": 119,
+            "__rowNum__": 118,
+            "_token_type": "goto_label",
+            "_branch_label": "_then119",
+            "operationIdx": 30
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_else134",
+            "_row_num": 134,
+            "operationIdx": 31
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 120,
+            "__rowNum__": 119,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 125,
+              "__rowNum__": 124,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(44);\nif (data('DIASDEVIDA') >='1') {\nactivePromptIndicies.push(45);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 32
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 126,
+            "__rowNum__": 125,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 129,
+              "__rowNum__": 128,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(46);\nactivePromptIndicies.push(47);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 33
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 130,
+            "__rowNum__": 129,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 133,
+              "__rowNum__": 132,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(48);\nactivePromptIndicies.push(49);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 34
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif134",
+            "_row_num": 134,
+            "operationIdx": 35
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 135,
+            "__rowNum__": 134,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 140,
+              "__rowNum__": 139,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(50);\nif (data('DEFEITO') =='1') {\nactivePromptIndicies.push(51);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 36
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 141,
+            "__rowNum__": 140,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 147,
+              "__rowNum__": 146,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(52);\nif (data('AMARELO') =='1') {\nactivePromptIndicies.push(53);\nactivePromptIndicies.push(54);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 37
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 124,
-            "operationIdx": 18
+            "_row_num": 148,
+            "operationIdx": 38
           },
           {
-            "_row_num": 124,
+            "_row_num": 148,
             "_token_type": "begin_screen",
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(55);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 19
+            "operationIdx": 39
           },
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 124,
-            "operationIdx": 20
+            "_row_num": 148,
+            "operationIdx": 40
           }
         ],
         "branch_label_map": {
@@ -4177,12 +4553,32 @@
           "_screen43": 11,
           "_screen49": 12,
           "_screen56": 13,
-          "_screen83": 14,
-          "_screen93": 15,
-          "_screen97": 16,
-          "_screen113": 17,
-          "_contents": 19,
-          "_screen124": 19
+          "_screen62": 14,
+          "_screen69": 15,
+          "_screen75": 16,
+          "_screen81": 17,
+          "_screen87": 18,
+          "_screen93": 19,
+          "_then99": 22,
+          "_screen100": 22,
+          "_else106": 24,
+          "_endif106": 24,
+          "_screen107": 24,
+          "_screen111": 25,
+          "_then114": 28,
+          "_screen115": 28,
+          "_else118": 30,
+          "_endif118": 30,
+          "_then119": 32,
+          "_screen120": 32,
+          "_screen126": 33,
+          "_screen130": 34,
+          "_else134": 36,
+          "_endif134": 36,
+          "_screen135": 36,
+          "_screen141": 37,
+          "_contents": 39,
+          "_screen148": 39
         }
       },
       "initial": {
@@ -4367,12 +4763,12 @@
       }
     },
     "dataTableModel": {
-      "ONDEFALEC": {
+      "ACCID": {
         "type": "string",
-        "valuesList": "Facility",
+        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 3,
+            "_row_num": 44,
             "section_name": "survey"
           },
           {
@@ -4381,16 +4777,16 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ONDEFALEC",
-        "elementName": "ONDEFALEC",
+        "elementKey": "ACCID",
+        "elementName": "ACCID",
         "elementSet": "data",
-        "elementPath": "ONDEFALEC"
+        "elementPath": "ACCID"
       },
-      "ONDEFALO": {
+      "ACCIDQUAL": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 5,
+            "_row_num": 46,
             "section_name": "survey"
           },
           {
@@ -4399,17 +4795,17 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ONDEFALO",
-        "elementName": "ONDEFALO",
+        "elementKey": "ACCIDQUAL",
+        "elementName": "ACCIDQUAL",
         "elementSet": "data",
-        "elementPath": "ONDEFALO"
+        "elementPath": "ACCIDQUAL"
       },
-      "BSG": {
+      "AMARELO": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 10,
+            "_row_num": 142,
             "section_name": "survey"
           },
           {
@@ -4418,17 +4814,16 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "BSG",
-        "elementName": "BSG",
+        "elementKey": "AMARELO",
+        "elementName": "AMARELO",
         "elementSet": "data",
-        "elementPath": "BSG"
+        "elementPath": "AMARELO"
       },
-      "POLIONAS": {
-        "type": "string",
-        "valuesList": "YesNoU",
+      "AMARELODUR": {
+        "type": "integer",
         "_defn": [
           {
-            "_row_num": 11,
+            "_row_num": 145,
             "section_name": "survey"
           },
           {
@@ -4437,17 +4832,16 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "POLIONAS",
-        "elementName": "POLIONAS",
+        "elementKey": "AMARELODUR",
+        "elementName": "AMARELODUR",
         "elementSet": "data",
-        "elementPath": "POLIONAS"
+        "elementPath": "AMARELODUR"
       },
-      "POLIO": {
+      "AMERELOINI": {
         "type": "string",
-        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 144,
             "section_name": "survey"
           },
           {
@@ -4456,203 +4850,10 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "POLIO",
-        "elementName": "POLIO",
+        "elementKey": "AMERELOINI",
+        "elementName": "AMERELOINI",
         "elementSet": "data",
-        "elementPath": "POLIO"
-      },
-      "POLQUANTO": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 13,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 7,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "POLQUANTO",
-        "elementName": "POLQUANTO",
-        "elementSet": "data",
-        "elementPath": "POLQUANTO"
-      },
-      "PENTA": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 16,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 8,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "PENTA",
-        "elementName": "PENTA",
-        "elementSet": "data",
-        "elementPath": "PENTA"
-      },
-      "PENQUANTO": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 17,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 9,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "PENQUANTO",
-        "elementName": "PENQUANTO",
-        "elementSet": "data",
-        "elementPath": "PENQUANTO"
-      },
-      "FAMAR": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 18,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 10,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "FAMAR",
-        "elementName": "FAMAR",
-        "elementSet": "data",
-        "elementPath": "FAMAR"
-      },
-      "SARAM": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 19,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 11,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "SARAM",
-        "elementName": "SARAM",
-        "elementSet": "data",
-        "elementPath": "SARAM"
-      },
-      "SARQUANTO": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 20,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 12,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "SARQUANTO",
-        "elementName": "SARQUANTO",
-        "elementSet": "data",
-        "elementPath": "SARQUANTO"
-      },
-      "OUTRO1TIPO": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 24,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 13,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "OUTRO1TIPO",
-        "elementName": "OUTRO1TIPO",
-        "elementSet": "data",
-        "elementPath": "OUTRO1TIPO"
-      },
-      "OUTRO1DATA": {
-        "prompt_type_name": "adate",
-        "type": "string",
-        "elementType": "string",
-        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
-        "_row_num": 3,
-        "__rowNum__": 2,
-        "_defn": [
-          {
-            "_row_num": 25,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 14,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "OUTRO1DATA",
-        "elementName": "OUTRO1DATA",
-        "elementSet": "data",
-        "elementPath": "OUTRO1DATA"
-      },
-      "OUTRO2TIPO": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 28,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 15,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "OUTRO2TIPO",
-        "elementName": "OUTRO2TIPO",
-        "elementSet": "data",
-        "elementPath": "OUTRO2TIPO"
-      },
-      "OUTRO2DATA": {
-        "prompt_type_name": "adate",
-        "type": "string",
-        "elementType": "string",
-        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
-        "_row_num": 3,
-        "__rowNum__": 2,
-        "_defn": [
-          {
-            "_row_num": 29,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 16,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "OUTRO2DATA",
-        "elementName": "OUTRO2DATA",
-        "elementSet": "data",
-        "elementPath": "OUTRO2DATA"
+        "elementPath": "AMERELOINI"
       },
       "ANTIPALUD": {
         "type": "string",
@@ -4663,7 +4864,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 17,
+            "_row_num": 7,
             "section_name": "model"
           }
         ],
@@ -4672,6 +4873,359 @@
         "elementName": "ANTIPALUD",
         "elementSet": "data",
         "elementPath": "ANTIPALUD"
+      },
+      "BICO_MATER": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 128,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 8,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "BICO_MATER",
+        "elementName": "BICO_MATER",
+        "elementSet": "data",
+        "elementPath": "BICO_MATER"
+      },
+      "BICO_ONDE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 127,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "BICO_ONDE",
+        "elementName": "BICO_ONDE",
+        "elementSet": "data",
+        "elementPath": "BICO_ONDE"
+      },
+      "BOCA_RIJA": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 131,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 10,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "BOCA_RIJA",
+        "elementName": "BOCA_RIJA",
+        "elementSet": "data",
+        "elementPath": "BOCA_RIJA"
+      },
+      "BSG": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 10,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "BSG",
+        "elementName": "BSG",
+        "elementSet": "data",
+        "elementPath": "BSG"
+      },
+      "CHOROU": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 123,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CHOROU",
+        "elementName": "CHOROU",
+        "elementSet": "data",
+        "elementPath": "CHOROU"
+      },
+      "CONVUL": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 82,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 13,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONVUL",
+        "elementName": "CONVUL",
+        "elementSet": "data",
+        "elementPath": "CONVUL"
+      },
+      "CONVULTE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 84,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CONVULTE",
+        "elementName": "CONVULTE",
+        "elementSet": "data",
+        "elementPath": "CONVULTE"
+      },
+      "CORPO_TESO": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 132,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 15,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CORPO_TESO",
+        "elementName": "CORPO_TESO",
+        "elementSet": "data",
+        "elementPath": "CORPO_TESO"
+      },
+      "CRES": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 50,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 16,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CRES",
+        "elementName": "CRES",
+        "elementSet": "data",
+        "elementPath": "CRES"
+      },
+      "CRESTE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 53,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 17,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CRESTE",
+        "elementName": "CRESTE",
+        "elementSet": "data",
+        "elementPath": "CRESTE"
+      },
+      "DEFEITO": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 136,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 18,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DEFEITO",
+        "elementName": "DEFEITO",
+        "elementSet": "data",
+        "elementPath": "DEFEITO"
+      },
+      "DEFEITOQUA": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 138,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 19,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DEFEITOQUA",
+        "elementName": "DEFEITOQUA",
+        "elementSet": "data",
+        "elementPath": "DEFEITOQUA"
+      },
+      "DIAGNOST": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 94,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 20,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DIAGNOST",
+        "elementName": "DIAGNOST",
+        "elementSet": "data",
+        "elementPath": "DIAGNOST"
+      },
+      "DIAGNOUTRO": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 103,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DIAGNOUTRO",
+        "elementName": "DIAGNOUTRO",
+        "elementSet": "data",
+        "elementPath": "DIAGNOUTRO"
+      },
+      "DIAGNQUEM": {
+        "type": "string",
+        "valuesList": "healthstaff",
+        "_defn": [
+          {
+            "_row_num": 101,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 22,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DIAGNQUEM",
+        "elementName": "DIAGNQUEM",
+        "elementSet": "data",
+        "elementPath": "DIAGNQUEM"
+      },
+      "DIARREIA": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 63,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 23,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DIARREIA",
+        "elementName": "DIARREIA",
+        "elementSet": "data",
+        "elementPath": "DIARREIA"
+      },
+      "DIARREIATE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 65,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 24,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DIARREIATE",
+        "elementName": "DIARREIATE",
+        "elementSet": "data",
+        "elementPath": "DIARREIATE"
+      },
+      "DIARREIATI": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 66,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 25,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DIARREIATI",
+        "elementName": "DIARREIATI",
+        "elementSet": "data",
+        "elementPath": "DIARREIATI"
+      },
+      "DIASDEVIDA": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 121,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 26,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DIASDEVIDA",
+        "elementName": "DIASDEVIDA",
+        "elementSet": "data",
+        "elementPath": "DIASDEVIDA"
       },
       "DORMTENDA": {
         "type": "string",
@@ -4682,7 +5236,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 18,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -4701,7 +5255,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 19,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -4711,98 +5265,24 @@
         "elementSet": "data",
         "elementPath": "DORMTENTI"
       },
-      "MAMAVA": {
+      "FAMAR": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 18,
             "section_name": "survey"
           },
           {
-            "_row_num": 20,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "MAMAVA",
-        "elementName": "MAMAVA",
+        "elementKey": "FAMAR",
+        "elementName": "FAMAR",
         "elementSet": "data",
-        "elementPath": "MAMAVA"
-      },
-      "ACCID": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 44,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 21,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "ACCID",
-        "elementName": "ACCID",
-        "elementSet": "data",
-        "elementPath": "ACCID"
-      },
-      "ACCIDQUAL": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 46,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 22,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "ACCIDQUAL",
-        "elementName": "ACCIDQUAL",
-        "elementSet": "data",
-        "elementPath": "ACCIDQUAL"
-      },
-      "CRES": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 50,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 23,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CRES",
-        "elementName": "CRES",
-        "elementSet": "data",
-        "elementPath": "CRES"
-      },
-      "CRESTE": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 53,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 24,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CRESTE",
-        "elementName": "CRESTE",
-        "elementSet": "data",
-        "elementPath": "CRESTE"
+        "elementPath": "FAMAR"
       },
       "FEBRE": {
         "type": "string",
@@ -4813,7 +5293,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 25,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -4831,7 +5311,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 26,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -4841,292 +5321,15 @@
         "elementSet": "data",
         "elementPath": "FEBRETE"
       },
-      "DIARREIA": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 61,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 27,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DIARREIA",
-        "elementName": "DIARREIA",
-        "elementSet": "data",
-        "elementPath": "DIARREIA"
-      },
-      "DIARREIATE": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 63,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 28,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DIARREIATE",
-        "elementName": "DIARREIATE",
-        "elementSet": "data",
-        "elementPath": "DIARREIATE"
-      },
-      "DIARREIATI": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 64,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 29,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DIARREIATI",
-        "elementName": "DIARREIATI",
-        "elementSet": "data",
-        "elementPath": "DIARREIATI"
-      },
-      "PALIDEZ": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 66,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 30,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "PALIDEZ",
-        "elementName": "PALIDEZ",
-        "elementSet": "data",
-        "elementPath": "PALIDEZ"
-      },
-      "PALIDEZTE": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 68,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 31,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "PALIDEZTE",
-        "elementName": "PALIDEZTE",
-        "elementSet": "data",
-        "elementPath": "PALIDEZTE"
-      },
-      "RESP": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 70,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 32,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "RESP",
-        "elementName": "RESP",
-        "elementSet": "data",
-        "elementPath": "RESP"
-      },
-      "RESPTE": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 72,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 33,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "RESPTE",
-        "elementName": "RESPTE",
-        "elementSet": "data",
-        "elementPath": "RESPTE"
-      },
-      "CONVUL": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 74,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 34,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CONVUL",
-        "elementName": "CONVUL",
-        "elementSet": "data",
-        "elementPath": "CONVUL"
-      },
-      "CONVULTE": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 76,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 35,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CONVULTE",
-        "elementName": "CONVULTE",
-        "elementSet": "data",
-        "elementPath": "CONVULTE"
-      },
-      "TEVSAR": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 78,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 36,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "TEVSAR",
-        "elementName": "TEVSAR",
-        "elementSet": "data",
-        "elementPath": "TEVSAR"
-      },
-      "TEVSARTE": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 80,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 37,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "TEVSARTE",
-        "elementName": "TEVSARTE",
-        "elementSet": "data",
-        "elementPath": "TEVSARTE"
-      },
-      "DIAGNOST": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 84,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 38,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DIAGNOST",
-        "elementName": "DIAGNOST",
-        "elementSet": "data",
-        "elementPath": "DIAGNOST"
-      },
-      "QUALDIAGN": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 86,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 39,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "QUALDIAGN",
-        "elementName": "QUALDIAGN",
-        "elementSet": "data",
-        "elementPath": "QUALDIAGN"
-      },
-      "DIAGNQUEM": {
-        "type": "string",
-        "valuesList": "healthstaff",
-        "_defn": [
-          {
-            "_row_num": 87,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 40,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DIAGNQUEM",
-        "elementName": "DIAGNQUEM",
-        "elementSet": "data",
-        "elementPath": "DIAGNQUEM"
-      },
-      "DIAGNOUTRO": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 89,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 41,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DIAGNOUTRO",
-        "elementName": "DIAGNOUTRO",
-        "elementSet": "data",
-        "elementPath": "DIAGNOUTRO"
-      },
       "HISTORIA1": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 94,
+            "_row_num": 108,
             "section_name": "survey"
           },
           {
-            "_row_num": 42,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -5140,11 +5343,11 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 95,
+            "_row_num": 109,
             "section_name": "survey"
           },
           {
-            "_row_num": 43,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -5154,35 +5357,35 @@
         "elementSet": "data",
         "elementPath": "HISTORIA2"
       },
-      "NASCVIVA": {
+      "MAMAVA": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 98,
+            "_row_num": 41,
             "section_name": "survey"
           },
           {
-            "_row_num": 44,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "NASCVIVA",
-        "elementName": "NASCVIVA",
+        "elementKey": "MAMAVA",
+        "elementName": "MAMAVA",
         "elementSet": "data",
-        "elementPath": "NASCVIVA"
+        "elementPath": "MAMAVA"
       },
       "MORT_ANTE": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 100,
+            "_row_num": 116,
             "section_name": "survey"
           },
           {
-            "_row_num": 45,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -5192,11 +5395,205 @@
         "elementSet": "data",
         "elementPath": "MORT_ANTE"
       },
-      "DIASDEVIDA": {
+      "NASCVIVA": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 112,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 36,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NASCVIVA",
+        "elementName": "NASCVIVA",
+        "elementSet": "data",
+        "elementPath": "NASCVIVA"
+      },
+      "ONDEFALEC": {
+        "type": "string",
+        "valuesList": "Facility",
+        "_defn": [
+          {
+            "_row_num": 3,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 37,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ONDEFALEC",
+        "elementName": "ONDEFALEC",
+        "elementSet": "data",
+        "elementPath": "ONDEFALEC"
+      },
+      "ONDEFALO": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 5,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 38,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ONDEFALO",
+        "elementName": "ONDEFALO",
+        "elementSet": "data",
+        "elementPath": "ONDEFALO"
+      },
+      "OUTRO1DATA": {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 25,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 39,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "OUTRO1DATA",
+        "elementName": "OUTRO1DATA",
+        "elementSet": "data",
+        "elementPath": "OUTRO1DATA"
+      },
+      "OUTRO1TIPO": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 24,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 40,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "OUTRO1TIPO",
+        "elementName": "OUTRO1TIPO",
+        "elementSet": "data",
+        "elementPath": "OUTRO1TIPO"
+      },
+      "OUTRO2DATA": {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 29,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 41,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "OUTRO2DATA",
+        "elementName": "OUTRO2DATA",
+        "elementSet": "data",
+        "elementPath": "OUTRO2DATA"
+      },
+      "OUTRO2TIPO": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 28,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 42,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "OUTRO2TIPO",
+        "elementName": "OUTRO2TIPO",
+        "elementSet": "data",
+        "elementPath": "OUTRO2TIPO"
+      },
+      "PALIDEZ": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 70,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 43,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "PALIDEZ",
+        "elementName": "PALIDEZ",
+        "elementSet": "data",
+        "elementPath": "PALIDEZ"
+      },
+      "PALIDEZTE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 72,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 44,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "PALIDEZTE",
+        "elementName": "PALIDEZTE",
+        "elementSet": "data",
+        "elementPath": "PALIDEZTE"
+      },
+      "PENQUANTO": {
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 103,
+            "_row_num": 17,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 45,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "PENQUANTO",
+        "elementName": "PENQUANTO",
+        "elementSet": "data",
+        "elementPath": "PENQUANTO"
+      },
+      "PENTA": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 16,
             "section_name": "survey"
           },
           {
@@ -5205,17 +5602,17 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "DIASDEVIDA",
-        "elementName": "DIASDEVIDA",
+        "elementKey": "PENTA",
+        "elementName": "PENTA",
         "elementSet": "data",
-        "elementPath": "DIASDEVIDA"
+        "elementPath": "PENTA"
       },
-      "CHOROU": {
+      "POLIO": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 105,
+            "_row_num": 12,
             "section_name": "survey"
           },
           {
@@ -5224,16 +5621,17 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "CHOROU",
-        "elementName": "CHOROU",
+        "elementKey": "POLIO",
+        "elementName": "POLIO",
         "elementSet": "data",
-        "elementPath": "CHOROU"
+        "elementPath": "POLIO"
       },
-      "BICO_ONDE": {
+      "POLIONAS": {
         "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 107,
+            "_row_num": 11,
             "section_name": "survey"
           },
           {
@@ -5242,17 +5640,16 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "BICO_ONDE",
-        "elementName": "BICO_ONDE",
+        "elementKey": "POLIONAS",
+        "elementName": "POLIONAS",
         "elementSet": "data",
-        "elementPath": "BICO_ONDE"
+        "elementPath": "POLIONAS"
       },
-      "BICO_MATER": {
-        "type": "string",
-        "valuesList": "YesNoU",
+      "POLQUANTO": {
+        "type": "integer",
         "_defn": [
           {
-            "_row_num": 108,
+            "_row_num": 13,
             "section_name": "survey"
           },
           {
@@ -5261,17 +5658,16 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "BICO_MATER",
-        "elementName": "BICO_MATER",
+        "elementKey": "POLQUANTO",
+        "elementName": "POLQUANTO",
         "elementSet": "data",
-        "elementPath": "BICO_MATER"
+        "elementPath": "POLQUANTO"
       },
-      "BOCA_RIJA": {
+      "QUALDIAGN": {
         "type": "string",
-        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 109,
+            "_row_num": 96,
             "section_name": "survey"
           },
           {
@@ -5280,17 +5676,17 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "BOCA_RIJA",
-        "elementName": "BOCA_RIJA",
+        "elementKey": "QUALDIAGN",
+        "elementName": "QUALDIAGN",
         "elementSet": "data",
-        "elementPath": "BOCA_RIJA"
+        "elementPath": "QUALDIAGN"
       },
-      "CORPO_TESO": {
+      "RESP": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 110,
+            "_row_num": 76,
             "section_name": "survey"
           },
           {
@@ -5299,17 +5695,16 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "CORPO_TESO",
-        "elementName": "CORPO_TESO",
+        "elementKey": "RESP",
+        "elementName": "RESP",
         "elementSet": "data",
-        "elementPath": "CORPO_TESO"
+        "elementPath": "RESP"
       },
-      "DEFEITO": {
+      "RESPTE": {
         "type": "string",
-        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 114,
+            "_row_num": 78,
             "section_name": "survey"
           },
           {
@@ -5318,16 +5713,17 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "DEFEITO",
-        "elementName": "DEFEITO",
+        "elementKey": "RESPTE",
+        "elementName": "RESPTE",
         "elementSet": "data",
-        "elementPath": "DEFEITO"
+        "elementPath": "RESPTE"
       },
-      "DEFEITOQUA": {
+      "SARAM": {
         "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 116,
+            "_row_num": 19,
             "section_name": "survey"
           },
           {
@@ -5336,17 +5732,16 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "DEFEITOQUA",
-        "elementName": "DEFEITOQUA",
+        "elementKey": "SARAM",
+        "elementName": "SARAM",
         "elementSet": "data",
-        "elementPath": "DEFEITOQUA"
+        "elementPath": "SARAM"
       },
-      "AMARELO": {
-        "type": "string",
-        "valuesList": "YesNoU",
+      "SARQUANTO": {
+        "type": "integer",
         "_defn": [
           {
-            "_row_num": 118,
+            "_row_num": 20,
             "section_name": "survey"
           },
           {
@@ -5355,16 +5750,17 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "AMARELO",
-        "elementName": "AMARELO",
+        "elementKey": "SARQUANTO",
+        "elementName": "SARQUANTO",
         "elementSet": "data",
-        "elementPath": "AMARELO"
+        "elementPath": "SARQUANTO"
       },
-      "AMERELOINI": {
+      "TEVSAR": {
         "type": "string",
+        "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 120,
+            "_row_num": 88,
             "section_name": "survey"
           },
           {
@@ -5373,16 +5769,16 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "AMERELOINI",
-        "elementName": "AMERELOINI",
+        "elementKey": "TEVSAR",
+        "elementName": "TEVSAR",
         "elementSet": "data",
-        "elementPath": "AMERELOINI"
+        "elementPath": "TEVSAR"
       },
-      "AMARELODUR": {
-        "type": "integer",
+      "TEVSARTE": {
+        "type": "string",
         "_defn": [
           {
-            "_row_num": 121,
+            "_row_num": 90,
             "section_name": "survey"
           },
           {
@@ -5391,10 +5787,57 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "AMARELODUR",
-        "elementName": "AMARELODUR",
+        "elementKey": "TEVSARTE",
+        "elementName": "TEVSARTE",
         "elementSet": "data",
-        "elementPath": "AMARELODUR"
+        "elementPath": "TEVSARTE"
+      },
+      "REGIDC": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 58,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "REGIDC",
+        "elementName": "REGIDC",
+        "elementSet": "data",
+        "elementPath": "REGIDC"
+      },
+      "VISITDATE": {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 3,
+        "__rowNum__": 2,
+        "_defn": [
+          {
+            "_row_num": 59,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VISITDATE",
+        "elementName": "VISITDATE",
+        "elementSet": "data",
+        "elementPath": "VISITDATE"
+      },
+      "VISITIDC": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 60,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VISITIDC",
+        "elementName": "VISITIDC",
+        "elementSet": "data",
+        "elementPath": "VISITIDC"
       },
       "_id": {
         "type": "string",

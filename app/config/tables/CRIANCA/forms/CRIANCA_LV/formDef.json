@@ -168,20 +168,20 @@
       },
       {
         "type": "async_assign_num_value",
-        "values_list": "linked_parma",
-        "name": "PARMA",
+        "values_list": "linked_pama",
+        "name": "PAMA",
         "_row_num": 20
       },
       {
         "type": "async_assign_date",
-        "values_list": "linked_daparma",
-        "name": "DAPARMA",
+        "values_list": "linked_dapama",
+        "name": "DAPAMA",
         "_row_num": 21
       },
       {
         "type": "async_assign_num_value",
-        "values_list": "linked_idparma",
-        "name": "IDPARMA",
+        "values_list": "linked_idpama",
+        "name": "IDPAMA",
         "_row_num": 22
       },
       {
@@ -221,7 +221,7 @@
         "linked_table_id": "CRIANCA_VISIT",
         "selection": "REGIDC = ?",
         "selectionArgs": "[data('REGIDC')]",
-        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), comsup: data('COMSUP'), parma: data('PARMA'), moma: data('MOMA'), REGID: data('REGID')}",
+        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), comsup: data('COMSUP'), pama: data('PAMA'), moma: data('MOMA'), REGID: data('REGID')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       },
@@ -298,7 +298,7 @@
         "_row_num": 10
       },
       {
-        "query_name": "linked_parma",
+        "query_name": "linked_pama",
         "query_type": "linked_table",
         "linked_form_id": "CRIANCA_VISIT",
         "linked_table_id": "CRIANCA_VISIT",
@@ -306,11 +306,11 @@
         "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
-        "fieldName": "PARMA",
+        "fieldName": "PAMA",
         "_row_num": 11
       },
       {
-        "query_name": "linked_daparma",
+        "query_name": "linked_dapama",
         "query_type": "linked_table",
         "linked_form_id": "CRIANCA_VISIT",
         "linked_table_id": "CRIANCA_VISIT",
@@ -318,11 +318,11 @@
         "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
-        "fieldName": "DAPARMA",
+        "fieldName": "DAPAMA",
         "_row_num": 12
       },
       {
-        "query_name": "linked_idparma",
+        "query_name": "linked_idpama",
         "query_type": "linked_table",
         "linked_form_id": "CRIANCA_VISIT",
         "linked_table_id": "CRIANCA_VISIT",
@@ -330,7 +330,7 @@
         "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
-        "fieldName": "IDPARMA",
+        "fieldName": "IDPAMA",
         "_row_num": 13
       },
       {
@@ -575,19 +575,19 @@
         "_row_num": 22
       },
       {
-        "name": "PARMA",
+        "name": "PAMA",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
         "_row_num": 23
       },
       {
-        "name": "DAPARMA",
+        "name": "DAPAMA",
         "type": "async_assign_date",
         "isSessionVariable": false,
         "_row_num": 24
       },
       {
-        "name": "IDPARMA",
+        "name": "IDPAMA",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
         "_row_num": 25
@@ -807,7 +807,7 @@
         "linked_table_id": "CRIANCA_VISIT",
         "selection": "REGIDC = ?",
         "selectionArgs": "[data('REGIDC')]",
-        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), comsup: data('COMSUP'), parma: data('PARMA'), moma: data('MOMA'), REGID: data('REGID')}",
+        "newRowInitialElementKeyToValueMap": "{REGIDC: data('REGIDC'), comsup: data('COMSUP'), pama: data('PAMA'), moma: data('MOMA'), REGID: data('REGID')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       },
@@ -883,8 +883,8 @@
         "fieldName": "IDCOMSUP",
         "_row_num": 10
       },
-      "linked_parma": {
-        "query_name": "linked_parma",
+      "linked_pama": {
+        "query_name": "linked_pama",
         "query_type": "linked_table",
         "linked_form_id": "CRIANCA_VISIT",
         "linked_table_id": "CRIANCA_VISIT",
@@ -892,11 +892,11 @@
         "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
-        "fieldName": "PARMA",
+        "fieldName": "PAMA",
         "_row_num": 11
       },
-      "linked_daparma": {
-        "query_name": "linked_daparma",
+      "linked_dapama": {
+        "query_name": "linked_dapama",
         "query_type": "linked_table",
         "linked_form_id": "CRIANCA_VISIT",
         "linked_table_id": "CRIANCA_VISIT",
@@ -904,11 +904,11 @@
         "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
-        "fieldName": "DAPARMA",
+        "fieldName": "DAPAMA",
         "_row_num": 12
       },
-      "linked_idparma": {
-        "query_name": "linked_idparma",
+      "linked_idpama": {
+        "query_name": "linked_idpama",
         "query_type": "linked_table",
         "linked_form_id": "CRIANCA_VISIT",
         "linked_table_id": "CRIANCA_VISIT",
@@ -916,7 +916,7 @@
         "selectionArgs": "[data('REGIDC')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
-        "fieldName": "IDPARMA",
+        "fieldName": "IDPAMA",
         "_row_num": 13
       },
       "linked_moma": {
@@ -1254,10 +1254,10 @@
         "isSessionVariable": false,
         "elementKey": "IDCOMSUP"
       },
-      "PARMA": {
+      "PAMA": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "valuesList": "linked_parma",
+        "valuesList": "linked_pama",
         "_row_num": 4,
         "__rowNum__": 3,
         "_defn": [
@@ -1271,12 +1271,12 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "PARMA"
+        "elementKey": "PAMA"
       },
-      "DAPARMA": {
+      "DAPAMA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "valuesList": "linked_daparma",
+        "valuesList": "linked_dapama",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
@@ -1290,12 +1290,12 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "DAPARMA"
+        "elementKey": "DAPAMA"
       },
-      "IDPARMA": {
+      "IDPAMA": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "valuesList": "linked_idparma",
+        "valuesList": "linked_idpama",
         "_row_num": 4,
         "__rowNum__": 3,
         "_defn": [
@@ -1309,7 +1309,7 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "IDPARMA"
+        "elementKey": "IDPAMA"
       },
       "MOMA": {
         "prompt_type_name": "async_assign_num_value",
@@ -1553,8 +1553,8 @@
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_parma",
-            "name": "PARMA",
+            "values_list": "linked_pama",
+            "name": "PAMA",
             "_row_num": 20,
             "__rowNum__": 19,
             "_token_type": "prompt",
@@ -1564,8 +1564,8 @@
           },
           {
             "type": "async_assign_date",
-            "values_list": "linked_daparma",
-            "name": "DAPARMA",
+            "values_list": "linked_dapama",
+            "name": "DAPAMA",
             "_row_num": 21,
             "__rowNum__": 20,
             "_token_type": "prompt",
@@ -1575,8 +1575,8 @@
           },
           {
             "type": "async_assign_num_value",
-            "values_list": "linked_idparma",
-            "name": "IDPARMA",
+            "values_list": "linked_idpama",
+            "name": "IDPAMA",
             "_row_num": 22,
             "__rowNum__": 21,
             "_token_type": "prompt",
@@ -2250,10 +2250,10 @@
         "elementSet": "data",
         "elementPath": "IDCOMSUP"
       },
-      "PARMA": {
+      "PAMA": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "valuesList": "linked_parma",
+        "valuesList": "linked_pama",
         "_row_num": 4,
         "__rowNum__": 3,
         "_defn": [
@@ -2267,15 +2267,15 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "PARMA",
-        "elementName": "PARMA",
+        "elementKey": "PAMA",
+        "elementName": "PAMA",
         "elementSet": "data",
-        "elementPath": "PARMA"
+        "elementPath": "PAMA"
       },
-      "DAPARMA": {
+      "DAPAMA": {
         "prompt_type_name": "async_assign_date",
         "type": "date",
-        "valuesList": "linked_daparma",
+        "valuesList": "linked_dapama",
         "_row_num": 3,
         "__rowNum__": 2,
         "_defn": [
@@ -2289,15 +2289,15 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "DAPARMA",
-        "elementName": "DAPARMA",
+        "elementKey": "DAPAMA",
+        "elementName": "DAPAMA",
         "elementSet": "data",
-        "elementPath": "DAPARMA"
+        "elementPath": "DAPAMA"
       },
-      "IDPARMA": {
+      "IDPAMA": {
         "prompt_type_name": "async_assign_num_value",
         "type": "integer",
-        "valuesList": "linked_idparma",
+        "valuesList": "linked_idpama",
         "_row_num": 4,
         "__rowNum__": 3,
         "_defn": [
@@ -2311,10 +2311,10 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "IDPARMA",
-        "elementName": "IDPARMA",
+        "elementKey": "IDPAMA",
+        "elementName": "IDPAMA",
         "elementSet": "data",
-        "elementPath": "IDPARMA"
+        "elementPath": "IDPAMA"
       },
       "MOMA": {
         "prompt_type_name": "async_assign_num_value",

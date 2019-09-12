@@ -503,19 +503,19 @@
         "_row_num": 22
       },
       {
-        "name": "PARMA",
+        "name": "PAMA",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
         "_row_num": 23
       },
       {
-        "name": "DAPARMA",
+        "name": "DAPAMA",
         "type": "async_assign_date",
         "isSessionVariable": false,
         "_row_num": 24
       },
       {
-        "name": "IDPARMA",
+        "name": "IDPAMA",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
         "_row_num": 25
@@ -1051,7 +1051,7 @@
         "isSessionVariable": false,
         "elementKey": "IDCOMSUP"
       },
-      "PARMA": {
+      "PAMA": {
         "_defn": [
           {
             "_row_num": 23,
@@ -1060,9 +1060,9 @@
         ],
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "elementKey": "PARMA"
+        "elementKey": "PAMA"
       },
-      "DAPARMA": {
+      "DAPAMA": {
         "_defn": [
           {
             "_row_num": 24,
@@ -1071,9 +1071,9 @@
         ],
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "elementKey": "DAPARMA"
+        "elementKey": "DAPAMA"
       },
-      "IDPARMA": {
+      "IDPAMA": {
         "_defn": [
           {
             "_row_num": 25,
@@ -1082,7 +1082,7 @@
         ],
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "elementKey": "IDPARMA"
+        "elementKey": "IDPAMA"
       },
       "MOMA": {
         "_defn": [
@@ -2019,7 +2019,7 @@
         "elementSet": "data",
         "elementPath": "IDCOMSUP"
       },
-      "PARMA": {
+      "PAMA": {
         "_defn": [
           {
             "_row_num": 23,
@@ -2028,12 +2028,12 @@
         ],
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "elementKey": "PARMA",
-        "elementName": "PARMA",
+        "elementKey": "PAMA",
+        "elementName": "PAMA",
         "elementSet": "data",
-        "elementPath": "PARMA"
+        "elementPath": "PAMA"
       },
-      "DAPARMA": {
+      "DAPAMA": {
         "_defn": [
           {
             "_row_num": 24,
@@ -2042,12 +2042,12 @@
         ],
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "elementKey": "DAPARMA",
-        "elementName": "DAPARMA",
+        "elementKey": "DAPAMA",
+        "elementName": "DAPAMA",
         "elementSet": "data",
-        "elementPath": "DAPARMA"
+        "elementPath": "DAPAMA"
       },
-      "IDPARMA": {
+      "IDPAMA": {
         "_defn": [
           {
             "_row_num": 25,
@@ -2056,10 +2056,10 @@
         ],
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "elementKey": "IDPARMA",
-        "elementName": "IDPARMA",
+        "elementKey": "IDPAMA",
+        "elementName": "IDPAMA",
         "elementSet": "data",
-        "elementPath": "IDPARMA"
+        "elementPath": "IDPAMA"
       },
       "MOMA": {
         "_defn": [
