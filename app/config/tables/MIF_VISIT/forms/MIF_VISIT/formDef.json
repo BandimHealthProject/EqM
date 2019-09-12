@@ -1773,11 +1773,11 @@
       {
         "query_name": "pregnancies",
         "query_type": "linked_table",
-        "linked_form_id": "GRAVIDA",
-        "linked_table_id": "GRAVIDA",
+        "linked_form_id": "GRAVIDA_VISIT",
+        "linked_table_id": "GRAVIDA_VISIT",
         "selection": "REGID = ?",
         "selectionArgs": "[data('REGID')]",
-        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), PREGDIA: data('CONT'), ESTADOVIS: data('ESTADOVIS'), VISITID: opendatakit.getCurrentInstanceId()}",
+        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), CONT: data('CONT'), GRAVIDA_ESTADO: data('ESTADOVIS'), VISITID: opendatakit.getCurrentInstanceId()}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 3
       },
@@ -3129,11 +3129,11 @@
       "pregnancies": {
         "query_name": "pregnancies",
         "query_type": "linked_table",
-        "linked_form_id": "GRAVIDA",
-        "linked_table_id": "GRAVIDA",
+        "linked_form_id": "GRAVIDA_VISIT",
+        "linked_table_id": "GRAVIDA_VISIT",
         "selection": "REGID = ?",
         "selectionArgs": "[data('REGID')]",
-        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), PREGDIA: data('CONT'), ESTADOVIS: data('ESTADOVIS'), VISITID: opendatakit.getCurrentInstanceId()}",
+        "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), CONT: data('CONT'), GRAVIDA_ESTADO: data('ESTADOVIS'), VISITID: opendatakit.getCurrentInstanceId()}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 3
       },
