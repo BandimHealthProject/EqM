@@ -170,7 +170,7 @@
         "_row_num": 18
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "LMP_M",
         "display": {
           "prompt": {
@@ -188,7 +188,7 @@
         "_row_num": 20
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "LMP_C",
         "display": {
           "prompt": {
@@ -380,7 +380,7 @@
         "_row_num": 46
       },
       {
-        "type": "custom_date",
+        "type": "adate",
         "name": "DATAEST",
         "display": {
           "prompt": {
@@ -424,6 +424,13 @@
         "prompt_type_name": "async_assign_date",
         "type": "date",
         "_row_num": 3
+      },
+      {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4
       }
     ],
     "choices": [
@@ -619,7 +626,7 @@
       },
       {
         "name": "DATAEST",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 3
       },
@@ -655,19 +662,19 @@
       },
       {
         "name": "GRVISITDATA",
-        "type": "custom_date",
+        "type": "async_assign_date",
         "isSessionVariable": false,
         "_row_num": 9
       },
       {
         "name": "LMP_C",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 10
       },
       {
         "name": "LMP_M",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 11
       },
@@ -1059,12 +1066,12 @@
         "elementKey": "CARTONA"
       },
       "DATAEST": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 47,
@@ -1154,13 +1161,11 @@
         "elementKey": "GEST"
       },
       "GRVISITDATA": {
-        "prompt_type_name": "custom_date",
-        "type": "string",
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
         "valuesList": "linked_visitdate",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 4,
@@ -1175,12 +1180,12 @@
         "elementKey": "GRVISITDATA"
       },
       "LMP_C": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 21,
@@ -1195,12 +1200,12 @@
         "elementKey": "LMP_C"
       },
       "LMP_M": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 19,
@@ -1399,7 +1404,7 @@
             "promptIdx": 5
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "LMP_M",
             "display": {
               "prompt": {
@@ -1412,12 +1417,12 @@
             "_row_num": 19,
             "__rowNum__": 18,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen17",
             "promptIdx": 6
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "LMP_C",
             "display": {
               "prompt": {
@@ -1430,7 +1435,7 @@
             "_row_num": 21,
             "__rowNum__": 20,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen17",
             "promptIdx": 7
           },
@@ -1591,7 +1596,7 @@
             "promptIdx": 16
           },
           {
-            "type": "custom_date",
+            "type": "adate",
             "name": "DATAEST",
             "display": {
               "prompt": {
@@ -1601,7 +1606,7 @@
             "_row_num": 47,
             "__rowNum__": 46,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen46",
             "promptIdx": 17
           },
@@ -2034,12 +2039,12 @@
         "elementPath": "CARTONA"
       },
       "DATAEST": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 47,
@@ -2147,13 +2152,11 @@
         "elementPath": "GEST"
       },
       "GRVISITDATA": {
-        "prompt_type_name": "custom_date",
-        "type": "string",
+        "prompt_type_name": "async_assign_date",
+        "type": "date",
         "valuesList": "linked_visitdate",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "_row_num": 3,
+        "__rowNum__": 2,
         "_defn": [
           {
             "_row_num": 4,
@@ -2171,12 +2174,12 @@
         "elementPath": "GRVISITDATA"
       },
       "LMP_C": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 21,
@@ -2194,12 +2197,12 @@
         "elementPath": "LMP_C"
       },
       "LMP_M": {
-        "prompt_type_name": "custom_date",
+        "prompt_type_name": "adate",
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 4,
+        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 19,
