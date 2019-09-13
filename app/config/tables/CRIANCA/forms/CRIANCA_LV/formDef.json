@@ -515,118 +515,226 @@
         "_row_num": 10
       },
       {
+        "name": "NADOESTADO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 11
+      },
+      {
         "name": "REGID",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 12
+        "_row_num": 13
       },
       {
         "name": "OUTDATE",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
-        "_row_num": 13
+        "_row_num": 14
       },
       {
         "name": "PREGID",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 14
+        "_row_num": 15
       },
       {
         "name": "REGDIA",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
-        "_row_num": 15
+        "_row_num": 16
       },
       {
         "name": "ESTADOVIS",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 17
+        "_row_num": 18
       },
       {
         "name": "EXITDATE",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 18
+        "_row_num": 19
       },
       {
         "name": "EXITPRECIS",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 19
+        "_row_num": 20
       },
       {
         "name": "COMSUP",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 20
+        "_row_num": 21
       },
       {
         "name": "DACOMSUP",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 21
+        "_row_num": 22
       },
       {
         "name": "IDCOMSUP",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 22
+        "_row_num": 23
       },
       {
         "name": "PAMA",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 23
+        "_row_num": 24
       },
       {
         "name": "DAPAMA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 24
+        "_row_num": 25
       },
       {
         "name": "IDPAMA",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 25
+        "_row_num": 26
       },
       {
         "name": "MOMA",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 26
+        "_row_num": 27
       },
       {
         "name": "DASEP",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 27
+        "_row_num": 28
       },
       {
         "name": "IDSEP",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 28
+        "_row_num": 29
       },
       {
         "name": "CAUSASEP",
         "type": "async_assign_text_value",
         "isSessionVariable": false,
-        "_row_num": 29
+        "_row_num": 30
       },
       {
         "name": "LASTVISIT",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 30
+        "_row_num": 31
       },
       {
         "name": "NOMEMAE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 32
+        "_row_num": 33
+      },
+      {
+        "name": "ASSISTPART",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 35
+      },
+      {
+        "name": "CART_ANC",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 36
+      },
+      {
+        "name": "CDG_C",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 37
+      },
+      {
+        "name": "CDG_M",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 38
+      },
+      {
+        "name": "FEDEP_C",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 39
+      },
+      {
+        "name": "FEDEP_M",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 40
+      },
+      {
+        "name": "GRCONS",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 41
+      },
+      {
+        "name": "GRINFOS",
+        "type": "assign",
+        "isSessionVariable": false,
+        "_row_num": 42
+      },
+      {
+        "name": "GRVAC",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 43
+      },
+      {
+        "name": "inf1",
+        "type": "select_one",
+        "isSessionVariable": true,
+        "_row_num": 44
+      },
+      {
+        "name": "inf2",
+        "type": "select_one",
+        "isSessionVariable": true,
+        "_row_num": 45
+      },
+      {
+        "name": "LITTERSIZE",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 46
+      },
+      {
+        "name": "LOCPAR",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 47
+      },
+      {
+        "name": "QVFANSI_C",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 48
+      },
+      {
+        "name": "QVFANSI_M",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 49
+      },
+      {
+        "name": "TABPART",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 50
+      },
+      {
+        "name": "VACTTHI",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 51
       }
     ]
   },
@@ -1086,24 +1194,19 @@
         "isSessionVariable": false,
         "elementKey": "REGIDC"
       },
-      "REGID": {
+      "NADOESTADO": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 11,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "REGID"
+        "elementKey": "NADOESTADO"
       },
-      "OUTDATE": {
-        "prompt_type_name": "custom_date",
+      "REGID": {
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
         "_defn": [
           {
             "_row_num": 13,
@@ -1111,13 +1214,24 @@
           }
         ],
         "isSessionVariable": false,
+        "elementKey": "REGID"
+      },
+      "OUTDATE": {
+        "_defn": [
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "type": "adate",
+        "isSessionVariable": false,
         "elementKey": "OUTDATE"
       },
       "PREGID": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 15,
             "section_name": "model"
           }
         ],
@@ -1125,18 +1239,13 @@
         "elementKey": "PREGID"
       },
       "REGDIA": {
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
+        "type": "adate",
         "isSessionVariable": false,
         "elementKey": "REGDIA"
       },
@@ -1152,7 +1261,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 17,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -1171,7 +1280,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 18,
+            "_row_num": 19,
             "section_name": "model"
           }
         ],
@@ -1190,7 +1299,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 19,
+            "_row_num": 20,
             "section_name": "model"
           }
         ],
@@ -1209,7 +1318,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 20,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
@@ -1228,7 +1337,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 21,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -1247,7 +1356,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 22,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -1266,7 +1375,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 23,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -1285,7 +1394,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 24,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -1304,7 +1413,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 25,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -1323,7 +1432,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 26,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -1342,7 +1451,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 27,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -1361,7 +1470,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 28,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -1380,7 +1489,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 29,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -1399,7 +1508,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 30,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -1410,12 +1519,199 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 32,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "NOMEMAE"
+      },
+      "ASSISTPART": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 35,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ASSISTPART"
+      },
+      "CART_ANC": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 36,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CART_ANC"
+      },
+      "CDG_C": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 37,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CDG_C"
+      },
+      "CDG_M": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 38,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CDG_M"
+      },
+      "FEDEP_C": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 39,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "FEDEP_C"
+      },
+      "FEDEP_M": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 40,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "FEDEP_M"
+      },
+      "GRCONS": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 41,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "GRCONS"
+      },
+      "GRINFOS": {
+        "_defn": [
+          {
+            "_row_num": 42,
+            "section_name": "model"
+          }
+        ],
+        "type": "assign",
+        "isSessionVariable": false,
+        "elementKey": "GRINFOS"
+      },
+      "GRVAC": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 43,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "GRVAC"
+      },
+      "inf1": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 44,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "inf1"
+      },
+      "inf2": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 45,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "inf2"
+      },
+      "LITTERSIZE": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 46,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "LITTERSIZE"
+      },
+      "LOCPAR": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 47,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "LOCPAR"
+      },
+      "QVFANSI_C": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 48,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "QVFANSI_C"
+      },
+      "QVFANSI_M": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 49,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "QVFANSI_M"
+      },
+      "TABPART": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 50,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TABPART"
+      },
+      "VACTTHI": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 51,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VACTTHI"
       }
     },
     "section_names": [
@@ -2052,11 +2348,25 @@
         "elementSet": "data",
         "elementPath": "REGIDC"
       },
+      "NADOESTADO": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NADOESTADO",
+        "elementName": "NADOESTADO",
+        "elementSet": "data",
+        "elementPath": "NADOESTADO"
+      },
       "REGID": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 13,
             "section_name": "model"
           }
         ],
@@ -2067,18 +2377,13 @@
         "elementPath": "REGID"
       },
       "OUTDATE": {
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 13,
+            "_row_num": 14,
             "section_name": "model"
           }
         ],
+        "type": "adate",
         "isSessionVariable": false,
         "elementKey": "OUTDATE",
         "elementName": "OUTDATE",
@@ -2089,7 +2394,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 15,
             "section_name": "model"
           }
         ],
@@ -2100,18 +2405,13 @@
         "elementPath": "PREGID"
       },
       "REGDIA": {
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 2,
-        "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
+        "type": "adate",
         "isSessionVariable": false,
         "elementKey": "REGDIA",
         "elementName": "REGDIA",
@@ -2130,7 +2430,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 17,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -2152,7 +2452,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 18,
+            "_row_num": 19,
             "section_name": "model"
           }
         ],
@@ -2174,7 +2474,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 19,
+            "_row_num": 20,
             "section_name": "model"
           }
         ],
@@ -2196,7 +2496,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 20,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
@@ -2218,7 +2518,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 21,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -2240,7 +2540,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 22,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -2262,7 +2562,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 23,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -2284,7 +2584,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 24,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -2306,7 +2606,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 25,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -2328,7 +2628,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 26,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -2350,7 +2650,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 27,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -2372,7 +2672,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 28,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -2394,7 +2694,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 29,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -2416,7 +2716,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 30,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -2430,7 +2730,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 32,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -2439,6 +2739,244 @@
         "elementName": "NOMEMAE",
         "elementSet": "data",
         "elementPath": "NOMEMAE"
+      },
+      "ASSISTPART": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 35,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ASSISTPART",
+        "elementName": "ASSISTPART",
+        "elementSet": "data",
+        "elementPath": "ASSISTPART"
+      },
+      "CART_ANC": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 36,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CART_ANC",
+        "elementName": "CART_ANC",
+        "elementSet": "data",
+        "elementPath": "CART_ANC"
+      },
+      "CDG_C": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 37,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CDG_C",
+        "elementName": "CDG_C",
+        "elementSet": "data",
+        "elementPath": "CDG_C"
+      },
+      "CDG_M": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 38,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CDG_M",
+        "elementName": "CDG_M",
+        "elementSet": "data",
+        "elementPath": "CDG_M"
+      },
+      "FEDEP_C": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 39,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "FEDEP_C",
+        "elementName": "FEDEP_C",
+        "elementSet": "data",
+        "elementPath": "FEDEP_C"
+      },
+      "FEDEP_M": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 40,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "FEDEP_M",
+        "elementName": "FEDEP_M",
+        "elementSet": "data",
+        "elementPath": "FEDEP_M"
+      },
+      "GRCONS": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 41,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "GRCONS",
+        "elementName": "GRCONS",
+        "elementSet": "data",
+        "elementPath": "GRCONS"
+      },
+      "GRINFOS": {
+        "_defn": [
+          {
+            "_row_num": 42,
+            "section_name": "model"
+          }
+        ],
+        "type": "assign",
+        "isSessionVariable": false,
+        "elementKey": "GRINFOS",
+        "elementName": "GRINFOS",
+        "elementSet": "data",
+        "elementPath": "GRINFOS"
+      },
+      "GRVAC": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 43,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "GRVAC",
+        "elementName": "GRVAC",
+        "elementSet": "data",
+        "elementPath": "GRVAC"
+      },
+      "inf1": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 44,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "inf1",
+        "elementName": "inf1",
+        "elementSet": "data",
+        "elementPath": "inf1"
+      },
+      "inf2": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 45,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "inf2",
+        "elementName": "inf2",
+        "elementSet": "data",
+        "elementPath": "inf2"
+      },
+      "LITTERSIZE": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 46,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "LITTERSIZE",
+        "elementName": "LITTERSIZE",
+        "elementSet": "data",
+        "elementPath": "LITTERSIZE"
+      },
+      "LOCPAR": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 47,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "LOCPAR",
+        "elementName": "LOCPAR",
+        "elementSet": "data",
+        "elementPath": "LOCPAR"
+      },
+      "QVFANSI_C": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 48,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "QVFANSI_C",
+        "elementName": "QVFANSI_C",
+        "elementSet": "data",
+        "elementPath": "QVFANSI_C"
+      },
+      "QVFANSI_M": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 49,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "QVFANSI_M",
+        "elementName": "QVFANSI_M",
+        "elementSet": "data",
+        "elementPath": "QVFANSI_M"
+      },
+      "TABPART": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 50,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TABPART",
+        "elementName": "TABPART",
+        "elementSet": "data",
+        "elementPath": "TABPART"
+      },
+      "VACTTHI": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 51,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VACTTHI",
+        "elementName": "VACTTHI",
+        "elementSet": "data",
+        "elementPath": "VACTTHI"
       },
       "_id": {
         "type": "string",

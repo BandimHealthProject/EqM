@@ -1065,7 +1065,7 @@
         "linked_table_id": "CRIANCA",
         "selection": "PREGID = ?",
         "selectionArgs": "[opendatakit.getCurrentInstanceId()]",
-        "newRowInitialElementKeyToValueMap": "{PREGID: opendatakit.getCurrentInstanceId(), REGID: data('REGID'), REGDIA: data('PREGDIA'), OUTDATE: data('OUTDATE')}",
+        "newRowInitialElementKeyToValueMap": "{PREGID: opendatakit.getCurrentInstanceId(), REGID: data('REGID'), REGDIA: data('PREGDIA'), OUTDATE: data('OUTDATE'), ASSISTPART: data('ASSISTPART'), CART_ANC: data('CART_ANC'), CDG_C: data('CDG_C'), CDG_M: data('CDG_M'), FEDEP_C: data('FEDEP_C'), FEDEP_M: data('FEDEP_M'), GRCONS: data('GRCONS'), GRINFOS: data('GRINFOS'), GRVAC: data('GRVAC'), LITTERSIZE: data('LITTERSIZE'), LOCPAR: data('LOCPAR'), QVFANSI_C: data('QVFANSI_C'), QVFANSI_M: data('QVFANSI_M'), TABPART: data('TABPART'), VACTTHI: data('VACTTHI')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 5
       }
@@ -2674,7 +2674,7 @@
         "linked_table_id": "CRIANCA",
         "selection": "PREGID = ?",
         "selectionArgs": "[opendatakit.getCurrentInstanceId()]",
-        "newRowInitialElementKeyToValueMap": "{PREGID: opendatakit.getCurrentInstanceId(), REGID: data('REGID'), REGDIA: data('PREGDIA'), OUTDATE: data('OUTDATE')}",
+        "newRowInitialElementKeyToValueMap": "{PREGID: opendatakit.getCurrentInstanceId(), REGID: data('REGID'), REGDIA: data('PREGDIA'), OUTDATE: data('OUTDATE'), ASSISTPART: data('ASSISTPART'), CART_ANC: data('CART_ANC'), CDG_C: data('CDG_C'), CDG_M: data('CDG_M'), FEDEP_C: data('FEDEP_C'), FEDEP_M: data('FEDEP_M'), GRCONS: data('GRCONS'), GRINFOS: data('GRINFOS'), GRVAC: data('GRVAC'), LITTERSIZE: data('LITTERSIZE'), LOCPAR: data('LOCPAR'), QVFANSI_C: data('QVFANSI_C'), QVFANSI_M: data('QVFANSI_M'), TABPART: data('TABPART'), VACTTHI: data('VACTTHI')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 5
       }
