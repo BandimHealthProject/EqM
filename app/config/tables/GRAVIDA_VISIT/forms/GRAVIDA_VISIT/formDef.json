@@ -972,6 +972,14 @@
       },
       {
         "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Registration of 1st child",
+              "default": "Registro da 1ª criança"
+            }
+          }
+        },
         "_row_num": 133
       },
       {
@@ -994,6 +1002,14 @@
       },
       {
         "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Registration of 2nd child",
+              "default": "Registro da 2ª criança"
+            }
+          }
+        },
         "_row_num": 138
       },
       {
@@ -4017,6 +4033,14 @@
           },
           {
             "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Registration of 1st child",
+                  "default": "Registro da 1ª criança"
+                }
+              }
+            },
             "_row_num": 133,
             "__rowNum__": 132,
             "_token_type": "prompt",
@@ -4036,6 +4060,14 @@
           },
           {
             "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Registration of 2nd child",
+                  "default": "Registro da 2ª criança"
+                }
+              }
+            },
             "_row_num": 138,
             "__rowNum__": 137,
             "_token_type": "prompt",

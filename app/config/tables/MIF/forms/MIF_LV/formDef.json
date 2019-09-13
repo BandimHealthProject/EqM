@@ -1004,9 +1004,9 @@
         "_row_num": 2
       },
       {
-        "name": "ABNS",
+        "name": "abns",
         "type": "select_multiple",
-        "isSessionVariable": false,
+        "isSessionVariable": true,
         "_row_num": 3
       },
       {
@@ -1028,316 +1028,304 @@
         "_row_num": 6
       },
       {
-        "name": "CNASCCERTO",
-        "type": "select_one",
+        "name": "ESCO",
+        "type": "integer",
         "isSessionVariable": false,
         "_row_num": 7
       },
       {
-        "name": "ESCO",
-        "type": "integer",
-        "isSessionVariable": false,
-        "_row_num": 8
-      },
-      {
-        "name": "ESCONS",
+        "name": "escons",
         "type": "select_multiple",
-        "isSessionVariable": false,
-        "_row_num": 9
+        "isSessionVariable": true,
+        "_row_num": 8
       },
       {
         "name": "ESTADO",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 10
+        "_row_num": 9
       },
       {
         "name": "ETN",
         "type": "assign",
         "isSessionVariable": false,
-        "_row_num": 11
+        "_row_num": 10
       },
       {
         "name": "etn1",
         "type": "select_one_dropdown",
         "isSessionVariable": true,
-        "_row_num": 12
+        "_row_num": 11
       },
       {
         "name": "etn2",
         "type": "select_one_dropdown",
         "isSessionVariable": true,
-        "_row_num": 13
+        "_row_num": 12
       },
       {
         "name": "FAL",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 14
+        "_row_num": 13
       },
       {
-        "name": "FALNS",
+        "name": "falns",
         "type": "select_multiple",
-        "isSessionVariable": false,
-        "_row_num": 15
+        "isSessionVariable": true,
+        "_row_num": 14
       },
       {
         "name": "FAN",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 16
+        "_row_num": 15
       },
       {
         "name": "FOGAO",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 17
+        "_row_num": 16
       },
       {
         "name": "GEM",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 18
+        "_row_num": 17
       },
       {
         "name": "GEMEOS",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 19
+        "_row_num": 18
       },
       {
         "name": "IDADE",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 20
+        "_row_num": 19
       },
       {
         "name": "IDFAN",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 21
+        "_row_num": 20
       },
       {
-        "name": "IDFANNS",
+        "name": "idfanns",
         "type": "select_multiple",
-        "isSessionVariable": false,
-        "_row_num": 22
+        "isSessionVariable": true,
+        "_row_num": 21
       },
       {
         "name": "INF",
         "type": "assign",
         "isSessionVariable": false,
-        "_row_num": 23
+        "_row_num": 22
       },
       {
         "name": "inf1",
         "type": "select_one",
         "isSessionVariable": true,
-        "_row_num": 24
+        "_row_num": 23
       },
       {
         "name": "inf2",
         "type": "select_one",
         "isSessionVariable": true,
-        "_row_num": 25
+        "_row_num": 24
       },
       {
         "name": "MIFDNASC",
-        "type": "custom_date",
+        "type": "adate",
         "isSessionVariable": false,
-        "_row_num": 26
-      },
-      {
-        "name": "MIFDNASCNS",
-        "type": "select_multiple",
-        "isSessionVariable": false,
-        "_row_num": 27
+        "_row_num": 25
       },
       {
         "name": "MIFMAE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 28
+        "_row_num": 26
       },
       {
-        "name": "MIFMAENS",
+        "name": "mifmaens",
         "type": "select_multiple",
-        "isSessionVariable": false,
-        "_row_num": 29
+        "isSessionVariable": true,
+        "_row_num": 27
       },
       {
         "name": "MIFMONDE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 30
+        "_row_num": 28
       },
       {
-        "name": "MIFMONDENS",
+        "name": "mifmondens",
         "type": "select_multiple",
-        "isSessionVariable": false,
-        "_row_num": 31
+        "isSessionVariable": true,
+        "_row_num": 29
       },
       {
         "name": "MIFMORAVA",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 32
+        "_row_num": 30
       },
       {
         "name": "MOR",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 33
+        "_row_num": 31
       },
       {
         "name": "MUL",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 34
+        "_row_num": 32
       },
       {
         "name": "NM",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 35
+        "_row_num": 33
       },
       {
-        "name": "NMNS",
+        "name": "nmns",
         "type": "select_multiple",
-        "isSessionVariable": false,
-        "_row_num": 36
+        "isSessionVariable": true,
+        "_row_num": 34
       },
       {
         "name": "NOMEMAE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 37
+        "_row_num": 35
       },
       {
         "name": "PART",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 38
+        "_row_num": 36
       },
       {
-        "name": "PARTNS",
+        "name": "partns",
         "type": "select_multiple",
-        "isSessionVariable": false,
-        "_row_num": 39
+        "isSessionVariable": true,
+        "_row_num": 37
       },
       {
         "name": "REG",
         "type": "select_one_dropdown",
         "isSessionVariable": false,
-        "_row_num": 40
+        "_row_num": 38
       },
       {
         "name": "REGDIA",
-        "type": "date",
+        "type": "adate",
         "isSessionVariable": false,
-        "_row_num": 41
+        "_row_num": 39
       },
       {
         "name": "REGID",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 42
+        "_row_num": 40
       },
       {
         "name": "RELA1",
         "type": "select_one_dropdown",
         "isSessionVariable": false,
-        "_row_num": 43
+        "_row_num": 41
       },
       {
         "name": "RELA1NOME",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 44
+        "_row_num": 42
       },
       {
         "name": "TAB",
         "type": "select_one_dropdown",
         "isSessionVariable": false,
-        "_row_num": 45
+        "_row_num": 43
       },
       {
         "name": "VACNOH",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 46
+        "_row_num": 44
       },
       {
         "name": "VACNOHCERTO",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 47
+        "_row_num": 45
       },
       {
-        "name": "VACNOHNS",
+        "name": "vacnohns",
         "type": "select_multiple",
-        "isSessionVariable": false,
-        "_row_num": 48
+        "isSessionVariable": true,
+        "_row_num": 46
       },
       {
         "name": "VIVO",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 49
+        "_row_num": 47
       },
       {
-        "name": "VIVONS",
+        "name": "vivons",
         "type": "select_multiple",
-        "isSessionVariable": false,
-        "_row_num": 50
+        "isSessionVariable": true,
+        "_row_num": 48
       },
       {
         "name": "CICA",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 53
+        "_row_num": 51
       },
       {
         "name": "CONSENTFOR",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 54
+        "_row_num": 52
       },
       {
         "name": "CONSENTSIG",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 55
+        "_row_num": 53
       },
       {
         "name": "ESTADOVIS",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 56
+        "_row_num": 54
       },
       {
         "name": "EXITDATA",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 57
+        "_row_num": 55
       },
       {
         "name": "EXITPRECIS",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 58
+        "_row_num": 56
       },
       {
         "name": "GR",
         "type": "async_assign_num_value",
         "isSessionVariable": false,
-        "_row_num": 59
+        "_row_num": 57
       },
       {
         "name": "LASTVISIT",
         "type": "async_assign_date",
         "isSessionVariable": false,
-        "_row_num": 60
+        "_row_num": 58
       }
     ]
   },
@@ -2304,11 +2292,11 @@
         "isSessionVariable": false,
         "elementKey": "AB"
       },
-      "ABNS": {
+      "abns": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "ABNS_items"
+          "elementKey": "abns_items"
         },
         "_defn": [
           {
@@ -2316,8 +2304,8 @@
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "ABNS"
+        "isSessionVariable": true,
+        "elementKey": "abns"
       },
       "AMO": {
         "type": "integer",
@@ -2352,8 +2340,8 @@
         "isSessionVariable": false,
         "elementKey": "CESCO"
       },
-      "CNASCCERTO": {
-        "type": "string",
+      "ESCO": {
+        "type": "integer",
         "_defn": [
           {
             "_row_num": 7,
@@ -2361,39 +2349,28 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "CNASCCERTO"
+        "elementKey": "ESCO"
       },
-      "ESCO": {
-        "type": "integer",
+      "escons": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "elementKey": "escons_items"
+        },
         "_defn": [
           {
             "_row_num": 8,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "ESCO"
-      },
-      "ESCONS": {
-        "type": "array",
-        "items": {
-          "type": "string",
-          "elementKey": "ESCONS_items"
-        },
-        "_defn": [
-          {
-            "_row_num": 9,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "ESCONS"
+        "isSessionVariable": true,
+        "elementKey": "escons"
       },
       "ESTADO": {
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 10,
+            "_row_num": 9,
             "section_name": "model"
           }
         ],
@@ -2403,7 +2380,7 @@
       "ETN": {
         "_defn": [
           {
-            "_row_num": 11,
+            "_row_num": 10,
             "section_name": "model"
           }
         ],
@@ -2415,7 +2392,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 11,
             "section_name": "model"
           }
         ],
@@ -2426,7 +2403,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 13,
+            "_row_num": 12,
             "section_name": "model"
           }
         ],
@@ -2437,33 +2414,33 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 13,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "FAL"
       },
-      "FALNS": {
+      "falns": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "FALNS_items"
+          "elementKey": "falns_items"
         },
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 14,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "FALNS"
+        "isSessionVariable": true,
+        "elementKey": "falns"
       },
       "FAN": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 15,
             "section_name": "model"
           }
         ],
@@ -2474,7 +2451,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 17,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
@@ -2485,7 +2462,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 17,
             "section_name": "model"
           }
         ],
@@ -2496,7 +2473,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -2507,7 +2484,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 20,
+            "_row_num": 19,
             "section_name": "model"
           }
         ],
@@ -2518,32 +2495,32 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 20,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "IDFAN"
       },
-      "IDFANNS": {
+      "idfanns": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "IDFANNS_items"
+          "elementKey": "idfanns_items"
         },
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "IDFANNS"
+        "isSessionVariable": true,
+        "elementKey": "idfanns"
       },
       "INF": {
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -2555,7 +2532,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -2566,7 +2543,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -2574,12 +2551,18 @@
         "elementKey": "inf2"
       },
       "MIFDNASC": {
-        "prompt_type_name": "custom_date",
+        "_defn": [
+          {
+            "_row_num": 25,
+            "section_name": "model"
+          }
+        ],
+        "type": "adate",
+        "isSessionVariable": false,
+        "elementKey": "MIFDNASC"
+      },
+      "MIFMAE": {
         "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
         "_defn": [
           {
             "_row_num": 26,
@@ -2587,13 +2570,13 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "MIFDNASC"
+        "elementKey": "MIFMAE"
       },
-      "MIFDNASCNS": {
+      "mifmaens": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "MIFDNASCNS_items"
+          "elementKey": "mifmaens_items"
         },
         "_defn": [
           {
@@ -2601,10 +2584,10 @@
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "MIFDNASCNS"
+        "isSessionVariable": true,
+        "elementKey": "mifmaens"
       },
-      "MIFMAE": {
+      "MIFMONDE": {
         "type": "string",
         "_defn": [
           {
@@ -2613,13 +2596,13 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "MIFMAE"
+        "elementKey": "MIFMONDE"
       },
-      "MIFMAENS": {
+      "mifmondens": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "MIFMAENS_items"
+          "elementKey": "mifmondens_items"
         },
         "_defn": [
           {
@@ -2627,40 +2610,14 @@
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "MIFMAENS"
-      },
-      "MIFMONDE": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 30,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "MIFMONDE"
-      },
-      "MIFMONDENS": {
-        "type": "array",
-        "items": {
-          "type": "string",
-          "elementKey": "MIFMONDENS_items"
-        },
-        "_defn": [
-          {
-            "_row_num": 31,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "MIFMONDENS"
+        "isSessionVariable": true,
+        "elementKey": "mifmondens"
       },
       "MIFMORAVA": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 32,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -2671,7 +2628,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -2682,7 +2639,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -2693,33 +2650,33 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 35,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "NM"
       },
-      "NMNS": {
+      "nmns": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "NMNS_items"
+          "elementKey": "nmns_items"
         },
         "_defn": [
           {
-            "_row_num": 36,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "NMNS"
+        "isSessionVariable": true,
+        "elementKey": "nmns"
       },
       "NOMEMAE": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 37,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -2730,33 +2687,33 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 38,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "PART"
       },
-      "PARTNS": {
+      "partns": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "PARTNS_items"
+          "elementKey": "partns_items"
         },
         "_defn": [
           {
-            "_row_num": 39,
+            "_row_num": 37,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "PARTNS"
+        "isSessionVariable": true,
+        "elementKey": "partns"
       },
       "REG": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 40,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
@@ -2764,14 +2721,13 @@
         "elementKey": "REG"
       },
       "REGDIA": {
-        "type": "string",
-        "elementType": "date",
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 39,
             "section_name": "model"
           }
         ],
+        "type": "adate",
         "isSessionVariable": false,
         "elementKey": "REGDIA"
       },
@@ -2779,7 +2735,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 42,
+            "_row_num": 40,
             "section_name": "model"
           }
         ],
@@ -2790,7 +2746,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 43,
+            "_row_num": 41,
             "section_name": "model"
           }
         ],
@@ -2801,7 +2757,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 44,
+            "_row_num": 42,
             "section_name": "model"
           }
         ],
@@ -2812,7 +2768,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 45,
+            "_row_num": 43,
             "section_name": "model"
           }
         ],
@@ -2823,7 +2779,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 46,
+            "_row_num": 44,
             "section_name": "model"
           }
         ],
@@ -2834,18 +2790,44 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 47,
+            "_row_num": 45,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "VACNOHCERTO"
       },
-      "VACNOHNS": {
+      "vacnohns": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "VACNOHNS_items"
+          "elementKey": "vacnohns_items"
+        },
+        "_defn": [
+          {
+            "_row_num": 46,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "vacnohns"
+      },
+      "VIVO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 47,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VIVO"
+      },
+      "vivons": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "elementKey": "vivons_items"
         },
         "_defn": [
           {
@@ -2853,34 +2835,8 @@
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "VACNOHNS"
-      },
-      "VIVO": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 49,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "VIVO"
-      },
-      "VIVONS": {
-        "type": "array",
-        "items": {
-          "type": "string",
-          "elementKey": "VIVONS_items"
-        },
-        "_defn": [
-          {
-            "_row_num": 50,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "VIVONS"
+        "isSessionVariable": true,
+        "elementKey": "vivons"
       },
       "CICA": {
         "prompt_type_name": "async_assign_num_value",
@@ -2894,7 +2850,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 53,
+            "_row_num": 51,
             "section_name": "model"
           }
         ],
@@ -2913,7 +2869,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 54,
+            "_row_num": 52,
             "section_name": "model"
           }
         ],
@@ -2932,7 +2888,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 55,
+            "_row_num": 53,
             "section_name": "model"
           }
         ],
@@ -2951,7 +2907,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 56,
+            "_row_num": 54,
             "section_name": "model"
           }
         ],
@@ -2970,7 +2926,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 57,
+            "_row_num": 55,
             "section_name": "model"
           }
         ],
@@ -2989,7 +2945,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 58,
+            "_row_num": 56,
             "section_name": "model"
           }
         ],
@@ -3008,7 +2964,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 59,
+            "_row_num": 57,
             "section_name": "model"
           }
         ],
@@ -3027,7 +2983,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 60,
+            "_row_num": 58,
             "section_name": "model"
           }
         ],
@@ -3441,14 +3397,15 @@
         "elementSet": "data",
         "elementPath": "AB"
       },
-      "ABNS": {
+      "abns": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "ABNS_items",
+          "elementKey": "abns_items",
           "elementName": "items",
           "elementSet": "data",
-          "elementPath": "ABNS.items",
+          "elementPath": "abns.items",
+          "isSessionVariable": true,
           "notUnitOfRetention": true
         },
         "_defn": [
@@ -3457,13 +3414,13 @@
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "ABNS",
-        "elementName": "ABNS",
+        "isSessionVariable": true,
+        "elementKey": "abns",
+        "elementName": "abns",
         "elementSet": "data",
-        "elementPath": "ABNS",
+        "elementPath": "abns",
         "listChildElementKeys": [
-          "ABNS_items"
+          "abns_items"
         ]
       },
       "AMO": {
@@ -3508,25 +3465,11 @@
         "elementSet": "data",
         "elementPath": "CESCO"
       },
-      "CNASCCERTO": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 7,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CNASCCERTO",
-        "elementName": "CNASCCERTO",
-        "elementSet": "data",
-        "elementPath": "CNASCCERTO"
-      },
       "ESCO": {
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 8,
+            "_row_num": 7,
             "section_name": "model"
           }
         ],
@@ -3536,36 +3479,37 @@
         "elementSet": "data",
         "elementPath": "ESCO"
       },
-      "ESCONS": {
+      "escons": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "ESCONS_items",
+          "elementKey": "escons_items",
           "elementName": "items",
           "elementSet": "data",
-          "elementPath": "ESCONS.items",
+          "elementPath": "escons.items",
+          "isSessionVariable": true,
           "notUnitOfRetention": true
         },
         "_defn": [
           {
-            "_row_num": 9,
+            "_row_num": 8,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "ESCONS",
-        "elementName": "ESCONS",
+        "isSessionVariable": true,
+        "elementKey": "escons",
+        "elementName": "escons",
         "elementSet": "data",
-        "elementPath": "ESCONS",
+        "elementPath": "escons",
         "listChildElementKeys": [
-          "ESCONS_items"
+          "escons_items"
         ]
       },
       "ESTADO": {
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 10,
+            "_row_num": 9,
             "section_name": "model"
           }
         ],
@@ -3578,7 +3522,7 @@
       "ETN": {
         "_defn": [
           {
-            "_row_num": 11,
+            "_row_num": 10,
             "section_name": "model"
           }
         ],
@@ -3593,7 +3537,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 11,
             "section_name": "model"
           }
         ],
@@ -3607,7 +3551,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 13,
+            "_row_num": 12,
             "section_name": "model"
           }
         ],
@@ -3621,7 +3565,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 13,
             "section_name": "model"
           }
         ],
@@ -3631,36 +3575,37 @@
         "elementSet": "data",
         "elementPath": "FAL"
       },
-      "FALNS": {
+      "falns": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "FALNS_items",
+          "elementKey": "falns_items",
           "elementName": "items",
           "elementSet": "data",
-          "elementPath": "FALNS.items",
+          "elementPath": "falns.items",
+          "isSessionVariable": true,
           "notUnitOfRetention": true
         },
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 14,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "FALNS",
-        "elementName": "FALNS",
+        "isSessionVariable": true,
+        "elementKey": "falns",
+        "elementName": "falns",
         "elementSet": "data",
-        "elementPath": "FALNS",
+        "elementPath": "falns",
         "listChildElementKeys": [
-          "FALNS_items"
+          "falns_items"
         ]
       },
       "FAN": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 15,
             "section_name": "model"
           }
         ],
@@ -3674,7 +3619,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 17,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
@@ -3688,7 +3633,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 17,
             "section_name": "model"
           }
         ],
@@ -3702,7 +3647,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -3716,7 +3661,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 20,
+            "_row_num": 19,
             "section_name": "model"
           }
         ],
@@ -3730,7 +3675,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 20,
             "section_name": "model"
           }
         ],
@@ -3740,35 +3685,36 @@
         "elementSet": "data",
         "elementPath": "IDFAN"
       },
-      "IDFANNS": {
+      "idfanns": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "IDFANNS_items",
+          "elementKey": "idfanns_items",
           "elementName": "items",
           "elementSet": "data",
-          "elementPath": "IDFANNS.items",
+          "elementPath": "idfanns.items",
+          "isSessionVariable": true,
           "notUnitOfRetention": true
         },
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "IDFANNS",
-        "elementName": "IDFANNS",
+        "isSessionVariable": true,
+        "elementKey": "idfanns",
+        "elementName": "idfanns",
         "elementSet": "data",
-        "elementPath": "IDFANNS",
+        "elementPath": "idfanns",
         "listChildElementKeys": [
-          "IDFANNS_items"
+          "idfanns_items"
         ]
       },
       "INF": {
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -3783,7 +3729,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -3797,7 +3743,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -3808,54 +3754,24 @@
         "elementPath": "inf2"
       },
       "MIFDNASC": {
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
-        "_row_num": 4,
-        "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 26,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
+        "type": "adate",
         "isSessionVariable": false,
         "elementKey": "MIFDNASC",
         "elementName": "MIFDNASC",
         "elementSet": "data",
         "elementPath": "MIFDNASC"
       },
-      "MIFDNASCNS": {
-        "type": "array",
-        "items": {
-          "type": "string",
-          "elementKey": "MIFDNASCNS_items",
-          "elementName": "items",
-          "elementSet": "data",
-          "elementPath": "MIFDNASCNS.items",
-          "notUnitOfRetention": true
-        },
-        "_defn": [
-          {
-            "_row_num": 27,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "MIFDNASCNS",
-        "elementName": "MIFDNASCNS",
-        "elementSet": "data",
-        "elementPath": "MIFDNASCNS",
-        "listChildElementKeys": [
-          "MIFDNASCNS_items"
-        ]
-      },
       "MIFMAE": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 28,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -3865,36 +3781,37 @@
         "elementSet": "data",
         "elementPath": "MIFMAE"
       },
-      "MIFMAENS": {
+      "mifmaens": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "MIFMAENS_items",
+          "elementKey": "mifmaens_items",
           "elementName": "items",
           "elementSet": "data",
-          "elementPath": "MIFMAENS.items",
+          "elementPath": "mifmaens.items",
+          "isSessionVariable": true,
           "notUnitOfRetention": true
         },
         "_defn": [
           {
-            "_row_num": 29,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "MIFMAENS",
-        "elementName": "MIFMAENS",
+        "isSessionVariable": true,
+        "elementKey": "mifmaens",
+        "elementName": "mifmaens",
         "elementSet": "data",
-        "elementPath": "MIFMAENS",
+        "elementPath": "mifmaens",
         "listChildElementKeys": [
-          "MIFMAENS_items"
+          "mifmaens_items"
         ]
       },
       "MIFMONDE": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 30,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -3904,36 +3821,37 @@
         "elementSet": "data",
         "elementPath": "MIFMONDE"
       },
-      "MIFMONDENS": {
+      "mifmondens": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "MIFMONDENS_items",
+          "elementKey": "mifmondens_items",
           "elementName": "items",
           "elementSet": "data",
-          "elementPath": "MIFMONDENS.items",
+          "elementPath": "mifmondens.items",
+          "isSessionVariable": true,
           "notUnitOfRetention": true
         },
         "_defn": [
           {
-            "_row_num": 31,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "MIFMONDENS",
-        "elementName": "MIFMONDENS",
+        "isSessionVariable": true,
+        "elementKey": "mifmondens",
+        "elementName": "mifmondens",
         "elementSet": "data",
-        "elementPath": "MIFMONDENS",
+        "elementPath": "mifmondens",
         "listChildElementKeys": [
-          "MIFMONDENS_items"
+          "mifmondens_items"
         ]
       },
       "MIFMORAVA": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 32,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -3947,7 +3865,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -3961,7 +3879,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -3975,7 +3893,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 35,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -3985,36 +3903,37 @@
         "elementSet": "data",
         "elementPath": "NM"
       },
-      "NMNS": {
+      "nmns": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "NMNS_items",
+          "elementKey": "nmns_items",
           "elementName": "items",
           "elementSet": "data",
-          "elementPath": "NMNS.items",
+          "elementPath": "nmns.items",
+          "isSessionVariable": true,
           "notUnitOfRetention": true
         },
         "_defn": [
           {
-            "_row_num": 36,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "NMNS",
-        "elementName": "NMNS",
+        "isSessionVariable": true,
+        "elementKey": "nmns",
+        "elementName": "nmns",
         "elementSet": "data",
-        "elementPath": "NMNS",
+        "elementPath": "nmns",
         "listChildElementKeys": [
-          "NMNS_items"
+          "nmns_items"
         ]
       },
       "NOMEMAE": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 37,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -4028,7 +3947,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 38,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -4038,36 +3957,37 @@
         "elementSet": "data",
         "elementPath": "PART"
       },
-      "PARTNS": {
+      "partns": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "PARTNS_items",
+          "elementKey": "partns_items",
           "elementName": "items",
           "elementSet": "data",
-          "elementPath": "PARTNS.items",
+          "elementPath": "partns.items",
+          "isSessionVariable": true,
           "notUnitOfRetention": true
         },
         "_defn": [
           {
-            "_row_num": 39,
+            "_row_num": 37,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "PARTNS",
-        "elementName": "PARTNS",
+        "isSessionVariable": true,
+        "elementKey": "partns",
+        "elementName": "partns",
         "elementSet": "data",
-        "elementPath": "PARTNS",
+        "elementPath": "partns",
         "listChildElementKeys": [
-          "PARTNS_items"
+          "partns_items"
         ]
       },
       "REG": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 40,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
@@ -4078,14 +3998,13 @@
         "elementPath": "REG"
       },
       "REGDIA": {
-        "type": "string",
-        "elementType": "date",
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 39,
             "section_name": "model"
           }
         ],
+        "type": "adate",
         "isSessionVariable": false,
         "elementKey": "REGDIA",
         "elementName": "REGDIA",
@@ -4096,7 +4015,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 42,
+            "_row_num": 40,
             "section_name": "model"
           }
         ],
@@ -4110,7 +4029,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 43,
+            "_row_num": 41,
             "section_name": "model"
           }
         ],
@@ -4124,7 +4043,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 44,
+            "_row_num": 42,
             "section_name": "model"
           }
         ],
@@ -4138,7 +4057,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 45,
+            "_row_num": 43,
             "section_name": "model"
           }
         ],
@@ -4152,7 +4071,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 46,
+            "_row_num": 44,
             "section_name": "model"
           }
         ],
@@ -4166,7 +4085,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 47,
+            "_row_num": 45,
             "section_name": "model"
           }
         ],
@@ -4176,36 +4095,37 @@
         "elementSet": "data",
         "elementPath": "VACNOHCERTO"
       },
-      "VACNOHNS": {
+      "vacnohns": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "VACNOHNS_items",
+          "elementKey": "vacnohns_items",
           "elementName": "items",
           "elementSet": "data",
-          "elementPath": "VACNOHNS.items",
+          "elementPath": "vacnohns.items",
+          "isSessionVariable": true,
           "notUnitOfRetention": true
         },
         "_defn": [
           {
-            "_row_num": 48,
+            "_row_num": 46,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "VACNOHNS",
-        "elementName": "VACNOHNS",
+        "isSessionVariable": true,
+        "elementKey": "vacnohns",
+        "elementName": "vacnohns",
         "elementSet": "data",
-        "elementPath": "VACNOHNS",
+        "elementPath": "vacnohns",
         "listChildElementKeys": [
-          "VACNOHNS_items"
+          "vacnohns_items"
         ]
       },
       "VIVO": {
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 49,
+            "_row_num": 47,
             "section_name": "model"
           }
         ],
@@ -4215,29 +4135,30 @@
         "elementSet": "data",
         "elementPath": "VIVO"
       },
-      "VIVONS": {
+      "vivons": {
         "type": "array",
         "items": {
           "type": "string",
-          "elementKey": "VIVONS_items",
+          "elementKey": "vivons_items",
           "elementName": "items",
           "elementSet": "data",
-          "elementPath": "VIVONS.items",
+          "elementPath": "vivons.items",
+          "isSessionVariable": true,
           "notUnitOfRetention": true
         },
         "_defn": [
           {
-            "_row_num": 50,
+            "_row_num": 48,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "VIVONS",
-        "elementName": "VIVONS",
+        "isSessionVariable": true,
+        "elementKey": "vivons",
+        "elementName": "vivons",
         "elementSet": "data",
-        "elementPath": "VIVONS",
+        "elementPath": "vivons",
         "listChildElementKeys": [
-          "VIVONS_items"
+          "vivons_items"
         ]
       },
       "CICA": {
@@ -4252,7 +4173,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 53,
+            "_row_num": 51,
             "section_name": "model"
           }
         ],
@@ -4274,7 +4195,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 54,
+            "_row_num": 52,
             "section_name": "model"
           }
         ],
@@ -4296,7 +4217,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 55,
+            "_row_num": 53,
             "section_name": "model"
           }
         ],
@@ -4318,7 +4239,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 56,
+            "_row_num": 54,
             "section_name": "model"
           }
         ],
@@ -4340,7 +4261,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 57,
+            "_row_num": 55,
             "section_name": "model"
           }
         ],
@@ -4362,7 +4283,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 58,
+            "_row_num": 56,
             "section_name": "model"
           }
         ],
@@ -4384,7 +4305,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 59,
+            "_row_num": 57,
             "section_name": "model"
           }
         ],
@@ -4406,7 +4327,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 60,
+            "_row_num": 58,
             "section_name": "model"
           }
         ],
@@ -4416,92 +4337,94 @@
         "elementSet": "data",
         "elementPath": "LASTVISIT"
       },
-      "ABNS_items": {
+      "abns_items": {
         "type": "string",
-        "elementKey": "ABNS_items",
+        "elementKey": "abns_items",
         "elementName": "items",
         "elementSet": "data",
-        "elementPath": "ABNS.items",
+        "elementPath": "abns.items",
+        "isSessionVariable": true,
         "notUnitOfRetention": true
       },
-      "ESCONS_items": {
+      "escons_items": {
         "type": "string",
-        "elementKey": "ESCONS_items",
+        "elementKey": "escons_items",
         "elementName": "items",
         "elementSet": "data",
-        "elementPath": "ESCONS.items",
+        "elementPath": "escons.items",
+        "isSessionVariable": true,
         "notUnitOfRetention": true
       },
-      "FALNS_items": {
+      "falns_items": {
         "type": "string",
-        "elementKey": "FALNS_items",
+        "elementKey": "falns_items",
         "elementName": "items",
         "elementSet": "data",
-        "elementPath": "FALNS.items",
+        "elementPath": "falns.items",
+        "isSessionVariable": true,
         "notUnitOfRetention": true
       },
-      "IDFANNS_items": {
+      "idfanns_items": {
         "type": "string",
-        "elementKey": "IDFANNS_items",
+        "elementKey": "idfanns_items",
         "elementName": "items",
         "elementSet": "data",
-        "elementPath": "IDFANNS.items",
+        "elementPath": "idfanns.items",
+        "isSessionVariable": true,
         "notUnitOfRetention": true
       },
-      "MIFDNASCNS_items": {
+      "mifmaens_items": {
         "type": "string",
-        "elementKey": "MIFDNASCNS_items",
+        "elementKey": "mifmaens_items",
         "elementName": "items",
         "elementSet": "data",
-        "elementPath": "MIFDNASCNS.items",
+        "elementPath": "mifmaens.items",
+        "isSessionVariable": true,
         "notUnitOfRetention": true
       },
-      "MIFMAENS_items": {
+      "mifmondens_items": {
         "type": "string",
-        "elementKey": "MIFMAENS_items",
+        "elementKey": "mifmondens_items",
         "elementName": "items",
         "elementSet": "data",
-        "elementPath": "MIFMAENS.items",
+        "elementPath": "mifmondens.items",
+        "isSessionVariable": true,
         "notUnitOfRetention": true
       },
-      "MIFMONDENS_items": {
+      "nmns_items": {
         "type": "string",
-        "elementKey": "MIFMONDENS_items",
+        "elementKey": "nmns_items",
         "elementName": "items",
         "elementSet": "data",
-        "elementPath": "MIFMONDENS.items",
+        "elementPath": "nmns.items",
+        "isSessionVariable": true,
         "notUnitOfRetention": true
       },
-      "NMNS_items": {
+      "partns_items": {
         "type": "string",
-        "elementKey": "NMNS_items",
+        "elementKey": "partns_items",
         "elementName": "items",
         "elementSet": "data",
-        "elementPath": "NMNS.items",
+        "elementPath": "partns.items",
+        "isSessionVariable": true,
         "notUnitOfRetention": true
       },
-      "PARTNS_items": {
+      "vacnohns_items": {
         "type": "string",
-        "elementKey": "PARTNS_items",
+        "elementKey": "vacnohns_items",
         "elementName": "items",
         "elementSet": "data",
-        "elementPath": "PARTNS.items",
+        "elementPath": "vacnohns.items",
+        "isSessionVariable": true,
         "notUnitOfRetention": true
       },
-      "VACNOHNS_items": {
+      "vivons_items": {
         "type": "string",
-        "elementKey": "VACNOHNS_items",
+        "elementKey": "vivons_items",
         "elementName": "items",
         "elementSet": "data",
-        "elementPath": "VACNOHNS.items",
-        "notUnitOfRetention": true
-      },
-      "VIVONS_items": {
-        "type": "string",
-        "elementKey": "VIVONS_items",
-        "elementName": "items",
-        "elementSet": "data",
-        "elementPath": "VIVONS.items",
+        "elementPath": "vivons.items",
+        "isSessionVariable": true,
         "notUnitOfRetention": true
       },
       "_id": {
