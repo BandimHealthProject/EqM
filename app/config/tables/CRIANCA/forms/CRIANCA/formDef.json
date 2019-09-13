@@ -59,7 +59,7 @@
       },
       {
         "setting_name": "instance_name",
-        "value": "GRAVIDA_ESTADO",
+        "value": "NAME",
         "_row_num": 9
       }
     ],
@@ -633,7 +633,7 @@
       },
       "instance_name": {
         "setting_name": "instance_name",
-        "value": "GRAVIDA_ESTADO",
+        "value": "NAME",
         "_row_num": 9
       },
       "_locales": {

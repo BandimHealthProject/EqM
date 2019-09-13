@@ -962,8 +962,60 @@
         "_row_num": 130
       },
       {
-        "clause": "end if",
+        "clause": "if",
+        "condition": "data('LITTERSIZE') >='1'",
         "_row_num": 131
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 132
+      },
+      {
+        "type": "note",
+        "_row_num": 133
+      },
+      {
+        "type": "linked_table",
+        "values_list": "child",
+        "_row_num": 134
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 135
+      },
+      {
+        "clause": "if",
+        "condition": "data('LITTERSIZE') >='2'",
+        "_row_num": 136
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 137
+      },
+      {
+        "type": "note",
+        "_row_num": 138
+      },
+      {
+        "type": "linked_table",
+        "values_list": "child",
+        "_row_num": 139
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 140
+      },
+      {
+        "clause": "end if",
+        "_row_num": 141
+      },
+      {
+        "clause": "end if",
+        "_row_num": 142
+      },
+      {
+        "clause": "end if",
+        "_row_num": 143
       }
     ],
     "queries": [
@@ -985,10 +1037,21 @@
         "linked_form_id": "SES",
         "linked_table_id": "SES",
         "selection": "PREGID = ?",
-        "selectionArgs": "[data('PREGID')]",
-        "newRowInitialElementKeyToValueMap": "{PREGID: data('PREGID'), REGID: data('REGID'), SESDATA: data('PREGDIA')}",
+        "selectionArgs": "[opendatakit.getCurrentInstanceId()]",
+        "newRowInitialElementKeyToValueMap": "{PREGID: opendatakit.getCurrentInstanceId(), REGID: data('REGID'), SESDATA: data('PREGDIA')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 4
+      },
+      {
+        "query_name": "child",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA",
+        "linked_table_id": "CRIANCA",
+        "selection": "PREGID = ?",
+        "selectionArgs": "[opendatakit.getCurrentInstanceId()]",
+        "newRowInitialElementKeyToValueMap": "{PREGID: opendatakit.getCurrentInstanceId(), REGID: data('REGID'), REGDIA: data('PREGDIA'), OUTDATE: data('OUTDATE')}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "_row_num": 5
       }
     ],
     "prompt_types": [
@@ -2583,10 +2646,21 @@
         "linked_form_id": "SES",
         "linked_table_id": "SES",
         "selection": "PREGID = ?",
-        "selectionArgs": "[data('PREGID')]",
-        "newRowInitialElementKeyToValueMap": "{PREGID: data('PREGID'), REGID: data('REGID'), SESDATA: data('PREGDIA')}",
+        "selectionArgs": "[opendatakit.getCurrentInstanceId()]",
+        "newRowInitialElementKeyToValueMap": "{PREGID: opendatakit.getCurrentInstanceId(), REGID: data('REGID'), SESDATA: data('PREGDIA')}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 4
+      },
+      "child": {
+        "query_name": "child",
+        "query_type": "linked_table",
+        "linked_form_id": "CRIANCA",
+        "linked_table_id": "CRIANCA",
+        "selection": "PREGID = ?",
+        "selectionArgs": "[opendatakit.getCurrentInstanceId()]",
+        "newRowInitialElementKeyToValueMap": "{PREGID: opendatakit.getCurrentInstanceId(), REGID: data('REGID'), REGDIA: data('PREGDIA'), OUTDATE: data('OUTDATE')}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "_row_num": 5
       }
     },
     "calculates": {},
@@ -3942,12 +4016,50 @@
             "promptIdx": 42
           },
           {
+            "type": "note",
+            "_row_num": 133,
+            "__rowNum__": 132,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen132",
+            "promptIdx": 43
+          },
+          {
+            "type": "linked_table",
+            "values_list": "child",
+            "_row_num": 134,
+            "__rowNum__": 133,
+            "_token_type": "prompt",
+            "_type": "linked_table",
+            "_branch_label_enclosing_screen": "survey/_screen132",
+            "promptIdx": 44
+          },
+          {
+            "type": "note",
+            "_row_num": 138,
+            "__rowNum__": 137,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen137",
+            "promptIdx": 45
+          },
+          {
+            "type": "linked_table",
+            "values_list": "child",
+            "_row_num": 139,
+            "__rowNum__": 138,
+            "_token_type": "prompt",
+            "_type": "linked_table",
+            "_branch_label_enclosing_screen": "survey/_screen137",
+            "promptIdx": 46
+          },
+          {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 132,
-            "_branch_label_enclosing_screen": "survey/_screen132",
-            "promptIdx": 43
+            "_row_num": 144,
+            "_branch_label_enclosing_screen": "survey/_screen144",
+            "promptIdx": 47
           }
         ],
         "validation_tag_map": {
@@ -4212,8 +4324,8 @@
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else131",
-            "_row_num": 131,
+            "_branch_label": "_else143",
+            "_row_num": 143,
             "operationIdx": 24
           },
           {
@@ -4459,32 +4571,106 @@
             "operationIdx": 44
           },
           {
+            "clause": "if",
+            "condition": "data('LITTERSIZE') >='1'",
+            "_row_num": 131,
+            "__rowNum__": 130,
+            "_token_type": "goto_label",
+            "_branch_label": "_then131",
+            "operationIdx": 45
+          },
+          {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif131",
-            "_row_num": 131,
-            "operationIdx": 45
+            "_branch_label": "_else142",
+            "_row_num": 142,
+            "operationIdx": 46
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 132,
+            "__rowNum__": 131,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 135,
+              "__rowNum__": 134,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(43);\nactivePromptIndicies.push(44);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 47
+          },
+          {
+            "clause": "if",
+            "condition": "data('LITTERSIZE') >='2'",
+            "_row_num": 136,
+            "__rowNum__": 135,
+            "_token_type": "goto_label",
+            "_branch_label": "_then136",
+            "operationIdx": 48
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_else141",
+            "_row_num": 141,
+            "operationIdx": 49
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 137,
+            "__rowNum__": 136,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 140,
+              "__rowNum__": 139,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(45);\nactivePromptIndicies.push(46);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 50
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif141",
+            "_row_num": 141,
+            "operationIdx": 51
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif142",
+            "_row_num": 142,
+            "operationIdx": 52
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif143",
+            "_row_num": 143,
+            "operationIdx": 53
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 132,
-            "operationIdx": 46
+            "_row_num": 144,
+            "operationIdx": 54
           },
           {
-            "_row_num": 132,
+            "_row_num": 144,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(43);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(47);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 47
+            "operationIdx": 55
           },
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 132,
-            "operationIdx": 48
+            "_row_num": 144,
+            "operationIdx": 56
           }
         ],
         "branch_label_map": {
@@ -4532,10 +4718,18 @@
           "_screen122": 42,
           "_screen125": 43,
           "_screen128": 44,
-          "_else131": 46,
-          "_endif131": 46,
-          "_contents": 47,
-          "_screen132": 47
+          "_then131": 47,
+          "_screen132": 47,
+          "_then136": 50,
+          "_screen137": 50,
+          "_else141": 52,
+          "_endif141": 52,
+          "_else142": 53,
+          "_endif142": 53,
+          "_else143": 54,
+          "_endif143": 54,
+          "_contents": 55,
+          "_screen144": 55
         }
       },
       "initial": {
