@@ -1098,12 +1098,8 @@ module.exports = function (grunt) {
         grunt.task.run("exec:adbinstall:./Tablet_Install/ODK-X_Tables_v2.1.4.apk");
         grunt.task.run("exec:adbinstall:./Tablet_Install/OIFilemanager.apk");
         //grunt.task.run('adbpush-collect');
-        grunt.task.run('adbpush-default-app');
-        grunt.task.run('adbpush-props');
+        grunt.task.run('adbpush-default-app');        
         grunt.task.run('setup');
-        // while (result._running) {
-        //     grunt.log.write(".");
-        // }
         
     });    
 
