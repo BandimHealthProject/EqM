@@ -1,6 +1,7 @@
 'use strict';
 var LIVERELOAD_PORT = 35729;
 var SERVER_PORT = 8000;
+
 var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});
 var mountFolder = function (connect, dir) {
     return connect.static(
@@ -99,6 +100,7 @@ var postHandler = function(req, res, next) {
 // templateFramework: 'lodash'
 
 module.exports = function (grunt) {
+    
     // show elapsed time at the end
     require('time-grunt')(grunt);
     // load all grunt tasks
@@ -178,6 +180,16 @@ module.exports = function (grunt) {
             adbshell: {
                 cmd: function(str) {
                     return 'adb shell ' + str;
+                }
+            },
+            adbinstall: {
+                cmd: function(str) {
+                    return 'adb install ' + str;
+                }
+            },
+            adbdevices: {
+                cmd: function(str) {
+                    return 'adb devices';
                 }
             },
 			macGenConvert: {
@@ -1075,6 +1087,23 @@ module.exports = function (grunt) {
             }
 
         });
+
+    grunt.registerTask('eqm-init',
+    'Initializes a phressh Lenovo E7 tablet',
+    function eqmInit() {
+        grunt.log.writeln("Initializing phresh Lenovo E7 tablet.")
+        //grunt.task.run("exec:adbshell:am force-stop org.opendatakit.".concat(apps[i]));
+        grunt.task.run("exec:adbinstall:./Tablet_Install/ODK-X_Services_v2.1.4.apk");
+        grunt.task.run("exec:adbinstall:./Tablet_Install/ODK-X_Survey_v2.1.4.apk");
+        grunt.task.run("exec:adbinstall:./Tablet_Install/ODK-X_Tables_v2.1.4.apk");
+        grunt.task.run("exec:adbinstall:./Tablet_Install/OIFilemanager.apk");
+            
+        // while (result._running) {
+        //     grunt.log.write(".");
+        // }
+        
+    });    
+
     grunt.registerTask(
         "adbpull-props",
         "Copies the properties from the device",
