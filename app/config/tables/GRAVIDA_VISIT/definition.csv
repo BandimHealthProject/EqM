@@ -35,5 +35,3 @@ REGID,REGID,string,[]
 TABPART,TABPART,string,[]
 VACTTHI,VACTTHI,integer,[]
 VISITID,VISITID,string,[]
-muacbig,muacbig,array,"[""muacbig_items""]"
-muacbig_items,items,string,[]

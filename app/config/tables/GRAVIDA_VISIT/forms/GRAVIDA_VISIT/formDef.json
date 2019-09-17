@@ -1032,16 +1032,84 @@
         "_row_num": 144
       },
       {
-        "clause": "end if",
+        "clause": "if",
+        "condition": "data('LITTERSIZE') >='3'",
         "_row_num": 145
       },
       {
-        "clause": "end if",
+        "clause": "begin screen",
         "_row_num": 146
       },
       {
-        "clause": "end if",
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Registration of 3th child",
+              "default": "Registro da 3ª criança"
+            }
+          }
+        },
         "_row_num": 147
+      },
+      {
+        "type": "linked_table",
+        "values_list": "child",
+        "_row_num": 148
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 149
+      },
+      {
+        "clause": "if",
+        "condition": "data('LITTERSIZE') >='4'",
+        "_row_num": 150
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 151
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Registration of 4th child",
+              "default": "Registro da 4ª criança"
+            }
+          }
+        },
+        "_row_num": 152
+      },
+      {
+        "type": "linked_table",
+        "values_list": "child",
+        "_row_num": 153
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 154
+      },
+      {
+        "clause": "end if",
+        "_row_num": 155
+      },
+      {
+        "clause": "end if",
+        "_row_num": 156
+      },
+      {
+        "clause": "end if",
+        "_row_num": 157
+      },
+      {
+        "clause": "end if",
+        "_row_num": 158
+      },
+      {
+        "clause": "end if",
+        "_row_num": 159
       }
     ],
     "queries": [
@@ -1853,82 +1921,88 @@
         "_row_num": 26
       },
       {
+        "name": "muacbig",
+        "type": "select_multiple",
+        "isSessionVariable": true,
+        "_row_num": 27
+      },
+      {
         "name": "MULPRESA",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 27
+        "_row_num": 28
       },
       {
         "name": "OUTDATE",
         "type": "adate",
         "isSessionVariable": false,
-        "_row_num": 28
+        "_row_num": 29
       },
       {
         "name": "OUTSTATUS",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 29
+        "_row_num": 30
       },
       {
         "name": "QC_C",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 30
+        "_row_num": 31
       },
       {
         "name": "QC_M",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 31
+        "_row_num": 32
       },
       {
         "name": "QVFANSI_C",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 32
+        "_row_num": 33
       },
       {
         "name": "QVFANSI_M",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 33
+        "_row_num": 34
       },
       {
         "name": "TABPART",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 34
+        "_row_num": 35
       },
       {
         "name": "VACTTHI",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 35
+        "_row_num": 36
       },
       {
         "name": "GRAVIDA_ESTADO",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 37
+        "_row_num": 38
       },
       {
         "name": "CONT",
         "type": "adate",
         "isSessionVariable": false,
-        "_row_num": 39
+        "_row_num": 40
       },
       {
         "name": "REGID",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 40
+        "_row_num": 41
       },
       {
         "name": "VISITID",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 41
+        "_row_num": 42
       }
     ]
   },
@@ -3114,11 +3188,31 @@
         "isSessionVariable": false,
         "elementKey": "MAEBRAC"
       },
+      "muacbig": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "elementKey": "muacbig_items"
+        },
+        "valuesList": "muac",
+        "_defn": [
+          {
+            "_row_num": 8,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 27,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "muacbig"
+      },
       "MULPRESA": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -3138,7 +3232,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 28,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -3154,7 +3248,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 29,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -3169,7 +3263,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 30,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -3184,7 +3278,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 31,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -3199,7 +3293,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 32,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -3214,7 +3308,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 33,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -3230,7 +3324,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 34,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -3245,7 +3339,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 35,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -3261,7 +3355,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 37,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
@@ -3277,7 +3371,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 39,
+            "_row_num": 40,
             "section_name": "model"
           }
         ],
@@ -3288,7 +3382,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 40,
+            "_row_num": 41,
             "section_name": "model"
           }
         ],
@@ -3299,27 +3393,12 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 42,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "VISITID"
-      },
-      "muacbig": {
-        "_defn": [
-          {
-            "_row_num": 8,
-            "section_name": "survey"
-          }
-        ],
-        "type": "array",
-        "items": {
-          "type": "string",
-          "elementKey": "muacbig_items"
-        },
-        "valuesList": "muac",
-        "elementKey": "muacbig"
       }
     },
     "section_names": [
@@ -4129,12 +4208,66 @@
             "promptIdx": 46
           },
           {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Registration of 3th child",
+                  "default": "Registro da 3ª criança"
+                }
+              }
+            },
+            "_row_num": 147,
+            "__rowNum__": 146,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen146",
+            "promptIdx": 47
+          },
+          {
+            "type": "linked_table",
+            "values_list": "child",
+            "_row_num": 148,
+            "__rowNum__": 147,
+            "_token_type": "prompt",
+            "_type": "linked_table",
+            "_branch_label_enclosing_screen": "survey/_screen146",
+            "promptIdx": 48
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Registration of 4th child",
+                  "default": "Registro da 4ª criança"
+                }
+              }
+            },
+            "_row_num": 152,
+            "__rowNum__": 151,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen151",
+            "promptIdx": 49
+          },
+          {
+            "type": "linked_table",
+            "values_list": "child",
+            "_row_num": 153,
+            "__rowNum__": 152,
+            "_token_type": "prompt",
+            "_type": "linked_table",
+            "_branch_label_enclosing_screen": "survey/_screen151",
+            "promptIdx": 50
+          },
+          {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 148,
-            "_branch_label_enclosing_screen": "survey/_screen148",
-            "promptIdx": 47
+            "_row_num": 160,
+            "_branch_label_enclosing_screen": "survey/_screen160",
+            "promptIdx": 51
           }
         ],
         "validation_tag_map": {
@@ -4399,8 +4532,8 @@
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else147",
-            "_row_num": 147,
+            "_branch_label": "_else159",
+            "_row_num": 159,
             "operationIdx": 24
           },
           {
@@ -4657,8 +4790,8 @@
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else146",
-            "_row_num": 146,
+            "_branch_label": "_else158",
+            "_row_num": 158,
             "operationIdx": 46
           },
           {
@@ -4687,8 +4820,8 @@
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else145",
-            "_row_num": 145,
+            "_branch_label": "_else157",
+            "_row_num": 157,
             "operationIdx": 49
           },
           {
@@ -4706,46 +4839,120 @@
             "operationIdx": 50
           },
           {
-            "clause": "end if",
-            "_token_type": "goto_label",
-            "_branch_label": "_endif145",
+            "clause": "if",
+            "condition": "data('LITTERSIZE') >='3'",
             "_row_num": 145,
+            "__rowNum__": 144,
+            "_token_type": "goto_label",
+            "_branch_label": "_then145",
             "operationIdx": 51
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif146",
-            "_row_num": 146,
+            "_branch_label": "_else156",
+            "_row_num": 156,
             "operationIdx": 52
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 146,
+            "__rowNum__": 145,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 149,
+              "__rowNum__": 148,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(47);\nactivePromptIndicies.push(48);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 53
+          },
+          {
+            "clause": "if",
+            "condition": "data('LITTERSIZE') >='4'",
+            "_row_num": 150,
+            "__rowNum__": 149,
+            "_token_type": "goto_label",
+            "_branch_label": "_then150",
+            "operationIdx": 54
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif147",
-            "_row_num": 147,
-            "operationIdx": 53
+            "_branch_label": "_else155",
+            "_row_num": 155,
+            "operationIdx": 55
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 151,
+            "__rowNum__": 150,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 154,
+              "__rowNum__": 153,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(49);\nactivePromptIndicies.push(50);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 56
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif155",
+            "_row_num": 155,
+            "operationIdx": 57
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif156",
+            "_row_num": 156,
+            "operationIdx": 58
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif157",
+            "_row_num": 157,
+            "operationIdx": 59
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif158",
+            "_row_num": 158,
+            "operationIdx": 60
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif159",
+            "_row_num": 159,
+            "operationIdx": 61
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 148,
-            "operationIdx": 54
+            "_row_num": 160,
+            "operationIdx": 62
           },
           {
-            "_row_num": 148,
+            "_row_num": 160,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(47);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(51);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 55
+            "operationIdx": 63
           },
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 148,
-            "operationIdx": 56
+            "_row_num": 160,
+            "operationIdx": 64
           }
         ],
         "branch_label_map": {
@@ -4797,14 +5004,22 @@
           "_screen136": 47,
           "_then140": 50,
           "_screen141": 50,
-          "_else145": 52,
-          "_endif145": 52,
-          "_else146": 53,
-          "_endif146": 53,
-          "_else147": 54,
-          "_endif147": 54,
-          "_contents": 55,
-          "_screen148": 55
+          "_then145": 53,
+          "_screen146": 53,
+          "_then150": 56,
+          "_screen151": 56,
+          "_else155": 58,
+          "_endif155": 58,
+          "_else156": 59,
+          "_endif156": 59,
+          "_else157": 60,
+          "_endif157": 60,
+          "_else158": 61,
+          "_endif158": 61,
+          "_else159": 62,
+          "_endif159": 62,
+          "_contents": 63,
+          "_screen160": 63
         }
       },
       "initial": {
@@ -5459,11 +5674,42 @@
         "elementSet": "data",
         "elementPath": "MAEBRAC"
       },
+      "muacbig": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "elementKey": "muacbig_items",
+          "elementName": "items",
+          "elementSet": "data",
+          "elementPath": "muacbig.items",
+          "isSessionVariable": true,
+          "notUnitOfRetention": true
+        },
+        "valuesList": "muac",
+        "_defn": [
+          {
+            "_row_num": 8,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 27,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "muacbig",
+        "elementName": "muacbig",
+        "elementSet": "data",
+        "elementPath": "muacbig",
+        "listChildElementKeys": [
+          "muacbig_items"
+        ]
+      },
       "MULPRESA": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -5486,7 +5732,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 28,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -5505,7 +5751,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 29,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -5523,7 +5769,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 30,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -5541,7 +5787,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 31,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -5559,7 +5805,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 32,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -5577,7 +5823,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 33,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -5596,7 +5842,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 34,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -5614,7 +5860,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 35,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -5633,7 +5879,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 37,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
@@ -5652,7 +5898,7 @@
         "__rowNum__": 3,
         "_defn": [
           {
-            "_row_num": 39,
+            "_row_num": 40,
             "section_name": "model"
           }
         ],
@@ -5666,7 +5912,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 40,
+            "_row_num": 41,
             "section_name": "model"
           }
         ],
@@ -5680,7 +5926,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 42,
             "section_name": "model"
           }
         ],
@@ -5690,37 +5936,13 @@
         "elementSet": "data",
         "elementPath": "VISITID"
       },
-      "muacbig": {
-        "_defn": [
-          {
-            "_row_num": 8,
-            "section_name": "survey"
-          }
-        ],
-        "type": "array",
-        "items": {
-          "type": "string",
-          "elementKey": "muacbig_items",
-          "elementName": "items",
-          "elementSet": "data",
-          "elementPath": "muacbig.items",
-          "notUnitOfRetention": true
-        },
-        "valuesList": "muac",
-        "elementKey": "muacbig",
-        "elementName": "muacbig",
-        "elementSet": "data",
-        "elementPath": "muacbig",
-        "listChildElementKeys": [
-          "muacbig_items"
-        ]
-      },
       "muacbig_items": {
         "type": "string",
         "elementKey": "muacbig_items",
         "elementName": "items",
         "elementSet": "data",
         "elementPath": "muacbig.items",
+        "isSessionVariable": true,
         "notUnitOfRetention": true
       },
       "_id": {
@@ -5906,13 +6128,6 @@
         "_key": "displayChoicesList",
         "_type": "object",
         "_value": "[{\"choice_list_name\":\"YesNoU\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":2},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":3},{\"choice_list_name\":\"YesNoU\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":4}]"
-      },
-      {
-        "_partition": "Column",
-        "_aspect": "muacbig",
-        "_key": "displayChoicesList",
-        "_type": "object",
-        "_value": "[{\"choice_list_name\":\"muac\",\"data_value\":\"555\",\"display\":{\"title\":{\"text\":{\"english\":\"More than 342 cm\",\"default\":\"More than 342 cm\"}}},\"_row_num\":47}]"
       },
       {
         "_partition": "FormType",
