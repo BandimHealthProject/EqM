@@ -6851,82 +6851,58 @@
         "_row_num": 222
       },
       {
-        "name": "vac1",
-        "type": "select_one",
-        "isSessionVariable": true,
-        "_row_num": 223
-      },
-      {
-        "name": "vac2",
-        "type": "select_one",
-        "isSessionVariable": true,
-        "_row_num": 224
-      },
-      {
-        "name": "vac3",
-        "type": "select_one",
-        "isSessionVariable": true,
-        "_row_num": 225
-      },
-      {
-        "name": "vac4",
-        "type": "select_one",
-        "isSessionVariable": true,
-        "_row_num": 226
-      },
-      {
         "name": "VPI",
         "type": "adate",
         "isSessionVariable": false,
-        "_row_num": 227
+        "_row_num": 223
       },
       {
         "name": "vpi",
         "type": "async_assign_date",
         "isSessionVariable": true,
-        "_row_num": 228
+        "_row_num": 224
       },
       {
         "name": "VPICHECK",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 229
+        "_row_num": 225
       },
       {
         "name": "vping",
         "type": "select_multiple",
         "isSessionVariable": true,
-        "_row_num": 230
+        "_row_num": 226
       },
       {
         "name": "REGID",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 232
+        "_row_num": 228
       },
       {
         "name": "VISITDATE",
         "type": "adate",
         "isSessionVariable": false,
-        "_row_num": 233
+        "_row_num": 229
       },
       {
         "name": "VISITID",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 234
+        "_row_num": 230
       },
       {
         "name": "REGIDC",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 235
+        "_row_num": 231
       },
       {
         "name": "VISITIDC",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 236
+        "_row_num": 232
       }
     ]
   },
@@ -11797,50 +11773,6 @@
         "isSessionVariable": true,
         "elementKey": "sarampo1ng"
       },
-      "vac1": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 223,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": true,
-        "elementKey": "vac1"
-      },
-      "vac2": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 224,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": true,
-        "elementKey": "vac2"
-      },
-      "vac3": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 225,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": true,
-        "elementKey": "vac3"
-      },
-      "vac4": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 226,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": true,
-        "elementKey": "vac4"
-      },
       "VPI": {
         "prompt_type_name": "adate",
         "type": "string",
@@ -11850,7 +11782,7 @@
         "__rowNum__": 4,
         "_defn": [
           {
-            "_row_num": 227,
+            "_row_num": 223,
             "section_name": "model"
           }
         ],
@@ -11864,7 +11796,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 228,
+            "_row_num": 224,
             "section_name": "model"
           }
         ],
@@ -11875,7 +11807,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 229,
+            "_row_num": 225,
             "section_name": "model"
           }
         ],
@@ -11890,7 +11822,7 @@
         },
         "_defn": [
           {
-            "_row_num": 230,
+            "_row_num": 226,
             "section_name": "model"
           }
         ],
@@ -11901,7 +11833,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 232,
+            "_row_num": 228,
             "section_name": "model"
           }
         ],
@@ -11917,7 +11849,7 @@
         "__rowNum__": 4,
         "_defn": [
           {
-            "_row_num": 233,
+            "_row_num": 229,
             "section_name": "model"
           }
         ],
@@ -11928,7 +11860,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 234,
+            "_row_num": 230,
             "section_name": "model"
           }
         ],
@@ -11939,7 +11871,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 235,
+            "_row_num": 231,
             "section_name": "model"
           }
         ],
@@ -11950,7 +11882,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 236,
+            "_row_num": 232,
             "section_name": "model"
           }
         ],
@@ -23072,62 +23004,6 @@
           "sarampo1ng_items"
         ]
       },
-      "vac1": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 223,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": true,
-        "elementKey": "vac1",
-        "elementName": "vac1",
-        "elementSet": "data",
-        "elementPath": "vac1"
-      },
-      "vac2": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 224,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": true,
-        "elementKey": "vac2",
-        "elementName": "vac2",
-        "elementSet": "data",
-        "elementPath": "vac2"
-      },
-      "vac3": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 225,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": true,
-        "elementKey": "vac3",
-        "elementName": "vac3",
-        "elementSet": "data",
-        "elementPath": "vac3"
-      },
-      "vac4": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 226,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": true,
-        "elementKey": "vac4",
-        "elementName": "vac4",
-        "elementSet": "data",
-        "elementPath": "vac4"
-      },
       "VPI": {
         "prompt_type_name": "adate",
         "type": "string",
@@ -23137,7 +23013,7 @@
         "__rowNum__": 4,
         "_defn": [
           {
-            "_row_num": 227,
+            "_row_num": 223,
             "section_name": "model"
           }
         ],
@@ -23154,7 +23030,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 228,
+            "_row_num": 224,
             "section_name": "model"
           }
         ],
@@ -23168,7 +23044,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 229,
+            "_row_num": 225,
             "section_name": "model"
           }
         ],
@@ -23191,7 +23067,7 @@
         },
         "_defn": [
           {
-            "_row_num": 230,
+            "_row_num": 226,
             "section_name": "model"
           }
         ],
@@ -23208,7 +23084,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 232,
+            "_row_num": 228,
             "section_name": "model"
           }
         ],
@@ -23227,7 +23103,7 @@
         "__rowNum__": 4,
         "_defn": [
           {
-            "_row_num": 233,
+            "_row_num": 229,
             "section_name": "model"
           }
         ],
@@ -23241,7 +23117,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 234,
+            "_row_num": 230,
             "section_name": "model"
           }
         ],
@@ -23255,7 +23131,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 235,
+            "_row_num": 231,
             "section_name": "model"
           }
         ],
@@ -23269,7 +23145,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 236,
+            "_row_num": 232,
             "section_name": "model"
           }
         ],
