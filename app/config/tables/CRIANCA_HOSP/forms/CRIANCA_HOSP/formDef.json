@@ -360,6 +360,14 @@
         "_row_num": 40
       },
       {
+        "clause": "end screen",
+        "_row_num": 41
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 42
+      },
+      {
         "type": "select_one",
         "values_list": "YesNoU",
         "name": "DECIDOUTR",
@@ -371,12 +379,12 @@
             }
           }
         },
-        "_row_num": 41
+        "_row_num": 43
       },
       {
         "clause": "if",
         "condition": "data('DECIDOUTR') =='1'",
-        "_row_num": 42
+        "_row_num": 44
       },
       {
         "type": "text",
@@ -389,19 +397,19 @@
             }
           }
         },
-        "_row_num": 43
-      },
-      {
-        "clause": "end if",
-        "_row_num": 44
-      },
-      {
-        "clause": "end screen",
         "_row_num": 45
       },
       {
-        "clause": "begin screen",
+        "clause": "end if",
         "_row_num": 46
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 47
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 48
       },
       {
         "type": "text",
@@ -414,7 +422,7 @@
             }
           }
         },
-        "_row_num": 47
+        "_row_num": 49
       },
       {
         "type": "select_one",
@@ -428,11 +436,11 @@
             }
           }
         },
-        "_row_num": 48
+        "_row_num": 50
       },
       {
         "clause": "end screen",
-        "_row_num": 49
+        "_row_num": 51
       }
     ],
     "prompt_types": [
@@ -572,122 +580,122 @@
     ],
     "model": [
       {
-        "name": "DATAINT",
-        "type": "adate",
+        "name": "ACCIHOSP",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 2
-      },
-      {
-        "name": "ONDEINTC",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 3
-      },
-      {
-        "name": "ONDEINT",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 4
-      },
-      {
-        "name": "PERTO",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 5
-      },
-      {
-        "name": "PERPORQ",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 6
-      },
-      {
-        "name": "DOCINT",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 7
       },
       {
         "name": "AINDAINT",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 8
-      },
-      {
-        "name": "DURINT",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 9
-      },
-      {
-        "name": "DECIDMAE",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 10
-      },
-      {
-        "name": "DECIDPAE",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 11
-      },
-      {
-        "name": "DECIDOUTR",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 12
-      },
-      {
-        "name": "DECIDQUEM",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 13
+        "_row_num": 3
       },
       {
         "name": "CAUHOSP",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 14
+        "_row_num": 4
       },
       {
-        "name": "ACCIHOSP",
+        "name": "DATAINT",
+        "type": "adate",
+        "isSessionVariable": false,
+        "_row_num": 5
+      },
+      {
+        "name": "DECIDMAE",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 15
+        "_row_num": 6
+      },
+      {
+        "name": "DECIDOUTR",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 7
+      },
+      {
+        "name": "DECIDPAE",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 8
+      },
+      {
+        "name": "DECIDQUEM",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 9
+      },
+      {
+        "name": "DOCINT",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 10
+      },
+      {
+        "name": "DURINT",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 11
       },
       {
         "name": "informador",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 16
-      },
-      {
-        "name": "infquem",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 17
+        "_row_num": 12
       },
       {
         "name": "infporq",
         "type": "text",
         "isSessionVariable": false,
+        "_row_num": 13
+      },
+      {
+        "name": "infquem",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 14
+      },
+      {
+        "name": "ONDEINT",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 15
+      },
+      {
+        "name": "ONDEINTC",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 16
+      },
+      {
+        "name": "PERPORQ",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 17
+      },
+      {
+        "name": "PERTO",
+        "type": "select_one",
+        "isSessionVariable": false,
         "_row_num": 18
       },
       {
-        "name": "REGID",
+        "name": "REGIDC",
         "type": "text",
         "isSessionVariable": false,
         "_row_num": 20
       },
       {
-        "name": "VISITIDC",
-        "type": "text",
+        "name": "VISITDATE",
+        "type": "adate",
         "isSessionVariable": false,
         "_row_num": 21
       },
       {
-        "name": "VISITDATE",
-        "type": "adate",
+        "name": "VISITIDC",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 22
       }
@@ -950,6 +958,53 @@
     "queries": {},
     "calculates": {},
     "model": {
+      "ACCIHOSP": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 50,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 2,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ACCIHOSP"
+      },
+      "AINDAINT": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 33,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "AINDAINT"
+      },
+      "CAUHOSP": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 49,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 4,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CAUHOSP"
+      },
       "DATAINT": {
         "prompt_type_name": "adate",
         "type": "string",
@@ -963,121 +1018,12 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 2,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DATAINT"
-      },
-      "ONDEINTC": {
-        "type": "string",
-        "valuesList": "HospCode",
-        "_defn": [
-          {
-            "_row_num": 15,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 3,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "ONDEINTC"
-      },
-      "ONDEINT": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 18,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 4,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "ONDEINT"
-      },
-      "PERTO": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 21,
-            "section_name": "survey"
-          },
-          {
             "_row_num": 5,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "PERTO"
-      },
-      "PERPORQ": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 23,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 6,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "PERPORQ"
-      },
-      "DOCINT": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 27,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 7,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DOCINT"
-      },
-      "AINDAINT": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 33,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 8,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "AINDAINT"
-      },
-      "DURINT": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 35,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 9,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DURINT"
+        "elementKey": "DATAINT"
       },
       "DECIDMAE": {
         "type": "string",
@@ -1088,12 +1034,28 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 10,
+            "_row_num": 6,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "DECIDMAE"
+      },
+      "DECIDOUTR": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 43,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 7,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DECIDOUTR"
       },
       "DECIDPAE": {
         "type": "string",
@@ -1104,74 +1066,58 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 11,
+            "_row_num": 8,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "DECIDPAE"
       },
-      "DECIDOUTR": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 41,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 12,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DECIDOUTR"
-      },
       "DECIDQUEM": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 43,
+            "_row_num": 45,
             "section_name": "survey"
           },
           {
-            "_row_num": 13,
+            "_row_num": 9,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "DECIDQUEM"
       },
-      "CAUHOSP": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 47,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 14,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CAUHOSP"
-      },
-      "ACCIHOSP": {
+      "DOCINT": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 48,
+            "_row_num": 27,
             "section_name": "survey"
           },
           {
-            "_row_num": 15,
+            "_row_num": 10,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ACCIHOSP"
+        "elementKey": "DOCINT"
+      },
+      "DURINT": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 35,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DURINT"
       },
       "informador": {
         "type": "string",
@@ -1182,27 +1128,12 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 16,
+            "_row_num": 12,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "informador"
-      },
-      "infquem": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 5,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 17,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "infquem"
       },
       "infporq": {
         "type": "string",
@@ -1212,14 +1143,91 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 18,
+            "_row_num": 13,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "infporq"
       },
-      "REGID": {
+      "infquem": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 5,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "infquem"
+      },
+      "ONDEINT": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 18,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 15,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ONDEINT"
+      },
+      "ONDEINTC": {
+        "type": "string",
+        "valuesList": "HospCode",
+        "_defn": [
+          {
+            "_row_num": 15,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 16,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ONDEINTC"
+      },
+      "PERPORQ": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 23,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 17,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "PERPORQ"
+      },
+      "PERTO": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 21,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 18,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "PERTO"
+      },
+      "REGIDC": {
         "type": "string",
         "_defn": [
           {
@@ -1228,18 +1236,7 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "REGID"
-      },
-      "VISITIDC": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 21,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "VISITIDC"
+        "elementKey": "REGIDC"
       },
       "VISITDATE": {
         "prompt_type_name": "adate",
@@ -1250,12 +1247,23 @@
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "VISITDATE"
+      },
+      "VISITIDC": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 22,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VISITIDC"
       },
       "DOCINTQUAL": {
         "_defn": [
@@ -1550,11 +1558,11 @@
                 }
               }
             },
-            "_row_num": 41,
-            "__rowNum__": 40,
+            "_row_num": 43,
+            "__rowNum__": 42,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen38",
+            "_branch_label_enclosing_screen": "survey/_screen42",
             "promptIdx": 14
           },
           {
@@ -1568,11 +1576,11 @@
                 }
               }
             },
-            "_row_num": 43,
-            "__rowNum__": 42,
+            "_row_num": 45,
+            "__rowNum__": 44,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen38",
+            "_branch_label_enclosing_screen": "survey/_screen42",
             "promptIdx": 15
           },
           {
@@ -1586,11 +1594,11 @@
                 }
               }
             },
-            "_row_num": 47,
-            "__rowNum__": 46,
+            "_row_num": 49,
+            "__rowNum__": 48,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen46",
+            "_branch_label_enclosing_screen": "survey/_screen48",
             "promptIdx": 16
           },
           {
@@ -1605,19 +1613,19 @@
                 }
               }
             },
-            "_row_num": 48,
-            "__rowNum__": 47,
+            "_row_num": 50,
+            "__rowNum__": 49,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen46",
+            "_branch_label_enclosing_screen": "survey/_screen48",
             "promptIdx": 17
           },
           {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 50,
-            "_branch_label_enclosing_screen": "survey/_screen50",
+            "_row_num": 52,
+            "_branch_label_enclosing_screen": "survey/_screen52",
             "promptIdx": 18
           }
         ],
@@ -1730,47 +1738,61 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 45,
-              "__rowNum__": 44,
+              "_row_num": 41,
+              "__rowNum__": 40,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(12);\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\nif (data('DECIDOUTR') =='1') {\nactivePromptIndicies.push(15);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(12);\nactivePromptIndicies.push(13);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 7
           },
           {
             "clause": "begin screen",
-            "_row_num": 46,
-            "__rowNum__": 45,
+            "_row_num": 42,
+            "__rowNum__": 41,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 49,
-              "__rowNum__": 48,
+              "_row_num": 47,
+              "__rowNum__": 46,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(14);\nif (data('DECIDOUTR') =='1') {\nactivePromptIndicies.push(15);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 8
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 48,
+            "__rowNum__": 47,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 51,
+              "__rowNum__": 50,
               "_token_type": "end_screen"
             },
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(16);\nactivePromptIndicies.push(17);\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 8
+            "operationIdx": 9
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 50,
-            "operationIdx": 9
+            "_row_num": 52,
+            "operationIdx": 10
           },
           {
-            "_row_num": 50,
+            "_row_num": 52,
             "_token_type": "begin_screen",
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(18);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 10
+            "operationIdx": 11
           },
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 50,
-            "operationIdx": 11
+            "_row_num": 52,
+            "operationIdx": 12
           }
         ],
         "branch_label_map": {
@@ -1782,9 +1804,10 @@
           "_screen26": 5,
           "_screen32": 6,
           "_screen38": 7,
-          "_screen46": 8,
-          "_contents": 10,
-          "_screen50": 10
+          "_screen42": 8,
+          "_screen48": 9,
+          "_contents": 11,
+          "_screen52": 11
         }
       },
       "initial": {
@@ -1969,6 +1992,62 @@
       }
     },
     "dataTableModel": {
+      "ACCIHOSP": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 50,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 2,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ACCIHOSP",
+        "elementName": "ACCIHOSP",
+        "elementSet": "data",
+        "elementPath": "ACCIHOSP"
+      },
+      "AINDAINT": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 33,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "AINDAINT",
+        "elementName": "AINDAINT",
+        "elementSet": "data",
+        "elementPath": "AINDAINT"
+      },
+      "CAUHOSP": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 49,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 4,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CAUHOSP",
+        "elementName": "CAUHOSP",
+        "elementSet": "data",
+        "elementPath": "CAUHOSP"
+      },
       "DATAINT": {
         "prompt_type_name": "adate",
         "type": "string",
@@ -1982,7 +2061,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 2,
+            "_row_num": 5,
             "section_name": "model"
           }
         ],
@@ -1991,136 +2070,6 @@
         "elementName": "DATAINT",
         "elementSet": "data",
         "elementPath": "DATAINT"
-      },
-      "ONDEINTC": {
-        "type": "string",
-        "valuesList": "HospCode",
-        "_defn": [
-          {
-            "_row_num": 15,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 3,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "ONDEINTC",
-        "elementName": "ONDEINTC",
-        "elementSet": "data",
-        "elementPath": "ONDEINTC"
-      },
-      "ONDEINT": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 18,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 4,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "ONDEINT",
-        "elementName": "ONDEINT",
-        "elementSet": "data",
-        "elementPath": "ONDEINT"
-      },
-      "PERTO": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 21,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 5,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "PERTO",
-        "elementName": "PERTO",
-        "elementSet": "data",
-        "elementPath": "PERTO"
-      },
-      "PERPORQ": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 23,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 6,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "PERPORQ",
-        "elementName": "PERPORQ",
-        "elementSet": "data",
-        "elementPath": "PERPORQ"
-      },
-      "DOCINT": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 27,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 7,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DOCINT",
-        "elementName": "DOCINT",
-        "elementSet": "data",
-        "elementPath": "DOCINT"
-      },
-      "AINDAINT": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 33,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 8,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "AINDAINT",
-        "elementName": "AINDAINT",
-        "elementSet": "data",
-        "elementPath": "AINDAINT"
-      },
-      "DURINT": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 35,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 9,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DURINT",
-        "elementName": "DURINT",
-        "elementSet": "data",
-        "elementPath": "DURINT"
       },
       "DECIDMAE": {
         "type": "string",
@@ -2131,7 +2080,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 10,
+            "_row_num": 6,
             "section_name": "model"
           }
         ],
@@ -2140,6 +2089,25 @@
         "elementName": "DECIDMAE",
         "elementSet": "data",
         "elementPath": "DECIDMAE"
+      },
+      "DECIDOUTR": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 43,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 7,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DECIDOUTR",
+        "elementName": "DECIDOUTR",
+        "elementSet": "data",
+        "elementPath": "DECIDOUTR"
       },
       "DECIDPAE": {
         "type": "string",
@@ -2150,7 +2118,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 11,
+            "_row_num": 8,
             "section_name": "model"
           }
         ],
@@ -2160,34 +2128,15 @@
         "elementSet": "data",
         "elementPath": "DECIDPAE"
       },
-      "DECIDOUTR": {
-        "type": "string",
-        "valuesList": "YesNoU",
-        "_defn": [
-          {
-            "_row_num": 41,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 12,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "DECIDOUTR",
-        "elementName": "DECIDOUTR",
-        "elementSet": "data",
-        "elementPath": "DECIDOUTR"
-      },
       "DECIDQUEM": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 43,
+            "_row_num": 45,
             "section_name": "survey"
           },
           {
-            "_row_num": 13,
+            "_row_num": 9,
             "section_name": "model"
           }
         ],
@@ -2197,42 +2146,42 @@
         "elementSet": "data",
         "elementPath": "DECIDQUEM"
       },
-      "CAUHOSP": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 47,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 14,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CAUHOSP",
-        "elementName": "CAUHOSP",
-        "elementSet": "data",
-        "elementPath": "CAUHOSP"
-      },
-      "ACCIHOSP": {
+      "DOCINT": {
         "type": "string",
         "valuesList": "YesNoU",
         "_defn": [
           {
-            "_row_num": 48,
+            "_row_num": 27,
             "section_name": "survey"
           },
           {
-            "_row_num": 15,
+            "_row_num": 10,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ACCIHOSP",
-        "elementName": "ACCIHOSP",
+        "elementKey": "DOCINT",
+        "elementName": "DOCINT",
         "elementSet": "data",
-        "elementPath": "ACCIHOSP"
+        "elementPath": "DOCINT"
+      },
+      "DURINT": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 35,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DURINT",
+        "elementName": "DURINT",
+        "elementSet": "data",
+        "elementPath": "DURINT"
       },
       "informador": {
         "type": "string",
@@ -2243,7 +2192,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 16,
+            "_row_num": 12,
             "section_name": "model"
           }
         ],
@@ -2253,24 +2202,6 @@
         "elementSet": "data",
         "elementPath": "informador"
       },
-      "infquem": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 5,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 17,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "infquem",
-        "elementName": "infquem",
-        "elementSet": "data",
-        "elementPath": "infquem"
-      },
       "infporq": {
         "type": "string",
         "_defn": [
@@ -2279,7 +2210,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 18,
+            "_row_num": 13,
             "section_name": "model"
           }
         ],
@@ -2289,7 +2220,99 @@
         "elementSet": "data",
         "elementPath": "infporq"
       },
-      "REGID": {
+      "infquem": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 5,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "infquem",
+        "elementName": "infquem",
+        "elementSet": "data",
+        "elementPath": "infquem"
+      },
+      "ONDEINT": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 18,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 15,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ONDEINT",
+        "elementName": "ONDEINT",
+        "elementSet": "data",
+        "elementPath": "ONDEINT"
+      },
+      "ONDEINTC": {
+        "type": "string",
+        "valuesList": "HospCode",
+        "_defn": [
+          {
+            "_row_num": 15,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 16,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ONDEINTC",
+        "elementName": "ONDEINTC",
+        "elementSet": "data",
+        "elementPath": "ONDEINTC"
+      },
+      "PERPORQ": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 23,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 17,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "PERPORQ",
+        "elementName": "PERPORQ",
+        "elementSet": "data",
+        "elementPath": "PERPORQ"
+      },
+      "PERTO": {
+        "type": "string",
+        "valuesList": "YesNoU",
+        "_defn": [
+          {
+            "_row_num": 21,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 18,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "PERTO",
+        "elementName": "PERTO",
+        "elementSet": "data",
+        "elementPath": "PERTO"
+      },
+      "REGIDC": {
         "type": "string",
         "_defn": [
           {
@@ -2298,24 +2321,10 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "REGID",
-        "elementName": "REGID",
+        "elementKey": "REGIDC",
+        "elementName": "REGIDC",
         "elementSet": "data",
-        "elementPath": "REGID"
-      },
-      "VISITIDC": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 21,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "VISITIDC",
-        "elementName": "VISITIDC",
-        "elementSet": "data",
-        "elementPath": "VISITIDC"
+        "elementPath": "REGIDC"
       },
       "VISITDATE": {
         "prompt_type_name": "adate",
@@ -2326,7 +2335,7 @@
         "__rowNum__": 2,
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
@@ -2335,6 +2344,20 @@
         "elementName": "VISITDATE",
         "elementSet": "data",
         "elementPath": "VISITDATE"
+      },
+      "VISITIDC": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 22,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "VISITIDC",
+        "elementName": "VISITIDC",
+        "elementSet": "data",
+        "elementPath": "VISITIDC"
       },
       "DOCINTQUAL": {
         "_defn": [

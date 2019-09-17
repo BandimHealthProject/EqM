@@ -210,10 +210,6 @@ window.odkFrameworkDefinitions = {
     },
     "survey_form_identification": {
       "string_token": "survey_form_identification",
-      "text": {
-        "english": "<div><center>ODK Survey</center><hr></div><div><p>Form name: {{localizeText form_title}}</p>{{#if form_version}}<p>Form version: {{form_version}}</p>{{/if}}<hr></div>",
-        "default": "<div><center>ODK Survey</center><hr></div><div><p>Nome do formulario: {{localizeText form_title}}</p>{{#if form_version}}<p>Versão do formulário: {{form_version}}</p>{{/if}}<hr></div>"
-      },
       "_row_num": 28
     },
     "finalize_survey_instance_detail": {
@@ -266,10 +262,6 @@ window.odkFrameworkDefinitions = {
     },
     "opening_survey_instance_detail": {
       "string_token": "opening_survey_instance_detail",
-      "text": {
-        "english": "{{#if display_field}}\n        <p>You are at the beginning of the questionaire: </p>\n        <p>\"{{display_field}}\"</p> \n  {{else}}\n        <p>You are at the start of a new questionaire.</p>\n  {{/if}}\n        <hr>\n        {{#if last_save_date}}\n            <p>Last saved:</p> \n            <p>{{last_save_date}}</p>\n        {{/if}}\n        <hr>",
-        "default": "{{#if display_field}}\n        <p>Você está no começo do questionário: </p>\n        <p>\"{{display_field}}\"</p> \n  {{else}}\n        <p>Você está no começo de um novo questionário.</p>\n  {{/if}}\n        <hr>\n        {{#if last_save_date}}\n            <p>Guardado por última vez:</p> \n            <p>{{last_save_date}}</p>\n        {{/if}}\n        <hr>"
-      },
       "_row_num": 35
     },
     "opening_survey_next_button_label": {

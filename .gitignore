@@ -98,3 +98,7 @@ app/config/assets/csv/CRIANCA.oio13.csv
 app/config/assets/csv/MIF.oio.csv
 app/config/assets/csv/MIF.oio12.csv
 app/config/assets/csv/MIF.oio13.csv
+app/config/assets/csv/CRIANCA.oio23.csv
+app/config/assets/csv/MIF.oio23.csv
+app/config/assets/csv/CRIANCA.test.csv
+app/config/assets/csv/MIF.test.csv
