@@ -288,7 +288,6 @@
       },
       {
         "clause": "end screen",
-        "calculation": 2,
         "_row_num": 32
       },
       {
@@ -807,6 +806,11 @@
         "elementType": "string",
         "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
         "_row_num": 3
+      },
+      {
+        "prompt_type_name": "async_assign_num_value",
+        "type": "integer",
+        "_row_num": 4
       }
     ],
     "choices": [
@@ -1817,6 +1821,19 @@
         "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), DEATHDATE:data('EXITDATA'), VISITDATE: data('CONT'), VISITID: opendatakit.getCurrentInstanceId()}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 5
+      },
+      {
+        "query_name": "linked_gr",
+        "query_type": "linked_table",
+        "linked_form_id": "MIF_VISIT",
+        "linked_table_id": "MIF_VISIT",
+        "selection": "REGID = ?",
+        "selectionArgs": "[data('REGID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "GR",
+        "order_by": "_savepoint_timestamp DESC",
+        "_row_num": 7
       }
     ],
     "model": [
@@ -3161,6 +3178,19 @@
         "newRowInitialElementKeyToValueMap": "{REGID: data('REGID'), DEATHDATE:data('EXITDATA'), VISITDATE: data('CONT'), VISITID: opendatakit.getCurrentInstanceId()}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 5
+      },
+      "linked_gr": {
+        "query_name": "linked_gr",
+        "query_type": "linked_table",
+        "linked_form_id": "MIF_VISIT",
+        "linked_table_id": "MIF_VISIT",
+        "selection": "REGID = ?",
+        "selectionArgs": "[data('REGID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "GR",
+        "order_by": "_savepoint_timestamp DESC",
+        "_row_num": 7
       }
     },
     "calculates": {},
@@ -4336,7 +4366,6 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "calculation": 2,
               "_row_num": 32,
               "__rowNum__": 31,
               "_token_type": "end_screen"

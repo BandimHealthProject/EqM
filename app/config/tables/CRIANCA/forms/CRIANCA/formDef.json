@@ -76,7 +76,7 @@
       {
         "type": "select_one",
         "values_list": "birthstatus",
-        "name": "NADOESTADO",
+        "name": "NASESTADO",
         "display": {
           "prompt": {
             "text": {
@@ -155,7 +155,7 @@
           "prompt": {
             "text": {
               "english": "Region",
-              "default": "Região: {{data.regmif}}"
+              "default": "Região"
             }
           }
         },
@@ -169,7 +169,7 @@
           "prompt": {
             "text": {
               "english": "Tabanca",
-              "default": "Tabanca: {{data.tabmif}}"
+              "default": "Tabanca"
             }
           }
         },
@@ -1309,7 +1309,7 @@
         "_row_num": 10
       },
       {
-        "name": "NADOESTADO",
+        "name": "NASESTADO",
         "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 11
@@ -2342,7 +2342,7 @@
         "isSessionVariable": false,
         "elementKey": "REGIDC"
       },
-      "NADOESTADO": {
+      "NASESTADO": {
         "type": "string",
         "valuesList": "birthstatus",
         "_defn": [
@@ -2356,7 +2356,7 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "NADOESTADO"
+        "elementKey": "NASESTADO"
       },
       "REGID": {
         "type": "string",
@@ -2875,7 +2875,7 @@
           {
             "type": "select_one",
             "values_list": "birthstatus",
-            "name": "NADOESTADO",
+            "name": "NASESTADO",
             "display": {
               "prompt": {
                 "text": {
@@ -2954,7 +2954,7 @@
               "prompt": {
                 "text": {
                   "english": "Region",
-                  "default": "Região: {{data.regmif}}"
+                  "default": "Região"
                 }
               }
             },
@@ -2973,7 +2973,7 @@
               "prompt": {
                 "text": {
                   "english": "Tabanca",
-                  "default": "Tabanca: {{data.tabmif}}"
+                  "default": "Tabanca"
                 }
               }
             },
@@ -4147,7 +4147,7 @@
         "elementSet": "data",
         "elementPath": "REGIDC"
       },
-      "NADOESTADO": {
+      "NASESTADO": {
         "type": "string",
         "valuesList": "birthstatus",
         "_defn": [
@@ -4161,10 +4161,10 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "NADOESTADO",
-        "elementName": "NADOESTADO",
+        "elementKey": "NASESTADO",
+        "elementName": "NASESTADO",
         "elementSet": "data",
-        "elementPath": "NADOESTADO"
+        "elementPath": "NASESTADO"
       },
       "REGID": {
         "type": "string",
@@ -4941,7 +4941,7 @@
       },
       {
         "_partition": "Column",
-        "_aspect": "NADOESTADO",
+        "_aspect": "NASESTADO",
         "_key": "displayChoicesList",
         "_type": "object",
         "_value": "[{\"choice_list_name\":\"birthstatus\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Alive\",\"default\":\"Alive\"}}},\"_row_num\":38},{\"choice_list_name\":\"birthstatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Died before birth\",\"default\":\"Died before birth\"}}},\"_row_num\":39},{\"choice_list_name\":\"birthstatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Died after birth\",\"default\":\"Died after birth\"}}},\"_row_num\":40}]"

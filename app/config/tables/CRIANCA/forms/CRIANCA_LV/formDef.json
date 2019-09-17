@@ -515,7 +515,7 @@
         "_row_num": 10
       },
       {
-        "name": "NADOESTADO",
+        "name": "NASESTADO",
         "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 11
@@ -1194,7 +1194,7 @@
         "isSessionVariable": false,
         "elementKey": "REGIDC"
       },
-      "NADOESTADO": {
+      "NASESTADO": {
         "type": "string",
         "_defn": [
           {
@@ -1203,7 +1203,7 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "NADOESTADO"
+        "elementKey": "NASESTADO"
       },
       "REGID": {
         "type": "string",
@@ -2348,7 +2348,7 @@
         "elementSet": "data",
         "elementPath": "REGIDC"
       },
-      "NADOESTADO": {
+      "NASESTADO": {
         "type": "string",
         "_defn": [
           {
@@ -2357,10 +2357,10 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "NADOESTADO",
-        "elementName": "NADOESTADO",
+        "elementKey": "NASESTADO",
+        "elementName": "NASESTADO",
         "elementSet": "data",
-        "elementPath": "NADOESTADO"
+        "elementPath": "NASESTADO"
       },
       "REGID": {
         "type": "string",
