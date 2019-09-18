@@ -288,7 +288,7 @@ module.exports = function (grunt) {
     grunt.registerTask(
         'adbpush',
         'Perform all the adbpush tasks',
-        ["adbpull-props", "remove-folders", 'adbpush-collect', 'adbpush-default-app', "adbpush-props"]);
+        ['eqm-copy-custom', 'adbpull-props', 'remove-folders', 'adbpush-collect', 'adbpush-default-app', 'adbpush-props', 'eqm-push-sysscripts']);
 
     grunt.registerTask(
         'clean',
@@ -378,6 +378,22 @@ module.exports = function (grunt) {
                     grunt.file.copy(src, dest);
                 });
                 
+            });
+        }
+    );
+
+    grunt.registerTask(
+        'eqm-push-sysscripts',
+        'updates scripts in system/survey/js',
+        function() {
+            // Copy system-files
+            var sysFilesToCopy = ['app/system/survey/js/adateHelpers.js', 'app/system/survey/js/formulaFunctions.js'];
+            var sysDest = '/sdcard/opendatakit/default/system/survey/js';
+            sysFilesToCopy.forEach(fileName => {
+                var src = fileName;
+                var dest = sysDest + fileName.substr(fileName.lastIndexOf('/'));
+                //console.log(src, dest);
+                grunt.task.run('exec:adbpush:' + src + ':' + dest);
             });
         }
     );
