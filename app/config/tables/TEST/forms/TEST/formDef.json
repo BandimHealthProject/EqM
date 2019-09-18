@@ -75,16 +75,27 @@
               "default": "ADATEST",
               "portuguese": "ADATEST"
             }
+          },
+          "adate": {
+            "fromYear": 1998,
+            "toYear": 2022
           }
         },
         "_row_num": 3
       },
       {
-        "type": "custom_date",
-        "name": "test",
+        "type": "adate",
+        "name": "ADA2",
         "display": {
           "prompt": {
-            "text": "test"
+            "text": {
+              "default": "Testdato 2",
+              "portuguese": "Nammename"
+            }
+          },
+          "adate": {
+            "fromYear": 1990,
+            "toYear": 1995
           }
         },
         "_row_num": 4
@@ -99,7 +110,7 @@
       },
       {
         "clause": "if",
-        "condition": "adate.ageInYears(data('ADA'))>2",
+        "condition": "adate.ageInYears(data('ADA'))>=2",
         "_row_num": 7
       },
       {
@@ -146,17 +157,24 @@
         "name": "lblbla",
         "display": {
           "prompt": {
-            "text": {
-              "default": "Alder {{adate.ageInYears(data('ADA'))}}",
-              "portuguese": "Sand"
-            }
+            "text": "Alder I hele år: <b>{{calculates.ageInYears}}</b><br/>I måneder: {{calculates.ageInMonths}}<br/>I dage: {{calculates.ageInDays}}<br/>( baseret på {{data.ADA}} )<br/>"
           }
         },
         "_row_num": 13
       },
       {
-        "clause": "else",
+        "type": "note",
+        "name": "lblblabla",
+        "display": {
+          "prompt": {
+            "text": "Differencen var: {{calculates.diffInYears}} år."
+          }
+        },
         "_row_num": 14
+      },
+      {
+        "clause": "else",
+        "_row_num": 15
       },
       {
         "type": "note",
@@ -169,15 +187,37 @@
             }
           }
         },
-        "_row_num": 15
-      },
-      {
-        "clause": "end if",
         "_row_num": 16
       },
       {
-        "clause": "end screen",
+        "clause": "end if",
         "_row_num": 17
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 18
+      }
+    ],
+    "calculates": [
+      {
+        "calculation_name": "ageInYears",
+        "calculation": "adate.ageInYears(data('ADA2'))",
+        "_row_num": 2
+      },
+      {
+        "calculation_name": "ageInMonths",
+        "calculation": "adate.ageInMonths(data('ADA2'))",
+        "_row_num": 3
+      },
+      {
+        "calculation_name": "ageInDays",
+        "calculation": "adate.ageInDays(data('ADA2'))",
+        "_row_num": 4
+      },
+      {
+        "calculation_name": "diffInYears",
+        "calculation": "adate.diffInYears(data('ADA'), data('ADA2'))",
+        "_row_num": 5
       }
     ],
     "queries": [
@@ -2012,20 +2052,14 @@
       {
         "name": "ADA",
         "type": "string",
-        "isSessionVariable": false,
+        "isSessionVariable": true,
         "_row_num": 2
       },
       {
-        "name": "TT",
+        "name": "ADA2",
         "type": "string",
-        "isSessionVariable": false,
+        "isSessionVariable": true,
         "_row_num": 3
-      },
-      {
-        "name": "test",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 4
       }
     ]
   },
@@ -3983,7 +4017,28 @@
         "_row_num": 3
       }
     },
-    "calculates": {},
+    "calculates": {
+      "ageInYears": {
+        "calculation_name": "ageInYears",
+        "calculation": "adate.ageInYears(data('ADA2'))",
+        "_row_num": 2
+      },
+      "ageInMonths": {
+        "calculation_name": "ageInMonths",
+        "calculation": "adate.ageInMonths(data('ADA2'))",
+        "_row_num": 3
+      },
+      "ageInDays": {
+        "calculation_name": "ageInDays",
+        "calculation": "adate.ageInDays(data('ADA2'))",
+        "_row_num": 4
+      },
+      "diffInYears": {
+        "calculation_name": "diffInYears",
+        "calculation": "adate.diffInYears(data('ADA'), data('ADA2'))",
+        "_row_num": 5
+      }
+    },
     "model": {
       "ADA": {
         "prompt_type_name": "adate",
@@ -4000,37 +4055,26 @@
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
+        "isSessionVariable": true,
         "elementKey": "ADA"
       },
-      "TT": {
+      "ADA2": {
+        "prompt_type_name": "adate",
         "type": "string",
-        "_defn": [
-          {
-            "_row_num": 3,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "TT"
-      },
-      "test": {
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
         "_defn": [
           {
             "_row_num": 4,
             "section_name": "survey"
           },
           {
-            "_row_num": 4,
+            "_row_num": 3,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "test"
+        "isSessionVariable": true,
+        "elementKey": "ADA2"
       }
     },
     "section_names": [
@@ -4052,6 +4096,10 @@
                   "default": "ADATEST",
                   "portuguese": "ADATEST"
                 }
+              },
+              "adate": {
+                "fromYear": 1998,
+                "toYear": 2022
               }
             },
             "_row_num": 3,
@@ -4062,17 +4110,24 @@
             "promptIdx": 0
           },
           {
-            "type": "custom_date",
-            "name": "test",
+            "type": "adate",
+            "name": "ADA2",
             "display": {
               "prompt": {
-                "text": "test"
+                "text": {
+                  "default": "Testdato 2",
+                  "portuguese": "Nammename"
+                }
+              },
+              "adate": {
+                "fromYear": 1990,
+                "toYear": 1995
               }
             },
             "_row_num": 4,
             "__rowNum__": 3,
             "_token_type": "prompt",
-            "_type": "custom_date",
+            "_type": "adate",
             "_branch_label_enclosing_screen": "survey/_screen2",
             "promptIdx": 1
           },
@@ -4117,10 +4172,7 @@
             "name": "lblbla",
             "display": {
               "prompt": {
-                "text": {
-                  "default": "Alder {{adate.ageInYears(data('ADA'))}}",
-                  "portuguese": "Sand"
-                }
+                "text": "Alder I hele år: <b>{{calculates.ageInYears}}</b><br/>I måneder: {{calculates.ageInMonths}}<br/>I dage: {{calculates.ageInDays}}<br/>( baseret på {{data.ADA}} )<br/>"
               }
             },
             "_row_num": 13,
@@ -4135,26 +4187,41 @@
             "name": "lblblabla",
             "display": {
               "prompt": {
-                "text": {
-                  "default": "Ingen alder…",
-                  "portuguese": "Falsk"
-                }
+                "text": "Differencen var: {{calculates.diffInYears}} år."
               }
             },
-            "_row_num": 15,
-            "__rowNum__": 14,
+            "_row_num": 14,
+            "__rowNum__": 13,
             "_token_type": "prompt",
             "_type": "note",
             "_branch_label_enclosing_screen": "survey/_screen6",
             "promptIdx": 5
           },
           {
+            "type": "note",
+            "name": "lblblabla",
+            "display": {
+              "prompt": {
+                "text": {
+                  "default": "Ingen alder…",
+                  "portuguese": "Falsk"
+                }
+              }
+            },
+            "_row_num": 16,
+            "__rowNum__": 15,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen6",
+            "promptIdx": 6
+          },
+          {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 18,
-            "_branch_label_enclosing_screen": "survey/_screen18",
-            "promptIdx": 6
+            "_row_num": 19,
+            "_branch_label_enclosing_screen": "survey/_screen19",
+            "promptIdx": 7
           }
         ],
         "validation_tag_map": {
@@ -4182,23 +4249,23 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 17,
-              "__rowNum__": 16,
+              "_row_num": 18,
+              "__rowNum__": 17,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nif (adate.ageInYears(data('ADA'))>2) {\nactivePromptIndicies.push(2);\n}\nelse {\nactivePromptIndicies.push(3);\n}\nif (!adate.yearUnknown(data('ADA'))) {\nactivePromptIndicies.push(4);\n}\nelse {\nactivePromptIndicies.push(5);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nif (adate.ageInYears(data('ADA'))>=2) {\nactivePromptIndicies.push(2);\n}\nelse {\nactivePromptIndicies.push(3);\n}\nif (!adate.yearUnknown(data('ADA'))) {\nactivePromptIndicies.push(4);\nactivePromptIndicies.push(5);\n}\nelse {\nactivePromptIndicies.push(6);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 1
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 18,
+            "_row_num": 19,
             "operationIdx": 2
           },
           {
-            "_row_num": 18,
+            "_row_num": 19,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(6);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(7);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
@@ -4207,7 +4274,7 @@
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 18,
+            "_row_num": 19,
             "operationIdx": 4
           }
         ],
@@ -4215,7 +4282,7 @@
           "_screen2": 0,
           "_screen6": 1,
           "_contents": 3,
-          "_screen18": 3
+          "_screen19": 3
         }
       },
       "initial": {
@@ -4418,46 +4485,32 @@
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
+        "isSessionVariable": true,
         "elementKey": "ADA",
         "elementName": "ADA",
         "elementSet": "data",
         "elementPath": "ADA"
       },
-      "TT": {
+      "ADA2": {
+        "prompt_type_name": "adate",
         "type": "string",
-        "_defn": [
-          {
-            "_row_num": 3,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "TT",
-        "elementName": "TT",
-        "elementSet": "data",
-        "elementPath": "TT"
-      },
-      "test": {
-        "prompt_type_name": "custom_date",
-        "type": "string",
-        "elementType": "date",
-        "comment": "Makes the date widget DD/MM/YYYY",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
         "_defn": [
           {
             "_row_num": 4,
             "section_name": "survey"
           },
           {
-            "_row_num": 4,
+            "_row_num": 3,
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
-        "elementKey": "test",
-        "elementName": "test",
+        "isSessionVariable": true,
+        "elementKey": "ADA2",
+        "elementName": "ADA2",
         "elementSet": "data",
-        "elementPath": "test"
+        "elementPath": "ADA2"
       },
       "_id": {
         "type": "string",
