@@ -465,8 +465,10 @@ module.exports = function (grunt) {
 			
 			var buildDir = 'build' +
 				'/zips';
-			 
-			grunt.file.delete(buildDir + '/');
+             
+            if (grunt.file.exists(buildDir)) {
+                grunt.file.delete(buildDir + '/');
+            }
 			
 			grunt.file.mkdir(buildDir);
 			grunt.file.mkdir(buildDir + '/survey/');
