@@ -6,9 +6,9 @@ window.is_finalized = function() {
     return ('COMPLETE' === database.getInstanceMetaDataValue('_savepoint_type'));
 };
 
-function elog(str) {
-    //var prefix = "**EMIL**";
-    //console.error(prefix, str);
+function elog(obj) {
+    var prefix = "**BHP**";
+    console.error(prefix, obj);
     return;
 }
 
@@ -18,7 +18,7 @@ var adate = promptTypes.input_type.extend({
     unknownDay: false,
     unknownMonth: false,
     unknownYear: false,
-    templatePath: '../config/tables/MIF/forms/MIF/templates/adate.handlebars',
+    templatePath: '../config/assets/templates/adate.handlebars',
     
     events: {
         "change select": "modification",
@@ -31,8 +31,15 @@ var adate = promptTypes.input_type.extend({
     configureRenderContext: function(ctxt) {
         var that = this;
         var renderContext = that.renderContext;
+        //elog(renderContext);
         var startYear = 1900;
+        if (renderContext.display.adate && renderContext.display.adate.fromYear) {
+            startYear = parseInt(renderContext.display.adate.fromYear, 10);
+        }
         var endYear = new Date().getYear()+1900;
+        if (renderContext.display.adate && renderContext.display.adate.toYear) {
+            endYear = parseInt(renderContext.display.adate.toYear, 10);
+        }
         var dontknowLabel = "NS";
         renderContext.dayLabel = "dia";
         renderContext.monthLabel = "mes";

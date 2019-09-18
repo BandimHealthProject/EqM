@@ -6,9 +6,9 @@ window.is_finalized = function() {
     return ('COMPLETE' === database.getInstanceMetaDataValue('_savepoint_type'));
 };
 
-function elog(str) {
-    //var prefix = "**EMIL**";
-    //console.error(prefix, str);
+function elog(obj) {
+    var prefix = "**BHP**";
+    console.error(prefix, obj);
     return;
 }
 
@@ -18,7 +18,7 @@ var adate = promptTypes.input_type.extend({
     unknownDay: false,
     unknownMonth: false,
     unknownYear: false,
-    templatePath: '../config/tables/VAC/forms/VAC/templates/adate.handlebars',
+    templatePath: '../config/assets/templates/adate.handlebars',
     
     events: {
         "change select": "modification",
@@ -31,8 +31,15 @@ var adate = promptTypes.input_type.extend({
     configureRenderContext: function(ctxt) {
         var that = this;
         var renderContext = that.renderContext;
+        //elog(renderContext);
         var startYear = 1900;
+        if (renderContext.display.adate && renderContext.display.adate.fromYear) {
+            startYear = parseInt(renderContext.display.adate.fromYear, 10);
+        }
         var endYear = new Date().getYear()+1900;
+        if (renderContext.display.adate && renderContext.display.adate.toYear) {
+            endYear = parseInt(renderContext.display.adate.toYear, 10);
+        }
         var dontknowLabel = "NS";
         renderContext.dayLabel = "dia";
         renderContext.monthLabel = "mes";
@@ -244,7 +251,7 @@ var async_assign = promptTypes.base.extend({
     type: "async_assign",
     debug: false,
     valid: true,
-    templatePath: '../config/tables/VAC/forms/VAC/templates/async_assign.handlebars',
+    templatePath: '../config/tables/MIF/forms/MIF/templates/async_assign.handlebars',
     _cachedSelection: null,
     getLinkedTableId: function() {
         var queryDefn = opendatakit.getQueriesDefinition(this.values_list);
