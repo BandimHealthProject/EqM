@@ -330,8 +330,58 @@ module.exports = function (grunt) {
             grunt.task.run('exec:adbpull:' + src + ':' + dest);
         });
 
-        
     
+    // customPromptTypes are needed for each form cf. https://forum.opendatakit.org/t/odk-survey-counting-repeat-sections/4165/2
+    // so until a global customPromptTypes.js becomes available, we copy the one from assets/custom folder to each form folder
+    grunt.registerTask(
+        'eqm-convert-all',
+        'Copies customPromptTypes and customScreenTypes to forms, then runs xlsx-convert-all',
+        function() {            
+            grunt.task.run('eqm-copy-custom');
+            grunt.task.run('xlsx-convert-all');
+        }
+    );
+    
+    grunt.registerTask(
+        'eqm-copy-custom',
+        'Copies custom*.js files from framework folder to each form',
+        function() {
+            var platform = require('os').platform();
+			var isWindows = (platform.search('win') >= 0 &&
+                             platform.search('darwin') < 0);
+							 
+            var dirs = grunt.file.expand(
+                {filter: function(path) {
+ 						if ( !path.endsWith(".xlsx") ) {
+							return false;
+						}
+						var cells = path.split((isWindows ? "\\" : "/"));
+						return (cells.length >= 6) &&
+						  ( cells[cells.length-1] === cells[cells.length-2] + ".xlsx" ); 
+					},
+                 cwd: 'app' },
+				'**/*.xlsx',
+                '!**/~$*.xlsx'
+				);
+
+            
+            //var srcDir = 'app/config/assets/framework/forms/framework/';
+            var srcDir = 'app/config/assets/custom/';
+            var filesToDisseminate = ['customPromptTypes.js', 'customScreenTypes.js'];
+            dirs.forEach(function(fileName) {
+                //if (fileName == 'config/assets/framework/forms/framework/framework.xlsx') return; //i.e. continue
+                filesToDisseminate.forEach(fname => {
+                    var dest = 'app/' + fileName.substr(0,fileName.lastIndexOf('/')) + '/' + fname;
+                    var src = srcDir + fname;
+                    //console.log(jsFile);
+                    grunt.log.writeln('file copy ' + src + ' ' + dest);
+                    grunt.file.copy(src, dest);
+                });
+                
+            });
+        }
+    );
+
     grunt.registerTask(
         'xlsx-convert-all',
         'Run the XLSX converter on all form definitions',
