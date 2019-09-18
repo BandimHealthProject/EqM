@@ -61,6 +61,28 @@
         "_row_num": 8
       }
     ],
+    "calculates": [
+      {
+        "calculation_name": "ageInYears",
+        "calculation": "adate.ageInYears(data('ADA2'))",
+        "_row_num": 2
+      },
+      {
+        "calculation_name": "ageInMonths",
+        "calculation": "adate.ageInMonths(data('ADA2'))",
+        "_row_num": 3
+      },
+      {
+        "calculation_name": "ageInDays",
+        "calculation": "adate.ageInDays(data('ADA2'))",
+        "_row_num": 4
+      },
+      {
+        "calculation_name": "diffInYears",
+        "calculation": "adate.diffInYears(data('ADA'), data('ADA2'))",
+        "_row_num": 5
+      }
+    ],
     "survey": [
       {
         "clause": "begin screen",
@@ -115,7 +137,6 @@
       },
       {
         "type": "note",
-        "name": "lblKnown",
         "display": {
           "prompt": {
             "text": {
@@ -132,7 +153,6 @@
       },
       {
         "type": "note",
-        "name": "lblUnknown",
         "display": {
           "prompt": {
             "text": {
@@ -154,7 +174,6 @@
       },
       {
         "type": "note",
-        "name": "lblbla",
         "display": {
           "prompt": {
             "text": "Alder I hele år: <b>{{calculates.ageInYears}}</b><br/>I måneder: {{calculates.ageInMonths}}<br/>I dage: {{calculates.ageInDays}}<br/>( baseret på {{data.ADA}} )<br/>"
@@ -164,7 +183,6 @@
       },
       {
         "type": "note",
-        "name": "lblblabla",
         "display": {
           "prompt": {
             "text": "Differencen var: {{calculates.diffInYears}} år."
@@ -178,7 +196,6 @@
       },
       {
         "type": "note",
-        "name": "lblblabla",
         "display": {
           "prompt": {
             "text": {
@@ -198,44 +215,6 @@
         "_row_num": 18
       }
     ],
-    "calculates": [
-      {
-        "calculation_name": "ageInYears",
-        "calculation": "adate.ageInYears(data('ADA2'))",
-        "_row_num": 2
-      },
-      {
-        "calculation_name": "ageInMonths",
-        "calculation": "adate.ageInMonths(data('ADA2'))",
-        "_row_num": 3
-      },
-      {
-        "calculation_name": "ageInDays",
-        "calculation": "adate.ageInDays(data('ADA2'))",
-        "_row_num": 4
-      },
-      {
-        "calculation_name": "diffInYears",
-        "calculation": "adate.diffInYears(data('ADA'), data('ADA2'))",
-        "_row_num": 5
-      }
-    ],
-    "queries": [
-      {
-        "query_name": "region_csv",
-        "query_type": "csv",
-        "uri": "\"TABANCAS.csv\"",
-        "callback": "_.chain(context)\n.uniq(function(x) {\nreturn x.REG\n})\n.map(function(place){\nreturn {\ndata_value:place.REG,\ndisplay:{title: {text: place.REGIAO} } };\n}).value()",
-        "_row_num": 2
-      },
-      {
-        "query_name": "tabanca_csv",
-        "query_type": "csv",
-        "uri": "\"TABANCAS.csv\"",
-        "callback": "_.map(context, function(place){place.data_value = place.TAB;\nplace.display = {title: {text: place.TABANCA} };\nreturn place;\n})",
-        "_row_num": 3
-      }
-    ],
     "prompt_types": [
       {
         "prompt_type_name": "custom_date",
@@ -253,721 +232,6 @@
       }
     ],
     "choices": [
-      {
-        "choice_list_name": "YesNoU",
-        "data_value": "1",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Yes",
-              "portuguese": "Sim"
-            }
-          }
-        },
-        "_row_num": 2
-      },
-      {
-        "choice_list_name": "YesNoU",
-        "data_value": "2",
-        "display": {
-          "title": {
-            "text": {
-              "default": "No",
-              "portuguese": "Não"
-            }
-          }
-        },
-        "_row_num": 3
-      },
-      {
-        "choice_list_name": "YesNoU",
-        "data_value": "3",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Don't know",
-              "portuguese": "Não sabe"
-            }
-          }
-        },
-        "_row_num": 4
-      },
-      {
-        "choice_list_name": "inf1",
-        "data_value": "1",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Self",
-              "portuguese": "Ela/e"
-            }
-          }
-        },
-        "_row_num": 5
-      },
-      {
-        "choice_list_name": "inf1",
-        "data_value": "2",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Other",
-              "portuguese": "Outra/o"
-            }
-          }
-        },
-        "_row_num": 6
-      },
-      {
-        "choice_list_name": "inf2",
-        "data_value": "1",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Mother",
-              "portuguese": "Mãe"
-            }
-          }
-        },
-        "_row_num": 7
-      },
-      {
-        "choice_list_name": "inf2",
-        "data_value": "2",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Father",
-              "portuguese": "Pai"
-            }
-          }
-        },
-        "_row_num": 8
-      },
-      {
-        "choice_list_name": "inf2",
-        "data_value": "3",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Mothers mother",
-              "portuguese": "Avó"
-            }
-          }
-        },
-        "_row_num": 9
-      },
-      {
-        "choice_list_name": "inf2",
-        "data_value": "4",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Other family member",
-              "portuguese": "Outra mebro da familia"
-            }
-          }
-        },
-        "_row_num": 10
-      },
-      {
-        "choice_list_name": "inf2",
-        "data_value": "5",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Other",
-              "portuguese": "Outra/o"
-            }
-          }
-        },
-        "_row_num": 11
-      },
-      {
-        "choice_list_name": "inf2",
-        "data_value": "6",
-        "display": {
-          "title": {
-            "text": {
-              "default": "No informant found",
-              "portuguese": "Nenhum informador"
-            }
-          }
-        },
-        "_row_num": 12
-      },
-      {
-        "choice_list_name": "inf2",
-        "data_value": "88",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Not applicable",
-              "portuguese": "Não aplicável"
-            }
-          }
-        },
-        "_row_num": 13
-      },
-      {
-        "choice_list_name": "inf2",
-        "data_value": "99",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Missing",
-              "portuguese": "Falta informacao"
-            }
-          }
-        },
-        "_row_num": 14
-      },
-      {
-        "choice_list_name": "etn1",
-        "data_value": "BA",
-        "display": {
-          "title": {
-            "text": {
-              "default": "BA - Balanta",
-              "portuguese": "BA - Balanta"
-            }
-          }
-        },
-        "_row_num": 15
-      },
-      {
-        "choice_list_name": "etn1",
-        "data_value": "FU",
-        "display": {
-          "title": {
-            "text": {
-              "default": "FU - Fula",
-              "portuguese": "FU - Fula"
-            }
-          }
-        },
-        "_row_num": 16
-      },
-      {
-        "choice_list_name": "etn1",
-        "data_value": "MC",
-        "display": {
-          "title": {
-            "text": {
-              "default": "MC - Mancanha",
-              "portuguese": "MC - Mancanha"
-            }
-          }
-        },
-        "_row_num": 17
-      },
-      {
-        "choice_list_name": "etn1",
-        "data_value": "MD",
-        "display": {
-          "title": {
-            "text": {
-              "default": "MD - Mandinga",
-              "portuguese": "MD - Mandinga"
-            }
-          }
-        },
-        "_row_num": 18
-      },
-      {
-        "choice_list_name": "etn1",
-        "data_value": "MJ",
-        "display": {
-          "title": {
-            "text": {
-              "default": "MJ - Mandjancu",
-              "portuguese": "MJ - Mandjancu"
-            }
-          }
-        },
-        "_row_num": 19
-      },
-      {
-        "choice_list_name": "etn1",
-        "data_value": "PE",
-        "display": {
-          "title": {
-            "text": {
-              "default": "PE - Pepel",
-              "portuguese": "PE - Pepel"
-            }
-          }
-        },
-        "_row_num": 20
-      },
-      {
-        "choice_list_name": "etn1",
-        "data_value": "MX",
-        "display": {
-          "title": {
-            "text": {
-              "default": "MX - Mixted",
-              "portuguese": "MX - Mixto"
-            }
-          }
-        },
-        "_row_num": 21
-      },
-      {
-        "choice_list_name": "etn1",
-        "data_value": "OU",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Other",
-              "portuguese": "Outra/o"
-            }
-          }
-        },
-        "_row_num": 22
-      },
-      {
-        "choice_list_name": "etn1",
-        "data_value": "NS",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Don't know",
-              "portuguese": "Não sabe"
-            }
-          }
-        },
-        "_row_num": 23
-      },
-      {
-        "choice_list_name": "etn2",
-        "data_value": "BE",
-        "display": {
-          "title": {
-            "text": {
-              "default": "BE - Beafada",
-              "portuguese": "BE - Beafada"
-            }
-          }
-        },
-        "_row_num": 24
-      },
-      {
-        "choice_list_name": "etn2",
-        "data_value": "BI",
-        "display": {
-          "title": {
-            "text": {
-              "default": "BI - Bijago",
-              "portuguese": "BI - Bijago"
-            }
-          }
-        },
-        "_row_num": 25
-      },
-      {
-        "choice_list_name": "etn2",
-        "data_value": "BM",
-        "display": {
-          "title": {
-            "text": {
-              "default": "BM - Balante mane",
-              "portuguese": "BM - Balante mane"
-            }
-          }
-        },
-        "_row_num": 26
-      },
-      {
-        "choice_list_name": "etn2",
-        "data_value": "CV",
-        "display": {
-          "title": {
-            "text": {
-              "default": "CV - Cabo Verdiano",
-              "portuguese": "CV - Cabo Verdiano"
-            }
-          }
-        },
-        "_row_num": 27
-      },
-      {
-        "choice_list_name": "etn2",
-        "data_value": "GE",
-        "display": {
-          "title": {
-            "text": {
-              "default": "GE - Geba",
-              "portuguese": "GE - Geba"
-            }
-          }
-        },
-        "_row_num": 28
-      },
-      {
-        "choice_list_name": "etn2",
-        "data_value": "FE",
-        "display": {
-          "title": {
-            "text": {
-              "default": "FE - Felupe",
-              "portuguese": "FE - Felupe"
-            }
-          }
-        },
-        "_row_num": 29
-      },
-      {
-        "choice_list_name": "etn2",
-        "data_value": "MS",
-        "display": {
-          "title": {
-            "text": {
-              "default": "MS - Mansoanca",
-              "portuguese": "MS - Mansonca"
-            }
-          }
-        },
-        "_row_num": 30
-      },
-      {
-        "choice_list_name": "etn2",
-        "data_value": "NA",
-        "display": {
-          "title": {
-            "text": {
-              "default": "NA - Nalu",
-              "portuguese": "NA - Nalu"
-            }
-          }
-        },
-        "_row_num": 31
-      },
-      {
-        "choice_list_name": "etn2",
-        "data_value": "SA",
-        "display": {
-          "title": {
-            "text": {
-              "default": "SA - Sarakolé",
-              "portuguese": "SA - Sarakolé"
-            }
-          }
-        },
-        "_row_num": 32
-      },
-      {
-        "choice_list_name": "etn2",
-        "data_value": "WO",
-        "display": {
-          "title": {
-            "text": {
-              "default": "WO - Wolof",
-              "portuguese": "WO - Wolof"
-            }
-          }
-        },
-        "_row_num": 33
-      },
-      {
-        "choice_list_name": "etn2",
-        "data_value": "OU",
-        "display": {
-          "title": {
-            "text": {
-              "default": "OU - Other",
-              "portuguese": "OU - Outra/o"
-            }
-          }
-        },
-        "_row_num": 34
-      },
-      {
-        "choice_list_name": "etn2",
-        "data_value": "na",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Don't know",
-              "portuguese": "Não sabe"
-            }
-          }
-        },
-        "_row_num": 35
-      },
-      {
-        "choice_list_name": "precision",
-        "data_value": "1",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Day certain",
-              "portuguese": "Dia certo"
-            }
-          }
-        },
-        "_row_num": 36
-      },
-      {
-        "choice_list_name": "precision",
-        "data_value": "2",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Month certain",
-              "portuguese": "Mes certo"
-            }
-          }
-        },
-        "_row_num": 37
-      },
-      {
-        "choice_list_name": "precision",
-        "data_value": "3",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Season certain",
-              "portuguese": "Estação certo"
-            }
-          }
-        },
-        "_row_num": 38
-      },
-      {
-        "choice_list_name": "precision",
-        "data_value": "4",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Year certain",
-              "portuguese": "Ano certo"
-            }
-          }
-        },
-        "_row_num": 39
-      },
-      {
-        "choice_list_name": "dontknow",
-        "data_value": "1",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Don't know",
-              "portuguese": "Não sabe"
-            }
-          }
-        },
-        "_row_num": 40
-      },
-      {
-        "choice_list_name": "region",
-        "data_value": "1",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Oio",
-              "portuguese": "Oio"
-            }
-          }
-        },
-        "_row_num": 41
-      },
-      {
-        "choice_list_name": "region",
-        "data_value": "2",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Biombo",
-              "portuguese": "Biombo"
-            }
-          }
-        },
-        "_row_num": 42
-      },
-      {
-        "choice_list_name": "region",
-        "data_value": "5",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Gabu",
-              "portuguese": "Gabu"
-            }
-          }
-        },
-        "_row_num": 43
-      },
-      {
-        "choice_list_name": "region",
-        "data_value": "7",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Cacheu",
-              "portuguese": "Cacheu"
-            }
-          }
-        },
-        "_row_num": 44
-      },
-      {
-        "choice_list_name": "region",
-        "data_value": "8",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Bafata",
-              "portuguese": "Bafata"
-            }
-          }
-        },
-        "_row_num": 45
-      },
-      {
-        "choice_list_name": "region",
-        "data_value": "11",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Quinnara",
-              "portuguese": "Quinnara"
-            }
-          }
-        },
-        "_row_num": 46
-      },
-      {
-        "choice_list_name": "region",
-        "data_value": "12",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Tombali",
-              "portuguese": "Tombali"
-            }
-          }
-        },
-        "_row_num": 47
-      },
-      {
-        "choice_list_name": "region",
-        "data_value": "13",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Bubaque",
-              "portuguese": "Bubaque"
-            }
-          }
-        },
-        "_row_num": 48
-      },
-      {
-        "choice_list_name": "region",
-        "data_value": "14",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Bolama",
-              "portuguese": "Bolama"
-            }
-          }
-        },
-        "_row_num": 49
-      },
-      {
-        "choice_list_name": "region",
-        "data_value": "15",
-        "display": {
-          "title": {
-            "text": {
-              "default": "São Domingos",
-              "portuguese": "São Domingos"
-            }
-          }
-        },
-        "_row_num": 50
-      },
-      {
-        "choice_list_name": "region",
-        "data_value": "16",
-        "display": {
-          "title": {
-            "text": {
-              "default": "MSF Bafata",
-              "portuguese": "MSF Bafata"
-            }
-          }
-        },
-        "_row_num": 51
-      },
-      {
-        "choice_list_name": "relation",
-        "data_value": "1",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Mother/father",
-              "portuguese": "Mãe/pai"
-            }
-          }
-        },
-        "_row_num": 52
-      },
-      {
-        "choice_list_name": "relation",
-        "data_value": "2",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Husband",
-              "portuguese": "Marido"
-            }
-          }
-        },
-        "_row_num": 53
-      },
-      {
-        "choice_list_name": "relation",
-        "data_value": "3",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Sister/brother",
-              "portuguese": "Irmã/irmão"
-            }
-          }
-        },
-        "_row_num": 54
-      },
-      {
-        "choice_list_name": "relation",
-        "data_value": "4",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Aunt/uncle",
-              "portuguese": "Tia/tio"
-            }
-          }
-        },
-        "_row_num": 55
-      },
-      {
-        "choice_list_name": "relation",
-        "data_value": "5",
-        "display": {
-          "title": {
-            "text": {
-              "default": "Other",
-              "portuguese": "Outra/o"
-            }
-          }
-        },
-        "_row_num": 56
-      },
       {
         "choice_list_name": "tab1",
         "data_value": "1",
@@ -2051,14 +1315,14 @@
     "model": [
       {
         "name": "ADA",
-        "type": "string",
-        "isSessionVariable": true,
+        "type": "text",
+        "isSessionVariable": false,
         "_row_num": 2
       },
       {
         "name": "ADA2",
-        "type": "string",
-        "isSessionVariable": true,
+        "type": "text",
+        "isSessionVariable": false,
         "_row_num": 3
       }
     ]
@@ -2179,739 +1443,6 @@
       }
     },
     "choices": {
-      "YesNoU": [
-        {
-          "choice_list_name": "YesNoU",
-          "data_value": "1",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Yes",
-                "portuguese": "Sim"
-              }
-            }
-          },
-          "_row_num": 2
-        },
-        {
-          "choice_list_name": "YesNoU",
-          "data_value": "2",
-          "display": {
-            "title": {
-              "text": {
-                "default": "No",
-                "portuguese": "Não"
-              }
-            }
-          },
-          "_row_num": 3
-        },
-        {
-          "choice_list_name": "YesNoU",
-          "data_value": "3",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Don't know",
-                "portuguese": "Não sabe"
-              }
-            }
-          },
-          "_row_num": 4
-        }
-      ],
-      "inf1": [
-        {
-          "choice_list_name": "inf1",
-          "data_value": "1",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Self",
-                "portuguese": "Ela/e"
-              }
-            }
-          },
-          "_row_num": 5
-        },
-        {
-          "choice_list_name": "inf1",
-          "data_value": "2",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Other",
-                "portuguese": "Outra/o"
-              }
-            }
-          },
-          "_row_num": 6
-        }
-      ],
-      "inf2": [
-        {
-          "choice_list_name": "inf2",
-          "data_value": "1",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Mother",
-                "portuguese": "Mãe"
-              }
-            }
-          },
-          "_row_num": 7
-        },
-        {
-          "choice_list_name": "inf2",
-          "data_value": "2",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Father",
-                "portuguese": "Pai"
-              }
-            }
-          },
-          "_row_num": 8
-        },
-        {
-          "choice_list_name": "inf2",
-          "data_value": "3",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Mothers mother",
-                "portuguese": "Avó"
-              }
-            }
-          },
-          "_row_num": 9
-        },
-        {
-          "choice_list_name": "inf2",
-          "data_value": "4",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Other family member",
-                "portuguese": "Outra mebro da familia"
-              }
-            }
-          },
-          "_row_num": 10
-        },
-        {
-          "choice_list_name": "inf2",
-          "data_value": "5",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Other",
-                "portuguese": "Outra/o"
-              }
-            }
-          },
-          "_row_num": 11
-        },
-        {
-          "choice_list_name": "inf2",
-          "data_value": "6",
-          "display": {
-            "title": {
-              "text": {
-                "default": "No informant found",
-                "portuguese": "Nenhum informador"
-              }
-            }
-          },
-          "_row_num": 12
-        },
-        {
-          "choice_list_name": "inf2",
-          "data_value": "88",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Not applicable",
-                "portuguese": "Não aplicável"
-              }
-            }
-          },
-          "_row_num": 13
-        },
-        {
-          "choice_list_name": "inf2",
-          "data_value": "99",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Missing",
-                "portuguese": "Falta informacao"
-              }
-            }
-          },
-          "_row_num": 14
-        }
-      ],
-      "etn1": [
-        {
-          "choice_list_name": "etn1",
-          "data_value": "BA",
-          "display": {
-            "title": {
-              "text": {
-                "default": "BA - Balanta",
-                "portuguese": "BA - Balanta"
-              }
-            }
-          },
-          "_row_num": 15
-        },
-        {
-          "choice_list_name": "etn1",
-          "data_value": "FU",
-          "display": {
-            "title": {
-              "text": {
-                "default": "FU - Fula",
-                "portuguese": "FU - Fula"
-              }
-            }
-          },
-          "_row_num": 16
-        },
-        {
-          "choice_list_name": "etn1",
-          "data_value": "MC",
-          "display": {
-            "title": {
-              "text": {
-                "default": "MC - Mancanha",
-                "portuguese": "MC - Mancanha"
-              }
-            }
-          },
-          "_row_num": 17
-        },
-        {
-          "choice_list_name": "etn1",
-          "data_value": "MD",
-          "display": {
-            "title": {
-              "text": {
-                "default": "MD - Mandinga",
-                "portuguese": "MD - Mandinga"
-              }
-            }
-          },
-          "_row_num": 18
-        },
-        {
-          "choice_list_name": "etn1",
-          "data_value": "MJ",
-          "display": {
-            "title": {
-              "text": {
-                "default": "MJ - Mandjancu",
-                "portuguese": "MJ - Mandjancu"
-              }
-            }
-          },
-          "_row_num": 19
-        },
-        {
-          "choice_list_name": "etn1",
-          "data_value": "PE",
-          "display": {
-            "title": {
-              "text": {
-                "default": "PE - Pepel",
-                "portuguese": "PE - Pepel"
-              }
-            }
-          },
-          "_row_num": 20
-        },
-        {
-          "choice_list_name": "etn1",
-          "data_value": "MX",
-          "display": {
-            "title": {
-              "text": {
-                "default": "MX - Mixted",
-                "portuguese": "MX - Mixto"
-              }
-            }
-          },
-          "_row_num": 21
-        },
-        {
-          "choice_list_name": "etn1",
-          "data_value": "OU",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Other",
-                "portuguese": "Outra/o"
-              }
-            }
-          },
-          "_row_num": 22
-        },
-        {
-          "choice_list_name": "etn1",
-          "data_value": "NS",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Don't know",
-                "portuguese": "Não sabe"
-              }
-            }
-          },
-          "_row_num": 23
-        }
-      ],
-      "etn2": [
-        {
-          "choice_list_name": "etn2",
-          "data_value": "BE",
-          "display": {
-            "title": {
-              "text": {
-                "default": "BE - Beafada",
-                "portuguese": "BE - Beafada"
-              }
-            }
-          },
-          "_row_num": 24
-        },
-        {
-          "choice_list_name": "etn2",
-          "data_value": "BI",
-          "display": {
-            "title": {
-              "text": {
-                "default": "BI - Bijago",
-                "portuguese": "BI - Bijago"
-              }
-            }
-          },
-          "_row_num": 25
-        },
-        {
-          "choice_list_name": "etn2",
-          "data_value": "BM",
-          "display": {
-            "title": {
-              "text": {
-                "default": "BM - Balante mane",
-                "portuguese": "BM - Balante mane"
-              }
-            }
-          },
-          "_row_num": 26
-        },
-        {
-          "choice_list_name": "etn2",
-          "data_value": "CV",
-          "display": {
-            "title": {
-              "text": {
-                "default": "CV - Cabo Verdiano",
-                "portuguese": "CV - Cabo Verdiano"
-              }
-            }
-          },
-          "_row_num": 27
-        },
-        {
-          "choice_list_name": "etn2",
-          "data_value": "GE",
-          "display": {
-            "title": {
-              "text": {
-                "default": "GE - Geba",
-                "portuguese": "GE - Geba"
-              }
-            }
-          },
-          "_row_num": 28
-        },
-        {
-          "choice_list_name": "etn2",
-          "data_value": "FE",
-          "display": {
-            "title": {
-              "text": {
-                "default": "FE - Felupe",
-                "portuguese": "FE - Felupe"
-              }
-            }
-          },
-          "_row_num": 29
-        },
-        {
-          "choice_list_name": "etn2",
-          "data_value": "MS",
-          "display": {
-            "title": {
-              "text": {
-                "default": "MS - Mansoanca",
-                "portuguese": "MS - Mansonca"
-              }
-            }
-          },
-          "_row_num": 30
-        },
-        {
-          "choice_list_name": "etn2",
-          "data_value": "NA",
-          "display": {
-            "title": {
-              "text": {
-                "default": "NA - Nalu",
-                "portuguese": "NA - Nalu"
-              }
-            }
-          },
-          "_row_num": 31
-        },
-        {
-          "choice_list_name": "etn2",
-          "data_value": "SA",
-          "display": {
-            "title": {
-              "text": {
-                "default": "SA - Sarakolé",
-                "portuguese": "SA - Sarakolé"
-              }
-            }
-          },
-          "_row_num": 32
-        },
-        {
-          "choice_list_name": "etn2",
-          "data_value": "WO",
-          "display": {
-            "title": {
-              "text": {
-                "default": "WO - Wolof",
-                "portuguese": "WO - Wolof"
-              }
-            }
-          },
-          "_row_num": 33
-        },
-        {
-          "choice_list_name": "etn2",
-          "data_value": "OU",
-          "display": {
-            "title": {
-              "text": {
-                "default": "OU - Other",
-                "portuguese": "OU - Outra/o"
-              }
-            }
-          },
-          "_row_num": 34
-        },
-        {
-          "choice_list_name": "etn2",
-          "data_value": "na",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Don't know",
-                "portuguese": "Não sabe"
-              }
-            }
-          },
-          "_row_num": 35
-        }
-      ],
-      "precision": [
-        {
-          "choice_list_name": "precision",
-          "data_value": "1",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Day certain",
-                "portuguese": "Dia certo"
-              }
-            }
-          },
-          "_row_num": 36
-        },
-        {
-          "choice_list_name": "precision",
-          "data_value": "2",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Month certain",
-                "portuguese": "Mes certo"
-              }
-            }
-          },
-          "_row_num": 37
-        },
-        {
-          "choice_list_name": "precision",
-          "data_value": "3",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Season certain",
-                "portuguese": "Estação certo"
-              }
-            }
-          },
-          "_row_num": 38
-        },
-        {
-          "choice_list_name": "precision",
-          "data_value": "4",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Year certain",
-                "portuguese": "Ano certo"
-              }
-            }
-          },
-          "_row_num": 39
-        }
-      ],
-      "dontknow": [
-        {
-          "choice_list_name": "dontknow",
-          "data_value": "1",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Don't know",
-                "portuguese": "Não sabe"
-              }
-            }
-          },
-          "_row_num": 40
-        }
-      ],
-      "region": [
-        {
-          "choice_list_name": "region",
-          "data_value": "1",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Oio",
-                "portuguese": "Oio"
-              }
-            }
-          },
-          "_row_num": 41
-        },
-        {
-          "choice_list_name": "region",
-          "data_value": "2",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Biombo",
-                "portuguese": "Biombo"
-              }
-            }
-          },
-          "_row_num": 42
-        },
-        {
-          "choice_list_name": "region",
-          "data_value": "5",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Gabu",
-                "portuguese": "Gabu"
-              }
-            }
-          },
-          "_row_num": 43
-        },
-        {
-          "choice_list_name": "region",
-          "data_value": "7",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Cacheu",
-                "portuguese": "Cacheu"
-              }
-            }
-          },
-          "_row_num": 44
-        },
-        {
-          "choice_list_name": "region",
-          "data_value": "8",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Bafata",
-                "portuguese": "Bafata"
-              }
-            }
-          },
-          "_row_num": 45
-        },
-        {
-          "choice_list_name": "region",
-          "data_value": "11",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Quinnara",
-                "portuguese": "Quinnara"
-              }
-            }
-          },
-          "_row_num": 46
-        },
-        {
-          "choice_list_name": "region",
-          "data_value": "12",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Tombali",
-                "portuguese": "Tombali"
-              }
-            }
-          },
-          "_row_num": 47
-        },
-        {
-          "choice_list_name": "region",
-          "data_value": "13",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Bubaque",
-                "portuguese": "Bubaque"
-              }
-            }
-          },
-          "_row_num": 48
-        },
-        {
-          "choice_list_name": "region",
-          "data_value": "14",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Bolama",
-                "portuguese": "Bolama"
-              }
-            }
-          },
-          "_row_num": 49
-        },
-        {
-          "choice_list_name": "region",
-          "data_value": "15",
-          "display": {
-            "title": {
-              "text": {
-                "default": "São Domingos",
-                "portuguese": "São Domingos"
-              }
-            }
-          },
-          "_row_num": 50
-        },
-        {
-          "choice_list_name": "region",
-          "data_value": "16",
-          "display": {
-            "title": {
-              "text": {
-                "default": "MSF Bafata",
-                "portuguese": "MSF Bafata"
-              }
-            }
-          },
-          "_row_num": 51
-        }
-      ],
-      "relation": [
-        {
-          "choice_list_name": "relation",
-          "data_value": "1",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Mother/father",
-                "portuguese": "Mãe/pai"
-              }
-            }
-          },
-          "_row_num": 52
-        },
-        {
-          "choice_list_name": "relation",
-          "data_value": "2",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Husband",
-                "portuguese": "Marido"
-              }
-            }
-          },
-          "_row_num": 53
-        },
-        {
-          "choice_list_name": "relation",
-          "data_value": "3",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Sister/brother",
-                "portuguese": "Irmã/irmão"
-              }
-            }
-          },
-          "_row_num": 54
-        },
-        {
-          "choice_list_name": "relation",
-          "data_value": "4",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Aunt/uncle",
-                "portuguese": "Tia/tio"
-              }
-            }
-          },
-          "_row_num": 55
-        },
-        {
-          "choice_list_name": "relation",
-          "data_value": "5",
-          "display": {
-            "title": {
-              "text": {
-                "default": "Other",
-                "portuguese": "Outra/o"
-              }
-            }
-          },
-          "_row_num": 56
-        }
-      ],
       "tab1": [
         {
           "choice_list_name": "tab1",
@@ -4001,22 +2532,7 @@
     "table_specific_definitions": {
       "_tokens": {}
     },
-    "queries": {
-      "region_csv": {
-        "query_name": "region_csv",
-        "query_type": "csv",
-        "uri": "\"TABANCAS.csv\"",
-        "callback": "_.chain(context)\n.uniq(function(x) {\nreturn x.REG\n})\n.map(function(place){\nreturn {\ndata_value:place.REG,\ndisplay:{title: {text: place.REGIAO} } };\n}).value()",
-        "_row_num": 2
-      },
-      "tabanca_csv": {
-        "query_name": "tabanca_csv",
-        "query_type": "csv",
-        "uri": "\"TABANCAS.csv\"",
-        "callback": "_.map(context, function(place){place.data_value = place.TAB;\nplace.display = {title: {text: place.TABANCA} };\nreturn place;\n})",
-        "_row_num": 3
-      }
-    },
+    "queries": {},
     "calculates": {
       "ageInYears": {
         "calculation_name": "ageInYears",
@@ -4055,7 +2571,7 @@
             "section_name": "model"
           }
         ],
-        "isSessionVariable": true,
+        "isSessionVariable": false,
         "elementKey": "ADA"
       },
       "ADA2": {
@@ -4073,7 +2589,7 @@
             "section_name": "model"
           }
         ],
-        "isSessionVariable": true,
+        "isSessionVariable": false,
         "elementKey": "ADA2"
       }
     },
@@ -4133,7 +2649,6 @@
           },
           {
             "type": "note",
-            "name": "lblKnown",
             "display": {
               "prompt": {
                 "text": {
@@ -4151,7 +2666,6 @@
           },
           {
             "type": "note",
-            "name": "lblUnknown",
             "display": {
               "prompt": {
                 "text": {
@@ -4169,7 +2683,6 @@
           },
           {
             "type": "note",
-            "name": "lblbla",
             "display": {
               "prompt": {
                 "text": "Alder I hele år: <b>{{calculates.ageInYears}}</b><br/>I måneder: {{calculates.ageInMonths}}<br/>I dage: {{calculates.ageInDays}}<br/>( baseret på {{data.ADA}} )<br/>"
@@ -4184,7 +2697,6 @@
           },
           {
             "type": "note",
-            "name": "lblblabla",
             "display": {
               "prompt": {
                 "text": "Differencen var: {{calculates.diffInYears}} år."
@@ -4199,7 +2711,6 @@
           },
           {
             "type": "note",
-            "name": "lblblabla",
             "display": {
               "prompt": {
                 "text": {
@@ -4485,7 +2996,7 @@
             "section_name": "model"
           }
         ],
-        "isSessionVariable": true,
+        "isSessionVariable": false,
         "elementKey": "ADA",
         "elementName": "ADA",
         "elementSet": "data",
@@ -4506,7 +3017,7 @@
             "section_name": "model"
           }
         ],
-        "isSessionVariable": true,
+        "isSessionVariable": false,
         "elementKey": "ADA2",
         "elementName": "ADA2",
         "elementSet": "data",
